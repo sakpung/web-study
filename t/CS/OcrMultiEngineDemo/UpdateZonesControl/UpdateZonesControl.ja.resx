@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_plusCheckBox.Text" xml:space="preserve">
+    <value>プラス</value>
+  </data>
+  <data name="_miscellaneousCheckBox.Text" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="_punctuationCheckBox.Text" xml:space="preserve">
+    <value>句読点</value>
+  </data>
+  <data name="_lowercaseCheckBox.Text" xml:space="preserve">
+    <value>小文字</value>
+  </data>
+  <data name="_uppercaseCheckBox.Text" xml:space="preserve">
+    <value>大文字</value>
+  </data>
+  <data name="_digitCheckBox.Text" xml:space="preserve">
+    <value>数字</value>
+  </data>
+  <data name="_characterFiltersGroupBox.Text" xml:space="preserve">
+    <value>文字セット(&amp;C)：</value>
+  </data>
+  <data name="_omrLabel.Text" xml:space="preserve">
+    <value>OMRの状況：</value>
+  </data>
+  <data name="_typeLabel.Text" xml:space="preserve">
+    <value>タイプ(&amp;T)：</value>
+  </data>
+  <data name="_languageLabel.Text" xml:space="preserve">
+    <value>言語(&amp;L):</value>
+  </data>
+  <data name="_recognitionModuleLabel.Text" xml:space="preserve">
+    <value>認識モジュール(&amp;R)：</value>
+  </data>
+  <data name="_fillMethodLabel.Text" xml:space="preserve">
+    <value>フィル方式(&amp;M)：</value>
+  </data>
+  <data name="_propertiesGroupBox.Text" xml:space="preserve">
+    <value>プロパティ(&amp;P)：</value>
+  </data>
+  <data name="_heightLabel.Text" xml:space="preserve">
+    <value>高さ(&amp;H)：</value>
+  </data>
+  <data name="_widthLabel.Text" xml:space="preserve">
+    <value>幅(&amp;W)：</value>
+  </data>
+  <data name="_topLabel.Text" xml:space="preserve">
+    <value>上(&amp;T)：</value>
+  </data>
+  <data name="_leftLabel.Text" xml:space="preserve">
+    <value>左(&amp;L)：</value>
+  </data>
+  <data name="_areaGroupBox.Text" xml:space="preserve">
+    <value>領域（ピクセル）(&amp;A)：</value>
+  </data>
+  <data name="_nameGroupBox.Text" xml:space="preserve">
+    <value>名前(&amp;N)：</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UpdateZonesControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_areaGroupBox.Name" xml:space="preserve">
+    <value>_areaGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_areaGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_areaGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_areaGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_characterFiltersGroupBox.Name" xml:space="preserve">
+    <value>_characterFiltersGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_characterFiltersGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_characterFiltersGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_characterFiltersGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_digitCheckBox.Name" xml:space="preserve">
+    <value>_digitCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_digitCheckBox.Parent" xml:space="preserve">
+    <value>_characterFiltersGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_digitCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_digitCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_fillMethodComboBox.Name" xml:space="preserve">
+    <value>_fillMethodComboBox</value>
+  </data>
+  <data name="&gt;&gt;_fillMethodComboBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fillMethodComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fillMethodComboBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_fillMethodLabel.Name" xml:space="preserve">
+    <value>_fillMethodLabel</value>
+  </data>
+  <data name="&gt;&gt;_fillMethodLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fillMethodLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fillMethodLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_heightLabel.Name" xml:space="preserve">
+    <value>_heightLabel</value>
+  </data>
+  <data name="&gt;&gt;_heightLabel.Parent" xml:space="preserve">
+    <value>_areaGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_heightLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_heightLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_heightTextBox.Name" xml:space="preserve">
+    <value>_heightTextBox</value>
+  </data>
+  <data name="&gt;&gt;_heightTextBox.Parent" xml:space="preserve">
+    <value>_areaGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_heightTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_heightTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_languageComboBox.Name" xml:space="preserve">
+    <value>_languageComboBox</value>
+  </data>
+  <data name="&gt;&gt;_languageComboBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_languageComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_languageComboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_languageLabel.Name" xml:space="preserve">
+    <value>_languageLabel</value>
+  </data>
+  <data name="&gt;&gt;_languageLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_languageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_languageLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_leftLabel.Name" xml:space="preserve">
+    <value>_leftLabel</value>
+  </data>
+  <data name="&gt;&gt;_leftLabel.Parent" xml:space="preserve">
+    <value>_areaGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_leftLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_leftLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_leftTextBox.Name" xml:space="preserve">
+    <value>_leftTextBox</value>
+  </data>
+  <data name="&gt;&gt;_leftTextBox.Parent" xml:space="preserve">
+    <value>_areaGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_leftTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_leftTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_lowercaseCheckBox.Name" xml:space="preserve">
+    <value>_lowercaseCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_lowercaseCheckBox.Parent" xml:space="preserve">
+    <value>_characterFiltersGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_lowercaseCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lowercaseCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_miscellaneousCheckBox.Name" xml:space="preserve">
+    <value>_miscellaneousCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_miscellaneousCheckBox.Parent" xml:space="preserve">
+    <value>_characterFiltersGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_miscellaneousCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miscellaneousCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_nameGroupBox.Name" xml:space="preserve">
+    <value>_nameGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_nameGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_nameGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_nameGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_nameTextBox.Name" xml:space="preserve">
+    <value>_nameTextBox</value>
+  </data>
+  <data name="&gt;&gt;_nameTextBox.Parent" xml:space="preserve">
+    <value>_nameGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_nameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_nameTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_omrLabel.Name" xml:space="preserve">
+    <value>_omrLabel</value>
+  </data>
+  <data name="&gt;&gt;_omrLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_omrLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_omrLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_omrStatusLabel.Name" xml:space="preserve">
+    <value>_omrStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;_omrStatusLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_omrStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_omrStatusLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_plusCheckBox.Name" xml:space="preserve">
+    <value>_plusCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_plusCheckBox.Parent" xml:space="preserve">
+    <value>_characterFiltersGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_plusCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_plusCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.Name" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_punctuationCheckBox.Name" xml:space="preserve">
+    <value>_punctuationCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_punctuationCheckBox.Parent" xml:space="preserve">
+    <value>_characterFiltersGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_punctuationCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_punctuationCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_recognitionModuleComboBox.Name" xml:space="preserve">
+    <value>_recognitionModuleComboBox</value>
+  </data>
+  <data name="&gt;&gt;_recognitionModuleComboBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_recognitionModuleComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_recognitionModuleComboBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_recognitionModuleLabel.Name" xml:space="preserve">
+    <value>_recognitionModuleLabel</value>
+  </data>
+  <data name="&gt;&gt;_recognitionModuleLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_recognitionModuleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_recognitionModuleLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_topLabel.Name" xml:space="preserve">
+    <value>_topLabel</value>
+  </data>
+  <data name="&gt;&gt;_topLabel.Parent" xml:space="preserve">
+    <value>_areaGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_topLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_topLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_topTextBox.Name" xml:space="preserve">
+    <value>_topTextBox</value>
+  </data>
+  <data name="&gt;&gt;_topTextBox.Parent" xml:space="preserve">
+    <value>_areaGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_topTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_topTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_typeComboBox.Name" xml:space="preserve">
+    <value>_typeComboBox</value>
+  </data>
+  <data name="&gt;&gt;_typeComboBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_typeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_typeComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_typeLabel.Name" xml:space="preserve">
+    <value>_typeLabel</value>
+  </data>
+  <data name="&gt;&gt;_typeLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_typeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_typeLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_uppercaseCheckBox.Name" xml:space="preserve">
+    <value>_uppercaseCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_uppercaseCheckBox.Parent" xml:space="preserve">
+    <value>_characterFiltersGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_uppercaseCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_uppercaseCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_widthLabel.Name" xml:space="preserve">
+    <value>_widthLabel</value>
+  </data>
+  <data name="&gt;&gt;_widthLabel.Parent" xml:space="preserve">
+    <value>_areaGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_widthLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_widthLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_widthTextBox.Name" xml:space="preserve">
+    <value>_widthTextBox</value>
+  </data>
+  <data name="&gt;&gt;_widthTextBox.Parent" xml:space="preserve">
+    <value>_areaGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_widthTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_widthTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_zoneTextDirectionLabel.Text" xml:space="preserve">
+    <value>テキストの方向(&amp;x)：</value>
+  </data>
+  <data name="_zoneViewPerspectiveLabel.Text" xml:space="preserve">
+    <value>ビューの方向(&amp;V)：</value>
+  </data>
+</root>

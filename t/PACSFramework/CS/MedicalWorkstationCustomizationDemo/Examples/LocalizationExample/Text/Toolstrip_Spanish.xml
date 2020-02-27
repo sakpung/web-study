@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toolStripMenuProperties>
+   <SaveToolStripButton>
+      <text>&amp;Guardar</text>
+      <shortcutKeys>None</shortcutKeys>
+   </SaveToolStripButton>
+   <CopyToolStripButton>
+      <text>&amp;Copia</text>
+      <shortcutKeys>None</shortcutKeys>
+   </CopyToolStripButton>
+   <PrintToolStripButton>
+      <text>&amp;Imprimir</text>
+      <shortcutKeys>None</shortcutKeys>
+   </PrintToolStripButton>
+   <AnnotationsSaveLoadDropDownButton>
+      <text>Guardar/Cargar Anotaciόnes</text>
+      <shortcutKeys>None</shortcutKeys>
+   </AnnotationsSaveLoadDropDownButton>
+   <SaveAnnMeasureToolStripMenuItem>
+      <text>Guardar Anotaciόnes/Medidas</text>
+      <shortcutKeys>None</shortcutKeys>
+   </SaveAnnMeasureToolStripMenuItem>
+   <LoadAnnMeasureToolStripMenuItem>
+      <text>Cargar Anotaciόnes/Medidas</text>
+      <shortcutKeys>None</shortcutKeys>
+   </LoadAnnMeasureToolStripMenuItem>
+   <DeletePresentationStateToolStripMenuItem>
+      <text>Borrar Actual</text>
+      <shortcutKeys>None</shortcutKeys>
+   </DeletePresentationStateToolStripMenuItem>
+   <DeleteAllPresentationStateToolStripMenuItem>
+      <text>Borrar Todo</text>
+      <shortcutKeys>None</shortcutKeys>
+   </DeleteAllPresentationStateToolStripMenuItem>
+   <PanToolStripButton>
+      <text>Paneo</text>
+      <shortcutKeys>None</shortcutKeys>
+   </PanToolStripButton>
+   <MagnifyGlasstoolStripButton>
+      <text>Lupa</text>
+      <shortcutKeys>None</shortcutKeys>
+   </MagnifyGlasstoolStripButton>
+   <FitToCellToolStripMenuItem>
+      <text>Ajuste a la celda</text>
+      <shortcutKeys>None</shortcutKeys>
+   </FitToCellToolStripMenuItem>
+   <ZoomInToolStripMenuItem>
+      <text>Acercamiento</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ZoomInToolStripMenuItem>
+   <ZoomIn2xToolStripMenuItem>
+      <text>2x</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ZoomIn2xToolStripMenuItem>
+   <ZoomIn3xToolStripMenuItem>
+      <text>3x</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ZoomIn3xToolStripMenuItem>
+   <ZoomIn4xToolStripMenuItem>
+      <text>4x</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ZoomIn4xToolStripMenuItem>
+   <ZoomIn5xToolStripMenuItem>
+      <text>5x</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ZoomIn5xToolStripMenuItem>
+   <ZoomOutToolStripMenuItem>
+      <text>Distanciamiento</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ZoomOutToolStripMenuItem>
+   <ZoomOut2xToolStripMenuItem>
+      <text>2x</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ZoomOut2xToolStripMenuItem>
+   <ZoomOut3xToolStripMenuItem>
+      <text>3x</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ZoomOut3xToolStripMenuItem>
+   <ZoomOut4xToolStripMenuItem>
+      <text>4x</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ZoomOut4xToolStripMenuItem>
+   <ZoomOut5xToolStripMenuItem>
+      <text>5x</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ZoomOut5xToolStripMenuItem>
+   <OneToOnetoolStripMenuItem>
+      <text>1:1</text>
+      <shortcutKeys>None</shortcutKeys>
+   </OneToOnetoolStripMenuItem>
+   <AnnotationstoolStripSplitButton>
+      <text>Anotaciόnes</text>
+      <shortcutKeys>None</shortcutKeys>
+   </AnnotationstoolStripSplitButton>
+   <RectangletoolStripMenuItem>
+      <text>Rectángulo</text>
+      <shortcutKeys>None</shortcutKeys>
+   </RectangletoolStripMenuItem>
+   <EllipseToolStripMenuItem>
+      <text>Elipse</text>
+      <shortcutKeys>None</shortcutKeys>
+   </EllipseToolStripMenuItem>
+   <ArrowToolStripMenuItem>
+      <text>Flecha</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ArrowToolStripMenuItem>
+   <TextToolStripMenuItem>
+      <text>Texto</text>
+      <shortcutKeys>None</shortcutKeys>
+   </TextToolStripMenuItem>
+   <HilightToolStripMenuItem>
+      <text>Destacar</text>
+      <shortcutKeys>None</shortcutKeys>
+   </HilightToolStripMenuItem>
+   <RegionstoolStripSplitButton>
+      <text>Regiόnes</text>
+      <shortcutKeys>None</shortcutKeys>
+   </RegionstoolStripSplitButton>
+   <FreeHandToolStripMenuItem>
+      <text>Mano Libre</text>
+      <shortcutKeys>None</shortcutKeys>
+   </FreeHandToolStripMenuItem>
+   <RectangleRegionToolStripMenuItem>
+      <text>Rectángulo</text>
+      <shortcutKeys>None</shortcutKeys>
+   </RectangleRegionToolStripMenuItem>
+   <EllipseRegionToolStripMenuItem>
+      <text>Elipse</text>
+      <shortcutKeys>None</shortcutKeys>
+   </EllipseRegionToolStripMenuItem>
+   <MagicWandToolStripMenuItem>
+      <text>Varita Mágica</text>
+      <shortcutKeys>None</shortcutKeys>
+   </MagicWandToolStripMenuItem>
+   <ClearRegionToolStripMenuItem>
+      <text>Regiόn de Imagen Clara</text>
+      <shortcutKeys>D, Control</shortcutKeys>
+   </ClearRegionToolStripMenuItem>
+   <ClearAllRegionsToolStripMenuItem>
+      <text>Aclarar Todas las Regiόnes</text>
+      <shortcutKeys>D, Shift, Control</shortcutKeys>
+   </ClearAllRegionsToolStripMenuItem>
+   <MeasurmentsToolStripSplitButton>
+      <text>Instrumento de Medir</text>
+      <shortcutKeys>None</shortcutKeys>
+   </MeasurmentsToolStripSplitButton>
+   <RulerToolStripMenuItem>
+      <text>Regla</text>
+      <shortcutKeys>None</shortcutKeys>
+   </RulerToolStripMenuItem>
+   <PolyRulerToolStripMenuItem>
+      <text>Regla Polígono</text>
+      <shortcutKeys>None</shortcutKeys>
+   </PolyRulerToolStripMenuItem>
+   <AngleToolStripMenuItem>
+      <text>Ángulo</text>
+      <shortcutKeys>None</shortcutKeys>
+   </AngleToolStripMenuItem>
+   <CalibrateRulerToolStripMenuItem>
+      <text>Regla de Calibrar</text>
+      <shortcutKeys>None</shortcutKeys>
+   </CalibrateRulerToolStripMenuItem>
+   <EffectsToolStripSplitButton>
+      <text>Invertir</text>
+      <shortcutKeys>None</shortcutKeys>
+   </EffectsToolStripSplitButton>
+   <FlipToolStripMenuItem>
+      <text>Voltear</text>
+      <shortcutKeys>None</shortcutKeys>
+   </FlipToolStripMenuItem>
+   <ReverseToolStripMenuItem>
+      <text>Revertir</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ReverseToolStripMenuItem>
+   <RotateToolStripMenuItem>
+      <text>Rotar en sentido de las agujas del Reloj 90˚</text>
+      <shortcutKeys>None</shortcutKeys>
+   </RotateToolStripMenuItem>
+   <RotateCounterclockwise90ToolStripMenuItem>
+      <text>Rotar opuesto al sentido de las agujas del Reloj 90˚</text>
+      <shortcutKeys>None</shortcutKeys>
+   </RotateCounterclockwise90ToolStripMenuItem>
+   <ResetOrientationToolStripMenuItem1>
+      <text>Restaurar Orientaciόn</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ResetOrientationToolStripMenuItem1>
+   <ViewModetoolStripSplitButton>
+      <text>Modo de Series</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ViewModetoolStripSplitButton>
+   <SeriesModeToolStripMenuItem>
+      <text>Modo de Series</text>
+      <shortcutKeys>None</shortcutKeys>
+   </SeriesModeToolStripMenuItem>
+   <StackModeToolStripMenuItem>
+      <text>Modo de Pila</text>
+      <shortcutKeys>None</shortcutKeys>
+   </StackModeToolStripMenuItem>
+   <DisplayWithOverviewModeToolStripMenuItem>
+      <text>Visualizar con vista general</text>
+      <shortcutKeys>None</shortcutKeys>
+   </DisplayWithOverviewModeToolStripMenuItem>
+   <ImagesLayoutToolStripMenuItem>
+      <text>Composiciόn de Imagenes</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ImagesLayoutToolStripMenuItem>
+   
+   
+   
+   
+   
+   
+   
+   <ImagesLayoutSelectorToolStripMenuItem>
+      <text />
+      <shortcutKeys>None</shortcutKeys>
+   </ImagesLayoutSelectorToolStripMenuItem>
+   <SeriesLayoutToolStripMenuItem>
+      <text>Composiciόn de Series</text>
+      <shortcutKeys>None</shortcutKeys>
+   </SeriesLayoutToolStripMenuItem>
+   <SeriesLayoutSelectorToolStripMenuItem>
+      <text />
+      <shortcutKeys>None</shortcutKeys>
+   </SeriesLayoutSelectorToolStripMenuItem>
+   <StudiesLayoutToolStripMenuItem>
+      <text>Composiciόn de Estudios</text>
+      <shortcutKeys>None</shortcutKeys>
+   </StudiesLayoutToolStripMenuItem>
+   <StudyLayoutSelectorToolStripMenuItem>
+      <text />
+      <shortcutKeys>None</shortcutKeys>
+   </StudyLayoutSelectorToolStripMenuItem>
+   <WindowLeveltoolStripButton>
+      <text>Nivel de Ventana</text>
+      <shortcutKeys>None</shortcutKeys>
+   </WindowLeveltoolStripButton>
+   <AutoToolStripMenuItem>
+      <text>Auto</text>
+      <shortcutKeys>None</shortcutKeys>
+   </AutoToolStripMenuItem>
+   <CustomizeWindowLevelToolStripMenuItem>
+      <text>Personalizar...</text>
+      <shortcutKeys>None</shortcutKeys>
+   </CustomizeWindowLevelToolStripMenuItem>
+   <PresetToolStripMenuItem>
+      <text>Preprogramar...</text>
+      <shortcutKeys>None</shortcutKeys>
+   </PresetToolStripMenuItem>
+   <InverttoolStripButton>
+      <text>Invertir</text>
+      <shortcutKeys>None</shortcutKeys>
+   </InverttoolStripButton>
+   <AnimationtoolStripButton>
+      <text>Reproductor de Cine</text>
+      <shortcutKeys>None</shortcutKeys>
+   </AnimationtoolStripButton>
+   <ToggleTagstoolstripbutton>
+      <text>Mostrar/Esconder Etiquetas</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ToggleTagstoolstripbutton>
+   <LinkImagesToolsStripButton>
+      <text>Conectar Imagenes</text>
+      <shortcutKeys>None</shortcutKeys>
+   </LinkImagesToolsStripButton>
+   <ViewDicomTagsToolStripButton>
+      <text>Ver Informaciόn Dicom...</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ViewDicomTagsToolStripButton>
+   <BrowseModeToolStripDropDownButton>
+      <text>Buscador de Series</text>
+      <shortcutKeys>None</shortcutKeys>
+   </BrowseModeToolStripDropDownButton>
+   <ThumbnailsToolStripButton>
+      <text>Buscador de Series</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ThumbnailsToolStripButton>
+   <StudiesTimelineToolStripButton>
+      <text>Orden Cronolόgico del Paciente</text>
+      <shortcutKeys>None</shortcutKeys>
+   </StudiesTimelineToolStripButton>
+   
+   
+   
+   
+   <PanWindowToolStripButton>
+      <text> Ventana de Paneo/Acercamiento</text>
+      <shortcutKeys>None</shortcutKeys>
+   </PanWindowToolStripButton>
+   <EnableReferenceLineToolStripMenuItem>
+      <text>Ver/Esconder Linea de Referencia</text>
+      <shortcutKeys>None</shortcutKeys>
+   </EnableReferenceLineToolStripMenuItem>
+   <ChangeReferenceLineColorToolStripMenuItem>
+      <text>Cambiar el Color de la Linea de Referencia...</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ChangeReferenceLineColorToolStripMenuItem>
+   <CreateCutPlaneToolStripDropDownButton>
+      <text>Cortar Plano</text>
+      <shortcutKeys>None</shortcutKeys>
+   </CreateCutPlaneToolStripDropDownButton>
+   <SingleCutPlaneToolStripMenuItem>
+      <text>Plano-Cortado Singular</text>
+      <shortcutKeys>None</shortcutKeys>
+   </SingleCutPlaneToolStripMenuItem>
+   <DoubleCutPlaneToolStripMenuItem>
+      <text>Plano-Cortado Doble</text>
+      <shortcutKeys>None</shortcutKeys>
+   </DoubleCutPlaneToolStripMenuItem>
+   <Rotate3DToolStripButton>
+      <text>Rotar 3D</text>
+      <shortcutKeys>None</shortcutKeys>
+   </Rotate3DToolStripButton>
+   <Create3DVolumeToolStripButton>
+      <text>Crear Volumen 3D</text>
+      <shortcutKeys>None</shortcutKeys>
+   </Create3DVolumeToolStripButton>
+   <StoreVolumeStateToolStripButton>
+      <text>Guardar Estado de Volumen</text>
+      <shortcutKeys>None</shortcutKeys>
+   </StoreVolumeStateToolStripButton>
+   <StoreVolumeToolStripButton>
+      <text>Guardar Volumen</text>
+      <shortcutKeys>None</shortcutKeys>
+   </StoreVolumeToolStripButton>
+   <LoadVolumeToolStripButton>
+      <text>Cargar Volumen</text>
+      <shortcutKeys>None</shortcutKeys>
+   </LoadVolumeToolStripButton>
+   <ResetVolumeToolStripButton>
+      <text>Reajustar Volumen</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ResetVolumeToolStripButton>
+   <Object3DTypeToolStripSplitButton>
+      <text>Objeto 3D</text>
+      <shortcutKeys>None</shortcutKeys>
+   </Object3DTypeToolStripSplitButton>
+   <MPRToolStripMenuItem>
+      <text>MPR</text>
+      <shortcutKeys>None</shortcutKeys>
+   </MPRToolStripMenuItem>
+   <MIPToolStripMenuItem>
+      <text>MIP</text>
+      <shortcutKeys>None</shortcutKeys>
+   </MIPToolStripMenuItem>
+   <MinMIPToolStripMenuItem>
+      <text>MinIP</text>
+      <shortcutKeys>None</shortcutKeys>
+   </MinMIPToolStripMenuItem>
+   <SSDToolStripMenuItem>
+      <text>SSD</text>
+      <shortcutKeys>None</shortcutKeys>
+   </SSDToolStripMenuItem>
+   <VRTToolStripMenuItem>
+      <text>VRT</text>
+      <shortcutKeys>None</shortcutKeys>
+   </VRTToolStripMenuItem>
+   <toolStripButtonIsoThreshold>
+      <text>Límite ISO</text>
+      <shortcutKeys>None</shortcutKeys>
+   </toolStripButtonIsoThreshold>
+   <SelectAllSeries>
+      <text>Selecciόne Todas las Series</text>
+      <shortcutKeys>A, Control</shortcutKeys>
+   </SelectAllSeries>
+   <ReferenceLine>
+      <text>Linea de Referencia</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ReferenceLine>
+   <DeleteImage>
+      <text>Borrar Imagen</text>
+      <shortcutKeys>None</shortcutKeys>
+   </DeleteImage>
+   <DeleteSeries>
+      <text>Descargar Series</text>
+      <shortcutKeys>Delete, Shift</shortcutKeys>
+   </DeleteSeries>
+   <DeleteStudy>
+      <text>Descargar Estudio</text>
+      <shortcutKeys>Delete, Shift, Control</shortcutKeys>
+   </DeleteStudy>
+   <ShowCrossLines>
+      <text>Ver Lineas Cruzadas</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ShowCrossLines>
+   <ShowSlabRectangle>
+      <text>Ver Rectángulo de Bloque</text>
+      <shortcutKeys>None</shortcutKeys>
+   </ShowSlabRectangle>
+   <AnnotationChangeColorMenuItem>
+      <text>Cambiar Color...</text>
+      <shortcutKeys>None</shortcutKeys>
+   </AnnotationChangeColorMenuItem>
+   <AnnotationChangeForecolorMenuItem>
+      <text>Cambiar Color de Primera Plana...</text>
+      <shortcutKeys>None</shortcutKeys>
+   </AnnotationChangeForecolorMenuItem>
+   <AnnotationDeleteMenuItem>
+      <text>Borrar</text>
+      <shortcutKeys>None</shortcutKeys>
+   </AnnotationDeleteMenuItem>
+   <TimelineGroupingMenuItem>
+      <text>Agrupando</text>
+      <shortcutKeys>None</shortcutKeys>
+   </TimelineGroupingMenuItem>
+   <TimelineSeriesGroupingMenuItem>
+      <text>Series</text>
+      <shortcutKeys>None</shortcutKeys>
+   </TimelineSeriesGroupingMenuItem>
+   <TimelineStudiesGroupingMenuItem>
+      <text>Estudios</text>
+      <shortcutKeys>None</shortcutKeys>
+   </TimelineStudiesGroupingMenuItem>
+   <TimelineLoadSelectedMenuItem>
+      <text>Cargar Seleccionado</text>
+      <shortcutKeys>None</shortcutKeys>
+   </TimelineLoadSelectedMenuItem>
+   <TimelineOrientationMenuItem>
+      <text>Orientaciόn</text>
+      <shortcutKeys>None</shortcutKeys>
+   </TimelineOrientationMenuItem>
+   <TimelineHorizontalOrientationMenuItem>
+      <text>Horizontal</text>
+      <shortcutKeys>None</shortcutKeys>
+   </TimelineHorizontalOrientationMenuItem>
+   <TimelineVerticalOrientationMenuItem>
+      <text>Vertical</text>
+      <shortcutKeys>None</shortcutKeys>
+   </TimelineVerticalOrientationMenuItem>
+</toolStripMenuProperties>

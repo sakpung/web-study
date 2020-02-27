@@ -1,0 +1,208 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="mappingTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ColumnName" type="xs:string" minOccurs="0" />
+                <xs:element name="FriendlyName" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" msdata:DataType="System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="Visible" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <mappingTable>
+    <ColumnName>PatientID</ColumnName>
+    <FriendlyName>Patient ID</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>FamilyName</ColumnName>
+    <FriendlyName>Last Name</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>GivenName</ColumnName>
+    <FriendlyName>First Name</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>BirthDate</ColumnName>
+    <FriendlyName>Birth Date</FriendlyName>
+    <Type>System.DateTime, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>Sex</ColumnName>
+    <FriendlyName>Sex</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StudyInstanceUID</ColumnName>
+    <FriendlyName>Study Instance UID</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StudyDate</ColumnName>
+    <FriendlyName>Study Date</FriendlyName>
+    <Type>System.DateTime, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>AccessionNumber</ColumnName>
+    <FriendlyName>Accession Number</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StudyID</ColumnName>
+    <FriendlyName>Study ID</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>ReferDrFamilyName</ColumnName>
+    <FriendlyName>Refer Dr Last Name</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>ReferDrGivenName</ColumnName>
+    <FriendlyName>Refer Dr First Name</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>SeriesInstanceUID</ColumnName>
+    <FriendlyName>Series Instance UID</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>Modality</ColumnName>
+    <FriendlyName>Modality</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>SeriesNumber</ColumnName>
+    <FriendlyName>Series Number</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>SeriesDate</ColumnName>
+    <FriendlyName>Series Date</FriendlyName>
+    <Type>System.DateTime, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>SeriesDescription</ColumnName>
+    <FriendlyName>Series Description</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>InstitutionName</ColumnName>
+    <FriendlyName>Institution Name</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+
+  <mappingTable>
+    <ColumnName>BodyPartExamined</ColumnName>
+    <FriendlyName>Body Part Examined</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>Laterality</ColumnName>
+    <FriendlyName>Laterality</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>ProtocolName</ColumnName>
+    <FriendlyName>Protocol Name</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>SOPClassUID</ColumnName>
+    <FriendlyName>SOP Class UID</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>SOPInstanceUID</ColumnName>
+    <FriendlyName>SOP Instance UID</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>InstanceNumber</ColumnName>
+    <FriendlyName>Instance Number</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>ReferencedFile</ColumnName>
+    <FriendlyName>Referenced File</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>ExternalStoreGuid</ColumnName>
+    <FriendlyName>External Store Guid</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StoreToken</ColumnName>
+    <FriendlyName>Store Token</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>TransferSyntax</ColumnName>
+    <FriendlyName>Transfer Syntax</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StationName</ColumnName>
+    <FriendlyName>Station Name</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>ReceiveDate</ColumnName>
+    <FriendlyName>Receive Date</FriendlyName>
+    <Type>System.DateTime, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>RetrieveAETitle</ColumnName>
+    <FriendlyName>Retrieve AE Title</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StoreAETitle</ColumnName>
+    <FriendlyName>Store AE Title</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+</NewDataSet>

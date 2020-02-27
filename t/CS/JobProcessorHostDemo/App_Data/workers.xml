@@ -1,0 +1,8 @@
+<Workers>
+ <Worker Name="*" NewJobCheckPeriod="2">
+	<JobTypes>
+	   <JobType Name="OCR" MaxNumberOfJobs="5" CpuThreshold="80" UseCpuThreshold="false" ProgressRate="10" AssumeHangAfter="60" Attempts="3"/>
+	   <JobType Name="Multimedia" MaxNumberOfJobs="5" CpuThreshold="80" UseCpuThreshold="false" ProgressRate="10" AssumeHangAfter="60" Attempts="3"/>
+	</JobTypes>
+ </Worker>
+</Workers>

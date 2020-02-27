@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup Condition="'$(ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch)' == ''">
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42AEBE68-4D8F-4E40-9DF2-273869F2C3D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Main3DDemo</RootNamespace>
+    <AssemblyName>CSMain3DDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\Resources\MedAddon.ico</ApplicationIcon>
+    <Win32Resource></Win32Resource>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>Bin\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V16_OR_LATER;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_DOTNET4;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile></DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>Bin\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V16_OR_LATER;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_DOTNET4;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>bin\x86\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V16_OR_LATER;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_DOTNET4;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>bin\x86\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V16_OR_LATER;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_DOTNET4;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>bin\x64\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V16_OR_LATER;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_DOTNET4;FOR_WIN64;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>bin\x64\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V16_OR_LATER;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_DOTNET4;FOR_WIN64;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Globalization.cs">
+      <Link>Common\Globalization.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Demos.cs">
+      <Link>Common\Demos.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\DialogUtilities.cs">
+      <Link>Common\DialogUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoader.cs">
+      <Link>Common\ImageFileLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.cs">
+      <Link>Common\ImageFileLoaderPagesDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.designer.cs">
+      <Link>Common\ImageFileLoaderPagesDialog.designer.cs</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\ImageFileSaver.cs">
+      <Link>Common\ImageFileSaver.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageInformation.cs">
+      <Link>Common\ImageInformation.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\ImagesDownloadDialog.cs">
+      <Link>Common\ImagesDownloadDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\ImagesDownloadDialog.designer.cs">
+      <Link>Common\ImagesDownloadDialog.designer.cs</Link>
+      <DependentUpon>ImagesDownloadDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\Messager.cs">
+      <Link>Common\Messager.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\PaintPropertiesDialog.cs">
+      <Link>Common\PaintPropertiesDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\PaintPropertiesDialog.Designer.cs">
+      <Link>Common\PaintPropertiesDialog.Designer.cs</Link>
+      <DependentUpon>PaintPropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\SeriesBrowser.cs">
+      <Link>Common\SeriesBrowser.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\SeriesBrowser.designer.cs">
+      <Link>Common\SeriesBrowser.designer.cs</Link>
+      <DependentUpon>SeriesBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\StudyBrowserDataSet.cs">
+      <Link>Common\StudyBrowserDataSet.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\Common\StudyBrowserDataSet.designer.cs">
+      <Link>Common\StudyBrowserDataSet.designer.cs</Link>
+      <DependentUpon>StudyBrowserDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\WaitCursor.cs">
+      <Link>Common\WaitCursor.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CheckUtility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CheckUtility.Designer.cs">
+      <DependentUpon>CheckUtility.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Histogram3DMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Histogram3DMap.Designer.cs">
+      <DependentUpon>Histogram3DMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ParaxialDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ParaxialDialog.Designer.cs">
+      <DependentUpon>ParaxialDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CounterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CounterDialog.designer.cs">
+      <DependentUpon>CounterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ContainerProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ContainerProperties.Designer.cs">
+      <DependentUpon>ContainerProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IsoThresholdDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\IsoThresholdDialog.designer.cs">
+      <DependentUpon>IsoThresholdDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LayoutOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LayoutOptions.Designer.cs">
+      <DependentUpon>LayoutOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaveItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaveItem.designer.cs">
+      <DependentUpon>SaveItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ThresholdDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ThresholdDialog.Designer.cs">
+      <DependentUpon>ThresholdDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utilities.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="..\Common\ImageFileLoaderPagesDialog.resx">
+      <Link>Common\ImageFileLoaderPagesDialog.resx</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Histogram3DMap.resx">
+      <DependentUpon>Histogram3DMap.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Common\ImagesDownloadDialog.resx">
+      <Link>Common\ImagesDownloadDialog.resx</Link>
+      <DependentUpon>ImagesDownloadDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\PaintPropertiesDialog.resx">
+      <Link>Common\PaintPropertiesDialog.resx</Link>
+      <DependentUpon>PaintPropertiesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\SeriesBrowser.resx">
+      <Link>Common\SeriesBrowser.resx</Link>
+      <DependentUpon>SeriesBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CheckUtility.resx">
+      <DependentUpon>CheckUtility.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ContainerProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContainerProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ParaxialDialog.resx">
+      <DependentUpon>ParaxialDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CounterDialog.resx">
+      <DependentUpon>CounterDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\IsoThresholdDialog.resx">
+      <DependentUpon>IsoThresholdDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LayoutOptions.resx">
+      <DependentUpon>LayoutOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaveItem.resx">
+      <DependentUpon>SaveItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ThresholdDialog.resx">
+      <DependentUpon>ThresholdDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Zoom.cur" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Medical.Viewer.WinForms.20.0.0.6\build\net40\Leadtools.Medical.Viewer.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Medical.Viewer.WinForms.20.0.0.6\build\net40\Leadtools.Medical.Viewer.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Legacy.20.0.0.6\build\net40\Leadtools.Legacy.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Legacy.20.0.0.6\build\net40\Leadtools.Legacy.targets'))" />
+  </Target>
+  <Import Project="packages\Leadtools.Legacy.20.0.0.6\build\net40\Leadtools.Legacy.targets" Condition="Exists('packages\Leadtools.Legacy.20.0.0.6\build\net40\Leadtools.Legacy.targets')" />
+  <Import Project="packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets" Condition="Exists('packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets')" />
+  <Import Project="packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets" Condition="Exists('packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets')" />
+  <Import Project="packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets" Condition="Exists('packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets')" />
+  <Import Project="packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets" Condition="Exists('packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" />
+  <Import Project="packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets" Condition="Exists('packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets')" />
+  <Import Project="packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets" Condition="Exists('packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets')" />
+  <Import Project="packages\Leadtools.Medical.Viewer.WinForms.20.0.0.6\build\net40\Leadtools.Medical.Viewer.WinForms.targets" Condition="Exists('packages\Leadtools.Medical.Viewer.WinForms.20.0.0.6\build\net40\Leadtools.Medical.Viewer.WinForms.targets')" />
+  <Import Project="packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets" Condition="Exists('packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" />
+  <Import Project="packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets" Condition="Exists('packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" />
+  <Import Project="packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets" Condition="Exists('packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" />
+  <Import Project="packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets" Condition="Exists('packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets')" />
+  <Import Project="packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets" Condition="Exists('packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="UI\App.config" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,106 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LEADTOOLS Medical Web Services</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="Resources/Images/favicon.ico" />
+    <link rel="stylesheet" href="Resources/Styles/LEADServiceStyles.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <nav></nav>
+        <header>
+            <a class="header-img" target="_blank" href="http://www.leadtools.com"><img src="Resources/Images/LeadtoolsHeader.png" alt="LEADTOOLS - The World Leader in Imaging SDKs" /></a>
+            <h1>LEADTOOLS Medical Web Services</h1>
+            <p>
+                The LEADTOOLS Medical Web Services are used to provide a web interface to our PACS Storage server. This is mainly consumed by the Medical Web Viewer demo.</a>
+            </p>
+            <p>
+                By default, all routing is within the "/api" namespace.
+            </p>
+        </header>
+
+        <div>
+            <div id="content">
+                <hr />
+                <div>
+                    <h3>Available services:</h3>
+                    <ul style="list-style: disc;">
+                        <li>audit</li>
+                        <li>auth</li>
+                        <li>auto</li>
+                        <li>export</li>
+                        <li>monitorcalibration</li>
+                        <li>query</li>
+                        <li>retrieve</li>
+                        <li>options</li>
+                        <li>pacsquery</li>
+                        <li>pacsretrieve</li>
+                        <li>patientaccessrights</li>
+                        <li>patient</li>
+                        <li>store</li>
+                        <li>template</li>
+                        <li>3d</li>
+                    </ul>
+                </div>
+                <hr />
+                <div>
+                    <h3>Ping</h3>
+                    <p>The status of the service can be checked at <a href="api/Test/Ping" class="monospace">api/Test/Ping</a>.</p>
+                    <div class="bordered">
+                        <button id="refreshPingStatistics" disabled>Refresh Ping</button>
+                        <section>
+                            <div id="pingStats" class="stats hide"></div>
+                        </section>
+                    </div>
+                </div>
+                <hr />
+                <div>
+                    <h3>Development</h3>
+                    <p>
+                        For a guide to better understanding this project for development, see the <a href="Resources/development.html">development page</a>.
+                    </p>
+                </div>
+                <hr />
+                <div>
+                    <h3>Connecting the HTML5 Medical Viewer</h3>
+                    <p>
+                        Modify the <span class="code">serviceUrl</span> found in the <span class="code">config.ts</span> and <span class="code">config.js</span> to point to the correct server's address (e.g. <span class="code"><i>http://localhost:23133</i></span>).
+                    </p>
+                    <p>
+                        Modify other parameters found in the <span class="code">config.ts</span> and <span class="code">config.js</span> as follows:
+                          
+                            <span class="code"><br />
+                            authenticationServiceName: "auth"<br/>
+                            queryLocalServiceName: "query"<br />
+                            queryPacsServiceName: "pacsquery"<br />
+                            optionsServiceName: "options"<br />
+                            objectRetrieveLocalServiceName: "retrieve"<br />
+                            pacsRetrieveServiceName: "pacsretrieve"<br />
+                            objectStoreLocalServiceName: "store"<br />
+                            monitorCalibrationServiceName: "monitorcalibration"<br />
+                            exportServiceName: "export"<br />
+                            auditLogServiceName: "audit"<br />
+                            patientServiceName: "patient"<br />
+                            patientAccessRightsServiceName: "patientaccessrights"<br />
+                            templateServiceName: "template"<br />
+                            threeDServiceName: "threed"<br /></span>
+                        
+                        </p>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footerLinks">
+                    <ul>
+                        <li><a href="http://www.leadtools.com/support/default.htm">Support</a></li>
+                        <li><a href="http://www.leadtools.com/resources/weborder.htm">Products</a></li>
+                    </ul>
+                </div>
+                <div id="footerCopyright">Copyright &copy; 1991-2019 All Rights Reserved. LEAD Technologies, Inc.</div>
+            </div>
+        </div>
+</body>
+</html>

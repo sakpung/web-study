@@ -1,0 +1,160 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C8205F2-D06D-443E-A171-40B61C6D32EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>VBPrinterServerConfigDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\Resources\Doc.ico</ApplicationIcon>
+    <Win32Resource>
+    </Win32Resource>
+    <ApplicationManifest>PrinterServerConfigDemo.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Printer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Printer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmInstallPrinter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmInstallPrinter.Designer.vb">
+      <DependentUpon>FrmInstallPrinter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\PrintingUtilities.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmInstallPrinter.resx">
+      <DependentUpon>FrmInstallPrinter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

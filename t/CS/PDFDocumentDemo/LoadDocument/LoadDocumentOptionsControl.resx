@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_pagesInfoLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_pagesInfoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 52</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_pagesInfoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_pagesInfoLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 20</value>
+  </data>
+  <data name="_pagesInfoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_pagesInfoLabel.Text" xml:space="preserve">
+    <value>This document contains ### page(s).</value>
+  </data>
+  <data name="&gt;&gt;_pagesInfoLabel.Name" xml:space="preserve">
+    <value>_pagesInfoLabel</value>
+  </data>
+  <data name="&gt;&gt;_pagesInfoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pagesInfoLabel.Parent" xml:space="preserve">
+    <value>_pagesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pagesInfoLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_readFontsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_readFontsCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_readFontsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 123</value>
+  </data>
+  <data name="_readFontsCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_readFontsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 24</value>
+  </data>
+  <data name="_readFontsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_readFontsCheckBox.Text" xml:space="preserve">
+    <value>Read &amp;fonts</value>
+  </data>
+  <data name="&gt;&gt;_readFontsCheckBox.Name" xml:space="preserve">
+    <value>_readFontsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_readFontsCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_readFontsCheckBox.Parent" xml:space="preserve">
+    <value>_objectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_readFontsCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_parseDigitalSignaturesCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_parseDigitalSignaturesCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_parseDigitalSignaturesCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 197</value>
+  </data>
+  <data name="_parseDigitalSignaturesCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_parseDigitalSignaturesCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 24</value>
+  </data>
+  <data name="_parseDigitalSignaturesCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_parseDigitalSignaturesCheckBox.Text" xml:space="preserve">
+    <value>Parse &amp;digital signatures</value>
+  </data>
+  <data name="&gt;&gt;_parseDigitalSignaturesCheckBox.Name" xml:space="preserve">
+    <value>_parseDigitalSignaturesCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_parseDigitalSignaturesCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_parseDigitalSignaturesCheckBox.Parent" xml:space="preserve">
+    <value>_objectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_parseDigitalSignaturesCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_parseChunksCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_parseChunksCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 407</value>
+  </data>
+  <data name="_parseChunksCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_parseChunksCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 24</value>
+  </data>
+  <data name="_parseChunksCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_parseChunksCheckBox.Text" xml:space="preserve">
+    <value>&amp;Yes, parse 50 pages at a time (if loading more than 50 pages)</value>
+  </data>
+  <data name="&gt;&gt;_parseChunksCheckBox.Name" xml:space="preserve">
+    <value>_parseChunksCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_parseChunksCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_parseChunksCheckBox.Parent" xml:space="preserve">
+    <value>_objectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_parseChunksCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_parseObjectsInfoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 264</value>
+  </data>
+  <data name="_parseObjectsInfoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_parseObjectsInfoLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>546, 125</value>
+  </data>
+  <data name="_parseObjectsInfoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_parseObjectsInfoLabel.Text" xml:space="preserve">
+    <value>This PDF document contains a large amount of pages and this demo will not be responsive while the data for all pages are parsed. You can read the document 50 pages at a time to allow cancelation of the load process at the expense of slightly decreasing the overall parse time.</value>
+  </data>
+  <data name="_parseObjectsInfoLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="&gt;&gt;_parseObjectsInfoLabel.Name" xml:space="preserve">
+    <value>_parseObjectsInfoLabel</value>
+  </data>
+  <data name="&gt;&gt;_parseObjectsInfoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_parseObjectsInfoLabel.Parent" xml:space="preserve">
+    <value>_objectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_parseObjectsInfoLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_parseObjectsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_parseObjectsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 160</value>
+  </data>
+  <data name="_parseObjectsCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_parseObjectsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>438, 24</value>
+  </data>
+  <data name="_parseObjectsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_parseObjectsCheckBox.Text" xml:space="preserve">
+    <value>Parse objects (&amp;Text, Hyperlinks, Annotations and Images)</value>
+  </data>
+  <data name="&gt;&gt;_parseObjectsCheckBox.Name" xml:space="preserve">
+    <value>_parseObjectsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_parseObjectsCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_parseObjectsCheckBox.Parent" xml:space="preserve">
+    <value>_objectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_parseObjectsCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_readInternalLinksCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_readInternalLinksCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 86</value>
+  </data>
+  <data name="_readInternalLinksCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_readInternalLinksCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 24</value>
+  </data>
+  <data name="_readInternalLinksCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_readInternalLinksCheckBox.Text" xml:space="preserve">
+    <value>Read &amp;inter-page links</value>
+  </data>
+  <data name="&gt;&gt;_readInternalLinksCheckBox.Name" xml:space="preserve">
+    <value>_readInternalLinksCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_readInternalLinksCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_readInternalLinksCheckBox.Parent" xml:space="preserve">
+    <value>_objectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_readInternalLinksCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_readBookmarksCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_readBookmarksCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 49</value>
+  </data>
+  <data name="_readBookmarksCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_readBookmarksCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 24</value>
+  </data>
+  <data name="_readBookmarksCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_readBookmarksCheckBox.Text" xml:space="preserve">
+    <value>Read document &amp;bookmarks (Table of Content)</value>
+  </data>
+  <data name="&gt;&gt;_readBookmarksCheckBox.Name" xml:space="preserve">
+    <value>_readBookmarksCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_readBookmarksCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_readBookmarksCheckBox.Parent" xml:space="preserve">
+    <value>_objectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_readBookmarksCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_objectsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 5</value>
+  </data>
+  <data name="_objectsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_objectsGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_objectsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>614, 441</value>
+  </data>
+  <data name="_objectsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_objectsGroupBox.Text" xml:space="preserve">
+    <value>&amp;Objects:</value>
+  </data>
+  <data name="&gt;&gt;_objectsGroupBox.Name" xml:space="preserve">
+    <value>_objectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_objectsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_objectsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_objectsGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_pagesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 197</value>
+  </data>
+  <data name="_pagesGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_pagesGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_pagesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 249</value>
+  </data>
+  <data name="_pagesGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_pagesGroupBox.Text" xml:space="preserve">
+    <value>&amp;Pages:</value>
+  </data>
+  <data name="&gt;&gt;_pagesGroupBox.Name" xml:space="preserve">
+    <value>_pagesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pagesGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pagesGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_pagesGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_resolutionHelpLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 86</value>
+  </data>
+  <data name="_resolutionHelpLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_resolutionHelpLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 80</value>
+  </data>
+  <data name="_resolutionHelpLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_resolutionHelpLabel.Text" xml:space="preserve">
+    <value>Higher resolution equals finer details on the raster image representation of a PDF page at the expense of more resources used.</value>
+  </data>
+  <data name="&gt;&gt;_resolutionHelpLabel.Name" xml:space="preserve">
+    <value>_resolutionHelpLabel</value>
+  </data>
+  <data name="&gt;&gt;_resolutionHelpLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_resolutionHelpLabel.Parent" xml:space="preserve">
+    <value>_resolutionGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_resolutionHelpLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_resolutionComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 43</value>
+  </data>
+  <data name="_resolutionComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_resolutionComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 28</value>
+  </data>
+  <data name="_resolutionComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_resolutionComboBox.Name" xml:space="preserve">
+    <value>_resolutionComboBox</value>
+  </data>
+  <data name="&gt;&gt;_resolutionComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_resolutionComboBox.Parent" xml:space="preserve">
+    <value>_resolutionGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_resolutionComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_resolutionGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="_resolutionGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_resolutionGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_resolutionGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 183</value>
+  </data>
+  <data name="_resolutionGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_resolutionGroupBox.Text" xml:space="preserve">
+    <value>&amp;Resolution:</value>
+  </data>
+  <data name="&gt;&gt;_resolutionGroupBox.Name" xml:space="preserve">
+    <value>_resolutionGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_resolutionGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_resolutionGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_resolutionGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1082, 461</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LoadDocumentOptionsControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

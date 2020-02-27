@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup Condition="'$(ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch)' == ''">
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59246CC5-7CCF-48B9-A925-D9B2714F2068}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DicomDemo</RootNamespace>
+    <AssemblyName>CSDicomStoreDemo</AssemblyName>
+    <StartupObject>DicomDemo.MainForm</StartupObject>
+    <ApplicationIcon>..\..\..\Resources\MedAddon.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>Bin\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;DEBUG;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>Bin\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>bin\x86\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;DEBUG;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>bin\x86\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>bin\x64\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;DEBUG;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>bin\x64\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Microsoft.WindowsAPICodePack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Globalization.cs">
+      <Link>Common\Globalization.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Dotnet\CS\Common\Demos.cs">
+      <Link>Common\Demos.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\DialogUtilities.cs">
+      <Link>Common\DialogUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Messager.cs">
+      <Link>Common\Messager.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\Base.cs">
+      <Link>DicomCommon\Base.cs</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\CStore.cs">
+      <Link>DicomCommon\CStore.cs</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\DicomDSCollection.cs">
+      <Link>DicomCommon\DicomDSCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\DicomServer.cs">
+      <Link>DicomCommon\DicomServer.cs</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\PresentationContext.cs">
+      <Link>DicomCommon\PresentationContext.cs</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\PresentationContextCollection.cs">
+      <Link>DicomCommon\PresentationContextCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\SCU\Scu.cs">
+      <Link>DicomCommon\SCU\Scu.cs</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\Utils.cs">
+      <Link>DicomCommon\Utils.cs</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\Tags.cs">
+      <Link>DicomCommon\Tags.cs</Link>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets'))" />
+  </Target>
+  <Import Project="packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets" Condition="Exists('packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets')" />
+  <Import Project="packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets" Condition="Exists('packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" />
+  <Import Project="packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets" Condition="Exists('packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets')" />
+  <Import Project="packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets" Condition="Exists('packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" />
+  <Import Project="packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets" Condition="Exists('packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets')" />
+  <Import Project="packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets" Condition="Exists('packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" />
+  <Import Project="packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets" Condition="Exists('packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" />
+  <Import Project="packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets" Condition="Exists('packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets')" />
+  <PropertyGroup />
+</Project>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <ProjectGuid>{4A79E990-C49C-41B5-AA1A-DB1D432772CD}</ProjectGuid>
+    <RootNamespace>MPPSWCFDemo</RootNamespace>
+    <AssemblyName>CSMPPSWCFDemo</AssemblyName>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ApplicationIcon>..\..\..\..\Resources\Med.ico</ApplicationIcon>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>..\..\..\..\Resources\Med.ico</ApplicationIcon>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ApplicationIcon>..\..\..\..\Resources\Med.ico</ApplicationIcon>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>..\..\..\..\Resources\Med.ico</ApplicationIcon>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>$(LeadConfigPath)System.Data.SqlServerCe.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\CS\Common\CustomChannelFactory.cs">
+      <Link>Common\CustomChannelFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\Globalization.cs">
+      <Link>Common\Globalization.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\DicomCommon\Utils.cs">
+      <Link>DicomCommon\Utils.cs</Link>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\..\CS\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\CS\Common\AboutDialog.resx">
+      <Link>Common\AboutDialog.resx</Link>
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pages\MPPSInstancePage.resx">
+      <DependentUpon>MPPSInstancePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pages\IntroductionPage.resx">
+      <DependentUpon>IntroductionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ObjectEditor.resx">
+      <DependentUpon>ObjectEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pages\SequencesPage.resx">
+      <DependentUpon>SequencesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pages\UnscheduledPatientPage.resx">
+      <DependentUpon>UnscheduledPatientPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PatientForm.resx">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\QueryForm.resx">
+      <DependentUpon>QueryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VisitEditor.resx">
+      <DependentUpon>VisitEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ExternalPage.resx">
+      <DependentUpon>ExternalPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\FirstPage.resx">
+      <DependentUpon>FirstPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\LastPage.resx">
+      <DependentUpon>LastPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Pages\InternalTemplatePage.resx">
+      <DependentUpon>InternalTemplatePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Pages\WelcomeTemplatePage.resx">
+      <DependentUpon>WelcomeTemplatePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardSheet.resx">
+      <DependentUpon>WizardSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\AboutDialog.cs">
+      <Link>Common\AboutDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\Demos.cs">
+      <Link>Common\Demos.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\DialogUtilities.cs">
+      <Link>Common\DialogUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\Messager.cs">
+      <Link>Common\Messager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="Service References\Broker\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\MPPSInstancePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Pages\MPPSInstancePage.Designer.cs">
+      <DependentUpon>MPPSInstancePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\IntroductionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Pages\IntroductionPage.Designer.cs">
+      <DependentUpon>IntroductionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ObjectEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ObjectEditor.Designer.cs">
+      <DependentUpon>ObjectEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\SequencesPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Pages\SequencesPage.Designer.cs">
+      <DependentUpon>SequencesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\UnscheduledPatientPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Pages\UnscheduledPatientPage.Designer.cs">
+      <DependentUpon>UnscheduledPatientPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PaintUtils.cs" />
+    <Compile Include="UI\PatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PatientForm.designer.cs">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ProgressDialog.Designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\QueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\QueryForm.Designer.cs">
+      <DependentUpon>QueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VisitEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VisitEditor.Designer.cs">
+      <DependentUpon>VisitEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\EtchedLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\EtchedLine.designer.cs">
+      <DependentUpon>EtchedLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\EventArgs\WizardCancelEventArgs.cs" />
+    <Compile Include="Wizard\EventArgs\WizardPageEventArgs.cs" />
+    <Compile Include="Wizard\ExternalPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ExternalPage.designer.cs">
+      <DependentUpon>ExternalPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\FirstPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\FirstPage.designer.cs">
+      <DependentUpon>FirstPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\InternalPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\InternalPage.designer.cs">
+      <DependentUpon>InternalPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\LastPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\LastPage.designer.cs">
+      <DependentUpon>LastPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\Pages\InternalTemplatePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\Pages\InternalTemplatePage.designer.cs">
+      <DependentUpon>InternalTemplatePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\Pages\WelcomeTemplatePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\Pages\WelcomeTemplatePage.designer.cs">
+      <DependentUpon>WelcomeTemplatePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardPage.designer.cs">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardPagesCollection.cs" />
+    <Compile Include="Wizard\WizardSheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardSheet.designer.cs">
+      <DependentUpon>WizardSheet.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\Broker\Arrays.xsd" />
+    <None Include="Service References\Broker\Leadtools.Dicom.Common.DataTypes.xsd" />
+    <None Include="Service References\Broker\Leadtools.Dicom.xsd" />
+    <None Include="Service References\Broker\Leadtools.Medical.DataAccessLayer.Catalog.xsd" />
+    <None Include="Service References\Broker\Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters.xsd" />
+    <None Include="Service References\Broker\Leadtools.Medical.Worklist.Wcf.Utils.xsd" />
+    <None Include="Service References\Broker\service.wsdl" />
+    <None Include="Service References\Broker\service.xsd" />
+    <None Include="Service References\Broker\service1.xsd" />
+    <None Include="Service References\Broker\service2.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Broker\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Broker\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Broker\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Broker\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+    <None Include="Service References\Broker\MPPSWCFDemo.Broker.ImagingServiceRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Broker\MPPSWCFDemo.Broker.WCFPatient.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Broker\MPPSWCFDemo.Broker.WCFPPSInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Broker\MPPSWCFDemo.Broker.WCFRequestedProcedure.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Broker\MPPSWCFDemo.Broker.WCFScheduledProcedureStep.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Broker\MPPSWCFDemo.Broker.WCFVisit.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LvSample.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

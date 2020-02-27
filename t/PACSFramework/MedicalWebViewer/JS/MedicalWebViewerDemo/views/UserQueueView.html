@@ -1,0 +1,106 @@
+﻿
+<div class="cine-buttons" style="Width: 200px; margin-left:20px;">
+    <label class="cine-controls save-button" ng-disabled="!canViewJob" ng-click="viewSeries()">
+        <i></i>
+    </label>
+    <label class="cine-controls minus-button" ng-disabled="!canDeleteJob" ng-click="deleteView()">
+        <i></i>
+    </label>    
+    <label class="cine-controls reset-button" ng-model="auto.refresh" btn-checkbox ng-change="refreshedChanged(auto.refresh)"><i></i></label>
+</div>
+<div style="margin-right: 0px;margin-left:5px;color:#9099A0">
+    <div class="form-group col-xs-5 col-sm-4 col-lg-2">
+        <label class="control-label" for="patientIdFilter">Status:</label>
+        <select id="patientIdFilter" type="text" placeholder="" class="study-dropdown w-dropdown" ng-model="filterQuery.status" ng-change="statusChanged(filterQuery.status)">
+            <option value=5>All</option>
+            <option value=0>Idle</option>
+            <option value=1>Started</option>
+            <option value=2>Completed</option>
+            <option value=3>Error</option>
+            <option value=4>Aborted</option>            
+        </select>
+    </div>
+    <div class="form-group col-xs-7 col-sm-4 col-lg-2">
+        <label class="control-label" for="patientNameFilter">Patient Name:</label>
+        <input id="patientNameFilter" type="text" placeholder="" class="form-control input-sm" ng-model="filterQuery.name" />
+    </div>
+    <div class="form-group col-xs-5 col-sm-4 col-lg-2">
+        <label class="control-label" for="serverFilter">Server AE:</label>
+        <input id="serverFilter" type="text" placeholder="" class="form-control input-sm" ng-model="filterQuery.server" />
+    </div>   
+</div>
+<form class="form-horizontal">
+    <accordion close-others="true">
+        <accordion-group ng-repeat="job in downloads | byJobInfo:filterQuery track by job.Id" is-open="job.open">
+            <accordion-heading>
+                <i class="pull-left fa" ng-class="{'fa-chevron-down': job.open, 'fa-chevron-right': !job.open}"></i>&nbsp;{{getJobHeader(job)}}
+            </accordion-heading>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1" style="font-weight:bold">Job ID:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{ job.Id }}</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1">Status:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{ job.Status }}</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1">Server:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{ job.Server.AETitle }},&nbsp;{{ job.Server.IPAddress }},&nbsp;{{ job.Server.Port }}</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1">Client:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{ job.Client.AETitle }}</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1">Patient Id:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{ job.SeriesInfo.PatientId }}</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1">Patient Name:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{ job.SeriesInfo.PatientName }}</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1">Study Description:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{ job.SeriesInfo.StudyDescription }}</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1">Series #:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{ job.SeriesInfo.SeriesNumber }}</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1">Series Description:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{ job.SeriesInfo.SeriesDescription }}</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1">Modality:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{ job.SeriesInfo.Modality }}</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0px">
+                <label class="control-label col-xs-1">Error Message:</label>
+                <div class="col-xs-11">
+                    <label class="control-label">{{job.ErrorMessage}}</label>
+                </div>
+            </div>
+        </accordion-group>    
+    </accordion>
+</form>

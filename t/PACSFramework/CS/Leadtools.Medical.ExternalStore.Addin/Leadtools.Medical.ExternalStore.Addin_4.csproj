@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3951F86-668E-4FD1-B983-5FDB474A5AC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leadtools.Medical.ExternalStore.Addin</RootNamespace>
+    <AssemblyName>Leadtools.Medical.ExternalStore.Addin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)PACSAddIns\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;FOR_DOTNET4;LEADTOOLS_V19_OR_LATER;FOR_ANYCPU;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0436</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)PACSAddIns\</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;FOR_DOTNET4;LEADTOOLS_V19_OR_LATER;FOR_ANYCPU;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0436</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.AddIn">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.AddIn.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging.Medical">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.Medical.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.AeManagement.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.AeManagement.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scu">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scu.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Winforms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Winforms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.ExternalStore.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.ExternalStore.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.AddIns">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.AddIns.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>      
+      <HintPath>$(LeadConfigPath)Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Workflow.Activities">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Workflow.ComponentModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\CS\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Common\Extensions.cs" />
+    <Compile Include="Common\Globals.cs" />
+    <Compile Include="Common\JobManager.cs" />
+    <Compile Include="ModuleInit.cs" />
+    <Compile Include="Processes\CleanProcess.cs" />
+    <Compile Include="Processes\ExternalStoreProcess.cs" />
+    <Compile Include="Processes\ExternalStoreServerMessage.cs" />
+    <Compile Include="Processes\ResetProcess.cs" />
+    <Compile Include="Processes\RestoreProcess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>@setlocal enableextensions enabledelayedexpansion
+set destDir="$(TargetPath)"
+set destDir=%25destDir:$(TargetFileName)=%25
+set destDir=%25destDir:Win32=x64%25
+if $(PlatformName)==AnyCPU (
+if EXIST %25destDir%25 (
+echo copy "$(TargetPath)" %25destDir%25
+copy "$(TargetPath)" %25destDir%25
+)
+)
+endlocal</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

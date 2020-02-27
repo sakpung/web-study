@@ -1,0 +1,19 @@
+﻿<div class="modal-content" modal-show modal-visible="showDialog">
+    <div class="modal-header">
+        <h3 class="modal-title" translate="DIALOGS_MONITOR_CALIBRATION_TITLE"></h3>
+    </div>
+    <div class="modal-body">
+        <label for="calibrationHistory" class="control-label" translate="HISTORY_LABEL"></label>
+        <div id="calibrationHistory" ui-grid="gridOptions" class="grid" ui-grid-selection ui-grid-auto-resize></div>
+        <label for="calibrationComments" class="control-label" translate="COMMENTS_LABEL"></label>
+        <textarea id="calibrationComments" rows="5" style="width:100%" ng-model="selectedCalibration.Comments" ng-disabled="true"></textarea>
+        <div class="btn-toolbar" role="toolbar" style="margin-top: 5px !important">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" ng-click="calibrate()" data-toggle="tooltip" title="Calibrate monitor" ng-disabled="!canCalibrate"><i class="fa fa-desktop"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="close()" translate="DIALOGS_CLOSE"></a>
+    </div>
+</div>

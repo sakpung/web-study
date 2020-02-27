@@ -1,0 +1,52 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title" translate="{{ title | translate }}"></h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" name="serverForm" novalidate>
+            <fieldset>
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="aeTitle">{{'AETITLE' | translate}}:</label>
+                    <div class="col-md-6">
+                        <input id="aeTitle" type="text" placeholder="" class="text-field" ng-model="server.AETitle" required autofocus />
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="ipAddress">{{'IPADDRESS' | translate}}:</label>
+                    <div class="col-md-6">
+                        <input id="ipAddress" type="text" placeholder="xxx.xxx.xxx.xxx" class="text-field" ng-model="server.IPAddress" ng-pattern='/^(\d{1,3}\.){3}(\d{1,3})$/' required only-digitsd>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="port">{{'PORT' | translate}}:</label>
+                    <div class="col-md-6">
+                        <input id="port" digits type="text" placeholder="" class="text-field" ng-model="server.Port" required only-digits />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-6 col-md-offset-4 checkbox">
+                        <label class="control-label" for="isDefault">
+                            <input type="checkbox" ng-model="server.isDefault" id="isdefault"/> Default Server
+                        </label>
+                        <br />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <a class="col-md-4 col-md-offset-4 btn btn-default" ng-disabled="!serverForm.$valid" ng-click="verify()">
+                        <i class="fa fa-check"></i>{{'VERIFY' | translate}}
+                    </a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a class="form-btn" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+        <a class="form-btn" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="serverForm.$invalid"></a>
+    </div>
+</div>

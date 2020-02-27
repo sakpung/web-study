@@ -1,0 +1,90 @@
+﻿.toolbar {
+   background: #DFE1E5;
+   white-space: nowrap;
+   position: fixed;
+   -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+   z-index: 1001;
+}
+
+.headerToolbarDiv {
+   overflow: visible;
+   left: 0px;
+   right: 0px;
+}
+
+.footerToolbarDiv {
+   overflow: auto;
+   text-align: center;
+   width: 100%;
+   bottom: 0px;
+}
+
+.verticalDivider {
+   margin: 0 10px;
+   border-left: 1px solid silver;
+}
+
+.checked {
+   outline: 1px solid #62a2e4;
+   border-radius: 0px;
+   background-color: #c9e0f7 !important;
+}
+
+button[disabled] {
+    outline: none;
+    border-radius: 0px;
+    opacity: .2 !important;
+}
+
+.toolbar > .btn:focus, .toolbar > .btn-group > .btn:focus {
+   border-radius: 0px;
+   outline: none;
+   outline-offset: 0px;
+}
+
+.toolbar > .btn-group > .btn:focus {
+   background-color: #eee !important;
+}
+
+.toolbar > .btn:active, .toolbar > .btn-group > .btn:active {
+   background-color: #eee !important;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+.toolbar > .btn-group > .dropdown-toggle {
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+.toolbar > .btn-group > .dropdown-menu {
+   width: 250px;
+   background-color: #eee;
+   border-radius: inherit;
+   margin: inherit;
+   border-top: 1px solid #eee;
+   border-left: 0px;
+}
+
+.toolbar > .btn.checked:focus {
+   outline: 1px solid #62a2e4;
+   outline-offset: 0px;
+}
+
+.dropdown-menu {
+   text-align: left;
+}
+
+.toolbarBtnText {
+   display: inline;
+   position: relative;
+   top: 10px;
+   vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+   .toolbarBtnText {
+      display: none; /* hide header toolbar buttons text(if used) on small display */
+   }
+}

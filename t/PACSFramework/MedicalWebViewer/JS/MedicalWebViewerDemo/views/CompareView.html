@@ -1,0 +1,11 @@
+﻿<div layout layout-config="layoutConfig" id='mainLayoutWindow' api="layoutApi" hide-south="hideTimeline">
+    <div class="ui-layout-center" style="height:100%">
+        <div medicalviewer viewer-id="{{viewerId}}" viewer-config="viewerConfig" series="seriesList" viewerapi="viewerapi" stack-changed="stackChanged(sender,e)"
+            style="position: relative; background-color: black; width: 100%; height: 100%; border: 0; margin: 0; padding: 0"
+            series-dropped="seriesDropped(viewer, oldSeriesInstanceUID, seriesInstanceUID, position, rowPosition, colPosition, bounds)">
+        </div>
+    </div>
+    <div class="ui-layout-north" style="padding: 0px !important; overflow: visible !important">
+        <div style="height:1px"></div>
+    </div>    
+</div>

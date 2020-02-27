@@ -1,0 +1,131 @@
+.ag-fresh .ag-root {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ag-fresh .ag-cell {
+  padding: 2px;
+}
+.ag-fresh .ag-column-moving .ag-cell {
+  -webkit-transition: left 0.2s;
+  -moz-transition: left 0.2s;
+  -o-transition: left 0.2s;
+  -ms-transition: left 0.2s;
+  transition: left 0.2s;
+}
+
+.ag-fresh .ag-cell-no-focus {
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.ag-fresh .ag-header-cell-moving .ag-header-cell-label {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+.ag-fresh .ag-header-cell-label {
+  padding: 4px 2px 4px 2px;
+}
+.ag-fresh .ag-header-cell-text {
+  padding-left: 2px;
+}
+.ag-fresh .ag-header-group-cell-label {
+  padding: 4px;
+  padding-left: 10px;
+}
+.ag-fresh .ag-header-group-text {
+  margin-right: 2px;
+}
+.ag-fresh .ag-header-cell-menu-button {
+  padding: 2px;
+  margin-top: 4px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; /* When using bootstrap, box-sizing was set to 'border-box' */
+  line-height: 0px; /* normal line height, a space was appearing below the menu button */
+}
+
+.ag-fresh .ag-overlay-loading-center {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.ag-fresh .ag-overlay-no-rows-center {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.ag-fresh .ag-group-cell-entire-row {
+  padding: 4px;
+}
+.ag-fresh .ag-footer-cell-entire-row {
+  padding: 4px;
+}
+.ag-fresh .ag-group-cell {
+  font-style: italic;
+}
+.ag-fresh .ag-group-expand {
+  padding-right: 2px;
+}
+.ag-fresh .ag-footer-cell {
+  font-style: italic;
+}
+.ag-fresh .ag-filter-checkbox {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.ag-fresh .ag-filter-apply-panel {
+  padding: 2px;
+}
+
+.ag-fresh .ag-filter-value {
+  margin-left: 4px;
+}
+.ag-fresh .ag-selection-checkbox {
+  margin-left: 4px;
+}
+.ag-fresh .ag-paging-panel {
+  padding: 4px;
+}
+.ag-fresh .ag-paging-button {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.ag-fresh .ag-paging-row-summary-panel {
+  display: inline-block;
+  width: 300px;
+}
+.ag-fresh .ag-column-not-visible {
+  opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: alpha(opacity=75);
+}
+.ag-fresh .ag-not-dragging {
+  border: 1px solid transparent;
+}
+
+.ag-fresh .ag-list-item-not-selected {
+  font-style: italic;
+}
+.ag-fresh .ag-tool-panel-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 4px;
+}
+.ag-fresh .ag-list-selection {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ag-fresh .ag-visible-icons {
+  padding-left: 2px;
+  padding-right: 2px;
+}

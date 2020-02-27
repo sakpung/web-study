@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_rdMemoryMode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_rdMemoryMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 38</value>
+  </data>
+  <data name="_rdMemoryMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 17</value>
+  </data>
+  <data name="_rdMemoryMode.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_rdMemoryMode.Text" xml:space="preserve">
+    <value>Memory Mode</value>
+  </data>
+  <data name="&gt;&gt;_rdMemoryMode.Name" xml:space="preserve">
+    <value>_rdMemoryMode</value>
+  </data>
+  <data name="&gt;&gt;_rdMemoryMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rdMemoryMode.Parent" xml:space="preserve">
+    <value>_gbTransferMode</value>
+  </data>
+  <data name="&gt;&gt;_rdMemoryMode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_rdFileMode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_rdFileMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 38</value>
+  </data>
+  <data name="_rdFileMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 17</value>
+  </data>
+  <data name="_rdFileMode.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_rdFileMode.Text" xml:space="preserve">
+    <value>File Mode</value>
+  </data>
+  <data name="&gt;&gt;_rdFileMode.Name" xml:space="preserve">
+    <value>_rdFileMode</value>
+  </data>
+  <data name="&gt;&gt;_rdFileMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rdFileMode.Parent" xml:space="preserve">
+    <value>_gbTransferMode</value>
+  </data>
+  <data name="&gt;&gt;_rdFileMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_gbTransferMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="_gbTransferMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 89</value>
+  </data>
+  <data name="_gbTransferMode.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_gbTransferMode.Text" xml:space="preserve">
+    <value>Transfer Mode</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferMode.Name" xml:space="preserve">
+    <value>_gbTransferMode</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferMode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferMode.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_gbFileModeOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="_cbAppendToFile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_cbAppendToFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 108</value>
+  </data>
+  <data name="_cbAppendToFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 17</value>
+  </data>
+  <data name="_cbAppendToFile.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_cbAppendToFile.Text" xml:space="preserve">
+    <value>Append To File</value>
+  </data>
+  <data name="&gt;&gt;_cbAppendToFile.Name" xml:space="preserve">
+    <value>_cbAppendToFile</value>
+  </data>
+  <data name="&gt;&gt;_cbAppendToFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbAppendToFile.Parent" xml:space="preserve">
+    <value>_gbFileModeOptions</value>
+  </data>
+  <data name="&gt;&gt;_cbAppendToFile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_cbOverwriteExisting.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_cbOverwriteExisting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 85</value>
+  </data>
+  <data name="_cbOverwriteExisting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 17</value>
+  </data>
+  <data name="_cbOverwriteExisting.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_cbOverwriteExisting.Text" xml:space="preserve">
+    <value>Overwrite Existing</value>
+  </data>
+  <data name="&gt;&gt;_cbOverwriteExisting.Name" xml:space="preserve">
+    <value>_cbOverwriteExisting</value>
+  </data>
+  <data name="&gt;&gt;_cbOverwriteExisting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbOverwriteExisting.Parent" xml:space="preserve">
+    <value>_gbFileModeOptions</value>
+  </data>
+  <data name="&gt;&gt;_cbOverwriteExisting.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_cbSaveToOneFile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_cbSaveToOneFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 62</value>
+  </data>
+  <data name="_cbSaveToOneFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 17</value>
+  </data>
+  <data name="_cbSaveToOneFile.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_cbSaveToOneFile.Text" xml:space="preserve">
+    <value>Save To One File</value>
+  </data>
+  <data name="&gt;&gt;_cbSaveToOneFile.Name" xml:space="preserve">
+    <value>_cbSaveToOneFile</value>
+  </data>
+  <data name="&gt;&gt;_cbSaveToOneFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbSaveToOneFile.Parent" xml:space="preserve">
+    <value>_gbFileModeOptions</value>
+  </data>
+  <data name="&gt;&gt;_cbSaveToOneFile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_btnBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 23</value>
+  </data>
+  <data name="_btnBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 23</value>
+  </data>
+  <data name="_btnBrowse.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_btnBrowse.Text" xml:space="preserve">
+    <value>&amp;...</value>
+  </data>
+  <data name="&gt;&gt;_btnBrowse.Name" xml:space="preserve">
+    <value>_btnBrowse</value>
+  </data>
+  <data name="&gt;&gt;_btnBrowse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnBrowse.Parent" xml:space="preserve">
+    <value>_gbFileModeOptions</value>
+  </data>
+  <data name="&gt;&gt;_btnBrowse.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_tbFileName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 25</value>
+  </data>
+  <data name="_tbFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 20</value>
+  </data>
+  <data name="_tbFileName.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_tbFileName.Name" xml:space="preserve">
+    <value>_tbFileName</value>
+  </data>
+  <data name="&gt;&gt;_tbFileName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbFileName.Parent" xml:space="preserve">
+    <value>_gbFileModeOptions</value>
+  </data>
+  <data name="&gt;&gt;_tbFileName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_lblFileName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblFileName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="_lblFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="_lblFileName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_lblFileName.Text" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="&gt;&gt;_lblFileName.Name" xml:space="preserve">
+    <value>_lblFileName</value>
+  </data>
+  <data name="&gt;&gt;_lblFileName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblFileName.Parent" xml:space="preserve">
+    <value>_gbFileModeOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblFileName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_gbFileModeOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 107</value>
+  </data>
+  <data name="_gbFileModeOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 151</value>
+  </data>
+  <data name="_gbFileModeOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_gbFileModeOptions.Text" xml:space="preserve">
+    <value>File Mode Options</value>
+  </data>
+  <data name="&gt;&gt;_gbFileModeOptions.Name" xml:space="preserve">
+    <value>_gbFileModeOptions</value>
+  </data>
+  <data name="&gt;&gt;_gbFileModeOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbFileModeOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbFileModeOptions.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_gbTransferBufferOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_numMemoryBufferSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 24</value>
+  </data>
+  <data name="_numMemoryBufferSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 20</value>
+  </data>
+  <data name="_numMemoryBufferSize.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_numMemoryBufferSize.Name" xml:space="preserve">
+    <value>_numMemoryBufferSize</value>
+  </data>
+  <data name="&gt;&gt;_numMemoryBufferSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numMemoryBufferSize.Parent" xml:space="preserve">
+    <value>_gbTransferBufferOptions</value>
+  </data>
+  <data name="&gt;&gt;_numMemoryBufferSize.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_cbEnableDoubleBuffer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_cbEnableDoubleBuffer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 55</value>
+  </data>
+  <data name="_cbEnableDoubleBuffer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 17</value>
+  </data>
+  <data name="_cbEnableDoubleBuffer.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="_cbEnableDoubleBuffer.Text" xml:space="preserve">
+    <value>Enable Double Buffer</value>
+  </data>
+  <data name="&gt;&gt;_cbEnableDoubleBuffer.Name" xml:space="preserve">
+    <value>_cbEnableDoubleBuffer</value>
+  </data>
+  <data name="&gt;&gt;_cbEnableDoubleBuffer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbEnableDoubleBuffer.Parent" xml:space="preserve">
+    <value>_gbTransferBufferOptions</value>
+  </data>
+  <data name="&gt;&gt;_cbEnableDoubleBuffer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_lblMemoryBufferSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblMemoryBufferSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 26</value>
+  </data>
+  <data name="_lblMemoryBufferSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 13</value>
+  </data>
+  <data name="_lblMemoryBufferSize.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_lblMemoryBufferSize.Text" xml:space="preserve">
+    <value>Memory Buffer Size (Bytes)</value>
+  </data>
+  <data name="&gt;&gt;_lblMemoryBufferSize.Name" xml:space="preserve">
+    <value>_lblMemoryBufferSize</value>
+  </data>
+  <data name="&gt;&gt;_lblMemoryBufferSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblMemoryBufferSize.Parent" xml:space="preserve">
+    <value>_gbTransferBufferOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblMemoryBufferSize.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_gbTransferBufferOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 12</value>
+  </data>
+  <data name="_gbTransferBufferOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 89</value>
+  </data>
+  <data name="_gbTransferBufferOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_gbTransferBufferOptions.Text" xml:space="preserve">
+    <value>Transfer Buffer Options</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferBufferOptions.Name" xml:space="preserve">
+    <value>_gbTransferBufferOptions</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferBufferOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferBufferOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferBufferOptions.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 234</value>
+  </data>
+  <data name="_btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 24</value>
+  </data>
+  <data name="_btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 234</value>
+  </data>
+  <data name="_btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 24</value>
+  </data>
+  <data name="_btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_btnOk.Text" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Name" xml:space="preserve">
+    <value>_btnOk</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>511, 270</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>WIA Acquire Options</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AcquireOptionsForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Resx_SaveFile" xml:space="preserve">
+    <value>Save File</value>
+  </data>
+</root>

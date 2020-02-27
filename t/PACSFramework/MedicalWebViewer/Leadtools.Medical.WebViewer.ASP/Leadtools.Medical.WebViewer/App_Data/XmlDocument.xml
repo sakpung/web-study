@@ -1,0 +1,521 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Leadtools.Medical.WebViewer.Asp</name>
+    </assembly>
+    <members>
+        <member name="M:Leadtools.Medical.WebViewer.Common.ServiceUtils.GetLocalIPAddressesV4">
+            <summary>
+            returns first local IP address
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Controllers.PacsQueryController.GetConnectionInfo">
+            <summary>
+            Gets the local database info, required to return local AETitle, anything else is up to implementer
+            </summary>
+            <returns>Client connection info</returns>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Controllers.TestController.Ping">
+            <summary>
+              Pings the service to ensure a connection, returning data about the status of the LEADTOOLS license.
+            </summary>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Controllers.AuthController.TempAuthenticate(System.Object)">
+            <summary>
+            temporary authorizes an anonymous user for certain patient specified in the model
+            
+            </summary>
+            <param name="model"></param>
+            <returns>encoded authentication info including a cookie</returns>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Controllers.AuthController.ImplicitAuthenticate(System.Object)">
+            <summary>
+            authenticates a user who already been authenticated by an external IdP
+            
+            </summary>
+            <param name="model"></param>
+            <returns>encoded authentication info including a cookie</returns>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Errors.ServiceInvalidParamException.#ctor(System.String)">
+            http://www.ihe.net/Technical_Framework/upload/IHE_RAD-TF_Suppl_XDSI_TI_2005-08-15.pdf
+            4.55.4.1.3 Expected Actions
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Errors.ServiceUnsupportedMimeException.#ctor(System.String)">
+            http://www.ihe.net/Technical_Framework/upload/IHE_RAD-TF_Suppl_XDSI_TI_2005-08-15.pdf
+            4.55.4.1.3 Expected Actions
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Errors.ServiceInvalidInstanceException.#ctor(System.String)">
+            http://www.ihe.net/Technical_Framework/upload/IHE_RAD-TF_Suppl_XDSI_TI_2005-08-15.pdf
+            4.55.4.1.3 Expected Actions
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Implementation.AuthHandler.Authenticate(Leadtools.Medical.WebViewer.ServiceContracts.IAuthenticationAddin,System.String,System.String@,Leadtools.Medical.WebViewer.DataContracts.ExtraOptions)">
+            <summary>
+            Checks the authentication cookie and extract/returns the user name. If user is not authenticated it throws the appropriate exception
+            </summary>
+            <param name="authenticationService"></param>
+            <param name="authenticationCookie"></param>
+            <param name="userName"></param>
+            <param name="extraOptions"></param>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Implementation.AuthHandler.Authorize(Leadtools.Medical.WebViewer.ServiceContracts.IAuthenticationAddin,System.String,Leadtools.Medical.WebViewer.DataContracts.Permission,Leadtools.Medical.WebViewer.DataContracts.ExtraOptions)">
+            <summary>
+            Checks if the user has permission to perform an operation and throws exception if not.
+            </summary>
+            <param name="authenticationService"></param>
+            <param name="userName"></param>
+            <param name="permission"></param>
+            <param name="extraOptions"></param>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Implementation.WadoRetrieveHandler">
+            <summary>
+            Retrieves objects from wado server
+            </summary>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Implementation.WadoRetrieveHandler.GetDicom(System.String,Leadtools.Medical.WebViewer.DataContracts.ObjectUID,Leadtools.Medical.WebViewer.DataContracts.GetDicomOptions)">
+            <summary>
+            Gets the raw DICOM object for an object
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="uid">UIDs. Only SOPInstanceUID is used</param>
+            <param name="options">Query options</param>
+            <returns>The DICOM as stream</returns>
+            <remarks>
+            <para>RoleName:CanRetrieve</para>
+            </remarks>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Implementation.RetrieveHandler">
+            <summary>
+            Retrieves objects from local PACS
+            </summary>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Implementation.PacsQueryHandler">
+            <summary>
+            query remote PACS for DICOM information (Patient, Study, series and instance level).
+            Mostly delegates all functionality to the PACS Query Addin after authentication and authorization
+            </summary>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Implementation.PacsRetrieveHandler">
+            <summary>
+            The Handler retrieves DICOM images from remote server through the Storage Server. 
+            Handler client sends a MOVE request to the remote server asking it to store the images into our local storage server.
+            
+            </summary>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Implementation.PatientAccessRightsHandler">
+            <summary>
+            The Handler is used for granting/denying users access to patients.
+            All functionality is implemented in the corresponding add-in after authentication and authorization.
+            </summary>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Implementation.StoreHandler">
+            <summary>
+            Stores any DICOM related information into the local Handler/database. All functionality is done through the add-in after authentication and authorization.
+            </summary>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Interfaces.IQueryHandler">
+            <summary>
+            Queries local database for patients, studies, series and instances.
+            </summary>
+            <remarks>
+            Local database (or PACS) address is stored in Web config at the server. Use GetQueryServiceInfo to get the its options
+            Each operation in the services must specify what role it falls into. You must first call IsUserInRole to check if the user
+            can perform the operation
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IQueryHandler.FindPatients(System.String,Leadtools.Medical.WebViewer.DataContracts.QueryOptions,Leadtools.Medical.WebViewer.DataContracts.ExtraOptions)">
+            <summary>
+            Find patients
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="options">Query options</param>
+            <param name="extraOptions">Extra options</param>
+            <returns>Patients found</returns>
+            <remarks>
+            <para>RoleName:CanQuery</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IQueryHandler.FindStudies(System.String,Leadtools.Medical.WebViewer.DataContracts.QueryOptions,Leadtools.Medical.WebViewer.DataContracts.ExtraOptions)">
+            <summary>
+            Find studies
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="options">Query options</param>
+            <param name="extraOptions">Extra options</param>
+            <returns>Studies found</returns>
+            <remarks>
+            <para>RoleName:CanQuery</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IQueryHandler.FindSeries(System.String,Leadtools.Medical.WebViewer.DataContracts.QueryOptions,Leadtools.Medical.WebViewer.DataContracts.ExtraOptions)">
+            <summary>
+            Find series
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="options">Query options</param>
+            <param name="extraOptions">Extra options</param>
+            <returns>Series found</returns>
+            <remarks>
+            <para>RoleName:CanQuery</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IQueryHandler.ElectStudyTimeLineInstances(System.String,Leadtools.Medical.WebViewer.DataContracts.QueryOptions)">
+            <summary>
+            finds best representing instances for a study's series(s)
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="options">Query options</param>
+            <returns>Instances found</returns>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Interfaces.IRetrieveHandler">
+            <summary>
+            Retrieves objects from local
+            </summary>
+            <remarks>
+            Each operation in the services must specify what role it falls into. You must first call IsUserInRole to check if the user
+            can perform the operation
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IRetrieveHandler.GetImage(System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Gets a single image
+            </summary>
+            <remarks>
+            <para>RoleName:CanRetrieve</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IRetrieveHandler.DownloadImage(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Double,System.Double,System.String)">
+            <summary>
+            Download a single image
+            </summary>
+            <remarks>
+            <para>RoleName:CanRetrieve</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IRetrieveHandler.GetDicom(System.String,Leadtools.Medical.WebViewer.DataContracts.ObjectUID,Leadtools.Medical.WebViewer.DataContracts.GetDicomOptions)">
+            <summary>
+            Gets the raw DICOM object for an object
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="uid">UIDs. Only SOPInstanceUID is used</param>
+            <param name="options">Query options</param>
+            <returns>The DICOM as stream</returns>
+            <remarks>
+            <para>RoleName:CanRetrieve</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IRetrieveHandler.GetAudio(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            streams audio from and IOD that supports audio
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IRetrieveHandler.GetAudioGroupsCount(System.String,System.String)">
+            <summary>
+            checks if audio is available for selected instance
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Interfaces.IPacsQueryHandler">
+            <summary>
+            Queries PACS for patients, studies, series and instance
+            </summary>
+            <remarks>
+            The local PACS connection is stored in web config. You can get this info using GetLocalPACSInfo.
+            Each operation in the services must specify what role it falls into. You must first call IsUserInRole to check if the user
+            can perform the operation
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IPacsQueryHandler.FindPatients(System.String,Leadtools.Medical.WebViewer.DataContracts.RemoteConnection,Leadtools.Medical.WebViewer.DataContracts.ClientConnection,Leadtools.Medical.WebViewer.DataContracts.QueryOptions)">
+            <summary>
+            Find patients
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="server">Server info</param>
+            <param name="client">Client info</param>
+            <param name="options">Query options</param>
+            <returns>Patients found</returns>
+            <remarks>
+            <para>RoleName:CanQueryPACS</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IPacsQueryHandler.FindStudies(System.String,Leadtools.Medical.WebViewer.DataContracts.RemoteConnection,Leadtools.Medical.WebViewer.DataContracts.ClientConnection,Leadtools.Medical.WebViewer.DataContracts.QueryOptions)">
+            <summary>
+            Find studies
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="server">Server info</param>
+            <param name="client">Client info, only ClientAE is used</param>
+            <param name="options">Query options</param>
+            <returns>Studies found</returns>
+            <remarks>
+            <para>RoleName:CanQueryPACS</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IPacsQueryHandler.FindSeries(System.String,Leadtools.Medical.WebViewer.DataContracts.RemoteConnection,Leadtools.Medical.WebViewer.DataContracts.ClientConnection,Leadtools.Medical.WebViewer.DataContracts.QueryOptions)">
+            <summary>
+            Find series
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="server">Server info</param>
+            <param name="client">Client info, only ClientAE is used</param>
+            <param name="options">Query options</param>
+            <returns>Series found</returns>
+            <remarks>
+            <para>RoleName:CanQueryPACS</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IPacsQueryHandler.ElectStudyTimeLineInstances(System.String,Leadtools.Medical.WebViewer.DataContracts.RemoteConnection,Leadtools.Medical.WebViewer.DataContracts.ClientConnection,Leadtools.Medical.WebViewer.DataContracts.QueryOptions)">
+            <summary>
+            finds best representing instances for a study's series(s)
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="server">Server info</param>
+            <param name="client">Client info, only ClientAE is used</param>
+            <param name="options">Query options</param>
+            <returns>Instances found</returns>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IPacsRetrieveHandler.DownloadImages(System.String,Leadtools.Medical.WebViewer.DataContracts.RemoteConnection,System.String,System.String,System.String,System.String,System.String,Leadtools.Medical.WebViewer.DataContracts.ExtraOptions)">
+            <summary>
+            Downloads the images for a patient, study or series
+            </summary>
+            <returns>Download info. Status could be Completed, Error or Aborted</returns>
+            <remarks>
+            retrieve level, so if SOP Instance UID is provided then it is image level if Series Instance UID is provided then it is Series and so on for Study UID and Patient ID.
+            This method blocks till the download completes, errors out or gets aborted. Internally, the implementer should create a thread
+            and finish the download in it
+            Each operation in the services must specify what role it falls into. You must first call IsUserInRole to check if the user
+            can perform the operation
+            <para>RoleName:CanDownloadImages</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IPacsRetrieveHandler.UpdateDownloadInfoStatus(System.String,Leadtools.Medical.WebViewer.DataContracts.DownloadInfo)">
+            <summary>
+            Updates the download info. Status should eventually change
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="info">Download info to update</param>
+            <returns>The updated download info</returns>
+            <remarks>
+            <para>RoleName:CanDownloadImages</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IPacsRetrieveHandler.GetJobStatus(System.String,System.String[])">
+            <summary>
+            Gets the downloads' status for this user based on id
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="JobsIds">array of job ids</param>
+            <returns>A list of the downloads' statuses for this user.</returns>
+            <remarks>
+            If options is null, then all the statuses are obtained. Otherwise, this works as the filter
+            <para>RoleName:CanDownloadImages</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IPacsRetrieveHandler.GetDownloadInfos(System.String,Leadtools.Medical.WebViewer.DataContracts.RemoteConnection,System.String,System.String,System.String,System.String,System.String,Leadtools.Medical.WebViewer.DataContracts.DownloadStatus)">
+            <summary>
+            Gets the downloads for this user based on options
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="server">Server info</param>
+            <param name="client">Client info</param>
+            <param name="patientID">Query options for patient</param>
+            <param name="studyInstanceUID">Query options for study</param>
+            <param name="seriesInstanceUID">Query options for series</param>
+            <param name="sopInstanceUID">Query options for instance</param>
+            <param name="status">Status interested in, pass 'All' to get all</param>
+            <returns>A list of the downloads for this user.</returns>
+            <remarks>
+            If options is null, then all the infos are obtained. Otherwise, this works as the filter
+            <para>RoleName:CanDownloadImages</para>
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IPacsRetrieveHandler.DeleteImages(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Deletes the images for this user based on options
+            </summary>
+            <param name="authenticationCookie">Cookie</param>      
+            <param name="patientID">Patient ID</param>
+            <param name="studyInstanceUID">StudyInstance UID</param>
+            <param name="seriesInstanceUID">SeriesInstance UID</param>
+            <param name="sopInstanceUID">SOPInstance UID</param>
+            <remarks>
+            If options is null, then all the images are deleted. Otherwise, this works as the filter
+            <para>RoleName:CanDeleteImages</para>
+            </remarks>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Interfaces.IPatientAccessRightsHandler">
+            <summary>
+            The service contract for the patient Access rights service
+            </summary>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Interfaces.IStoreHandler">
+            <summary>
+            Stores images to DICOM
+            </summary>
+            <remarks>
+            As previous services, can store to remote PACS or local database
+            Each operation in the services must specify what role it falls into. You must first call IsUserInRole to check if the user
+            can perform the operation
+            </remarks>    
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IStoreHandler.StoreSecondaryCapture(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Stores a secondary capture item from user's machine
+            </summary>
+            <param name="authenticationCookie">cookie</param>
+            <param name="EncodedCapture">base64 encoded png image</param>
+            <param name="OriginalSOPInstance">uid of related SOP</param>
+            <param name="SeriesNumber">Series Number</param>
+            <param name="SeriesDescription">Series Description</param>
+            <param name="ProtocolName">Protocol Name</param>
+        </member>
+        <member name="T:Leadtools.Medical.WebViewer.Services.Interfaces.ITemplateHandler">
+            <summary>
+            The service contract for the annotations service (not used anymore)
+            </summary>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.AuthenticateUser(System.String,System.String,System.String,System.Nullable{System.TimeSpan},System.String)">
+            <summary>
+            Authenticate a user
+            </summary>
+            <param name="userName">User name, must be previously created</param>
+            <param name="password">Password</param>
+            <param name="userData">Extra options passed to implementation</param>
+            <param name="lifeTime">overrides the 10 hours lifetime</param>
+            <param name="impersonatedUser">impersonated user</param>
+            <returns>an encrypted string (authenticationCookie), the returned string should be passed to
+            all methods in the other services as the "authenticationCookie" parameter</returns>
+            <remarks>
+            In implementation, there should be string CreateAuthenticationCookie(userName, password)
+            and IIdentity GetIdentity(authenticationCookie), this IIdentity is passed to the implementation
+            ctors through the factory. GetIdentity will throw an exception if timed out or invalid
+            Each operation in the services must specify what role it falls into. You must first call IsUserInRole to check if the user
+            can perform the operation
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.GetAuthenticationInfo(System.String,System.String)">
+            <summary>
+            Returns the info for the authentication cookie such as user name, expiration time and any extra options
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="userData">Extra options</param>
+            <returns>AuthenticationInfo</returns>
+            <remarks>
+            Copy same extra options in the return value .ExtraOption property in default implementation
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.IsTimedOut(Leadtools.Medical.WebViewer.DataContracts.AuthenticationInfo,System.String)">
+            <summary>
+            Checks if the cookie is timed out
+            </summary>
+            <param name="ai">Authentication Info</param>
+            <param name="userData">Extra options</param>
+            <returns>true/false</returns>
+            <remarks>
+            If timed out, the app needs to call AuthenticateUser again
+            </remarks>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.ValidatePermission(System.String,System.String)">
+            <summary>
+            validates the cookie for being authorized and against the passed permission
+            throws an exception if not valid for any reason
+            </summary>
+            <param name="authenticationCookie">Cookie</param>
+            <param name="permission">permission name, pass empty string for validating cookie only</param>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.IsAuthenticated(System.String)">
+            <summary>
+            validates the cookie for authentication
+            </summary>
+            <param name="authenticationCookie">cookie</param>
+            <returns></returns>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.HasPermission(System.String,System.String,System.String)">
+            <summary>
+            Checks if permission is available for a user
+            </summary>
+            <param name="username">user name</param>
+            <param name="permission">permission name</param>
+            <param name="userData">Extra options</param>
+            <returns></returns>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.GetUserPermissions(System.String,System.String)">
+            <summary>
+            returns user's permissions
+            </summary>
+            <param name="username">user name</param>
+            <param name="userData">Extra options</param>
+            <returns>array of permissions names</returns>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.GetUserRoles(System.String,System.String)">
+            <summary>
+            returns user's roles
+            </summary>
+            <param name="username">user name</param>
+            <param name="userData">Extra options</param>
+            <returns>array of roles names</returns>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.GrantPermission(System.String,System.String,System.String,System.String)">
+            <summary>
+            adds permission
+            </summary>
+            <param name="authenticationCookie">Authentication Info</param>
+            <param name="username">user name</param>
+            <param name="permission">permission name</param>
+            <param name="userData">extra options</param>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.DenyPermission(System.String,System.String,System.String,System.String)">
+            <summary>
+            removes permission
+            </summary>
+            <param name="authenticationCookie">Authentication Info</param>
+            <param name="username">user name</param>
+            <param name="permission">permission name</param>
+            <param name="userData">extra options</param>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.GrantRole(System.String,System.String,System.String,System.String)">
+            <summary>
+            adds role
+            </summary>
+            <param name="authenticationCookie">Authentication Info</param>
+            <param name="username">user name</param>
+            <param name="role">role name</param>
+            <param name="userData">extra options</param>
+        </member>
+        <member name="M:Leadtools.Medical.WebViewer.Services.Interfaces.IAuthHandler.DenyRole(System.String,System.String,System.String,System.String)">
+            <summary>
+            removes role
+            </summary>
+            <param name="authenticationCookie">Authentication Info</param>
+            <param name="username">user name</param>
+            <param name="role">role name</param>
+            <param name="userData">extra options</param>
+        </member>
+        <member name="P:Leadtools.Medical.WebViewerModels.PingResponse.message">
+            <summary>
+            A simple message, for testing.
+            </summary>
+        </member>
+        <member name="P:Leadtools.Medical.WebViewerModels.PingResponse.time">
+            <summary>
+            The current time, so the user may tell if it was cached.
+            </summary>
+        </member>
+        <member name="P:Leadtools.Medical.WebViewerModels.PingResponse.isLicenseChecked">
+            <summary>
+            Whether or not the license was able to be checked.
+            </summary>
+        </member>
+        <member name="P:Leadtools.Medical.WebViewerModels.PingResponse.isLicenseExpired">
+            <summary>
+            Whether or not the license is expired.
+            </summary>
+        </member>
+        <member name="P:Leadtools.Medical.WebViewerModels.PingResponse.kernelType">
+            <summary>
+            The type of kernel - evaluation, for example.
+            </summary>
+        </member>
+    </members>
+</doc>

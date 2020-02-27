@@ -1,0 +1,94 @@
+﻿<form class="form">
+    <fieldset>
+        <div class="row search-row" style="margin-left: 0px !important; margin-right: 0px !important">
+            <!-- <div class="form-group col-xs-5 col-sm-4 col-lg-2" >
+                <label class="control-label" for="patientID">{{ 'PATIENT' | translate }}&nbsp;{{ 'ID' | translate}}:</label>
+                <input id="patientID" name="patientId" type="text" placeholder="" class="form-control" ng-class="{'input-sm': isTabletOrMobile}" ng-model="queryOptions.PatientsOptions.PatientID" typeahead="patient for patient in patientids($viewValue)" ng-enter="doSearch()" />
+            </div>
+            <div class="form-group col-xs-7 col-sm-4 col-lg-2">
+                <label class="control-label" for="patientName">{{ 'PATIENT' | translate }}&nbsp;{{ 'NAME' | translate}}:</label>
+                <input id="patientName" name="patientName" type="text" placeholder="" class="form-control" ng-class="{'input-sm': isTabletOrMobile}" ng-model="queryOptions.PatientsOptions.PatientName" typeahead="patient for patient in patientNames($viewValue)" ng-enter="doSearch()" />
+            </div>
+            <div class="form-group col-xs-5 col-sm-4 col-lg-2" ng-class="{'input-xs': isTabletOrMobile}">
+                <label class="control-label" for="accessionNum">Accession #:</label>
+                <input id="accessionNum" name="accessionNum" type="text" placeholder="" class="form-control" ng-class="{'input-sm': isTabletOrMobile}" ng-model="queryOptions.StudiesOptions.AccessionNumber" ng-enter="doSearch()" />
+            </div>
+            <div class="form-group col-xs-7 col-sm-4 col-lg-2" ng-class="{'input-xs': isTabletOrMobile}">
+                <label class="control-label" for="referringDr">Referring Dr. Name:</label>
+                <input id="referringDr" name="referringDr" type="text" placeholder="" class="form-control" ng-class="{'input-sm': isTabletOrMobile}" ng-model="queryOptions.StudiesOptions.ReferDoctorName" ng-enter="doSearch()" />
+            </div>
+            <div class="form-group col-xs-12 col-sm-4 col-lg-2" ng-class="{'input-xs': isTabletOrMobile}">
+                <label class="control-label" for="modality">Modality:</label>
+                <input id="modality" name="modality" type="text" placeholder="" class="form-control" ng-class="{'input-sm': isTabletOrMobile}" ng-model="queryOptions.StudiesOptions.ModalitiesInStudy" ng-enter="doSearch()" />
+            </div> -->
+
+            <!-- <div class="input-container-first">
+                <label class="input-label" for="patientID">
+                    {{ 'PATIENT' | translate }}&nbsp;{{ 'ID' | translate}}:
+                </label> -->
+                <input type="text" placeholder="{{ 'PATIENT' | translate }}&nbsp;{{ 'ID' | translate}}:" class="search-text-field first-search-text-field" id="patientID" name="patientID" ng-class="{'input-sm': isTabletOrMobile}" ng-model="queryOptions.PatientsOptions.PatientID"
+                    typeahead="patient for patient in patientids($viewValue)" ng-enter="doSearch()" />
+            <!-- </div> -->
+
+            <!-- <div class="input-container">
+                <label class="input-label" for="patientName">
+                    {{ 'PATIENT' | translate }}&nbsp;{{ 'NAME' | translate}}:
+                </label> -->
+                <input type="text" placeholder="{{ 'PATIENT' | translate }}&nbsp;{{ 'NAME' | translate}}:" class="search-text-field" id="patientName" name="patientName" ng-class="{'input-sm': isTabletOrMobile}" ng-model="queryOptions.PatientsOptions.PatientName"
+                    typeahead="patient for patient in patientNames($viewValue)" ng-enter="doSearch()" />
+            <!-- </div> -->
+
+            <!-- <div class="input-container">
+                <label class="input-label" for="accessionNum">
+                    Accession #:
+                </label> -->
+                <input type="text" placeholder="Accession #:" class="search-text-field mobile-accession" id="accessionNum" name="accessionNum" ng-class="{'input-sm': isTabletOrMobile}" ng-model="queryOptions.StudiesOptions.AccessionNumber"
+                    ng-enter="doSearch()" />
+            <!-- </div> -->
+
+            <!-- <div class="input-container">
+                <label class="input-label" for="referringDr">
+                    Referring Dr. Name:
+                </label> -->
+                <input type="text" placeholder="Referring Dr. Name:" class="search-text-field" id="referringDr" name="referringDr" ng-class="{'input-sm': isTabletOrMobile}" ng-model="queryOptions.StudiesOptions.ReferDoctorName"
+                    ng-enter="doSearch()" />
+            <!-- </div> -->
+            <!-- <div class="input-container">
+                <label class="input-label" for="modality">
+                    Modality:
+                </label> -->
+                <input type="text" placeholder=" Modality:" class="search-text-field mobile-modality" id="modality" name="modality" ng-class="{'input-sm': isTabletOrMobile}" ng-model="queryOptions.StudiesOptions.ModalitiesInStudy"
+                    ng-enter="doSearch()" />
+            <!-- </div> -->
+            
+            <div class="button-container">
+                <button style="color:#9099A0 !important" id="searchButton" class="btn" ng-click="doSearch()" translate="SEARCH"></button>
+                <button style="color:#9099A0 !important" id="clearButton" class="btn" ng-click="clear()" translate="CLEAR"></button>
+            </div>
+            
+        </div>
+        <!--      
+        <div class="row" style="margin-right: 0px">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <div class="controls">                        
+                        <a id="searchButton" class="btn btn-default" ng-click="doSearch()" translate="SEARCH"></a>
+                        <a id="clearButton" class="btn btn-default" ng-click="clear()" translate="CLEAR"></a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    -->
+    <div  class="pacsQueryRow"  ng-include src="showPacsQuery ? 'views/PacsQuery.html' : null"></div>
+    </fieldset>
+    
+</form>
+<!--
+
+    <hr style="margin-top: 0px; margin-bottom: 5px" />
+-->
+<div elheightresize="" class="vbox boxItem">
+    <!--<div id="searchResults" elheightresize="" resize="resize()" ui-grid="gridOptions" class="grid" ui-grid-selection ui-grid-expandable ui-grid-pinning></div>-->
+    <div id="searchResults" ag-grid="gridOptions" class="ag-fresh" style="height:50%"></div>
+    <div id="searchResultsSeries" ag-grid="gridOptionsSeries" class="ag-fresh" style="height:50%"></div>
+</div>

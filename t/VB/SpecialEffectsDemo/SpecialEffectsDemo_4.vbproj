@@ -1,0 +1,172 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{283D383F-70E1-4452-9756-32C5D047CF1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Assembly</AppDesignerFolder>
+    <RootNamespace>SpecialEffectsDemo</RootNamespace>
+    <AssemblyName>VBSpecialEffectsDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\Resources\RasterPro.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>DEBUG,TRACE,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>DEBUG,TRACE,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.SpecialEffects">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.SpecialEffects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Demos.vb">
+      <Link>Common\Demos.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Globalization.vb">
+      <Link>Common\Globalization.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Messager.vb">
+      <Link>Common\Messager.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="Assembly\Program.vb" />
+    <Compile Include="Assembly\AssemblyInfo.vb" />
+    <Compile Include="UI\EffectsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EffectsDialog.designer.vb">
+      <DependentUpon>EffectsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShapeDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ShapeDialog.designer.vb">
+      <DependentUpon>ShapeDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TextDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TextDialog.designer.vb">
+      <DependentUpon>TextDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TransitionDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TransitionDialog.designer.vb">
+      <DependentUpon>TransitionDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Helpers.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\Resources\RasterPro.ico">
+      <Link>Resources\RasterPro.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EffectsDialog.resx">
+      <DependentUpon>EffectsDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ShapeDialog.resx">
+      <DependentUpon>ShapeDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TextDialog.resx">
+      <DependentUpon>TextDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TransitionDialog.resx">
+      <DependentUpon>TransitionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

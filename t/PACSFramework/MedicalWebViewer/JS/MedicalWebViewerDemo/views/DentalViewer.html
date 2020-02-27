@@ -1,0 +1,74 @@
+﻿<div layout id="layout" layout-config="layoutConfig" style="width: 100px; height: 100px" west-resized="westResized(state, options, element)" east-west="autoHideEW" api="layoutApi">
+    <div class="ui-layout-center">
+        <div medicalviewer class="selectDisable" viewer-id="{{viewerId}}" viewer-config="viewerConfig" series="seriesList" viewerapi="viewerapi"
+             style="position: relative; background-color: black; width: 100%; height: 100%; border: 0; margin: 0; padding: 0">
+        </div>
+    </div>
+    <div class="ui-layout-east"></div>
+    <div class="ui-layout-west" ng-controller="Controllers.SeriesListController" style="padding: 0px !important">
+        <div style="height:100%">            
+            <div id="searchResults" class="seriesList ag-fresh ag-root" style="height:100%; overflow:auto">
+                <span>
+                    <label> Series List </label>
+                    <button class="btn btn-xs" style:"vertical-align:center"="" data-toggle="tooltip" title="Save As Derived" style="margin-left: 5px;"><span class="fa fa-save"></span></button>
+                    <button class="btn btn-xs" data-toggle="tooltip" title="Compare" disabled="disabled" style="margin-left: 5px;"><span class="fa fa-check"></span></button>
+
+                </span>
+                <table id="myTable" ng-model="seriesListTable" border="1" style="width:100%">
+                        <tr>
+                            <th style="width:5%"><input type="checkbox" ng-model="all.checked" ng-change="doCheckAll(all.checked)" ></th>
+                            <th style="width:10%"></th>
+                            <th style="text-align:center; width:20%">Date</th>
+                            <th style="text-align:center; width:100%">Description</th>
+                        </tr>
+                </table>
+                <br>
+
+
+            </div>
+        </div>
+    </div>
+    <style>
+        .ui-layout-toggler-south {
+            border: 0;
+            height: 100% !important;
+        }
+
+        .ui-layout-toggler-south span {
+            height: 100% !important;
+        }
+
+        .ui-layout-toggler-south div {
+            width: 100%;
+            height: 22px; /* 3x 35 = 105 total height */
+        }
+    </style>
+    <div class="ui-layout-south">
+        <div id="{{overflowId}}" scroller resize-to-parent style="background-color: black">
+        </div>
+    </div>
+    <div class="ui-layout-north" style="padding: 0px !important; overflow: visible !important">
+        <div resize-to-parent class="ToolBar">
+            <div scroller resize-to-parent style="overflow: visible" ng-repeat="toolbar in toolbars">
+                <toolbar buttons="toolbar.items" name="toolbar.name" key="{{tabId}}" />
+            </div>
+        </div> 
+    </div>
+</div>
+
+<div class="contextMenu" id="seriesListMenu" style="display: none">
+    <ul style="width: 200px">
+        <li id="export">
+            <span style="font-size: 11px; font-family: Verdana">
+                <i class="fa fa-save"></i>
+                {{ 'SAVE_AS' | translate }}
+            </span>
+        </li>
+        <li id="compare">
+            <span style="font-size: 11px; font-family: Verdana">
+                <i class="glyphicon glyphicon-eye-open"></i>
+                {{ 'COMPARE' | translate }}
+            </span>
+        </li>
+    </ul>
+</div>

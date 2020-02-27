@@ -1,0 +1,621 @@
+﻿.icon {
+   position: relative;
+   display: inline-block;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 35px;
+   height: 25px;
+   top: 3px;
+}
+
+.icon-md {
+   width: 24px;
+   height: 24px;
+   background-size: 16px 16px;
+}
+
+.icon-sm {
+   width: 16px;
+   height: 16px;
+   background-size: 16px 16px;
+}
+
+.icon-xs {
+   margin: 0 auto;
+   top: 50%;
+   width: 10px;
+   height: 10px;
+}
+
+.duplicateIcon {
+   background-image: url(../Images/Icons/MultiPagesExportText.png);
+}
+
+.openIcon {
+   background-image: url(../Images/Icons/open.png);
+}
+
+.openUrlIcon {
+   background-image: url(../Images/Icons/openUrl.png);
+}
+
+.server {
+   background-image: url(../Images/Icons/Server.png);
+}
+
+.openAnnotationIcon {
+   background-image: url(../Images/Icons/openAnnotation.png);
+}
+
+.loadBatesStampIcon {
+   background-image: url(../Images/Icons/loadbates.png);
+}
+
+.saveIcon {
+   background-image: url(../Images/Icons/save.png);
+}
+
+.saveXMLIcon {
+   background-image: url(../Images/Icons/saveXML.png);
+}
+
+.closeIcon {
+   background-image: url(../Images/Icons/Close.png);
+}
+
+.viewIcon {
+   background-image: url(../Images/Icons/View.png);
+}
+
+.propertiesIcon {
+   background-image: url(../Images/Icons/Properties.png);
+}
+
+.runIcon {
+   background-image: url(../Images/Icons/Run.png);
+}
+
+.undoIcon {
+   background-image: url(../Images/Icons/Undo.png);
+}
+
+.redoIcon {
+   background-image: url(../Images/Icons/Redo.png);
+}
+
+.selectAllTextIcon {
+   background-image: url(../Images/Icons/selectAllText.png);
+}
+
+.selectAllAnnotationsIcon {
+   background-image: url(../Images/Icons/selectAllAnnotations.png);
+}
+
+.findTextIcon {
+   background-image: url(../Images/Icons/FindText.png);
+}
+
+.clearSelectionIcon {
+   background-image: url(../Images/Icons/clearSelection.png);
+}
+
+.copyTextIcon {
+   background-image: url(../Images/Icons/CopyText.png);
+}
+
+.selectAreaIcon {
+   background-image: url(../Images/Icons/SelectAreaMode.png);
+}
+
+.panZoomIcon {
+   background-image: url(../Images/Icons/PanZoomMode.png);
+}
+
+.magnifyGlassIcon {
+   background-image: url(../Images/Icons/MagnifyGlassMode.png);
+}
+
+.panIcon {
+   background-image: url(../Images/Icons/PanMode.png);
+}
+
+.zoomIcon {
+   background-image: url(../Images/Icons/ZoomMode.png);
+}
+
+.zoomToIcon {
+   background-image: url(../Images/Icons/ZoomToMode.png);
+}
+
+.selectTextIcon {
+   background-image: url(../Images/Icons/SelectTextMode.png);
+}
+
+.autoPanIcon {
+   background-image: url(../Images/Icons/AutoPanMode.png);
+}
+
+.inertiaScrollIcon {
+   background-image: url(../Images/Icons/InertiaScroll.png);
+}
+
+.fitIcon {
+   background-image: url(../Images/Icons/Fit.png);
+}
+
+.actualSizeIcon {
+   background-image: url(../Images/Icons/ActualSize.png);
+}
+
+.actualPageSizeIcon {
+   background-image: url(../Images/Icons/Document.png);
+}
+
+.page-FitIcon {
+   background-image: url(../Images/Icons/FitPage.png);
+}
+
+.fitWidthIcon {
+   background-image: url(../Images/Icons/FitWidth.png);
+}
+
+.svgViewIcon {
+   background-image: url(../Images/Icons/ViewAsSvg.png);
+}
+
+.imageViewIcon {
+   background-image: url(../Images/Icons/ViewAsImage.png);
+}
+
+.thumbnailsIcon {
+   background-image: url(../Images/Icons/Thumbnails.png);
+}
+
+.bookmarksIcon {
+   background-image: url(../Images/Icons/Bookmarks.png);
+}
+
+.annotationsIcon {
+   background-image: url(../Images/Icons/Annotations.png);
+}
+
+.firstPageIcon {
+   background-image: url(../Images/Icons/FirstPage.png);
+}
+
+.previousIcon {
+   background-image: url(../Images/Icons/PreviousPage.png);
+}
+
+.nextIcon {
+   background-image: url(../Images/Icons/NextPage.png);
+}
+
+.lastPageIcon {
+   background-image: url(../Images/Icons/LastPage.png);
+}
+
+.singlePageExportTextIcon {
+   background-image: url(../Images/Icons/SinglePageExportText.png);
+}
+
+.multiPagesExportTextIcon {
+   background-image: url(../Images/Icons/MultiPagesExportText.png);
+}
+
+.barcodeIcon {
+   background-image: url(../Images/Icons/Barcode.png);
+}
+
+.singleLayoutIcon {
+   background-image: url(../Images/Icons/Document.png);
+}
+
+.doubleLayoutIcon {
+   background-image: url(../Images/Icons/DoubleLayout.png);
+}
+
+.verticalLayoutIcon {
+   background-image: url(../Images/Icons/VerticalLayout.png);
+}
+
+.horizontalLayoutIcon {
+   background-image: url(../Images/Icons/HorizontalLayout.png);
+}
+
+.zoomInIcon {
+   background-image: url(../Images/Icons/ZoomIn.png);
+}
+
+.zoomOutIcon {
+   background-image: url(../Images/Icons/ZoomOut.png);
+}
+
+.flipIcon {
+   background-image: url(../Images/Icons/Flip.png);
+}
+
+.reverseIcon {
+   background-image: url(../Images/Icons/Reverse.png);
+}
+
+.rotateCounterClockwiseIcon {
+   background-image: url(../Images/Icons/CounterClockwise.png);
+}
+
+.rotateClockwiseIcon {
+   background-image: url(../Images/Icons/Clockwise.png);
+}
+
+.interpolationIcon {
+   background-image: url(../Images/Icons/Interpolation.png);
+}
+
+.settingsIcon {
+   background-image: url(../Images/Icons/Settings.png);
+}
+
+.helpIcon {
+   background-image: url(../Images/Icons/Help.png);
+}
+
+.documentIcon {
+   background-image: url(../Images/Icons/Document.png);
+}
+
+.userNameIcon {
+   background-image: url(../Images/Icons/UserName.png);
+}
+
+.showTextIndicatorsIcon {
+   background-image: url(../Images/Icons/ShowTextIndicators.png);
+}
+
+.showLinksIcon {
+   background-image: url(../Images/Icons/ShowLinks.png);
+}
+
+.selectIcon {
+   background-image: url(../Images/Icons/hand.png);
+}
+
+.lineIcon {
+   background-image: url(../Images/Icons/line.png);
+}
+
+.rectangleIcon {
+   background-image: url(../Images/Icons/rectangle.png);
+}
+
+.ellipseIcon {
+   background-image: url(../Images/Icons/circle.png);
+}
+
+.polylineIcon {
+   background-image: url(../Images/Icons/polyline.png);
+}
+
+.polygonIcon {
+   background-image: url(../Images/Icons/polygon.png);
+}
+
+.curveIcon {
+   background-image: url(../Images/Icons/sCurve.png);
+}
+
+.closedCurveIcon {
+   background-image: url(../Images/Icons/bSpline.png);
+}
+
+.pointerIcon {
+   background-image: url(../Images/Icons/pointer.png);
+}
+
+.freehandIcon {
+   background-image: url(../Images/Icons/pen.png);
+}
+
+.hiliteIcon {
+   background-image: url(../Images/Icons/highlight.png);
+}
+
+.textIcon {
+   background-image: url(../Images/Icons/a.png);
+}
+
+.textPointerIcon {
+   background-image: url(../Images/Icons/aArrow.png);
+}
+
+.noteIcon {
+   background-image: url(../Images/Icons/note.png);
+}
+
+.stampIcon {
+   background-image: url(../Images/Icons/image.png);
+}
+
+.rubberStampIcon {
+   background-image: url(../Images/Icons/stamp.png);
+}
+
+.hotspotIcon {
+   background-image: url(../Images/Icons/h.png);
+}
+
+.freehandHotspotIcon {
+   background-image: url(../Images/Icons/hSquiggles.png);
+}
+
+.pointIcon {
+   background-image: url(../Images/Icons/roundX.png);
+}
+
+.redactionIcon {
+   background-image: url(../Images/Icons/redact.png);
+}
+
+.rulerIcon {
+   background-image: url(../Images/Icons/ruler.png);
+}
+
+.polyRulerIcon {
+   background-image: url(../Images/Icons/90degreeRuler.png);
+}
+
+.protractorIcon {
+   background-image: url(../Images/Icons/protractor.png);
+}
+
+.crossProductIcon {
+   background-image: url(../Images/Icons/intersect.png);
+}
+
+.textRollupIcon {
+   background-image: url(../Images/Icons/pin.png);
+}
+
+.audioIcon {
+   background-image: url(../Images/Icons/sound.png);
+}
+
+.videoIcon {
+   background-image: url(../Images/Icons/video.png);
+}
+
+.triangleIcon {
+   background-image: url(../Images/Icons/triangle.png);
+}
+
+.richTextIcon {
+   background-image: url(../Images/Icons/RichText.png);
+}
+
+.butnAnnotationIcon {
+   background-image: url(../Images/Icons/burn.png);
+}
+
+.lockIcon {
+   background-image: url(../Images/Icons/lock.png);
+}
+
+.unlockIcon {
+   background-image: url(../Images/Icons/unlock.png);
+}
+
+.textHiliteIcon {
+   background-image: url(../Images/Icons/tHighlight.png);
+}
+
+.textStrikeoutIcon {
+   background-image: url(../Images/Icons/strikethrough.png);
+}
+
+.textUnderlineIcon {
+   background-image: url(../Images/Icons/underline.png);
+}
+
+.textRedactionIcon {
+   background-image: url(../Images/Icons/tRedact.png);
+}
+
+.stickyNoteIcon {
+   background-image: url(../Images/Icons/stickyNotes.png);
+}
+
+.applyDecryptorIcon {
+   background-image: url(../Images/Icons/applyDecryptor.png);
+}
+
+.applyEncryptorIcon {
+   background-image: url(../Images/Icons/applyEncryptor.png);
+}
+
+.restoreRedactIcon {
+   background-image: url(../Images/Icons/restoreRedact.png);
+}
+
+.realizeRedactIcon {
+   background-image: url(../Images/Icons/realizeRedact.png);
+}
+
+.runModeIcon {
+   background-image: url(../Images/Icons/run.png);
+}
+
+.designModeIcon {
+   background-image: url(../Images/Icons/solid.png);
+}
+
+.renderModeIcon {
+   background-image: url(../Images/Icons/RenderMode.png);
+}
+
+.renderModeSettingsIcon {
+   background-image: url(../Images/Icons/RenderModeSettings.png);
+}
+
+.bringToFrontIcon {
+   background-image: url(../Images/Icons/ToFront.png);
+}
+
+.sendToBackIcon {
+   background-image: url(../Images/Icons/ToBack.png);
+}
+
+.bringToFirstIcon {
+   background-image: url(../Images/Icons/ToFirst.png);
+}
+
+.sendToLastIcon {
+   background-image: url(../Images/Icons/ToLast.png);
+}
+
+.groupIcon {
+   background-image: url(../Images/Icons/Group.png);
+}
+
+.ungroupIcon {
+   background-image: url(../Images/Icons/Ungroup.png);
+}
+
+.resetRotatePointIcon {
+   background-image: url(../Images/Icons/ResetRotatePoint.png);
+}
+
+.rotateThumbIcon {
+   background-image: url(../Images/Icons/RotateThumb.png);
+}
+
+.renderOnThumbnailsIcon {
+   background-image: url(../Images/Icons/RenderAnnOnThumbnails.png);
+}
+
+.deselectOnDown-MouseIcon {
+   background-image: url(../Images/Icons/DeselectOnDown-Mouse.png);
+}
+
+.deselectOnDown-TouchIcon {
+   background-image: url(../Images/Icons/DeselectOnDown-Touch.png);
+}
+
+.twoParallelIcon {
+   background-image: url(../Images/Icons/parallelLines.png);
+}
+
+.fourParallelIcon {
+   background-image: url(../Images/Icons/fourLines.png);
+}
+
+.midLinesIcon {
+   background-image: url(../Images/Icons/midline.png);
+}
+
+.snapLinesIcon {
+   background-image: url(../Images/Icons/snap.png);
+}
+
+.intersectionLinesIcon {
+   background-image: url(../Images/Icons/intersect.png);
+}
+
+.cobbAngleIcon {
+   background-image: url(../Images/Icons/cobbAngle.png);
+}
+
+.norbergIcon {
+   background-image: url(../Images/Icons/norberg.png);
+}
+
+.firstPage-sm-Icon {
+   background-image: url(../Images/Icons/FirstPage-Small.png);
+}
+
+.previousPage-sm-Icon {
+   background-image: url(../Images/Icons/PreviousPage-Small.png);
+}
+
+.nextPage-Small-sm-Icon {
+   background-image: url(../Images/Icons/NextPage-Small.png);
+}
+
+.lastPage-sm-Icon {
+   background-image: url(../Images/Icons/LastPage-Small.png);
+}
+
+.rotateCounterClockwiseIcon-sm-Icon {
+   background-image: url(../Images/Icons/CounterClockwise-Small.png);
+}
+
+.rotateClockwiseIcon-sm-Icon {
+   background-image: url(../Images/Icons/Clockwise-Small.png);
+}
+
+.zoomIn-sm-Icon {
+   background-image: url(../Images/Icons/ZoomIn-Small.png);
+}
+
+.zoomOut-sm-Icon {
+   background-image: url(../Images/Icons/ZoomOut-Small.png);
+}
+
+.reload-sm-Icon {
+   background-image: url(../Images/Icons/Reload-Small.png);
+}
+
+
+.find-xs-Icon {
+   background-image: url(../Images/Icons/Find-xSmall.png);
+}
+
+.next-xs-Icon {
+   background-image: url(../Images/Icons/NextPage-xSmall.png);
+}
+
+.previous-xs-Icon {
+   background-image: url(../Images/Icons/PreviousPage-xSmall.png);
+}
+
+.documentAnnotationsIcon {
+   background-image: url(../Images/Icons/documentAnnotations.png);
+}
+
+.medicalAnnotationIcon {
+   background-image: url(../Images/Icons/medicalAnnotation.png);
+}
+
+.alignToLeft {
+   background-image: url(../Images/Icons/left-align.png);
+}
+
+.alignToCenter {
+   background-image: url(../Images/Icons/center-align.png);
+}
+
+.alignToRight {
+   background-image: url(../Images/Icons/right-align.png);
+}
+
+.alignToTop {
+   background-image: url(../Images/Icons/top-align.png);
+}
+
+.alignToMiddle {
+   background-image: url(../Images/Icons/middle-align.png);
+}
+
+.alignToBottom {
+   background-image: url(../Images/Icons/bottom-align.png);
+}
+
+.makeSameWidth {
+   background-image: url(../Images/Icons/make-same-width.png);
+}
+
+.makeSameHeight {
+   background-image: url(../Images/Icons/make-same-height.png);
+}
+
+.makeSameSize {
+   background-image: url(../Images/Icons/make-same-size.png);
+}

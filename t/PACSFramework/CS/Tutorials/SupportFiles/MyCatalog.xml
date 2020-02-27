@@ -1,0 +1,215 @@
+<CatalogDataSet>
+  <Entity>
+    <!--A name that uniquely identifies the patient table-->
+    <EntityKey>PatientTableEntityKey</EntityKey>
+
+    <!--Name of database table that holds the patient information-->
+    <EntityName>MyPatientTable</EntityName>
+
+    <!-- Not used-->
+    <DisplayName>MyPatientTable</DisplayName>
+  </Entity>
+
+  <Entity>
+    <EntityKey>StudyTableEntityKey</EntityKey>
+    <EntityName>MyStudyTable</EntityName>
+    <DisplayName>MyStudyTable</DisplayName>
+  </Entity>
+
+  <Entity>
+    <EntityKey>SeriesTableEntityKey</EntityKey>
+    <EntityName>MySeriesTable</EntityName>
+    <DisplayName>MySeriesTable</DisplayName>
+  </Entity>
+
+  <Entity>
+    <EntityKey>InstanceTableEntityKey</EntityKey>
+    <EntityName>MyInstanceTable</EntityName>
+    <DisplayName>MyInstanceTable</DisplayName>
+  </Entity>
+
+  <Element>
+    <!-- Table name to which the element belongs -->
+    <EntityKey>PatientTableEntityKey</EntityKey>
+
+    <!-- The MyPatient class properties are decorated with an [EntityElementAttribute] attribute. This must be identical to one of these properties. -->
+    <ElementKey>PatientIdentification</ElementKey>
+
+    <!-- Must be a column name of the corresponding table -->
+    <ElementName>PatientIdentification</ElementName>
+
+    <!-- Not used -->
+    <DisplayName>Patient ID</DisplayName>
+
+    <!-- True if a primary key; false otherwise -->
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>PatientTableEntityKey</EntityKey>
+    <ElementKey>PatientName</ElementKey>
+    <ElementName>PatientName</ElementName>
+    <DisplayName>Family Name</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>PatientTableEntityKey</EntityKey>
+    <ElementKey>PatientBirthday</ElementKey>
+    <ElementName>PatientBirthday</ElementName>
+    <DisplayName>Birth Date</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>PatientTableEntityKey</EntityKey>
+    <ElementKey>PatientSex</ElementKey>
+    <ElementName>PatientSex</ElementName>
+    <DisplayName>Sex</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>PatientTableEntityKey</EntityKey>
+    <ElementKey>PatientComments</ElementKey>
+    <ElementName>PatientComments</ElementName>
+    <DisplayName>Comments</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>SeriesTableEntityKey</EntityKey>
+    <ElementKey>SeriesSeriesInstanceUID</ElementKey>
+    <ElementName>SeriesSeriesInstanceUID</ElementName>
+    <DisplayName>Series Instance UID</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>SeriesTableEntityKey</EntityKey>
+    <ElementKey>SeriesModality</ElementKey>
+    <ElementName>SeriesModality</ElementName>
+    <DisplayName>Modality</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>SeriesTableEntityKey</EntityKey>
+    <ElementKey>SeriesSeriesNumber</ElementKey>
+    <ElementName>SeriesSeriesNumber</ElementName>
+    <DisplayName>Series Number</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>SeriesTableEntityKey</EntityKey>
+    <ElementKey>SeriesSeriesDate</ElementKey>
+    <ElementName>SeriesSeriesDate</ElementName>
+    <DisplayName>Series Date</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>SeriesTableEntityKey</EntityKey>
+    <ElementKey>SeriesSeriesDescription</ElementKey>
+    <ElementName>SeriesSeriesDescription</ElementName>
+    <DisplayName>Series Description</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>SeriesTableEntityKey</EntityKey>
+    <ElementKey>SeriesBodyPartExamined</ElementKey>
+    <ElementName>SeriesBodyPartExamined</ElementName>
+    <DisplayName>Body Part Examined</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>StudyTableEntityKey</EntityKey>
+    <ElementKey>StudyStudyInstanceUID</ElementKey>
+    <ElementName>StudyStudyInstanceUID</ElementName>
+    <DisplayName>Study Instance UID</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>StudyTableEntityKey</EntityKey>
+    <ElementKey>StudyStudyDate</ElementKey>
+    <ElementName>StudyStudyDate</ElementName>
+    <DisplayName>Study Date</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>StudyTableEntityKey</EntityKey>
+    <ElementKey>StudyAccessionNumber</ElementKey>
+    <ElementName>StudyAccessionNumber</ElementName>
+    <DisplayName>Accession Number</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>StudyTableEntityKey</EntityKey>
+    <ElementKey>StudyStudyId</ElementKey>
+    <ElementName>StudyStudyId</ElementName>
+    <DisplayName>Study ID</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>StudyTableEntityKey</EntityKey>
+    <ElementKey>StudyReferringPhysiciansName</ElementKey>
+    <ElementName>StudyReferringPhysiciansName</ElementName>
+    <DisplayName>Referring Physician</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>StudyTableEntityKey</EntityKey>
+    <ElementKey>StudyStudyDescription</ElementKey>
+    <ElementName>StudyStudyDescription</ElementName>
+    <DisplayName>Study Description</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>InstanceTableEntityKey</EntityKey>
+    <ElementKey>SOPInstanceUID</ElementKey>
+    <ElementName>SOPInstanceUID</ElementName>
+    <DisplayName>SOP Instance UID</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>InstanceTableEntityKey</EntityKey>
+    <ElementKey>ImageImageNumber</ElementKey>
+    <ElementName>ImageImageNumber</ElementName>
+    <DisplayName>Instance Number</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>InstanceTableEntityKey</EntityKey>
+    <ElementKey>ImageLastStoreDate</ElementKey>
+    <ElementName>ImageLastStoreDate</ElementName>
+    <DisplayName>Receive Date</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>InstanceTableEntityKey</EntityKey>
+    <ElementKey>ImageFilename</ElementKey>
+    <ElementName>ImageFilename</ElementName>
+    <DisplayName>Referenced File</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>InstanceTableEntityKey</EntityKey>
+    <ElementKey>ImageUniqueSOPClassUID</ElementKey>
+    <ElementName>ImageUniqueSOPClassUID</ElementName>
+    <DisplayName>SOP Class UID</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>InstanceTableEntityKey</EntityKey>
+    <ElementKey>ImageRows</ElementKey>
+    <ElementName>ImageRows</ElementName>
+    <DisplayName>Rows</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>InstanceTableEntityKey</EntityKey>
+    <ElementKey>ImageColumns</ElementKey>
+    <ElementName>ImageColumns</ElementName>
+    <DisplayName>Cols</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+  <Element>
+    <EntityKey>InstanceTableEntityKey</EntityKey>
+    <ElementKey>ImageBitsAllocated</ElementKey>
+    <ElementName>ImageBitsAllocated</ElementName>
+    <DisplayName>Bits Allocated</DisplayName>
+    <KeyElement>false</KeyElement>
+  </Element>
+</CatalogDataSet>

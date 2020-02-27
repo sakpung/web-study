@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F6293C7-98E1-43E8-BB92-6FFAB6121412}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leadtools.Medical.WebViewer</RootNamespace>
+    <AssemblyName>Leadtools.Medical.WebViewer.Asp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44378</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <!-- v20 - Debug - AnyCPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <CodeAnalysisRuleSet>CodeAnalysis\DotNet.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - AnyCPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_Data/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <!-- v20 - Debug - Win32 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Win32' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_WIN32,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <CodeAnalysisRuleSet>CodeAnalysis\DotNet.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - Win32 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;FOR_WIN32,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_Data/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <!-- v20 - Debug - X64 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|X64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\..\Bin\DotNet4\X64\</LeadConfigPath>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_WIN64,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - X64 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|X64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\..\Bin\DotNet4\X64\</LeadConfigPath>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;FOR_WIN64,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_Data/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <Import Project=".\ExtraAssemblies.targets" />
+  <ItemGroup>
+    <Reference Include="Leadtools.Dicom.Scp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.DataAccessLayer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.DataAccessLayer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebus, Version=4.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rebus.4.2.1\lib\net45\Rebus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Rebus.SqlServer, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rebus.SqlServer.4.0.0\lib\net45\Rebus.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" >
+       <HintPath>$(LeadConfigPath)System.Net.Http.dll</HintPath>
+       <SpecificVersion>False</SpecificVersion>
+       <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+       <SpecificVersion>False</SpecificVersion>
+       <HintPath>$(LeadConfigPath)System.Net.Http.Formatting.dll</HintPath>
+       <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Cors">
+       <SpecificVersion>False</SpecificVersion>
+       <HintPath>$(LeadConfigPath)System.Web.Cors.dll</HintPath>
+       <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http">
+       <SpecificVersion>False</SpecificVersion>
+       <HintPath>$(LeadConfigPath)System.Web.Http.dll</HintPath>
+       <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors">
+       <SpecificVersion>False</SpecificVersion>
+       <HintPath>$(LeadConfigPath)System.Web.Http.Cors.dll</HintPath>
+       <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+       <SpecificVersion>False</SpecificVersion>
+       <HintPath>$(LeadConfigPath)System.Web.Http.WebHost.dll</HintPath>
+       <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Ionic.Zip">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Cmp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.Cmp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.AddIn">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.AddIn.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Server.Admin">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Server.Admin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Winforms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Winforms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Options.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Options.DataAccessLayer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.ExternalStore.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.ExternalStore.DataAccessLayer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Logging.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Logging.DataAccessLayer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.PermissionsManagement.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.PermissionsManagement.DataAccessLayer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.AddIns">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.AddIns.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.UserManagementDataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.UserManagementDataAccessLayer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.WebViewer.Wado">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.WebViewer.Wado.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.DataAccessLayers">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.DataAccessLayers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.DataAccessLayers.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.DataAccessLayers.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.WebViewer.Addins">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.WebViewer.Addins.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.WebViewer.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.WebViewer.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.WebViewer.Jobs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.WebViewer.Jobs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.WebViewer.Jobs.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.WebViewer.Jobs.DataAccessLayer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.WebViewer.Annotations.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.WebViewer.Annotations.DataAccessLayer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Imaging">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Imaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Tasks">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.Addins">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.Addins.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Cmp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.Cmp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Jls">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.Jls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.AddIn">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.AddIn.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Tables">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Tables.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scu">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scu.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Color">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Color.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Effects">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Effects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.DataAccessLayers">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.DataAccessLayers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.DataAccessLayers.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.DataAccessLayers.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Engine">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Rendering.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Rendering.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Annotations">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Annotations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.SpecialEffects">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.SpecialEffects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Utilities">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging.Medical">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.Medical.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Caching">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Caching.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.AddIns">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.AddIns.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Logging.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Logging.DataAccessLayer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Resources\Images\favicon.ico">
+      <Link>Resources\Images\favicon.ico</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Resources\Images\LeadtoolsHeader.png">
+      <Link>Resources\Images\LeadtoolsHeader.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Resources\Images\loading.GIF">
+      <Link>Resources\Images\loading.GIF</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="ConfigFirst.html" />
+    <Content Include="Index.html" />
+    <Content Include="index.js" />
+    <Content Include="Resources\development.html" />
+    <Content Include="Resources\Styles\LEADServiceStyles.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\CS\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\CS\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Common\ApplicationSettings.cs" />
+    <Compile Include="Common\ExternalStorage.cs" />
+    <Compile Include="Common\HttpMultipartParser.cs" />
+    <Compile Include="Common\ServiceUtils.cs" />
+    <Compile Include="Common\LTCachingCtrl.cs" />
+    <Compile Include="Common\TimeStampProvider.cs" />
+    <Compile Include="Common\Converters.cs" />
+    <Compile Include="Common\FileUtility.cs" />
+    <Compile Include="Common\RequireHttpsAttribute.cs" />
+    <Compile Include="Common\SupportLock.cs" />
+    <Compile Include="Controllers\AutoController.cs" />
+    <Compile Include="Controllers\ExportController.cs" />
+    <Compile Include="Controllers\AuditController.cs" />
+    <Compile Include="Controllers\ThreeDController.cs" />
+    <Compile Include="Controllers\QueryController.cs" />
+    <Compile Include="Controllers\MonitorCalibrationController.cs" />
+    <Compile Include="Controllers\RetreiveController.cs" />
+    <Compile Include="Controllers\OptionsController.cs" />
+    <Compile Include="Controllers\PACSQueryController.cs" />
+    <Compile Include="Controllers\PACSRetrieveController.cs" />
+    <Compile Include="Controllers\PatientAccessRightsController.cs" />
+    <Compile Include="Controllers\PatientController.cs" />
+    <Compile Include="Controllers\StoreController.cs" />
+    <Compile Include="Controllers\TemplateController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Dependency\ScopeContainer.cs" />
+    <Compile Include="Errors\Exception.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Request.cs" />
+    <Compile Include="Models\Response.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Implementation\AppSettings.cs" />
+    <Compile Include="Services\Implementation\AddinsFactory.cs" />
+    <Compile Include="Services\Implementation\AuditHandler.cs" />
+    <Compile Include="Services\Implementation\HashingProvider.cs" />
+    <Compile Include="Services\Implementation\ThreeDHandler.cs" />
+    <Compile Include="Services\Implementation\StreamExportHandler.cs" />
+    <Compile Include="Services\Implementation\RebusSqlMessagesBus.cs" />
+    <Compile Include="Services\Implementation\InMemoryMessagesBus.cs" />
+    <Compile Include="Services\Implementation\AutoHandler.cs" />
+    <Compile Include="Services\Implementation\AuthHandler.cs" />
+    <Compile Include="Services\Implementation\ExportHandler.cs" />
+    <Compile Include="Services\Implementation\MonitorCalibrationHandler.cs" />
+    <Compile Include="Services\Implementation\WadoRetrieveHandler.cs" />
+    <Compile Include="Services\Implementation\WadoQueryHandler.cs" />
+    <Compile Include="Services\Implementation\QueryHandler.cs" />
+    <Compile Include="Services\Implementation\RetrieveHandler.cs" />
+    <Compile Include="Services\Implementation\OptionsHandler.cs" />
+    <Compile Include="Services\Implementation\PacsQueryHandler.cs" />
+    <Compile Include="Services\Implementation\PACSRetrieveHandler.cs" />
+    <Compile Include="Services\Implementation\PatientAccessRightsHandler.cs" />
+    <Compile Include="Services\Implementation\PatientHandler.cs" />
+    <Compile Include="Services\Implementation\StoreHandler.cs" />
+    <Compile Include="Services\Implementation\TemplateHandler.cs" />
+    <Compile Include="Services\Interfaces\IHashingProvider.cs" />
+    <Compile Include="Services\Interfaces\IThreeDHandler.cs" />
+    <Compile Include="Services\Interfaces\IStreamExportHandler.cs" />
+    <Compile Include="Services\Interfaces\IMessagesBus.cs" />
+    <Compile Include="Services\Interfaces\IAutoHandler.cs" />
+    <Compile Include="Services\Interfaces\IMonitorCalibrationHandler.cs" />
+    <Compile Include="Services\Interfaces\IAuditHandler.cs" />
+    <Compile Include="Services\Interfaces\IExportHandler.cs" />
+    <Compile Include="Services\Interfaces\IQueryHandler.cs" />
+    <Compile Include="Services\Interfaces\IRetreiveHandler.cs" />
+    <Compile Include="Services\Interfaces\IOptionsHandler.cs" />
+    <Compile Include="Services\Interfaces\IPACSQueryHandler.cs" />
+    <Compile Include="Services\Interfaces\IPACSRetrieveHandler.cs" />
+    <Compile Include="Services\Interfaces\IPatientAccessRightsHandler.cs" />
+    <Compile Include="Services\Interfaces\IPatientHandler.cs" />
+    <Compile Include="Services\Interfaces\IStoreHandler.cs" />
+    <Compile Include="Services\Interfaces\ITemplateHandler.cs" />
+    <Compile Include="Services\Interfaces\IValidateParameters.cs" />
+    <Compile Include="Services\Interfaces\IAuthHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CodeAnalysis\DotNet.ruleset" />
+    <Content Include="ExtraAssemblies.targets" />
+    <Content Include="local.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="connectionStrings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <!-- The "CopyLinkedFiles" target copies all linked Content files from their link directories to their project location. -->
+  <!-- This is necessary to keep up-to-date copies of Leadtools JS libs and other resources shared between multiple client projects. -->
+  <Target Name="CopyLinkedFiles" BeforeTargets="Build">
+    <ItemGroup>
+      <LinkedItem Include="@(Content)" Condition="%(Content.Link) != ''" />
+    </ItemGroup>
+    <Copy SourceFiles="@(LinkedItem)" DestinationFiles="%(LinkedItem.Link)" SkipUnchangedFiles="true" />
+  </Target>
+  <!-- End "CopyLinkedFiles" Target -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>23133</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:23133/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+      del "$(TargetDir)Leadtools.Medical3D.dll" /F
+      del "$(TargetDir)Leadtools.MedicalViewer.dll" /F
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- Check the bitness of IIS Express if we are trying to run this project using those conditions -->
+  <Target Name="AfterBuild" Condition="'$(UseIISExpress)' == 'true' And '$(BuildingInsideVisualStudio)' == 'true'">
+    <Message Text="Checking the bitness of IIS Express against the current configuration..." />
+    <Exec Command="..\Common\CheckIISExpressBitness.bat $(Platform) $(VisualStudioVersion)" />
+  </Target>
+  <Target Name="AfterBuild" Condition="'$(LEAD_Build)'=='true' And '$(Configuration)'=='Release20'">
+    <Exec Command="copy $(TargetPath) ..\..\..\..\..\..\..\Dist\Bin20\DotNet4\Win32\ /y" />
+    <Exec Command="copy $(TargetPath) ..\..\..\..\..\..\..\Dist\Bin20\DotNet4\X64\ /y" />
+  </Target>
+</Project>

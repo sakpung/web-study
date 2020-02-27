@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_mainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_mainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1276, 729</value>
+  </data>
+  <data name="_menuFile.Text" xml:space="preserve">
+    <value>ファイル(&amp;F)</value>
+  </data>
+  <data name="_menuItemFileLoadDICOM.Text" xml:space="preserve">
+    <value>DICOMのロード(&amp;L)...</value>
+  </data>
+  <data name="_menuItemFileLoadDICOMDIR.Text" xml:space="preserve">
+    <value>DICOMDIRのロード(&amp;D)...</value>
+  </data>
+  <data name="_menuItemHardwareCheck.Text" xml:space="preserve">
+    <value>3D関連のハードウェアのチェック</value>
+  </data>
+  <data name="_menuUnload.Text" xml:space="preserve">
+    <value>データセットのアンロード(&amp;U)</value>
+  </data>
+  <data name="_loadMeshMenu.Text" xml:space="preserve">
+    <value>メッシュのロード(&amp;L)...</value>
+  </data>
+  <data name="_saveMeshMenu.Text" xml:space="preserve">
+    <value>メッシュの保存(&amp;S)...</value>
+  </data>
+  <data name="_loadObjectStatusMenu.Text" xml:space="preserve">
+    <value>オブジェクトステータスのロード(＆L)...</value>
+  </data>
+  <data name="_saveObjectStatusMenu.Text" xml:space="preserve">
+    <value>オブジェクトステータスの保存(&amp;S)...</value>
+  </data>
+  <data name="_menuLoadObject.Text" xml:space="preserve">
+    <value>オブジェクトのロード(&amp;L)</value>
+  </data>
+  <data name="_menuSaveRawData.Text" xml:space="preserve">
+    <value>オブジェクトを生データとして保存</value>
+  </data>
+  <data name="_menuFile_exit.Text" xml:space="preserve">
+    <value>終了(&amp;E)</value>
+  </data>
+  <data name="_menuEdit.Text" xml:space="preserve">
+    <value>編集(&amp;E)</value>
+  </data>
+  <data name="_menuTransparency.Text" xml:space="preserve">
+    <value>透明度(&amp;T)...</value>
+  </data>
+  <data name="_menuPalette.Text" xml:space="preserve">
+    <value>&amp;パレット(&amp;P)</value>
+  </data>
+  <data name="_menuRemoveDensity.Text" xml:space="preserve">
+    <value>密度の削除(&amp;R)...</value>
+  </data>
+  <data name="_menuSSDMeshColor.Text" xml:space="preserve">
+    <value>メッシュ色(&amp;M)...</value>
+  </data>
+  <data name="_menuSSDIsoThreshold.Text" xml:space="preserve">
+    <value>ISOしきい値(&amp;I)...</value>
+  </data>
+  <data name="_menuItemEditReset.Text" xml:space="preserve">
+    <value>リセット(&amp;R)</value>
+  </data>
+  <data name="_menuDeleteAll.Text" xml:space="preserve">
+    <value>すべて削除(&amp;D)</value>
+  </data>
+  <data name="_menuView.Text" xml:space="preserve">
+    <value>表示(&amp;V)</value>
+  </data>
+  <data name="_showMPRWindows.Text" xml:space="preserve">
+    <value>MPRウィンドウの表示(&amp;S)</value>
+  </data>
+  <data name="_menuProperties.Text" xml:space="preserve">
+    <value>プロパティ(&amp;P)...</value>
+  </data>
+  <data name="_menuLayoutOptions.Text" xml:space="preserve">
+    <value>レイアウトのオプション(&amp;L)...</value>
+  </data>
+  <data name="_menuInvert.Text" xml:space="preserve">
+    <value>反転(&amp;I)</value>
+  </data>
+  <data name="_menuShowScrollBar.Text" xml:space="preserve">
+    <value>スクロールバーの表示(&amp;S)</value>
+  </data>
+  <data name="_menuCellType.Text" xml:space="preserve">
+    <value>セル型(&amp;C)</value>
+  </data>
+  <data name="_menu2DCell.Text" xml:space="preserve">
+    <value>2Dセル(&amp;2)</value>
+  </data>
+  <data name="_menuCutPlane2DCell.Text" xml:space="preserve">
+    <value>単一切断面2Dセル(&amp;C)</value>
+  </data>
+  <data name="_menuDoubleCutPlane2DCell.Text" xml:space="preserve">
+    <value>二重切断面2Dセル(&amp;D)</value>
+  </data>
+  <data name="_actionsMenuItem.Text" xml:space="preserve">
+    <value>アクション(&amp;A)</value>
+  </data>
+  <data name="_menuActionWindowLevel.Text" xml:space="preserve">
+    <value>ウィンドウレベル(&amp;W)</value>
+  </data>
+  <data name="_menuActionAlpha.Text" xml:space="preserve">
+    <value>アルファ(&amp;A)</value>
+  </data>
+  <data name="_menuActionScale.Text" xml:space="preserve">
+    <value>スケール(&amp;S)</value>
+  </data>
+  <data name="_menuActionMagnify.Text" xml:space="preserve">
+    <value>ズーム(&#xB;A)</value>
+  </data>
+  <data name="_menuActionPan.Text" xml:space="preserve">
+    <value>パン(&amp;P)</value>
+  </data>
+  <data name="_menuActionRotate.Text" xml:space="preserve">
+    <value>回転(&amp;R)</value>
+  </data>
+  <data name="_menuActionPanoramicPolygon.Text" xml:space="preserve">
+    <value>パノラマポリゴン(&amp;M)</value>
+  </data>
+  <data name="_menuActionProbeTool.Text" xml:space="preserve">
+    <value>プローブツール(&amp;P)</value>
+  </data>
+  <data name="_menuReferenceLine.Text" xml:space="preserve">
+    <value>参照線(&amp;R)</value>
+  </data>
+  <data name="_menuShowReferenceLine.Text" xml:space="preserve">
+    <value>参照線の表示(&amp;S)</value>
+  </data>
+  <data name="_menuShowReferenceBoundaries.Text" xml:space="preserve">
+    <value>参照線の境界の表示(&amp;B)</value>
+  </data>
+  <data name="_menuShowAllReferenceLines.Text" xml:space="preserve">
+    <value>すべての参照線の表示(&amp;A)</value>
+  </data>
+  <data name="_menuShowFirstAndLastReferenceLines.Text" xml:space="preserve">
+    <value>最初と最後の参照線を表示(&amp;F)</value>
+  </data>
+  <data name="_menuMPRLayout.Text" xml:space="preserve">
+    <value>MPRレイアウト(&amp;M)</value>
+  </data>
+  <data name="_menuShowCrossHair.Text" xml:space="preserve">
+    <value>十字線の表示(&amp;H)</value>
+  </data>
+  <data name="_menuColoredCrossHair.Text" xml:space="preserve">
+    <value>色付き十字線(&amp;C)</value>
+  </data>
+  <data name="_menuShowSlab.Text" xml:space="preserve">
+    <value>スラブの表示(&amp;S)</value>
+  </data>
+  <data name="_helpMenuItem.Text" xml:space="preserve">
+    <value>ヘルプ(&amp;H)</value>
+  </data>
+  <data name="_menuAbout.Text" xml:space="preserve">
+    <value>バージョン情報(&amp;A)...</value>
+  </data>
+  <data name="_printCellMenuItem.Text" xml:space="preserve">
+    <value>セルの印刷(&amp;P)...</value>
+  </data>
+  <data name="nudgeToolToolStripMenuItem.Text" xml:space="preserve">
+    <value>リージョン境界線拡張ツール(&amp;N)</value>
+  </data>
+  <data name="setToolStripMenuItem.Text" xml:space="preserve">
+    <value>設定(&amp;S)..</value>
+  </data>
+  <data name="customizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>カスタマイズ(&amp;C)</value>
+  </data>
+  <data name="shrinkToolToolStripMenuItem.Text" xml:space="preserve">
+    <value>縮小ツール(&amp;S)</value>
+  </data>
+  <data name="setToolStripMenuItem1.Text" xml:space="preserve">
+    <value>設定(&amp;S)..</value>
+  </data>
+  <data name="customizeToolStripMenuItem1.Text" xml:space="preserve">
+    <value>カスタマイズ(&amp;C)...</value>
+  </data>
+  <data name="_miEffectInvert.Text" xml:space="preserve">
+    <value>反転(&amp;I)</value>
+  </data>
+  <data name="_deleteGeneratorDropMenu.Text" xml:space="preserve">
+    <value>オプションの表示(&amp;S)</value>
+  </data>
+  <data name="_menuItemShowOptionsDeleteGenerator.Text" xml:space="preserve">
+    <value>斜切断線の削除(&amp;D)</value>
+  </data>
+  <data name="_menuItemShowOptionsSetGeneratorColor.Text" xml:space="preserve">
+    <value>生成色の設定(&amp;S)</value>
+  </data>
+  <data name="_cellRightClickMenu.Text" xml:space="preserve">
+    <value>オプションの表示(&amp;S)</value>
+  </data>
+  <data name="_rightClickWindowLevel.Text" xml:space="preserve">
+    <value>ウィンドウレベル(&amp;W)</value>
+  </data>
+  <data name="_rightClickAlpha.Text" xml:space="preserve">
+    <value>アルファ(&amp;A)</value>
+  </data>
+  <data name="_rightClickScale.Text" xml:space="preserve">
+    <value>スケール(&amp;S)</value>
+  </data>
+  <data name="_rightClickMagnify.Text" xml:space="preserve">
+    <value>ズーム(&amp;M)</value>
+  </data>
+  <data name="_rightClickPan.Text" xml:space="preserve">
+    <value>パン(&amp;P)</value>
+  </data>
+  <data name="_rightClickRotate.Text" xml:space="preserve">
+    <value>回転(&amp;R)</value>
+  </data>
+  <data name="_rightClickCellReferenceColor.Text" xml:space="preserve">
+    <value>参照線の色</value>
+  </data>
+  <data name="_rightClickProbeTool.Text" xml:space="preserve">
+    <value>プローブツール(&amp;P)</value>
+  </data>
+  <data name="toolStripButton1.Text" xml:space="preserve">
+    <value>テスト</value>
+  </data>
+  <data name="_panoramicRightClickCreateParaxialCell.Text" xml:space="preserve">
+    <value>近軸セルの作成(&amp;C)</value>
+  </data>
+  <data name="_panoramicRightClickInsertPoint.Text" xml:space="preserve">
+    <value>ポイントの挿入(&amp;I)</value>
+  </data>
+  <data name="_panoramicRightClickDeletePoint.Text" xml:space="preserve">
+    <value>ポイントの削除(&amp;D)</value>
+  </data>
+  <data name="_panoramicRightClickPolygonColor.Text" xml:space="preserve">
+    <value>ポリゴンの色(&amp;P)</value>
+  </data>
+  <data name="_panoramicRightClickDeletePolygon.Text" xml:space="preserve">
+    <value>ポリゴンの削除(&amp;G)</value>
+  </data>
+  <data name="_panoramicRightClickParaxialLineColor.Text" xml:space="preserve">
+    <value>近軸線の色</value>
+  </data>
+  <data name="_panoramicRightClickActiveParaxialColor.Text" xml:space="preserve">
+    <value>アクティブな近軸色(&amp;A)</value>
+  </data>
+  <data name="_panoramicRightClickParaxialProperties.Text" xml:space="preserve">
+    <value>近軸プロパティ(&amp;P)</value>
+  </data>
+  <data name="_panoramicRightClickDeleteParaxialCell.Text" xml:space="preserve">
+    <value>近軸セルの削除(&amp;D)</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1276, 729</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>LEADTOOLS メイン3Dデモ (C#)</value>
+  </data>
+  <data name="Resx_CompatibilityError" xml:space="preserve">
+    <value>互換性エラー</value>
+  </data>
+  <data name="Resx_DICOMDIRError" xml:space="preserve">
+    <value>ここから DICOMDIR をロードできないので Load DICOMDIR を使用してください</value>
+  </data>
+  <data name="Resx_Download" xml:space="preserve">
+    <value>サンプル画像のダウンロード</value>
+  </data>
+  <data name="Resx_Error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="Resx_HardwareError" xml:space="preserve">
+    <value>いくつかのハードウェアは3Dの正常の動作に必要な仕様を適合しません</value>
+  </data>
+  <data name="Resx_Information" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="Resx_MeshError" xml:space="preserve">
+    <value>他のメッシュを作成することができません。一度一つのメッシしかアップロードできません</value>
+  </data>
+  <data name="Resx_NotEnoughMemory" xml:space="preserve">
+    <value>3D オブジェクトを割り当てるには十分のメモリがありません。</value>
+  </data>
+  <data name="Resx_Preparing" xml:space="preserve">
+    <value>シリーズデータの準備しています</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BottomToolStripPanel.Name" xml:space="preserve">
+    <value>BottomToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;BottomToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContentPanel.Name" xml:space="preserve">
+    <value>ContentPanel</value>
+  </data>
+  <data name="&gt;&gt;ContentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripContentPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customizeToolStripMenuItem.Name" xml:space="preserve">
+    <value>customizeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;customizeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customizeToolStripMenuItem1.Name" xml:space="preserve">
+    <value>customizeToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;customizeToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LeftToolStripPanel.Name" xml:space="preserve">
+    <value>LeftToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;LeftToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudgeToolToolStripMenuItem.Name" xml:space="preserve">
+    <value>nudgeToolToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;nudgeToolToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RightToolStripPanel.Name" xml:space="preserve">
+    <value>RightToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;RightToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;setToolStripMenuItem.Name" xml:space="preserve">
+    <value>setToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;setToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;setToolStripMenuItem1.Name" xml:space="preserve">
+    <value>setToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;setToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;shrinkToolToolStripMenuItem.Name" xml:space="preserve">
+    <value>shrinkToolToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;shrinkToolToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripButton1.Name" xml:space="preserve">
+    <value>toolStripButton1</value>
+  </data>
+  <data name="&gt;&gt;toolStripButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TopToolStripPanel.Name" xml:space="preserve">
+    <value>TopToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;TopToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_actionsMenuItem.Name" xml:space="preserve">
+    <value>_actionsMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_actionsMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cellRightClickMenu.Name" xml:space="preserve">
+    <value>_cellRightClickMenu</value>
+  </data>
+  <data name="&gt;&gt;_cellRightClickMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_deleteGeneratorDropMenu.Name" xml:space="preserve">
+    <value>_deleteGeneratorDropMenu</value>
+  </data>
+  <data name="&gt;&gt;_deleteGeneratorDropMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_displayPanel.Name" xml:space="preserve">
+    <value>_displayPanel</value>
+  </data>
+  <data name="&gt;&gt;_displayPanel.Parent" xml:space="preserve">
+    <value>_mainPanel</value>
+  </data>
+  <data name="&gt;&gt;_displayPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_displayPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_helpMenuItem.Name" xml:space="preserve">
+    <value>_helpMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_helpMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_loadMeshMenu.Name" xml:space="preserve">
+    <value>_loadMeshMenu</value>
+  </data>
+  <data name="&gt;&gt;_loadMeshMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_loadObjectStatusMenu.Name" xml:space="preserve">
+    <value>_loadObjectStatusMenu</value>
+  </data>
+  <data name="&gt;&gt;_loadObjectStatusMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mainMenu.Name" xml:space="preserve">
+    <value>_mainMenu</value>
+  </data>
+  <data name="&gt;&gt;_mainMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_mainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mainMenu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_mainPanel.Name" xml:space="preserve">
+    <value>_mainPanel</value>
+  </data>
+  <data name="&gt;&gt;_mainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_mainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mainPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_menu2DCell.Name" xml:space="preserve">
+    <value>_menu2DCell</value>
+  </data>
+  <data name="&gt;&gt;_menu2DCell.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuAbout.Name" xml:space="preserve">
+    <value>_menuAbout</value>
+  </data>
+  <data name="&gt;&gt;_menuAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuActionAlpha.Name" xml:space="preserve">
+    <value>_menuActionAlpha</value>
+  </data>
+  <data name="&gt;&gt;_menuActionAlpha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuActionMagnify.Name" xml:space="preserve">
+    <value>_menuActionMagnify</value>
+  </data>
+  <data name="&gt;&gt;_menuActionMagnify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuActionPan.Name" xml:space="preserve">
+    <value>_menuActionPan</value>
+  </data>
+  <data name="&gt;&gt;_menuActionPan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuActionPanoramicPolygon.Name" xml:space="preserve">
+    <value>_menuActionPanoramicPolygon</value>
+  </data>
+  <data name="&gt;&gt;_menuActionPanoramicPolygon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuActionProbeTool.Name" xml:space="preserve">
+    <value>_menuActionProbeTool</value>
+  </data>
+  <data name="&gt;&gt;_menuActionProbeTool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuActionRotate.Name" xml:space="preserve">
+    <value>_menuActionRotate</value>
+  </data>
+  <data name="&gt;&gt;_menuActionRotate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuActionScale.Name" xml:space="preserve">
+    <value>_menuActionScale</value>
+  </data>
+  <data name="&gt;&gt;_menuActionScale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuActionWindowLevel.Name" xml:space="preserve">
+    <value>_menuActionWindowLevel</value>
+  </data>
+  <data name="&gt;&gt;_menuActionWindowLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuCellType.Name" xml:space="preserve">
+    <value>_menuCellType</value>
+  </data>
+  <data name="&gt;&gt;_menuCellType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuColoredCrossHair.Name" xml:space="preserve">
+    <value>_menuColoredCrossHair</value>
+  </data>
+  <data name="&gt;&gt;_menuColoredCrossHair.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuCutPlane2DCell.Name" xml:space="preserve">
+    <value>_menuCutPlane2DCell</value>
+  </data>
+  <data name="&gt;&gt;_menuCutPlane2DCell.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuDeleteAll.Name" xml:space="preserve">
+    <value>_menuDeleteAll</value>
+  </data>
+  <data name="&gt;&gt;_menuDeleteAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuDoubleCutPlane2DCell.Name" xml:space="preserve">
+    <value>_menuDoubleCutPlane2DCell</value>
+  </data>
+  <data name="&gt;&gt;_menuDoubleCutPlane2DCell.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuEdit.Name" xml:space="preserve">
+    <value>_menuEdit</value>
+  </data>
+  <data name="&gt;&gt;_menuEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuFile.Name" xml:space="preserve">
+    <value>_menuFile</value>
+  </data>
+  <data name="&gt;&gt;_menuFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuFile_exit.Name" xml:space="preserve">
+    <value>_menuFile_exit</value>
+  </data>
+  <data name="&gt;&gt;_menuFile_exit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuInvert.Name" xml:space="preserve">
+    <value>_menuInvert</value>
+  </data>
+  <data name="&gt;&gt;_menuInvert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemEditReset.Name" xml:space="preserve">
+    <value>_menuItemEditReset</value>
+  </data>
+  <data name="&gt;&gt;_menuItemEditReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemEditSSD.Name" xml:space="preserve">
+    <value>_menuItemEditSSD</value>
+  </data>
+  <data name="&gt;&gt;_menuItemEditSSD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemFileLoadDICOM.Name" xml:space="preserve">
+    <value>_menuItemFileLoadDICOM</value>
+  </data>
+  <data name="&gt;&gt;_menuItemFileLoadDICOM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemFileLoadDICOMDIR.Name" xml:space="preserve">
+    <value>_menuItemFileLoadDICOMDIR</value>
+  </data>
+  <data name="&gt;&gt;_menuItemFileLoadDICOMDIR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemHardwareCheck.Name" xml:space="preserve">
+    <value>_menuItemHardwareCheck</value>
+  </data>
+  <data name="&gt;&gt;_menuItemHardwareCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemShowOptionsDeleteGenerator.Name" xml:space="preserve">
+    <value>_menuItemShowOptionsDeleteGenerator</value>
+  </data>
+  <data name="&gt;&gt;_menuItemShowOptionsDeleteGenerator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemShowOptionsSetGeneratorColor.Name" xml:space="preserve">
+    <value>_menuItemShowOptionsSetGeneratorColor</value>
+  </data>
+  <data name="&gt;&gt;_menuItemShowOptionsSetGeneratorColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuLayoutOptions.Name" xml:space="preserve">
+    <value>_menuLayoutOptions</value>
+  </data>
+  <data name="&gt;&gt;_menuLayoutOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuLoadObject.Name" xml:space="preserve">
+    <value>_menuLoadObject</value>
+  </data>
+  <data name="&gt;&gt;_menuLoadObject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuMPRLayout.Name" xml:space="preserve">
+    <value>_menuMPRLayout</value>
+  </data>
+  <data name="&gt;&gt;_menuMPRLayout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuPalette.Name" xml:space="preserve">
+    <value>_menuPalette</value>
+  </data>
+  <data name="&gt;&gt;_menuPalette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuProperties.Name" xml:space="preserve">
+    <value>_menuProperties</value>
+  </data>
+  <data name="&gt;&gt;_menuProperties.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuReferenceLine.Name" xml:space="preserve">
+    <value>_menuReferenceLine</value>
+  </data>
+  <data name="&gt;&gt;_menuReferenceLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuRemoveDensity.Name" xml:space="preserve">
+    <value>_menuRemoveDensity</value>
+  </data>
+  <data name="&gt;&gt;_menuRemoveDensity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuSaveRawData.Name" xml:space="preserve">
+    <value>_menuSaveRawData</value>
+  </data>
+  <data name="&gt;&gt;_menuSaveRawData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuShowAllReferenceLines.Name" xml:space="preserve">
+    <value>_menuShowAllReferenceLines</value>
+  </data>
+  <data name="&gt;&gt;_menuShowAllReferenceLines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuShowCrossHair.Name" xml:space="preserve">
+    <value>_menuShowCrossHair</value>
+  </data>
+  <data name="&gt;&gt;_menuShowCrossHair.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuShowFirstAndLastReferenceLines.Name" xml:space="preserve">
+    <value>_menuShowFirstAndLastReferenceLines</value>
+  </data>
+  <data name="&gt;&gt;_menuShowFirstAndLastReferenceLines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuShowReferenceBoundaries.Name" xml:space="preserve">
+    <value>_menuShowReferenceBoundaries</value>
+  </data>
+  <data name="&gt;&gt;_menuShowReferenceBoundaries.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuShowReferenceLine.Name" xml:space="preserve">
+    <value>_menuShowReferenceLine</value>
+  </data>
+  <data name="&gt;&gt;_menuShowReferenceLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuShowScrollBar.Name" xml:space="preserve">
+    <value>_menuShowScrollBar</value>
+  </data>
+  <data name="&gt;&gt;_menuShowScrollBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuShowSlab.Name" xml:space="preserve">
+    <value>_menuShowSlab</value>
+  </data>
+  <data name="&gt;&gt;_menuShowSlab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuSSDIsoThreshold.Name" xml:space="preserve">
+    <value>_menuSSDIsoThreshold</value>
+  </data>
+  <data name="&gt;&gt;_menuSSDIsoThreshold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuSSDMeshColor.Name" xml:space="preserve">
+    <value>_menuSSDMeshColor</value>
+  </data>
+  <data name="&gt;&gt;_menuSSDMeshColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuTransparency.Name" xml:space="preserve">
+    <value>_menuTransparency</value>
+  </data>
+  <data name="&gt;&gt;_menuTransparency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuUnload.Name" xml:space="preserve">
+    <value>_menuUnload</value>
+  </data>
+  <data name="&gt;&gt;_menuUnload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuView.Name" xml:space="preserve">
+    <value>_menuView</value>
+  </data>
+  <data name="&gt;&gt;_menuView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuVolumeMinIP.Name" xml:space="preserve">
+    <value>_menuVolumeMinIP</value>
+  </data>
+  <data name="&gt;&gt;_menuVolumeMinIP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuVolumeMIP.Name" xml:space="preserve">
+    <value>_menuVolumeMIP</value>
+  </data>
+  <data name="&gt;&gt;_menuVolumeMIP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuVolumeMPR.Name" xml:space="preserve">
+    <value>_menuVolumeMPR</value>
+  </data>
+  <data name="&gt;&gt;_menuVolumeMPR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuVolumeSSD.Name" xml:space="preserve">
+    <value>_menuVolumeSSD</value>
+  </data>
+  <data name="&gt;&gt;_menuVolumeSSD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuVolumeVRT.Name" xml:space="preserve">
+    <value>_menuVolumeVRT</value>
+  </data>
+  <data name="&gt;&gt;_menuVolumeVRT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miEffectInvert.Name" xml:space="preserve">
+    <value>_miEffectInvert</value>
+  </data>
+  <data name="&gt;&gt;_miEffectInvert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickActiveParaxialColor.Name" xml:space="preserve">
+    <value>_panoramicRightClickActiveParaxialColor</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickActiveParaxialColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickCreateParaxialCell.Name" xml:space="preserve">
+    <value>_panoramicRightClickCreateParaxialCell</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickCreateParaxialCell.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickDeleteParaxialCell.Name" xml:space="preserve">
+    <value>_panoramicRightClickDeleteParaxialCell</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickDeleteParaxialCell.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickDeletePoint.Name" xml:space="preserve">
+    <value>_panoramicRightClickDeletePoint</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickDeletePoint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickDeletePolygon.Name" xml:space="preserve">
+    <value>_panoramicRightClickDeletePolygon</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickDeletePolygon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickInsertPoint.Name" xml:space="preserve">
+    <value>_panoramicRightClickInsertPoint</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickInsertPoint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickMenu.Name" xml:space="preserve">
+    <value>_panoramicRightClickMenu</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickParaxialLineColor.Name" xml:space="preserve">
+    <value>_panoramicRightClickParaxialLineColor</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickParaxialLineColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickParaxialProperties.Name" xml:space="preserve">
+    <value>_panoramicRightClickParaxialProperties</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickParaxialProperties.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickPolygonColor.Name" xml:space="preserve">
+    <value>_panoramicRightClickPolygonColor</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickPolygonColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickSeperator1.Name" xml:space="preserve">
+    <value>_panoramicRightClickSeperator1</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickSeperator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickSeperator2.Name" xml:space="preserve">
+    <value>_panoramicRightClickSeperator2</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickSeperator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickSeperator3.Name" xml:space="preserve">
+    <value>_panoramicRightClickSeperator3</value>
+  </data>
+  <data name="&gt;&gt;_panoramicRightClickSeperator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_printCellMenuItem.Name" xml:space="preserve">
+    <value>_printCellMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_printCellMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rightClickAlpha.Name" xml:space="preserve">
+    <value>_rightClickAlpha</value>
+  </data>
+  <data name="&gt;&gt;_rightClickAlpha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rightClickCellReferenceColor.Name" xml:space="preserve">
+    <value>_rightClickCellReferenceColor</value>
+  </data>
+  <data name="&gt;&gt;_rightClickCellReferenceColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rightClickMagnify.Name" xml:space="preserve">
+    <value>_rightClickMagnify</value>
+  </data>
+  <data name="&gt;&gt;_rightClickMagnify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rightClickPan.Name" xml:space="preserve">
+    <value>_rightClickPan</value>
+  </data>
+  <data name="&gt;&gt;_rightClickPan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rightClickProbeTool.Name" xml:space="preserve">
+    <value>_rightClickProbeTool</value>
+  </data>
+  <data name="&gt;&gt;_rightClickProbeTool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rightClickRotate.Name" xml:space="preserve">
+    <value>_rightClickRotate</value>
+  </data>
+  <data name="&gt;&gt;_rightClickRotate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rightClickScale.Name" xml:space="preserve">
+    <value>_rightClickScale</value>
+  </data>
+  <data name="&gt;&gt;_rightClickScale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rightClickToolStrip.Name" xml:space="preserve">
+    <value>_rightClickToolStrip</value>
+  </data>
+  <data name="&gt;&gt;_rightClickToolStrip.Parent" xml:space="preserve">
+    <value>_displayPanel</value>
+  </data>
+  <data name="&gt;&gt;_rightClickToolStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rightClickToolStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rightClickWindowLevel.Name" xml:space="preserve">
+    <value>_rightClickWindowLevel</value>
+  </data>
+  <data name="&gt;&gt;_rightClickWindowLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_saveMeshMenu.Name" xml:space="preserve">
+    <value>_saveMeshMenu</value>
+  </data>
+  <data name="&gt;&gt;_saveMeshMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_saveObjectStatusMenu.Name" xml:space="preserve">
+    <value>_saveObjectStatusMenu</value>
+  </data>
+  <data name="&gt;&gt;_saveObjectStatusMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_showMPRWindows.Name" xml:space="preserve">
+    <value>_showMPRWindows</value>
+  </data>
+  <data name="&gt;&gt;_showMPRWindows.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_mainMenu.Text" xml:space="preserve">
+    <value>_mainMenu</value>
+  </data>
+  <data name="_menuItemEditSSD.Text" xml:space="preserve">
+    <value>&amp;SSD</value>
+  </data>
+  <data name="_menuVolumeMinIP.Text" xml:space="preserve">
+    <value>MinIP</value>
+  </data>
+  <data name="_menuVolumeMIP.Text" xml:space="preserve">
+    <value>&amp;MIP</value>
+  </data>
+  <data name="_menuVolumeMPR.Text" xml:space="preserve">
+    <value>&amp;MPR</value>
+  </data>
+  <data name="_menuVolumeSSD.Text" xml:space="preserve">
+    <value>&amp;SSD</value>
+  </data>
+  <data name="_menuVolumeVRT.Text" xml:space="preserve">
+    <value>&amp;VRT</value>
+  </data>
+  <data name="_rightClickToolStrip.Text" xml:space="preserve">
+    <value>_rightClickToolStrip</value>
+  </data>
+</root>

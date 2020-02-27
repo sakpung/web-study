@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3175FA4B-6E8F-45D6-BFD9-3CBC24250FEB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ApplicationIcon>..\..\..\Resources\RasterPro.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>VBJPXDemo</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>VBJPXDemo</RootNamespace>
+    <StartupObject>VBJPXDemo.MainForm</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Controls.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Controls.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Effects">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Utilities">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Jpeg2000">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+      <HintPath>$(LeadConfigPath)Leadtools.Jpeg2000.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.Color">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+      <HintPath>$(LeadConfigPath)Leadtools.WinForms.CommonDialogs.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.File">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+      <HintPath>$(LeadConfigPath)Leadtools.WinForms.CommonDialogs.File.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Globalization.vb">
+      <Link>Common\Globalization.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Converters.vb">
+      <Link>Common\Converters.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Demos.vb">
+      <Link>Common\Demos.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\DialogUtilities.vb">
+      <Link>Common\DialogUtilities.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoader.vb">
+      <Link>Common\ImageFileLoader.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.designer.vb">
+      <Link>Common\ImageFileLoaderPagesDialog.designer.vb</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.vb">
+      <Link>Common\ImageFileLoaderPagesDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\ImageFileSaver.vb">
+      <Link>Common\ImageFileSaver.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageInformation.vb">
+      <Link>Common\ImageInformation.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Messager.vb">
+      <Link>Common\Messager.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\WaitCursor.vb">
+      <Link>Common\WaitCursor.vb</Link>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\AnimationSettings.Designer.vb">
+      <DependentUpon>AnimationSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AnimationSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AppendCommon.Designer.vb">
+      <DependentUpon>AppendCommon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AppendCommon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AppendDigitalSignature.Designer.vb">
+      <DependentUpon>AppendDigitalSignature.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AppendDigitalSignature.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AppendGMLData.Designer.vb">
+      <DependentUpon>AppendGMLData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AppendGMLData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ExtractFrames.Designer.vb">
+      <DependentUpon>ExtractFrames.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExtractFrames.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FileInformation.Designer.vb">
+      <DependentUpon>FileInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FileInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FragmentJPX.Designer.vb">
+      <DependentUpon>FragmentJPX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FragmentJPX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReadCommon.Designer.vb">
+      <DependentUpon>ReadCommon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReadCommon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReadDigitalSignature.Designer.vb">
+      <DependentUpon>ReadDigitalSignature.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReadDigitalSignature.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReadGML.Designer.vb">
+      <DependentUpon>ReadGML.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReadGML.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaveAnimation.Designer.vb">
+      <DependentUpon>SaveAnimation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaveAnimation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaveComposite.Designer.vb">
+      <DependentUpon>SaveComposite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaveComposite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaveList.Designer.vb">
+      <DependentUpon>SaveList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaveList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\Data.vb" />
+    <EmbeddedResource Include="..\Common\ImageFileLoaderPagesDialog.resx">
+      <Link>Common\ImageFileLoaderPagesDialog.resx</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerForm.resx">
+      <DependentUpon>ViewerForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\Resources\Leadtools.jpg">
+      <Link>Resources\Leadtools.jpg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Resources\RasterPro.ico">
+      <Link>Resources\RasterPro.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AnimationSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimationSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AppendCommon.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppendCommon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AppendDigitalSignature.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppendDigitalSignature.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AppendGMLData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppendGMLData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExtractFrames.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExtractFrames.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FileInformation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FileInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FragmentJPX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FragmentJPX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReadCommon.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReadCommon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReadDigitalSignature.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReadDigitalSignature.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReadGML.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReadGML.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaveAnimation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SaveAnimation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaveComposite.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SaveComposite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaveList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SaveList.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\No_Opacity.bmp" />
+    <EmbeddedResource Include="Resources\No_PreOpacity.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

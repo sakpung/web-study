@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UsersSource" targetNamespace="http://tempuri.org/Users.xsd" xmlns:mstns="http://tempuri.org/Users.xsd" xmlns="http://tempuri.org/Users.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UsersSource" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="UsersSource" msprop:Generator_UserDSName="UsersSource">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Users" msprop:Generator_UserTableName="Users" msprop:Generator_RowEvArgName="UsersRowChangeEvent" msprop:Generator_TableVarName="tableUsers" msprop:Generator_TablePropName="Users" msprop:Generator_RowDeletingName="UsersRowDeleting" msprop:Generator_RowChangingName="UsersRowChanging" msprop:Generator_RowDeletedName="UsersRowDeleted" msprop:Generator_RowEvHandlerName="UsersRowChangeEventHandler" msprop:Generator_TableClassName="UsersDataTable" msprop:Generator_RowChangedName="UsersRowChanged" msprop:Generator_RowClassName="UsersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" type="xs:string" />
+              <xs:element name="IsAdmin" msprop:Generator_ColumnVarNameInTable="columnIsAdmin" msprop:Generator_ColumnPropNameInRow="IsAdmin" msprop:Generator_ColumnPropNameInTable="IsAdminColumn" msprop:Generator_UserColumnName="IsAdmin" type="xs:boolean" default="false" />
+              <xs:element name="NewPassword" msdata:DataType="System.Security.SecureString, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnNewPassword" msprop:Generator_ColumnPropNameInRow="NewPassword" msprop:Generator_ColumnPropNameInTable="NewPasswordColumn" msprop:Generator_UserColumnName="NewPassword" type="xs:anyType" minOccurs="0" />
+              <xs:element name="Expires" msprop:Generator_ColumnVarNameInTable="columnExpires" msprop:Generator_ColumnPropNameInRow="Expires" msprop:Generator_ColumnPropNameInTable="ExpiresColumn" msprop:Generator_UserColumnName="Expires" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UseCardReader" msprop:Generator_ColumnVarNameInTable="columnUseCardReader" msprop:Generator_ColumnPropNameInRow="UseCardReader" msprop:Generator_ColumnPropNameInTable="UseCardReaderColumn" msprop:Generator_UserColumnName="UseCardReader" type="xs:boolean" default="false" />
+              <xs:element name="FriendlyName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FriendlyName" msprop:Generator_ColumnVarNameInTable="columnFriendlyName" msprop:Generator_ColumnPropNameInTable="FriendlyNameColumn" msprop:Generator_UserColumnName="FriendlyName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UserPermissions" msprop:Generator_UserTableName="UserPermissions" msprop:Generator_RowEvArgName="UserPermissionsRowChangeEvent" msprop:Generator_TableVarName="tableUserPermissions" msprop:Generator_TablePropName="UserPermissions" msprop:Generator_RowDeletingName="UserPermissionsRowDeleting" msprop:Generator_RowChangingName="UserPermissionsRowChanging" msprop:Generator_RowDeletedName="UserPermissionsRowDeleted" msprop:Generator_RowEvHandlerName="UserPermissionsRowChangeEventHandler" msprop:Generator_TableClassName="UserPermissionsDataTable" msprop:Generator_RowChangedName="UserPermissionsRowChanged" msprop:Generator_RowClassName="UserPermissionsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="360" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Permission" msprop:Generator_ColumnVarNameInTable="columnPermission" msprop:Generator_ColumnPropNameInRow="Permission" msprop:Generator_ColumnPropNameInTable="PermissionColumn" msprop:Generator_UserColumnName="Permission">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Permissions" msprop:Generator_UserTableName="Permissions" msprop:Generator_RowEvArgName="PermissionsRowChangeEvent" msprop:Generator_TableVarName="tablePermissions" msprop:Generator_TablePropName="Permissions" msprop:Generator_RowDeletingName="PermissionsRowDeleting" msprop:Generator_RowChangingName="PermissionsRowChanging" msprop:Generator_RowDeletedName="PermissionsRowDeleted" msprop:Generator_RowEvHandlerName="PermissionsRowChangeEventHandler" msprop:Generator_TableClassName="PermissionsDataTable" msprop:Generator_RowChangedName="PermissionsRowChanged" msprop:Generator_RowClassName="PermissionsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Permission" msprop:Generator_ColumnVarNameInTable="columnPermission" msprop:Generator_ColumnPropNameInRow="Permission" msprop:Generator_ColumnPropNameInTable="PermissionColumn" msprop:Generator_UserColumnName="Permission">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="UsersKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Users" />
+      <xs:field xpath="mstns:UserName" />
+    </xs:unique>
+    <xs:unique name="PK_UserNamePermission" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:UserPermissions" />
+      <xs:field xpath="mstns:UserName" />
+      <xs:field xpath="mstns:Permission" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Permissions" />
+      <xs:field xpath="mstns:Permission" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

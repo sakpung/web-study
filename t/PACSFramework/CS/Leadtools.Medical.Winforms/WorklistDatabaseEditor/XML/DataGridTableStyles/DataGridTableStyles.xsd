@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataGridTableStyles" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="NotPublic" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataGridTableStyles" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataGridTableStyles" msprop:Generator_DataSetName="DataGridTableStyles">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TableStyles" msprop:Generator_UserTableName="TableStyles" msprop:Generator_RowDeletedName="TableStylesRowDeleted" msprop:Generator_RowChangedName="TableStylesRowChanged" msprop:Generator_RowClassName="TableStylesRow" msprop:Generator_RowChangingName="TableStylesRowChanging" msprop:Generator_RowEvArgName="TableStylesRowChangeEvent" msprop:Generator_RowEvHandlerName="TableStylesRowChangeEventHandler" msprop:Generator_TableClassName="TableStylesDataTable" msprop:Generator_TableVarName="tableTableStyles" msprop:Generator_RowDeletingName="TableStylesRowDeleting" msprop:Generator_TablePropName="TableStyles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TableID" msprop:Generator_UserColumnName="TableID" msprop:Generator_ColumnVarNameInTable="columnTableID" msprop:Generator_ColumnPropNameInRow="TableID" msprop:Generator_ColumnPropNameInTable="TableIDColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ColumnStyles" msprop:Generator_UserTableName="ColumnStyles" msprop:Generator_RowDeletedName="ColumnStylesRowDeleted" msprop:Generator_RowChangedName="ColumnStylesRowChanged" msprop:Generator_RowClassName="ColumnStylesRow" msprop:Generator_RowChangingName="ColumnStylesRowChanging" msprop:Generator_RowEvArgName="ColumnStylesRowChangeEvent" msprop:Generator_RowEvHandlerName="ColumnStylesRowChangeEventHandler" msprop:Generator_TableClassName="ColumnStylesDataTable" msprop:Generator_TableVarName="tableColumnStyles" msprop:Generator_RowDeletingName="ColumnStylesRowDeleting" msprop:Generator_TablePropName="ColumnStyles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TableID" msprop:Generator_UserColumnName="TableID" msprop:Generator_ColumnVarNameInTable="columnTableID" msprop:Generator_ColumnPropNameInRow="TableID" msprop:Generator_ColumnPropNameInTable="TableIDColumn" type="xs:string" />
+              <xs:element name="ColumnID" msprop:Generator_UserColumnName="ColumnID" msprop:Generator_ColumnVarNameInTable="columnColumnID" msprop:Generator_ColumnPropNameInRow="ColumnID" msprop:Generator_ColumnPropNameInTable="ColumnIDColumn" type="xs:string" />
+              <xs:element name="ColumnType" msprop:Generator_UserColumnName="ColumnType" msprop:Generator_ColumnVarNameInTable="columnColumnType" msprop:Generator_ColumnPropNameInRow="ColumnType" msprop:Generator_ColumnPropNameInTable="ColumnTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ColumnFormat" msprop:Generator_UserColumnName="ColumnFormat" msprop:Generator_ColumnVarNameInTable="columnColumnFormat" msprop:Generator_ColumnPropNameInRow="ColumnFormat" msprop:Generator_ColumnPropNameInTable="ColumnFormatColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//TableStyles" />
+      <xs:field xpath="TableID" />
+    </xs:unique>
+    <xs:unique name="ColumnStyles_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//ColumnStyles" />
+      <xs:field xpath="TableID" />
+      <xs:field xpath="ColumnID" />
+    </xs:unique>
+    <xs:keyref name="Constraint2" refer="Constraint1" msprop:rel_Generator_UserRelationName="TableRelatedColumns" msprop:rel_Generator_RelationVarName="relationTableRelatedColumns" msprop:rel_Generator_UserChildTable="ColumnStyles" msprop:rel_Generator_UserParentTable="TableStyles" msprop:rel_Generator_ParentPropName="TableStylesRow" msprop:rel_Generator_ChildPropName="GetColumnStylesRows" msdata:RelationName="TableRelatedColumns">
+      <xs:selector xpath=".//ColumnStyles" />
+      <xs:field xpath="TableID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

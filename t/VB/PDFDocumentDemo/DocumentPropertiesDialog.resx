@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_okButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 732</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_okButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_okButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 35</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_okButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="_okButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Name" xml:space="preserve">
+    <value>_okButton</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_okButton.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="_notesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 732</value>
+  </data>
+  <data name="_notesLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_notesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>458, 88</value>
+  </data>
+  <data name="_notesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_notesLabel.Text" xml:space="preserve">
+    <value>Note: Some entries are based on first page in the document and might not be accurate for all pages.</value>
+  </data>
+  <data name="&gt;&gt;_notesLabel.Name" xml:space="preserve">
+    <value>_notesLabel</value>
+  </data>
+  <data name="&gt;&gt;_notesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_notesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_notesLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="_fileNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_fileNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 23</value>
+  </data>
+  <data name="_fileNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_fileNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="_fileNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_fileNameLabel.Text" xml:space="preserve">
+    <value>File name:</value>
+  </data>
+  <data name="&gt;&gt;_fileNameLabel.Name" xml:space="preserve">
+    <value>_fileNameLabel</value>
+  </data>
+  <data name="&gt;&gt;_fileNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileNameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_fileNameLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="_fileNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 20</value>
+  </data>
+  <data name="_fileNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_fileNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 26</value>
+  </data>
+  <data name="_fileNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_fileNameTextBox.Name" xml:space="preserve">
+    <value>_fileNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;_fileNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileNameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_fileNameTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="_numberOfPagesTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 220</value>
+  </data>
+  <data name="_numberOfPagesTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_numberOfPagesTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 26</value>
+  </data>
+  <data name="_numberOfPagesTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesTextBox.Name" xml:space="preserve">
+    <value>_numberOfPagesTextBox</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="_numberOfPagesLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_numberOfPagesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 223</value>
+  </data>
+  <data name="_numberOfPagesLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_numberOfPagesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 20</value>
+  </data>
+  <data name="_numberOfPagesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_numberOfPagesLabel.Text" xml:space="preserve">
+    <value>Number of pages:</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesLabel.Name" xml:space="preserve">
+    <value>_numberOfPagesLabel</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="_pageSizeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 260</value>
+  </data>
+  <data name="_pageSizeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_pageSizeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 26</value>
+  </data>
+  <data name="_pageSizeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_pageSizeTextBox.Name" xml:space="preserve">
+    <value>_pageSizeTextBox</value>
+  </data>
+  <data name="&gt;&gt;_pageSizeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pageSizeTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_pageSizeTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="_pageSizeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_pageSizeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 263</value>
+  </data>
+  <data name="_pageSizeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_pageSizeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="_pageSizeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_pageSizeLabel.Text" xml:space="preserve">
+    <value>Page size:</value>
+  </data>
+  <data name="&gt;&gt;_pageSizeLabel.Name" xml:space="preserve">
+    <value>_pageSizeLabel</value>
+  </data>
+  <data name="&gt;&gt;_pageSizeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pageSizeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_pageSizeLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="_isEncryptedTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 60</value>
+  </data>
+  <data name="_isEncryptedTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_isEncryptedTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 26</value>
+  </data>
+  <data name="_isEncryptedTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_isEncryptedTextBox.Name" xml:space="preserve">
+    <value>_isEncryptedTextBox</value>
+  </data>
+  <data name="&gt;&gt;_isEncryptedTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_isEncryptedTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_isEncryptedTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_isEncryptedLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_isEncryptedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 63</value>
+  </data>
+  <data name="_isEncryptedLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_isEncryptedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 20</value>
+  </data>
+  <data name="_isEncryptedLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_isEncryptedLabel.Text" xml:space="preserve">
+    <value>Encrypted:</value>
+  </data>
+  <data name="&gt;&gt;_isEncryptedLabel.Name" xml:space="preserve">
+    <value>_isEncryptedLabel</value>
+  </data>
+  <data name="&gt;&gt;_isEncryptedLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_isEncryptedLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_isEncryptedLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_versionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 180</value>
+  </data>
+  <data name="_versionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_versionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 26</value>
+  </data>
+  <data name="_versionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_versionTextBox.Name" xml:space="preserve">
+    <value>_versionTextBox</value>
+  </data>
+  <data name="&gt;&gt;_versionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_versionTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_versionTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_versionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_versionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 183</value>
+  </data>
+  <data name="_versionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_versionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="_versionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_versionLabel.Text" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="&gt;&gt;_versionLabel.Name" xml:space="preserve">
+    <value>_versionLabel</value>
+  </data>
+  <data name="&gt;&gt;_versionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_versionLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_versionLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_isPdfATextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 140</value>
+  </data>
+  <data name="_isPdfATextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_isPdfATextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 26</value>
+  </data>
+  <data name="_isPdfATextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_isPdfATextBox.Name" xml:space="preserve">
+    <value>_isPdfATextBox</value>
+  </data>
+  <data name="&gt;&gt;_isPdfATextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_isPdfATextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_isPdfATextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_isPdfALabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_isPdfALabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 143</value>
+  </data>
+  <data name="_isPdfALabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_isPdfALabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 20</value>
+  </data>
+  <data name="_isPdfALabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_isPdfALabel.Text" xml:space="preserve">
+    <value>Claims PDF/A Compliance:</value>
+  </data>
+  <data name="&gt;&gt;_isPdfALabel.Name" xml:space="preserve">
+    <value>_isPdfALabel</value>
+  </data>
+  <data name="&gt;&gt;_isPdfALabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_isPdfALabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_isPdfALabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_documentPropertiesControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 343</value>
+  </data>
+  <data name="_documentPropertiesControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 8, 6, 8</value>
+  </data>
+  <data name="_documentPropertiesControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>591, 378</value>
+  </data>
+  <data name="_documentPropertiesControl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_documentPropertiesControl.Name" xml:space="preserve">
+    <value>_documentPropertiesControl</value>
+  </data>
+  <data name="&gt;&gt;_documentPropertiesControl.Type" xml:space="preserve">
+    <value>PDFDocumentDemo.DocumentPropertiesControl, CSPDFDocumentDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_documentPropertiesControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_documentPropertiesControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_isLinearizedTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 100</value>
+  </data>
+  <data name="_isLinearizedTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_isLinearizedTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 26</value>
+  </data>
+  <data name="_isLinearizedTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_isLinearizedTextBox.Name" xml:space="preserve">
+    <value>_isLinearizedTextBox</value>
+  </data>
+  <data name="&gt;&gt;_isLinearizedTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_isLinearizedTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_isLinearizedTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_isLinearizedLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_isLinearizedLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_isLinearizedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 103</value>
+  </data>
+  <data name="_isLinearizedLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_isLinearizedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 20</value>
+  </data>
+  <data name="_isLinearizedLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_isLinearizedLabel.Text" xml:space="preserve">
+    <value>Linearized:</value>
+  </data>
+  <data name="&gt;&gt;_isLinearizedLabel.Name" xml:space="preserve">
+    <value>_isLinearizedLabel</value>
+  </data>
+  <data name="&gt;&gt;_isLinearizedLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_isLinearizedLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_isLinearizedLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>645, 804</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Document Properties</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DocumentPropertiesDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="resx_By" xml:space="preserve">
+    <value>by</value>
+  </data>
+  <data name="resx_Inches" xml:space="preserve">
+    <value>inches</value>
+  </data>
+  <data name="resx_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="resx_Pages" xml:space="preserve">
+    <value>pages</value>
+  </data>
+  <data name="resx_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="resx_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+</root>

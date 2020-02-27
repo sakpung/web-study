@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C8205F2-D06D-443E-A171-40B61C6D32EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnimationDemo</RootNamespace>
+    <AssemblyName>VBAnimationDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\Resources\RasterPro.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE,DEBUG,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE,DEBUG,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Color">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Color.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Effects">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Effects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Controls.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Controls.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.File">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.WinForms.CommonDialogs.File.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Globalization.vb">
+      <Link>Common\Globalization.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Converters.vb">
+      <Link>Common\Converters.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Demos.vb">
+      <Link>Common\Demos.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\DialogUtilities.vb">
+      <Link>Common\DialogUtilities.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoader.vb">
+      <Link>Common\ImageFileLoader.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.vb">
+      <Link>Common\ImageFileLoaderPagesDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.designer.vb">
+      <Link>Common\ImageFileLoaderPagesDialog.designer.vb</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\ImageFileSaver.vb">
+      <Link>Common\ImageFileSaver.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Messager.vb">
+      <Link>Common\Messager.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\PaintPropertiesDialog.vb">
+      <Link>Common\PaintPropertiesDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\PaintPropertiesDialog.Designer.vb">
+      <Link>Common\PaintPropertiesDialog.Designer.vb</Link>
+      <DependentUpon>PaintPropertiesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\ProgressForm.vb">
+      <Link>Common\ProgressForm.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\ProgressForm.designer.vb">
+      <Link>Common\ProgressForm.designer.vb</Link>
+      <DependentUpon>ProgressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\WaitCursor.vb">
+      <Link>Common\WaitCursor.vb</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <EmbeddedResource Include="..\Common\ImageFileLoaderPagesDialog.resx">
+      <Link>Common\ImageFileLoaderPagesDialog.resx</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="UI\ChooseColorDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ChooseColorDialog.Designer.vb">
+      <DependentUpon>ChooseColorDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ColorResolutionDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ColorResolutionDialog.designer.vb">
+      <DependentUpon>ColorResolutionDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CreateAnimationDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CreateAnimationDialog.Designer.vb">
+      <DependentUpon>CreateAnimationDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrameSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrameSettings.Designer.vb">
+      <DependentUpon>FrameSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ImagePreviewCtrl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ImagePreviewCtrl.Designer.vb">
+      <DependentUpon>ImagePreviewCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerForm.Designer.vb">
+      <DependentUpon>ViewerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Constants.vb" />
+    <Compile Include="..\Common\ImageInformation.vb">
+      <Link>Common\ImageInformation.vb</Link>
+    </Compile>
+    <Compile Include="Utilities\Tools.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Common\PaintPropertiesDialog.resx">
+      <Link>Common\PaintPropertiesDialog.resx</Link>
+      <DependentUpon>PaintPropertiesDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Resources\Main\ZoomNormal.bmp">
+      <Link>Resources\ZoomNormal.bmp</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\Main\ZoomtoFit.bmp">
+      <Link>Resources\ZoomtoFit.bmp</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\ProgressForm.resx">
+      <Link>Common\ProgressForm.resx</Link>
+      <DependentUpon>ProgressForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChooseColorDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChooseColorDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ColorResolutionDialog.resx">
+      <DependentUpon>ColorResolutionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CreateAnimationDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CreateAnimationDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrameSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrameSettings.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

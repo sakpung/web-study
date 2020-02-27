@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MultimediaJobProcessorClientDemo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="InputFilesUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\NetWorkPath\</Value>
+    </Setting>
+    <Setting Name="OutputFilesUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\NetWorkPath\</Value>
+    </Setting>
+    <Setting Name="ProfilesUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\NetWorkPath\</Value>
+    </Setting>
+    <Setting Name="CSMultimediaJobProcessorClientDemo_JobServiceReference_JobService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/LeadtoolsJobProcessorServices/JobService.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,26 @@
+﻿<div class="modal-header">
+    <h3 class="modal-title">{{'CONTRAST_BRIGHTNESS' | translate}}</h3>
+</div>
+<div class="modal-body">
+    <div>
+        <div id="ipPreviewContainer" style="margin: 0px auto; width: 128px; height: 128px;" lead-image-processing frame="frame" api="ipApi">
+            <canvas id="ipPreviewCanvas" width="128px" height="128px" style="border: 1px solid red"></canvas>
+        </div>
+    </div>    
+    <div class="form-group" style="margin-bottom:5px">
+        <label for="contrast">{{'CONTRAST' | translate}}:</label>
+        <input id="contrast" type="number" ng-model="ipVals.contrast" min="-100" max="100" class="form-control" onkeydown="return Utils.isNumber(event,this);" ng-change="change()" ng-debounce="750" />
+        <div ui-slider="slider.options" min="-100" max="100" step="0.01" ng-model="ipVals.contrast" style="margin-bottom:2px" >
+        </div>        
+    </div>
+    <div class="form-group">
+        <label for="brightness">{{'BRIGHTNESS' | translate}}:</label>
+        <input id="brightness" type="number" ng-model="ipVals.brightness" min="-100" max="100" class="form-control" onkeydown="return Utils.isNumber(event,this);" ng-change="change()" ng-debounce="750" />
+        <div ui-slider="slider.options" min="-100" max="100" step="1" ng-model="ipVals.brightness" style="margin-bottom:2px">
+        </div>        
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK"></a>
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+    </div>
+</div>

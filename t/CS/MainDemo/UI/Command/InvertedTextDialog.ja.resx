@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_lblUnitsHeight.Text" xml:space="preserve">
+    <value>ピクセル</value>
+  </data>
+  <data name="_lblUnitsWidth.Text" xml:space="preserve">
+    <value>ピクセル</value>
+  </data>
+  <data name="_lblMaxBlackPercent.Text" xml:space="preserve">
+    <value>黒みの最大値：</value>
+  </data>
+  <data name="_lblUnits.Text" xml:space="preserve">
+    <value>1/1000 インチの単位は、1000 で 1 インチを意味します.</value>
+  </data>
+  <data name="_lblMinBlackPercent.Text" xml:space="preserve">
+    <value>黒みの最小値：</value>
+  </data>
+  <data name="_lblMinInvertHeight.Text" xml:space="preserve">
+    <value>高さの最小値：</value>
+  </data>
+  <data name="_lblMinInvertWidth.Text" xml:space="preserve">
+    <value>幅の最小値：</value>
+  </data>
+  <data name="_gbOptions.Text" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="_cbUseDiagonals.Text" xml:space="preserve">
+    <value>斜線を使う</value>
+  </data>
+  <data name="_cbImageUnchanged.Text" xml:space="preserve">
+    <value>元画像を変更しない</value>
+  </data>
+  <data name="_cbUseDpi.Text" xml:space="preserve">
+    <value>DPI</value>
+  </data>
+  <data name="_gbFlags.Text" xml:space="preserve">
+    <value>フラグ</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>反転テキスト</value>
+  </data>
+  <data name="Resx_1Over1000Inch" xml:space="preserve">
+    <value>1/1000 インチ</value>
+  </data>
+  <data name="Resx_Pixels" xml:space="preserve">
+    <value>ピクセル</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>InvertedTextDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Name" xml:space="preserve">
+    <value>_btnOk</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cbImageUnchanged.Name" xml:space="preserve">
+    <value>_cbImageUnchanged</value>
+  </data>
+  <data name="&gt;&gt;_cbImageUnchanged.Parent" xml:space="preserve">
+    <value>_gbFlags</value>
+  </data>
+  <data name="&gt;&gt;_cbImageUnchanged.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbImageUnchanged.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cbUseDiagonals.Name" xml:space="preserve">
+    <value>_cbUseDiagonals</value>
+  </data>
+  <data name="&gt;&gt;_cbUseDiagonals.Parent" xml:space="preserve">
+    <value>_gbFlags</value>
+  </data>
+  <data name="&gt;&gt;_cbUseDiagonals.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbUseDiagonals.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_cbUseDpi.Name" xml:space="preserve">
+    <value>_cbUseDpi</value>
+  </data>
+  <data name="&gt;&gt;_cbUseDpi.Parent" xml:space="preserve">
+    <value>_gbFlags</value>
+  </data>
+  <data name="&gt;&gt;_cbUseDpi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbUseDpi.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_gbFlags.Name" xml:space="preserve">
+    <value>_gbFlags</value>
+  </data>
+  <data name="&gt;&gt;_gbFlags.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbFlags.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbFlags.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.Name" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblMaxBlackPercent.Name" xml:space="preserve">
+    <value>_lblMaxBlackPercent</value>
+  </data>
+  <data name="&gt;&gt;_lblMaxBlackPercent.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblMaxBlackPercent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblMaxBlackPercent.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_lblMinBlackPercent.Name" xml:space="preserve">
+    <value>_lblMinBlackPercent</value>
+  </data>
+  <data name="&gt;&gt;_lblMinBlackPercent.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblMinBlackPercent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblMinBlackPercent.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_lblMinInvertHeight.Name" xml:space="preserve">
+    <value>_lblMinInvertHeight</value>
+  </data>
+  <data name="&gt;&gt;_lblMinInvertHeight.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblMinInvertHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblMinInvertHeight.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_lblMinInvertWidth.Name" xml:space="preserve">
+    <value>_lblMinInvertWidth</value>
+  </data>
+  <data name="&gt;&gt;_lblMinInvertWidth.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblMinInvertWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblMinInvertWidth.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_lblUnits.Name" xml:space="preserve">
+    <value>_lblUnits</value>
+  </data>
+  <data name="&gt;&gt;_lblUnits.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblUnits.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblUnits.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblUnitsHeight.Name" xml:space="preserve">
+    <value>_lblUnitsHeight</value>
+  </data>
+  <data name="&gt;&gt;_lblUnitsHeight.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblUnitsHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblUnitsHeight.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblUnitsWidth.Name" xml:space="preserve">
+    <value>_lblUnitsWidth</value>
+  </data>
+  <data name="&gt;&gt;_lblUnitsWidth.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblUnitsWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblUnitsWidth.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_numMaxBlackPercent.Name" xml:space="preserve">
+    <value>_numMaxBlackPercent</value>
+  </data>
+  <data name="&gt;&gt;_numMaxBlackPercent.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_numMaxBlackPercent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numMaxBlackPercent.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_numMinBlackPercent.Name" xml:space="preserve">
+    <value>_numMinBlackPercent</value>
+  </data>
+  <data name="&gt;&gt;_numMinBlackPercent.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_numMinBlackPercent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numMinBlackPercent.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_numMinInvertHeight.Name" xml:space="preserve">
+    <value>_numMinInvertHeight</value>
+  </data>
+  <data name="&gt;&gt;_numMinInvertHeight.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_numMinInvertHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numMinInvertHeight.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_numMinInvertWidth.Name" xml:space="preserve">
+    <value>_numMinInvertWidth</value>
+  </data>
+  <data name="&gt;&gt;_numMinInvertWidth.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_numMinInvertWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numMinInvertWidth.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="_btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+</root>

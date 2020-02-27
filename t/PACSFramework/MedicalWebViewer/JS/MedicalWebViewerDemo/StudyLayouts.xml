@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  1) the Layout tag consist of 3 attributes:
+      a) text: which represent that text that will be displayed on the layout combo box.
+      b) deflationAmount: the padding amount used.
+      c) icon: the css name of the icon.
+      
+  2) the box tag contains the dimension of the cell / sub-cell.
+-->
+<Layouts>
+   <Layout text="3 Cells, 2 Rows"
+           deflationAmount="0.01"
+           icon="Cells3Rows2">
+      <Box>0, 0, 1, 0.5</Box>
+      <Box>0, 0.5, 0.5, 1</Box>
+      <Box>0.5, 0.5, 1, 1</Box>
+   </Layout>
+
+   <Layout text="3 Cells, triangle"
+           deflationAmount="0.01"
+           icon="Cells3Triangle">
+      <Box>0.25, 0, 0.75, 0.5</Box>
+      <Box>0, 0.5, 0.5, 1</Box>
+      <Box>0.5, 0.5, 1, 1</Box>
+   </Layout>
+
+   <Layout text="4 Cells, 3 Rows"
+           deflationAmount="0.01"
+           icon="Cells4Rows3">
+      <Box>0, 0, 1, 0.33</Box>
+      <Box>0, 0.33, 0.5, 0.66</Box>
+      <Box>0.5, 0.33, 1, 0.66</Box>
+      <Box>0, 0.66, 1, 1</Box>
+   </Layout>
+
+   <Layout text="3 Cells, H Shape"
+           deflationAmount="0.01"
+           icon="Cells3HShape">
+      <Box>0, 0, 0.33, 1</Box>
+      <Box>0.33, 0.25, 0.66, 0.75</Box>
+      <Box>0.66, 0, 1, 1</Box>
+   </Layout>  
+</Layouts>

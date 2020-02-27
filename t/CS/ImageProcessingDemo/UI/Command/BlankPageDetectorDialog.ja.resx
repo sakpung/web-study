@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>空白ページの検出</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>BlankPageDetectorDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_btnok.Name" xml:space="preserve">
+    <value>_btnok</value>
+  </data>
+  <data name="&gt;&gt;_btnok.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnok.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_gbBlankSpaces.Name" xml:space="preserve">
+    <value>_gbBlankSpaces</value>
+  </data>
+  <data name="&gt;&gt;_gbBlankSpaces.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbBlankSpaces.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbBlankSpaces.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_gbBleedThrough.Name" xml:space="preserve">
+    <value>_gbBleedThrough</value>
+  </data>
+  <data name="&gt;&gt;_gbBleedThrough.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbBleedThrough.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbBleedThrough.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_gbDetectLine.Name" xml:space="preserve">
+    <value>_gbDetectLine</value>
+  </data>
+  <data name="&gt;&gt;_gbDetectLine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbDetectLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbDetectLine.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_gbDetectPage.Name" xml:space="preserve">
+    <value>_gbDetectPage</value>
+  </data>
+  <data name="&gt;&gt;_gbDetectPage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbDetectPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbDetectPage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_gbMargins.Name" xml:space="preserve">
+    <value>_gbMargins</value>
+  </data>
+  <data name="&gt;&gt;_gbMargins.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbMargins.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbMargins.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_gbUserMargins.Name" xml:space="preserve">
+    <value>_gbUserMargins</value>
+  </data>
+  <data name="&gt;&gt;_gbUserMargins.Parent" xml:space="preserve">
+    <value>_gbMargins</value>
+  </data>
+  <data name="&gt;&gt;_gbUserMargins.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbUserMargins.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblBottom.Name" xml:space="preserve">
+    <value>_lblBottom</value>
+  </data>
+  <data name="&gt;&gt;_lblBottom.Parent" xml:space="preserve">
+    <value>_gbUserMargins</value>
+  </data>
+  <data name="&gt;&gt;_lblBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblBottom.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblLeft.Name" xml:space="preserve">
+    <value>_lblLeft</value>
+  </data>
+  <data name="&gt;&gt;_lblLeft.Parent" xml:space="preserve">
+    <value>_gbUserMargins</value>
+  </data>
+  <data name="&gt;&gt;_lblLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblLeft.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_lblRight.Name" xml:space="preserve">
+    <value>_lblRight</value>
+  </data>
+  <data name="&gt;&gt;_lblRight.Parent" xml:space="preserve">
+    <value>_gbUserMargins</value>
+  </data>
+  <data name="&gt;&gt;_lblRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblRight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_lblTop.Name" xml:space="preserve">
+    <value>_lblTop</value>
+  </data>
+  <data name="&gt;&gt;_lblTop.Parent" xml:space="preserve">
+    <value>_gbUserMargins</value>
+  </data>
+  <data name="&gt;&gt;_lblTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblTop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectEmptyPage.Name" xml:space="preserve">
+    <value>_rbDetectEmptyPage</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectEmptyPage.Parent" xml:space="preserve">
+    <value>_gbDetectPage</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectEmptyPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectEmptyPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectLinedPage.Name" xml:space="preserve">
+    <value>_rbDetectLinedPage</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectLinedPage.Parent" xml:space="preserve">
+    <value>_gbDetectLine</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectLinedPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectLinedPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectNoisyPage.Name" xml:space="preserve">
+    <value>_rbDetectNoisyPage</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectNoisyPage.Parent" xml:space="preserve">
+    <value>_gbDetectPage</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectNoisyPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbDetectNoisyPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbDontDetectLinedPage.Name" xml:space="preserve">
+    <value>_rbDontDetectLinedPage</value>
+  </data>
+  <data name="&gt;&gt;_rbDontDetectLinedPage.Parent" xml:space="preserve">
+    <value>_gbDetectLine</value>
+  </data>
+  <data name="&gt;&gt;_rbDontDetectLinedPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbDontDetectLinedPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbDontUseBleedThrough.Name" xml:space="preserve">
+    <value>_rbDontUseBleedThrough</value>
+  </data>
+  <data name="&gt;&gt;_rbDontUseBleedThrough.Parent" xml:space="preserve">
+    <value>_gbBleedThrough</value>
+  </data>
+  <data name="&gt;&gt;_rbDontUseBleedThrough.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbDontUseBleedThrough.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbDontUseActiveArea.Name" xml:space="preserve">
+    <value>_rbDontUseActiveArea</value>
+  </data>
+  <data name="&gt;&gt;_rbDontUseActiveArea.Parent" xml:space="preserve">
+    <value>_gbBlankSpaces</value>
+  </data>
+  <data name="&gt;&gt;_rbDontUseActiveArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbDontUseActiveArea.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbUseBleedThrough.Name" xml:space="preserve">
+    <value>_rbUseBleedThrough</value>
+  </data>
+  <data name="&gt;&gt;_rbUseBleedThrough.Parent" xml:space="preserve">
+    <value>_gbBleedThrough</value>
+  </data>
+  <data name="&gt;&gt;_rbUseBleedThrough.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbUseBleedThrough.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbUseActiveArea.Name" xml:space="preserve">
+    <value>_rbUseActiveArea</value>
+  </data>
+  <data name="&gt;&gt;_rbUseActiveArea.Parent" xml:space="preserve">
+    <value>_gbBlankSpaces</value>
+  </data>
+  <data name="&gt;&gt;_rbUseActiveArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbUseActiveArea.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbUseDefaultMargins.Name" xml:space="preserve">
+    <value>_rbUseDefaultMargins</value>
+  </data>
+  <data name="&gt;&gt;_rbUseDefaultMargins.Parent" xml:space="preserve">
+    <value>_gbMargins</value>
+  </data>
+  <data name="&gt;&gt;_rbUseDefaultMargins.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbUseDefaultMargins.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_rbUseUserMargins.Name" xml:space="preserve">
+    <value>_rbUseUserMargins</value>
+  </data>
+  <data name="&gt;&gt;_rbUseUserMargins.Parent" xml:space="preserve">
+    <value>_gbMargins</value>
+  </data>
+  <data name="&gt;&gt;_rbUseUserMargins.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbUseUserMargins.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_tbBottom.Name" xml:space="preserve">
+    <value>_tbBottom</value>
+  </data>
+  <data name="&gt;&gt;_tbBottom.Parent" xml:space="preserve">
+    <value>_gbUserMargins</value>
+  </data>
+  <data name="&gt;&gt;_tbBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbBottom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_tbLeft.Name" xml:space="preserve">
+    <value>_tbLeft</value>
+  </data>
+  <data name="&gt;&gt;_tbLeft.Parent" xml:space="preserve">
+    <value>_gbUserMargins</value>
+  </data>
+  <data name="&gt;&gt;_tbLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbLeft.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_tbRight.Name" xml:space="preserve">
+    <value>_tbRight</value>
+  </data>
+  <data name="&gt;&gt;_tbRight.Parent" xml:space="preserve">
+    <value>_gbUserMargins</value>
+  </data>
+  <data name="&gt;&gt;_tbRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbRight.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_tbTop.Name" xml:space="preserve">
+    <value>_tbTop</value>
+  </data>
+  <data name="&gt;&gt;_tbTop.Parent" xml:space="preserve">
+    <value>_gbUserMargins</value>
+  </data>
+  <data name="&gt;&gt;_tbTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbTop.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="resx_RigthLeftValueErrorMessage" xml:space="preserve">
+    <value>左マージンと右マージンの合計が画像の幅より小さくなるように値を変更してください。</value>
+  </data>
+  <data name="resx_RigthLeftValueErrorMessageTitle" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="resx_TopBottomValueErrorMessage" xml:space="preserve">
+    <value>上マージンと下マージンの合計が画像の高さより小さくなるように値を変更してください。</value>
+  </data>
+  <data name="resx_TopBottomValueErrorMessageTitle" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="_btnok.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="_gbBlankSpaces.Text" xml:space="preserve">
+    <value>ページの端の余白</value>
+  </data>
+  <data name="_gbBleedThrough.Text" xml:space="preserve">
+    <value>裏写りのページ</value>
+  </data>
+  <data name="_gbDetectLine.Text" xml:space="preserve">
+    <value>線のあるページ</value>
+  </data>
+  <data name="_gbDetectPage.Text" xml:space="preserve">
+    <value>ページの検出</value>
+  </data>
+  <data name="_gbMargins.Text" xml:space="preserve">
+    <value>マージン</value>
+  </data>
+  <data name="_lblBottom.Text" xml:space="preserve">
+    <value>下</value>
+  </data>
+  <data name="_lblLeft.Text" xml:space="preserve">
+    <value>左</value>
+  </data>
+  <data name="_lblRight.Text" xml:space="preserve">
+    <value>右</value>
+  </data>
+  <data name="_lblTop.Text" xml:space="preserve">
+    <value>上</value>
+  </data>
+  <data name="_rbDetectEmptyPage.Text" xml:space="preserve">
+    <value>完全な空白</value>
+  </data>
+  <data name="_rbDetectLinedPage.Text" xml:space="preserve">
+    <value>線のあるページ</value>
+  </data>
+  <data name="_rbDetectNoisyPage.Text" xml:space="preserve">
+    <value>ノイズを含む</value>
+  </data>
+  <data name="_rbDontDetectLinedPage.Text" xml:space="preserve">
+    <value>検出しない</value>
+  </data>
+  <data name="_rbDontUseBleedThrough.Text" xml:space="preserve">
+    <value>検出する</value>
+  </data>
+  <data name="_rbDontUseActiveArea.Text" xml:space="preserve">
+    <value>検出しない</value>
+  </data>
+  <data name="_rbUseBleedThrough.Text" xml:space="preserve">
+    <value>検出しない
+</value>
+  </data>
+  <data name="_rbUseActiveArea.Text" xml:space="preserve">
+    <value>検出する</value>
+  </data>
+  <data name="_rbUseDefaultMargins.Text" xml:space="preserve">
+    <value>デフォルトのマージン</value>
+  </data>
+  <data name="_rbUseUserMargins.Text" xml:space="preserve">
+    <value>ユーザー指定のマージン</value>
+  </data>
+</root>

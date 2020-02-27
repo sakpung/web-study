@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup Condition="'$(ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch)' == ''">
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB3DA75E-C21F-4F24-B565-E0103E0549F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OcrDemo</RootNamespace>
+    <AssemblyName>CSOcrDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\Resources\DocAddon.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>Bin\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;MY_LEADTOOLS_V19_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>Bin\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>bin\x86\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;MY_LEADTOOLS_V19_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>bin\x86\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>bin\x64\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG,FOR_WIN64,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;MY_LEADTOOLS_V19_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>bin\x64\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG,FOR_WIN64,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Globalization.cs">
+      <Link>Common\Globalization.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\AdvancedPdfDocumentOptionsDialog.cs">
+      <Link>Common\AdvancedPdfDocumentOptionsDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\AdvancedPdfDocumentOptionsDialog.designer.cs">
+      <Link>Common\AdvancedPdfDocumentOptionsDialog.designer.cs</Link>
+      <DependentUpon>AdvancedPdfDocumentOptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\Demos.cs">
+      <Link>Common\Demos.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\DialogUtilities.cs">
+      <Link>Common\DialogUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoader.cs">
+      <Link>Common\ImageFileLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.cs">
+      <Link>Common\ImageFileLoaderPagesDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.designer.cs">
+      <Link>Common\ImageFileLoaderPagesDialog.designer.cs</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\ImageInformation.cs">
+      <Link>Common\ImageInformation.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Messager.cs">
+      <Link>Common\Messager.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\OcrEngineComponentsDialog.cs">
+      <Link>Common\OcrEngineComponentsDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\OcrEngineComponentsDialog.designer.cs">
+      <Link>Common\OcrEngineComponentsDialog.designer.cs</Link>
+      <DependentUpon>OcrEngineComponentsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\OcrEngineSettingsControl.cs">
+      <Link>Common\OcrEngineSettingsControl.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\Common\OcrEngineSettingsControl.designer.cs">
+      <Link>Common\OcrEngineSettingsControl.designer.cs</Link>
+      <DependentUpon>OcrEngineSettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\OcrOmrOptionsDialog.cs">
+      <Link>Common\OcrOmrOptionsDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\OcrOmrOptionsDialog.designer.cs">
+      <Link>Common\OcrOmrOptionsDialog.designer.cs</Link>
+      <DependentUpon>OcrOmrOptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\WaitCursor.cs">
+      <Link>Common\WaitCursor.cs</Link>
+    </Compile>
+    <Compile Include="ActionEventArgs.cs" />
+    <Compile Include="ContrastBrightnessIntensityDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContrastBrightnessIntensityDialog.Designer.cs">
+      <DependentUpon>ContrastBrightnessIntensityDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConvertLdDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertLdDialog.Designer.cs">
+      <DependentUpon>ConvertLdDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadResolutionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadResolutionDialog.Designer.cs">
+      <DependentUpon>LoadResolutionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateOcrDocumentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateOcrDocumentDialog.Designer.cs">
+      <DependentUpon>CreateOcrDocumentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetectPageLanguagesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetectPageLanguagesDialog.Designer.cs">
+      <DependentUpon>DetectPageLanguagesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentInfoControl\DocumentInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentInfoControl\DocumentInfoControl.Designer.cs">
+      <DependentUpon>DocumentInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineSettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineSettingsDialog.Designer.cs">
+      <DependentUpon>EngineSettingsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\EnableLanguagesDialog.cs">
+      <Link>Common\EnableLanguagesDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\EnableLanguagesDialog.Designer.cs">
+      <Link>Common\EnableLanguagesDialog.designer.cs</Link>
+      <DependentUpon>EnableLanguagesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\MyLanguage.cs" />
+    <Compile Include="PagesControl\PagesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagesControl\PagesControl.Designer.cs">
+      <DependentUpon>PagesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OcrProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OcrProgressDialog.Designer.cs">
+      <DependentUpon>OcrProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageTextControl\PageTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageTextControl\PageTextControl.Designer.cs">
+      <DependentUpon>PageTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerspectiveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerspectiveDialog.designer.cs">
+      <DependentUpon>PerspectiveDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\Common\AdvancedPdfDocumentOptionsDialog.resx">
+      <Link>Common\AdvancedPdfDocumentOptionsDialog.resx</Link>
+      <DependentUpon>AdvancedPdfDocumentOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\ImageFileLoaderPagesDialog.resx">
+      <Link>Common\ImageFileLoaderPagesDialog.resx</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\OcrEngineComponentsDialog.resx">
+      <Link>Common\OcrEngineComponentsDialog.resx</Link>
+      <DependentUpon>OcrEngineComponentsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\OcrEngineSettingsControl.resx">
+      <Link>Common\OcrEngineSettingsControl.resx</Link>
+      <DependentUpon>OcrEngineSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\OcrOmrOptionsDialog.resx">
+      <Link>Common\OcrOmrOptionsDialog.resx</Link>
+      <DependentUpon>OcrOmrOptionsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContrastBrightnessIntensityDialog.resx">
+      <DependentUpon>ContrastBrightnessIntensityDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConvertLdDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConvertLdDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadResolutionDialog.resx">
+      <DependentUpon>LoadResolutionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateOcrDocumentDialog.resx">
+      <DependentUpon>CreateOcrDocumentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetectPageLanguagesDialog.resx">
+      <DependentUpon>DetectPageLanguagesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentInfoControl\DocumentInfoControl.resx">
+      <DependentUpon>DocumentInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineSettingsDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EngineSettingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\EnableLanguagesDialog.resx">
+      <Link>Common\EnableLanguagesDialog.resx</Link>
+      <DependentUpon>EnableLanguagesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesControl\PagesControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PagesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OcrProgressDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OcrProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageTextControl\PageTextControl.resx">
+      <DependentUpon>PageTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerspectiveDialog.resx">
+      <DependentUpon>PerspectiveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveDocumentDialog.resx">
+      <DependentUpon>SaveDocumentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveRecognizedXmlDialog.resx">
+      <DependentUpon>SaveRecognizedXmlDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpellCheckEngineDialog.resx">
+      <DependentUpon>SpellCheckEngineDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnWarpDialog.ja.resx">
+      <DependentUpon>UnWarpDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnWarpDialog.resx">
+      <DependentUpon>UnWarpDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateZonesControl\UpdateZonesControl.resx">
+      <DependentUpon>UpdateZonesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewerControl\ViewerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZonePropertiesDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZonePropertiesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SaveDocumentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveDocumentDialog.designer.cs">
+      <DependentUpon>SaveDocumentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveRecognizedXmlDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveRecognizedXmlDialog.Designer.cs">
+      <DependentUpon>SaveRecognizedXmlDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpellCheckEngineDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpellCheckEngineDialog.Designer.cs">
+      <DependentUpon>SpellCheckEngineDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnWarpDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnWarpDialog.designer.cs">
+      <DependentUpon>UnWarpDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateZonesControl\UpdateZonesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateZonesControl\UpdateZonesControl.Designer.cs">
+      <DependentUpon>UpdateZonesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewerControl\ZoneAnnotationObjectRenderer.cs" />
+    <Compile Include="ViewerControl\ZoneAnnotationObjectEditDesigner.cs" />
+    <Compile Include="ViewerControl\ViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewerControl\ViewerControl.Designer.cs">
+      <DependentUpon>ViewerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewerControl\ViewerControlInteractiveMode.cs" />
+    <Compile Include="ViewerControl\ZoneAnnotationObject.cs" />
+    <Compile Include="ZonePropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZonePropertiesDialog.Designer.cs">
+      <DependentUpon>ZonePropertiesDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\OcrDemo\DeleteZone.png">
+      <Link>ViewerControl\Resources\DeleteZone.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\DrawZoneMode.png">
+      <Link>ViewerControl\Resources\DrawZoneMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\FitPage.png">
+      <Link>ViewerControl\Resources\FitPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\FitPageWidth.png">
+      <Link>ViewerControl\Resources\FitPageWidth.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\NextPage.png">
+      <Link>ViewerControl\Resources\NextPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\PanMode.png">
+      <Link>ViewerControl\Resources\PanMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\PreviousPage.png">
+      <Link>ViewerControl\Resources\PreviousPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\SelectMode.png">
+      <Link>ViewerControl\Resources\SelectMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\ShowZones.png">
+      <Link>ViewerControl\Resources\ShowZones.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\ZoneProperties.png">
+      <Link>ViewerControl\Resources\ZoneProperties.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\ZoomIn.png">
+      <Link>ViewerControl\Resources\ZoomIn.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\ZoomOut.png">
+      <Link>ViewerControl\Resources\ZoomOut.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\ZoomSelection.png">
+      <Link>ViewerControl\Resources\ZoomSelection.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\OcrDemo\DeletePage.png">
+      <Link>PagesControl\Resources\DeletePage.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\InsertPage.png">
+      <Link>PagesControl\Resources\InsertPage.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\OcrDemo\AutoZoneDocument.png">
+      <Link>Resources\AutoZoneDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\AutoZonePage.png">
+      <Link>Resources\AutoZonePage.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\NewDocument.png">
+      <Link>Resources\NewDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\OpenDocument.png">
+      <Link>Resources\OpenDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\SaveDocument.png">
+      <Link>Resources\SaveDocument.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\OcrDemo\ShowZoneName.png">
+      <Link>ViewerControl\Resources\ShowZoneName.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\OcrDemo\RecognizeAllPages.png">
+      <Link>Resources\RecognizeAllPages.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrDemo\RecognizePage.png">
+      <Link>Resources\RecognizePage.png</Link>
+    </None>
+    <EmbeddedResource Include="..\..\Resources\OcrDemo\MoveLeft.png">
+      <Link>Resources\MoveLeft.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\OcrDemo\MoveRight.png">
+      <Link>Resources\MoveRight.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\OcrDemo\MoveTop.png">
+      <Link>Resources\MoveTop.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\OcrDemo\MovePageDown.png">
+      <Link>Resources\MovePageDown.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\OcrDemo\MovePageUp.png">
+      <Link>Resources\MovePageUp.png</Link>
+    </EmbeddedResource>
+    <Content Include="OCRSpellCheckEngines.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Twain.20.0.0.6\build\net40\Leadtools.Twain.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Twain.20.0.0.6\build\net40\Leadtools.Twain.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets'))" />
+  </Target>
+  <Import Project="packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets" Condition="Exists('packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" />
+  <Import Project="packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets" Condition="Exists('packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets')" />
+  <Import Project="packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets" Condition="Exists('packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets')" />
+  <Import Project="packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets" Condition="Exists('packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" />
+  <Import Project="packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets" Condition="Exists('packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets')" />
+  <Import Project="packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets" Condition="Exists('packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets')" />
+  <Import Project="packages\Leadtools.Twain.20.0.0.6\build\net40\Leadtools.Twain.targets" Condition="Exists('packages\Leadtools.Twain.20.0.0.6\build\net40\Leadtools.Twain.targets')" />
+  <Import Project="packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets" Condition="Exists('packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" />
+  <Import Project="packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets" Condition="Exists('packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" />
+  <Import Project="packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets" Condition="Exists('packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" />
+  <Import Project="packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets" Condition="Exists('packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets')" />
+  <Import Project="packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets" Condition="Exists('packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets')" />
+  <Import Project="packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets" Condition="Exists('packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

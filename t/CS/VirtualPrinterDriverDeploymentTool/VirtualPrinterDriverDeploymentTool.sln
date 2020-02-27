@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualPrinterDriverDeploymentTool_4", "VirtualPrinterDriverDeploymentTool_4.csproj", "{9887623A-3C72-4BB7-A8DD-642B7FDA72AA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9B4949DE-686A-402D-BFD5-618B9DFE125B} = {9B4949DE-686A-402D-BFD5-618B9DFE125B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UtilityLibrary", "UtilityLibrary\UtilityLibrary.vcxproj", "{9B4949DE-686A-402D-BFD5-618B9DFE125B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9887623A-3C72-4BB7-A8DD-642B7FDA72AA}.Debug|x64.ActiveCfg = Debug|x64
+		{9887623A-3C72-4BB7-A8DD-642B7FDA72AA}.Debug|x64.Build.0 = Debug|x64
+		{9887623A-3C72-4BB7-A8DD-642B7FDA72AA}.Debug|x86.ActiveCfg = Debug|x86
+		{9887623A-3C72-4BB7-A8DD-642B7FDA72AA}.Debug|x86.Build.0 = Debug|x86
+		{9887623A-3C72-4BB7-A8DD-642B7FDA72AA}.Release|x64.ActiveCfg = Release|x64
+		{9887623A-3C72-4BB7-A8DD-642B7FDA72AA}.Release|x64.Build.0 = Release|x64
+		{9887623A-3C72-4BB7-A8DD-642B7FDA72AA}.Release|x86.ActiveCfg = Release|x86
+		{9887623A-3C72-4BB7-A8DD-642B7FDA72AA}.Release|x86.Build.0 = Release|x86
+		{9B4949DE-686A-402D-BFD5-618B9DFE125B}.Debug|x64.ActiveCfg = Debug|x64
+		{9B4949DE-686A-402D-BFD5-618B9DFE125B}.Debug|x64.Build.0 = Debug|x64
+		{9B4949DE-686A-402D-BFD5-618B9DFE125B}.Debug|x86.ActiveCfg = Debug|Win32
+		{9B4949DE-686A-402D-BFD5-618B9DFE125B}.Debug|x86.Build.0 = Debug|Win32
+		{9B4949DE-686A-402D-BFD5-618B9DFE125B}.Release|x64.ActiveCfg = Release|x64
+		{9B4949DE-686A-402D-BFD5-618B9DFE125B}.Release|x64.Build.0 = Release|x64
+		{9B4949DE-686A-402D-BFD5-618B9DFE125B}.Release|x86.ActiveCfg = Release|Win32
+		{9B4949DE-686A-402D-BFD5-618B9DFE125B}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C908532-50C9-45FE-AAAD-5783029B5F9C}
+	EndGlobalSection
+EndGlobal

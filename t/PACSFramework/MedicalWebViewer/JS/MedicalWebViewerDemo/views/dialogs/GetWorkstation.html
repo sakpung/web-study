@@ -1,0 +1,25 @@
+﻿<div class="modal-content">
+    <div class="modal-header">        
+        <h3 class="modal-title" translate="DIALOGS_GLOBAL_OPTIONS_TITLE"></h3>
+    </div>
+    <div class="modal-body">
+        <div class="control-group">
+            <label class="control-label" for="workstationName">Workstation:</label>
+            <div class="controls">
+                <input id="workstationName" name="workstationName" type="text" placeholder="" class="form-control" ng-model="info.workstation">
+            </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="control-group">
+            <label class="control-label" for="comments">Comments:</label>
+            <div class="controls">
+                <textarea id="comments" name="comments" class="form-control" ng-model="info.comments"></textarea>
+            </div>
+        </div>
+    </div>    
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="isWorkstationEmpty()"></a> 
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>        
+    </div>
+</div>

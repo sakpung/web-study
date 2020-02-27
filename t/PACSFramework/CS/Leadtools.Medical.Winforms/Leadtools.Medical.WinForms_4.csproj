@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <AssemblyName>Leadtools.Medical.Winforms</AssemblyName>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D807BB15-691B-4262-9AA9-19295B6B436B}</ProjectGuid>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Leadtools.Medical.Winforms</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>1685</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>1685</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+    <NoWarn>1685</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+    <NoWarn>1685</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.AddIn">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.AddIn.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scu">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scu.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.AeManagement.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.AeManagement.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.PermissionsManagement.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.PermissionsManagement.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Workstation.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Workstation.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Media.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Media.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging.Medical">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.Medical.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Logging.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Logging.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Options.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Options.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.WorkList.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.WorkList.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.UserManagementDataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.UserManagementDataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Forward.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Forward.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.ExternalStore.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.ExternalStore.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.ExportLayout.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.ExportLayout.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Workstation">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Workstation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.MedicalViewer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.MedicalViewer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.SqlCe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Microsoft.WindowsAPICodePack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Name>System.ServiceProcess</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Name>System.XML.Linq</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\CS\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\Globalization.cs">
+      <Link>Common\Globalization.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\Messager.cs">
+      <Link>Common\Messager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\Demos.cs">
+      <Link>Common\Messager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\DicomCommon\Utils.cs">
+      <Link>Common\Messager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\DicomCommon\GlobalPacsUpdater.cs">
+      <Link>Common\Messager.cs</Link>
+    </Compile>
+    <Compile Include="AnonymizeControl\AnonymizeOptionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnonymizeControl\AnonymizeOptionsView.designer.cs">
+      <DependentUpon>AnonymizeOptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnonymizeControl\AnonymizeOptionsPresenter.cs" />
+    <Compile Include="AnonymizeControl\AnonymizeScripts.cs" />
+    <Compile Include="AnonymizeControl\DicomTagNode.cs" />
+    <Compile Include="AnonymizeControl\Extensions.cs" />
+    <Compile Include="AnonymizeControl\InsertElementDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnonymizeControl\InsertElementDlg.designer.cs">
+      <DependentUpon>InsertElementDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnonymizeControl\ListViewColumnSorter.cs" />
+    <Compile Include="AutoCopy\AutoCopyPresenter.cs" />
+    <Compile Include="AutoCopy\AutoCopyOptions.cs" />
+    <Compile Include="AutoCopy\AutoCopyView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutoCopy\AutoCopyView.Designer.cs">
+      <DependentUpon>AutoCopyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientManager\AePermissionManagementDataAccessConfigurationView.cs" />
+    <EmbeddedResource Include="ClientManager\ClientConfigurationOptionsView.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="ClientManager\ClientConfigurationOptions.cs" />
+    <Compile Include="ClientManager\ClientConfigurationOptionsPresenter.cs" />
+    <Compile Include="ClientManager\ClientConfigurationOptionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientManager\ClientConfigurationOptionsView.Designer.cs">
+      <DependentUpon>ClientConfigurationOptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientManager\ClientViewerControl\ClientViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientManager\ClientViewerControl\ClientViewerControl.Designer.cs">
+      <DependentUpon>ClientViewerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientManager\ClientViewerControl\EventArgs.cs" />
+    <Compile Include="ClientManager\InsertModifyClientControl\DataGridViewCheckBoxTextCell.cs" />
+    <Compile Include="ClientManager\InsertModifyClientControl\InsertModifyClientControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientManager\InsertModifyClientControl\InsertModifyClientControl.Designer.cs">
+      <DependentUpon>InsertModifyClientControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientManager\InsertModifyClientControl\InsertModifyClientDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientManager\InsertModifyClientControl\InsertModifyClientDialog.Designer.cs">
+      <DependentUpon>InsertModifyClientDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientManager\RealTimeViewerControl\AssociationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientManager\RealTimeViewerControl\AssociationDialog.designer.cs">
+      <DependentUpon>AssociationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientManager\RealTimeViewerControl\Event.cs" />
+    <Compile Include="ClientManager\RealTimeViewerControl\RealTimeViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientManager\RealTimeViewerControl\RealTimeViewerControl.Designer.cs">
+      <DependentUpon>RealTimeViewerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DicomInstanceDeleteCommand.cs" />
+    <Compile Include="Common\DicomInstanceRetrieveCommand.cs" />
+    <Compile Include="Control\CheckedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\CustomListView\CustomListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Dialogs\ConfigurationEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Dialogs\ConfigurationEditorDialog.designer.cs">
+      <DependentUpon>ConfigurationEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Dialogs\OrientationConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Dialogs\OrientationConfigDialog.designer.cs">
+      <DependentUpon>OrientationConfigDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\BackgroundWorkers\AddDicomBackgroundWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\BackgroundWorkers\EmptyDatabaseBackgroundWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\BackgroundWorkers\ExportDicomBackgroundWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\BackgroundWorkers\GenerateMetadataBackgroundWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\BackgroundWorkers\RemoveDicomBackgroundWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\CancelStoreEventArgs.cs" />
+    <Compile Include="DatabaseManager\ConfirmWithReasonDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\ConfirmWithReasonDialog.Designer.cs">
+      <DependentUpon>ConfirmWithReasonDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\Controls\DicomQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\Controls\DicomQuery.Designer.cs">
+      <DependentUpon>DicomQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\Controls\ISearch.cs" />
+    <Compile Include="DatabaseManager\Controls\ModalitiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\Controls\ModalitiesControl.Designer.cs">
+      <DependentUpon>ModalitiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\Controls\PaginationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\Controls\PaginationControl.Designer.cs">
+      <DependentUpon>PaginationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\Controls\SearchHangingProtocol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\Controls\SearchHangingProtocol.Designer.cs">
+      <DependentUpon>SearchHangingProtocol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\Controls\SearchStandard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\Controls\SearchStandard.Designer.cs">
+      <DependentUpon>SearchStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\DatabaseManagerOptions.cs" />
+    <Compile Include="DatabaseManager\DatabaseManagerOptionsPresenter.cs" />
+    <Compile Include="DatabaseManager\DatabaseManagerOptionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\DatabaseManagerOptionsView.Designer.cs">
+      <DependentUpon>DatabaseManagerOptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\DicomFileDeleter.cs" />
+    <Compile Include="DatabaseManager\Export\AnonymizeOptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\Export\AnonymizeOptionsDialog.Designer.cs">
+      <DependentUpon>AnonymizeOptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\Export\ExportDicomDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\Export\ExportDicomDialog.Designer.cs">
+      <DependentUpon>ExportDicomDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\Export\ExportOptions.cs" />
+    <Compile Include="DatabaseManager\StorageDatabaseManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\StorageDatabaseManager.Designer.cs">
+      <DependentUpon>StorageDatabaseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\StatusReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\StatusReport.Designer.cs">
+      <DependentUpon>StatusReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\StoreCommandEventArgs.cs" />
+    <Compile Include="DatabaseManager\ViewDatasetDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\ViewDatasetDialog.Designer.cs">
+      <DependentUpon>ViewDatasetDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\ViewGenerator\ViewGenerator.cs" />
+    <Compile Include="EventBroker\ConfirmActionEventArgs.cs" />
+    <Compile Include="EventBroker\DeletingDicomFilesEventArgs.cs" />
+    <Compile Include="EventBroker\DicomFileDeletedEventArgs.cs" />
+    <Compile Include="EventBroker\DicomFileImportedEventArgs.cs" />
+    <Compile Include="EventBroker\EventBroker.cs" />
+    <Compile Include="EventBroker\FileDeletedEventArgs.cs" />
+    <Compile Include="EventBroker\ImageFileDeletedEventArgs.cs" />
+    <Compile Include="EventLogViewer\Configuration\EventLogConfigurationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\Configuration\EventLogConfigurationView.Designer.cs">
+      <DependentUpon>EventLogConfigurationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventLogViewer\Configuration\EventLogConfigurationPresenter.cs" />
+    <Compile Include="EventLogViewer\Configuration\LoggingState.cs" />
+    <Compile Include="EventLogViewer\DatasetServices\DatasetServices.cs" />
+    <Compile Include="EventLogViewer\LogViewController\EventLogWriter.cs" />
+    <Compile Include="ExternalStore\EventArgs.cs" />
+    <Compile Include="ExternalStore\ExternalStoreConfigurationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExternalStore\ExternalStoreConfigurationView.Designer.cs">
+      <DependentUpon>ExternalStoreConfigurationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExternalStore\ExternalStoreMessage.cs" />
+    <Compile Include="ExternalStore\ExternalStoreOptions.cs" />
+    <Compile Include="ExternalStore\ExternalStorePresenter.cs" />
+    <Compile Include="Forwarder\Controls\Enum.cs" />
+    <Compile Include="Forwarder\Controls\SchedulerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forwarder\Controls\SchedulerControl.Designer.cs">
+      <DependentUpon>SchedulerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forwarder\DateTimeExtensions.cs" />
+    <Compile Include="Forwarder\EventArgs.cs" />
+    <Compile Include="Forwarder\ForwardManagerConfigurationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forwarder\ForwardManagerConfigurationView.Designer.cs">
+      <DependentUpon>ForwardManagerConfigurationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forwarder\ForwardManagerPresenter.cs" />
+    <Compile Include="Forwarder\ForwarderMessage.cs" />
+    <Compile Include="Forwarder\ForwardOptions.cs" />
+    <Compile Include="Forwarder\Schedule\Enums.cs" />
+    <Compile Include="Forwarder\Schedule\Fluent.cs" />
+    <Compile Include="Forwarder\Schedule\Job.cs" />
+    <Compile Include="Forwarder\Schedule\JobContext.cs" />
+    <Compile Include="Forwarder\Schedule\Scheduler.cs" />
+    <Compile Include="Forwarder\Schedule\SystemTime.cs" />
+    <Compile Include="LicenseManager\LicenseView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LicenseManager\LicenseView.Designer.cs">
+      <DependentUpon>LicenseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LicenseManager\MessageListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LicenseManager\OpenLicenseEventArgs.cs" />
+    <Compile Include="LogAudit\AuditMessages.cs" />
+    <Compile Include="LogAudit\LocalAuditLogQueue.cs" />
+    <Compile Include="Monitor\IdleMonitor.cs" />
+    <Compile Include="PatientUpdater\ServerSide\PatientUpdaterPresenter.cs" />
+    <Compile Include="PatientUpdater\ServerSide\PatientUpdaterConfigurationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientUpdater\ServerSide\PatientUpdaterConfigurationView.Designer.cs">
+      <DependentUpon>PatientUpdaterConfigurationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\PacsProduct.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityOptions\DicomSecurityOptions.cs" />
+    <Compile Include="SecurityOptions\SecurityOptionsPresenter.cs" />
+    <Compile Include="SecurityOptions\SecurityOptionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SecurityOptions\SecurityOptionsView.Designer.cs">
+      <DependentUpon>SecurityOptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorageClassesControl\CreateIodDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorageClassesControl\CreateIodDialog.Designer.cs">
+      <DependentUpon>CreateIodDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorageClassesControl\PresentationContextDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorageClassesControl\PresentationContextDialog.Designer.cs">
+      <DependentUpon>PresentationContextDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorageClassesControl\PresentationContextList.cs" />
+    <Compile Include="StorageClassesControl\StorageClassesColumnSorter.cs" />
+    <Compile Include="StorageClassesControl\StorageClassesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StorageClassesControl\StorageClassesControl.Designer.cs">
+      <DependentUpon>StorageClassesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorageClassesControl\StorageClassesPresenter.cs" />
+    <Compile Include="StorageClassesControl\StorageClassesTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StorageClassesControl\StorageClassesTabControl.Designer.cs">
+      <DependentUpon>StorageClassesTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorageClassesControl\TransferSyntaxList.cs" />
+    <Compile Include="SystemInformationControl\ConnectionInformation.cs" />
+    <Compile Include="SystemInformationControl\ServerInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemInformationControl\ServerInformationControl.Designer.cs">
+      <DependentUpon>ServerInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccess\ActivateIdleMonitorEventArgs.cs" />
+    <Compile Include="UserAccess\Extensions.cs" />
+    <Compile Include="UserAccess\LogInDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccess\LogInDialog.Designer.cs">
+      <DependentUpon>LogInDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccess\PasswordDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccess\PasswordDialog.Designer.cs">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccess\PasswordOptions.cs" />
+    <Compile Include="UserAccess\PasswordOptionsPresenter.cs" />
+    <Compile Include="UserAccess\PasswordOptionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAccess\PasswordOptionsView.designer.cs">
+      <DependentUpon>PasswordOptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccess\PasswordValidator.cs" />
+    <Compile Include="UserAccess\UserAccessManager\UserAccessManager.cs">
+    </Compile>
+    <Compile Include="UserAccess\UserAccessManager\UsersSource.cs">
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccess\UserAccessManager\UsersSource.Designer.cs">
+      <DependentUpon>UsersSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccess\UserAccessManager\UsersSource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccess\UsersAccounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAccess\UsersAccounts.Designer.cs">
+      <DependentUpon>UsersAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\Base Controls\InstanceUIDController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\Base Controls\InstanceUIDController.Designer.cs">
+      <DependentUpon>InstanceUIDController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\WorklistDatabaseEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\WorklistDatabaseEditor.Designer.cs">
+      <DependentUpon>WorklistDatabaseEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\DataSetValidator\DataSetValidator.cs" />
+    <Compile Include="WorklistDatabaseEditor\DataSetValidator\DataSetValidatorManager.cs" />
+    <Compile Include="WorklistDatabaseEditor\DataSetValidator\MPPSDataSetValidator\MPPSDataSetValidator.cs" />
+    <Compile Include="WorklistDatabaseEditor\DataSetValidator\MWLDataSetValidator\MWLDataSetValidator.cs" />
+    <Compile Include="WorklistDatabaseEditor\QueryControls\ImagingServiceRequestQuery\ImagingServiceRequestQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\ImagingServiceRequestQuery\ImagingServiceRequestQuery.Designer.cs">
+      <DependentUpon>ImagingServiceRequestQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\PatientQuery\PatientQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\PatientQuery\PatientQuery.Designer.cs">
+      <DependentUpon>PatientQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\PeformedProcedureStepQuery\PeformedProcedureStepQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\PeformedProcedureStepQuery\PeformedProcedureStepQuery.Designer.cs">
+      <DependentUpon>PeformedProcedureStepQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\RequestedProcedureQuery\RequestedProcedureQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\RequestedProcedureQuery\RequestedProcedureQuery.Designer.cs">
+      <DependentUpon>RequestedProcedureQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\ScheduledProcedureStepQuery\ScheduledProcedureStepQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\ScheduledProcedureStepQuery\ScheduledProcedureStepQuery.Designer.cs">
+      <DependentUpon>ScheduledProcedureStepQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\VisitQuery\VisitQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\QueryControls\VisitQuery\VisitQuery.Designer.cs">
+      <DependentUpon>VisitQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\XML\ColumnsMatchingParameters\MatchingParametersDataSet.cs">
+      <DependentUpon>MatchingParametersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\XML\ColumnsMatchingParameters\MatchingParametersDataSet.Designer.cs">
+      <DependentUpon>MatchingParametersDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="WorklistDatabaseEditor\XML\DataGridTableStyles\DataGridTableStyles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataGridTableStyles.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventLogViewer\Control\DateRangeFilter\DateRangeFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\Control\DeleteRowFailedDialog\DeleteRowFailedDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\Control\DICOMServerMain\DICOMServerMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\Control\DICOMServerQuery\DICOMServerQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\Control\LogViewControlInterface\LogViewControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\DICOMServerEventLogDetails\DatasetView\DatasetView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\DICOMServerEventLogDetails\DICOMServerEventLogDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\DICOMServerEventLogFormatter\DICOMServerEventLogFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\DICOMServerEventLogFormatter\DICOMServerEventLogFormsFormatter\DICOMServerEventLogFormsFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\DICOMServerEventLogFormatter\DICOMServerEventLogListviewFormatter\DICOMServerEventLogListviewFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\EventLogViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\EventLogViewer.Designer.cs">
+      <DependentUpon>EventLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventLogViewer\Interface\LogViewController\LogViewController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventLogViewer\LogViewController\DICOMServerViewController\DICOMServerViewController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Control\NativeWindowSubclassingService.cs" />
+    <Compile Include="Control\VirtualListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\VirtualListViewColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Win32APIWrapper.cs" />
+    <EmbeddedResource Include="AnonymizeControl\AnonymizeOptionsView.resx">
+      <DependentUpon>AnonymizeOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnonymizeControl\InsertElementDlg.resx">
+      <DependentUpon>InsertElementDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\Controls\ModalitiesControl.resx">
+      <DependentUpon>ModalitiesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\Controls\SearchHangingProtocol.resx">
+      <DependentUpon>SearchHangingProtocol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\Controls\SearchStandard.resx">
+      <DependentUpon>SearchStandard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\Export\AnonymizeOptionsDialog.resx">
+      <DependentUpon>AnonymizeOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\Export\ExportDicomDialog.resx">
+      <DependentUpon>ExportDicomDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExternalStore\ExternalStoreConfigurationView.resx">
+      <DependentUpon>ExternalStoreConfigurationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityOptions\SecurityOptionsView.resx">
+      <DependentUpon>SecurityOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorklistDatabaseEditor\Base Controls\InstanceUIDController.resx">
+      <DependentUpon>InstanceUIDController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorklistDatabaseEditor\QueryControls\ImagingServiceRequestQuery\ImagingServiceRequestQuery.resx">
+      <DependentUpon>ImagingServiceRequestQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorklistDatabaseEditor\QueryControls\PatientQuery\PatientQuery.resx">
+      <DependentUpon>PatientQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorklistDatabaseEditor\QueryControls\PeformedProcedureStepQuery\PeformedProcedureStepQuery.resx">
+      <DependentUpon>PeformedProcedureStepQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorklistDatabaseEditor\QueryControls\RequestedProcedureQuery\RequestedProcedureQuery.resx">
+      <DependentUpon>RequestedProcedureQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorklistDatabaseEditor\QueryControls\ScheduledProcedureStepQuery\ScheduledProcedureStepQuery.resx">
+      <DependentUpon>ScheduledProcedureStepQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorklistDatabaseEditor\QueryControls\VisitQuery\VisitQuery.resx">
+      <DependentUpon>VisitQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\Control\DateRangeFilter\DateRangeFilter.resx">
+      <DependentUpon>DateRangeFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\Control\DeleteRowFailedDialog\DeleteRowFailedDialog.resx">
+      <DependentUpon>DeleteRowFailedDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\Control\DICOMServerMain\DICOMServerMain.resx">
+      <DependentUpon>DICOMServerMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\Control\DICOMServerQuery\DICOMServerQuery.resx">
+      <DependentUpon>DICOMServerQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\Control\LogViewControlInterface\LogViewControl.resx">
+      <DependentUpon>LogViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\DICOMServerEventLogDetails\DatasetView\DatasetView.resx">
+      <DependentUpon>DatasetView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\DICOMServerEventLogDetails\DICOMServerEventLogDetails.resx">
+      <DependentUpon>DICOMServerEventLogDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\EventLogViewer.resx">
+      <DependentUpon>EventLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\LogViewController\DICOMServerViewController\Resources\XML\ColumnFieldsFullPath\ColumnFieldsFullPath.xml" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Delete.ico" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\EventLogViewer.ico" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Export.ico" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Query_Single.ico" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Query_StartCont.ico" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Query_StopCont.ico" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\ViewDetails.ico" />
+    <EmbeddedResource Include="Control\VirtualListView.resx">
+      <DependentUpon>VirtualListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\VirtualListViewColumn.resx">
+      <DependentUpon>VirtualListViewColumn.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\Res\Icon\DownArrow.ico" />
+    <EmbeddedResource Include="WorklistDatabaseEditor\DataSetValidator\MPPSDataSetValidator\DICOMElementsAllowableValues\DICOMElementsAllowableValues.xml" />
+    <EmbeddedResource Include="WorklistDatabaseEditor\DataSetValidator\MPPSDataSetValidator\TablesWithRelatedPNColumns\TablesWithRelatedPNColumns.xml" />
+    <EmbeddedResource Include="WorklistDatabaseEditor\DataSetValidator\MWLDataSetValidator\DICOMElementsAllowableValues\DICOMElementsAllowableValues.xml" />
+    <EmbeddedResource Include="WorklistDatabaseEditor\DataSetValidator\MWLDataSetValidator\TablesWithRelatedPNColumns\TablesWithRelatedPNColumns.xml" />
+    <EmbeddedResource Include="Control\Res\XML\Modalities\Modalities.xml" />
+    <EmbeddedResource Include="WorklistDatabaseEditor\Res\Icon\MiPACSBrokerApp.ico" />
+    <EmbeddedResource Include="WorklistDatabaseEditor\XML\DataGridTableStyles\DataGridTableStyles.xml" />
+    <EmbeddedResource Include="WorklistDatabaseEditor\XML\QueryTypes\QueryTypes.xml" />
+    <EmbeddedResource Include="WorklistDatabaseEditor\XML\SupportedTables\SupportedTables.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UserAccess\UserAccessManager\UsersSource.xsc">
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </None>
+    <None Include="UserAccess\UserAccessManager\UsersSource.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsersSource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>Leadtools.Medical.Winforms</CustomToolNamespace>
+    </None>
+    <None Include="UserAccess\UserAccessManager\UsersSource.xss">
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </None>
+    <None Include="WorklistDatabaseEditor\XML\ColumnsMatchingParameters\MatchingParametersDataSet.xsc">
+      <DependentUpon>MatchingParametersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WorklistDatabaseEditor\XML\ColumnsMatchingParameters\MatchingParametersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatchingParametersDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>Leadtools.Medical.Winforms.Worklist</CustomToolNamespace>
+    </None>
+    <None Include="WorklistDatabaseEditor\XML\ColumnsMatchingParameters\MatchingParametersDataSet.xss">
+      <DependentUpon>MatchingParametersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WorklistDatabaseEditor\XML\DataGridTableStyles\DataGridTableStyles.xsc">
+      <DependentUpon>DataGridTableStyles.xsd</DependentUpon>
+    </None>
+    <None Include="WorklistDatabaseEditor\XML\DataGridTableStyles\DataGridTableStyles.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataGridTableStyles.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>Leadtools.Medical.Worklist.Utilities</CustomToolNamespace>
+    </None>
+    <None Include="WorklistDatabaseEditor\XML\DataGridTableStyles\DataGridTableStyles.xss">
+      <DependentUpon>DataGridTableStyles.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AutoCopy\AutoCopyView.resx">
+      <DependentUpon>AutoCopyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientManager\ClientViewerControl\ClientViewerControl.resx">
+      <DependentUpon>ClientViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientManager\InsertModifyClientControl\InsertModifyClientControl.resx">
+      <DependentUpon>InsertModifyClientControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientManager\InsertModifyClientControl\InsertModifyClientDialog.resx">
+      <DependentUpon>InsertModifyClientDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientManager\RealTimeViewerControl\AssociationDialog.resx">
+      <DependentUpon>AssociationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientManager\RealTimeViewerControl\RealTimeViewerControl.resx">
+      <DependentUpon>RealTimeViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\CheckedComboBox.resx">
+      <DependentUpon>CheckedComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Dialogs\ConfigurationEditorDialog.resx">
+      <DependentUpon>ConfigurationEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Dialogs\OrientationConfigDialog.resx">
+      <DependentUpon>OrientationConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\ConfirmWithReasonDialog.resx">
+      <DependentUpon>ConfirmWithReasonDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\ViewDatasetDialog.resx">
+      <DependentUpon>ViewDatasetDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\Configuration\EventLogConfigurationView.resx">
+      <DependentUpon>EventLogConfigurationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forwarder\Controls\SchedulerControl.resx">
+      <DependentUpon>SchedulerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forwarder\ForwardManagerConfigurationView.resx">
+      <DependentUpon>ForwardManagerConfigurationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LicenseManager\LicenseView.resx">
+      <DependentUpon>LicenseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientUpdater\ServerSide\PatientUpdaterConfigurationView.resx">
+      <DependentUpon>PatientUpdaterConfigurationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorageClassesControl\CreateIodDialog.resx">
+      <DependentUpon>CreateIodDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorageClassesControl\PresentationContextDialog.resx">
+      <DependentUpon>PresentationContextDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorageClassesControl\StorageClassesControl.resx">
+      <DependentUpon>StorageClassesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorageClassesControl\StorageClassesTabControl.resx">
+      <DependentUpon>StorageClassesTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemInformationControl\ServerInformationControl.resx">
+      <DependentUpon>ServerInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccess\LogInDialog.resx">
+      <DependentUpon>LogInDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccess\PasswordDialog.resx">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccess\PasswordOptionsView.resx">
+      <DependentUpon>PasswordOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccess\UsersAccounts.resx">
+      <DependentUpon>UsersAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorklistDatabaseEditor\WorklistDatabaseEditor.resx">
+      <DependentUpon>WorklistDatabaseEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorklistDatabaseEditor\XML\ColumnsMatchingParameters\MatchingParameters.xml" />
+    <EmbeddedResource Include="DatabaseManager\Controls\DicomQuery.resx">
+      <DependentUpon>DicomQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\StorageDatabaseManager.resx">
+      <DependentUpon>StorageDatabaseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\StatusReport.resx">
+      <DependentUpon>StatusReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatabaseManager\Resources\Icons\addDICOM.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\AddDICOMDIR.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\Cancel.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\CancelSearch.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\ClearResults.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\ClearResults.png" />
+    <Content Include="DatabaseManager\Resources\Icons\datamanager.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\DeleteDICOM.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\EmptyDB.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\CancelSearch.png" />
+    <Content Include="DatabaseManager\Resources\Icons\Search.png" />
+    <Content Include="DatabaseManager\Resources\Icons\Search.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\Status.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\StickPinTrans.ico" />
+    <Content Include="DatabaseManager\Resources\Icons\StickPinTrans2.ico" />
+    <Content Include="DatabaseManager\ViewColumnMappings\HangingProtocolDefinition.xml" />
+    <Content Include="DatabaseManager\ViewColumnMappings\HangingProtocol.xml" />
+    <Content Include="DatabaseManager\ViewColumnMappings\ImagesLevel.xml" />
+    <Content Include="DatabaseManager\ViewColumnMappings\PatientLevel.xml" />
+    <Content Include="DatabaseManager\ViewColumnMappings\SeriesLevel.xml" />
+    <Content Include="DatabaseManager\ViewColumnMappings\StudiesLevel.xml" />
+    <None Include="UserAccess\Resources\client_add_32.ico" />
+    <None Include="UserAccess\Resources\client_remove_32.ico" />
+    <None Include="Resources\client_add_32.ico" />
+    <None Include="Resources\client_edit_32.ico" />
+    <None Include="Resources\client_remove_32.ico" />
+    <None Include="Resources\client_edit_321.ico" />
+    <None Include="Resources\client_add_321.ico" />
+    <None Include="Resources\client_remove_321.ico" />
+    <None Include="Resources\folder.png" />
+    <EmbeddedResource Include="DatabaseManager\Controls\PaginationControl.resx">
+      <DependentUpon>PaginationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\DatabaseManagerOptionsView.resx">
+      <DependentUpon>DatabaseManagerOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Delete.png" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Query_Single.png" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Export.png" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\ViewDetails.png" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Query_StartCont.png" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Query_StopCont.png" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Import.png" />
+    <EmbeddedResource Include="EventLogViewer\Res\Icon\Cancel_Import.png" />
+    <Content Include="Resources\Associate.ico" />
+    <None Include="Resources\ClientAdd.png" />
+    <None Include="Resources\ClientDelete.png" />
+    <Content Include="Resources\ClientDisconnect.ico" />
+    <None Include="Resources\ClientEdit.png" />
+    <None Include="Resources\pc-add.png" />
+    <None Include="Resources\dicom-add.png" />
+    <None Include="Resources\dicom-delete-selected.png" />
+    <None Include="Resources\dicom-stop.png" />
+    <None Include="Resources\extreme-warning.png" />
+    <None Include="Resources\dicom-add-all.png" />
+    <None Include="Resources\dicom-delete-all.png" />
+    <None Include="Resources\dicom-export.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\ClientSearch.png" />
+    <None Include="Resources\ClientSearchBig.png" />
+    <None Include="Resources\dicom-generate-metadata.png" />
+    <None Include="Resources\ClientSearchBig.bmp" />
+    <Content Include="Resources\import.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\Minus.png" />
+    <None Include="Resources\NewDefault.png" />
+    <None Include="Resources\NewEmpty.png" />
+    <Content Include="Resources\predefinedIod.ico" />
+    <None Include="Resources\status-report.png" />
+    <None Include="Resources\Remove.png" />
+    <None Include="Resources\Tick.png" />
+    <None Include="Resources\RemoveLarge.png" />
+    <None Include="Resources\Save_Floppy.png" />
+    <Content Include="Resources\userdefinedIod.ico" />
+    <None Include="Resources\Warning-32.png" />
+    <None Include="Resources\Warning-128.png" />
+    <Content Include="UserAccess\Resources\SaveConfig.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WorklistDatabaseEditor\QueryControls\ScheduledProcedureStepQuery\Res\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

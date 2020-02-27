@@ -1,0 +1,71 @@
+﻿<div class="modal-content">
+   <div class="modal-header">
+      <h3 class="modal-title" translate="DIALOGS_STUDY_LAYOUT_TITLE"></h3>
+   </div>
+   <div class="divider"></div>
+   <div class="form-horizontal">
+
+      <!--Rows-->
+      <div class="form-group">
+         <label class="col-md-4 control-label" for="studyRows">{{'ROWS'|translate}}:</label>
+         <div class="col-md-6 controls">
+            <input id="studyRows" type="number" class="text-field" ng-model="layout.rows" ng-disabled="layout.custom!=null" onkeydown="return Utils.isNumber(event,this);" />
+         </div>
+      </div>
+
+      <!--Error Message (Rows)-->
+      <div class="form-group" ng-show="!isRowValid()">
+         <div class="col-md-4"></div>
+         <div class="col-md-6">
+            <div class="text-danger">{{getIsRowValidError()}}</div>
+         </div>
+      </div>
+
+      <!--Columns-->
+      <div class="form-group">
+         <label class="col-md-4 control-label" for="studyColumns">{{'COLUMNS'|translate}}:</label>
+         <div class="col-md-6 controls">
+            <input id="studyColumns" type="number" class="text-field" ng-model="layout.columns" ng-disabled="layout.custom!=null" onkeydown="return Utils.isNumber(event,this);" />
+         </div>
+      </div>
+
+      <!--Error Message (Columns)-->
+      <div class="form-group" ng-show="!isColumnValid()">
+         <div class="col-md-4"></div>
+         <div class="col-md-6">
+            <div class="text-danger">{{getIsColumnValidError()}}</div>
+         </div>
+      </div>
+
+      <!--Custom Layout-->
+      <div class="form-group" ng-show="!doHideCustomLayouts()">
+         <label class="col-md-4 control-label" for="studyLayoutCustom">{{'CUSTOM_LAYOUT'|translate}}:</label>
+         <div class="col-md-6 input-md">
+            <div class="input-group">
+               <select id="studyLayoutCustom" class="form-control" ng-model="layout.custom" ng-options="option.Text for option in customStudyLayoutOptions" ng-disabled="customStudyLayoutOptions.length==0">
+                  <option value="">None</option>
+               </select>
+               <span class="input-group-addon">
+                  <i ng-class="layout.custom.Icon"></i>
+               </span>
+            </div>
+         </div>
+      </div>
+
+      <!--Templates-->
+      <div class="form-group">
+         <label class="col-md-4 control-label" for="studyLayoutCustom">{{'TEMPLATES'|translate}}:</label>
+         <div class="col-md-6">
+            <select id="seriesLayoutCustom" class="study-dropdown w-dropdown" ng-model="layout.custom" ng-options="template.Name for template in templates" ng-disabled="templates.length==0">
+               <option value="">None</option>
+            </select>
+         </div>
+      </div>
+
+   </div>
+   <div class="divider"></div>
+   <div class="modal-footer">
+      <a class="form-btn" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="!isFormValid()"></a>
+      <a class="form-btn" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+   </div>
+</div>

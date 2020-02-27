@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLinqQuery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LinqQuery>
+    <Name>Patient Query</Name>
+    <Description>Query All Patients</Description>
+    <Query>from patient in ds.DirectoryRecord&lt;PatientBase&gt;()
+select patient</Query>
+  </LinqQuery>
+  <LinqQuery>
+    <Name>Study Query</Name>
+    <Description>Query All Studies</Description>
+    <Query>from study in ds.DirectoryRecord&lt;StudyBase&gt;()
+select study</Query>
+  </LinqQuery>
+  <LinqQuery>
+    <Name>Image Query</Name>
+    <Description>Query All Images</Description>
+    <Query>from image in ds.DirectoryRecord&lt;ImageBase&gt;()
+select image</Query>
+  </LinqQuery>
+  <LinqQuery>
+    <Name>Patient With Nested Studies</Name>
+    <Description>Queries all the studies for a patient</Description>
+    <Query>from patient in ds.DirectoryRecord&lt;PatientBase&gt;()
+select new
+{
+   patient,
+   Studies = from study in ds.DirectoryRecord&lt;StudyBase&gt;()
+             where study.PatientID == patient.PatientID
+             select study
+}</Query>
+  </LinqQuery>
+  <LinqQuery>
+    <Name>Series Query</Name>
+    <Description>Query All Series</Description>
+    <Query>from series in ds.DirectoryRecord&lt;SeriesBase&gt;()
+select series</Query>
+  </LinqQuery>
+  <LinqQuery>
+    <Name>Patient Study Select Many</Name>
+    <Description>Uses the LINQ Select many operation to select all studies for a patient</Description>
+    <Query>from study in ds.DirectoryRecord&lt;StudyBase&gt;()
+from patient in ds.DirectoryRecord&lt;PatientBase&gt;()
+where study.PatientID == patient.PatientID
+select new { study.StudyInstanceUID, patient.PatientID }</Query>
+  </LinqQuery>
+  <LinqQuery>
+    <Name>Query Specific Patient</Name>
+    <Description>Search for the specified patient</Description>
+    <Query>from patient in ds.DirectoryRecord&lt;PatientBase&gt;()
+where patient.PatientID == "&lt;replace&gt;"
+select patient
+</Query>
+  </LinqQuery>
+</ArrayOfLinqQuery>

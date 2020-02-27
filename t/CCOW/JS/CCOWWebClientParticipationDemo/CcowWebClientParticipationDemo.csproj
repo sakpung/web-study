@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{3F6E2461-B6CB-4F0F-8653-EE1B922F038B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Images\broken16.png" />
+    <Content Include="Images\broken48.png" />
+    <Content Include="Images\broken481.png" />
+    <Content Include="Images\changing16.png" />
+    <Content Include="Images\changing48.png" />
+    <Content Include="Images\LEAD.png" />
+    <Content Include="Images\link16.png" />
+    <Content Include="Images\link48.png" />
+    <Content Include="Images\loading.GIF" />
+    <Content Include="Images\user.png" />
+    <Content Include="Scenarios\P1_Default.xml" />
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.Ccow.d.ts">
+      <Link>Libs\Leadtools.Ccow.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.d.ts">
+      <Link>Libs\Leadtools.d.ts</Link>
+    </TypeScriptCompile>
+    <Content Include="..\..\..\..\..\Bin\JS\Leadtools.Ccow.js">
+      <Link>Libs\Leadtools.Ccow.js</Link>
+    </Content>
+    <Content Include="..\..\..\..\..\Bin\JS\Leadtools.js">
+      <Link>Libs\Leadtools.js</Link>
+    </Content>
+    <Content Include="Styles\Demo.css" />
+    <Content Include="index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="App\AboutDlg.ts" />
+    <TypeScriptCompile Include="App\ClientContext.ts" />
+    <TypeScriptCompile Include="App\IContextClientApp.ts" />
+    <TypeScriptCompile Include="App\LoadingDialog.ts" />
+    <TypeScriptCompile Include="App\CcowWebClientParticipationDemo.ts" />
+    <TypeScriptCompile Include="App\LoginDialog.ts" />
+    <TypeScriptCompile Include="App\Scenario.ts" />
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\ThirdParty\bootstrap\bootstrap.d.ts">
+      <Link>Libs\bootstrap.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\ThirdParty\jquery\jquery.d.ts">
+      <Link>Libs\jquery.d.ts</Link>
+    </TypeScriptCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>CcowWebClientParticipationDemo</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- The below target copies all linked files from their link directories to where they should be in the project. This is necessary for our static server.-->
+  <Target Name="CopyLinkedFiles" BeforeTargets="Build">
+    <ItemGroup>
+      <LinkedItem Include="@(Content)" Condition="%(Content.Link) != ''" />
+    </ItemGroup>
+    <Copy SourceFiles="@(LinkedItem)" DestinationFiles="%(LinkedItem.Link)" />
+  </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1426</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1426/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

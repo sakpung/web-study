@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup Condition="'$(ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch)' == ''">
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1EBE06E8-8EE6-4C14-B5B2-72D99643426B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>..\..\..\Resources\Doc.ico</ApplicationIcon>
+    <AssemblyKeyContainerName></AssemblyKeyContainerName>
+    <AssemblyName>CSOmrProcessingDemo</AssemblyName>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OmrProcessingDemo</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject></StartupObject>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LeadConfigPath>Bin\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile></ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE;LTV20_CONFIG;FOR_DOTNET4;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <DocumentationFile></DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn></NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LeadConfigPath>Bin\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile></ConfigurationOverrideFile>
+    <DefineConstants>TRACE;LTV20_CONFIG,FOR_DOTNET4;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <DocumentationFile></DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn></NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <LeadConfigPath>bin\x86\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile></ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE;LTV20_CONFIG;FOR_DOTNET4;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <DocumentationFile></DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn></NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <LeadConfigPath>bin\x86\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile></ConfigurationOverrideFile>
+    <DefineConstants>TRACE;LTV20_CONFIG,FOR_DOTNET4;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <DocumentationFile></DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn></NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <LeadConfigPath>bin\x64\Debug\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile></ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE;LTV20_CONFIG;FOR_DOTNET4;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <DocumentationFile></DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn></NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <LeadConfigPath>bin\x64\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile></ConfigurationOverrideFile>
+    <DefineConstants>TRACE;LTV20_CONFIG;FOR_DOTNET4;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER;FOR_NUGET</DefineConstants>
+    <DocumentationFile></DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn></NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Demos.cs">
+      <Link>Common\Demos.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Globalization.cs">
+      <Link>Common\Globalization.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="ActionEventArgs.cs" />
+    <Compile Include="InfoDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoDialog.Designer.cs">
+      <DependentUpon>InfoDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\DataExporter.cs" />
+    <Compile Include="Operations\ExtractReviewCollectionOperation.cs" />
+    <Compile Include="Operations\GradeOperation.cs" />
+    <Compile Include="Operations\HTMLExporter.cs" />
+    <Compile Include="Operations\LoadWorkspaceOperation.cs" />
+    <Compile Include="Operations\SaveWorkspaceOperation.cs" />
+    <Compile Include="Operations\StatisticsExporter.cs" />
+    <Compile Include="Operations\TwainOperation.cs" />
+    <Compile Include="IImageManager.cs" />
+    <Compile Include="UI\CloseRequestArgs.cs" />
+    <Compile Include="UI\IntroDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\IntroDialog.Designer.cs">
+      <DependentUpon>IntroDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\ErrorStatisticsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\ManualReviewPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\ManualReviewPanel.Designer.cs">
+      <DependentUpon>ManualReviewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\WizardStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\KeyPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\KeyPanel.Designer.cs">
+      <DependentUpon>KeyPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ColorCodeLegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ColorCodeLegend.Designer.cs">
+      <DependentUpon>ColorCodeLegend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\DataGridViewDoubleBuffered.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ResultSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ResultSearchDialog.Designer.cs">
+      <DependentUpon>ResultSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ReviewParameters.cs" />
+    <Compile Include="UI\ResultsPanel\SingleReviewPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\SingleReviewPanel.Designer.cs">
+      <DependentUpon>SingleReviewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\HighlightOptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\HighlightOptionsDialog.Designer.cs">
+      <DependentUpon>HighlightOptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\SingleFieldPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\SingleFieldPanel.Designer.cs">
+      <DependentUpon>SingleFieldPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\TextResultPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\Workspace.cs" />
+    <Compile Include="UI\RowNumberDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RowNumberDialog.Designer.cs">
+      <DependentUpon>RowNumberDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TwainDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TwainDialog.Designer.cs">
+      <DependentUpon>TwainDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\BarcodeFormFieldDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\BarcodeFormFieldDialog.Designer.cs">
+      <DependentUpon>BarcodeFormFieldDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\DetectBarcodeOperation.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NewTemplateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NewTemplateDialog.Designer.cs">
+      <DependentUpon>NewTemplateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\TemplatePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\TemplatePanel.Designer.cs">
+      <DependentUpon>TemplatePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\FormSpecificDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\FormSpecificDialog.Designer.cs">
+      <DependentUpon>FormSpecificDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OmrCollectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OmrCollectionDialog.Designer.cs">
+      <DependentUpon>OmrCollectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OmrFieldDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OmrFieldDialog.Designer.cs">
+      <DependentUpon>OmrFieldDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\BusyOperation.cs" />
+    <Compile Include="Operations\ProcessOmrDocumentsOperation.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\ResultsPanel\ResultsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ResultsPanel.Designer.cs">
+      <DependentUpon>ResultsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OptionsDialog.Designer.cs">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\PanViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\PanViewerForm.designer.cs">
+      <DependentUpon>PanViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\TextFormFieldDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\TextFormFieldDialog.Designer.cs">
+      <DependentUpon>TextFormFieldDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TextInputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TextInputDialog.Designer.cs">
+      <DependentUpon>TextInputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\InputPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\InputPanel.Designer.cs">
+      <DependentUpon>InputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\ProcessInputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\ProcessInputDialog.Designer.cs">
+      <DependentUpon>ProcessInputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\CreateNewTemplateOperation.cs" />
+    <Compile Include="UI\ViewerControl\ViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\ViewerControl.Designer.cs">
+      <DependentUpon>ViewerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\ViewerControlInteractiveMode.cs" />
+    <Compile Include="UI\ViewerControl\ZoneAnnotationObject.cs" />
+    <Compile Include="UI\ViewerControl\ZoneAnnotationObjectEditDesigner.cs" />
+    <Compile Include="UI\ViewerControl\ZoneAnnotationObjectRenderer.cs" />
+    <Compile Include="WaitWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitWindow.Designer.cs">
+      <DependentUpon>WaitWindow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InfoDialog.resx">
+      <DependentUpon>InfoDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\IntroDialog.resx">
+      <DependentUpon>IntroDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\ErrorStatisticsPanel.resx">
+      <DependentUpon>ErrorStatisticsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\ManualReviewPanel.resx">
+      <DependentUpon>ManualReviewPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\KeyPanel.resx">
+      <DependentUpon>KeyPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\WizardStep.resx">
+      <DependentUpon>WizardStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\ColorCodeLegend.resx">
+      <DependentUpon>ColorCodeLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\HighlightOptionsDialog.resx">
+      <DependentUpon>HighlightOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\ResultSearchDialog.resx">
+      <DependentUpon>ResultSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\SingleFieldPanel.resx">
+      <DependentUpon>SingleFieldPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\SingleReviewPanel.resx">
+      <DependentUpon>SingleReviewPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\TextResultPanel.resx">
+      <DependentUpon>TextResultPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RowNumberDialog.resx">
+      <DependentUpon>RowNumberDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TwainDialog.resx">
+      <DependentUpon>TwainDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\BarcodeFormFieldDialog.resx">
+      <DependentUpon>BarcodeFormFieldDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NewTemplateDialog.resx">
+      <DependentUpon>NewTemplateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\InputPanel.resx">
+      <DependentUpon>InputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\TemplatePanel.resx">
+      <DependentUpon>TemplatePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\FormSpecificDialog.resx">
+      <DependentUpon>FormSpecificDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\OmrCollectionDialog.resx">
+      <DependentUpon>OmrCollectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\OmrFieldDialog.resx">
+      <DependentUpon>OmrFieldDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\ResultsPanel\ResultsPanel.resx">
+      <DependentUpon>ResultsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\PanViewerForm.ja.resx">
+      <DependentUpon>PanViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\PanViewerForm.resx">
+      <DependentUpon>PanViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\TextFormFieldDialog.resx">
+      <DependentUpon>TextFormFieldDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TextInputDialog.resx">
+      <DependentUpon>TextInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\ProcessInputDialog.resx">
+      <DependentUpon>ProcessInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\ViewerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitWindow.resx">
+      <DependentUpon>WaitWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrawZoneMode.png" />
+    <None Include="Resources\FitPage.png" />
+    <None Include="Resources\FitPageWidth.png" />
+    <None Include="Resources\NextPage.png" />
+    <None Include="Resources\PreviousPage.png" />
+    <None Include="Resources\ShowZones.png" />
+    <None Include="Resources\ZoomIn.png" />
+    <None Include="Resources\ZoomOut.png" />
+    <None Include="Resources\ZoomSelection.png" />
+    <None Include="Resources\ocr.png" />
+    <None Include="Resources\bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lv.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-select.png" />
+    <None Include="Resources\zoom-out.png" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\Untitled-3.png" />
+    <None Include="Resources\show-pan.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\picture.png" />
+    <None Include="Resources\pan.png" />
+    <None Include="Resources\omr1.png" />
+    <None Include="Resources\omr.png" />
+    <None Include="Resources\note-2.png" />
+    <None Include="Resources\note.png" />
+    <None Include="Resources\green-note.png" />
+    <None Include="Resources\colors.png" />
+    <None Include="Resources\barcode.png" />
+    <Content Include="Resources\locked.png" />
+    <Content Include="Resources\unlocked.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Barcode.20.0.0.6\build\net40\Leadtools.Barcode.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Barcode.20.0.0.6\build\net40\Leadtools.Barcode.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Document.20.0.0.6\build\net40\Leadtools.Document.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Document.20.0.0.6\build\net40\Leadtools.Document.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Forms.20.0.0.6\build\net40\Leadtools.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Forms.20.0.0.6\build\net40\Leadtools.Forms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Twain.20.0.0.6\build\net40\Leadtools.Twain.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Twain.20.0.0.6\build\net40\Leadtools.Twain.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets'))" />
+    <Error Condition="!Exists('packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets'))" />
+  </Target>
+  <Import Project="packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets" Condition="Exists('packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" />
+  <Import Project="packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets" Condition="Exists('packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets')" />
+  <Import Project="packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets" Condition="Exists('packages\Leadtools.Jpeg2000.20.0.0.6\build\net40\Leadtools.Jpeg2000.targets')" />
+  <Import Project="packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets" Condition="Exists('packages\Leadtools.Formats.Vector.20.0.0.6\build\net40\Leadtools.Formats.Vector.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Camera.20.0.0.6\build\net40\Leadtools.Formats.Raster.Camera.targets')" />
+  <Import Project="packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets" Condition="Exists('packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" />
+  <Import Project="packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets" Condition="Exists('packages\Leadtools.Formats.Document.20.0.0.6\build\net40\Leadtools.Formats.Document.targets')" />
+  <Import Project="packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets" Condition="Exists('packages\Leadtools.Viewer.Controls.WinForms.20.0.0.6\build\net40\Leadtools.Viewer.Controls.WinForms.targets')" />
+  <Import Project="packages\Leadtools.Twain.20.0.0.6\build\net40\Leadtools.Twain.targets" Condition="Exists('packages\Leadtools.Twain.20.0.0.6\build\net40\Leadtools.Twain.targets')" />
+  <Import Project="packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets" Condition="Exists('packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" />
+  <Import Project="packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets" Condition="Exists('packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" />
+  <Import Project="packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets" Condition="Exists('packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" />
+  <Import Project="packages\Leadtools.Forms.20.0.0.6\build\net40\Leadtools.Forms.targets" Condition="Exists('packages\Leadtools.Forms.20.0.0.6\build\net40\Leadtools.Forms.targets')" />
+  <Import Project="packages\Leadtools.Document.20.0.0.6\build\net40\Leadtools.Document.targets" Condition="Exists('packages\Leadtools.Document.20.0.0.6\build\net40\Leadtools.Document.targets')" />
+  <Import Project="packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets" Condition="Exists('packages\Leadtools.CommonDialogs.WinForms.20.0.0.6\build\net40\Leadtools.CommonDialogs.WinForms.targets')" />
+  <Import Project="packages\Leadtools.Barcode.20.0.0.6\build\net40\Leadtools.Barcode.targets" Condition="Exists('packages\Leadtools.Barcode.20.0.0.6\build\net40\Leadtools.Barcode.targets')" />
+  <Import Project="packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets" Condition="Exists('packages\Leadtools.Annotations.WinForms.20.0.0.6\build\net40\Leadtools.Annotations.WinForms.targets')" />
+  <Import Project="packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets" Condition="Exists('packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets')" />
+  <PropertyGroup />
+</Project>

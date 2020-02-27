@@ -1,0 +1,139 @@
+<!-- List of files that are not referenced directly by the project but are required to be in the bin folder -->
+<!-- These includes file filters and other .NET assemblies that are loaded at runtime -->
+<!-- You can add or remove any of these files if not required by your deployment -->
+<Project DefaultTargets = "Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+  <ItemGroup>
+    
+    <None Include="$(LeadConfigPath)Leadtools.Codecs.J2k.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Codecs.Png.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.ImageProcessing.Color.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.ImageProcessing.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.ImageProcessing.Effects.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.ImageProcessing.SpecialEffects.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.ImageProcessing.Utilities.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Kernel.Annotations.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.UserManagementDataAccessLayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.PermissionsManagement.DataAccessLayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.Options.DataAccessLayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.WebViewer.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Codecs.Bmp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Codecs.Raw.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Codecs.Tif.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Dicom.Imaging.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Dicom.Server.Admin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <!--<None Include="$(LeadConfigPath)Leadtools.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>-->
+    <None Include="$(LeadConfigPath)Leadtools.Document.Writer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.ExternalStore.DataAccessLayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.DataAccessLayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.WebViewer.Addins.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.WebViewer.Annotations.DataAccessLayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.WebViewer.ImageDownloadAddin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.WebViewer.Jobs.DataAccessLayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.WebViewer.Jobs.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.Storage.DataAccessLayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Medical.WebViewer.Wado.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>    
+    <None Include="$(LeadConfigPath)Leadtools.Medical.Winforms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>    
+    <None Include="$(LeadConfigPath)Leadtools.Tasks.ServerProcess.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Leadtools.Wcf.WebHttpCorsBehavior.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <!--<None Include="$(LeadConfigPath)Medicor.SDCreator.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>-->
+    
+    <None Include="$(LeadConfigPath)Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)Microsoft.WindowsAzure.Storage.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <!--<None Include="$(LeadConfigPath)atl100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>-->
+    
+    <None Include="$(LeadConfigPath)EsuApiLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    
+    <!--<None Include="$(LeadConfigPath)msvcp100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(LeadConfigPath)msvcr100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>-->
+
+    <None Include="$(LeadConfigPath)Microsoft.Practices.EnterpriseLibrary.Logging.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <!--<None Include="$(LeadConfigPath)Microsoft.Practices.ObjectBuilder2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>-->
+    <None Include="$(LeadConfigPath)System.Data.SqlServerCe.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

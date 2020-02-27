@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SupportedTables>
+	<Entry>
+		<TableKey>Patient</TableKey>
+	</Entry>
+	<Entry>
+		<TableKey>ImagingServiceRequest</TableKey>
+	</Entry>
+	<Entry>
+		<TableKey>RequestedProcedure</TableKey>
+	</Entry>
+	<Entry>
+		<TableKey>ScheduledProcedureStep</TableKey>
+	</Entry>
+	<Entry>
+		<TableKey>Visit</TableKey>
+	</Entry>
+	<Entry>
+		<TableKey>PPSInformation</TableKey>
+	</Entry>
+</SupportedTables>

@@ -1,0 +1,38 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title">{{'DIALOGS_SAVE_AS_DERIVED_TITLE' | translate}}</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" name="form">
+            <fieldset>
+                <!-- Select Basic -->
+                <div class="form-group" ng-show="editSeriesNumber">
+                    <label class="col-md-4 control-label" for="seriesNumber">{{'SERIES' | translate}}&nbsp;{{'NUMBER' | translate}}:</label>
+                    <div class="col-md-4">
+                        <input id="seriesNumber" type="text" placeholder="" class="text-field" ng-model="derivedInfo.number" autofocus only-digits />
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="seriesDescription">{{'DESCRIPTION' | translate}}:</label>
+                    <div class="col-md-4">
+                        <input id="seriesDescription" type="text" placeholder="" class="text-field" ng-model="derivedInfo.description" />
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group" ng-show="editProtocolName">
+                    <label class="col-md-4 control-label" for="protocolName">{{'PROTOCOL' | translate}}&nbsp;{{'NAME' | translate}}:</label>
+                    <div class="col-md-4">
+                        <input id="protocolName" type="text" placeholder="" class="text-field" ng-model="derivedInfo.protocolName" />
+                    </div>
+                </div>                
+            </fieldset>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a class="form-btn" ng-click="ok()" translate="DIALOGS_OK"></a>
+        <a class="form-btn" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>        
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="34c51cdf-8c3a-424c-9105-7f4ba6066e01" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JobService.xsd" MetadataType="Schema" ID="caa35074-91f6-4c60-b57b-7a790b07881c" SourceId="1" SourceUrl="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc?xsd=xsd3" />
+    <MetadataFile FileName="JobService.disco" MetadataType="Disco" ID="0129f054-b209-4ef6-8f83-cde7f6f0bd84" SourceId="1" SourceUrl="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc?disco" />
+    <MetadataFile FileName="JobService1.xsd" MetadataType="Schema" ID="3dc35872-80de-4c9f-800a-80510207a264" SourceId="1" SourceUrl="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc?xsd=xsd4" />
+    <MetadataFile FileName="JobService.wsdl" MetadataType="Wsdl" ID="dbb03cb3-029a-4538-b396-d3dec764ec42" SourceId="1" SourceUrl="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc?wsdl" />
+    <MetadataFile FileName="JobService1.wsdl" MetadataType="Wsdl" ID="2fb9f014-2c3b-4c03-aa9d-16dbc62c70c5" SourceId="1" SourceUrl="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="JobService2.wsdl" MetadataType="Wsdl" ID="0ab56f80-289a-439f-a8e6-39aacfb9e0e5" SourceId="1" SourceUrl="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="JobService2.xsd" MetadataType="Schema" ID="50b14a65-3db6-46aa-877b-7f4854237aec" SourceId="1" SourceUrl="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc?xsd=xsd0" />
+    <MetadataFile FileName="JobService3.xsd" MetadataType="Schema" ID="731fed52-09b7-4456-ad47-586575ecf30e" SourceId="1" SourceUrl="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc?xsd=xsd1" />
+    <MetadataFile FileName="JobService4.xsd" MetadataType="Schema" ID="d0d11201-50c8-4e63-a01a-1cb2647ca5df" SourceId="1" SourceUrl="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

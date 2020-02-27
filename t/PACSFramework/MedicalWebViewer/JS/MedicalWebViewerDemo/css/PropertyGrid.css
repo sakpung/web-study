@@ -1,0 +1,159 @@
+.colorpicker
+{
+    z-index: 9999;
+}
+
+#pg1
+{
+    overflow: auto;
+}
+
+#propertyGridContainer
+{
+    width: auto;
+    font-size: 11px;
+    font-family: arial;
+}
+.pgGroup
+{
+    width: auto;
+    height: 20px;
+    cursor: pointer;
+}
+
+.pgGroupShrink
+{
+    width: auto;
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    top: -3px;
+}
+.pgGroupText
+{
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px 0px 0px 5px;
+    font-size: 12px;
+}
+
+.pgSubGroup
+{
+    background-color: #EAEBED;
+}
+.pgSubGroupShrink
+{
+    width: 17px;
+    display: inline-block;
+    margin-left: 17px;
+    height: 20px;
+}
+.pgSubGroupText
+{
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px 0px 0px 5px;
+    font-size: 11px;
+}
+
+.pgGroupItem
+{
+    width: auto;
+    height: 20px;
+    padding: 0px 0px 0px 7px;
+}
+.pgGroupItemText
+{
+    padding-top: 3px;
+    display: inline-block;
+    width: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+}
+
+.bkExpand
+{
+    background-image: url('../images/plusSmall.png');
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    cursor: pointer;
+}
+.bkMinimise
+{
+    background-image: url('../images/minusSmall.png');
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    cursor: pointer;
+}
+
+.bkExpandSub
+{
+    background-image: url('../images/plusSmall.png');
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    cursor: pointer;
+}
+.bkMinimiseSub
+{
+    background-image: url('../images/minusSmall.png');
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    cursor: pointer;
+}
+
+.pgInputHolder
+{
+    float: right;
+    width: 50%;
+    display: block;
+}
+.pgInput
+{
+    width: 100%;
+    border-width: 0px;
+    height: 18px;
+    padding: 2px 0px 0px 2px;
+}
+.pgInputColor
+{
+    width: auto;
+    border-width: 0px;
+    height: 18px;
+    padding: 2px 0px 0px 2px;
+}
+.pgInputDrop
+{
+    width: 100%;
+    border-width: 0px;
+    height: 20px;
+    padding: 2px 0px 0px 2px;
+    outline: none;
+    border: none;
+    border-color: transparent;
+}
+.pgInputNum
+{
+    width: 100%;
+    border-width: 0px;
+    height: 18px;
+    padding: 2px 0px 0px 2px;
+}
+.pgBtnColor
+{
+    width: 20px;
+    height: 18px;
+    float: right;
+    padding: 2px 0px 0px 0px;
+    /*background-image: url('../images/bkCpicker.png');
+    background-repeat: no-repeat;*/
+    cursor: pointer;
+}
+.pgDialog
+{
+    width: 20px;
+    height: 18px;
+    float: right;
+    padding: 2px 0px 0px 0px;
+    cursor: pointer;
+}

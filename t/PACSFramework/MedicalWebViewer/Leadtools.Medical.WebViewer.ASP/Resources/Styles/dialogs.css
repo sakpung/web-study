@@ -1,0 +1,311 @@
+﻿.modal-header { /* All dialogs */
+   background: #DFE1E5;
+}
+
+   .modal-header label { /* All dialogs */
+      margin-top: 5px;
+   }
+
+.modal-content {
+   border-radius: 0px !important;
+}
+
+.btn-block { /* All dialogs */
+   border: 1px solid #4D5F82 !important;
+}
+
+label { /* All dialogs */
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#openFileDialog > .modal-dialog > .modal-content > .modal-body > .groupBox { /* Open file dialog */
+   height: 200px;
+}
+
+.about-dialog { /* About dialog */
+   max-width: 350px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+.loading-dialog { /* Loading dialog */
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 280px;
+}
+
+#goBtn { /* Open file dialog */
+   border: 1px solid #ccc !important;
+}
+
+.modal-body > textarea { /* Text result dialog */
+   width: 100%;
+   overflow-y: scroll;
+   resize: none;
+}
+
+.modal-body > ul > li > a {
+   background: #DFE1E5;
+   border-color: lightgray;
+   color: lightgray;
+   border-radius: 0px;
+}
+
+.modal-body > ul > li.active > a {
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-bottom-color: transparent;
+}
+
+.modal-body > ul > li > a:hover {
+   border-color: gray;
+}
+
+.modal-footer > button:disabled {
+   opacity: 0.65 !important;
+}
+
+.modal-body > .table-responsive {
+   overflow-x: auto;
+}
+
+form > ul {
+   list-style-type: none;
+}
+
+   form > ul > li {
+      font-size: 12px;
+   }
+
+.groupBox {
+   width: 100%;
+   border: 1px solid #C4C9D3;
+   padding: 10px;
+}
+
+   .groupBox + .groupBox {
+      /*For subsequent groupboxes, increase the margin*/
+      margin-top: 10px;
+   }
+
+#errorText { /* Viewer demo settings dialog */
+   color: red !important;
+}
+
+#argumentsDiv { /* Image processing commands dialog */
+   width: 100%;
+   height: 100%;
+}
+
+.inputError { /* Image processing commands dialog */
+   border: 1px solid red;
+   box-shadow: 0 0 10px red;
+}
+
+#errorDetailsText { /* Image processing commands dialog */
+   color: red;
+   font-size: 12px;
+   font-family: Courier New;
+   width: 100%;
+   overflow-y: scroll;
+   resize: none;
+}
+
+/* Document viewer demo dialogs */
+#pagesDialog > .modal-dialog > .modal-content { /* Pages dialog */
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 400px;
+}
+
+.options-dialog { /* Document format options dialog */
+   max-width: 350px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.progress { /* Loading dialog */
+   position: relative;
+   border: 1px solid;
+}
+
+   .progress span { /* Loading dialog */
+      position: absolute;
+      display: block;
+      width: 100%;
+      color: black;
+   }
+
+.progress-bar { /* Loading dialog */
+   background-color: #4D5F82 !important;
+   min-width: 0 !important;
+}
+
+#moveToVisible, #moveToInvisible { /* Custom render mode dialog */
+   font-family: Courier New;
+   font-weight: 900;
+   font-size: 15px;
+}
+
+   #moveToVisible:disabled, #moveToInvisible:disabled { /* Custom render mode dialog */
+      border-color: black !important;
+      color: black !important;
+   }
+
+@-moz-document url-prefix() { /* Custom render mode dialog */
+   .listbox {
+      height: 271px !important;
+   }
+}
+
+#linkValue { /* Document viewer demo link value dialog */
+   color: blue !important;
+   text-decoration: underline !important;
+   font-weight: lighter;
+   font-size: 18px;
+   font-family: Calibri;
+}
+
+.loadingFromDrive, .saveTo { /* Open from document storage dialog / Save to dialog */
+   display: none;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#sharePointPickerDialog > .modal-dialog > .modal-content > .modal-body { /* sharePoint picker dialog */
+   height: 399px;
+   overflow: auto;
+}
+
+#directoryItems > tr > td { /* sharePoint picker dialog */
+   padding: 2px !important;
+   padding-left: 30px !important;
+}
+
+td.directoryItem { /* sharePoint picker dialog */
+   background-repeat: no-repeat;
+   background-size: 20px 20px;
+}
+
+   td.directoryItem.file { /* sharePoint picker dialog */
+      background-image: url(../Images/Icons/Document.png);
+   }
+
+   td.directoryItem.folder { /* sharePoint picker dialog */
+      background-image: url(../Images/Icons/Open.png);
+   }
+
+   td.directoryItem:hover { /* sharePoint picker dialog */
+      cursor: pointer;
+   }
+
+#sharePointDialog_LoadingIndicator { /* sharePoint picker dialog */
+   position: absolute;
+   left: 20px;
+   display: none;
+}
+
+/* Processing Pages Dialog */
+#processingPagesDialog .process-content {
+   background-color: #FAFAFA;
+   box-shadow: 0 3px 8px -4px #333 inset;
+   max-height: 400px;
+   overflow-y: scroll;
+}
+
+/* Processing Pages Dialog */
+#processingPagesDialog .process-cancel {
+   margin-top: 10px;
+}
+/* Processing Pages Dialog */
+#processingPagesDialog .process-loading {
+   margin-left: 10px;
+}
+
+/* Processing Pages Dialog */
+#processingPagesDialog h3 {
+   margin-top: 0;
+}
+
+.documentViewerMode-about-dialog {
+   max-width: 500px !important;
+   text-align: inherit !important;
+}
+/*Reviews Dialog Style*/
+.col-md-4 {
+   width: 33.33333333%;
+   float: left;
+   text-align: center;
+}
+
+.row {
+   width: 99%;
+   margin: 2px;
+}
+
+.col-xs-5 {
+   width: 99%;
+   float: left;
+   border: 2px solid #a1a1a1;
+   border-radius: 5px;
+   margin: 1%;
+}
+
+#reviewsContnetText {
+   resize: none;
+   width: 100%;
+}
+
+#commentTextArea {
+   height: 40px;
+   resize: none;
+   width: 100%;
+   margin-bottom: 2%;
+}
+
+.btn-custom-div {
+   width: 33.33333333%;
+   float: left;
+   margin-top: 2%;
+}
+
+#treeViewDiv {
+   width: 100%;
+   background-color: #e1dbdb;
+   height: 200px !important;
+   margin-top: 2%;
+   margin-bottom: 2%;
+   border: 2px solid #ff0000;
+   border-radius: 5px;
+   overflow: auto;
+}
+
+.date-control {
+   width: 33.33333333%;
+   float: left;
+   margin-top: 2%;
+   margin-bottom: 2%;
+}
+
+.treeNode {
+   margin: 2%;
+   border-radius: 5px;
+   border: 1px solid #0026ff;
+}
+
+.treeNodeLabel {
+   color: black;
+   font-family: Arial;
+   font-size: small;
+}
+
+.row > .input-group > .input-group-addon {
+   border: 0px !important;
+}

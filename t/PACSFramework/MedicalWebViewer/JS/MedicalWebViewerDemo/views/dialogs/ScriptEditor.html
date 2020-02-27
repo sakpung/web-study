@@ -1,0 +1,29 @@
+﻿<style type="text/css">
+    .CodeMirror {
+        border: 1px solid black;
+    }
+</style>
+<div class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title" translate="DIALOGS_SCRIPT_EDIT_TITLE"></h3>
+    </div>
+    <div class="modal-body">                
+        <div class="control-group" style="height:50% !important">
+            <label class="control-label" for="comments">{{label}}:</label>
+            <span class="fa-stack fa-lg" ng-show="readOnly" tooltip="Read Only">
+                <i class="fa-pencil fa-stack-1x"></i>
+                <i class="fa fa-ban fa-stack-2x text-danger"></i>
+            </span>
+            <div class="controls">
+                <ui-codemirror ui-codemirror="{onLoad: codemirrorLoaded }" ui-codemirror-opts="editorOptions" ng-model="data.text"></ui-codemirror>
+            </div>
+        </div>
+        <div id="errors" ag-grid="gridOptions" class="ag-fresh" style="height:120px; margin-top:5px"></div>
+    </div>
+    <div class="modal-footer">        
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="hasErrors()"></a>
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+    </div>
+</div>
+
+<!--<div id="errors" ag-grid="gridOptions" class="ag-fresh"></div>-->

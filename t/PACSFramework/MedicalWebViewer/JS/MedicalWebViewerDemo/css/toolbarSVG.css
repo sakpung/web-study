@@ -1,0 +1,2978 @@
+
+.AlignBottom {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/AlignBottom.svg);
+}
+
+.AlignBottom:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/AlignBottom.svg);
+}
+
+.AlignCenter {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/AlignCenter.svg);
+}
+
+.DisabledDentalPanoramic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Panoramic.svg);
+}
+
+
+.DentalPanoramic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Panoramic.svg);
+}
+
+.DentalPanoramic:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Panoramic.svg);
+}
+
+.AlignCenter:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/AlignCenter.svg);
+}
+
+.AlignLeft {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/AlignLeft.svg);
+}
+
+.AlignLeft:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/AlignLeft.svg);
+}
+
+.AlignMiddle {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/AlignMiddle.svg);
+}
+
+.AlignMiddle:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/AlignMiddle.svg);
+}
+
+.AlignRight {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/AlignRight.svg);
+}
+
+.AlignRight:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/AlignRight.svg);
+}
+
+.AlignTop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/AlignTop.svg);
+}
+
+.AlignTop:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/AlignTop.svg);
+}
+
+.Annotations {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Annotations.svg);
+}
+
+.Annotations:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Annotations.svg);
+}
+
+.AnteriorOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/AnteriorOrientation.svg);
+}
+
+.AnteriorOrientation:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/AnteriorOrientation.svg);
+}
+
+.Arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Arrow.svg);
+}
+
+.Arrow:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Arrow.svg);
+}
+
+.BrightnessContrast {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/BrightnessContrast.svg);
+}
+
+.BrightnessContrast:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/BrightnessContrast.svg);
+}
+
+.CalibrateRulerAnn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/CalibrateRulerAnn.svg);
+}
+
+.CalibrateRulerAnn:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/CalibrateRulerAnn.svg);
+}
+
+.CinePlayer {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/CinePlayer.svg);
+}
+
+.CinePlayer:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/CinePlayer.svg);
+}
+
+.Clear {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Clear.svg);
+}
+
+.Clear:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Clear.svg);
+}
+
+.ClearAll {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ClearAll.svg);
+}
+
+.ClearAll:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ClearAll.svg);
+}
+
+.ComposeLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ComposeLayout.svg);
+}
+
+.ComposeLayout:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ComposeLayout.svg);
+}
+
+.Configure {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Tools.svg);
+}
+
+.CopyTemplate {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/CopyTemplate.svg);
+}
+
+.CopyTemplate:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/CopyTemplate.svg);
+}
+
+.CrossHair {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/CrossHair.svg);
+}
+
+.CrossHair:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/CrossHair.svg);
+}
+
+.Cursor3D {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Cursor3D.svg);
+}
+
+.Cursor3D:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Cursor3D.svg);
+}
+
+.Curve {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Curve.svg);
+}
+
+.Curve:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Curve.svg);
+}
+
+.CustomLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/StudyLayout.svg);
+}
+
+.DeleteAnn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/DeleteAnn.svg);
+}
+
+.DeleteAnn:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/DeleteAnn.svg);
+}
+
+.DeleteCell {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/DeleteCell.svg);
+}
+
+.DeleteCell:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/DeleteCell.svg);
+}
+
+.DeleteStudyLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/DeleteStudyLayout.svg);
+}
+
+.DeleteStudyLayout:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/DeleteStudyLayout.svg);
+}
+
+.DeleteTemplate {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/DeleteTemplate.svg);
+}
+
+.DeleteTemplate:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/DeleteTemplate.svg);
+}
+
+.DeleteTemplateBox {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/DeleteTemplateBox.svg);
+}
+
+.DeleteTemplateBox:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/DeleteTemplateBox.svg);
+}
+
+.Dentin {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Dentin.svg);
+}
+
+.Dentin:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Dentin.svg);
+}
+
+.DentinPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/Dentin.svg);
+}
+
+.DisabledAlignBottom {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/AlignBottom.svg);
+}
+
+.DisabledAlignCenter {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/AlignCenter.svg);
+}
+
+.DisabledAlignLeft {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/AlignLeft.svg);
+}
+
+.DisabledAlignLeft {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/AlignLeft.svg);
+}
+
+.DisabledAlignMiddle {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/AlignMiddle.svg);
+}
+
+.DisabledAlignRight {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/AlignRight.svg);
+}
+
+.DisabledAlignTop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/AlignTop.svg);
+}
+
+.DisabledAlignTop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/AlignTop.svg);
+}
+
+.DisabledAnteriorOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/AnteriorOrientation.svg);
+}
+
+.DisabledArrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Arrow.svg);
+}
+
+.DisabledBrightnessContrast {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/BrightnessContrast.svg);
+}
+
+.DisabledCalibrateRulerAnn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/CalibrateRulerAnn.svg);
+}
+
+.DisabledCinePlayer {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/CinePlayer.svg);
+}
+
+.DisabledClear {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Clear.svg);
+}
+
+.DisabledClearAll {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ClearAll.svg);
+}
+
+.DisabledComposeLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ComposeLayout.svg);
+}
+
+.DisabledCopyTemplate {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/CopyTemplate.svg);
+}
+
+.DisabledCrossHair {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/CrossHair.svg);
+}
+
+.DisabledCursor3D {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Cursor3D.svg);
+}
+
+.DisabledCurve {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Curve.svg);
+}
+
+.DisabledDeleteAnn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/DeleteAnn.svg);
+}
+
+.DisabledDeleteStudyLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/DeleteStudyLayout.svg);
+}
+
+.DisabledDeleteTemplate {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/DeleteTemplate.svg);
+}
+
+.DisabledDeleteTemplateBox {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/DeleteTemplateBox.svg);
+}
+
+.DisabledDentin {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Dentin.svg);
+}
+
+.DisabledDrawTemplateBox {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/DrawTemplateBox.svg);
+}
+
+.DisabledEllipse {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Ellipse.svg);
+}
+
+.DisabledEndo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Endo.svg);
+}
+
+.DisabledExportTemplates {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ExportTemplates.svg);
+}
+
+.DisabledFeetOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/FeetOrientation.svg);
+}
+
+.DisabledFirstFrameButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/FirstFrameButton.svg);
+    border: solid 1px white;
+}
+
+.DisabledFreehand {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Freehand.svg);
+}
+
+.DisabledHeadOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/HeadOrientation.svg);
+}
+
+.DisabledHighlight {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Highlight.svg);
+}
+
+.DisabledHSL {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/HSL.svg);
+}
+
+.DisabledImportTemplates {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ImportTemplates.svg);
+}
+
+.DisabledInvert {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Invert.svg);
+}
+
+.DisabledInvertColor {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/InvertColor.svg);
+}
+
+.DisabledLastFrameButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/LastFrameButton.svg);
+    border: solid 1px white;
+}
+
+.DisabledLeftOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/LeftOrientation.svg);
+}
+
+.DisabledLine {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Line.svg);
+}
+
+.DisabledLineProfile {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/LineProfile.svg);
+}
+
+.DisabledLinked {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Linked.svg);
+}
+
+.DisabledLinkStudies {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/LinkStudies.svg);
+}
+
+.DisabledLoadAnn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/LoadAnn.svg);
+}
+
+.DisabledMagnify {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Magnify.svg);
+}
+
+.DisabledMakeSameHeight {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/MakeSameHeight.svg);
+}
+
+.DisabledMakeSameSize {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/MakeSameSize.svg);
+}
+
+.DisabledMakeSameWidth {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/MakeSameWidth.svg);
+}
+
+.DisabledMergeCells {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/MergeCells.svg);
+}
+
+.DisabledMPRVolume {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/MPRVolume.svg);
+}
+
+.DisabledNewTemplate {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/NewTemplate.svg);
+}
+
+.DisabledNextFrameButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/NextFrameButton.svg);
+    border: solid 1px white;
+}
+
+.DisabledNote {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Note.svg);
+}
+
+.DisabledOneToOne {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/OneToOne.svg);
+}
+
+.DisabledPerio {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Perio.svg);
+}
+
+.DisabledPlayButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/PlayButton.svg);
+    border: solid 1px white;
+}
+
+.DisabledPoint {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Point.svg);
+}
+
+.DisabledPolygon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Polygon.svg);
+}
+
+.DisabledPolyline {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Polyline.svg);
+}
+
+.DisabledPolyRuler {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/PolyRuler.svg);
+}
+
+.DisabledPosteriorOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/PosteriorOrientation.svg);
+}
+
+.DisabledPreviousFrameButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/PreviousFrameButton.svg);
+    border: solid 1px white;
+}
+
+.DisabledPrint {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Print.svg);
+}
+
+.DisabledPrintCurrentView {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/PrintCurrentView.svg);
+}
+
+.DisabledProbeTool {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ProbeTool.svg);
+}
+
+.DisabledProbeTool {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ProbeTool.svg);
+}
+
+.DisabledProtractor {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Protractor.svg);
+}
+
+.DisabledRectangle {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Rectangle.svg);
+}
+
+.DisabledReferenceLine {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ReferenceLine.svg);
+}
+
+.DisabledReload {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Reload.svg);
+}
+
+.DisabledReloadAll {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ReloadAll.svg);
+}
+
+.DisabledRenameTemplate {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/RenameTemplate.svg);
+}
+
+.DisabledRightOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/RightOrientation.svg);
+}
+
+.DisabledRotate3D {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Rotate3D.svg);
+}
+
+.DisabledRuler {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Ruler.svg);
+}
+
+.DisabledSaveAnn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SaveAnn.svg);
+}
+
+.DisabledSaveHangingProtocol {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SaveHangingProtocol.svg);
+}
+
+.DisabledSaveLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SaveLayout.svg);
+}
+
+.DisabledSaveStructuredDisplay {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SaveStructuredDisplay.svg);
+}
+
+.DisabledSaveTemplate {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SaveTemplate.svg);
+}
+
+.DisabledScrollFrame {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ScrollFrame.svg);
+}
+
+.DisabledSecondaryCapture {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SecondaryCapture.svg);
+}
+
+.DisabledSelect {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Select.svg);
+}
+
+.DisabledSelectTemplateBox {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SelectTemplateBox.svg);
+}
+
+.DisabledSettings3D {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Settings3D.svg);
+}
+
+.DisabledShowFirstLast {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ShowFirstLast.svg);
+}
+
+.DisabledShowHide {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ShowHide.svg);
+}
+
+.DisabledShutterObject {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ShutterObject.svg);
+}
+
+.DisabledSnapToGrid {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SnapToGrid.svg);
+}
+
+.DisabledSortSeries {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SortSeries.svg);
+}
+
+.DisabledSpyglass {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Spyglass.svg);
+}
+
+.DisabledSpyglassCLAHE {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SpyglassCLAHE.svg);
+}
+
+.DisabledSpyGlassEqualization {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SpyGlassEqualization.svg);
+}
+
+.DisabledSpyglassInvert {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SpyglassInvert.svg);
+}
+
+.DisabledSpyglassWindowLevel {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SpyglassWindowLevel.svg);
+}
+
+.DisabledStack {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Stack.svg);
+}
+
+.DisabledStopButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/StopButton.svg);
+    border: solid 1px white;
+}
+
+.DisabledStretchHistogram {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/StretchHistogram.svg);
+}
+
+.DisabledSynchronization {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Synchronization.svg);
+}
+
+.DisabledText {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/Text.svg);
+}
+
+.DisabledTextPointer {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/TextPointer.svg);
+}
+
+.DisabledToggleCine {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ToggleCine.svg);
+}
+
+.DisabledToggleGrid {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ToggleGrid.svg);
+}
+
+.DisabledWaveformBasicAudio {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/WaveformBasicAudio.svg);
+}
+
+.DisabledWindowLevel {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/WindowLevel.svg);
+}
+
+.DisabledWindowLevelCustom {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/WindowLevelCustom.svg);
+}
+
+.DrawTemplateBox {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/DrawTemplateBox.svg);
+}
+
+.DrawTemplateBox:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/DrawTemplateBox.svg);
+}
+
+.Cursor3DPressed {
+   display: block;
+   width: 50px;
+   height: 50px;
+   background: url(../images/viewer/pressed/Cursor3D.svg);
+}
+
+.DrawTemplateBoxPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/DrawTemplateBox.svg);
+}
+
+.Ellipse {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Ellipse.svg);
+}
+
+.Ellipse:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Ellipse.svg);
+}
+
+.EnabledSynchronization {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/Synchronization.svg);
+}
+
+.Endo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Endo.svg);
+}
+
+.Endo:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Endo.svg);
+}
+
+.EndoPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/Endo.svg);
+}
+
+.Export {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Export.svg);
+}
+
+.Export:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Export.svg);
+}
+
+.ExportTemplates {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ExportTemplates.svg);
+}
+
+.ExportTemplates:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ExportTemplates.svg);
+}
+
+.FeetOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/FeetOrientation.svg);
+}
+
+.FeetOrientation:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/FeetOrientation.svg);
+}
+
+.FirstFrameButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/FirstFrameButton.svg);
+    border: solid 1px white;
+}
+
+.FirstFrameButton:hover {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/FirstFrameButton.svg);
+    border: solid 1px black;
+}
+
+.FitImage {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/FitImage.svg);
+}
+
+.FitImage:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/FitImage.svg);
+}
+
+.Flip {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Flip.svg);
+}
+
+.Flip:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Flip.svg);
+}
+
+.Freehand {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Freehand.svg);
+}
+
+.Freehand:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Freehand.svg);
+}
+
+.FullScreen {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/FullScreen.svg);
+}
+
+.FullScreen:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/FullScreen.svg);
+}
+
+.HeadOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/HeadOrientation.svg);
+}
+
+.HeadOrientation:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/HeadOrientation.svg);
+}
+
+.Highlight {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Highlight.svg);
+}
+
+.Highlight:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Highlight.svg);
+}
+
+.HSL {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/HSL.svg);
+}
+
+.HSL:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/HSL.svg);
+}
+
+.ImportTemplates {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ImportTemplates.svg);
+}
+
+.ImportTemplates:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ImportTemplates.svg);
+}
+
+
+.EdgeEnhancment {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/EdgeEnhancment.svg);
+}
+
+.EdgeEnhancment:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/EdgeEnhancment.svg);
+}
+
+.DisabledEdgeEnhancment:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/EdgeEnhancment.svg);
+}
+
+
+.Invert {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Flip.svg);
+}
+
+.InvertColor {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/InvertColor.svg);
+}
+
+.InvertColor:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/InvertColor.svg);
+}
+
+.LastFrameButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/LastFrameButton.svg);
+    border: solid 1px white;
+}
+
+.LastFrameButton:hover {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/LastFrameButton.svg);
+    border: solid 1px black;
+}
+
+.LeftOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/LeftOrientation.svg);
+}
+
+.LeftOrientation:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/LeftOrientation.svg);
+}
+
+.Line {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Line.svg);
+}
+
+.Line:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Line.svg);
+}
+
+.LineProfile {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/LineProfile.svg);
+}
+
+.LineProfile:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/LineProfile.svg);
+}
+
+.Linked {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Linked.svg);
+}
+
+.Linked:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Linked.svg);
+}
+
+.LinkStudies {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/LinkStudies.svg);
+}
+
+.LinkStudies:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/LinkStudies.svg);
+}
+
+.LoadAnn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/LoadAnn.svg);
+}
+
+.LoadAnn:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/LoadAnn.svg);
+}
+
+.Magnify {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Magnify.svg);
+}
+
+.Magnify:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Magnify.svg);
+}
+
+.MagnifyPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/Magnify.svg);
+}
+
+.MakeSameHeight {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/MakeSameHeight.svg);
+}
+
+.MakeSameHeight:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/MakeSameHeight.svg);
+}
+
+.MakeSameSize {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/MakeSameSize.svg);
+}
+
+.MakeSameSize:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/MakeSameSize.svg);
+}
+
+.MakeSameWidth {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/MakeSameWidth.svg);
+}
+
+.MakeSameWidth:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/MakeSameWidth.svg);
+}
+
+.MergeCells {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/MergeCells.svg);
+}
+
+.MergeCells:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/MergeCells.svg);
+}
+
+.MIP {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/MIP.svg);
+}
+
+.MIP:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/MIP.svg);
+}
+
+.MPR {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/MPR.svg);
+}
+
+.MPR:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/MPR.svg);
+}
+
+.MPRVolume {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/MPRVolume.svg);
+}
+
+.MPRVolume:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/MPRVolume.svg);
+}
+
+.NewTemplate {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/NewTemplate.svg);
+}
+
+.NewTemplate:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/NewTemplate.svg);
+}
+
+.NextFrameButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/NextFrameButton.svg);
+    border: solid 1px white;
+}
+
+.NextFrameButton:hover {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/NextFrameButton.svg);
+    border: solid 1px black;
+}
+
+.NextImage {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/NextImage.svg);
+}
+
+.NextImage:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/NextImage.svg);
+}
+
+.NextPoint {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/NextPoint.svg);
+}
+
+.NextPoint:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/NextPoint.svg);
+}
+
+.Note {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Note.svg);
+}
+
+.Note:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Note.svg);
+}
+
+
+.OneToOne {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/OneToOne.svg);
+}
+
+.OneToOne:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/OneToOne.svg);
+}
+
+.OneToOneDisabled {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/OneToOne.svg);
+}
+
+.Pan {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Pan.svg);
+}
+
+.Pan:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Pan.svg);
+}
+
+.PanPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/Pan.svg);
+}
+
+.Perio {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Perio.svg);
+}
+
+.Perio:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Perio.svg);
+}
+
+.PerioPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/Perio.svg);
+}
+
+.PlayButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/PlayButton.svg);
+    border: solid 1px white;
+}
+
+.PlayButton:hover {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/PlayButton.svg);
+    border: solid 1px black;
+}
+
+.Point {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Point.svg);
+}
+
+.Point:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Point.svg);
+}
+
+.Polygon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Polygon.svg);
+}
+
+.Polygon:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Polygon.svg);
+}
+
+.Polyline {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Polyline.svg);
+}
+
+.Polyline:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Polyline.svg);
+}
+
+.PolyRuler {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/PolyRuler.svg);
+}
+
+.PolyRuler:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/PolyRuler.svg);
+}
+
+.PopupCapture {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/PopupCapture.svg);
+}
+
+.PopupCapture:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/PopupCapture.svg);
+}
+
+.PosteriorOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/PosteriorOrientation.svg);
+}
+
+.PosteriorOrientation:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/PosteriorOrientation.svg);
+}
+
+.PreviousFrameButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/PreviousFrameButton.svg);
+    border: solid 1px white;
+}
+
+.PreviousFrameButton:hover {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/PreviousFrameButton.svg);
+    border: solid 1px black;
+}
+
+.PreviousImage {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/PreviousImage.svg);
+}
+
+.PreviousImage:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/PreviousImage.svg);
+}
+
+.PreviousPoint {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/PreviousPoint.svg);
+}
+
+.PreviousPoint:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/PreviousPoint.svg);
+}
+
+.Print {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Print.svg);
+}
+
+.Print:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Print.svg);
+}
+
+.PrintCurrentView {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/PrintCurrentView.svg);
+}
+
+.PrintCurrentView:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/PrintCurrentView.svg);
+}
+
+.ProbeTool {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ProbeTool.svg);
+}
+
+.ProbeTool:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ProbeTool.svg);
+}
+
+.ProbeToolPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/ProbeTool.svg);
+}
+
+.Protractor {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Protractor.svg);
+}
+
+.Protractor:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Protractor.svg);
+}
+
+.Rectangle {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Rectangle.svg);
+}
+
+.Rectangle:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Rectangle.svg);
+}
+
+.ReferenceLine {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ReferenceLine.svg);
+}
+
+.ReferenceLine:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ReferenceLine.svg);
+}
+
+.ReferenceLinePressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/ReferenceLine.svg);
+}
+
+.Reload {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Reload.svg);
+}
+
+.Reload:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Reload.svg);
+}
+
+.ReloadAll {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ReloadAll.svg);
+}
+
+.ReloadAll:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ReloadAll.svg);
+}
+
+.RenameTemplate {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/RenameTemplate.svg);
+}
+
+.RenameTemplate:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/RenameTemplate.svg);
+}
+
+.Reverse {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Reverse.svg);
+}
+
+.Reverse:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Reverse.svg);
+}
+
+.RightOrientation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/RightOrientation.svg);
+}
+
+.RightOrientation:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/RightOrientation.svg);
+}
+
+.Rotate3D {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Rotate3D.svg);
+}
+
+.Rotate3D:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Rotate3D.svg);
+}
+
+.Rotate3DPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/Rotate3D.svg);
+}
+
+.RotateClock {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/RotateClock.svg);
+}
+
+.RotateClock:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/RotateClock.svg);
+}
+
+.RotateCounterClock {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/RotateCounterClock.svg);
+}
+
+.RotateCounterClock:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/RotateCounterClock.svg);
+}
+
+.Ruler {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Ruler.svg);
+}
+
+.Ruler:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Ruler.svg);
+}
+
+.SaveAnn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SaveAnn.svg);
+}
+
+.SaveAnn:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SaveAnn.svg);
+}
+
+.SaveHangingProtocol {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SaveHangingProtocol.svg);
+}
+
+.SaveHangingProtocol:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SaveHangingProtocol.svg);
+}
+
+.SaveLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SaveLayout.svg);
+}
+
+.SaveLayout:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SaveLayout.svg);
+}
+
+.SaveStructuredDisplay {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SaveStructuredDisplay.svg);
+}
+
+.SaveStructuredDisplay:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SaveStructuredDisplay.svg);
+}
+
+.SaveTemplate {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SaveTemplate.svg);
+}
+
+.SaveTemplate:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SaveTemplate.svg);
+}
+
+.ScrollColumn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ScrollColumn.svg);
+}
+
+.ScrollColumn:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ScrollColumn.svg);
+}
+
+.ScrollFrame {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ScrollFrame.svg);
+}
+
+.ScrollFrame:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ScrollFrame.svg);
+}
+
+.ScrollPage {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ScrollPage.svg);
+}
+
+.ScrollPage {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ScrollPage.svg);
+}
+
+.ScrollPage:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ScrollPage.svg);
+}
+
+.ScrollPage:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ScrollPage.svg);
+}
+
+.ScrollRow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ScrollRow.svg);
+}
+
+.ScrollRow:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ScrollRow.svg);
+}
+
+.SecondaryCapture {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SecondaryCapture.svg);
+}
+
+.SecondaryCapture:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SecondaryCapture.svg);
+}
+
+.Select {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Select.svg);
+}
+
+.Select:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Select.svg);
+}
+
+.SelectTemplateBox {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SelectTemplateBox.svg);
+}
+
+.SelectTemplateBox:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SelectTemplateBox.svg);
+}
+
+.SelectTemplateBoxPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/SelectTemplateBox.svg);
+}
+
+.SeriesLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SeriesLayout.svg);
+}
+
+.DisabledSeriesLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/SeriesLayout.svg);
+}
+
+.SeriesLayout:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SeriesLayout.svg);
+}
+
+.Settings3D {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Settings3D.svg);
+}
+
+.Settings3D:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Settings3D.svg);
+}
+
+.ShowDicom {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ShowDicom.svg);
+}
+
+.ShowDicom:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ShowDicom.svg);
+}
+
+.ShowFirstLast {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ShowFirstLast.svg);
+}
+
+.ShowFirstLast:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ShowFirstLast.svg);
+}
+
+.ShowFirstLastPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/ShowFirstLast.svg);
+}
+
+.ShowHide {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ShowHide.svg);
+}
+
+.ShowHide:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ShowHide.svg);
+}
+
+.ShutterObject {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ShutterObject.svg);
+}
+
+.ShutterObject:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ShutterObject.svg);
+}
+
+.SnapToGrid {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SnapToGrid.svg);
+}
+
+.SnapToGrid:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SnapToGrid.svg);
+}
+
+.SortSeries {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SortSeries.svg);
+}
+
+.SortSeries:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SortSeries.svg);
+}
+
+.SpatialRegsiteration {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/LinkStudies.svg);
+}
+
+.SpatialRegsiteration:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/LinkStudies.svg);
+}
+
+.Spyglass {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Spyglass.svg);
+}
+
+.Spyglass:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Spyglass.svg);
+}
+
+.SpyglassCLAHE {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SpyglassCLAHE.svg);
+}
+
+.SpyglassCLAHE:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SpyglassCLAHE.svg);
+}
+
+.SpyGlassEqualization {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SpyGlassEqualization.svg);
+}
+
+.SpyGlassEqualization:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SpyGlassEqualization.svg);
+}
+
+.SpyglassInvert {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SpyglassInvert.svg);
+}
+
+.SpyglassInvert:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SpyglassInvert.svg);
+}
+
+.SpyglassWindowLevel {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SpyglassWindowLevel.svg);
+}
+
+.SpyglassWindowLevel:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SpyglassWindowLevel.svg);
+}
+
+.SSD {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/SSD.svg);
+}
+
+.SSD:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/SSD.svg);
+}
+
+.Stack {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Stack.svg);
+}
+
+.Stack:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Stack.svg);
+}
+
+.StackPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/Stack.svg);
+}
+
+.StopButton {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/StopButton.svg);
+    border: solid 1px white;
+}
+
+.StopButton:hover {
+    display: block;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/StopButton.svg);
+    border: solid 1px black;
+}
+
+.StretchHistogram {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/StretchHistogram.svg);
+}
+
+.StretchHistogram:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/StretchHistogram.svg);
+}
+
+.StudyLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/StudyLayout.svg);
+}
+
+.StudyLayout:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/StudyLayout.svg);
+}
+
+.StudyTimeLine {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/StudyTimeLine.svg);
+}
+
+.StudyTimeLine:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/StudyTimeLine.svg);
+}
+
+.Synchronization {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Synchronization.svg);
+}
+
+.Synchronization:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Synchronization.svg);
+}
+
+.Text {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Text.svg);
+}
+
+.Text:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Text.svg);
+}
+
+.TextPointer {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/TextPointer.svg);
+}
+
+.TextPointer:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/TextPointer.svg);
+}
+
+.ToggleCine {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ToggleCine.svg);
+}
+
+.ToggleCine:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ToggleCine.svg);
+}
+
+.ToggleCinePaused {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ToggleCinePaused.svg);
+}
+
+.ToggleCinePaused:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ToggleCinePaused.svg);
+}
+
+.ToggleGrid {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ToggleGrid.svg);
+}
+
+.ToggleGrid:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ToggleGrid.svg);
+}
+
+.ToggleGridPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/ToggleGrid.svg);
+}
+
+.ToggleTags {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ToggleTags.svg);
+}
+
+.ToggleTags:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ToggleTags.svg);
+}
+
+.Tools {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Tools.svg);
+}
+
+.Tools:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Tools.svg);
+}
+
+.TrueSizeDisplay {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/TrueSizeDisplay.svg);
+}
+
+.TrueSizeDisplay:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/TrueSizeDisplay.svg);
+}
+
+.TrueSizeDisplayDisabled {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/TrueSizeDisplay.svg);
+}
+
+.UnLinked {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/UnLinked.svg);
+}
+
+.UnLinked:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/UnLinked.svg);
+}
+
+.VRT {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/VRT.svg);
+}
+
+.VRT:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/VRT.svg);
+}
+
+.WaveformBasicAudio {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/WaveformBasicAudio.svg);
+}
+
+.WaveformBasicAudio:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/WaveformBasicAudio.svg);
+}
+
+.WindowLevel {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/WindowLevel.svg);
+}
+
+.WindowLevel:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/WindowLevel.svg);
+}
+
+.WindowLevelCustom {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/WindowLevelCustom.svg);
+}
+
+.WindowLevelCustom:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/WindowLevelCustom.svg);
+}
+
+.WindowLevelPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/WindowLevel.svg);
+}
+
+.Zoom {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/Zoom.svg);
+}
+
+.Zoom:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/Zoom.svg);
+}
+
+.ZoomIn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ZoomIn.svg);
+}
+
+.ZoomIn:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ZoomIn.svg);
+}
+
+.ZoomOut {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/main/ZoomOut.svg);
+}
+
+.ZoomOut:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/rollover/ZoomOut.svg);
+}
+
+.DisabledZoomOut {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ZoomOut.svg);
+}
+
+.DisabledZoomIn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/ZoomIn.svg);
+}
+
+.DisabledFitImage {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/disabled/FitImage.svg);
+}
+
+
+.ZoomPressed {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/pressed/Zoom.svg);
+}

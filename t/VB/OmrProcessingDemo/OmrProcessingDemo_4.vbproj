@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1EBE06E8-8EE6-4C14-B5B2-72D99643426B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ApplicationIcon>..\..\..\Resources\Doc.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>VBOmrProcessingDemo</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OmrProcessingDemo</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG,TRACE,LTV20_CONFIG,FOR_DOTNET4,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE,LTV20_CONFIG,FOR_DOTNET4,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG,TRACE,LTV20_CONFIG,FOR_DOTNET4,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE,LTV20_CONFIG,FOR_DOTNET4,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Automation">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Automation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Designers">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Designers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Engine">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Engine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Rendering.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Rendering.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Barcode">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Barcode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Controls.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Controls.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Document.Writer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Document.Writer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Forms.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Forms.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Forms.Processing.Omr">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Forms.Processing.Omr.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Ocr">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Ocr.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Twain">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Twain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Caching">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Caching.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.File">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.WinForms.CommonDialogs.File.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Demos.vb">
+      <Link>Common\Demos.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Globalization.vb">
+      <Link>Common\Globalization.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="ActionEventArgs.vb" />
+    <Compile Include="InfoDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoDialog.Designer.vb">
+      <DependentUpon>InfoDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\DataExporter.vb" />
+    <Compile Include="Operations\ExtractReviewCollectionOperation.vb" />
+    <Compile Include="Operations\GradeOperation.vb" />
+    <Compile Include="Operations\HTMLExporter.vb" />
+    <Compile Include="Operations\LoadWorkspaceOperation.vb" />
+    <Compile Include="Operations\SaveWorkspaceOperation.vb" />
+    <Compile Include="Operations\StatisticsExporter.vb" />
+    <Compile Include="Operations\TwainOperation.vb" />
+    <Compile Include="IImageManager.vb" />
+    <Compile Include="UI\CloseRequestArgs.vb" />
+    <Compile Include="UI\IntroDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\IntroDialog.Designer.vb">
+      <DependentUpon>IntroDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\ErrorStatisticsPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\ManualReviewPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\ManualReviewPanel.Designer.vb">
+      <DependentUpon>ManualReviewPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\WizardStep.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\KeyPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\KeyPanel.Designer.vb">
+      <DependentUpon>KeyPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ColorCodeLegend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ColorCodeLegend.Designer.vb">
+      <DependentUpon>ColorCodeLegend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\DataGridViewDoubleBuffered.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ResultSearchDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ResultSearchDialog.Designer.vb">
+      <DependentUpon>ResultSearchDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ReviewParameters.vb" />
+    <Compile Include="UI\ResultsPanel\SingleReviewPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\SingleReviewPanel.Designer.vb">
+      <DependentUpon>SingleReviewPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\HighlightOptionsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\HighlightOptionsDialog.Designer.vb">
+      <DependentUpon>HighlightOptionsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\SingleFieldPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\SingleFieldPanel.Designer.vb">
+      <DependentUpon>SingleFieldPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\TextResultPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\Workspace.vb" />
+    <Compile Include="UI\RowNumberDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RowNumberDialog.Designer.vb">
+      <DependentUpon>RowNumberDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TwainDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TwainDialog.Designer.vb">
+      <DependentUpon>TwainDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\BarcodeFormFieldDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\BarcodeFormFieldDialog.Designer.vb">
+      <DependentUpon>BarcodeFormFieldDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\DetectBarcodeOperation.vb" />
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NewTemplateDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NewTemplateDialog.Designer.vb">
+      <DependentUpon>NewTemplateDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\TemplatePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\TemplatePanel.Designer.vb">
+      <DependentUpon>TemplatePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\FormSpecificDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\FormSpecificDialog.Designer.vb">
+      <DependentUpon>FormSpecificDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OmrCollectionDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OmrCollectionDialog.Designer.vb">
+      <DependentUpon>OmrCollectionDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OmrFieldDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OmrFieldDialog.Designer.vb">
+      <DependentUpon>OmrFieldDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\BusyOperation.vb" />
+    <Compile Include="Operations\ProcessOmrDocumentsOperation.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="UI\ResultsPanel\ResultsPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultsPanel\ResultsPanel.Designer.vb">
+      <DependentUpon>ResultsPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OptionsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\OptionsDialog.Designer.vb">
+      <DependentUpon>OptionsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\PanViewerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\PanViewerForm.designer.vb">
+      <DependentUpon>PanViewerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\TextFormFieldDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\TextFormFieldDialog.Designer.vb">
+      <DependentUpon>TextFormFieldDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TextInputDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TextInputDialog.Designer.vb">
+      <DependentUpon>TextInputDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\InputPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\InputPanel.Designer.vb">
+      <DependentUpon>InputPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\ProcessInputDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OMRProcessInputWizard\ProcessInputDialog.Designer.vb">
+      <DependentUpon>ProcessInputDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\CreateNewTemplateOperation.vb" />
+    <Compile Include="UI\ViewerControl\ViewerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerControl\ViewerControl.Designer.vb">
+      <DependentUpon>ViewerControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerControl\ViewerControlInteractiveMode.vb" />
+    <Compile Include="UI\ViewerControl\ZoneAnnotationObject.vb" />
+    <Compile Include="UI\ViewerControl\ZoneAnnotationObjectEditDesigner.vb" />
+    <Compile Include="UI\ViewerControl\ZoneAnnotationObjectRenderer.vb" />
+    <Compile Include="WaitWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitWindow.Designer.vb">
+      <DependentUpon>WaitWindow.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InfoDialog.resx">
+      <DependentUpon>InfoDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\IntroDialog.resx">
+      <DependentUpon>IntroDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\ErrorStatisticsPanel.resx">
+      <DependentUpon>ErrorStatisticsPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\ManualReviewPanel.resx">
+      <DependentUpon>ManualReviewPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\KeyPanel.resx">
+      <DependentUpon>KeyPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\WizardStep.resx">
+      <DependentUpon>WizardStep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\ColorCodeLegend.resx">
+      <DependentUpon>ColorCodeLegend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\HighlightOptionsDialog.resx">
+      <DependentUpon>HighlightOptionsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\ResultSearchDialog.resx">
+      <DependentUpon>ResultSearchDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\SingleFieldPanel.resx">
+      <DependentUpon>SingleFieldPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\SingleReviewPanel.resx">
+      <DependentUpon>SingleReviewPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultsPanel\TextResultPanel.resx">
+      <DependentUpon>TextResultPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RowNumberDialog.resx">
+      <DependentUpon>RowNumberDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TwainDialog.resx">
+      <DependentUpon>TwainDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\BarcodeFormFieldDialog.resx">
+      <DependentUpon>BarcodeFormFieldDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NewTemplateDialog.resx">
+      <DependentUpon>NewTemplateDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\InputPanel.resx">
+      <DependentUpon>InputPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\TemplatePanel.resx">
+      <DependentUpon>TemplatePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\FormSpecificDialog.resx">
+      <DependentUpon>FormSpecificDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\OmrCollectionDialog.resx">
+      <DependentUpon>OmrCollectionDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\OmrFieldDialog.resx">
+      <DependentUpon>OmrFieldDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\ResultsPanel\ResultsPanel.resx">
+      <DependentUpon>ResultsPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\PanViewerForm.ja.resx">
+      <DependentUpon>PanViewerForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\PanViewerForm.resx">
+      <DependentUpon>PanViewerForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\TextFormFieldDialog.resx">
+      <DependentUpon>TextFormFieldDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TextInputDialog.resx">
+      <DependentUpon>TextInputDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OMRProcessInputWizard\ProcessInputDialog.resx">
+      <DependentUpon>ProcessInputDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerControl\ViewerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewerControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitWindow.resx">
+      <DependentUpon>WaitWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrawZoneMode.png" />
+    <None Include="Resources\FitPage.png" />
+    <None Include="Resources\FitPageWidth.png" />
+    <None Include="Resources\NextPage.png" />
+    <None Include="Resources\PreviousPage.png" />
+    <None Include="Resources\ShowZones.png" />
+    <None Include="Resources\ZoomIn.png" />
+    <None Include="Resources\ZoomOut.png" />
+    <None Include="Resources\ZoomSelection.png" />
+    <None Include="Resources\ocr.png" />
+    <None Include="Resources\bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lv.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-select.png" />
+    <None Include="Resources\zoom-out.png" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\Untitled-3.png" />
+    <None Include="Resources\show-pan.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\picture.png" />
+    <None Include="Resources\pan.png" />
+    <None Include="Resources\omr1.png" />
+    <None Include="Resources\omr.png" />
+    <None Include="Resources\note-2.png" />
+    <None Include="Resources\note.png" />
+    <None Include="Resources\green-note.png" />
+    <None Include="Resources\colors.png" />
+    <None Include="Resources\barcode.png" />
+    <Content Include="Resources\locked.png" />
+    <Content Include="Resources\unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

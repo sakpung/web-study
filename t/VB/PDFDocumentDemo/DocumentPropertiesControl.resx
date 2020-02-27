@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_modifiedTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_modifiedTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 209</value>
+  </data>
+  <data name="_modifiedTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_modifiedTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;_modifiedTextBox.Name" xml:space="preserve">
+    <value>_modifiedTextBox</value>
+  </data>
+  <data name="&gt;&gt;_modifiedTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_modifiedTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_modifiedTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_createdTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_createdTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 183</value>
+  </data>
+  <data name="_createdTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <data name="_createdTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;_createdTextBox.Name" xml:space="preserve">
+    <value>_createdTextBox</value>
+  </data>
+  <data name="&gt;&gt;_createdTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_createdTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_createdTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_modifiedDateTimePicker.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_modifiedDateTimePicker.CustomFormat" xml:space="preserve">
+    <value>MM/dd/yyyy - hh:mm:ss tt</value>
+  </data>
+  <data name="_modifiedDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 209</value>
+  </data>
+  <data name="_modifiedDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <data name="_modifiedDateTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;_modifiedDateTimePicker.Name" xml:space="preserve">
+    <value>_modifiedDateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;_modifiedDateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_modifiedDateTimePicker.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_modifiedDateTimePicker.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_createdDateTimePicker.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_createdDateTimePicker.CustomFormat" xml:space="preserve">
+    <value>MM/dd/yyyy - hh:mm:ss tt</value>
+  </data>
+  <data name="_createdDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 183</value>
+  </data>
+  <data name="_createdDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <data name="_createdDateTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;_createdDateTimePicker.Name" xml:space="preserve">
+    <value>_createdDateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;_createdDateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_createdDateTimePicker.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_createdDateTimePicker.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_modifiedLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_modifiedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 212</value>
+  </data>
+  <data name="_modifiedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="_modifiedLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="_modifiedLabel.Text" xml:space="preserve">
+    <value>Modified:</value>
+  </data>
+  <data name="&gt;&gt;_modifiedLabel.Name" xml:space="preserve">
+    <value>_modifiedLabel</value>
+  </data>
+  <data name="&gt;&gt;_modifiedLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_modifiedLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_modifiedLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_createdLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_createdLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 186</value>
+  </data>
+  <data name="_createdLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="_createdLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="_createdLabel.Text" xml:space="preserve">
+    <value>Created:</value>
+  </data>
+  <data name="&gt;&gt;_createdLabel.Name" xml:space="preserve">
+    <value>_createdLabel</value>
+  </data>
+  <data name="&gt;&gt;_createdLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_createdLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_createdLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_producerTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_producerTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 157</value>
+  </data>
+  <data name="_producerTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <data name="_producerTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_producerTextBox.Name" xml:space="preserve">
+    <value>_producerTextBox</value>
+  </data>
+  <data name="&gt;&gt;_producerTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_producerTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_producerTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_producerLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_producerLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 160</value>
+  </data>
+  <data name="_producerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="_producerLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="_producerLabel.Text" xml:space="preserve">
+    <value>Producer:</value>
+  </data>
+  <data name="&gt;&gt;_producerLabel.Name" xml:space="preserve">
+    <value>_producerLabel</value>
+  </data>
+  <data name="&gt;&gt;_producerLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_producerLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_producerLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_creatorTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_creatorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 131</value>
+  </data>
+  <data name="_creatorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <data name="_creatorTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_creatorTextBox.Name" xml:space="preserve">
+    <value>_creatorTextBox</value>
+  </data>
+  <data name="&gt;&gt;_creatorTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_creatorTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_creatorTextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_creatorLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_creatorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 134</value>
+  </data>
+  <data name="_creatorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="_creatorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="_creatorLabel.Text" xml:space="preserve">
+    <value>Creator:</value>
+  </data>
+  <data name="&gt;&gt;_creatorLabel.Name" xml:space="preserve">
+    <value>_creatorLabel</value>
+  </data>
+  <data name="&gt;&gt;_creatorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_creatorLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_creatorLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="_keywordsTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_keywordsTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 105</value>
+  </data>
+  <data name="_keywordsTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <data name="_keywordsTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_keywordsTextBox.Name" xml:space="preserve">
+    <value>_keywordsTextBox</value>
+  </data>
+  <data name="&gt;&gt;_keywordsTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_keywordsTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_keywordsTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="_keywordsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_keywordsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 108</value>
+  </data>
+  <data name="_keywordsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="_keywordsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_keywordsLabel.Text" xml:space="preserve">
+    <value>Keywords:</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabel.Name" xml:space="preserve">
+    <value>_keywordsLabel</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="_subjectTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_subjectTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 79</value>
+  </data>
+  <data name="_subjectTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <data name="_subjectTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_subjectTextBox.Name" xml:space="preserve">
+    <value>_subjectTextBox</value>
+  </data>
+  <data name="&gt;&gt;_subjectTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_subjectTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_subjectTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="_subjectLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_subjectLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 82</value>
+  </data>
+  <data name="_subjectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="_subjectLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_subjectLabel.Text" xml:space="preserve">
+    <value>Subject:</value>
+  </data>
+  <data name="&gt;&gt;_subjectLabel.Name" xml:space="preserve">
+    <value>_subjectLabel</value>
+  </data>
+  <data name="&gt;&gt;_subjectLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_subjectLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_subjectLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="_authorTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_authorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 53</value>
+  </data>
+  <data name="_authorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <data name="_authorTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_authorTextBox.Name" xml:space="preserve">
+    <value>_authorTextBox</value>
+  </data>
+  <data name="&gt;&gt;_authorTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_authorTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_authorTextBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="_authorLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_authorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 56</value>
+  </data>
+  <data name="_authorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="_authorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_authorLabel.Text" xml:space="preserve">
+    <value>Author:</value>
+  </data>
+  <data name="&gt;&gt;_authorLabel.Name" xml:space="preserve">
+    <value>_authorLabel</value>
+  </data>
+  <data name="&gt;&gt;_authorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_authorLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_authorLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="_titleTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_titleTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 27</value>
+  </data>
+  <data name="_titleTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <data name="_titleTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_titleTextBox.Name" xml:space="preserve">
+    <value>_titleTextBox</value>
+  </data>
+  <data name="&gt;&gt;_titleTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_titleTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_titleTextBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="_titleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_titleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 30</value>
+  </data>
+  <data name="_titleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="_titleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_titleLabel.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="&gt;&gt;_titleLabel.Name" xml:space="preserve">
+    <value>_titleLabel</value>
+  </data>
+  <data name="&gt;&gt;_titleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_titleLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_titleLabel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="_propertiesGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="_propertiesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_propertiesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 246</value>
+  </data>
+  <data name="_propertiesGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_propertiesGroupBox.Text" xml:space="preserve">
+    <value>Document properties:</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.Name" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 246</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DocumentPropertiesControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

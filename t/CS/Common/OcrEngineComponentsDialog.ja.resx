@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>OCR エンジン コンポーネント</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>OcrEngineComponentsDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_leadEngineDictionariesNoteLabel.Name" xml:space="preserve">
+    <value>_leadEngineDictionariesNoteLabel</value>
+  </data>
+  <data name="&gt;&gt;_leadEngineDictionariesNoteLabel.Parent" xml:space="preserve">
+    <value>_tpDictionaries</value>
+  </data>
+  <data name="&gt;&gt;_leadEngineDictionariesNoteLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_leadEngineDictionariesNoteLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_btnClose.Name" xml:space="preserve">
+    <value>_btnClose</value>
+  </data>
+  <data name="&gt;&gt;_btnClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnClose.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalFillMethods.Name" xml:space="preserve">
+    <value>_gbAdditionalFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalFillMethods.Parent" xml:space="preserve">
+    <value>_tpFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalFillMethods.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalFillMethods.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalLanguages.Name" xml:space="preserve">
+    <value>_gbAdditionalLanguages</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalLanguages.Parent" xml:space="preserve">
+    <value>_tpLanguages</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalLanguages.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalRecognitionModules.Name" xml:space="preserve">
+    <value>_gbAdditionalRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalRecognitionModules.Parent" xml:space="preserve">
+    <value>_tpRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalRecognitionModules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbAdditionalRecognitionModules.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledEngineFormats.Name" xml:space="preserve">
+    <value>_gbInstalledEngineFormats</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledEngineFormats.Parent" xml:space="preserve">
+    <value>_tpEngineFormats</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledEngineFormats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledEngineFormats.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledFillMethods.Name" xml:space="preserve">
+    <value>_gbInstalledFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledFillMethods.Parent" xml:space="preserve">
+    <value>_tpFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledFillMethods.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledFillMethods.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledLanguages.Name" xml:space="preserve">
+    <value>_gbInstalledLanguages</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledLanguages.Parent" xml:space="preserve">
+    <value>_tpLanguages</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledLanguages.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledRecognitionModules.Name" xml:space="preserve">
+    <value>_gbInstalledRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledRecognitionModules.Parent" xml:space="preserve">
+    <value>_tpRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledRecognitionModules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbInstalledRecognitionModules.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_gpAdditionalDictionaries.Name" xml:space="preserve">
+    <value>_gpAdditionalDictionaries</value>
+  </data>
+  <data name="&gt;&gt;_gpAdditionalDictionaries.Parent" xml:space="preserve">
+    <value>_tpDictionaries</value>
+  </data>
+  <data name="&gt;&gt;_gpAdditionalDictionaries.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gpAdditionalDictionaries.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_gpAdditionalEngineFormats.Name" xml:space="preserve">
+    <value>_gpAdditionalEngineFormats</value>
+  </data>
+  <data name="&gt;&gt;_gpAdditionalEngineFormats.Parent" xml:space="preserve">
+    <value>_tpEngineFormats</value>
+  </data>
+  <data name="&gt;&gt;_gpAdditionalEngineFormats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gpAdditionalEngineFormats.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_gpInstalledDictionaries.Name" xml:space="preserve">
+    <value>_gpInstalledDictionaries</value>
+  </data>
+  <data name="&gt;&gt;_gpInstalledDictionaries.Parent" xml:space="preserve">
+    <value>_tpDictionaries</value>
+  </data>
+  <data name="&gt;&gt;_gpInstalledDictionaries.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gpInstalledDictionaries.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalDictionaries.Name" xml:space="preserve">
+    <value>_lbAdditionalDictionaries</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalDictionaries.Parent" xml:space="preserve">
+    <value>_gpAdditionalDictionaries</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalDictionaries.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalDictionaries.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalEngineFormats.Name" xml:space="preserve">
+    <value>_lbAdditionalEngineFormats</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalEngineFormats.Parent" xml:space="preserve">
+    <value>_gpAdditionalEngineFormats</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalEngineFormats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalEngineFormats.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalFillMethods.Name" xml:space="preserve">
+    <value>_lbAdditionalFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalFillMethods.Parent" xml:space="preserve">
+    <value>_gbAdditionalFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalFillMethods.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalFillMethods.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalLanguages.Name" xml:space="preserve">
+    <value>_lbAdditionalLanguages</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalLanguages.Parent" xml:space="preserve">
+    <value>_gbAdditionalLanguages</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalLanguages.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalRecognitionModules.Name" xml:space="preserve">
+    <value>_lbAdditionalRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalRecognitionModules.Parent" xml:space="preserve">
+    <value>_gbAdditionalRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalRecognitionModules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbAdditionalRecognitionModules.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.Name" xml:space="preserve">
+    <value>_lbDownload</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledDictionaries.Name" xml:space="preserve">
+    <value>_lbInstalledDictionaries</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledDictionaries.Parent" xml:space="preserve">
+    <value>_gpInstalledDictionaries</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledDictionaries.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledDictionaries.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledEngineFormats.Name" xml:space="preserve">
+    <value>_lbInstalledEngineFormats</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledEngineFormats.Parent" xml:space="preserve">
+    <value>_gbInstalledEngineFormats</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledEngineFormats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledEngineFormats.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledFillMethods.Name" xml:space="preserve">
+    <value>_lbInstalledFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledFillMethods.Parent" xml:space="preserve">
+    <value>_gbInstalledFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledFillMethods.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledFillMethods.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledLanguages.Name" xml:space="preserve">
+    <value>_lbInstalledLanguages</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledLanguages.Parent" xml:space="preserve">
+    <value>_gbInstalledLanguages</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledLanguages.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledRecognitionModules.Name" xml:space="preserve">
+    <value>_lbInstalledRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledRecognitionModules.Parent" xml:space="preserve">
+    <value>_gbInstalledRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledRecognitionModules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbInstalledRecognitionModules.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblMessage.Name" xml:space="preserve">
+    <value>_lblMessage</value>
+  </data>
+  <data name="&gt;&gt;_lblMessage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblMessage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalFillMethods.Name" xml:space="preserve">
+    <value>_lblNoAdditionalFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalFillMethods.Parent" xml:space="preserve">
+    <value>_gbAdditionalFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalFillMethods.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalFillMethods.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalLanguages.Name" xml:space="preserve">
+    <value>_lblNoAdditionalLanguages</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalLanguages.Parent" xml:space="preserve">
+    <value>_gbAdditionalLanguages</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalLanguages.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalRecognitionModules.Name" xml:space="preserve">
+    <value>_lblNoAdditionalRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalRecognitionModules.Parent" xml:space="preserve">
+    <value>_gbAdditionalRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalRecognitionModules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblNoAdditionalRecognitionModules.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblWebSite.Name" xml:space="preserve">
+    <value>_lblWebSite</value>
+  </data>
+  <data name="&gt;&gt;_lblWebSite.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblWebSite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblWebSite.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_tabMain.Name" xml:space="preserve">
+    <value>_tabMain</value>
+  </data>
+  <data name="&gt;&gt;_tabMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_tabMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tabMain.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_tpDictionaries.Name" xml:space="preserve">
+    <value>_tpDictionaries</value>
+  </data>
+  <data name="&gt;&gt;_tpDictionaries.Parent" xml:space="preserve">
+    <value>_tabMain</value>
+  </data>
+  <data name="&gt;&gt;_tpDictionaries.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpDictionaries.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_tpEngineFormats.Name" xml:space="preserve">
+    <value>_tpEngineFormats</value>
+  </data>
+  <data name="&gt;&gt;_tpEngineFormats.Parent" xml:space="preserve">
+    <value>_tabMain</value>
+  </data>
+  <data name="&gt;&gt;_tpEngineFormats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpEngineFormats.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_tpFillMethods.Name" xml:space="preserve">
+    <value>_tpFillMethods</value>
+  </data>
+  <data name="&gt;&gt;_tpFillMethods.Parent" xml:space="preserve">
+    <value>_tabMain</value>
+  </data>
+  <data name="&gt;&gt;_tpFillMethods.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpFillMethods.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_tpLanguages.Name" xml:space="preserve">
+    <value>_tpLanguages</value>
+  </data>
+  <data name="&gt;&gt;_tpLanguages.Parent" xml:space="preserve">
+    <value>_tabMain</value>
+  </data>
+  <data name="&gt;&gt;_tpLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpLanguages.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_tpRecognitionModules.Name" xml:space="preserve">
+    <value>_tpRecognitionModules</value>
+  </data>
+  <data name="&gt;&gt;_tpRecognitionModules.Parent" xml:space="preserve">
+    <value>_tabMain</value>
+  </data>
+  <data name="&gt;&gt;_tpRecognitionModules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpRecognitionModules.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Resx_DictionariesSupport" xml:space="preserve">
+    <value>辞書サポートはスペルエンジンで異なります。詳細については、メインメニューからOCR/スペルチェックエンジンを選択してください。</value>
+  </data>
+  <data name="_leadEngineDictionariesNoteLabel.Text" xml:space="preserve">
+    <value>スペルチェックエンジンに辞書のサポートを追加するため、OCR／スペルチェックエンジンを選択してください。</value>
+  </data>
+  <data name="_btnClose.Text" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="_gbAdditionalFillMethods.Text" xml:space="preserve">
+    <value>追加のゾーンフィル方式：</value>
+  </data>
+  <data name="_gbAdditionalLanguages.Text" xml:space="preserve">
+    <value>追加言語：</value>
+  </data>
+  <data name="_gbAdditionalRecognitionModules.Text" xml:space="preserve">
+    <value>追加のゾーン認識モジュール：</value>
+  </data>
+  <data name="_gbInstalledEngineFormats.Text" xml:space="preserve">
+    <value>インストールされたエンジン形式：</value>
+  </data>
+  <data name="_gbInstalledFillMethods.Text" xml:space="preserve">
+    <value>インストール済みのゾーンフィル方式：</value>
+  </data>
+  <data name="_gbInstalledLanguages.Text" xml:space="preserve">
+    <value>インストール済みの言語：</value>
+  </data>
+  <data name="_gbInstalledRecognitionModules.Text" xml:space="preserve">
+    <value>インストール済みのゾーン認識モジュール：</value>
+  </data>
+  <data name="_gpAdditionalDictionaries.Text" xml:space="preserve">
+    <value>辞書とスペル言語を追加します：</value>
+  </data>
+  <data name="_gpAdditionalEngineFormats.Text" xml:space="preserve">
+    <value>追加されたエンジン形式：</value>
+  </data>
+  <data name="_gpInstalledDictionaries.Text" xml:space="preserve">
+    <value>辞書とスペル言語をインストールします：</value>
+  </data>
+  <data name="_lbDownload.Text" xml:space="preserve">
+    <value>https://www.leadtools.com/downloads?category=main</value>
+  </data>
+  <data name="_lblMessage.Text" xml:space="preserve">
+    <value>選択のLEADTOOLS OCRエンジンで利用できるインストール済みと追加言語、認識モジュールおよびフィル方式の一覧を表示するにはタブそれぞれをクリックしてください。</value>
+  </data>
+  <data name="_lblNoAdditionalFillMethods.Text" xml:space="preserve">
+    <value>このOCRエンジンで利用できるすべてのフィル方式は既にインストールされています。</value>
+  </data>
+  <data name="_lblNoAdditionalLanguages.Text" xml:space="preserve">
+    <value>このOCRエンジンで利用できるすべての言語が既にインストールされています。</value>
+  </data>
+  <data name="_lblNoAdditionalRecognitionModules.Text" xml:space="preserve">
+    <value>このOCRエンジンで利用できるすべての認識モジュールが既にインストールされています。</value>
+  </data>
+  <data name="_lblWebSite.Text" xml:space="preserve">
+    <value>追加コンポーネントを以下のアドレスからダウンロードできます。</value>
+  </data>
+  <data name="_tpDictionaries.Text" xml:space="preserve">
+    <value>辞書</value>
+  </data>
+  <data name="_tpEngineFormats.Text" xml:space="preserve">
+    <value>エンジンのネイティブ形式</value>
+  </data>
+  <data name="_tpFillMethods.Text" xml:space="preserve">
+    <value>フィル方式</value>
+  </data>
+  <data name="_tpLanguages.Text" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="_tpRecognitionModules.Text" xml:space="preserve">
+    <value>認識モジュール</value>
+  </data>
+</root>

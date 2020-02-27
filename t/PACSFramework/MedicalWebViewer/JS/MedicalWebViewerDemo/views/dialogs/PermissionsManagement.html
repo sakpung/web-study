@@ -1,0 +1,27 @@
+﻿<div class="modal-content">
+   <div class="modal-header">
+      <h3 class="modal-title">{{'PERMISSIONS' | translate}}&nbsp;{{'MANAGEMENT' | translate}}</h3>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-body">
+      <div class="row no-margin">
+         <div class="col-xs-4" style="padding: 5px;"> 
+            <ul class="nav nav-pills nav-stacked">
+               <li><strong class="sidebar-item" ng-show="canManageUsers()">&#9658&nbsp User Management</strong></li>
+               <li ng-show="canManageUsers()"><a class="menuOption" name="Create New User" href="javascript:void(0)" ng-click="edit.view = 'NewUser'"><strong class="sidebar-item" ng-class="{'text-danger': edit.view == 'NewUser'}">&nbsp&nbsp&nbsp&#149&nbsp Create New User</strong></a></li>
+               <li ng-show="canManageUsers()"><a class="menuOptions" name="Update User" href="javascript:void(0)" ng-click="edit.view = 'UpdateUser'"><strong class="sidebar-item" ng-class="{'text-danger': edit.view == 'UpdateUser'}">&nbsp&nbsp&nbsp&#149&nbsp Update User</strong></a></li>
+               <li><strong class="sidebar-item" ng-show="canManageRoles()">&#9658&nbsp Roles Management</strong></li>
+               <li ng-show="canManageRoles()"><a style="word-wrap: normal;" class="menuOption" name="Create New Role" href="javascript:void(0)" ng-click="edit.view = 'NewRole'"><strong class="sidebar-item" ng-class="{'text-danger': edit.view == 'NewRole'}" style="word-wrap: normal;" >&nbsp&nbsp&nbsp&#149&nbsp Create New Role</strong></a></li>
+               <li ng-show="canManageRoles()"><a class="menuOption" name="Update Role" href="javascript:void(0)" ng-click="edit.view = 'UpdateRole'"><strong class="sidebar-item" ng-class="{'text-danger': edit.view == 'UpdateRole'}">&nbsp&nbsp&nbsp&#149&nbsp Update Role</strong></a></li>
+            </ul>
+         </div>
+         <div class="col-xs-8">
+            <div ng-include src="'views/templates/' + edit.view + '.html'"></div>
+         </div>
+      </div>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-footer">
+      <a class="form-btn" ng-click="ok()" translate="DIALOGS_OK"></a>
+   </div>
+</div>

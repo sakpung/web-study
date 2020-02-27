@@ -1,0 +1,27 @@
+<div>
+   <div class="modal-header">
+      <h3 class="modal-title" style="margin: 15px;">UI Settings</h3>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-body">
+      <div class="row no-margin">
+         <div class="col-xs-4">
+            <ul class="nav nav-pills nav-stacked">
+               <li><strong class="sidebar-item">Theme Settings</strong></li>
+               <!-- <li><a class="menuOptions" name="Update User" href="javascript:void(0)" ng-click="isEnabled()" ng-init="edit.view = 'UpdateTheme'"><strong class="sidebar-item" ng-class="{'text-danger': edit.view == 'UpdateTheme'}">Enable Dark Theme</strong></a></li> -->
+            </ul>
+         </div>
+         <div class="col-xs-8">
+            <div style="margin: 30px 15px 15px 15px; display: inline">
+               <label style="margin: 0px; margin-right: 10px;">Enable Dark Theme</label>
+               <input style="margin: 0px; align-content: center; vertical-align: middle" type="checkbox" id="darkThemeCheckBox" ng-init="isEnabled()" />
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-footer">
+      <a class="form-btn" ng-click="ok()" translate="DIALOGS_OK"></a>
+   </div>
+</div>
+

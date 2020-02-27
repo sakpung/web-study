@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_lblBlueinRedWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_lblBlueinRedWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 23</value>
+  </data>
+  <data name="_lblBlueinRedWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="_lblBlueinRedWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_lblBlueinRedWeight.Text" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinRedWeight.Name" xml:space="preserve">
+    <value>_lblBlueinRedWeight</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinRedWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinRedWeight.Parent" xml:space="preserve">
+    <value>_gbRedWeights</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinRedWeight.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_lblGreeninRedWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblGreeninRedWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 23</value>
+  </data>
+  <data name="_lblGreeninRedWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="_lblGreeninRedWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_lblGreeninRedWeight.Text" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninRedWeight.Name" xml:space="preserve">
+    <value>_lblGreeninRedWeight</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninRedWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninRedWeight.Parent" xml:space="preserve">
+    <value>_gbRedWeights</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninRedWeight.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_lblRedinRedWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblRedinRedWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 23</value>
+  </data>
+  <data name="_lblRedinRedWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="_lblRedinRedWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_lblRedinRedWeight.Text" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinRedWeight.Name" xml:space="preserve">
+    <value>_lblRedinRedWeight</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinRedWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinRedWeight.Parent" xml:space="preserve">
+    <value>_gbRedWeights</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinRedWeight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_numBlueinRedWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 20</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_numBlueinRedWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_numBlueinRedWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="_numBlueinRedWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinRedWeight.Name" xml:space="preserve">
+    <value>_numBlueinRedWeight</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinRedWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinRedWeight.Parent" xml:space="preserve">
+    <value>_gbRedWeights</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinRedWeight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_numGreeninRedWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 20</value>
+  </data>
+  <data name="_numGreeninRedWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_numGreeninRedWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="_numGreeninRedWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninRedWeight.Name" xml:space="preserve">
+    <value>_numGreeninRedWeight</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninRedWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninRedWeight.Parent" xml:space="preserve">
+    <value>_gbRedWeights</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninRedWeight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_numRedinRedWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 20</value>
+  </data>
+  <data name="_numRedinRedWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_numRedinRedWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="_numRedinRedWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_numRedinRedWeight.Name" xml:space="preserve">
+    <value>_numRedinRedWeight</value>
+  </data>
+  <data name="&gt;&gt;_numRedinRedWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numRedinRedWeight.Parent" xml:space="preserve">
+    <value>_gbRedWeights</value>
+  </data>
+  <data name="&gt;&gt;_numRedinRedWeight.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_gbRedWeights.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 248</value>
+  </data>
+  <data name="_gbRedWeights.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_gbRedWeights.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_gbRedWeights.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 49</value>
+  </data>
+  <data name="_gbRedWeights.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_gbRedWeights.Text" xml:space="preserve">
+    <value>Red Weights</value>
+  </data>
+  <data name="&gt;&gt;_gbRedWeights.Name" xml:space="preserve">
+    <value>_gbRedWeights</value>
+  </data>
+  <data name="&gt;&gt;_gbRedWeights.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbRedWeights.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbRedWeights.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="_btnCancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="_btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 283</value>
+  </data>
+  <data name="_btnCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="_btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_btnOk.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="_btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 253</value>
+  </data>
+  <data name="_btnOk.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="_btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Name" xml:space="preserve">
+    <value>_btnOk</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="_tsbtnNormal.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABSSURBVDhP7YzRCgAgCAP9dP+8ECxSGo0giOieat4mnzOo
+        avHnkqXrAjXIuE1gBmmXHTS2B1ER5YGZhIooD1CS8/AgKqK804Qs5r8xevn2uQeRCo5UPcnCkbtRAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="_tsbtnNormal.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="_tsbtnNormal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="_tsbtnNormal.Text" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="_tsbtnFit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVDhPxZFRDoAgDEM5OjfXAKvptETEKU0at1IeH6ZP
+        lHPeImy4BrRxWj1g+R5WD1l29j1QwSAB/RFYZlxwJROfYaa8CQuHKA9m7q5fSCof6vZKT7QGqPKhLhYO
+        bX79U2rZdncR4jPMlDfRgoKEQQSCFwCLFVTAaqcHnNYFGGHDRSqlHX2MQXBD+nHPAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="_tsbtnFit.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="_tsbtnFit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="_tsbtnFit.Text" xml:space="preserve">
+    <value>Fit</value>
+  </data>
+  <data name="_pbProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 424</value>
+  </data>
+  <data name="_pbProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 19</value>
+  </data>
+  <data name="_pbProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_pbProgress.Name" xml:space="preserve">
+    <value>_pbProgress</value>
+  </data>
+  <data name="&gt;&gt;_pbProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pbProgress.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_pbProgress.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="_tsZoomLevel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="_tsZoomLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_tsZoomLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 25</value>
+  </data>
+  <data name="_tsZoomLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_tsZoomLevel.Text" xml:space="preserve">
+    <value>Zoom Level</value>
+  </data>
+  <data name="&gt;&gt;_tsZoomLevel.Name" xml:space="preserve">
+    <value>_tsZoomLevel</value>
+  </data>
+  <data name="&gt;&gt;_tsZoomLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tsZoomLevel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_tsZoomLevel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_lblAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 33</value>
+  </data>
+  <data name="_lblAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 177</value>
+  </data>
+  <data name="_lblAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_lblAfter.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_lblAfter.Name" xml:space="preserve">
+    <value>_lblAfter</value>
+  </data>
+  <data name="&gt;&gt;_lblAfter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblAfter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblAfter.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_lblBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 33</value>
+  </data>
+  <data name="_lblBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 177</value>
+  </data>
+  <data name="_lblBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_lblBefore.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_lblBefore.Name" xml:space="preserve">
+    <value>_lblBefore</value>
+  </data>
+  <data name="&gt;&gt;_lblBefore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblBefore.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblBefore.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_lblseparator1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 240</value>
+  </data>
+  <data name="_lblseparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 3</value>
+  </data>
+  <data name="_lblseparator1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_lblseparator1.Name" xml:space="preserve">
+    <value>_lblseparator1</value>
+  </data>
+  <data name="&gt;&gt;_lblseparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblseparator1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblseparator1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_lblseparator2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 418</value>
+  </data>
+  <data name="_lblseparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 3</value>
+  </data>
+  <data name="_lblseparator2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_lblseparator2.Name" xml:space="preserve">
+    <value>_lblseparator2</value>
+  </data>
+  <data name="&gt;&gt;_lblseparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblseparator2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblseparator2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_lblAfterlabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 213</value>
+  </data>
+  <data name="_lblAfterlabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 24</value>
+  </data>
+  <data name="_lblAfterlabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_lblAfterlabel.Text" xml:space="preserve">
+    <value>After</value>
+  </data>
+  <data name="_lblAfterlabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;_lblAfterlabel.Name" xml:space="preserve">
+    <value>_lblAfterlabel</value>
+  </data>
+  <data name="&gt;&gt;_lblAfterlabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblAfterlabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblAfterlabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_lblBeforelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 213</value>
+  </data>
+  <data name="_lblBeforelabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 24</value>
+  </data>
+  <data name="_lblBeforelabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_lblBeforelabel.Text" xml:space="preserve">
+    <value>Before</value>
+  </data>
+  <data name="_lblBeforelabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;_lblBeforelabel.Name" xml:space="preserve">
+    <value>_lblBeforelabel</value>
+  </data>
+  <data name="&gt;&gt;_lblBeforelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblBeforelabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblBeforelabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_lblBlueinGreenWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblBlueinGreenWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 23</value>
+  </data>
+  <data name="_lblBlueinGreenWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="_lblBlueinGreenWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_lblBlueinGreenWeight.Text" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinGreenWeight.Name" xml:space="preserve">
+    <value>_lblBlueinGreenWeight</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinGreenWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinGreenWeight.Parent" xml:space="preserve">
+    <value>_gbGreenWeights</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinGreenWeight.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_lblGreeninGreenWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblGreeninGreenWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 23</value>
+  </data>
+  <data name="_lblGreeninGreenWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="_lblGreeninGreenWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_lblGreeninGreenWeight.Text" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninGreenWeight.Name" xml:space="preserve">
+    <value>_lblGreeninGreenWeight</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninGreenWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninGreenWeight.Parent" xml:space="preserve">
+    <value>_gbGreenWeights</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninGreenWeight.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_lblRedinGreenWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblRedinGreenWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 23</value>
+  </data>
+  <data name="_lblRedinGreenWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="_lblRedinGreenWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_lblRedinGreenWeight.Text" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinGreenWeight.Name" xml:space="preserve">
+    <value>_lblRedinGreenWeight</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinGreenWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinGreenWeight.Parent" xml:space="preserve">
+    <value>_gbGreenWeights</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinGreenWeight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_numBlueinGreenWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 20</value>
+  </data>
+  <data name="_numBlueinGreenWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_numBlueinGreenWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="_numBlueinGreenWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinGreenWeight.Name" xml:space="preserve">
+    <value>_numBlueinGreenWeight</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinGreenWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinGreenWeight.Parent" xml:space="preserve">
+    <value>_gbGreenWeights</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinGreenWeight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_numGreeninGreenWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 20</value>
+  </data>
+  <data name="_numGreeninGreenWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_numGreeninGreenWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="_numGreeninGreenWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninGreenWeight.Name" xml:space="preserve">
+    <value>_numGreeninGreenWeight</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninGreenWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninGreenWeight.Parent" xml:space="preserve">
+    <value>_gbGreenWeights</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninGreenWeight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_numRedinGreenWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 20</value>
+  </data>
+  <data name="_numRedinGreenWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_numRedinGreenWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="_numRedinGreenWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_numRedinGreenWeight.Name" xml:space="preserve">
+    <value>_numRedinGreenWeight</value>
+  </data>
+  <data name="&gt;&gt;_numRedinGreenWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numRedinGreenWeight.Parent" xml:space="preserve">
+    <value>_gbGreenWeights</value>
+  </data>
+  <data name="&gt;&gt;_numRedinGreenWeight.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_gbGreenWeights.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 304</value>
+  </data>
+  <data name="_gbGreenWeights.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_gbGreenWeights.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_gbGreenWeights.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 49</value>
+  </data>
+  <data name="_gbGreenWeights.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_gbGreenWeights.Text" xml:space="preserve">
+    <value>Green Weights</value>
+  </data>
+  <data name="&gt;&gt;_gbGreenWeights.Name" xml:space="preserve">
+    <value>_gbGreenWeights</value>
+  </data>
+  <data name="&gt;&gt;_gbGreenWeights.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbGreenWeights.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbGreenWeights.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="_lblBlueinBlueWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblBlueinBlueWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 23</value>
+  </data>
+  <data name="_lblBlueinBlueWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="_lblBlueinBlueWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_lblBlueinBlueWeight.Text" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinBlueWeight.Name" xml:space="preserve">
+    <value>_lblBlueinBlueWeight</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinBlueWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinBlueWeight.Parent" xml:space="preserve">
+    <value>_gbBlueWeights</value>
+  </data>
+  <data name="&gt;&gt;_lblBlueinBlueWeight.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_lblGreeninBlueWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblGreeninBlueWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 23</value>
+  </data>
+  <data name="_lblGreeninBlueWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="_lblGreeninBlueWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_lblGreeninBlueWeight.Text" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninBlueWeight.Name" xml:space="preserve">
+    <value>_lblGreeninBlueWeight</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninBlueWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninBlueWeight.Parent" xml:space="preserve">
+    <value>_gbBlueWeights</value>
+  </data>
+  <data name="&gt;&gt;_lblGreeninBlueWeight.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_lblRedinBlueWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblRedinBlueWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 23</value>
+  </data>
+  <data name="_lblRedinBlueWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="_lblRedinBlueWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_lblRedinBlueWeight.Text" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinBlueWeight.Name" xml:space="preserve">
+    <value>_lblRedinBlueWeight</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinBlueWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinBlueWeight.Parent" xml:space="preserve">
+    <value>_gbBlueWeights</value>
+  </data>
+  <data name="&gt;&gt;_lblRedinBlueWeight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_numBlueinBlueWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 20</value>
+  </data>
+  <data name="_numBlueinBlueWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_numBlueinBlueWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="_numBlueinBlueWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinBlueWeight.Name" xml:space="preserve">
+    <value>_numBlueinBlueWeight</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinBlueWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinBlueWeight.Parent" xml:space="preserve">
+    <value>_gbBlueWeights</value>
+  </data>
+  <data name="&gt;&gt;_numBlueinBlueWeight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_numGreeninBlueWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 20</value>
+  </data>
+  <data name="_numGreeninBlueWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_numGreeninBlueWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="_numGreeninBlueWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninBlueWeight.Name" xml:space="preserve">
+    <value>_numGreeninBlueWeight</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninBlueWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninBlueWeight.Parent" xml:space="preserve">
+    <value>_gbBlueWeights</value>
+  </data>
+  <data name="&gt;&gt;_numGreeninBlueWeight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_numRedinBlueWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 20</value>
+  </data>
+  <data name="_numRedinBlueWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_numRedinBlueWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="_numRedinBlueWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_numRedinBlueWeight.Name" xml:space="preserve">
+    <value>_numRedinBlueWeight</value>
+  </data>
+  <data name="&gt;&gt;_numRedinBlueWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numRedinBlueWeight.Parent" xml:space="preserve">
+    <value>_gbBlueWeights</value>
+  </data>
+  <data name="&gt;&gt;_numRedinBlueWeight.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_gbBlueWeights.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 363</value>
+  </data>
+  <data name="_gbBlueWeights.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_gbBlueWeights.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_gbBlueWeights.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 49</value>
+  </data>
+  <data name="_gbBlueWeights.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="_gbBlueWeights.Text" xml:space="preserve">
+    <value>Blue Weights</value>
+  </data>
+  <data name="&gt;&gt;_gbBlueWeights.Name" xml:space="preserve">
+    <value>_gbBlueWeights</value>
+  </data>
+  <data name="&gt;&gt;_gbBlueWeights.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbBlueWeights.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbBlueWeights.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>384, 446</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Balance Colors</value>
+  </data>
+  <data name="&gt;&gt;_tsbtnNormal.Name" xml:space="preserve">
+    <value>_tsbtnNormal</value>
+  </data>
+  <data name="&gt;&gt;_tsbtnNormal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tsbtnFit.Name" xml:space="preserve">
+    <value>_tsbtnFit</value>
+  </data>
+  <data name="&gt;&gt;_tsbtnFit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>BalanceColorsDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

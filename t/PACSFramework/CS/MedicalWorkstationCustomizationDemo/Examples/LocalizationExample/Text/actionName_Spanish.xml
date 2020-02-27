@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<actionsDisplayName>
+   <entry>
+      <action>None</action>
+      <displayName>Selección</displayName>
+   </entry>
+   <entry>
+      <action>WindowLevel</action>
+      <displayName>Nivel de Ventana</displayName>
+   </entry>
+   <entry>
+      <action>Scale</action>
+      <displayName>Acercamiento</displayName>
+   </entry>
+   <entry>
+      <action>Offset</action>
+      <displayName>Compensar</displayName>
+   </entry>
+   <entry>
+      <action>Stack</action>
+      <displayName>Apilar</displayName>
+   </entry>
+   <entry>
+      <action>MagnifyGlass</action>
+      <displayName>Ampliar</displayName>
+   </entry>
+   <entry>
+      <action>AnnotationRuler</action>
+      <displayName>Regla</displayName>
+   </entry>
+   <entry>
+      <action>AnnotationPolyRuler</action>
+      <displayName>Regla Polígono</displayName>
+   </entry>
+   <entry>
+      <action>AnnotationAngle</action>
+      <displayName>Ángulo</displayName>
+   </entry>
+   <entry>
+      <action>AnnotationText</action>
+      <displayName>Texto</displayName>
+   </entry>
+   <entry>
+      <action>AnnotationArrow</action>
+      <displayName>Flecha</displayName>
+   </entry>
+   <entry>
+      <action>AnnotationRectangle</action>
+      <displayName>Rectángulo</displayName>
+   </entry>
+   <entry>
+      <action>AnnotationEllipse</action>
+      <displayName>Elipse</displayName>
+   </entry>
+   <entry>
+      <action>AnnotationHilite</action>
+      <displayName>Hilite</displayName>
+   </entry>
+   <entry>
+      <action>RectangleRegion</action>
+      <displayName>Región de Rectángulo</displayName>
+   </entry>
+   <entry>
+      <action>EllipseRegion</action>
+      <displayName>Región de Elipse</displayName>
+   </entry>
+   <entry>
+      <action>FreeHandRegion</action>
+      <displayName>Mano Libre</displayName>
+   </entry>
+   <entry>
+      <action>MagicWandRegion</action>
+      <displayName>Varita Mágica</displayName>
+   </entry>
+   <entry>
+      <action>Rotate3DObject</action>
+      <displayName>Rotar</displayName>
+   </entry>
+   <entry>
+      <action>Scale3DObject</action>
+      <displayName>Acercamiento</displayName>
+   </entry>
+   <entry>
+      <action>Rotate3DCamera</action>
+      <displayName>Rotar Cámara</displayName>
+   </entry>
+</actionsDisplayName>

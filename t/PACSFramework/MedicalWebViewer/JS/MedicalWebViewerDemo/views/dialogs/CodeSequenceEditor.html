@@ -1,0 +1,64 @@
+﻿<div class="modal-content">
+    <div class="modal-header">        
+        <h3 class="modal-title">{{title}}</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" name="form">
+            <fieldset>                                
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="codeValue">{{'CODE' | translate}}&nbsp;{{'VALUE' | translate}}:</label>
+                    <div class="col-md-9"  ng-class="{'has-error': !isCodeValueValid()}">
+                        <input id="codeValue" type="text" placeholder="" maxlength="16" class="form-control input-md" ng-model="item.CodeValue" autofocus/>
+                    </div>
+                </div>
+
+                <!--Error Message (CodeValue)-->
+                <div class="form-group" ng-show="!isCodeValueValid()">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <div class="text-danger">{{getCodeValueError()}}</div>
+                    </div>
+                </div>
+
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="codeSchemeDesignator">{{'CODE' | translate}}&nbsp;{{'SCHEME' | translate}}&nbsp;{{'DESIGNATOR' | translate}}:</label>
+                    <div class="col-md-9">
+                        <input id="codeSchemeDesignator" type="text" placeholder="" maxlength="16" class="form-control input-md" ng-model="item.CodeSchemeDesignator" />
+                    </div>
+                </div> 
+                
+                <!--Error Message (CodeSchemeDesignator)-->
+                <div class="form-group" ng-show="!isCodeSchemeDesignatorValid()">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <div class="text-danger">{{getCodeSchemeDesignatorError()}}</div>
+                    </div>
+                </div>  
+                
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="codeMeaning">{{'CODE' | translate}}&nbsp;{{'MEANING' | translate}}:</label>
+                    <div class="col-md-9">
+                        <input id="codeMeaning" type="text" placeholder="" maxlength="64" class="form-control input-md" ng-model="item.CodeMeaning" />
+                    </div>
+                </div>   
+
+                <!--Error Message (CodeMeaning)-->
+                <div class="form-group" ng-show="!isCodeMeaningValid()">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <div class="text-danger">{{getCodeMeaningError()}}</div>
+                    </div>
+                </div>
+                                                                           
+            </fieldset>
+        </form> 
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="!isFormValid()"></a>
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>        
+    </div>
+</div>

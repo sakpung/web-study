@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<loaderStatusMessage>
+   <RetrievingSeries>
+      <message>Recuperando la serie de imagenes...</message>
+   </RetrievingSeries>
+   <LoadingSeries>
+      <message>Cargando la serie de imagenes...</message>
+   </LoadingSeries>
+   <CreatingSeries>
+      <message>Creando la serie de celdas...</message>
+   </CreatingSeries>
+   <LoadingImages>
+      <message>Cargando imagenes...</message>
+   </LoadingImages>
+   <LoadingTags>
+      <message>Cargando etiquetas superpuestas...</message>
+   </LoadingTags>
+   <Completed>
+      <message>Completado</message>
+   </Completed>
+</loaderStatusMessage>

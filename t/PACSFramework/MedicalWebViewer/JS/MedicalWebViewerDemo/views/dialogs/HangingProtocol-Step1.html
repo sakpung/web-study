@@ -1,0 +1,54 @@
+﻿<form class="form-horizontal" name="serverForm" novalidate>
+    <!--<fieldset>--> 
+
+        <!--HangingProtocolName-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="HPName">{{'NAME' | translate}}:</label>
+            <div class="col-md-6" ng-class="{'has-error': !isHangingProtocolNameValid()}">
+                <input id="HPName" type="text" class="text-field" ng-model="hp.HangingProtocolName" maxlength="16">
+            </div>
+        </div>
+
+        <!--Error Message (HangingProtocolName)-->
+        <div class="form-group" ng-show="!isHangingProtocolNameValid()">
+            <div class="col-md-4"></div>
+            <div class="col-md-6">
+                <div class="text-danger">{{getHangingProtocolNameError()}}</div>
+            </div>
+        </div>
+
+
+        <!--HangingProtocolDescription-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="HPName">{{'DESCRIPTION' | translate}}:</label>
+            <div class="col-md-6" ng-class="{'has-error': !isHangingProtocolDescriptionValid()}">
+                <input id="HPName" type="text" class="text-field" ng-model="hp.HangingProtocolDescription" maxlength="64" >
+            </div>
+        </div>  
+        
+        <!--Error Message (HangingProtocolDescription)-->
+        <div class="form-group" ng-show="!isHangingProtocolDescriptionValid()">
+            <div class="col-md-4"></div>
+            <div class="col-md-6">
+                <div class="text-danger">{{getHangingProtocolDescriptionError()}}</div>
+            </div>
+        </div> 
+           
+        <!--HangingProtocolLevel-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="HPLevel">{{'LEVEL'|translate}}:</label>
+            <div class="col-md-6">
+                <select id="HPLevel" class="study-dropdown w-dropdown" ng-model="hp.HangingProtocolLevel" ng-options="r.id as r.name for r in hangingProtocolLevelOptions"  ng-change="selectedLevelChanged()" ng-disabled="!isAdmin()" force-blur></select>
+            </div>
+        </div>
+          
+        <!--HangingProtocolUserGroupName-->
+        <div class="form-group" ng-show="isLevelUserGroup()">
+            <label class="col-md-4 control-label" for="HPUserGroup">{{'USER' | translate}} &nbsp; {{'GROUP' | translate}} :</label>
+            <div class="col-md-6">
+                <select id="HPUserGroup" class="form-control" ng-model="selectedRole" ng-options="r.Name for r in roles" ng-change="selectedRoleChanged(selectedRole)" force-blur>
+                </select>
+            </div>
+        </div>        
+    <!--</fieldset>-->
+</form>

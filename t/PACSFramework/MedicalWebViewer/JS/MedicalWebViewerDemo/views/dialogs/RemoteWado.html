@@ -1,0 +1,26 @@
+﻿<div class="modal-content">
+   <div class="modal-header">
+      <h3 class="modal-title" translate="DIALOGS_REMOTE_WADO_TITLE"></h3>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-body">
+      <label for="wadoServers" class="control-label">{{ 'REMOTE' | translate}}&nbsp;{{'SERVERS'|translate}}</label>
+      <div id="wadoServers" ui-grid="gridOptions" class="grid" ui-grid-selection ui-grid-auto-resize></div>
+      <div class="cine-buttons" role="toolbar" style="margin-top: 5px !important">
+         <div >
+            <button type="button" class="cine-controls save-button" ng-click="save()" data-toggle="tooltip" title="Save WADO configuration"><i></i></button>
+         </div>
+         <div >
+            <button type="button" class="cine-controls plus-button" ng-click="addWadoServer()" data-toggle="tooltip" title="Add WADO server"><i></i></button>
+            <button type="button" class="cine-controls pen-button" ng-click="editWadoServer()" data-toggle="tooltip" title="Edit WADO server" ng-disabled="selectedServer==null"><i></i></button>
+         </div>
+         <div >
+            <button type="button" class="cine-controls minus-button" ng-click="deleteWadoServer()" data-toggle="tooltip" title="Delete WADO server" ng-disabled="selectedServer==null"><i></i></button>
+         </div>
+      </div>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-footer">
+      <a class="form-btn" ng-click="close()" translate="DIALOGS_CLOSE"></a>
+   </div>
+</div>

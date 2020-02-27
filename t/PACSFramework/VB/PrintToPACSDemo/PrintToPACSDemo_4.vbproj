@@ -1,0 +1,463 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C8205F2-D06D-443E-A171-40B61C6D32EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>VBPrintToPACSDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\..\Resources\Med.ico</ApplicationIcon>
+    <Win32Resource>
+    </Win32Resource>
+    <StartupObject>Sub Main</StartupObject>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG,FOR_DOTNET4,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG,FOR_DOTNET4,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG,FOR_DOTNET4,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG,FOR_DOTNET4,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scu">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scu.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Document.Writer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Document.Writer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Forms.Processing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Forms.Processing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Effects">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Effects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Printer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Printer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ScreenCapture">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ScreenCapture.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Twain">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Twain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Wia">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Wia.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.File">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.WinForms.CommonDialogs.File.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\VB\common\AboutDialog.designer.vb">
+      <Link>Common\AboutDialog.designer.vb</Link>
+      <DependentUpon>AboutDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\VB\common\AboutDialog.vb">
+      <Link>Common\AboutDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\Demos.vb">
+      <Link>Common\Demos.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\DialogUtilities.vb">
+      <Link>Common\DialogUtilities.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\Globalization.vb">
+      <Link>Common\Globalization.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\Messager.vb">
+      <Link>Common\Messager.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\ProgressForm.vb">
+      <Link>Common\ProgressForm.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\ProgressForm.designer.vb">
+      <Link>Common\ProgressForm.designer.vb</Link>
+      <DependentUpon>ProgressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\WaitCursor.vb">
+      <Link>Common\WaitCursor.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\WiaVersionForm.vb">
+      <Link>Common\WiaVersionForm.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\WiaVersionForm.designer.vb">
+      <Link>Common\WiaVersionForm.designer.vb</Link>
+      <DependentUpon>WiaVersionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\VB\DicomCommon\TextBoxTraceListener.vb">
+      <Link>Common\TextBoxTraceListener.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\DicomCommon\Utils.vb">
+      <Link>Common\Utils.vb</Link>
+    </Compile>
+    <Compile Include="Scanning\Twain\ErrorList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Twain\TwainScanning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\BroadBasedQuery.vb" />
+    <Compile Include="Queries\PatientBasedQuery.vb" />
+    <Compile Include="Classes\ScreenCapture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Twain\SupportedCaps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Twain\Template.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Wia\AcquireOptionsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Wia\AcquireOptionsForm.designer.vb">
+      <DependentUpon>AcquireOptionsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scanning\Wia\AcquireSourceForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Wia\AcquireSourceForm.designer.vb">
+      <DependentUpon>AcquireSourceForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scanning\Wia\CapabilitiesListValuesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Wia\CapabilitiesListValuesForm.designer.vb">
+      <DependentUpon>CapabilitiesListValuesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scanning\Wia\CapabilitiesRangeValuesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Wia\CapabilitiesRangeValuesForm.designer.vb">
+      <DependentUpon>CapabilitiesRangeValuesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scanning\Wia\HelperFunctions.vb" />
+    <Compile Include="Scanning\Wia\MyFormat.vb" />
+    <Compile Include="Scanning\Wia\MyPropertiesErrors.vb" />
+    <Compile Include="Scanning\Wia\SupportedCapabilitiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Wia\SupportedCapabilitiesForm.designer.vb">
+      <DependentUpon>SupportedCapabilitiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scanning\Wia\SupportedFormatsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Wia\SupportedFormatsForm.designer.vb">
+      <DependentUpon>SupportedFormatsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scanning\Wia\WiaDeviceItemsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Wia\WiaDeviceItemsForm.designer.vb">
+      <DependentUpon>WiaDeviceItemsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scanning\Wia\WiaPropertiesErrorsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Wia\WiaPropertiesErrorsForm.designer.vb">
+      <DependentUpon>WiaPropertiesErrorsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scanning\Wia\WiaPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scanning\Wia\WiaPropertiesForm.designer.vb">
+      <DependentUpon>WiaPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scanning\Wia\WiaScanning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmOperation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmOperation.Designer.vb">
+      <DependentUpon>FrmOperation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmProgress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmProgress.designer.vb">
+      <DependentUpon>FrmProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Help.designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InputDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ListImageBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\LogWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LogWindow.Designer.vb">
+      <DependentUpon>LogWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MyQueryRetrieveScu.vb" />
+    <Compile Include="UI\OptionsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmUsage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmUsage.Designer.vb">
+      <DependentUpon>FrmUsage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DicomFindQuery.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\PrintingUtilities.vb" />
+    <Compile Include="Utilities\UtilClass.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmProgress.resx">
+      <DependentUpon>FrmProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Resources\StudyRoot_Study_Level_IHE_C-Find.dcm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\VB\Common\ProgressForm.resx">
+      <Link>Common\ProgressForm.resx</Link>
+      <DependentUpon>ProgressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\VB\Common\WiaVersionForm.resx">
+      <Link>Common\WiaVersionForm.resx</Link>
+      <DependentUpon>WiaVersionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Minus.PNG" />
+    <EmbeddedResource Include="Images\Plus.PNG" />
+    <EmbeddedResource Include="Scanning\Twain\ErrorList.resx">
+      <DependentUpon>ErrorList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Twain\SupportedCaps.resx">
+      <DependentUpon>SupportedCaps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Twain\Template.resx">
+      <DependentUpon>Template.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Wia\AcquireOptionsForm.resx">
+      <DependentUpon>AcquireOptionsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Wia\AcquireSourceForm.resx">
+      <DependentUpon>AcquireSourceForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Wia\CapabilitiesListValuesForm.resx">
+      <DependentUpon>CapabilitiesListValuesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Wia\CapabilitiesRangeValuesForm.resx">
+      <DependentUpon>CapabilitiesRangeValuesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Wia\SupportedCapabilitiesForm.resx">
+      <DependentUpon>SupportedCapabilitiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Wia\SupportedFormatsForm.resx">
+      <DependentUpon>SupportedFormatsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Wia\WiaDeviceItemsForm.resx">
+      <DependentUpon>WiaDeviceItemsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Wia\WiaPropertiesErrorsForm.resx">
+      <DependentUpon>WiaPropertiesErrorsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanning\Wia\WiaPropertiesForm.resx">
+      <DependentUpon>WiaPropertiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InputDialog.resx">
+      <DependentUpon>InputDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LogWindow.resx">
+      <DependentUpon>LogWindow.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\MwlIheCFindScu.dcm" />
+    <EmbeddedResource Include="Resources\StudyRootIheCFind.dcm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\VB\common\AboutDialog.resx">
+      <Link>Common\AboutDialog.resx</Link>
+      <DependentUpon>AboutDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Med.ico" />
+    <EmbeddedResource Include="UI\FrmOperation.resx">
+      <DependentUpon>FrmOperation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmUsage.resx">
+      <DependentUpon>FrmUsage.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

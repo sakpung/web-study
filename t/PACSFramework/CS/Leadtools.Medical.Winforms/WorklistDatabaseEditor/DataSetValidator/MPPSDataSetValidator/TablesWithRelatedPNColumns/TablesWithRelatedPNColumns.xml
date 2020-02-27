@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TablesWithRelatedPNColumns>
+
+<Table Key="PerformedSeriesSequence">
+   <ColumnGroup>
+      <Column Key="PerformingPhysicianName"/>
+   </ColumnGroup>
+   <ColumnGroup>
+      <Column Key="OperatorName"/>
+   </ColumnGroup>
+</Table>
+
+<Table Key="PatientInfoforUnscheduledPPS">
+   <ColumnGroup>
+      <Column Key="PatientName"/>
+   </ColumnGroup>
+</Table>
+
+
+</TablesWithRelatedPNColumns>

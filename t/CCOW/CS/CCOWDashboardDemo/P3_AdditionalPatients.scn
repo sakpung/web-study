@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <Description>Participant 3 has one additional patient not present in other participants or master index</Description>
+   <MasterUserIndex>
+      <MasterUser>
+         <Name>Dale Halvorson</Name>
+         <Username>halvorson</Username>
+         <Password>halvorson</Password>
+         <DomainLogin>false</DomainLogin>
+         <Domain />
+         <ApplicationUsers>
+            <ApplicationUser>
+               <LogonName>dale</LogonName>
+               <ApplicationName>ClientDemo1</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>dalhal</LogonName>
+               <ApplicationName>ClientDemo2</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>dhalvorson</LogonName>
+               <ApplicationName>ClientDemo3</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>daleh</LogonName>
+               <ApplicationName>WebClientDemo1</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>dhalv</LogonName>
+               <ApplicationName>WebClientDemo2</ApplicationName>
+            </ApplicationUser>
+         </ApplicationUsers>
+      </MasterUser>
+      <MasterUser>
+         <Name>Sheila Deluna</Name>
+         <Username>deluna</Username>
+         <Password>deluna</Password>
+         <DomainLogin>false</DomainLogin>
+         <Domain />
+         <ApplicationUsers>
+            <ApplicationUser>
+               <LogonName>sheila</LogonName>
+               <ApplicationName>ClientDemo1</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>shedel</LogonName>
+               <ApplicationName>ClientDemo2</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>sdeluna</LogonName>
+               <ApplicationName>ClientDemo3</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>sheilad</LogonName>
+               <ApplicationName>WebClientDemo1</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>shdeluna</LogonName>
+               <ApplicationName>WebClientDemo2</ApplicationName>
+            </ApplicationUser>
+         </ApplicationUsers>
+      </MasterUser>
+      <MasterUser>
+         <Name>Edward Ullrich</Name>
+         <Username>ullrich</Username>
+         <Password>ullrich</Password>
+         <DomainLogin>false</DomainLogin>
+         <Domain />
+         <ApplicationUsers>
+            <ApplicationUser>
+               <LogonName>edward</LogonName>
+               <ApplicationName>ClientDemo1</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>edwull</LogonName>
+               <ApplicationName>ClientDemo2</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>eullrich</LogonName>
+               <ApplicationName>ClientDemo3</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>edwardu</LogonName>
+               <ApplicationName>WebClientDemo1</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>edullrich</LogonName>
+               <ApplicationName>WebClientDemo2</ApplicationName>
+            </ApplicationUser>
+         </ApplicationUsers>
+      </MasterUser>
+      <MasterUser>
+         <Name>Shelly Randolph</Name>
+         <Username>randolph</Username>
+         <Password>randolph</Password>
+         <DomainLogin>false</DomainLogin>
+         <Domain />
+         <ApplicationUsers>
+            <ApplicationUser>
+               <LogonName>shelly</LogonName>
+               <ApplicationName>ClientDemo1</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>sheran</LogonName>
+               <ApplicationName>ClientDemo2</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>srandolph</LogonName>
+               <ApplicationName>ClientDemo3</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>shellyr</LogonName>
+               <ApplicationName>WebClientDemo1</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>shrandolph</LogonName>
+               <ApplicationName>WebClientDemo2</ApplicationName>
+            </ApplicationUser>
+         </ApplicationUsers>
+      </MasterUser>
+      <MasterUser>
+         <Name>Allen Clifford</Name>
+         <Username>clifford</Username>
+         <Password>clifford</Password>
+         <DomainLogin>false</DomainLogin>
+         <Domain />
+         <ApplicationUsers>
+            <ApplicationUser>
+               <LogonName>allen</LogonName>
+               <ApplicationName>ClientDemo1</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>allcli</LogonName>
+               <ApplicationName>ClientDemo2</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>aclifford</LogonName>
+               <ApplicationName>ClientDemo3</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>allenc</LogonName>
+               <ApplicationName>WebClientDemo1</ApplicationName>
+            </ApplicationUser>
+            <ApplicationUser>
+               <LogonName>alclifford</LogonName>
+               <ApplicationName>WebClientDemo2</ApplicationName>
+            </ApplicationUser>
+         </ApplicationUsers>
+      </MasterUser>
+   </MasterUserIndex>
+   <MasterPatientIndex>
+      <MasterPatient>
+         <Id>QJX6TSJNTU</Id>
+         <Name>Nelson Kron</Name>
+         <BirthDate>1952-06-29</BirthDate>
+         <Sex>M</Sex>
+         <ApplicationPatients>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo1</ApplicationName>
+               <PatientId>nelkron-0</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo2</ApplicationName>
+               <PatientId>nelkron-1</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo3</ApplicationName>
+               <PatientId>nelkron-2</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>WebClientDemo1</ApplicationName>
+               <PatientId>nelkron-3</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>WebClientDemo2</ApplicationName>
+               <PatientId>nelkron-4</PatientId>
+            </ApplicationPatient>
+         </ApplicationPatients>
+      </MasterPatient>
+      <MasterPatient>
+         <Id>QJX6TSJNTU</Id>
+         <Name>Mathew Vivier</Name>
+         <BirthDate>1984-06-12</BirthDate>
+         <Sex>M</Sex>
+         <ApplicationPatients>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo1</ApplicationName>
+               <PatientId>matviv-0</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo2</ApplicationName>
+               <PatientId>matviv-1</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo3</ApplicationName>
+               <PatientId>matviv-2</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>WebClientDemo1</ApplicationName>
+               <PatientId>matviv-3</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>WebClientDemo2</ApplicationName>
+               <PatientId>matviv-4</PatientId>
+            </ApplicationPatient>
+         </ApplicationPatients>
+      </MasterPatient>
+      <MasterPatient>
+         <Id>N34I14V3GE</Id>
+         <Name>Jessie Hachy</Name>
+         <BirthDate>1945-02-14</BirthDate>
+         <Sex>M</Sex>
+         <ApplicationPatients>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo1</ApplicationName>
+               <PatientId>jeshac-0</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo2</ApplicationName>
+               <PatientId>jeshac-1</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo3</ApplicationName>
+               <PatientId>jeshac-2</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>WebClientDemo1</ApplicationName>
+               <PatientId>jeshac-3</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>WebClientDemo2</ApplicationName>
+               <PatientId>jeshac-4</PatientId>
+            </ApplicationPatient>
+         </ApplicationPatients>
+      </MasterPatient>
+      <MasterPatient>
+         <Id>RYFT2UYZCT</Id>
+         <Name>Rhonda Jefferson</Name>
+         <BirthDate>1951-03-23</BirthDate>
+         <Sex>F</Sex>
+         <ApplicationPatients>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo1</ApplicationName>
+               <PatientId>rhojet-0</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo2</ApplicationName>
+               <PatientId>rhojet-1</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo3</ApplicationName>
+               <PatientId>rhojet-2</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>WebClientDemo1</ApplicationName>
+               <PatientId>rhojet-3</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>WebClientDemo2</ApplicationName>
+               <PatientId>rhojet-4</PatientId>
+            </ApplicationPatient>
+         </ApplicationPatients>
+      </MasterPatient>
+      <MasterPatient>
+         <Id>7HOC2E4PA1</Id>
+         <Name>Alli Levitan</Name>
+         <BirthDate>1958-01-29</BirthDate>
+         <Sex>F</Sex>
+         <ApplicationPatients>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo1</ApplicationName>
+               <PatientId>alllev-0</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo2</ApplicationName>
+               <PatientId>alllev-1</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>ClientDemo3</ApplicationName>
+               <PatientId>alllev-2</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>WebClientDemo1</ApplicationName>
+               <PatientId>alllev-3</PatientId>
+            </ApplicationPatient>
+            <ApplicationPatient>
+               <ApplicationName>WebClientDemo2</ApplicationName>
+               <PatientId>alllev-4</PatientId>
+            </ApplicationPatient>
+         </ApplicationPatients>
+      </MasterPatient>
+   </MasterPatientIndex>
+   <Applications>
+      <CCOWApplication>
+         <Name>CCOW Client Participation Demo1</Name>
+         <Suffix>ClientDemo1</Suffix>
+         <Users>
+            <User>
+               <Name>Dale Halvorson</Name>
+               <Username>dale</Username>
+               <Password>dale</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Sheila Deluna</Name>
+               <Username>sheila</Username>
+               <Password>sheila</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Edward Ullrich</Name>
+               <Username>edward</Username>
+               <Password>edward</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Shelly Randolph</Name>
+               <Username>shelly</Username>
+               <Password>shelly</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Allen Clifford</Name>
+               <Username>allen</Username>
+               <Password>allen</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+         </Users>
+         <Patients>
+            <Patient>
+               <Id>nelkron-0</Id>
+               <Name>Nelson Kron</Name>
+               <BirthDate>1952-06-29</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>matviv-0</Id>
+               <Name>Mathew Vivier</Name>
+               <BirthDate>1984-06-12</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>jeshac-0</Id>
+               <Name>Jessie Hachy</Name>
+               <BirthDate>1945-02-14</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>rhojet-0</Id>
+               <Name>Rhonda Jefferson</Name>
+               <BirthDate>1951-03-23</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+            <Patient>
+               <Id>alllev-0</Id>
+               <Name>Alli Levitan</Name>
+               <BirthDate>1958-01-29</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+         </Patients>
+      </CCOWApplication>
+      <CCOWApplication>
+         <Name>CCOW Client Participation Demo2</Name>
+         <Suffix>ClientDemo2</Suffix>
+         <Users>
+            <User>
+               <Name>Dale Halvorson</Name>
+               <Username>dalhal</Username>
+               <Password>shedel</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Sheila Deluna</Name>
+               <Username>shedel</Username>
+               <Password>shedel</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Edward Ullrich</Name>
+               <Username>edwull</Username>
+               <Password>edwull</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Shelly Randolph</Name>
+               <Username>sheran</Username>
+               <Password>sheran</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Allen Clifford</Name>
+               <Username>allcli</Username>
+               <Password>allcli</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+         </Users>
+         <Patients>
+            <Patient>
+               <Id>nelkron-1</Id>
+               <Name>Nelson Kron</Name>
+               <BirthDate>1952-06-29</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>matviv-1</Id>
+               <Name>Mathew Vivier</Name>
+               <BirthDate>1984-06-12</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>jeshac-1</Id>
+               <Name>Jessie Hachy</Name>
+               <BirthDate>1945-02-14</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>rhojet-1</Id>
+               <Name>Rhonda Jefferson</Name>
+               <BirthDate>1951-03-23</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+            <Patient>
+               <Id>alllev-1</Id>
+               <Name>Alli Levitan</Name>
+               <BirthDate>1958-01-29</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+         </Patients>
+      </CCOWApplication>
+      <CCOWApplication>
+         <Name>CCOW Client Participation Demo3</Name>
+         <Suffix>ClientDemo3</Suffix>
+         <Users>
+            <User>
+               <Name>Dale Halvorson</Name>
+               <Username>dhalvorson</Username>
+               <Password>dhalvorson</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Sheila Deluna</Name>
+               <Username>sdeluna</Username>
+               <Password>sdeluna</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Edward Ullrich</Name>
+               <Username>eullrich</Username>
+               <Password>eullrich</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Shelly Randolph</Name>
+               <Username>srandolph</Username>
+               <Password>srandolph</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Allen Clifford</Name>
+               <Username>aclifford</Username>
+               <Password>aclifford</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+         </Users>
+         <Patients>
+            <Patient>
+               <Id>nelkron-2</Id>
+               <Name>Nelson Kron</Name>
+               <BirthDate>1952-06-29</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>matviv-2</Id>
+               <Name>Mathew Vivier</Name>
+               <BirthDate>1984-06-12</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>jeshac-2</Id>
+               <Name>Jessie Hachy</Name>
+               <BirthDate>1945-02-14</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>rhojet-2</Id>
+               <Name>Rhonda Jefferson</Name>
+               <BirthDate>1951-03-23</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+            <Patient>
+               <Id>alllev-2</Id>
+               <Name>Alli Levitan</Name>
+               <BirthDate>1974-07-23</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+            <Patient>
+               <Id>tesjac-2</Id>
+               <Name>Tess Jackson</Name>
+               <BirthDate>1958-01-29</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+         </Patients>
+      </CCOWApplication>
+      <CCOWApplication>
+         <Name>CCOW Web Client Participation Demo</Name>
+         <Suffix>WebClientDemo1</Suffix>
+         <Users>
+            <User>
+               <Name>Dale Halvorson</Name>
+               <Username>daleh</Username>
+               <Password>daleh</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Sheila Deluna</Name>
+               <Username>sheilad</Username>
+               <Password>sheilad</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Edward Ullrich</Name>
+               <Username>edwardu</Username>
+               <Password>edwardu</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Shelly Randolph</Name>
+               <Username>shellyr</Username>
+               <Password>shellyr</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Allen Clifford</Name>
+               <Username>allenc</Username>
+               <Password>allenc</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+         </Users>
+         <Patients>
+            <Patient>
+               <Id>nelkron-3</Id>
+               <Name>Nelson Kron</Name>
+               <BirthDate>1952-06-29</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>matviv-3</Id>
+               <Name>Mathew Vivier</Name>
+               <BirthDate>1984-06-12</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>jeshac-3</Id>
+               <Name>Jessie Hachy</Name>
+               <BirthDate>1945-02-14</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>rhojet-3</Id>
+               <Name>Rhonda Jefferson</Name>
+               <BirthDate>1951-03-23</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+            <Patient>
+               <Id>alllev-3</Id>
+               <Name>Alli Levitan</Name>
+               <BirthDate>1958-01-29</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+         </Patients>
+      </CCOWApplication>
+      <CCOWApplication>
+         <Name>CCOW Web Client Participation Demo2</Name>
+         <Suffix>WebClientDemo2</Suffix>
+         <Users>
+            <User>
+               <Name>Dale Halvorson</Name>
+               <Username>dhalv</Username>
+               <Password>dhalv</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Sheila Deluna</Name>
+               <Username>shdeluna</Username>
+               <Password>shdeluna</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Edward Ullrich</Name>
+               <Username>edullrich</Username>
+               <Password>edullrich</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Shelly Randolph</Name>
+               <Username>shrandolph</Username>
+               <Password>shrandolph</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+            <User>
+               <Name>Allen Clifford</Name>
+               <Username>alclifford</Username>
+               <Password>alclifford</Password>
+               <DomainLogin>false</DomainLogin>
+               <Domain />
+            </User>
+         </Users>
+         <Patients>
+            <Patient>
+               <Id>nelkron-4</Id>
+               <Name>Nelson Kron</Name>
+               <BirthDate>1952-06-29</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>matviv-4</Id>
+               <Name>Mathew Vivier</Name>
+               <BirthDate>1984-06-12</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>jeshac-4</Id>
+               <Name>Jessie Hachy</Name>
+               <BirthDate>1945-02-14</BirthDate>
+               <Sex>M</Sex>
+            </Patient>
+            <Patient>
+               <Id>rhojet-4</Id>
+               <Name>Rhonda Jefferson</Name>
+               <BirthDate>1951-03-23</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+            <Patient>
+               <Id>alllev-4</Id>
+               <Name>Alli Levitan</Name>
+               <BirthDate>1958-01-29</BirthDate>
+               <Sex>F</Sex>
+            </Patient>
+         </Patients>
+      </CCOWApplication>
+   </Applications>
+</Scenario>

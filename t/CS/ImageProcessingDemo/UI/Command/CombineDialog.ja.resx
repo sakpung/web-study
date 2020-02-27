@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>合成処理</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>ソース画像のチャネル</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="_gbChannelResultImageRectangle.Text" xml:space="preserve">
+    <value>合成画像のチャネル</value>
+  </data>
+  <data name="_gbDestinationImageRectangle.Text" xml:space="preserve">
+    <value>デスティネーション画像のチャネル</value>
+  </data>
+  <data name="_gbDestinationRectangle.Text" xml:space="preserve">
+    <value>デスティネーション長方形</value>
+  </data>
+  <data name="_gbOperation.Text" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="_gbResultImageRectangle.Text" xml:space="preserve">
+    <value>合成画像の長方形</value>
+  </data>
+  <data name="_gbSourcePoint.Text" xml:space="preserve">
+    <value>ソース長方形の原点</value>
+  </data>
+  <data name="_gbSourceRectangle.Text" xml:space="preserve">
+    <value>ソース長方形</value>
+  </data>
+  <data name="_lblHeight.Text" xml:space="preserve">
+    <value>高さ</value>
+  </data>
+  <data name="_lblPointX.Text" xml:space="preserve">
+    <value>点 X</value>
+  </data>
+  <data name="_lblPointY.Text" xml:space="preserve">
+    <value>点 Y</value>
+  </data>
+  <data name="_lblWidth.Text" xml:space="preserve">
+    <value>幅</value>
+  </data>
+  <data name="_rbDestinationRectangle.Text" xml:space="preserve">
+    <value>デスティネーション長方形</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CombineDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Name" xml:space="preserve">
+    <value>_btnOk</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_cmbChannelResultImageRectangle.Name" xml:space="preserve">
+    <value>_cmbChannelResultImageRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbChannelResultImageRectangle.Parent" xml:space="preserve">
+    <value>_gbChannelResultImageRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbChannelResultImageRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbChannelResultImageRectangle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cmbDestinationImageRectangle.Name" xml:space="preserve">
+    <value>_cmbDestinationImageRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbDestinationImageRectangle.Parent" xml:space="preserve">
+    <value>_gbDestinationImageRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbDestinationImageRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbDestinationImageRectangle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cmbDestinationRectangle.Name" xml:space="preserve">
+    <value>_cmbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbDestinationRectangle.Parent" xml:space="preserve">
+    <value>_gbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbDestinationRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbDestinationRectangle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cmbOperation.Name" xml:space="preserve">
+    <value>_cmbOperation</value>
+  </data>
+  <data name="&gt;&gt;_cmbOperation.Parent" xml:space="preserve">
+    <value>_gbOperation</value>
+  </data>
+  <data name="&gt;&gt;_cmbOperation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbOperation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cmbResultImageRectangle.Name" xml:space="preserve">
+    <value>_cmbResultImageRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbResultImageRectangle.Parent" xml:space="preserve">
+    <value>_gbResultImageRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbResultImageRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbResultImageRectangle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cmbSourceImageRectangle.Name" xml:space="preserve">
+    <value>_cmbSourceImageRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbSourceImageRectangle.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;_cmbSourceImageRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbSourceImageRectangle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cmbSourceRectangle.Name" xml:space="preserve">
+    <value>_cmbSourceRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbSourceRectangle.Parent" xml:space="preserve">
+    <value>_gbSourceRectangle</value>
+  </data>
+  <data name="&gt;&gt;_cmbSourceRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbSourceRectangle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_gbChannelResultImageRectangle.Name" xml:space="preserve">
+    <value>_gbChannelResultImageRectangle</value>
+  </data>
+  <data name="&gt;&gt;_gbChannelResultImageRectangle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbChannelResultImageRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbChannelResultImageRectangle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_gbDestinationImageRectangle.Name" xml:space="preserve">
+    <value>_gbDestinationImageRectangle</value>
+  </data>
+  <data name="&gt;&gt;_gbDestinationImageRectangle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbDestinationImageRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbDestinationImageRectangle.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_gbDestinationRectangle.Name" xml:space="preserve">
+    <value>_gbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_gbDestinationRectangle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbDestinationRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbDestinationRectangle.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_gbOperation.Name" xml:space="preserve">
+    <value>_gbOperation</value>
+  </data>
+  <data name="&gt;&gt;_gbOperation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbOperation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbOperation.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_gbResultImageRectangle.Name" xml:space="preserve">
+    <value>_gbResultImageRectangle</value>
+  </data>
+  <data name="&gt;&gt;_gbResultImageRectangle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbResultImageRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbResultImageRectangle.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_gbSourcePoint.Name" xml:space="preserve">
+    <value>_gbSourcePoint</value>
+  </data>
+  <data name="&gt;&gt;_gbSourcePoint.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbSourcePoint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbSourcePoint.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_gbSourceRectangle.Name" xml:space="preserve">
+    <value>_gbSourceRectangle</value>
+  </data>
+  <data name="&gt;&gt;_gbSourceRectangle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbSourceRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbSourceRectangle.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_lblHeight.Name" xml:space="preserve">
+    <value>_lblHeight</value>
+  </data>
+  <data name="&gt;&gt;_lblHeight.Parent" xml:space="preserve">
+    <value>_rbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_lblHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblHeight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_lblPointX.Name" xml:space="preserve">
+    <value>_lblPointX</value>
+  </data>
+  <data name="&gt;&gt;_lblPointX.Parent" xml:space="preserve">
+    <value>_gbSourcePoint</value>
+  </data>
+  <data name="&gt;&gt;_lblPointX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblPointX.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_lblPointY.Name" xml:space="preserve">
+    <value>_lblPointY</value>
+  </data>
+  <data name="&gt;&gt;_lblPointY.Parent" xml:space="preserve">
+    <value>_gbSourcePoint</value>
+  </data>
+  <data name="&gt;&gt;_lblPointY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblPointY.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_lblWidth.Name" xml:space="preserve">
+    <value>_lblWidth</value>
+  </data>
+  <data name="&gt;&gt;_lblWidth.Parent" xml:space="preserve">
+    <value>_rbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_lblWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblWidth.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_lblX.Name" xml:space="preserve">
+    <value>_lblX</value>
+  </data>
+  <data name="&gt;&gt;_lblX.Parent" xml:space="preserve">
+    <value>_rbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_lblX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblX.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_lblY.Name" xml:space="preserve">
+    <value>_lblY</value>
+  </data>
+  <data name="&gt;&gt;_lblY.Parent" xml:space="preserve">
+    <value>_rbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_lblY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblY.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_numHeight.Name" xml:space="preserve">
+    <value>_numHeight</value>
+  </data>
+  <data name="&gt;&gt;_numHeight.Parent" xml:space="preserve">
+    <value>_rbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_numHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numHeight.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_numPointX.Name" xml:space="preserve">
+    <value>_numPointX</value>
+  </data>
+  <data name="&gt;&gt;_numPointX.Parent" xml:space="preserve">
+    <value>_gbSourcePoint</value>
+  </data>
+  <data name="&gt;&gt;_numPointX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numPointX.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_numPointY.Name" xml:space="preserve">
+    <value>_numPointY</value>
+  </data>
+  <data name="&gt;&gt;_numPointY.Parent" xml:space="preserve">
+    <value>_gbSourcePoint</value>
+  </data>
+  <data name="&gt;&gt;_numPointY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numPointY.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_numWidth.Name" xml:space="preserve">
+    <value>_numWidth</value>
+  </data>
+  <data name="&gt;&gt;_numWidth.Parent" xml:space="preserve">
+    <value>_rbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_numWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numWidth.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_numX.Name" xml:space="preserve">
+    <value>_numX</value>
+  </data>
+  <data name="&gt;&gt;_numX.Parent" xml:space="preserve">
+    <value>_rbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_numX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numX.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_numY.Name" xml:space="preserve">
+    <value>_numY</value>
+  </data>
+  <data name="&gt;&gt;_numY.Parent" xml:space="preserve">
+    <value>_rbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_numY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numY.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_rbDestinationRectangle.Name" xml:space="preserve">
+    <value>_rbDestinationRectangle</value>
+  </data>
+  <data name="&gt;&gt;_rbDestinationRectangle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_rbDestinationRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbDestinationRectangle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="resx_Destination0" xml:space="preserve">
+    <value>Destination0</value>
+  </data>
+  <data name="resx_Destination1" xml:space="preserve">
+    <value>Destination1</value>
+  </data>
+  <data name="resx_DestinationBlue" xml:space="preserve">
+    <value>DestinationBlue</value>
+  </data>
+  <data name="resx_DestinationGreen" xml:space="preserve">
+    <value>DestinationGreen</value>
+  </data>
+  <data name="resx_DestinationMaster" xml:space="preserve">
+    <value>DestinationMaster</value>
+  </data>
+  <data name="resx_DestinationNop" xml:space="preserve">
+    <value>DestinationNop</value>
+  </data>
+  <data name="resx_DestinationNot" xml:space="preserve">
+    <value>DestinationNot</value>
+  </data>
+  <data name="resx_DestinationRed" xml:space="preserve">
+    <value>DestinationRed</value>
+  </data>
+  <data name="resx_Result0" xml:space="preserve">
+    <value>Result0</value>
+  </data>
+  <data name="resx_Result1" xml:space="preserve">
+    <value>Result1</value>
+  </data>
+  <data name="resx_ResultBlue" xml:space="preserve">
+    <value>ResultBlue</value>
+  </data>
+  <data name="resx_ResultGreen" xml:space="preserve">
+    <value>ResultGreen</value>
+  </data>
+  <data name="resx_ResultMaster" xml:space="preserve">
+    <value>ResultMaster</value>
+  </data>
+  <data name="resx_ResultNop" xml:space="preserve">
+    <value>ResultNop</value>
+  </data>
+  <data name="resx_ResultNot" xml:space="preserve">
+    <value>ResultNot</value>
+  </data>
+  <data name="resx_ResultRed" xml:space="preserve">
+    <value>ResultRed</value>
+  </data>
+  <data name="resx_Source0" xml:space="preserve">
+    <value>Source0</value>
+  </data>
+  <data name="resx_Source1" xml:space="preserve">
+    <value>Source1</value>
+  </data>
+  <data name="resx_SourceBlue" xml:space="preserve">
+    <value>SourceBlue</value>
+  </data>
+  <data name="resx_SourceGreen" xml:space="preserve">
+    <value>SourceGreen</value>
+  </data>
+  <data name="resx_SourceMaster" xml:space="preserve">
+    <value>SourceMaster</value>
+  </data>
+  <data name="resx_SourceNop" xml:space="preserve">
+    <value>SourceNop</value>
+  </data>
+  <data name="resx_SourceNot" xml:space="preserve">
+    <value>SourceNot</value>
+  </data>
+  <data name="resx_SourceRed" xml:space="preserve">
+    <value>SourceRed</value>
+  </data>
+  <data name="_btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="_lblX.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="_lblY.Text" xml:space="preserve">
+    <value>Y</value>
+  </data>
+</root>

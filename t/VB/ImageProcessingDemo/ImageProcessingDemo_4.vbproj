@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82971A1A-7E46-42AC-9532-C8E19A411F32}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ApplicationIcon>..\..\..\Resources\RasterPro.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>VBImageProcessingDemo</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>ImageProcessingDemo</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Color">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Color.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Effects">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Effects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.SpecialEffects">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.SpecialEffects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Utilities">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Utilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Controls.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Controls.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.Color">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.WinForms.CommonDialogs.Color.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Globalization.vb">
+      <Link>Common\Globalization.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Converters.vb">
+      <Link>Common\Converters.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Demos.vb">
+      <Link>Common\Demos.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\DialogUtilities.vb">
+      <Link>Common\DialogUtilities.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Messager.vb">
+      <Link>Common\Messager.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\WaitCursor.vb">
+      <Link>Common\WaitCursor.vb</Link>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Commands.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Command\AddNoiseDialog.Designer.vb">
+      <DependentUpon>AddNoiseDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\AddNoiseDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\AlphaBlendDialog.Designer.vb">
+      <DependentUpon>AlphaBlendDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\AlphaBlendDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\AntiAliasingDialog.Designer.vb">
+      <DependentUpon>AntiAliasingDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\AntiAliasingDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\AutoColorLevelDialog.Designer.vb">
+      <DependentUpon>AutoColorLevelDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\AutoColorLevelDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\AutoCropDialog.Designer.vb">
+      <DependentUpon>AutoCropDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\AutoCropDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\AverageDialog.Designer.vb">
+      <DependentUpon>AverageDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\AverageDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\BlankPageDetectorDialog.Designer.vb">
+      <DependentUpon>BlankPageDetectorDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\BlankPageDetectorDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ChangeHueSaturationIntensityDialog.Designer.vb">
+      <DependentUpon>ChangeHueSaturationIntensityDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ChangeHueSaturationIntensityDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ChangeIntensityDialog.Designer.vb">
+      <DependentUpon>ChangeIntensityDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ChangeIntensityDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ChangeViewPerspectiveDialog.Designer.vb">
+      <DependentUpon>ChangeViewPerspectiveDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ChangeViewPerspectiveDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ColorHalftoneDialog.Designer.vb">
+      <DependentUpon>ColorHalftoneDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ColorHalftoneDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ColorResolutionDialog.designer.vb">
+      <DependentUpon>ColorResolutionDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ColorResolutionDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\CombineDialog.Designer.vb">
+      <DependentUpon>CombineDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\CombineDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ContourFilterDialog.Designer.vb">
+      <DependentUpon>ContourFilterDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ContourFilterDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ConvertUnsignedToSignedDialog.Designer.vb">
+      <DependentUpon>ConvertUnsignedToSignedDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ConvertUnsignedToSignedDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\CropDialog.Designer.vb">
+      <DependentUpon>CropDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\CropDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\DeinterlaceDialog.Designer.vb">
+      <DependentUpon>DeinterlaceDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\DeinterlaceDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\DeskewDialog.designer.vb">
+      <DependentUpon>DeskewDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\DeskewDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\DiscreteFourierTransformDialog.Designer.vb">
+      <DependentUpon>DiscreteFourierTransformDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\DiscreteFourierTransformDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\EdgeDetectEffectDialog.Designer.vb">
+      <DependentUpon>EdgeDetectEffectDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\EdgeDetectEffectDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\EdgeDetectorDialog.Designer.vb">
+      <DependentUpon>EdgeDetectorDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\EdgeDetectorDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\EdgeDetectStatisticalDialog.Designer.vb">
+      <DependentUpon>EdgeDetectStatisticalDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\EdgeDetectStatisticalDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\EmbossDialog.Designer.vb">
+      <DependentUpon>EmbossDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\EmbossDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\FastFourierTransformDialog.Designer.vb">
+      <DependentUpon>FastFourierTransformDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\FastFourierTransformDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\FeatherAlphaBlendDialog.Designer.vb">
+      <DependentUpon>FeatherAlphaBlendDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\FeatherAlphaBlendDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\GammaCorrectDialog.Designer.vb">
+      <DependentUpon>GammaCorrectDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\GammaCorrectDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\GammaCorrectExtendedDialog.Designer.vb">
+      <DependentUpon>GammaCorrectExtendedDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\GammaCorrectExtendedDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\GaussianDialog.Designer.vb">
+      <DependentUpon>GaussianDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\GaussianDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleDialog.Designer.vb">
+      <DependentUpon>GrayScaleDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleExtendedDialog.Designer.vb">
+      <DependentUpon>GrayScaleExtendedDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleExtendedDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleToDuotoneDialog.Designer.vb">
+      <DependentUpon>GrayScaleToDuotoneDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleToDuotoneDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleToMultitoneDialog.Designer.vb">
+      <DependentUpon>GrayScaleToMultitoneDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleToMultitoneDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\HalfToneDialog.Designer.vb">
+      <DependentUpon>HalfToneDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\HalfToneDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\HistogramDlg.designer.vb">
+      <DependentUpon>HistogramDlg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\HistogramDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\HistogramEqualizeDialog.Designer.vb">
+      <DependentUpon>HistogramEqualizeDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\HistogramEqualizeDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ImpressionistDialog.Designer.vb">
+      <DependentUpon>ImpressionistDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ImpressionistDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\IntensityDetectDialog.designer.vb">
+      <DependentUpon>IntensityDetectDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\IntensityDetectDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\LocalHistogramEqualizeDialog.Designer.vb">
+      <DependentUpon>LocalHistogramEqualizeDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\LocalHistogramEqualizeDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\MedianDialog.Designer.vb">
+      <DependentUpon>MedianDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\MedianDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\MinimumDialog.Designer.vb">
+      <DependentUpon>MinimumDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\MinimumDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\MosaicDialog.Designer.vb">
+      <DependentUpon>MosaicDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\MosaicDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\MultiplyDialog.Designer.vb">
+      <DependentUpon>MultiplyDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\MultiplyDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\OilifyDialog.Designer.vb">
+      <DependentUpon>OilifyDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\OilifyDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\RemapIntensityDialog.designer.vb">
+      <DependentUpon>RemapIntensityDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\RemapIntensityDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\RemoveRedEyeDialog.Designer.vb">
+      <DependentUpon>RemoveRedEyeDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\RemoveRedEyeDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ResizeCommandDialog.designer.vb">
+      <DependentUpon>ResizeCommandDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ResizeCommandDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ResizeDialog.designer.vb">
+      <DependentUpon>ResizeDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ResizeDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ResizeInterpolateDialog.Designer.vb">
+      <DependentUpon>ResizeInterpolateDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ResizeInterpolateDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ResizeRegionDialog.Designer.vb">
+      <DependentUpon>ResizeRegionDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ResizeRegionDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\RotateDialog.designer.vb">
+      <DependentUpon>RotateDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\RotateDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\SharpenDialog.Designer.vb">
+      <DependentUpon>SharpenDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\SharpenDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\SmoothEdgesDialog.Designer.vb">
+      <DependentUpon>SmoothEdgesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\SmoothEdgesDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\UnsharpMaskDialog.Designer.vb">
+      <DependentUpon>UnsharpMaskDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\UnsharpMaskDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ImageViewerAddMagicWandMode.vb" />
+    <Compile Include="UI\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="UI\Command\HistogramDlg.resx">
+      <DependentUpon>HistogramDlg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\Resources\Leadtools.jpg">
+      <Link>Resources\Leadtools.jpg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Resources\RasterPro.ico">
+      <Link>Resources\RasterPro.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\AddNoiseDialog.resx">
+      <DependentUpon>AddNoiseDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\AlphaBlendDialog.resx">
+      <DependentUpon>AlphaBlendDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\AntiAliasingDialog.resx">
+      <DependentUpon>AntiAliasingDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\AutoColorLevelDialog.resx">
+      <DependentUpon>AutoColorLevelDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\AutoCropDialog.resx">
+      <DependentUpon>AutoCropDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\AverageDialog.resx">
+      <DependentUpon>AverageDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\BlankPageDetectorDialog.resx">
+      <DependentUpon>BlankPageDetectorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ChangeHueSaturationIntensityDialog.resx">
+      <DependentUpon>ChangeHueSaturationIntensityDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ChangeIntensityDialog.resx">
+      <DependentUpon>ChangeIntensityDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ChangeViewPerspectiveDialog.resx">
+      <DependentUpon>ChangeViewPerspectiveDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ColorHalftoneDialog.resx">
+      <DependentUpon>ColorHalftoneDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ColorResolutionDialog.resx">
+      <DependentUpon>ColorResolutionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\CombineDialog.resx">
+      <DependentUpon>CombineDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ContourFilterDialog.resx">
+      <DependentUpon>ContourFilterDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ConvertUnsignedToSignedDialog.resx">
+      <DependentUpon>ConvertUnsignedToSignedDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\CropDialog.resx">
+      <DependentUpon>CropDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\DeinterlaceDialog.resx">
+      <DependentUpon>DeinterlaceDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\DeskewDialog.resx">
+      <DependentUpon>DeskewDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\DiscreteFourierTransformDialog.resx">
+      <DependentUpon>DiscreteFourierTransformDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\EdgeDetectEffectDialog.resx">
+      <DependentUpon>EdgeDetectEffectDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\EdgeDetectorDialog.resx">
+      <DependentUpon>EdgeDetectorDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\EdgeDetectStatisticalDialog.resx">
+      <DependentUpon>EdgeDetectStatisticalDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\EmbossDialog.resx">
+      <DependentUpon>EmbossDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\FastFourierTransformDialog.resx">
+      <DependentUpon>FastFourierTransformDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\FeatherAlphaBlendDialog.resx">
+      <DependentUpon>FeatherAlphaBlendDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\GammaCorrectDialog.resx">
+      <DependentUpon>GammaCorrectDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\GammaCorrectExtendedDialog.resx">
+      <DependentUpon>GammaCorrectExtendedDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\GaussianDialog.resx">
+      <DependentUpon>GaussianDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\GrayScaleDialog.resx">
+      <DependentUpon>GrayScaleDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\GrayScaleExtendedDialog.resx">
+      <DependentUpon>GrayScaleExtendedDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\GrayScaleToDuotoneDialog.resx">
+      <DependentUpon>GrayScaleToDuotoneDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\GrayScaleToMultitoneDialog.resx">
+      <DependentUpon>GrayScaleToMultitoneDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\HalfToneDialog.resx">
+      <DependentUpon>HalfToneDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\HistogramEqualizeDialog.resx">
+      <DependentUpon>HistogramEqualizeDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ImpressionistDialog.resx">
+      <DependentUpon>ImpressionistDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\IntensityDetectDialog.resx">
+      <DependentUpon>IntensityDetectDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\LocalHistogramEqualizeDialog.resx">
+      <DependentUpon>LocalHistogramEqualizeDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\MedianDialog.resx">
+      <DependentUpon>MedianDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\MinimumDialog.resx">
+      <DependentUpon>MinimumDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\MosaicDialog.resx">
+      <DependentUpon>MosaicDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\MultiplyDialog.resx">
+      <DependentUpon>MultiplyDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\OilifyDialog.resx">
+      <DependentUpon>OilifyDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\RemapIntensityDialog.resx">
+      <DependentUpon>RemapIntensityDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\RemoveRedEyeDialog.resx">
+      <DependentUpon>RemoveRedEyeDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ResizeCommandDialog.resx">
+      <DependentUpon>ResizeCommandDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ResizeDialog.resx">
+      <DependentUpon>ResizeDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ResizeInterpolateDialog.resx">
+      <DependentUpon>ResizeInterpolateDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ResizeRegionDialog.resx">
+      <DependentUpon>ResizeRegionDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\RotateDialog.resx">
+      <DependentUpon>RotateDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\SharpenDialog.resx">
+      <DependentUpon>SharpenDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\SmoothEdgesDialog.resx">
+      <DependentUpon>SmoothEdgesDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\UnsharpMaskDialog.resx">
+      <DependentUpon>UnsharpMaskDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

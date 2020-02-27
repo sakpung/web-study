@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MiPatientUpdater.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Scp" Type="Leadtools.Dicom.Scu.DicomScp" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Modalities" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CR,CT,MR,NM,US,XA,DX,IO,MG,PX,SC,XC</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

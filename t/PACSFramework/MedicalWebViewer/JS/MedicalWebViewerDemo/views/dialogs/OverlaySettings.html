@@ -1,0 +1,35 @@
+﻿<div class="modal-content">
+   <div class="modal-header">
+      <h3 class="modal-title">Overlay Settings</h3>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-body">
+      <label for="position" class="control-label">Position:</label>
+      <select class="study-dropdown w-dropdown" id="position" ng-model="position.value" style="margin-bottom: 5px !important">
+         <option value="topLeft">Top Left</option>
+         <option value="centerTop">Top Center</option>
+         <option value="topRight">Top Right</option>
+         <option value="centerLeft">Left Center</option>
+         <option value="centerRight">Right Center</option>
+         <option value="bottomLeft">Bottom Left</option>
+         <option value="bottomCenter">Bottom Center</option>
+         <option value="bottomRight">Bottom Right</option>
+      </select>
+      <div id="overlayItems" ui-grid="gridOptions" class="grid" ui-grid-selection ui-grid-auto-resize></div>
+      <div class="cine-buttons" role="toolbar">
+         <div>
+            <button type="button" class="cine-controls plus-button"  ng-click="addTag()" data-toggle="tooltip" title="Add overlay tag"><i></i></button>
+            <button type="button" class="cine-controls pen-button" ng-click="editTag()" data-toggle="tooltip" title="Edit overlay tag" ng-disabled="!hasSelection()"><i></i></button>
+            <button type="button" class="cine-controls delete-button" ng-click="deleteTag()" data-toggle="tooltip" title="Delete selected tag" ng-disabled="!hasSelection()"><i></i></button>
+         </div>
+         <div>
+            <button type="button" class="cine-controls reset-button" ng-click="restore()" data-toggle="tooltip" title="Undo tag changes" ng-disabled="!hasChanged"><i></i></button>
+            <button type="button" class="cine-controls save-button" ng-click="save()" data-toggle="tooltip" title="Save overlay tags" ng-disabled="!hasChanged"><i></i></button>
+         </div>
+      </div>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-footer">
+      <a class="form-btn" ng-click="close()">Close</a>
+   </div>
+</div>

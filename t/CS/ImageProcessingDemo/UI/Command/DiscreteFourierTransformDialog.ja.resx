@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>離散フーリエ変換</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="_gbChannel.Text" xml:space="preserve">
+    <value>チャンネル</value>
+  </data>
+  <data name="_gbClipping.Text" xml:space="preserve">
+    <value>クリッピング</value>
+  </data>
+  <data name="_gbData.Text" xml:space="preserve">
+    <value>表示されたデータ</value>
+  </data>
+  <data name="_gbFrequency.Text" xml:space="preserve">
+    <value>周波数データタイプ </value>
+  </data>
+  <data name="_gbHarmonics.Text" xml:space="preserve">
+    <value>調波</value>
+  </data>
+  <data name="_gbPlotting.Text" xml:space="preserve">
+    <value>プロットのスケール</value>
+  </data>
+  <data name="_gbRange.Text" xml:space="preserve">
+    <value>ノイズレベル</value>
+  </data>
+  <data name="_gbXHarmonics.Text" xml:space="preserve">
+    <value>X調波範囲</value>
+  </data>
+  <data name="_gbYHarmonics.Text" xml:space="preserve">
+    <value>Y調波範囲</value>
+  </data>
+  <data name="_gpTransformation.Text" xml:space="preserve">
+    <value>変換</value>
+  </data>
+  <data name="_lblHeight.Text" xml:space="preserve">
+    <value>高さ</value>
+  </data>
+  <data name="_lblWidth.Text" xml:space="preserve">
+    <value>幅</value>
+  </data>
+  <data name="_rbAll.Text" xml:space="preserve">
+    <value>全て</value>
+  </data>
+  <data name="_rbBlue.Text" xml:space="preserve">
+    <value>青</value>
+  </data>
+  <data name="_rbBoth.Text" xml:space="preserve">
+    <value>水平・垂直</value>
+  </data>
+  <data name="_rbClip.Text" xml:space="preserve">
+    <value>クリップ</value>
+  </data>
+  <data name="_rbDiscreteFourierTransform.Text" xml:space="preserve">
+    <value>離散フーリエ変換</value>
+  </data>
+  <data name="_rbDMagnitude.Text" xml:space="preserve">
+    <value>振幅データ</value>
+  </data>
+  <data name="_rbDPhase.Text" xml:space="preserve">
+    <value>位相データ</value>
+  </data>
+  <data name="_rbGray.Text" xml:space="preserve">
+    <value>すべて</value>
+  </data>
+  <data name="_rbGreen.Text" xml:space="preserve">
+    <value>緑</value>
+  </data>
+  <data name="_rbInsideX.Text" xml:space="preserve">
+    <value>範囲内のX調波</value>
+  </data>
+  <data name="_rbInsideY.Text" xml:space="preserve">
+    <value>範囲内のY調波</value>
+  </data>
+  <data name="_rbInverseDiscreteFourierTransform.Text" xml:space="preserve">
+    <value>逆離散フーリエ変換</value>
+  </data>
+  <data name="_rbLogarithm.Text" xml:space="preserve">
+    <value>対数</value>
+  </data>
+  <data name="_rbMagnitude.Text" xml:space="preserve">
+    <value>振幅データ</value>
+  </data>
+  <data name="_rbNormal.Text" xml:space="preserve">
+    <value>通常</value>
+  </data>
+  <data name="_rbOutsideX.Text" xml:space="preserve">
+    <value>範囲外のX調波</value>
+  </data>
+  <data name="_rbOutsideY.Text" xml:space="preserve">
+    <value>範囲外のY調波</value>
+  </data>
+  <data name="_rbPhase.Text" xml:space="preserve">
+    <value>位相データ</value>
+  </data>
+  <data name="_rbRange.Text" xml:space="preserve">
+    <value>ノイズレベル</value>
+  </data>
+  <data name="_rbRed.Text" xml:space="preserve">
+    <value>赤</value>
+  </data>
+  <data name="_rbScale.Text" xml:space="preserve">
+    <value>スケール</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DiscreteFourierTransformDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Name" xml:space="preserve">
+    <value>_btnOk</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_gbChannel.Name" xml:space="preserve">
+    <value>_gbChannel</value>
+  </data>
+  <data name="&gt;&gt;_gbChannel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbChannel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbChannel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_gbClipping.Name" xml:space="preserve">
+    <value>_gbClipping</value>
+  </data>
+  <data name="&gt;&gt;_gbClipping.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbClipping.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbClipping.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_gbData.Name" xml:space="preserve">
+    <value>_gbData</value>
+  </data>
+  <data name="&gt;&gt;_gbData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbData.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_gbFrequency.Name" xml:space="preserve">
+    <value>_gbFrequency</value>
+  </data>
+  <data name="&gt;&gt;_gbFrequency.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbFrequency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbFrequency.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_gbHarmonics.Name" xml:space="preserve">
+    <value>_gbHarmonics</value>
+  </data>
+  <data name="&gt;&gt;_gbHarmonics.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbHarmonics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbHarmonics.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_gbPlotting.Name" xml:space="preserve">
+    <value>_gbPlotting</value>
+  </data>
+  <data name="&gt;&gt;_gbPlotting.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbPlotting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbPlotting.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_gbRange.Name" xml:space="preserve">
+    <value>_gbRange</value>
+  </data>
+  <data name="&gt;&gt;_gbRange.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbRange.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_gbXHarmonics.Name" xml:space="preserve">
+    <value>_gbXHarmonics</value>
+  </data>
+  <data name="&gt;&gt;_gbXHarmonics.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbXHarmonics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbXHarmonics.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_gbYHarmonics.Name" xml:space="preserve">
+    <value>_gbYHarmonics</value>
+  </data>
+  <data name="&gt;&gt;_gbYHarmonics.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbYHarmonics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbYHarmonics.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_gpTransformation.Name" xml:space="preserve">
+    <value>_gpTransformation</value>
+  </data>
+  <data name="&gt;&gt;_gpTransformation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gpTransformation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gpTransformation.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_lblHeight.Name" xml:space="preserve">
+    <value>_lblHeight</value>
+  </data>
+  <data name="&gt;&gt;_lblHeight.Parent" xml:space="preserve">
+    <value>_gbRange</value>
+  </data>
+  <data name="&gt;&gt;_lblHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblHeight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_lblWidth.Name" xml:space="preserve">
+    <value>_lblWidth</value>
+  </data>
+  <data name="&gt;&gt;_lblWidth.Parent" xml:space="preserve">
+    <value>_gbRange</value>
+  </data>
+  <data name="&gt;&gt;_lblWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblWidth.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_lblX.Name" xml:space="preserve">
+    <value>_lblX</value>
+  </data>
+  <data name="&gt;&gt;_lblX.Parent" xml:space="preserve">
+    <value>_gbRange</value>
+  </data>
+  <data name="&gt;&gt;_lblX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblX.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_lblY.Name" xml:space="preserve">
+    <value>_lblY</value>
+  </data>
+  <data name="&gt;&gt;_lblY.Parent" xml:space="preserve">
+    <value>_gbRange</value>
+  </data>
+  <data name="&gt;&gt;_lblY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblY.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_numHeight.Name" xml:space="preserve">
+    <value>_numHeight</value>
+  </data>
+  <data name="&gt;&gt;_numHeight.Parent" xml:space="preserve">
+    <value>_gbRange</value>
+  </data>
+  <data name="&gt;&gt;_numHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numHeight.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_numWidth.Name" xml:space="preserve">
+    <value>_numWidth</value>
+  </data>
+  <data name="&gt;&gt;_numWidth.Parent" xml:space="preserve">
+    <value>_gbRange</value>
+  </data>
+  <data name="&gt;&gt;_numWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numWidth.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_numX.Name" xml:space="preserve">
+    <value>_numX</value>
+  </data>
+  <data name="&gt;&gt;_numX.Parent" xml:space="preserve">
+    <value>_gbRange</value>
+  </data>
+  <data name="&gt;&gt;_numX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numX.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_numY.Name" xml:space="preserve">
+    <value>_numY</value>
+  </data>
+  <data name="&gt;&gt;_numY.Parent" xml:space="preserve">
+    <value>_gbRange</value>
+  </data>
+  <data name="&gt;&gt;_numY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numY.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_rbAll.Name" xml:space="preserve">
+    <value>_rbAll</value>
+  </data>
+  <data name="&gt;&gt;_rbAll.Parent" xml:space="preserve">
+    <value>_gbHarmonics</value>
+  </data>
+  <data name="&gt;&gt;_rbAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbAll.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbBlue.Name" xml:space="preserve">
+    <value>_rbBlue</value>
+  </data>
+  <data name="&gt;&gt;_rbBlue.Parent" xml:space="preserve">
+    <value>_gbChannel</value>
+  </data>
+  <data name="&gt;&gt;_rbBlue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbBlue.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbBoth.Name" xml:space="preserve">
+    <value>_rbBoth</value>
+  </data>
+  <data name="&gt;&gt;_rbBoth.Parent" xml:space="preserve">
+    <value>_gbFrequency</value>
+  </data>
+  <data name="&gt;&gt;_rbBoth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbBoth.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbClip.Name" xml:space="preserve">
+    <value>_rbClip</value>
+  </data>
+  <data name="&gt;&gt;_rbClip.Parent" xml:space="preserve">
+    <value>_gbClipping</value>
+  </data>
+  <data name="&gt;&gt;_rbClip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbClip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbDiscreteFourierTransform.Name" xml:space="preserve">
+    <value>_rbDiscreteFourierTransform</value>
+  </data>
+  <data name="&gt;&gt;_rbDiscreteFourierTransform.Parent" xml:space="preserve">
+    <value>_gpTransformation</value>
+  </data>
+  <data name="&gt;&gt;_rbDiscreteFourierTransform.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbDiscreteFourierTransform.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbDMagnitude.Name" xml:space="preserve">
+    <value>_rbDMagnitude</value>
+  </data>
+  <data name="&gt;&gt;_rbDMagnitude.Parent" xml:space="preserve">
+    <value>_gbData</value>
+  </data>
+  <data name="&gt;&gt;_rbDMagnitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbDMagnitude.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbDPhase.Name" xml:space="preserve">
+    <value>_rbDPhase</value>
+  </data>
+  <data name="&gt;&gt;_rbDPhase.Parent" xml:space="preserve">
+    <value>_gbData</value>
+  </data>
+  <data name="&gt;&gt;_rbDPhase.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbDPhase.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbGray.Name" xml:space="preserve">
+    <value>_rbGray</value>
+  </data>
+  <data name="&gt;&gt;_rbGray.Parent" xml:space="preserve">
+    <value>_gbChannel</value>
+  </data>
+  <data name="&gt;&gt;_rbGray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbGray.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbGreen.Name" xml:space="preserve">
+    <value>_rbGreen</value>
+  </data>
+  <data name="&gt;&gt;_rbGreen.Parent" xml:space="preserve">
+    <value>_gbChannel</value>
+  </data>
+  <data name="&gt;&gt;_rbGreen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbGreen.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_rbInsideX.Name" xml:space="preserve">
+    <value>_rbInsideX</value>
+  </data>
+  <data name="&gt;&gt;_rbInsideX.Parent" xml:space="preserve">
+    <value>_gbXHarmonics</value>
+  </data>
+  <data name="&gt;&gt;_rbInsideX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbInsideX.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbInsideY.Name" xml:space="preserve">
+    <value>_rbInsideY</value>
+  </data>
+  <data name="&gt;&gt;_rbInsideY.Parent" xml:space="preserve">
+    <value>_gbYHarmonics</value>
+  </data>
+  <data name="&gt;&gt;_rbInsideY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbInsideY.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbInverseDiscreteFourierTransform.Name" xml:space="preserve">
+    <value>_rbInverseDiscreteFourierTransform</value>
+  </data>
+  <data name="&gt;&gt;_rbInverseDiscreteFourierTransform.Parent" xml:space="preserve">
+    <value>_gpTransformation</value>
+  </data>
+  <data name="&gt;&gt;_rbInverseDiscreteFourierTransform.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbInverseDiscreteFourierTransform.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbLogarithm.Name" xml:space="preserve">
+    <value>_rbLogarithm</value>
+  </data>
+  <data name="&gt;&gt;_rbLogarithm.Parent" xml:space="preserve">
+    <value>_gbPlotting</value>
+  </data>
+  <data name="&gt;&gt;_rbLogarithm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbLogarithm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbMagnitude.Name" xml:space="preserve">
+    <value>_rbMagnitude</value>
+  </data>
+  <data name="&gt;&gt;_rbMagnitude.Parent" xml:space="preserve">
+    <value>_gbFrequency</value>
+  </data>
+  <data name="&gt;&gt;_rbMagnitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbMagnitude.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_rbNormal.Name" xml:space="preserve">
+    <value>_rbNormal</value>
+  </data>
+  <data name="&gt;&gt;_rbNormal.Parent" xml:space="preserve">
+    <value>_gbPlotting</value>
+  </data>
+  <data name="&gt;&gt;_rbNormal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbNormal.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbOutsideX.Name" xml:space="preserve">
+    <value>_rbOutsideX</value>
+  </data>
+  <data name="&gt;&gt;_rbOutsideX.Parent" xml:space="preserve">
+    <value>_gbXHarmonics</value>
+  </data>
+  <data name="&gt;&gt;_rbOutsideX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbOutsideX.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbOutsideY.Name" xml:space="preserve">
+    <value>_rbOutsideY</value>
+  </data>
+  <data name="&gt;&gt;_rbOutsideY.Parent" xml:space="preserve">
+    <value>_gbYHarmonics</value>
+  </data>
+  <data name="&gt;&gt;_rbOutsideY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbOutsideY.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbPhase.Name" xml:space="preserve">
+    <value>_rbPhase</value>
+  </data>
+  <data name="&gt;&gt;_rbPhase.Parent" xml:space="preserve">
+    <value>_gbFrequency</value>
+  </data>
+  <data name="&gt;&gt;_rbPhase.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbPhase.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbRange.Name" xml:space="preserve">
+    <value>_rbRange</value>
+  </data>
+  <data name="&gt;&gt;_rbRange.Parent" xml:space="preserve">
+    <value>_gbHarmonics</value>
+  </data>
+  <data name="&gt;&gt;_rbRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbRange.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbRed.Name" xml:space="preserve">
+    <value>_rbRed</value>
+  </data>
+  <data name="&gt;&gt;_rbRed.Parent" xml:space="preserve">
+    <value>_gbChannel</value>
+  </data>
+  <data name="&gt;&gt;_rbRed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbRed.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_rbScale.Name" xml:space="preserve">
+    <value>_rbScale</value>
+  </data>
+  <data name="&gt;&gt;_rbScale.Parent" xml:space="preserve">
+    <value>_gbClipping</value>
+  </data>
+  <data name="&gt;&gt;_rbScale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rbScale.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="_lblX.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="_lblY.Text" xml:space="preserve">
+    <value>Y</value>
+  </data>
+</root>

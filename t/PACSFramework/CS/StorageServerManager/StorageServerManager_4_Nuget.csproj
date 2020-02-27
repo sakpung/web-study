@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch)' == ''">
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{793CBB3F-EE55-4683-9CD3-21EB3D09FBC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leadtools.Demos.StorageServer</RootNamespace>
+    <AssemblyName>CSStorageServerManagerDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\..\Resources\MedAddon.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\Bin\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\Bin\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\Bin\x86\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\Bin\x86\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\Bin\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\Bin\x64\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommonServiceLocator.2.0.4\lib\net46\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.SqlCe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Data.SqlCe.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SharePoint.Client.15.0.0\lib\Microsoft.SharePoint.Client\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SharePoint.Client.Runtime.15.0.0\lib\Microsoft.SharePoint.Client.Runtime\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\CS\Common\AboutDialog.cs">
+      <Link>Common\AboutDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\CS\Common\AboutDialog.resx">
+      <Link>Common\AboutDialog.resx</Link>
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="..\..\..\CS\Common\DialogUtilities.cs">
+      <Link>Common\DialogUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\Globalization.cs">
+      <Link>Common\Globalization.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="DataTypes\ApplyServerSettingsEventArgs.cs" />
+    <Compile Include="DataTypes\AuditLogSubscriber\AuditLogSubscriber.cs" />
+    <Compile Include="DataTypes\MachineIDs.cs" />
+    <Compile Include="DataTypes\CurrentUserPemissionsChanged.cs" />
+    <Compile Include="DataTypes\CancelServerSettingsEventArgs.cs" />
+    <Compile Include="DataTypes\DataEventArgs.cs" />
+    <Compile Include="DataTypes\DisplayFeatureEventArgs.cs" />
+    <Compile Include="DataTypes\EventBroker\EventBroker.cs" />
+    <Compile Include="DataTypes\Extensions.cs" />
+    <Compile Include="DataTypes\Features\FeatureNames.cs" />
+    <Compile Include="DataTypes\ServerSettingsAppliedEventArgs.cs" />
+    <Compile Include="DataTypes\State\ServerState.cs" />
+    <Compile Include="ProcssChecker\ProcssChecker.cs" />
+    <Compile Include="Program.Leadtools.cs" />
+    <Compile Include="Shell\Shell.Leadtools.cs" />
+    <Compile Include="UI\AdministrativeSettings\PasswordOptions\LoginEventArgs.cs" />
+    <Compile Include="UI\AdministrativeSettings\Roles\RoleManager.cs" />
+    <Compile Include="UI\AdministrativeSettings\Roles\RolesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Roles\RolesView.Designer.cs">
+      <DependentUpon>RolesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Roles\RolesViewPresenter.cs" />
+    <Compile Include="UI\AdministrativeSettings\Users\CardUserView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\CardUserView.Designer.cs">
+      <DependentUpon>CardUserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\CardUserViewPresenter.cs" />
+    <Compile Include="UI\AdministrativeSettings\Users\EventArgs.cs" />
+    <Compile Include="UI\AdministrativeSettings\Users\PasswordDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\PasswordDialog.designer.cs">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\Permissions.cs" />
+    <Compile Include="UI\AdministrativeSettings\Users\PermissionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\PermissionsDialog.Designer.cs">
+      <DependentUpon>PermissionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UserManager.cs" />
+    <Compile Include="UI\AdministrativeSettings\Users\UsersAccountView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UsersAccountView.designer.cs">
+      <DependentUpon>UsersAccountView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UsersSource.cs">
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UsersSource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UserView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UserView.Designer.cs">
+      <DependentUpon>UserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UserViewPresenter.cs" />
+    <Compile Include="UI\Authentication\AuthenticateUserEventArgs.cs" />
+    <Compile Include="UI\Authentication\LoginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Authentication\LoginDialog.Designer.cs">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RealtimeView\RealTimeViewPresenter.cs" />
+    <Compile Include="UI\ControlPanel\ControlPanelPresenter.cs" />
+    <Compile Include="UI\ControlPanel\ControlPanelView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ControlPanel\ControlPanelView.Designer.cs">
+      <DependentUpon>ControlPanelView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\AeInfoDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\AeInfoDetails.Designer.cs">
+      <DependentUpon>AeInfoDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\GatewayServerControlPresenter.cs" />
+    <Compile Include="UI\ServerSettings\Gateway\Control\RemoteServerSortPresenter.cs" />
+    <Compile Include="UI\ServerSettings\Gateway\Control\RemoteServerSortToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\ServerControlToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Gateways.cs">
+      <DependentUpon>Gateways.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Gateways.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gateways.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\ItemsGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\ItemsGridView.Designer.cs">
+      <DependentUpon>ItemsGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\GatewaySettingsPresenter.cs" />
+    <Compile Include="UI\ServerSettings\Gateway\GatewaySettingsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\GatewaySettingsView.Designer.cs">
+      <DependentUpon>GatewaySettingsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\GatewaySettingsPresenter_Leadtools.cs" />
+    <Compile Include="UI\ServerSettings\GeneralSettings\GeneralSettingsPresenter_Leadtools.cs" />
+    <Compile Include="UI\ServerSettings\ServerClientPresenter\ClientViewerPresenter.cs" />
+    <Compile Include="UI\Controls\TabPanel\CornersEnum.cs" />
+    <Compile Include="UI\Controls\TabPanel\PageData.cs" />
+    <Compile Include="UI\Controls\TabPanel\TabLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\TabPanel\TabPageCollection.cs" />
+    <Compile Include="UI\ServerAddins\ServerAddinPresenter.cs" />
+    <Compile Include="UI\ServerAddins\ServerAddinsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerAddins\ServerAddinsView.Designer.cs">
+      <DependentUpon>ServerAddinsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\GeneralSettings\GeneralSettingsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\GeneralSettings\GeneralSettingsView.Designer.cs">
+      <DependentUpon>GeneralSettingsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\GeneralSettings\GeneralSettingsPresenter.cs" />
+    <Compile Include="UI\ServerSettings\ServerNetworking\ServerNetworkingPresenter.cs" />
+    <Compile Include="UI\ServerSettings\ServerNetworking\ServerNetworkingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerNetworking\ServerNetworkingView.Designer.cs">
+      <DependentUpon>ServerNetworkingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerOptions\ServerOptionsPresenter.cs" />
+    <Compile Include="UI\ServerSettings\ServerOptions\ServerOptionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerOptions\ServerOptionsView.Designer.cs">
+      <DependentUpon>ServerOptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerStatus\ServerInformationPresenter.cs" />
+    <Compile Include="UI\ServerStatus\ServerInformationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerStatus\ServerInformationView.Designer.cs">
+      <DependentUpon>ServerInformationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerSettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerSettingsDialog.Designer.cs">
+      <DependentUpon>ServerSettingsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerSettingsPresenter.cs" />
+    <Compile Include="UI\ServerStatus\ServerInformationView_Leadtools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StorageServerContainer\StorageServerContainerPresenter_Leadtools.cs" />
+    <Compile Include="UI\StorageServerContainer\StorageServerContainerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\..\CS\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Shell\Shell.cs" />
+    <Compile Include="UI\StorageServerContainer\StorageServerContainerPresenter.cs" />
+    <Compile Include="UI\StorageServerContainer\StorageServerContainerView.designer.cs">
+      <DependentUpon>StorageServerContainerView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\AdministrativeSettings\Roles\RolesView.resx">
+      <DependentUpon>RolesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdministrativeSettings\Users\PasswordDialog.resx">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdministrativeSettings\Users\PermissionsDialog.resx">
+      <DependentUpon>PermissionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdministrativeSettings\Users\UsersAccountView.resx">
+      <DependentUpon>UsersAccountView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Authentication\LoginDialog.resx">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ControlPanel\ControlPanelView.resx">
+      <DependentUpon>ControlPanelView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerAddins\ServerAddinsView.resx">
+      <DependentUpon>ServerAddinsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\Gateway\Control\AeInfoDetails.resx">
+      <DependentUpon>AeInfoDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\Gateway\Control\ItemsGridView.resx">
+      <DependentUpon>ItemsGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\Gateway\GatewaySettingsView.resx">
+      <DependentUpon>GatewaySettingsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\GeneralSettings\GeneralSettingsView.resx">
+      <DependentUpon>GeneralSettingsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\ServerNetworking\ServerNetworkingView.resx">
+      <DependentUpon>ServerNetworkingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\ServerOptions\ServerOptionsView.resx">
+      <DependentUpon>ServerOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerStatus\ServerInformationView.resx">
+      <DependentUpon>ServerInformationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\ServerSettingsDialog.resx">
+      <DependentUpon>ServerSettingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StorageServerContainer\StorageServerContainerView.resx">
+      <DependentUpon>StorageServerContainerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\BusinessCard.Names.en.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\BusinessCard.Titles.en.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.Cmc7.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.de.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.de.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.en.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.en.bin2" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.en.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.es.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.es.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.Field.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.fr.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.fr.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.it.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.it.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.Micr.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.Mrz.bin" />
+    <None Include="packages.StorageServerManager_4_Nuget.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\ThemesManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1313685426_Symbol-Error.png" />
+    <None Include="Resources\1313684564_Symbol-Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_add_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_delete_32.ico" />
+    <None Include="UI\AdministrativeSettings\Users\UsersSource.xsc">
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </None>
+    <None Include="UI\AdministrativeSettings\Users\UsersSource.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsersSource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UI\AdministrativeSettings\Users\UsersSource.xss">
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </None>
+    <None Include="UI\ServerSettings\Gateway\Gateways.xsc">
+      <DependentUpon>Gateways.xsd</DependentUpon>
+    </None>
+    <None Include="UI\ServerSettings\Gateway\Gateways.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gateways.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Leadtools.Demos.StorageServer.UI</CustomToolNamespace>
+    </None>
+    <None Include="UI\ServerSettings\Gateway\Gateways.xss">
+      <DependentUpon>Gateways.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client_add_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client_edit_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client_remove_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_start_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_stop_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servers_start_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servers_stop_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Running.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stopped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Running.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stopped.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientUpdater.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datamanager.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StopAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceStart .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\splash-screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DicomCommon\" />
+    <Folder Include="UI\PatientUpdater\" />
+    <Folder Include="UI\ServerSettings\ServerStorageClassesPresenter\" />
+    <Folder Include="UI\StorageSettings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\externalStore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_Icon_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LEADTOOLS\OcrLEADRuntime\US_Cities.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets" Condition="Exists('..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Pacs.Demo.Addins.20.0.0.6\build\net40\Leadtools.Pacs.Demo.Addins.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pacs.Demo.Addins.20.0.0.6\build\net40\Leadtools.Pacs.Demo.Addins.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets" Condition="Exists('..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" />
+  <Import Project="..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets" Condition="Exists('..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" />
+  <Import Project="..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets" Condition="Exists('..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" />
+  <Import Project="..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" />
+  <Import Project="..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" />
+  <Import Project="..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets" Condition="Exists('..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets')" />
+  <Import Project="..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets" Condition="Exists('..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets')" />
+  <Import Project="..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets" Condition="Exists('..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets')" />
+  <Import Project="..\..\packages\Leadtools.Pacs.Demo.Addins.20.0.0.6\build\net40\Leadtools.Pacs.Demo.Addins.targets" Condition="Exists('..\..\packages\Leadtools.Pacs.Demo.Addins.20.0.0.6\build\net40\Leadtools.Pacs.Demo.Addins.targets')" />
+  <Import Project="..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets" Condition="Exists('..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets')" />
+  <Import Project="..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets" Condition="Exists('..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

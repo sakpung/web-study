@@ -1,0 +1,102 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title">{{title}}</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" name="formTimeBasedEditor">
+            <fieldset>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="imageSetLabel">{{'LABEL' | translate}}:</label>
+                    <div class="col-md-10">
+                        <input id="imageSetLabel" type="text" placeholder="" class="form-control input-md" ng-readonly="false" ng-model="timeBasedImageSet.ImageSetLabel" ng-maxlength="64" ng-minlength="1" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="imageSetSelectorCategory">{{'SELECTOR_CATEGORY' | translate}}:</label>
+                    <div class="col-md-10">
+                        <select id="imageSetSelectorCategory" name="imageSetSelectorCategory" class="form-control" ng-model="timeBasedImageSet.ImageSetSelectorCategory" ng-change="dropDownChanged()">
+                            <option value=0>Relative Time</option>
+                            <option value=1>Abstract Prior</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <!--******* Begining of new Code-->
+                <!--*******************-->
+                <!--*******************-->
+                <!--*******************-->
+                <!--*******************-->
+                <!--*******************-->
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="relativeTimeMin"  ng-disabled="!isRelativeTime()">Relative Time Min/Max:</label>
+                    <div class="col-md-2" ng-class="{'has-error': !isMinimumRelativeValid()}">
+                        <input id="relativeTimeMin" type="text" maxlength="1" placeholder="#" class="form-control input-md" ng-model="timeBasedImageSet.RelativeTime[0]" ng-disabled="!isRelativeTime()" />
+                    </div>
+
+                    <div class="col-md-2" ng-class="{'has-error': !isMinimumRelativeValid()}">
+                        <input id="relativeTimeMax" type="text" maxlength="1" placeholder="#" class="form-control input-md" ng-model="timeBasedImageSet.RelativeTime[1]" ng-disabled="!isRelativeTime()" />
+                    </div>
+
+
+                    <label class="col-md-2 control-label" for="relativeTimeUnits2">Relative Time Units:</label>
+                    <div class="col-md-4">
+                        <select id="relativeTimeUnits2" name="relativeTimeUnits" class="form-control" ng-model="timeBasedImageSet.RelativeTimeUnits" ng-disabled="!isRelativeTime()">
+                            <option value=0>Seconds</option>
+                            <option value=1>Minutes</option>
+                            <option value=2>Hours</option>
+                            <option value=3>Days</option>
+                            <option value=4>Weeks</option>
+                            <option value=5>Months</option>
+                            <option value=6>Years</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <!--Error Message (Relative) -->
+                <div class="form-group" ng-show="!isRelativeValid()">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="text-danger">{{getRelativeError()}}</div>
+                    </div>
+                </div>
+
+                <!--Abstract-->
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="abstractPriorValue" ng-disabled ="isRelativeTime()">Abstract Prior Min/Max: </label>
+                    <div class="col-md-2" ng-class="{'has-error': !isMinimumAbstractValid()}">
+                        <!--<input id="abstractPriorValue" type="text" maxlength="2" ng-pattern="/^$|^(\-1|[1-9])$/" placeholder="#" class="form-control input-md" ng-model="timeBasedImageSet.AbstractPriorValue[0]" ng-disabled="isRelativeTime()" />-->
+                        <input id="abstractPriorValue" type="text" maxlength="2" placeholder="#" class="form-control input-md" ng-model="timeBasedImageSet.AbstractPriorValue[0]" ng-disabled="isRelativeTime()" />
+                    </div>
+                    <div class="col-md-2" ng-class="{'has-error': !isMaximumAbstractValid()}">
+                        <!--<input id="abstractPriorValue2" type="text" maxlength="2" ng-pattern="/^$|^(\-1|[1-9])$/" placeholder="#" class="form-control" ng-model="timeBasedImageSet.AbstractPriorValue[1]" ng-disabled="isRelativeTime()" />-->
+                        <input id="abstractPriorValue2" type="text" maxlength="2" placeholder="#" class="form-control" ng-model="timeBasedImageSet.AbstractPriorValue[1]" ng-disabled="isRelativeTime()" />
+                    </div>
+                </div>
+
+                <!--Error Message (Abstract)-->
+                <div class="form-group" ng-show="!isAbstractValid()">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="text-danger">{{getAbstractError()}}</div>
+                    </div>
+                </div>
+
+                <!--*******************-->
+                <!--*******************-->
+                <!--*******************-->
+                <!--*******************-->
+                <!--****** End of new Code-->
+
+</fieldset>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="!isFormValid()"></a>
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+    </div>
+</div>

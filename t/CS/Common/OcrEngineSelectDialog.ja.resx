@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>デモ名</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>OcrEngineSelectDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Name" xml:space="preserve">
+    <value>_btnOk</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_cbEngineSelection.Name" xml:space="preserve">
+    <value>_cbEngineSelection</value>
+  </data>
+  <data name="&gt;&gt;_cbEngineSelection.Parent" xml:space="preserve">
+    <value>_tpSelectEngine</value>
+  </data>
+  <data name="&gt;&gt;_cbEngineSelection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbEngineSelection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.Name" xml:space="preserve">
+    <value>_lbDownload</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_lblAllowNoOcr.Name" xml:space="preserve">
+    <value>_lblAllowNoOcr</value>
+  </data>
+  <data name="&gt;&gt;_lblAllowNoOcr.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblAllowNoOcr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblAllowNoOcr.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_lblDownload.Name" xml:space="preserve">
+    <value>_lblDownload</value>
+  </data>
+  <data name="&gt;&gt;_lblDownload.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblDownload.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_lblNoEnginesFound.Name" xml:space="preserve">
+    <value>_lblNoEnginesFound</value>
+  </data>
+  <data name="&gt;&gt;_lblNoEnginesFound.Parent" xml:space="preserve">
+    <value>_tpNoEnginesFound</value>
+  </data>
+  <data name="&gt;&gt;_lblNoEnginesFound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblNoEnginesFound.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblSelectEngine.Name" xml:space="preserve">
+    <value>_lblSelectEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblSelectEngine.Parent" xml:space="preserve">
+    <value>_tpSelectEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblSelectEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblSelectEngine.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblStartEngine.Name" xml:space="preserve">
+    <value>_lblStartEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblStartEngine.Parent" xml:space="preserve">
+    <value>_tpStartEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblStartEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblStartEngine.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.Name" xml:space="preserve">
+    <value>_lblStatus</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.Parent" xml:space="preserve">
+    <value>_tpStartEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_tcMain.Name" xml:space="preserve">
+    <value>_tcMain</value>
+  </data>
+  <data name="&gt;&gt;_tcMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_tcMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tcMain.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_tpNoEnginesFound.Name" xml:space="preserve">
+    <value>_tpNoEnginesFound</value>
+  </data>
+  <data name="&gt;&gt;_tpNoEnginesFound.Parent" xml:space="preserve">
+    <value>_tcMain</value>
+  </data>
+  <data name="&gt;&gt;_tpNoEnginesFound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpNoEnginesFound.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_tpSelectEngine.Name" xml:space="preserve">
+    <value>_tpSelectEngine</value>
+  </data>
+  <data name="&gt;&gt;_tpSelectEngine.Parent" xml:space="preserve">
+    <value>_tcMain</value>
+  </data>
+  <data name="&gt;&gt;_tpSelectEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpSelectEngine.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_tpStartEngine.Name" xml:space="preserve">
+    <value>_tpStartEngine</value>
+  </data>
+  <data name="&gt;&gt;_tpStartEngine.Parent" xml:space="preserve">
+    <value>_tcMain</value>
+  </data>
+  <data name="&gt;&gt;_tpStartEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpStartEngine.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Resx_Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Resx_ErrorOCRCapabilities" xml:space="preserve">
+    <value>エラー: {0}{1}{1}このサンプルを実行するにはOCR OmniPage機能が必要です。LEADTOOLS のヘルプを参照するかサポートまでご連絡した後もう一回試行してください。</value>
+  </data>
+  <data name="Resx_ErrorOCRWithoutCapabilities" xml:space="preserve">
+    <value>エラー: {0}{1}{1}このサンプルを実行するにはOCR OmniPage機能が必要です。LEADTOOLS のヘルプを参照するかサポートまでご連絡した後もう一回試行してください。</value>
+  </data>
+  <data name="Resx_OCRCapabilities" xml:space="preserve">
+    <value>このサンプルはOCR機能なしに開始することはできません</value>
+  </data>
+  <data name="Resx_OCREngineNotFound" xml:space="preserve">
+    <value>このマシンでLEADTOOLS OCRエンジンを見つけることができませんでした。</value>
+  </data>
+  <data name="Resx_OCREngineVersion" xml:space="preserve">
+    <value>LEADTOOLS のヘルプを参照するか以下のリンクをクリックしてLEADTOOLS OCRエンジンの評価版をダウンロードしてください。</value>
+  </data>
+  <data name="Resx_StartUp" xml:space="preserve">
+    <value>{0}エンジンを起動しています...</value>
+  </data>
+  <data name="Resx_SuccessContinuing" xml:space="preserve">
+    <value>エンジンを起動しました。サンプルを起動しています...</value>
+  </data>
+  <data name="Resx_SuccessStarting" xml:space="preserve">
+    <value>エンジンを起動しました。サンプルを起動しています...</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>終了(&amp;X)</value>
+  </data>
+  <data name="_btnOk.Text" xml:space="preserve">
+    <value>開始(&amp;S)</value>
+  </data>
+  <data name="_lbDownload.Text" xml:space="preserve">
+    <value>https://www.leadtools.com/downloads?category=main</value>
+  </data>
+  <data name="_lblDownload.Text" xml:space="preserve">
+    <value>追加のOCRエンジンをダウンロードしてインストールするには以下のリンクをくりっくしてください:</value>
+  </data>
+  <data name="_lblSelectEngine.Text" xml:space="preserve">
+    <value>このデモで使用するOCRエンジンを選択:</value>
+  </data>
+  <data name="_lblStartEngine.Text" xml:space="preserve">
+    <value>### エンジンを起動しています...</value>
+  </data>
+  <data name="_tpNoEnginesFound.Text" xml:space="preserve">
+    <value>OCR エンジン</value>
+  </data>
+  <data name="_tpSelectEngine.Text" xml:space="preserve">
+    <value>OCR エンジン</value>
+  </data>
+  <data name="_tpStartEngine.Text" xml:space="preserve">
+    <value>OCR エンジン</value>
+  </data>
+</root>

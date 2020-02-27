@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="mappingTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ColumnName" type="xs:string" minOccurs="0" />
+                <xs:element name="FriendlyName" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" msdata:DataType="System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="Visible" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <mappingTable>
+    <ColumnName>PatientIdentification</ColumnName>
+    <FriendlyName>Patient ID</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>PatientName</ColumnName>
+    <FriendlyName>Last Name</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>PatientBirthDay</ColumnName>
+    <FriendlyName>Birth Date</FriendlyName>
+    <Type>System.DateTime, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>PatientSex</ColumnName>
+    <FriendlyName>Sex</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StudyStudyInstanceUID</ColumnName>
+    <FriendlyName>Study Instance UID</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StudyStudyDate</ColumnName>
+    <FriendlyName>Study Date</FriendlyName>
+    <Type>System.DateTime, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StudyAccessionNumber</ColumnName>
+    <FriendlyName>Accession Number</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StudyStudyId</ColumnName>
+    <FriendlyName>Study ID</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StudyStudyDescription</ColumnName>
+    <FriendlyName>Study Description</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+  <mappingTable>
+    <ColumnName>StudyReferringPhysiciansName</ColumnName>
+    <FriendlyName>Referring Physician</FriendlyName>
+    <Type>System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+    <Visible>true</Visible>
+  </mappingTable>
+</NewDataSet>

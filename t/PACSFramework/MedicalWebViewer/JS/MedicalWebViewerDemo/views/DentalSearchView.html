@@ -1,0 +1,107 @@
+﻿<form>
+    <fieldset>
+
+        <div class="row search-row" style="margin-left:0px !important;margin-right:0px">
+            <!--
+
+
+                <div class="form-group col-xs-5 col-sm-4 col-lg-2">
+                    <label for="patientID">{{ 'PATIENT' | translate }}&nbsp;{{ 'ID' | translate}}:</label>
+                    <input id="patientID" name="patientId" type="text" placeholder="" class="form-control input-sm" ng-model="queryOptions.PatientsOptions.PatientID"
+                    typeahead="patient for patient in patientids($viewValue)" ng-enter="doSearch()" />
+                </div>
+                <div class="form-group col-xs-7 col-sm-4 col-lg-2">
+                    <label class="control-label" for="patientName">{{ 'PATIENT' | translate }}&nbsp;{{ 'NAME' | translate}}:</label>
+                    <input id="patientName" name="patientName" type="text" placeholder="" class="form-control input-sm" ng-model="queryOptions.PatientsOptions.PatientName"
+                    typeahead="patient for patient in patientNames($viewValue)" ng-enter="doSearch()">
+                </div>
+                <div class="form-group col-xs-5 col-sm-4 col-lg-2">
+                    <label class="control-label" for="seriesDescription">{{ 'SERIES' | translate }}&nbsp;{{ 'DESCRIPTION' | translate}}:</label>
+                    <input id="seriesDescription" name="seriesDescription" type="text" placeholder="" class="form-control input-sm" ng-model="queryOptions.SeriesOptions.SeriesDescription" ng-enter="doSearch()">
+                </div>
+                <div class="form-group col-xs-7 col-sm-4 col-lg-2">
+                    <label class="control-label" for="seriesFrom">{{ 'SERIES' | translate }}&nbsp;{{ 'FROM' | translate}}:</label>
+                    <p class="input-group">
+                        <input id="seriesFrom" name="seriesFrom" type="text" placeholder="{{dateFormat}}" class="form-control input-sm" ng-model="queryOptions.SeriesOptions.SeriesDateStart" datepicker-popup="{{dateFormat}}" is-open="datePicker.dateStartOpened" datepicker-options="dateOptions" max-date="queryOptions.SeriesOptions.SeriesDateEnd" ng-enter="doSearch()">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-sm" ng-click="openDateStart($event)"><i class="fa fa-calendar"></i></button>
+                        </span>
+                    </p>
+                </div>
+                <div class="form-group col-xs-12 col-sm-4 col-lg-2">
+                    <label class="control-label" for="seriesTo">{{ 'SERIES' | translate }}&nbsp;{{ 'TO' | translate}}:</label>
+                    <p class="input-group">
+                        <input id="seriesTo" name="seriesTo" type="text" placeholder="{{dateFormat}}" class="form-control input-sm" ng-model="queryOptions.SeriesOptions.SeriesDateEnd" datepicker-popup="{{dateFormat}}" is-open="datePicker.dateEndOpened" datepicker-options="dateOptions" min-date="queryOptions.SeriesOptions.SeriesDateStart" ng-enter="doSearch()">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-sm" ng-click="openDateEnd($event)"><i class="fa fa-calendar"></i></button>
+                        </span>
+                    </p>
+                </div>
+           
+            
+        -->
+
+            <!-- <div class="input-container-first"> -->
+                <!-- <label class="input-label" for="patientID">
+                    {{ 'PATIENT' | translate }}&nbsp;{{ 'ID' | translate}}:
+                </label> -->
+                <input id="patientID" name="patientId" type="text" placeholder="{{ 'PATIENT' | translate }}&nbsp;{{ 'ID' | translate}}:" class="search-text-field first-search-text-field" ng-model="queryOptions.PatientsOptions.PatientID"
+                typeahead="patient for patient in patientids($viewValue)" ng-enter="doSearch()" />
+            <!-- </div> -->
+
+            <!-- <div class="input-container"> -->
+                <!-- <label class="input-label" for="patientName">
+                    {{ 'PATIENT' | translate }}&nbsp;{{ 'NAME' | translate}}:
+                </label> -->
+                <input id="patientName" name="patientName" type="text" placeholder="{{ 'PATIENT' | translate }}&nbsp;{{ 'NAME' | translate}}:" class="search-text-field" ng-model="queryOptions.PatientsOptions.PatientName"
+                typeahead="patient for patient in patientNames($viewValue)" ng-enter="doSearch()" />
+            <!-- </div> -->
+
+            <!-- <div class="input-container"> -->
+                <!-- <label class="input-label" for="seriesDescription">
+                    {{ 'SERIES' | translate }}&nbsp;{{ 'DESCRIPTION' | translate}}:
+                </label> -->
+                <input id="seriesDescription" name="seriesDescription" type="text" placeholder="{{ 'SERIES' | translate }}&nbsp;{{ 'DESCRIPTION' | translate}}:" class="search-text-field" ng-model="queryOptions.SeriesOptions.SeriesDescription" ng-enter="doSearch()" />
+            <!-- </div> -->
+
+            <!-- <div class="input-container">
+                <label class="input-label" for="seriesFrom">
+                        {{ 'SERIES' | translate }}&nbsp;{{ 'FROM' | translate}}:
+                </label> -->
+                <input id="seriesFrom" name="seriesFrom" type="text" placeholder="{{dateFormat}}" class="search-text-field" ng-model="queryOptions.SeriesOptions.SeriesDateStart" datepicker-popup="{{dateFormat}}" is-open="datePicker.dateStartOpened" datepicker-options="dateOptions" max-date="queryOptions.SeriesOptions.SeriesDateEnd" ng-enter="doSearch()" />
+            <!-- </div> -->
+
+            <!-- <div class="input-container">
+                <label class="input-label" for="seriesTo">
+                    {{ 'SERIES' | translate }}&nbsp;{{ 'TO' | translate}}:
+                </label> -->
+                <input id="seriesTo" name="seriesTo" type="text" placeholder="{{dateFormat}}" class="search-text-field" ng-model="queryOptions.SeriesOptions.SeriesDateEnd" datepicker-popup="{{dateFormat}}" is-open="datePicker.dateEndOpened" datepicker-options="dateOptions" min-date="queryOptions.SeriesOptions.SeriesDateStart" ng-enter="doSearch()" />
+            <!-- </div> -->
+
+            <div class="button-container">
+                <button id="searchButton" class="btn" ng-click="doSearch()" translate="SEARCH"></button>
+                <button id="clearButton" class="btn" ng-click="clear()" translate="CLEAR"></button>
+            </div>
+        </div>
+
+        <!--
+
+            <div class="row" style="margin-right:0px">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="controls">
+                            <a id="clearButton" class="btn" ng-click="doSearch()" translate="SEARCH"></a>
+                            <a id="searchButton" class="btn " ng-click="clear()" translate="CLEAR"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        -->
+            <div class="pacsQueryRow" ng-include src="showPacsQuery ? 'views/PacsQuery.html' : null"></div>
+    </fieldset>
+</form>
+<div elheightresize="" class="vbox boxItem">
+    <div id="searchResults" ag-grid="gridOptions" class="ag-fresh" style="height:50%"></div>
+    <div id="searchResultsSeries" ag-grid="gridOptionsSeries" class="ag-fresh" style="height:50%"></div>
+</div>

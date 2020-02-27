@@ -1,0 +1,12 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title" translate="DIALOGS_TEMPLATE_IMPORT_TITLE"></h3>
+    </div>
+    <div class="modal-body">        
+        <input type="file" ngf-select ng-model="picFile" accept="application/json" name="file" class="form-control input-md">
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-default pull-left" ng-click="uploadFile(picFile)">Upload </button>
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK" ></a>        
+    </div>
+</div>

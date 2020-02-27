@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A763484B-45D5-4930-99B2-3CA8BDC9219E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>OcrMultiEngineDemo</RootNamespace>
+    <AssemblyName>VBOcrMultiEngineDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\Resources\DocAddon.ico</ApplicationIcon>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <OptionStrict>On</OptionStrict>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+    <DefineConstants>LTV20_CONFIG,FOR_WIN64,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+    <DefineConstants>LTV20_CONFIG,FOR_WIN64,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Ocr">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Ocr.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Document.Writer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Document.Writer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Color">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Color.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Effects">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Effects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Utilities">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Utilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Twain">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Twain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Controls.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Controls.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.File">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.WinForms.CommonDialogs.File.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Engine">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Engine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Designers">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Designers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Rendering.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Rendering.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Automation">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Automation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Winforms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Winforms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Globalization.vb">
+      <Link>Common\Globalization.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\AdvancedPdfDocumentOptionsDialog.designer.vb">
+      <Link>Common\AdvancedPdfDocumentOptionsDialog.designer.vb</Link>
+      <DependentUpon>AdvancedPdfDocumentOptionsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\AdvancedPdfDocumentOptionsDialog.vb">
+      <Link>Common\AdvancedPdfDocumentOptionsDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\Demos.vb">
+      <Link>Common\Demos.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\DialogUtilities.vb">
+      <Link>Common\DialogUtilities.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\EnableLanguagesDialog.Designer.vb">
+      <Link>Common\EnableLanguagesDialog.Designer.vb</Link>
+      <DependentUpon>EnableLanguagesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\EnableLanguagesDialog.vb">
+      <Link>Common\EnableLanguagesDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoader.vb">
+      <Link>Common\ImageFileLoader.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageInformation.vb">
+      <Link>Common\ImageInformation.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.designer.vb">
+      <Link>Common\ImageFileLoaderPagesDialog.designer.vb</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.vb">
+      <Link>Common\ImageFileLoaderPagesDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\Messager.vb">
+      <Link>Common\Messager.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\OcrEngineComponentsDialog.designer.vb">
+      <Link>Common\OcrEngineComponentsDialog.designer.vb</Link>
+      <DependentUpon>OcrEngineComponentsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\OcrEngineComponentsDialog.vb">
+      <Link>Common\OcrEngineComponentsDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\OcrEngineSelectDialog.designer.vb">
+      <Link>Common\OcrEngineSelectDialog.designer.vb</Link>
+      <DependentUpon>OcrEngineSelectDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\OcrEngineSelectDialog.vb">
+      <Link>Common\OcrEngineSelectDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\OcrEngineSettingsControl.designer.vb">
+      <Link>Common\OcrEngineSettingsControl.designer.vb</Link>
+      <DependentUpon>OcrEngineSettingsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\OcrEngineSettingsControl.vb">
+      <Link>Common\OcrEngineSettingsControl.vb</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\Common\OcrOmrOptionsDialog.designer.vb">
+      <Link>Common\OcrOmrOptionsDialog.designer.vb</Link>
+      <DependentUpon>OcrOmrOptionsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\OcrOmrOptionsDialog.vb">
+      <Link>Common\OcrOmrOptionsDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\WaitCursor.vb">
+      <Link>Common\WaitCursor.vb</Link>
+    </Compile>
+    <Compile Include="ActionEventArgs.vb" />
+    <Compile Include="ContrastBrightnessIntensityDialog.Designer.vb">
+      <DependentUpon>ContrastBrightnessIntensityDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContrastBrightnessIntensityDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertLdDialog.Designer.vb">
+      <DependentUpon>ConvertLdDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConvertLdDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetectPageLanguagesDialog.Designer.vb">
+      <DependentUpon>DetectPageLanguagesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetectPageLanguagesDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineSettingsDialog.Designer.vb">
+      <DependentUpon>EngineSettingsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EngineSettingsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="..\Common\MyLanguage.vb" />
+    <Compile Include="OcrProgressDialog.Designer.vb">
+      <DependentUpon>OcrProgressDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OcrProgressDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagesControl\PagesControl.Designer.vb">
+      <DependentUpon>PagesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagesControl\PagesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PerspectiveDialog.designer.vb">
+      <DependentUpon>PerspectiveDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PerspectiveDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="SaveDocumentDialog.Designer.vb">
+      <DependentUpon>SaveDocumentDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SaveDocumentDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecognizedWordsDialog.Designer.vb">
+      <DependentUpon>RecognizedWordsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecognizedWordsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveRecognizedXmlDialog.Designer.vb">
+      <DependentUpon>SaveRecognizedXmlDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SaveRecognizedXmlDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpellCheckEngineDialog.Designer.vb">
+      <DependentUpon>SpellCheckEngineDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpellCheckEngineDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnWarpDialog.designer.vb">
+      <DependentUpon>UnWarpDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnWarpDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCellsControl\UpdateCellsControl.Designer.vb">
+      <DependentUpon>UpdateCellsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCellsControl\UpdateCellsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateZonesControl\UpdateZonesControl.Designer.vb">
+      <DependentUpon>UpdateZonesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateZonesControl\UpdateZonesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewerControl\ZoneAnnotationObjectEditDesigner.vb" />
+    <Compile Include="ViewerControl\ZoneAnnotationObjectRenderer.vb" />
+    <Compile Include="ViewerControl\ViewerControl.Designer.vb">
+      <DependentUpon>ViewerControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewerControl\ViewerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewerControl\ViewerControlInteractiveMode.vb" />
+    <Compile Include="ViewerControl\ZoneAnnotationObject.vb" />
+    <Compile Include="ZonePropertiesDialog.Designer.vb">
+      <DependentUpon>ZonePropertiesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ZonePropertiesDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Common\AdvancedPdfDocumentOptionsDialog.resx">
+      <Link>Common\AdvancedPdfDocumentOptionsDialog.resx</Link>
+      <DependentUpon>AdvancedPdfDocumentOptionsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\EnableLanguagesDialog.resx">
+      <Link>Common\EnableLanguagesDialog.resx</Link>
+      <DependentUpon>EnableLanguagesDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\ImageFileLoaderPagesDialog.resx">
+      <Link>Common\ImageFileLoaderPagesDialog.resx</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\OcrEngineComponentsDialog.resx">
+      <Link>Common\OcrEngineComponentsDialog.resx</Link>
+      <DependentUpon>OcrEngineComponentsDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\OcrEngineSelectDialog.resx">
+      <Link>Common\OcrEngineSelectDialog.resx</Link>
+      <DependentUpon>OcrEngineSelectDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\OcrEngineSettingsControl.resx">
+      <Link>Common\OcrEngineSettingsControl.resx</Link>
+      <DependentUpon>OcrEngineSettingsControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\OcrOmrOptionsDialog.resx">
+      <Link>Common\OcrOmrOptionsDialog.resx</Link>
+      <DependentUpon>OcrOmrOptionsDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContrastBrightnessIntensityDialog.resx">
+      <DependentUpon>ContrastBrightnessIntensityDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConvertLdDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConvertLdDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetectPageLanguagesDialog.resx">
+      <DependentUpon>DetectPageLanguagesDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineSettingsDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EngineSettingsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OcrProgressDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OcrProgressDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesControl\PagesControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PagesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerspectiveDialog.resx">
+      <DependentUpon>PerspectiveDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecognizedWordsDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RecognizedWordsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveDocumentDialog.resx">
+      <DependentUpon>SaveDocumentDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveRecognizedXmlDialog.resx">
+      <DependentUpon>SaveRecognizedXmlDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpellCheckEngineDialog.resx">
+      <DependentUpon>SpellCheckEngineDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnWarpDialog.resx">
+      <DependentUpon>UnWarpDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCellsControl\UpdateCellsControl.resx">
+      <DependentUpon>UpdateCellsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateZonesControl\UpdateZonesControl.resx">
+      <DependentUpon>UpdateZonesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewerControl\ViewerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewerControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZonePropertiesDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZonePropertiesDialog.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\AutoZoneDocument.png">
+      <Link>Resources\AutoZoneDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\AutoZonePage.png">
+      <Link>Resources\AutoZonePage.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\NewDocument.png">
+      <Link>Resources\NewDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\OpenDocument.png">
+      <Link>Resources\OpenDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\SaveDocument.png">
+      <Link>Resources\SaveDocument.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\DeletePage.png">
+      <Link>PagesControl\Resources\DeletePage.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\InsertPage.png">
+      <Link>PagesControl\Resources\InsertPage.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\DeleteZone.png">
+      <Link>ViewerControl\Resources\DeleteZone.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\DrawZoneMode.png">
+      <Link>ViewerControl\Resources\DrawZoneMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\FitPage.png">
+      <Link>ViewerControl\Resources\FitPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\FitPageWidth.png">
+      <Link>ViewerControl\Resources\FitPageWidth.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\NextPage.png">
+      <Link>ViewerControl\Resources\NextPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\PanMode.png">
+      <Link>ViewerControl\Resources\PanMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\PreviousPage.png">
+      <Link>ViewerControl\Resources\PreviousPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\SelectMode.png">
+      <Link>ViewerControl\Resources\SelectMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\ShowZones.png">
+      <Link>ViewerControl\Resources\ShowZones.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\ZoneProperties.png">
+      <Link>ViewerControl\Resources\ZoneProperties.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\ZoomIn.png">
+      <Link>ViewerControl\Resources\ZoomIn.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\ZoomOut.png">
+      <Link>ViewerControl\Resources\ZoomOut.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\ZoomSelection.png">
+      <Link>ViewerControl\Resources\ZoomSelection.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\ShowZoneName.png">
+      <Link>ViewerControl\Resources\ShowZoneName.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\RecognizeAllPages.png">
+      <Link>Resources\RecognizeAllPages.png</Link>
+    </None>
+    <None Include="..\..\Resources\OcrMultiEngineDemo\RecognizePage.png">
+      <Link>Resources\RecognizePage.png</Link>
+    </None>
+    <EmbeddedResource Include="..\..\Resources\OcrMultiEngineDemo\MoveLeft.png">
+      <Link>Resources\MoveLeft.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\OcrMultiEngineDemo\MovePageDown.png">
+      <Link>Resources\MovePageDown.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\OcrMultiEngineDemo\MovePageUp.png">
+      <Link>Resources\MovePageUp.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\OcrMultiEngineDemo\MoveRight.png">
+      <Link>Resources\MoveRight.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\OcrMultiEngineDemo\MoveTop.png">
+      <Link>Resources\MoveTop.png</Link>
+    </EmbeddedResource>
+    <Content Include="OCRSpellCheckEngines.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

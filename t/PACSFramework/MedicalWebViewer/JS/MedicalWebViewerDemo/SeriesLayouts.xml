@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  1) the Layout tag consist of 3 attributes:
+      a) text: which represent that text that will be displayed on the layout combo box.
+      b) deflationAmount: the padding amount used.
+      c) icon: the css name of the icon.
+      
+  2) the box tag contains the dimension of the cell / sub-cell.
+-->
+<Layouts>
+   <Layout text="4 Cells, 2 Columns"
+           deflationAmount="0.00"
+           icon="Cells4Columns2">
+      <Box>0, 0, 0.5, 0.33</Box>
+      <Box>0, 0.33, 0.5, 0.66</Box>
+      <Box>0, 0.66, 0.5, 1</Box>
+      <Box>0.5, 0, 1, 1</Box>
+   </Layout>
+
+   <Layout text="4 Cells, lozenge"
+           deflationAmount="0.00"
+           icon="Cells4Lozenge">
+      <Box>0.33, 0, 0.66, 0.33</Box>
+      <Box>0, 0.33, 0.33, 0.66</Box>
+      <Box>0.66, 0.33, 1, 0.66</Box>
+      <Box>0.33, 0.66, 0.66, 1</Box>
+   </Layout>
+
+   <Layout text="6 Cells"
+           deflationAmount="0.00"
+           icon="Cells6">
+      <Box>0, 0, 1, 0.66</Box>
+      <Box>0, 0.66, 0.2, 1</Box>
+      <Box>0.2, 0.66, 0.4, 1</Box>
+      <Box>0.4, 0.66, 0.6, 1</Box>
+      <Box>0.6, 0.66, 0.8, 1</Box>
+      <Box>0.8, 0.66, 1.0, 1</Box>
+   </Layout>
+
+   <Layout text="5 Cells, 3 Columns"
+           deflationAmount="0.00"
+           icon="Cells5Columns3">
+      <Box>0, 0, 0.33, 0.33</Box>
+      <Box>0, 0.33, 0.33, 0.66</Box>
+      <Box>0, 0.66, 0.33, 1</Box>
+      <Box>0.33, 0, 0.66, 0.5</Box>
+      <Box>0.33, 0.5, 0.66, 1</Box>
+      <Box>0.66, 0, 1, 1</Box>
+   </Layout>
+
+   <Layout text="FMX (20)"
+           deflationAmount="0.01"
+           icon="FMX20">
+      <Box>0,     0, 0.125, 0.33</Box>
+      <Box>0.125, 0, 0.25,  0.33</Box>
+      <Box>0,     0.33, 0.125, 0.66</Box>
+      <Box>0.125, 0.33, 0.25,  0.66</Box>
+      <Box>0,     0.66, 0.125, 1</Box>
+      <Box>0.125, 0.66, 0.25,  1</Box>
+
+      <Box>0.75,  0,    0.875, 0.33</Box>
+      <Box>0.875, 0,    1,     0.33</Box>
+      <Box>0.75,  0.33, 0.875, 0.66</Box>
+      <Box>0.875, 0.33, 1,     0.66</Box>
+      <Box>0.75,  0.66, 0.875, 1</Box>
+      <Box>0.875, 0.66, 1,     1</Box>
+
+      <Box>0.25, 0.1, 0.35, 0.5</Box>
+      <Box>0.35, 0.1, 0.45, 0.5</Box>
+      <Box>0.45, 0.1, 0.55, 0.5</Box>
+      <Box>0.55, 0.1, 0.65, 0.5</Box>
+      <Box>0.65, 0.1, 0.75, 0.5</Box>
+
+      <Box>0.35, 0.5, 0.45, 0.9</Box>
+      <Box>0.45, 0.5, 0.55, 0.9</Box>
+      <Box>0.55, 0.5, 0.65, 0.9</Box>
+
+   </Layout>
+
+   <Layout text="FMX (18)"
+           deflationAmount="0.01"
+           icon="FMX18">
+      <Box>0,     0,    0.165,    0.33</Box>
+      <Box>0.165, 0,    0.33,     0.33</Box>
+      <Box>0,     0.33, 0.165,    0.66</Box>
+      <Box>0.165, 0.33, 0.33,     0.66</Box>
+      <Box>0,     0.66, 0.165,    1</Box>
+      <Box>0.165, 0.66, 0.33,     1</Box>
+
+      <Box>0.66,  0,    0.825, 0.33</Box>
+      <Box>0.825, 0,    1,     0.33</Box>
+      <Box>0.66,  0.33, 0.825, 0.66</Box>
+      <Box>0.825, 0.33, 1,     0.66</Box>
+      <Box>0.66,  0.66, 0.825, 1</Box>
+      <Box>0.825, 0.66, 1,     1</Box>
+
+      <Box>0.35, 0.05, 0.45, 0.45</Box>
+      <Box>0.45, 0.05, 0.55, 0.45</Box>
+      <Box>0.55, 0.05, 0.65, 0.45</Box>
+
+      <Box>0.35, 0.55, 0.45, 0.95</Box>
+      <Box>0.45, 0.55, 0.55, 0.95</Box>
+      <Box>0.55, 0.55, 0.65, 0.95</Box>
+
+   </Layout>
+</Layouts>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QueryTypes>
+<Type>
+<Key>All</Key>
+<DisplayValue>all records</DisplayValue>
+</Type>
+<Type>
+<Key>Filtered</Key>
+<DisplayValue>filtered records</DisplayValue>
+</Type>
+<Type>
+<Key>Selected_Related</Key>
+<DisplayValue>records related to Data View selected entries</DisplayValue>
+</Type>
+</QueryTypes>

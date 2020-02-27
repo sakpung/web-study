@@ -1,0 +1,19 @@
+﻿<div class="modal-content">
+   <div class="modal-header">
+      <h3 class="modal-title" translate="DIALOGS_GLOBAL_OPTIONS_TITLE"></h3>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-body">
+      <div class="propGrid" propertygrid id="pg1" items="items" style="height: 250px; overflow:auto" on-property-changed="onPropertyChanged(name,value)" />
+
+      <div class="cine-buttons" role="toolbar">
+         <div>
+            <button type="button" class="cine-controls save-button" ng-click="save()" data-toggle="tooltip" title="Save options" ng-disabled="!hasChanges()"><i></i></button>
+         </div>
+      </div>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-footer">
+      <a class="form-btn" ng-click="close()" translate="DIALOGS_CLOSE"></a>
+   </div>
+</div>

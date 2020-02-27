@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B13C8A56-8C97-4D67-A4FD-35120BCFAF8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leadtools.Dicom.Server.Manager</RootNamespace>
+    <AssemblyName>CSLeadtools.Dicom.Server.Manager</AssemblyName>
+    <ApplicationIcon>..\..\..\..\Resources\Med.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;FOR_DOTNET4;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;FOR_DOTNET4;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;FOR_DOTNET4;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK;TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;FOR_DOTNET4;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.AddIn">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.AddIn.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Server.Admin">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Server.Admin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.DataAccessLayer">
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.DataAccessLayer.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Logging.DataAccessLayer">
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Logging.DataAccessLayer.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Winforms">
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Winforms.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging">
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Configuration.Logging">
+      <HintPath>$(LeadConfigPath)PACSAddIns\Leadtools.Configuration.Logging.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Microsoft.WindowsAPICodePack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\CS\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="Dialogs\AssociationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AssociationDialog.Designer.cs">
+      <DependentUpon>AssociationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\EditAeTitleDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EditAeTitleDialog.designer.cs">
+      <DependentUpon>EditAeTitleDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\EditServiceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EditServiceDialog.designer.cs">
+      <DependentUpon>EditServiceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EventLogDetailDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EventLogDetailDialog.Designer.cs">
+      <DependentUpon>EventLogDetailDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\EventLogDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EventLogDialog.Designer.cs">
+      <DependentUpon>EventLogDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\..\CS\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <EmbeddedResource Include="Dialogs\AssociationDialog.resx">
+      <DependentUpon>AssociationDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\EditAeTitleDialog.resx">
+      <DependentUpon>EditAeTitleDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\EditServiceDialog.resx">
+      <DependentUpon>EditServiceDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Win32Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Resources\folder.png">
+      <Link>Resources\folder.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\Med.ico">
+      <Link>Resources\Med.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\nulloptionspage.bmp">
+      <Link>Resources\nulloptionspage.bmp</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\server_pause_32.ico">
+      <Link>Resources\server_pause_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\server_start_32.ico">
+      <Link>Resources\server_start_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\addin_config_32.ico">
+      <Link>Resources\addin_config_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\server_add_32.ico">
+      <Link>Resources\server_add_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\server_delete_32.ico">
+      <Link>Resources\server_delete_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\server_edit_32.ico">
+      <Link>Resources\server_edit_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\servers_start_32.ico">
+      <Link>Resources\servers_start_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\start.ico">
+      <Link>Resources\start.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\server_stop_32.ico">
+      <Link>Resources\server_stop_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\servers_stop_32.ico">
+      <Link>Resources\servers_stop_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\client_add_32.ico">
+      <Link>Resources\client_add_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\client_remove_32.ico">
+      <Link>Resources\client_remove_32.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Resources\client_edit_32.ico">
+      <Link>Resources\client_edit_32.ico</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\Resources\Associate.ico">
+      <Link>Resources\Associate.ico</Link>
+    </Content>
+    <Content Include="..\..\Resources\ClientDisconnect.ico">
+      <Link>Resources\ClientDisconnect.ico</Link>
+    </Content>
+    <Content Include="..\..\Resources\datamanager.ico">
+      <Link>Resources\datamanager.ico</Link>
+    </Content>
+    <Content Include="..\..\Resources\DICOMlog.ico">
+      <Link>Resources\DICOMlog.ico</Link>
+    </Content>
+    <EmbeddedResource Include="..\..\Resources\eval.ico">
+      <Link>Resources\eval.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\EventLogDetailDialog.resx">
+      <DependentUpon>EventLogDetailDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\EventLogDialog.resx">
+      <DependentUpon>EventLogDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Help.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="..\..\Resources\InvalidKey.ico">
+      <Link>Resources\InvalidKey.ico</Link>
+    </Content>
+    <Content Include="..\..\Resources\modality_list_48.ico">
+      <Link>Resources\modality_list_48.ico</Link>
+    </Content>
+    <Content Include="..\..\Resources\security.ico">
+      <Link>Resources\security.ico</Link>
+    </Content>
+    <Content Include="..\..\Resources\stop.ico">
+      <Link>Resources\stop.ico</Link>
+    </Content>
+    <None Include="app.config" />
+    <None Include="Resources\ActivityReports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DicomCommon\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

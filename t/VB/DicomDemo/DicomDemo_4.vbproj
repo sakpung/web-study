@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3385AAE-59EC-4A6A-9A21-16B7D130C60E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>VBDicomDemo</AssemblyName>
+    <StartupObject>DicomDemo.MainForm</StartupObject>
+    <ApplicationIcon>..\..\..\Resources\Med.ico</ApplicationIcon>
+    <OptionStrict>On</OptionStrict>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DefineTrace>true</DefineTrace>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <DefineConstants>LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Color">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Color.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Effects">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Effects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Controls.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Controls.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Globalization.vb">
+      <Link>Common\Globalization.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Converters.vb">
+      <Link>Common\Converters.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Demos.vb">
+      <Link>Common\Demos.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\DialogUtilities.vb">
+      <Link>Common\DialogUtilities.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Messager.vb">
+      <Link>Common\Messager.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\WaitCursor.vb">
+      <Link>Common\WaitCursor.vb</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\EditValueDlg.vb">
+      <Link>DicomCommon\EditValueDlg.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\DicomCommon\Utils.vb">
+      <Link>DicomCommon\Utils.vb</Link>
+    </Compile>
+    <Compile Include="..\DicomCommon\Tags.vb">
+      <Link>DicomCommon\Tags.vb</Link>
+    </Compile>
+    <Compile Include="Assembly\AssemblyInfo.vb" />
+    <Compile Include="..\ImageProcessingDemo\UI\Command\HistogramDlg.designer.vb">
+      <DependentUpon>HistogramDlg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\ImageProcessingDemo\UI\Command\HistogramDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="..\ImageProcessingDemo\UI\Command\HistogramDlg.resx">
+      <DependentUpon>HistogramDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="UI\Commands\RotateDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Commands\UnsharpMaskDialog.Designer.vb">
+      <DependentUpon>UnsharpMaskDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Commands\UnsharpMaskDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="UI\Commands\UnsharpMaskDialog.resx">
+      <DependentUpon>UnsharpMaskDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="UI\Commands\ValueDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ContextGroupDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ElementTagDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ImageOptionsDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InfoDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InformationObjectDefinitionDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InsertElementDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoadOptionsDlg.Designer.vb">
+      <DependentUpon>LoadOptionsDlg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LoadOptionsDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModifyTablesDlg.Designer.vb">
+      <DependentUpon>ModifyTablesDlg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModifyTablesDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NewDatasetDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaveDlg.Designer.vb">
+      <DependentUpon>SaveDlg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaveDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UniqueIdentifierDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ValueRepresentationDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\Tools.vb" />
+    <Compile Include="Utilities\WindowLevel.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\DicomCommon\EditValueDlg.resx">
+      <Link>DicomCommon\EditValueDlg.resx</Link>
+      <DependentUpon>EditValueDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Commands\RotateDialog.resx">
+      <DependentUpon>RotateDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Commands\ValueDialog.resx">
+      <DependentUpon>ValueDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ContextGroupDlg.resx">
+      <DependentUpon>ContextGroupDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ElementTagDlg.resx">
+      <DependentUpon>ElementTagDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ImageOptionsDlg.resx">
+      <DependentUpon>ImageOptionsDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InfoDlg.resx">
+      <DependentUpon>InfoDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InformationObjectDefinitionDlg.resx">
+      <DependentUpon>InformationObjectDefinitionDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InsertElementDlg.resx">
+      <DependentUpon>InsertElementDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LoadOptionsDlg.resx">
+      <DependentUpon>LoadOptionsDlg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModifyTablesDlg.resx">
+      <DependentUpon>ModifyTablesDlg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NewDatasetDlg.resx">
+      <DependentUpon>NewDatasetDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaveDlg.resx">
+      <DependentUpon>SaveDlg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UniqueIdentifierDlg.resx">
+      <DependentUpon>UniqueIdentifierDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ValueRepresentationDlg.resx">
+      <DependentUpon>ValueRepresentationDlg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{303EFA10-AD12-4459-9370-2F074B307C73}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="lib\ag-grid.d.ts" />
+    <TypeScriptCompile Include="lib\codemirror.d.ts" />
+    <TypeScriptCompile Include="lib\esprima.d.ts" />
+    <TypeScriptCompile Include="lib\estree.d.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\AddWadoServerController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\CodeSequenceEditorController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\HPDefinitionSequenceDialogController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\HPDialogController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\GridSettingsController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\DSFilterOperationEditorController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\HPImageSetSelectorEditorController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\HPTimeBasedImageSetsEditorController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\RemoteWadoController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\ScriptEditorController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\PromptController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\HSLController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\PrintController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\RolePatientsAccessController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\UISettingsController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\UploadFileController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\UserPatientsAccessController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\TagChooserController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\Settings3DController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\WindowLevelCustomController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\SeriesLayoutController.ts" />
+    <Content Include="css\ag-grid.css" />
+    <Content Include="css\bootstrap-colorpicker.css" />
+    <Content Include="css\codemirror.css" />
+    <Content Include="css\darktheme.css" />
+    <Content Include="css\foldgutter.css" />
+    <Content Include="css\angular-multi-select.css" />
+    <Content Include="css\jquery.contextMenu.min.css" />
+    <Content Include="css\theme-fresh.css" />
+    <Content Include="css\theme-light.css" />
+    <Content Include="css\toolbarSVG.css" />
+    <Content Include="css\ui-grid-unstable.css" />
+    <Content Include="images\alpha-horizontal.png" />
+    <Content Include="images\alpha.png" />
+    <Content Include="images\copy.svg" />
+    <Content Include="images\delete.svg" />
+    <Content Include="images\FirstFrameButton.svg" />
+    <Content Include="images\hue-horizontal.png" />
+    <Content Include="images\hue.png" />
+    <Content Include="images\LastFrameButton.svg" />
+    <Content Include="images\left-arrow-roll.svg" />
+    <Content Include="images\left-arrow.svg" />
+    <Content Include="images\logo.svg" />
+    <Content Include="images\menu.svg" />
+    <Content Include="images\merge.svg" />
+    <Content Include="images\minus.svg" />
+    <Content Include="images\mipacs.svg" />
+    <Content Include="images\NextFrameButton.svg" />
+    <Content Include="images\objects\Point.png" />
+    <Content Include="images\okta.svg" />
+    <Content Include="images\pen.svg" />
+    <Content Include="images\PlayButton.svg" />
+    <Content Include="images\plus.svg" />
+    <Content Include="images\PreviousFrameButton.svg" />
+    <Content Include="images\reset.svg" />
+    <Content Include="images\right-arrow-roll.svg" />
+    <Content Include="images\right-arrow.svg" />
+    <Content Include="images\saturation.png" />
+    <Content Include="images\save.svg" />
+    <Content Include="images\shibboleth.svg" />
+    <Content Include="images\StopButton.svg" />
+    <Content Include="images\tags.svg" />
+    <Content Include="images\viewer\disabled\AlignBottom.svg" />
+    <Content Include="images\viewer\disabled\AlignCenter.svg" />
+    <Content Include="images\viewer\disabled\AlignLeft.svg" />
+    <Content Include="images\viewer\disabled\AlignMiddle.svg" />
+    <Content Include="images\viewer\disabled\AlignRight.svg" />
+    <Content Include="images\viewer\disabled\AlignTop.svg" />
+    <Content Include="images\viewer\disabled\AnteriorOrientation.svg" />
+    <Content Include="images\viewer\disabled\Arrow.svg" />
+    <Content Include="images\viewer\disabled\BrightnessContrast.svg" />
+    <Content Include="images\viewer\disabled\CalibrateRulerAnn.svg" />
+    <Content Include="images\viewer\disabled\CinePlayer.svg" />
+    <Content Include="images\viewer\disabled\Clear.svg" />
+    <Content Include="images\viewer\disabled\ClearAll.svg" />
+    <Content Include="images\viewer\disabled\ComposeLayout.svg" />
+    <Content Include="images\viewer\disabled\CopyTemplate.svg" />
+    <Content Include="images\viewer\disabled\CrossHair.svg" />
+    <Content Include="images\viewer\disabled\Cursor3D.svg" />
+    <Content Include="images\viewer\disabled\Curve.svg" />
+    <Content Include="images\viewer\disabled\DeleteAnn.svg" />
+    <Content Include="images\viewer\disabled\DeleteSeriesLayout.svg" />
+    <Content Include="images\viewer\disabled\DeleteStudyLayout.svg" />
+    <Content Include="images\viewer\disabled\DeleteTemplate.svg" />
+    <Content Include="images\viewer\disabled\DeleteTemplateBox.svg" />
+    <Content Include="images\viewer\disabled\Dentin.svg" />
+    <Content Include="images\viewer\disabled\DrawTemplateBox.svg" />
+    <Content Include="images\viewer\disabled\ellipse.svg" />
+    <Content Include="images\viewer\disabled\Endo.svg" />
+    <Content Include="images\viewer\disabled\ExportTemplates.svg" />
+    <Content Include="images\viewer\disabled\FeetOrientation.svg" />
+    <Content Include="images\viewer\disabled\FirstFrameButton.svg" />
+    <Content Include="images\viewer\disabled\FreeHand.svg" />
+    <Content Include="images\viewer\disabled\HeadOrientation.svg" />
+    <Content Include="images\viewer\disabled\Highlight.svg" />
+    <Content Include="images\viewer\disabled\hsl.svg" />
+    <Content Include="images\viewer\disabled\ImportTemplates.svg" />
+    <Content Include="images\viewer\disabled\invert.svg" />
+    <Content Include="images\viewer\disabled\InvertColor.svg" />
+    <Content Include="images\viewer\disabled\LastFrameButton.svg" />
+    <Content Include="images\viewer\disabled\LeftOrientation.svg" />
+    <Content Include="images\viewer\disabled\Line.svg" />
+    <Content Include="images\viewer\disabled\LineProfile.svg" />
+    <Content Include="images\viewer\disabled\Linked.svg" />
+    <Content Include="images\viewer\disabled\LinkStudies.svg" />
+    <Content Include="images\viewer\disabled\LoadAnn.svg" />
+    <Content Include="images\viewer\disabled\Magnify.svg" />
+    <Content Include="images\viewer\disabled\MakeSameHeight.svg" />
+    <Content Include="images\viewer\disabled\MakeSameSize.svg" />
+    <Content Include="images\viewer\disabled\MakeSameWidth.svg" />
+    <Content Include="images\viewer\disabled\MergeCells.svg" />
+    <Content Include="images\viewer\disabled\MPRVolume.svg" />
+    <Content Include="images\viewer\disabled\NewTemplate.svg" />
+    <Content Include="images\viewer\disabled\NextFrameButton.svg" />
+    <Content Include="images\viewer\disabled\note.svg" />
+    <Content Include="images\viewer\disabled\OneToOne.svg" />
+    <Content Include="images\viewer\disabled\Perio.svg" />
+    <Content Include="images\viewer\disabled\PlayButton.svg" />
+    <Content Include="images\viewer\disabled\point.svg" />
+    <Content Include="images\viewer\disabled\polygon.svg" />
+    <Content Include="images\viewer\disabled\polyline.svg" />
+    <Content Include="images\viewer\disabled\PolyRuler.svg" />
+    <Content Include="images\viewer\disabled\PosteriorOrientation.svg" />
+    <Content Include="images\viewer\disabled\PreviousFrameButton.svg" />
+    <Content Include="images\viewer\disabled\Print.svg" />
+    <Content Include="images\viewer\disabled\PrintCurrentView.svg" />
+    <Content Include="images\viewer\disabled\ProbeTool.svg" />
+    <Content Include="images\viewer\disabled\Protractor.svg" />
+    <Content Include="images\viewer\disabled\rectangle.svg" />
+    <Content Include="images\viewer\disabled\ReferenceLine.svg" />
+    <Content Include="images\viewer\disabled\reload.svg" />
+    <Content Include="images\viewer\disabled\ReloadAll.svg" />
+    <Content Include="images\viewer\disabled\RenameTemplate.svg" />
+    <Content Include="images\viewer\disabled\RightOrientation.svg" />
+    <Content Include="images\viewer\disabled\Rotate3D.svg" />
+    <Content Include="images\viewer\disabled\ruler.svg" />
+    <Content Include="images\viewer\disabled\SaveAnn.svg" />
+    <Content Include="images\viewer\disabled\SaveHangingProtocol.svg" />
+    <Content Include="images\viewer\disabled\SaveLayout.svg" />
+    <Content Include="images\viewer\disabled\SaveStudyLayout.svg" />
+    <Content Include="images\viewer\disabled\SaveTemplate.svg" />
+    <Content Include="images\viewer\disabled\ScrollFrame.svg" />
+    <Content Include="images\viewer\disabled\SecondaryCapture.svg" />
+    <Content Include="images\viewer\disabled\select.svg" />
+    <Content Include="images\viewer\disabled\SelectTemplateBox.svg" />
+    <Content Include="images\viewer\disabled\Settings3D.svg" />
+    <Content Include="images\viewer\disabled\ShowFirstLast.svg" />
+    <Content Include="images\viewer\disabled\ShowHide.svg" />
+    <Content Include="images\viewer\disabled\ShutterObject.svg" />
+    <Content Include="images\viewer\disabled\SnapToGrid.svg" />
+    <Content Include="images\viewer\disabled\SortSeries.svg" />
+    <Content Include="images\viewer\disabled\SpyGlass.svg" />
+    <Content Include="images\viewer\disabled\SpyglassCLAHE.svg" />
+    <Content Include="images\viewer\disabled\SpyGlassEqualization.svg" />
+    <Content Include="images\viewer\disabled\SpyGlassInvert.svg" />
+    <Content Include="images\viewer\disabled\SpyglassWindowLevel.svg" />
+    <Content Include="images\viewer\disabled\stack.svg" />
+    <Content Include="images\viewer\disabled\StopButton.svg" />
+    <Content Include="images\viewer\disabled\StretchHistogram.svg" />
+    <Content Include="images\viewer\disabled\Synchronization.svg" />
+    <Content Include="images\viewer\disabled\Text.svg" />
+    <Content Include="images\viewer\disabled\TextPointer.svg" />
+    <Content Include="images\viewer\disabled\ToggleCine.svg" />
+    <Content Include="images\viewer\disabled\ToggleGrid.svg" />
+    <Content Include="images\viewer\disabled\TrueSizeDisplay.svg" />
+    <Content Include="images\viewer\disabled\WaveformBasicAudio.svg" />
+    <Content Include="images\viewer\disabled\WindowLevel.svg" />
+    <Content Include="images\viewer\disabled\WindowLevelCustom.svg" />
+    <Content Include="images\viewer\main\AlignBottom.svg" />
+    <Content Include="images\viewer\main\AlignCenter.svg" />
+    <Content Include="images\viewer\main\AlignLeft.svg" />
+    <Content Include="images\viewer\main\AlignMiddle.svg" />
+    <Content Include="images\viewer\main\AlignRight.svg" />
+    <Content Include="images\viewer\main\AlignTop.svg" />
+    <Content Include="images\viewer\main\Annotations.svg" />
+    <Content Include="images\viewer\main\AnteriorOrientation.svg" />
+    <Content Include="images\viewer\main\Arrow.svg" />
+    <Content Include="images\viewer\main\BrightnessContrast.svg" />
+    <Content Include="images\viewer\main\CalibrateRulerAnn.svg" />
+    <Content Include="images\viewer\main\CinePlayer.svg" />
+    <Content Include="images\viewer\main\Clear.svg" />
+    <Content Include="images\viewer\main\ClearAll.svg" />
+    <Content Include="images\viewer\main\ComposeLayout.svg" />
+    <Content Include="images\viewer\main\CopyTemplate.svg" />
+    <Content Include="images\viewer\main\CrossHair.svg" />
+    <Content Include="images\viewer\main\Cursor3D.svg" />
+    <Content Include="images\viewer\main\Curve.svg" />
+    <Content Include="images\viewer\main\DeleteAnn.svg" />
+    <Content Include="images\viewer\main\DeleteCell.svg" />
+    <Content Include="images\viewer\main\DeleteSeriesLayout.svg" />
+    <Content Include="images\viewer\main\DeleteStudyLayout.svg" />
+    <Content Include="images\viewer\main\DeleteTemplate.svg" />
+    <Content Include="images\viewer\main\DeleteTemplateBox.svg" />
+    <Content Include="images\viewer\main\Dentin.svg" />
+    <Content Include="images\viewer\main\DrawTemplateBox.svg" />
+    <Content Include="images\viewer\main\Ellipse.svg" />
+    <Content Include="images\viewer\main\Endo.svg" />
+    <Content Include="images\viewer\main\Export.svg" />
+    <Content Include="images\viewer\main\ExportTemplates.svg" />
+    <Content Include="images\viewer\main\FeetOrientation.svg" />
+    <Content Include="images\viewer\main\FirstFrameButton.svg" />
+    <Content Include="images\viewer\main\FitImage.svg" />
+    <Content Include="images\viewer\main\Flip.svg" />
+    <Content Include="images\viewer\main\Freehand.svg" />
+    <Content Include="images\viewer\main\FullScreen.svg" />
+    <Content Include="images\viewer\main\HeadOrientation.svg" />
+    <Content Include="images\viewer\main\Highlight.svg" />
+    <Content Include="images\viewer\main\HSL.svg" />
+    <Content Include="images\viewer\main\ImportTemplates.svg" />
+    <Content Include="images\viewer\main\InvertColor.svg" />
+    <Content Include="images\viewer\main\LastFrameButton.svg" />
+    <Content Include="images\viewer\main\LeftOrientation.svg" />
+    <Content Include="images\viewer\main\Line.svg" />
+    <Content Include="images\viewer\main\LineProfile.svg" />
+    <Content Include="images\viewer\main\Linked.svg" />
+    <Content Include="images\viewer\main\LinkStudies.svg" />
+    <Content Include="images\viewer\main\LoadAnn.svg" />
+    <Content Include="images\viewer\main\Magnify.svg" />
+    <Content Include="images\viewer\main\MakeSameHeight.svg" />
+    <Content Include="images\viewer\main\MakeSameSize.svg" />
+    <Content Include="images\viewer\main\MakeSameWidth.svg" />
+    <Content Include="images\viewer\main\MergeCells.svg" />
+    <Content Include="images\viewer\main\MIP.svg" />
+    <Content Include="images\viewer\main\MPR.svg" />
+    <Content Include="images\viewer\main\MPRVolume.svg" />
+    <Content Include="images\viewer\main\NewTemplate.svg" />
+    <Content Include="images\viewer\main\NextFrameButton.svg" />
+    <Content Include="images\viewer\main\NextImage.svg" />
+    <Content Include="images\viewer\main\NextPoint.svg" />
+    <Content Include="images\viewer\main\Note.svg" />
+    <Content Include="images\viewer\main\OneToOne.svg" />
+    <Content Include="images\viewer\main\pan.svg" />
+    <Content Include="images\viewer\main\Perio.svg" />
+    <Content Include="images\viewer\main\PlayButton.svg" />
+    <Content Include="images\viewer\main\point.svg" />
+    <Content Include="images\viewer\main\Polygon.svg" />
+    <Content Include="images\viewer\main\polyline.svg" />
+    <Content Include="images\viewer\main\PolyRuler.svg" />
+    <Content Include="images\viewer\main\PopupCapture.svg" />
+    <Content Include="images\viewer\main\PosteriorOrientation.svg" />
+    <Content Include="images\viewer\main\PreviousFrameButton.svg" />
+    <Content Include="images\viewer\main\PreviousImage.svg" />
+    <Content Include="images\viewer\main\PreviousPoint.svg" />
+    <Content Include="images\viewer\main\Print.svg" />
+    <Content Include="images\viewer\main\PrintCurrentView.svg" />
+    <Content Include="images\viewer\main\ProbeTool.svg" />
+    <Content Include="images\viewer\main\Protractor.svg" />
+    <Content Include="images\viewer\main\rectangle.svg" />
+    <Content Include="images\viewer\main\ReferenceLine.svg" />
+    <Content Include="images\viewer\main\reload.svg" />
+    <Content Include="images\viewer\main\ReloadAll.svg" />
+    <Content Include="images\viewer\main\RenameTemplate.svg" />
+    <Content Include="images\viewer\main\Reverse.svg" />
+    <Content Include="images\viewer\main\RightOrientation.svg" />
+    <Content Include="images\viewer\main\Rotate3D.svg" />
+    <Content Include="images\viewer\main\RotateClock.svg" />
+    <Content Include="images\viewer\main\RotateCounterClock.svg" />
+    <Content Include="images\viewer\main\ruler.svg" />
+    <Content Include="images\viewer\main\SaveAnn.svg" />
+    <Content Include="images\viewer\main\SaveHangingProtocol.svg" />
+    <Content Include="images\viewer\main\SaveLayout.svg" />
+    <Content Include="images\viewer\main\SaveStudyLayout.svg" />
+    <Content Include="images\viewer\main\SaveTemplate.svg" />
+    <Content Include="images\viewer\main\ScrollColumn.svg" />
+    <Content Include="images\viewer\main\ScrollFrame.svg" />
+    <Content Include="images\viewer\main\ScrollPage.svg" />
+    <Content Include="images\viewer\main\ScrollRow.svg" />
+    <Content Include="images\viewer\main\SecondaryCapture.svg" />
+    <Content Include="images\viewer\main\Select.svg" />
+    <Content Include="images\viewer\main\SelectTemplateBox.svg" />
+    <Content Include="images\viewer\main\SeriesLayout.svg" />
+    <Content Include="images\viewer\main\Settings3D.svg" />
+    <Content Include="images\viewer\main\ShowDicom.svg" />
+    <Content Include="images\viewer\main\ShowFirstLast.svg" />
+    <Content Include="images\viewer\main\ShowHide.svg" />
+    <Content Include="images\viewer\main\ShutterObject.svg" />
+    <Content Include="images\viewer\main\SnapToGrid.svg" />
+    <Content Include="images\viewer\main\SortSeries.svg" />
+    <Content Include="images\viewer\main\SpyGlass.svg" />
+    <Content Include="images\viewer\main\SpyglassCLAHE.svg" />
+    <Content Include="images\viewer\main\SpyGlassEqualization.svg" />
+    <Content Include="images\viewer\main\SpyglassInvert.svg" />
+    <Content Include="images\viewer\main\SpyglassWindowLevel.svg" />
+    <Content Include="images\viewer\main\SSD.svg" />
+    <Content Include="images\viewer\main\Stack.svg" />
+    <Content Include="images\viewer\main\StopButton.svg" />
+    <Content Include="images\viewer\main\StretchHistogram.svg" />
+    <Content Include="images\viewer\main\StudyLayout.svg" />
+    <Content Include="images\viewer\main\StudyTimeLine.svg" />
+    <Content Include="images\viewer\main\Synchronization.svg" />
+    <Content Include="images\viewer\main\Text.svg" />
+    <Content Include="images\viewer\main\TextPointer.svg" />
+    <Content Include="images\viewer\main\ToggleCine.svg" />
+    <Content Include="images\viewer\main\ToggleCinePaused.svg" />
+    <Content Include="images\viewer\main\ToggleGrid.svg" />
+    <Content Include="images\viewer\main\ToggleTags.svg" />
+    <Content Include="images\viewer\main\Tools.svg" />
+    <Content Include="images\viewer\main\TrueSizeDisplay.svg" />
+    <Content Include="images\viewer\main\UnLinked.svg" />
+    <Content Include="images\viewer\main\VRT.svg" />
+    <Content Include="images\viewer\main\WaveformBasicAudio.svg" />
+    <Content Include="images\viewer\main\WindowLevel.svg" />
+    <Content Include="images\viewer\main\WindowLevelCustom.svg" />
+    <Content Include="images\viewer\main\Zoom.svg" />
+    <Content Include="images\viewer\main\ZoomIn.svg" />
+    <Content Include="images\viewer\main\ZoomOut.svg" />
+    <Content Include="images\viewer\pressed\Dentin.svg" />
+    <Content Include="images\viewer\pressed\DrawTemplateBox.svg" />
+    <Content Include="images\viewer\pressed\Endo.svg" />
+    <Content Include="images\viewer\pressed\Magnify.svg" />
+    <Content Include="images\viewer\pressed\Pan.svg" />
+    <Content Include="images\viewer\pressed\Perio.svg" />
+    <Content Include="images\viewer\pressed\ProbeTool.svg" />
+    <Content Include="images\viewer\pressed\ReferenceLine.svg" />
+    <Content Include="images\viewer\pressed\Rotate3D.svg" />
+    <Content Include="images\viewer\pressed\SelectTemplateBox.svg" />
+    <Content Include="images\viewer\pressed\ShowFirstLast.svg" />
+    <Content Include="images\viewer\pressed\Stack.svg" />
+    <Content Include="images\viewer\pressed\Synchronization.svg" />
+    <Content Include="images\viewer\pressed\ToggleGrid.svg" />
+    <Content Include="images\viewer\pressed\WindowLevel.svg" />
+    <Content Include="images\viewer\pressed\Zoom.svg" />
+    <Content Include="images\viewer\rollover\AlignBottom.svg" />
+    <Content Include="images\viewer\rollover\AlignCenter.svg" />
+    <Content Include="images\viewer\rollover\AlignLeft.svg" />
+    <Content Include="images\viewer\rollover\AlignMiddle.svg" />
+    <Content Include="images\viewer\rollover\AlignRight.svg" />
+    <Content Include="images\viewer\rollover\AlignTop.svg" />
+    <Content Include="images\viewer\rollover\Annotations.svg" />
+    <Content Include="images\viewer\rollover\AnteriorOrientation.svg" />
+    <Content Include="images\viewer\rollover\arrow.svg" />
+    <Content Include="images\viewer\rollover\BrightnessContrast.svg" />
+    <Content Include="images\viewer\rollover\CalibrateRulerAnn.svg" />
+    <Content Include="images\viewer\rollover\CinePlayer.svg" />
+    <Content Include="images\viewer\rollover\Clear.svg" />
+    <Content Include="images\viewer\rollover\ClearAll.svg" />
+    <Content Include="images\viewer\rollover\ComposeLayout.svg" />
+    <Content Include="images\viewer\rollover\CopyTemplate.svg" />
+    <Content Include="images\viewer\rollover\CrossHair.svg" />
+    <Content Include="images\viewer\rollover\Cursor3D.svg" />
+    <Content Include="images\viewer\rollover\curve.svg" />
+    <Content Include="images\viewer\rollover\DeleteAnn.svg" />
+    <Content Include="images\viewer\rollover\DeleteCell.svg" />
+    <Content Include="images\viewer\rollover\DeleteSeriesLayout.svg" />
+    <Content Include="images\viewer\rollover\DeleteStudyLayout.svg" />
+    <Content Include="images\viewer\rollover\DeleteTemplate.svg" />
+    <Content Include="images\viewer\rollover\DeleteTemplateBox.svg" />
+    <Content Include="images\viewer\rollover\Dentin.svg" />
+    <Content Include="images\viewer\rollover\DrawTemplateBox.svg" />
+    <Content Include="images\viewer\rollover\ellipse.svg" />
+    <Content Include="images\viewer\rollover\Endo.svg" />
+    <Content Include="images\viewer\rollover\export.svg" />
+    <Content Include="images\viewer\rollover\ExportTemplates.svg" />
+    <Content Include="images\viewer\rollover\FeetOrientation.svg" />
+    <Content Include="images\viewer\rollover\FitImage.svg" />
+    <Content Include="images\viewer\rollover\flip.svg" />
+    <Content Include="images\viewer\rollover\freehand.svg" />
+    <Content Include="images\viewer\rollover\FullScreen.svg" />
+    <Content Include="images\viewer\rollover\HeadOrientation.svg" />
+    <Content Include="images\viewer\rollover\highlight.svg" />
+    <Content Include="images\viewer\rollover\hsl.svg" />
+    <Content Include="images\viewer\rollover\ImportTemplates.svg" />
+    <Content Include="images\viewer\rollover\InvertColor.svg" />
+    <Content Include="images\viewer\rollover\LeftOrientation.svg" />
+    <Content Include="images\viewer\rollover\line.svg" />
+    <Content Include="images\viewer\rollover\LineProfile.svg" />
+    <Content Include="images\viewer\rollover\Linked.svg" />
+    <Content Include="images\viewer\rollover\LinkStudies.svg" />
+    <Content Include="images\viewer\rollover\LoadAnn.svg" />
+    <Content Include="images\viewer\rollover\magnify.svg" />
+    <Content Include="images\viewer\rollover\MakeSameHeight.svg" />
+    <Content Include="images\viewer\rollover\MakeSameSize.svg" />
+    <Content Include="images\viewer\rollover\MakeSameWidth.svg" />
+    <Content Include="images\viewer\rollover\MergeCells.svg" />
+    <Content Include="images\viewer\rollover\mip.svg" />
+    <Content Include="images\viewer\rollover\mpr.svg" />
+    <Content Include="images\viewer\rollover\MPRVolume.svg" />
+    <Content Include="images\viewer\rollover\NewTemplate.svg" />
+    <Content Include="images\viewer\rollover\NextImage.svg" />
+    <Content Include="images\viewer\rollover\NextPoint.svg" />
+    <Content Include="images\viewer\rollover\note.svg" />
+    <Content Include="images\viewer\rollover\OneToOne.svg" />
+    <Content Include="images\viewer\rollover\pan.svg" />
+    <Content Include="images\viewer\rollover\Perio.svg" />
+    <Content Include="images\viewer\rollover\point.svg" />
+    <Content Include="images\viewer\rollover\polygon.svg" />
+    <Content Include="images\viewer\rollover\polyline.svg" />
+    <Content Include="images\viewer\rollover\PolyRuler.svg" />
+    <Content Include="images\viewer\rollover\PopupCapture.svg" />
+    <Content Include="images\viewer\rollover\PosteriorOrientation.svg" />
+    <Content Include="images\viewer\rollover\PreviousImage.svg" />
+    <Content Include="images\viewer\rollover\PreviousPoint.svg" />
+    <Content Include="images\viewer\rollover\Print.svg" />
+    <Content Include="images\viewer\rollover\PrintCurrentView.svg" />
+    <Content Include="images\viewer\rollover\ProbeTool.svg" />
+    <Content Include="images\viewer\rollover\protractor.svg" />
+    <Content Include="images\viewer\rollover\rectangle.svg" />
+    <Content Include="images\viewer\rollover\ReferenceLine.svg" />
+    <Content Include="images\viewer\rollover\reload.svg" />
+    <Content Include="images\viewer\rollover\ReloadAll.svg" />
+    <Content Include="images\viewer\rollover\RenameTemplate.svg" />
+    <Content Include="images\viewer\rollover\Reverse.svg" />
+    <Content Include="images\viewer\rollover\RightOrientation.svg" />
+    <Content Include="images\viewer\rollover\Rotate3D.svg" />
+    <Content Include="images\viewer\rollover\RotateClock.svg" />
+    <Content Include="images\viewer\rollover\RotateCounterClock.svg" />
+    <Content Include="images\viewer\rollover\ruler.svg" />
+    <Content Include="images\viewer\rollover\SaveAnn.svg" />
+    <Content Include="images\viewer\rollover\SaveHangingProtocol.svg" />
+    <Content Include="images\viewer\rollover\SaveLayout.svg" />
+    <Content Include="images\viewer\rollover\SaveStudyLayout.svg" />
+    <Content Include="images\viewer\rollover\SaveTemplate.svg" />
+    <Content Include="images\viewer\rollover\ScrollColumn.svg" />
+    <Content Include="images\viewer\rollover\ScrollFrame.svg" />
+    <Content Include="images\viewer\rollover\ScrollPage.svg" />
+    <Content Include="images\viewer\rollover\ScrollRow.svg" />
+    <Content Include="images\viewer\rollover\SecondaryCapture.svg" />
+    <Content Include="images\viewer\rollover\select.svg" />
+    <Content Include="images\viewer\rollover\SelectTemplateBox.svg" />
+    <Content Include="images\viewer\rollover\SeriesLayout.svg" />
+    <Content Include="images\viewer\rollover\Settings3D.svg" />
+    <Content Include="images\viewer\rollover\ShowDicom.svg" />
+    <Content Include="images\viewer\rollover\ShowFirstLast.svg" />
+    <Content Include="images\viewer\rollover\ShowHide.svg" />
+    <Content Include="images\viewer\rollover\ShutterObject.svg" />
+    <Content Include="images\viewer\rollover\SnapToGrid.svg" />
+    <Content Include="images\viewer\rollover\SortSeries.svg" />
+    <Content Include="images\viewer\rollover\spyglass.svg" />
+    <Content Include="images\viewer\rollover\SpyglassCLAHE.svg" />
+    <Content Include="images\viewer\rollover\SpyGlassEqualization.svg" />
+    <Content Include="images\viewer\rollover\SpyglassInvert.svg" />
+    <Content Include="images\viewer\rollover\SpyglassWindowLevel.svg" />
+    <Content Include="images\viewer\rollover\ssd.svg" />
+    <Content Include="images\viewer\rollover\stack.svg" />
+    <Content Include="images\viewer\rollover\StretchHistogram.svg" />
+    <Content Include="images\viewer\rollover\StudyLayout.svg" />
+    <Content Include="images\viewer\rollover\StudyTimeLine.svg" />
+    <Content Include="images\viewer\rollover\Synchronization.svg" />
+    <Content Include="images\viewer\rollover\text.svg" />
+    <Content Include="images\viewer\rollover\TextPointer.svg" />
+    <Content Include="images\viewer\rollover\ToggleCine.svg" />
+    <Content Include="images\viewer\rollover\ToggleCinePaused.svg" />
+    <Content Include="images\viewer\rollover\ToggleGrid.svg" />
+    <Content Include="images\viewer\rollover\ToggleTags.svg" />
+    <Content Include="images\viewer\rollover\Tools.svg" />
+    <Content Include="images\viewer\rollover\TrueSizeDisplay.svg" />
+    <Content Include="images\viewer\rollover\UnLinked.svg" />
+    <Content Include="images\viewer\rollover\vrt.svg" />
+    <Content Include="images\viewer\rollover\WaveformBasicAudio.svg" />
+    <Content Include="images\viewer\rollover\WindowLevel.svg" />
+    <Content Include="images\viewer\rollover\WindowLevelCustom.svg" />
+    <Content Include="images\viewer\rollover\zoom.svg" />
+    <Content Include="images\viewer\rollover\ZoomIn.svg" />
+    <Content Include="images\viewer\rollover\ZoomOut.svg" />
+    <Content Include="lib\LEADTOOLS\bootstrap\bootstrap.d.ts" />
+    <Content Include="Samples\ExternalController\ExternalControllerDemo.htm" />
+    <Content Include="Samples\ExternalController\JS\addPatient.js" />
+    <Content Include="Samples\ExternalController\JS\addUser.js" />
+    <Content Include="Samples\ExternalController\JS\logger.js" />
+    <Content Include="Samples\ExternalController\JS\myMain.js" />
+    <Content Include="Samples\ExternalController\JS\updatePatient.js" />
+    <Content Include="Samples\ExternalController\JS\updateUser.js" />
+    <Content Include="Samples\ExternalController\JS\viewInstances.js" />
+    <Content Include="Samples\ExternalController\ServiceProxy\AuthenticationServiceProxy.js" />
+    <Content Include="Samples\ExternalController\ServiceProxy\AuthenticationServiceProxy.ts" />
+    <Content Include="Samples\ExternalController\ServiceProxy\PatientServiceProxy.js" />
+    <Content Include="Samples\ExternalController\ServiceProxy\PatientServiceProxy.ts" />
+    <Content Include="Samples\ExternalController\ServiceProxy\QueryArchiveServiceProxy.js" />
+    <Content Include="Samples\ExternalController\ServiceProxy\QueryArchiveServiceProxy.ts" />
+    <Content Include="Samples\ExternalController\ServiceProxy\ServiceProxy.js" />
+    <Content Include="Samples\ExternalController\ServiceProxy\ServiceProxy.ts" />
+    <Content Include="Samples\ExternalController\StyleSheet.css" />
+    <Content Include="css\m.app.css" />
+    <Content Include="css\treeGrid.css" />
+    <Content Include="Scripts\acorn_interpreter.js" />
+    <Content Include="Scripts\angular\ag-grid.min.js" />
+    <Content Include="Scripts\angular\angular-multi-step-form.min.js" />
+    <Content Include="Scripts\angular\angular-number-picker.min.js" />
+    <Content Include="Scripts\angular\angular-multi-select.min.js" />
+    <Content Include="Scripts\angular\ng-file-upload-all.min.js" />
+    <Content Include="Scripts\angular\ng-pattern-restrict.min.js" />
+    <Content Include="Scripts\angular\slider.js" />
+    <Content Include="Scripts\angular\ui-codemirror.min.js" />
+    <Content Include="Scripts\angular\ui-grid-unstable.min.js" />
+    <TypeScriptCompile Include="Scripts\controllers\TemplateEditorController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\ConfirmDialogController.ts" />
+    <TypeScriptCompile Include="Scripts\commands\template-commands.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\UploadController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\UpdatePasswordController.ts" />
+    <Content Include="Scripts\config.js" />
+    <Content Include="Scripts\controls\bootstrap-colorpicker.min.js" />
+    <TypeScriptCompile Include="Scripts\controls\ImageViewerAutomationControl.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.TemplateEditor.Directive.ts" />
+    <Content Include="Scripts\controls\codemirror.js" />
+    <Content Include="Scripts\controls\mode\javascript.js" />
+    <Content Include="Scripts\edit\brace-fold.js" />
+    <Content Include="Scripts\edit\comment-fold.js" />
+    <Content Include="Scripts\edit\foldcode.js" />
+    <Content Include="Scripts\edit\foldgutter.js" />
+    <Content Include="Scripts\esprima.min.js" />
+    <Content Include="Scripts\html2canvas.js" />
+    <Content Include="Scripts\jquery\jquery.contextMenu.min.js" />
+    <Content Include="Scripts\jquery\jquery.ui.position.min.js" />
+    <Content Include="Scripts\jquery\jquery.ui.touch-punch.min.js" />
+    <TypeScriptCompile Include="Scripts\externalCommand\AutoService.ts" />
+    <TypeScriptCompile Include="Scripts\HangingProtocolHelper.ts" />
+    <TypeScriptCompile Include="Scripts\models\TemplateModels.ts" />
+    <TypeScriptCompile Include="Scripts\services\TemplateEditorService.ts" />
+    <TypeScriptCompile Include="Scripts\services\TemplateService.ts" />
+    <Content Include="Scripts\LEADTOOLS\Leadtools.Controls.Medical.js" />
+    <Content Include="SeriesLayouts.xml" />
+    <Content Include="css\angular-block-ui.css" />
+    <Content Include="css\app.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\colorpicker.css" />
+    <Content Include="css\dialogs.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\hotkeys.min.css" />
+    <Content Include="css\icons.gif" />
+    <Content Include="css\layout-default-latest.css" />
+    <Content Include="css\loading-bar.css" />
+    <Content Include="css\m.toolbar.css" />
+    <Content Include="css\PropertyGrid.css" />
+    <Content Include="css\toolbar.css" />
+    <Content Include="css\ui.fancytree.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="HeartBeat.html" />
+    <Content Include="images\Calibration.png" />
+    <Content Include="images\leadlogo.png" />
+    <Content Include="images\viewer\small-sprite-sheet.png" />
+    <Content Include="images\viewer\sprite-sheet.png" />
+    <Content Include="index.html" />
+    <Content Include="StudyLayouts.xml" />
+    <Content Include="Scripts\angular\angular-block-ui.js" />
+    <Content Include="Scripts\angular\angular-block-ui.min.js" />
+    <Content Include="Scripts\angular\angular-fullscreen.js" />
+    <Content Include="Scripts\angular\angular-sanitize.min.js" />
+    <Content Include="Scripts\angular\angular-translate-loader-static-files.min.js" />
+    <Content Include="Scripts\angular\angular-translate.min.js" />
+    <Content Include="Scripts\angular\angular-ui-tree.js" />
+    <Content Include="Scripts\angular\bootstrap-colorpicker-module.js" />
+    <Content Include="Scripts\angular\commangular.min.js" />
+    <Content Include="Scripts\angular\dialogs.js" />
+    <Content Include="Scripts\angular\hotkeys.min.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <TypeScriptCompile Include="Scripts\commands\commands.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\AddAppController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\RunAppController.ts" />
+    <TypeScriptCompile Include="Scripts\DicomLoader.ts" />
+    <TypeScriptCompile Include="Scripts\commands\annotation-commands.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\ViewDicomController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\SaveAsDerivedController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\ExportController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\AnnotationsController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\AnnotationsSaveController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\AudioController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\CinePlayerController.ts" />
+    <TypeScriptCompile Include="Scripts\CinePlayer.ts" />
+    <TypeScriptCompile Include="Scripts\controls\InteractiveVerticalSlider.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\BrightnessContrastController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\RemotePacsController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\AddPacsServerController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\UserQueueController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\PermissionsManagementController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\NewUserController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\UpdateRoleController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\NewRoleController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\UpdateUserController.ts" />
+    <TypeScriptCompile Include="Scripts\commands\spyglass-commands.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\CalibrateRulerController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\CompareViewController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\StudyLayoutController.ts" />
+    <Content Include="Scripts\controls\OverflowManager.ts" />
+    <Content Include="Scripts\date.js" />
+    <TypeScriptCompile Include="Scripts\DicomHelper.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.Audio.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.Draggable.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.VerticalSlider.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.ImageProcessing.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.StudyTimeLine.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.PwdConfirm.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.Misc.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.ResizeToParent.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.Scroller.Directive.ts" />
+    <Content Include="Scripts\externalCommand\ExternalCommandHandlerService.ts" />
+    <Content Include="Scripts\externalCommand\ExternalCommands.ts" />
+    <Content Include="Scripts\externalCommand\SharedPropertiesService.ts" />
+    <Content Include="Scripts\externalCommand\WebViewerCommandHandlerService.ts" />
+    <Content Include="Scripts\externalCommand\WebViewerCommands.ts" />
+    <Content Include="Scripts\externalCommand\WebViewerMessageReceiver.ts" />
+    <Content Include="Scripts\jquery\jquery.fancytree.js" />
+    <Content Include="Scripts\jquery\jquery.fancytree.table.js" />
+    <Content Include="Scripts\jquery\jquery.resize.js" />
+    <Content Include="Scripts\angular\angular-idle.min.js" />
+    <Content Include="Scripts\angular\loading-bar.js" />
+    <Content Include="Scripts\angular\ui-bootstrap-tpls-0.11.0.min.js" />
+    <Content Include="Scripts\jquery\jquery.cookie.js" />
+    <Content Include="Scripts\jquery\jquery.layout-latest.min.js" />
+    <Content Include="Scripts\jquery\jquery.ui.draggable.min.js" />
+    <TypeScriptCompile Include="Scripts\services\PatientAccessRightsService.ts" />
+    <TypeScriptCompile Include="Scripts\services\EventService.ts" />
+    <TypeScriptCompile Include="Scripts\models\ImageFrame.ts" />
+    <TypeScriptCompile Include="Scripts\models\DataModels.ts" />
+    <TypeScriptCompile Include="Scripts\services\ObjectStoreService.ts" />
+    <TypeScriptCompile Include="Scripts\services\ExportService.ts" />
+    <TypeScriptCompile Include="Scripts\services\ExportManagerService.ts" />
+    <TypeScriptCompile Include="Scripts\services\MonitorCalibrationService.ts" />
+    <TypeScriptCompile Include="Scripts\services\AuditLogService.ts" />
+    <TypeScriptCompile Include="Scripts\services\ExternalApplicationsService.ts" />
+    <TypeScriptCompile Include="Scripts\services\PrintService.ts" />
+    <TypeScriptCompile Include="Scripts\services\QueryPacsService.ts" />
+    <TypeScriptCompile Include="Scripts\services\SeriesDownloadQueueService.ts" />
+    <TypeScriptCompile Include="Scripts\services\PacsRetrieveService.ts" />
+    <Content Include="Scripts\services\PatientService.ts" />
+    <Content Include="Scripts\uuid.js" />
+    <Content Include="views\dialogs\AddWadoServer.html" />
+    <Content Include="views\dialogs\CodeSequenceEditor.html" />
+    <Content Include="views\dialogs\PasswordChange.html" />
+    <Content Include="views\dialogs\Settings3D.html" />
+    <Content Include="views\dialogs\HangingProtocol-Step4.html" />
+    <Content Include="views\dialogs\HangingProtocolDefinitionSequence.html" />
+    <Content Include="views\dialogs\HangingProtocol-Step3.html" />
+    <Content Include="views\dialogs\HangingProtocol-Step2.html" />
+    <Content Include="views\dialogs\HangingProtocol-Step1.html" />
+    <Content Include="views\dialogs\HangingProtocol.html" />
+    <Content Include="views\dialogs\Confirmation.html" />
+    <Content Include="views\dialogs\GridSettings.html" />
+    <Content Include="views\dialogs\DSFilterOperationEditor.html" />
+    <Content Include="views\dialogs\HPImageSetSelectorEditor.html" />
+    <Content Include="views\dialogs\HPTimeBasedImageSetsEditor.html" />
+    <Content Include="views\dialogs\RemoteWado.html" />
+    <Content Include="views\dialogs\ScriptEditor.html" />
+    <Content Include="views\dialogs\UISettings.html" />
+    <Content Include="views\dialogs\Upload.html" />
+    <Content Include="views\dialogs\RolePatientsAccess.html" />
+    <Content Include="views\dialogs\UploadFiles.html" />
+    <Content Include="views\dialogs\UserPatientsAccess.html" />
+    <Content Include="views\dialogs\Prompt.html" />
+    <Content Include="views\dialogs\Hsl.html" />
+    <Content Include="views\dialogs\Print.html" />
+    <Content Include="views\dialogs\RunApp.html" />
+    <Content Include="views\dialogs\AddApp.html" />
+    <Content Include="views\CompareView.html" />
+    <Content Include="views\dialogs\CalibrateRuler.html" />
+    <Content Include="views\dialogs\TagChooserDialog.html" />
+    <Content Include="views\dialogs\ViewDicom_Mobile.html" />
+    <Content Include="views\dialogs\WindowLevelCustom.html" />
+    <Content Include="views\dialogs\SeriesLayout.html" />
+    <Content Include="views\dialogs\StudyLayout.html" />
+    <Content Include="views\dialogs\PermissionsManagement.html" />
+    <Content Include="views\PacsQuery.html" />
+    <Content Include="views\TemplateEditorView.html" />
+    <Content Include="views\templates\ExpandableRowTemplate.html" />
+    <Content Include="views\templates\UpdateRole.html" />
+    <Content Include="views\templates\NewRole.html" />
+    <Content Include="views\templates\UpdateTheme.html" />
+    <Content Include="views\templates\UpdateUser.html" />
+    <Content Include="views\templates\NewUser.html" />
+    <Content Include="views\UserQueueView.html" />
+    <Content Include="views\dialogs\AddToolbarItem.html" />
+    <Content Include="views\dialogs\AddOverlayTag.html" />
+    <Content Include="views\dialogs\Annotations.html" />
+    <Content Include="views\dialogs\AnnotationsSave.html" />
+    <Content Include="views\dialogs\Audio.html" />
+    <Content Include="views\dialogs\CinePlayer.html" />
+    <Content Include="views\dialogs\AddPacsServer.html" />
+    <Content Include="views\dialogs\RemotePacs.html" />
+    <Content Include="views\dialogs\BrightnessContrast.html" />
+    <Content Include="views\dialogs\SaveAsDerived.html" />
+    <Content Include="views\dialogs\ViewDicom.html" />
+    <Content Include="views\dialogs\ToolbarItemEditor.html" />
+    <Content Include="views\dialogs\ToolbarSettings.html" />
+    <Content Include="views\dialogs\GetWorkstation.html" />
+    <Content Include="views\dialogs\MonitorCalibration.html" />
+    <Content Include="views\dialogs\GlobalOptions.html" />
+    <Content Include="views\dialogs\Export.html" />
+    <Content Include="views\dialogs\OverlaySettings.html" />
+    <Content Include="views\login.html" />
+    <Content Include="views\medicalviewer.html" />
+    <Content Include="views\DentalSearchView.html" />
+    <Content Include="views\DentalViewer.html" />
+    <Content Include="views\SearchView.html" />
+    <Content Include="views\templates\AudioPlayer.html" />
+    <Content Include="views\Viewer.html" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\app.ts" />
+    <TypeScriptCompile Include="lib\angular\angular-route.d.ts" />
+    <TypeScriptCompile Include="lib\angular\angular-ui-bootstrap.d.ts" />
+    <TypeScriptCompile Include="lib\angular\angular.d.ts" />
+    <TypeScriptCompile Include="lib\custom.d.ts" />
+    <TypeScriptCompile Include="lib\datejs.d.ts" />
+    <TypeScriptCompile Include="lib\LEADTOOLS\jquery\jquery.cookie.d.ts" />
+    <TypeScriptCompile Include="lib\LEADTOOLS\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="lib\LEADTOOLS\jquery\jquery.ui.layout.d.ts" />
+    <TypeScriptCompile Include="lib\LEADTOOLS\jquery\jqueryui.d.ts" />
+    <TypeScriptCompile Include="lib\UUID.d.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\AddToolbarItemController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\AdminToolbarSettingsController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\AddTagController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\GetWorkstationController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\GlobalOptionsController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\LoginController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\MedicalWebViewerController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\DentalSearchViewController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\MonitorCalibrationController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\OverlaySettingsController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\Scopes.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\SearchController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\SearchViewController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\DentalViewerController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\SeriesListController.ts" />
+    <TypeScriptCompile Include="Scripts\controllers\ViewerController.ts" />
+    <TypeScriptCompile Include="Scripts\controls\PropertyGrid.ts" />
+    <TypeScriptCompile Include="Scripts\controls\AutomationInteractiveMode.ts" />
+    <TypeScriptCompile Include="Scripts\controls\AutomationManagerHelper.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.FancyTree.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.MedicalViewer.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.ShakeThat.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.PropertyGrid.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.Toolbar.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\directives\Leadtools.uiLayout.Directive.ts" />
+    <TypeScriptCompile Include="Scripts\filters\PluralizeFilter.ts" />
+    <TypeScriptCompile Include="Scripts\models\QueryOptions.ts" />
+    <TypeScriptCompile Include="Scripts\models\Tab.ts" />
+    <TypeScriptCompile Include="Scripts\models\Toolbar.ts" />
+    <TypeScriptCompile Include="Scripts\services\AuthenticationService.ts" />
+    <TypeScriptCompile Include="Scripts\services\DicomLoaderService.ts" />
+    <TypeScriptCompile Include="Scripts\services\SeriesManagerService.ts" />
+    <TypeScriptCompile Include="Scripts\services\CinePlayerService.ts" />
+    <TypeScriptCompile Include="Scripts\services\ObjectRetrieveService.ts" />
+    <TypeScriptCompile Include="Scripts\services\OptionsService.ts" />
+    <TypeScriptCompile Include="Scripts\services\OverlayManagerService.ts" />
+    <TypeScriptCompile Include="Scripts\services\QueryArchiveService.ts" />
+    <TypeScriptCompile Include="Scripts\services\DataService.ts" />
+    <TypeScriptCompile Include="Scripts\services\TabService.ts" />
+    <TypeScriptCompile Include="Scripts\services\ToolbarService.ts" />
+    <TypeScriptCompile Include="Scripts\Utils.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="languages\en-US.json" />
+    <Content Include="css\ui-grid.woff" />
+    <Content Include="css\ui-grid.ttf" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="members\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>MedicalWebViewer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1940</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/MedicalViewer/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptOutFile>.\Scripts\MedicalViewerDemo.js</TypeScriptOutFile>
+    <TypeScriptOutDir />
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>@copy "$(ProjectDir)Scripts\MedicalViewerDemo.js" "$(ProjectDir)Scripts\MedicalViewerDemo.min.js" /y
+
+@IF $(ConfigurationName) == ReleaseMini ( 
+	IF NOT "%25JAVA_HOME%25"=="" ( 
+      ECHO Minifying JS...
+       "%25JAVA_HOME%25\bin\java.exe" -jar "$(ProjectDir)closure\compiler.jar" --js_output_file="$(ProjectDir)Scripts\MedicalViewerDemo.min.js" "$(ProjectDir)Scripts\MedicalViewerDemo.js" --compilation_level SIMPLE
+		)  ELSE ( ECHO Java is not installed, minifying was skipped! )
+	)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

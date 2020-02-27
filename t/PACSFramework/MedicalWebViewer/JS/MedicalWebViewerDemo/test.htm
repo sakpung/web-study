@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<!-- saved from url=(0123)https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-configure-your-server-to-work-with-html5mode -->
+<html class="   "><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>Frequently Asked Questions · angular-ui/ui-router Wiki · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site"><meta content="summary" name="twitter:card"><meta content="angular-ui/ui-router" name="twitter:title"><meta content="ui-router - The de-facto solution to flexible routing with nested views" name="twitter:description"><meta content="https://avatars3.githubusercontent.com/u/1530011?s=400" name="twitter:image:src">
+<meta content="GitHub" property="og:site_name"><meta content="object" property="og:type"><meta content="https://avatars3.githubusercontent.com/u/1530011?s=400" property="og:image"><meta content="angular-ui/ui-router" property="og:title"><meta content="https://github.com/angular-ui/ui-router" property="og:url"><meta content="ui-router - The de-facto solution to flexible routing with nested views" property="og:description">
+
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_wiki" data-pjax-transient="">
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host"><meta content="collector-cdn.github.com" name="octolytics-script-host"><meta content="github" name="octolytics-app-id"><meta content="D886C53E:7282:1DFC004:53CFF06F" name="octolytics-dimension-request_id">
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="/qfZqwW3/H2kLOww9q7EaMyAEKktrTbQvzGJJFckGS9XiFufPm6mpUrixek9SZ+LJkvp5olTQatH9yG4ShjFqw==" name="csrf-token">
+
+    <link href="./test_files/github-3c35fa891ec60684eddfbf111543a34660ac7e5b.css" media="all" rel="stylesheet" type="text/css">
+    <link href="./test_files/github2-f3218de7e979dec2faca17bdc18ddcfb6aba4723.css" media="all" rel="stylesheet" type="text/css">
+    
+
+
+    <meta http-equiv="x-pjax-version" content="12971954cccc74375b648688414c382b">
+
+      
+  <meta name="description" content="ui-router - The de-facto solution to flexible routing with nested views">
+
+
+  <meta content="1530011" name="octolytics-dimension-user_id"><meta content="angular-ui" name="octolytics-dimension-user_login"><meta content="7693799" name="octolytics-dimension-repository_id"><meta content="angular-ui/ui-router" name="octolytics-dimension-repository_nwo"><meta content="true" name="octolytics-dimension-repository_public"><meta content="false" name="octolytics-dimension-repository_is_fork"><meta content="7693799" name="octolytics-dimension-repository_network_root_id"><meta content="angular-ui/ui-router" name="octolytics-dimension-repository_network_root_nwo">
+
+  <link href="https://github.com/angular-ui/ui-router/commits/master.atom" rel="alternate" title="Recent Commits to ui-router:master" type="application/atom+xml">
+
+  <script type="text/javascript" async="" src="./test_files/api.js"></script></head>
+
+
+  <body class="logged_out  env-production windows vis-public">
+    <a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="https://github.com/join">Sign up</a>
+      <a class="button signin" href="https://github.com/login?return_to=%2Fangular-ui%2Fui-router%2Fwiki%2FFrequently-Asked-Questions">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  in-repository">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="https://github.com/explore">Explore</a></li>
+          <li class="features"><a href="https://github.com/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="https://github.com/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="https://github.com/search" class="command-bar-form" id="top_search_form" method="get">
+
+<div class="commandbar">
+  <span class="message"></span>
+  <input type="text" data-hotkey="s, /" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off" data-repo="angular-ui/ui-router">
+  <div class="display hidden"></div>
+</div>
+
+    <input type="hidden" name="nwo" value="angular-ui/ui-router">
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked">
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global">
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope="" itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fangular-ui%2Fui-router" class="minibutton with-count star-button tooltipped tooltipped-n" aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="https://github.com/angular-ui/ui-router/stargazers">
+      3,655
+    </a>
+
+  </li>
+
+    <li>
+      <a href="https://github.com/login?return_to=%2Fangular-ui%2Fui-router" class="minibutton with-count js-toggler-target fork-button tooltipped tooltipped-n" aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="https://github.com/angular-ui/ui-router/network" class="social-count">
+        886
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="https://github.com/angular-ui" class="url fn" itemprop="url" rel="author"><span itemprop="title">angular-ui</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="https://github.com/angular-ui/ui-router" class="js-current-repository js-repo-home-link">ui-router</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="./test_files/octocat-spinner-32.gif" width="16">
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline js-new-discussion-timeline">
+        <div class="repository-sidebar clearfix">
+            
+
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders" data-issue-count-url="/angular-ui/ui-router/issues/counts">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped tooltipped-w" aria-label="Code">
+        <a href="https://github.com/angular-ui/ui-router" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /angular-ui/ui-router">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="" class="mini-loader" height="16" src="./test_files/octocat-spinner-32.gif" width="16">
+</a>      </li>
+
+        <li class="tooltipped tooltipped-w" aria-label="Issues">
+          <a href="https://github.com/angular-ui/ui-router/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /angular-ui/ui-router/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class="js-issue-replace-counter"></span>
+            <img alt="" class="mini-loader" height="16" src="./test_files/octocat-spinner-32.gif" width="16">
+</a>        </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+        <a href="https://github.com/angular-ui/ui-router/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g p" data-selected-links="repo_pulls /angular-ui/ui-router/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class="js-pull-replace-counter"></span>
+            <img alt="" class="mini-loader" height="16" src="./test_files/octocat-spinner-32.gif" width="16">
+</a>      </li>
+
+
+        <li class="tooltipped tooltipped-w" aria-label="Wiki">
+          <a href="https://github.com/angular-ui/ui-router/wiki" aria-label="Wiki" class="selected js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g w" data-selected-links="repo_wiki /angular-ui/ui-router/wiki">
+            <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+            <img alt="" class="mini-loader" height="16" src="./test_files/octocat-spinner-32.gif" width="16">
+</a>        </li>
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped tooltipped-w" aria-label="Pulse">
+        <a href="https://github.com/angular-ui/ui-router/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /angular-ui/ui-router/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="" class="mini-loader" height="16" src="./test_files/octocat-spinner-32.gif" width="16">
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Graphs">
+        <a href="https://github.com/angular-ui/ui-router/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /angular-ui/ui-router/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="" class="mini-loader" height="16" src="./test_files/octocat-spinner-32.gif" width="16">
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+              <div class="only-with-full-nav">
+                
+
+  
+
+<div class="clone-url open" data-protocol-type="http" data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field" value="https://github.com/angular-ui/ui-router.git" readonly="readonly">
+    <span class="url-box-clippy">
+    <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/angular-ui/ui-router.git" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url " data-protocol-type="subversion" data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field" value="https://github.com/angular-ui/ui-router" readonly="readonly">
+    <span class="url-box-clippy">
+    <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/angular-ui/ui-router" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#" class="js-clone-selector" data-protocol="http">HTTPS</a>
+      or <a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+  <a href="http://windows.github.com/" class="minibutton sidebar-button" title="Save angular-ui/ui-router to your computer and use it in GitHub Desktop." aria-label="Save angular-ui/ui-router to your computer and use it in GitHub Desktop.">
+    <span class="octicon octicon-device-desktop"></span>
+    Clone in Desktop
+  </a>
+
+                <a href="https://github.com/angular-ui/ui-router/archive/master.zip" class="minibutton sidebar-button" aria-label="Download angular-ui/ui-router as a zip file" title="Download angular-ui/ui-router as a zip file" rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container="">
+          
+
+
+<div id="wiki-wrapper" class="wiki-wrapper page">
+<div class="gh-header">
+  <div class="gh-header-show">
+      <div class="gh-header-actions">
+      </div>
+    <a class="gh-header-back js-issue-listing-back" href="https://github.com/angular-ui/ui-router/wiki" title="Back to the Wiki Home">
+      <span class="mega-octicon octicon-chevron-left"></span>
+    </a>
+    <h1 class="gh-header-title instapaper_title">Frequently Asked Questions&nbsp;</h1>
+      <div class="gh-header-meta">
+        <a href="https://github.com/Offirmo" class="author">Offirmo</a> edited this page <time datetime="2014-07-20T10:56:25-07:00" is="relative-time" title="Jul 20, 2014 1:56 PM EDT">3 days ago</time>
+        ·
+        <a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions/_history" class="history">
+          30 revisions
+        </a>
+      </div>
+  </div>
+</div>
+<div id="wiki-content">
+  <div class="wrap has-rightbar">
+
+  <div id="wiki-rightbar">
+    <div class="wiki-pages-box readability-sidebar box box-small js-wiki-pages-box collapsed">
+      
+
+
+  <div class="box-header js-wiki-toggle-collapse wiki-auxiliary-content">
+    <h3 class="box-title">
+      <span class="octicon octicon-triangle-down caret-expanded"></span>
+      <span class="octicon octicon-triangle-right caret-collapsed"></span>
+      Pages <span class="counter">13</span>
+    </h3>
+  </div>
+  <div class="box-body wiki-auxiliary-content wiki-auxiliary-content-no-bg">
+
+    <ul class="wiki-pages" data-filterable-for="wiki-pages-filter" data-filterable-type="substring">
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/Backwards-Compatibility">Backwards Compatibility</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/Blog-Posts-&-Forks">Blog Posts &amp; Forks</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions">Frequently Asked Questions</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki">Home</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/Important-Concepts">Important Concepts</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/Multiple-Named-Views">Multiple Named Views</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/Nested-States-&-Nested-Views">Nested States &amp; Nested Views</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/Quick-Reference">Quick Reference</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/Roadmap">Roadmap</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/State-manager">State manager</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/The-Components">The Components</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/URL-Routing">URL Routing</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/angular-ui/ui-router/wiki/Votes-on-Router-Specs-(old)">Votes on Router Specs (old)</a></strong>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+
+      <div class="gollum-markdown-content readability-sidebar box box-small">
+        <div class="box-body box-body-padded box-body-no-header wiki-custom-sidebar wiki-auxiliary-content wiki-auxiliary-content-no-bg  markdown-body">
+          <p><strong>In-Depth Guide</strong></p>
+
+<ul class="task-list">
+<li><a class="internal present" href="https://github.com/angular-ui/ui-router/wiki/Home">State Manager</a></li>
+<li><a class="internal present" href="https://github.com/angular-ui/ui-router/wiki/Nested-States-%26-Nested-Views">Nested States &amp; Nested Views</a></li>
+<li><a class="internal present" href="https://github.com/angular-ui/ui-router/wiki/Multiple-Named-Views">Multiple Named Views</a></li>
+<li><a class="internal present" href="https://github.com/angular-ui/ui-router/wiki/URL-Routing">URL Routing</a></li>
+<li><a class="internal present" href="https://github.com/angular-ui/ui-router/wiki/The-Components">The Components</a></li>
+</ul><p><strong>Reference Docs</strong></p>
+
+<ul class="task-list">
+<li><a href="http://angular-ui.github.io/ui-router/site">API Reference</a></li>
+<li><a href="http://angular-ui.github.io/ui-router/sample">Sample App</a></li>
+<li><a class="internal present" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions">FAQ</a></li>
+<li><a class="internal present" href="https://github.com/angular-ui/ui-router/wiki/Blog-Posts-%26-Forks">Blog Posts &amp; Forks</a></li>
+</ul>
+        </div>
+      </div>
+
+    <div class="clone-url" data-protocol-type="" data-url="https://github.com/angular-ui/ui-router.wiki.git">
+      <h5>Clone this wiki locally</h5>
+      <div class="clone-url-box">
+        <input type="text" class="clone js-url-field" value="https://github.com/angular-ui/ui-router.wiki.git" readonly="readonly">
+        <span class="url-box-clippy">
+          <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/angular-ui/ui-router.wiki.git" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+        </span>
+      </div>
+
+
+        <a href="github-windows://openRepo/https://github.com/angular-ui/ui-router.wiki.git" class="minibutton sidebar-button" title="Save this wiki to your computer and use it in GitHub Desktop." aria-label="Save this wiki to your computer and use it in GitHub Desktop.">
+          <span class="octicon octicon-device-desktop"></span>
+          Clone in Desktop
+        </a>
+    </div>
+  </div>
+
+  <div id="wiki-body" class="gollum-markdown-content instapaper_body">
+    <div class="markdown-body">
+      <h3>
+<a name="user-content-table-of-contents" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of Contents:</h3>
+
+<p><strong>How Tos:</strong></p>
+
+<p>How Tos are solutions to common problems. They aren't necessarily the only solution to the problem but typically stemmed from a discussion in an issues thread, where we didn't want to add a new feature but realized it may not be clear how to achieve a certain functionality.</p>
+
+<ul class="task-list">
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-configure-ui-router-from-multiple-modules">How to: Configure ui-router from multiple modules</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-open-a-dialogmodal-at-a-certain-state">How to: Open a dialog/modal at a certain state</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-animate-ui-view-with-ng-animate">How to: Animate ui-view with ng-animate</a></li>
+<li><a href="./test_files/test.htm">How to: Configure your server to work with html5Mode</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-set-up-a-defaultindex-child-state">How to: Set up a default/index child state</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-use-requirejs-with-ui-router">How to: Use require.js with ui-router</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-lazy-load-states">How to: Lazy load states</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-parallel-states-aka-sticky-states-aka-tabs">How to: Make states work with tabs</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-retain-a-states-state-scope-and-scroll-position">How to: Retain a states state</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes">How to: Make trailing slash optional</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-create-rules-to-prevent-access-to-a-state">How to: Create rules to prevent access to a state</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-prevent-nested-ui-sref-objects-from-all-firingtriggering">How to: Prevent nested ui-sref objects from all firing/triggering</a></li>
+</ul><p><strong>Popular Issues:</strong></p>
+
+<ul class="task-list">
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-my-templates-are-not-appearing--loading--showing">Issue: My templates are not appearing / loading / showing</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-my-assets-and-templates-are-not-loading">Issue: My assets and templates are not loading</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-problems-when-using-ng-view-alongside-ui-view">Issue: Problems when using ng-view alongside ui-view</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-javascript-errors-dont-throw-within-resolve-functions">Issue: JavaScript errors don't throw within resolve functions</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-typeerror-attempted-to-assign-to-readonly-property-when-running-grunt-tests">Issue: <code>TypeError: Attempted to assign to readonly property</code> when running <code>grunt</code> tests</a></li>
+</ul><hr><h2>
+<a name="user-content-how-to-configure-ui-router-from-multiple-modules" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-configure-ui-router-from-multiple-modules" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Configure ui-router from multiple modules</h2>
+
+<p>With <a href="https://github.com/angular-ui/ui-router/pull/492">#492</a> merged (v0.2.8), you can now register states in any order and across modules. You can register children before the parent state exists. It will queue them up and once the parent state is registered then the child will be registered. Note: You still need to manage module dependencies.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'main'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'main.page1'</span><span class="p">]).</span><span class="nx">config</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$stateProvider</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$stateProvider</span><span class="p">.</span><span class="nx">state</span><span class="p">(</span><span class="s1">'main'</span><span class="p">,</span> <span class="p">{...})</span>
+<span class="p">});</span>
+
+<span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'main.page1'</span><span class="p">,</span> <span class="p">[]).</span><span class="nx">config</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$stateProvider</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$stateProvider</span><span class="p">.</span><span class="nx">state</span><span class="p">(</span><span class="s1">'main.page1'</span><span class="p">,</span> <span class="p">{...})</span>
+<span class="p">});</span>
+</pre></div>
+
+<p><strong>Note:</strong> Remember only to declare dependencies once per module creation, so if you make several calls to <code>angular.module</code> for the same module, only the first should define dependencies.</p>
+
+<h2>
+<a name="user-content-how-to-open-a-dialogmodal-at-a-certain-state" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-open-a-dialogmodal-at-a-certain-state" aria-hidden="true"><span class="octicon octicon-link"></span></a>How To: Open a dialog/modal at a certain state</h2>
+
+<p>How do I tell ui-router that I'd like a certain state to open a dialog or modal instead of swapping out ui-view templates?</p>
+
+<p>Here's an example of to do it using ui-bootstrap's <a href="http://angular-ui.github.io/bootstrap/#modal">$modal</a> service. This example only specifies an onEnter function. There is no template, controller, etc. So essentially the modal is shown, then when its closed it returns to the <code>items</code> state. You are still responsible for handling what state your app transitions to when the modal closes.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$stateProvider</span><span class="p">.</span><span class="nx">state</span><span class="p">(</span><span class="s2">"items.add"</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s2">"/add"</span><span class="p">,</span>
+    <span class="nx">onEnter</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$stateParams</span><span class="p">,</span> <span class="nx">$state</span><span class="p">,</span> <span class="nx">$modal</span><span class="p">,</span> <span class="nx">$resource</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">$modal</span><span class="p">.</span><span class="nx">open</span><span class="p">({</span>
+            <span class="nx">templateUrl</span><span class="o">:</span> <span class="s2">"items/add"</span><span class="p">,</span>
+            <span class="nx">resolve</span><span class="o">:</span> <span class="p">{</span>
+              <span class="nx">item</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">new</span> <span class="nx">Item</span><span class="p">(</span><span class="mi">123</span><span class="p">).</span><span class="nx">get</span><span class="p">();</span> <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="nx">controller</span><span class="o">:</span> <span class="p">[</span><span class="s1">'$scope'</span><span class="p">,</span> <span class="s1">'item'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">,</span> <span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+              <span class="nx">$scope</span><span class="p">.</span><span class="nx">dismiss</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                <span class="nx">$scope</span><span class="p">.</span><span class="nx">$dismiss</span><span class="p">();</span>
+              <span class="p">};</span>
+
+              <span class="nx">$scope</span><span class="p">.</span><span class="nx">save</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                <span class="nx">item</span><span class="p">.</span><span class="nx">update</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                  <span class="nx">$scope</span><span class="p">.</span><span class="nx">$close</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+                <span class="p">});</span>
+              <span class="p">};</span>
+            <span class="p">}]</span>
+        <span class="p">}).</span><span class="nx">result</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nx">$state</span><span class="p">.</span><span class="nx">transitionTo</span><span class="p">(</span><span class="s2">"items"</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="user-content-how-to-animate-ui-view-with-ng-animate" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-animate-ui-view-with-ng-animate" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Animate ui-view with ng-animate</h2>
+
+<p>How do I add animation effects to the ui-view templates that are loaded?</p>
+
+<h4>
+<a name="user-content-angular-12-animation-syntax" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#angular-12-animation-syntax" aria-hidden="true"><span class="octicon octicon-link"></span></a>Angular 1.2+ animation syntax</h4>
+
+<p>This is just one example of how you can do it. I had to set the ui-view container to be position relative as well as set the ui-view to be position absolute to obtain the effect I wanted, but those are not required depending on the effect you are trying to achieve.</p>
+
+<p><strong>Plunkr:</strong> <a href="http://plnkr.co/edit/NsZhDL?p=preview">http://plnkr.co/edit/NsZhDL?p=preview</a></p>
+
+<p><strong>HTML</strong></p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"span12 ui-view-container"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"well"</span> <span class="na">ui-view</span><span class="nt">&gt;&lt;/div&gt;</span>        
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span> 
+</pre></div>
+
+<p><strong>CSS</strong></p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Have to set height explicity on ui-view </span>
+<span class="c">to prevent collapsing during animation*/</span>
+<span class="nc">.well</span><span class="o">[</span><span class="nt">ui-view</span><span class="o">]</span><span class="p">{</span>
+ <span class="k">height</span><span class="o">:</span> <span class="m">65px</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nc">.ui-view-container</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">[</span><span class="nt">ui-view</span><span class="o">]</span><span class="nc">.ng-enter</span><span class="o">,</span> <span class="o">[</span><span class="nt">ui-view</span><span class="o">]</span><span class="nc">.ng-leave</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span><span class="n">all</span> <span class="m">.5s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">out</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span><span class="n">all</span> <span class="m">.5s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">out</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span><span class="n">all</span> <span class="m">.5s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">out</span><span class="p">;</span>
+    <span class="n">transition</span><span class="o">:</span><span class="n">all</span> <span class="m">.5s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">out</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">[</span><span class="nt">ui-view</span><span class="o">]</span><span class="nc">.ng-enter</span> <span class="p">{</span>
+  <span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">scale3d</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">scale3d</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+  <span class="n">transform</span><span class="o">:</span><span class="n">scale3d</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="o">[</span><span class="nt">ui-view</span><span class="o">]</span><span class="nc">.ng-enter-active</span> <span class="p">{</span>
+  <span class="k">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">scale3d</span><span class="p">(</span><span class="m">1</span><span class="o">,</span> <span class="m">1</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">scale3d</span><span class="p">(</span><span class="m">1</span><span class="o">,</span> <span class="m">1</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
+  <span class="n">transform</span><span class="o">:</span><span class="n">scale3d</span><span class="p">(</span><span class="m">1</span><span class="o">,</span> <span class="m">1</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="o">[</span><span class="nt">ui-view</span><span class="o">]</span><span class="nc">.ng-leave</span> <span class="p">{</span>
+  <span class="k">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span> 
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">translate3d</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">translate3d</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
+  <span class="n">transform</span><span class="o">:</span><span class="n">translate3d</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="o">[</span><span class="nt">ui-view</span><span class="o">]</span><span class="nc">.ng-leave-active</span> <span class="p">{</span>
+  <span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">translate3d</span><span class="p">(</span><span class="m">100px</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">translate3d</span><span class="p">(</span><span class="m">100px</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
+  <span class="n">transform</span><span class="o">:</span><span class="n">translate3d</span><span class="p">(</span><span class="m">100px</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<h4>
+<a name="user-content-angular-115-animation-syntax-using-ng-animate-directive" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#angular-115-animation-syntax-using-ng-animate-directive" aria-hidden="true"><span class="octicon octicon-link"></span></a>Angular 1.1.5 animation syntax (using ng-animate directive)</h4>
+
+<p>Make sure you are using the 1.1.5 version of Angular. It's not the newest angular but this is for devs who may be stuck with that version (Note: 1.1.4 had a totally different syntax that won't work with this example).</p>
+
+<p><strong>Plunkr:</strong> <a href="http://plnkr.co/edit/EmNvz8?p=preview">http://plnkr.co/edit/EmNvz8?p=preview</a></p>
+
+<p>Add <code>ng-animate="'view'"</code> to your ui-view:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">ui-view</span> <span class="na">ng-animate=</span><span class="s">"'view'"</span><span class="nt">&gt;&lt;/div&gt;</span> 
+</pre></div>
+
+<p>The animation class doesn't have to be "view" that's just an example. Then create a view-enter, view-enter-active, view-leave, and view-leave-active class styles in your css.  The "-enter" class will be used to set up the animations and the "-enter-active" will be used as the end point of the animation.</p>
+
+<h2>
+<a name="user-content-how-to-configure-your-server-to-work-with-html5mode" class="anchor" href="./test_files/test.htm" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Configure your server to work with html5Mode</h2>
+
+<p>When I add <code>$locationProvider.html5Mode(true)</code>, my site will not allow pasting of urls. How do I configure my server to work when html5Mode is true?</p>
+
+<p><em>Warning:</em> If you have server side rewrites already set up and still experience issues, please see <a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-my-assets-and-templates-are-not-loading">Issue: assets and templates are not loading</a>.</p>
+
+<p>When you have html5Mode enabled, the <code>#</code> character will no longer be used in your urls. The <code>#</code> symbol is useful because it requires no server side configuration. Without <code>#</code>, the url looks much nicer, but it also requires server side rewrites. Here are some examples:</p>
+
+<p><strong>Apache Rewrites</strong></p>
+
+<div class="highlight highlight-apache"><pre><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+    <span class="nb">ServerName</span> my-app
+
+    <span class="nb">DocumentRoot</span> <span class="sx">/path/to/app</span>
+
+    <span class="nt">&lt;Directory</span> <span class="s">/path/to/app</span><span class="nt">&gt;</span>
+        <span class="nb">RewriteEngine</span> <span class="k">on</span>
+
+        <span class="c"># Don't rewrite files or directories</span>
+        <span class="nb">RewriteCond</span> %{REQUEST_FILENAME} -f [OR]
+        <span class="nb">RewriteCond</span> %{REQUEST_FILENAME} -d
+        <span class="nb">RewriteRule</span> ^ - [L]
+
+        <span class="c"># Rewrite everything else to index.html to allow html5 state links</span>
+        <span class="nb">RewriteRule</span> ^ index.html [L]
+    <span class="nt">&lt;/Directory&gt;</span>
+<span class="nt">&lt;/VirtualHost&gt;</span>
+</pre></div>
+
+<p><strong>Nginx Rewrites</strong></p>
+
+<div class="highlight highlight-nginx"><pre><span class="k">server</span> <span class="p">{</span>
+    <span class="kn">server_name</span> <span class="s">my-app</span><span class="p">;</span>
+
+    <span class="kn">root</span> <span class="s">/path/to/app</span><span class="p">;</span>
+
+    <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+        <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri/</span> <span class="s">/index.html</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p><strong>Azure IIS Rewrites</strong></p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;system.webServer&gt;</span>
+  <span class="nt">&lt;rewrite&gt;</span>
+    <span class="nt">&lt;rules&gt;</span> 
+      <span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"Main Rule"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">".*"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;conditions</span> <span class="na">logicalGrouping=</span><span class="s">"MatchAll"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{REQUEST_FILENAME}"</span> <span class="na">matchType=</span><span class="s">"IsFile"</span> <span class="na">negate=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>                                 
+          <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{REQUEST_FILENAME}"</span> <span class="na">matchType=</span><span class="s">"IsDirectory"</span> <span class="na">negate=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/conditions&gt;</span>
+        <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"Rewrite"</span> <span class="na">url=</span><span class="s">"/"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/rule&gt;</span>
+    <span class="nt">&lt;/rules&gt;</span>
+  <span class="nt">&lt;/rewrite&gt;</span>
+<span class="nt">&lt;/system.webServer&gt;</span>
+</pre></div>
+
+<p><strong>Express Rewrites</strong></p>
+
+<div class="highlight highlight-javascript"><pre><span class="kd">var</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'express'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">'/js'</span><span class="p">,</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span><span class="nx">__dirname</span> <span class="o">+</span> <span class="s1">'/js'</span><span class="p">));</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">'/dist'</span><span class="p">,</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span><span class="nx">__dirname</span> <span class="o">+</span> <span class="s1">'/../dist'</span><span class="p">));</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">'/css'</span><span class="p">,</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span><span class="nx">__dirname</span> <span class="o">+</span> <span class="s1">'/css'</span><span class="p">));</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">'/partials'</span><span class="p">,</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span><span class="nx">__dirname</span> <span class="o">+</span> <span class="s1">'/partials'</span><span class="p">));</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="s1">'/*'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Just send the index.html for other files to support HTML5Mode</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">sendfile</span><span class="p">(</span><span class="s1">'index.html'</span><span class="p">,</span> <span class="p">{</span> <span class="nx">root</span><span class="o">:</span> <span class="nx">__dirname</span> <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3006</span><span class="p">);</span> <span class="c1">//the port you want to use</span>
+</pre></div>
+
+<p>Also, read this great tutorial about <a href="http://briantford.com/blog/angular-express.html">Angular + Express</a></p>
+
+<p><strong>ASP.Net C# Rewrites</strong></p>
+
+<p>In Global.asax</p>
+
+<div class="highlight highlight-C#"><pre><span class="k">private</span> <span class="k">const</span> <span class="kt">string</span> <span class="n">ROOT_DOCUMENT</span> <span class="p">=</span> <span class="s">"/default.aspx"</span><span class="p">;</span>
+
+<span class="k">protected</span> <span class="k">void</span> <span class="nf">Application_BeginRequest</span><span class="p">(</span> <span class="n">Object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span> <span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">string</span> <span class="n">url</span> <span class="p">=</span> <span class="n">Request</span><span class="p">.</span><span class="n">Url</span><span class="p">.</span><span class="n">LocalPath</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="p">!</span><span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">File</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span> <span class="n">Context</span><span class="p">.</span><span class="n">Server</span><span class="p">.</span><span class="n">MapPath</span><span class="p">(</span> <span class="n">url</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+        <span class="n">Context</span><span class="p">.</span><span class="n">RewritePath</span><span class="p">(</span> <span class="n">ROOT_DOCUMENT</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2>
+<a name="user-content-how-to-set-up-a-defaultindex-child-state" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-set-up-a-defaultindex-child-state" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Set up a default/index child state</h2>
+
+<p>When I have several nested states, how do I set up one particular child state to be the index, or default, state of its parent?</p>
+
+<p>Let's say you have the following states:</p>
+
+<ul class="task-list">
+<li>'parent'</li>
+<li>'parent.index'</li>
+<li>'parent.page2'</li>
+</ul><p>You want that when the user tries to go to 'parent', it will automatically go to 'parent.index'.</p>
+
+<ol class="task-list">
+<li>First, add a property to the <code>'parent'</code> state of <code>abstract:true</code>. You want to set this since this state will never be activated directly, users will always go to one of it's child states instead.</li>
+</ol><div class="highlight highlight-javascript"><pre><span class="c1">// url '/home', but you'll never see this state directly</span>
+<span class="p">.</span><span class="nx">state</span><span class="p">(</span><span class="s1">'parent'</span><span class="p">,</span> <span class="p">{</span><span class="nx">url</span><span class="o">:</span> <span class="s1">'/home'</span><span class="p">,</span> <span class="kr">abstract</span><span class="o">:</span> <span class="kc">true</span><span class="p">}</span> <span class="p">)</span>
+</pre></div>
+
+<ol class="task-list">
+<li><p>Then do <strong>one</strong> of the following:</p></li>
+</ol><ul class="task-list">
+<li>Give the <code>'parent.index'</code> state an empty url. This will make it match the same url as it's parent state url, because it appends nothing to the parent url.</li>
+</ul><div class="highlight highlight-javascript"><pre><span class="nx">$stateProvider</span>
+    <span class="p">.</span><span class="nx">state</span><span class="p">(</span><span class="s1">'parent'</span><span class="p">,</span> <span class="p">{</span><span class="nx">url</span><span class="o">:</span> <span class="s1">'/home'</span><span class="p">,</span> <span class="kr">abstract</span><span class="o">:</span> <span class="kc">true</span><span class="p">}</span> <span class="p">)</span>
+    <span class="c1">// ALSO url '/home', overriding its parent's activation</span>
+    <span class="p">.</span><span class="nx">state</span><span class="p">(</span><span class="s1">'parent.index'</span><span class="p">,</span> <span class="p">{</span><span class="nx">url</span><span class="o">:</span> <span class="s1">''</span><span class="p">}</span> <span class="p">)</span>
+</pre></div>
+
+<ul class="task-list">
+<li>Or if you want the <code>'parent.index'</code> url to be non-empty, then set up a redirect in your module.config using $urlRouterProvider:</li>
+</ul><div class="highlight highlight-javascript"><pre><span class="nx">$urlRouterProvider</span><span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="s1">'/home'</span><span class="p">,</span> <span class="s1">'/home/index'</span><span class="p">);</span>
+<span class="nx">$stateProvider</span>
+    <span class="p">.</span><span class="nx">state</span><span class="p">(</span><span class="s1">'parent'</span><span class="p">,</span> <span class="p">{</span><span class="nx">url</span><span class="o">:</span> <span class="s1">'/home'</span><span class="p">,</span> <span class="kr">abstract</span><span class="o">:</span> <span class="kc">true</span><span class="p">}</span> <span class="p">)</span>
+    <span class="c1">// url '/home/index'</span>
+    <span class="p">.</span><span class="nx">state</span><span class="p">(</span><span class="s1">'parent.index'</span><span class="p">,</span> <span class="p">{</span><span class="nx">url</span><span class="o">:</span> <span class="s1">'/index'</span><span class="p">}</span> <span class="p">)</span>
+</pre></div>
+
+<h2>
+<a name="user-content-how-to-use-requirejs-with-ui-router" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-use-requirejs-with-ui-router" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Use Require.js with UI-Router</h2>
+
+<p>How can I load ui-router with Require.js? Note: This is not lazy loading, for that see the section below.</p>
+
+<p>The answer to this FAQ can be found here: <a href="https://github.com/angular-ui/ui-router/issues/479#issuecomment-26232775">https://github.com/angular-ui/ui-router/issues/479#issuecomment-26232775</a></p>
+
+<h2>
+<a name="user-content-how-to-lazy-load-states" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-lazy-load-states" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Lazy load states</h2>
+
+<p>How can I load/define a state right when a user attempts to navigate to it?</p>
+
+<p>Take a look at <a href="http://christopherthielen.github.io/ui-router-extras/#/future">Future States</a> by UI-Router-Extras.</p>
+
+<h2>
+<a name="user-content-how-to-make-parallel-states-aka-sticky-states-aka-tabs" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-parallel-states-aka-sticky-states-aka-tabs" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Make parallel states, aka sticky states, aka tabs</h2>
+
+<p>Take a look at <a href="http://christopherthielen.github.io/ui-router-extras/#/sticky">Sticky States</a> by UI-Router-Extras.</p>
+
+<h2>
+<a name="user-content-how-to-retain-a-states-state-scope-and-scroll-position" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-retain-a-states-state-scope-and-scroll-position" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Retain a states state, scope, and scroll position</h2>
+
+<p>Take a look at <a href="http://christopherthielen.github.io/ui-router-extras/#/dsr">Deep State Redirect</a> by UI-Router-Extras.</p>
+
+<h2>
+<a name="user-content-how-to-make-a-trailing-slash-optional-for-all-routes" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Make a trailing slash optional for all routes</h2>
+
+<p>How can I have my routes be activated when the url contains either a trailing slash or not?</p>
+
+<p>Add this snippet to your module's config function. It creates a rule on $urlRouterProvider that maps all urls that are missing a trailing slash to the same url but with the trailing slash appended. </p>
+
+<p>You'll need to specify all urls with a trailing slash if you use this method.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$urlRouterProvider</span><span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">$injector</span><span class="p">,</span> <span class="nx">$location</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">$location</span><span class="p">.</span><span class="nx">url</span><span class="p">();</span>
+
+    <span class="c1">// check to see if the path already has a slash where it should be</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">path</span><span class="p">[</span><span class="nx">path</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">===</span> <span class="s1">'/'</span> <span class="o">||</span> <span class="nx">path</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'/?'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'?'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">path</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">'?'</span><span class="p">,</span> <span class="s1">'/?'</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">path</span> <span class="o">+</span> <span class="s1">'/'</span><span class="p">;</span>
+<span class="p">});</span>
+</pre></div>
+
+<p><strong>Note</strong>: All routes in <code>app/scripts/app.js</code> must be redefined with trailing <code>/</code>. This means that routes such as <code>/things/:id</code> become <code>/things/:id/</code> as well.</p>
+
+<h2>
+<a name="user-content-how-to-create-rules-to-prevent-access-to-a-state" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-create-rules-to-prevent-access-to-a-state" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Create rules to prevent access to a state</h2>
+
+<p>How can I have my states guarded by some logic that determines if a user is allowed to access that state? What if I also want to redirect them based on that logic?</p>
+
+<p>Example: Uses the <code>data</code> object on the state config to define a rule function that will run logic against the user (here using an example service called $currentUser). The <code>$stateChangeStart</code> handler catches all state transition and performs this rule check before allowing the transition, potentially blocking it and/or redirecting to a different state.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">app</span><span class="p">.</span><span class="nx">config</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$stateProvider</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">$stateProvider</span><span class="p">.</span><span class="nx">state</span><span class="p">(</span><span class="s1">'privatePage'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">rule</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// ...</span>
+      <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">run</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$rootScope</span><span class="p">,</span> <span class="nx">$state</span><span class="p">,</span> <span class="nx">$currentUser</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">$rootScope</span><span class="p">.</span><span class="nx">$on</span><span class="p">(</span><span class="s1">'$stateChangeStart'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="nx">to</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">angular</span><span class="p">.</span><span class="nx">isFunction</span><span class="p">(</span><span class="nx">to</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">rule</span><span class="p">))</span> <span class="k">return</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">to</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="nx">$currentUser</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">result</span> <span class="o">&amp;&amp;</span> <span class="nx">result</span><span class="p">.</span><span class="nx">to</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+      <span class="c1">// Optionally set option.notify to false if you don't want </span>
+      <span class="c1">// to retrigger another $stateChangeStart event</span>
+      <span class="nx">$state</span><span class="p">.</span><span class="nx">go</span><span class="p">(</span><span class="nx">to</span><span class="p">,</span> <span class="nx">result</span><span class="p">.</span><span class="nx">params</span><span class="p">,</span> <span class="p">{</span><span class="nx">notify</span><span class="o">:</span> <span class="kc">false</span><span class="p">});</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="user-content-how-to-prevent-nested-ui-sref-objects-from-all-firingtriggering" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-prevent-nested-ui-sref-objects-from-all-firingtriggering" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to: Prevent nested ui-sref objects from all firing/triggering</h2>
+
+<p>In some cases you'll want to nest elements that both (or more) contain a ui-sref attribute. If you click the deepest nested element it will trigger all the ui-srefs by default. To stop propogation do the following:</p>
+
+<div class="highlight highlight-html"><pre>    <span class="nt">&lt;div</span> <span class="na">ui-sref=</span><span class="s">"root.child"</span> <span class="na">ng-click=</span><span class="s">"$event.stopPropagation()"</span><span class="nt">&gt;</span>
+        Child-detail
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+<h2>
+<a name="user-content-issue-my-templates-are-not-appearing--loading--showing" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-my-templates-are-not-appearing--loading--showing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issue: My templates are not appearing / loading / showing</h2>
+
+<p>It is <em>very</em> common to forget to place a <code>&lt;ui-view/&gt;</code> in the parent state's template. If you are not using the more advanced <code>views</code> property then a template will always, by default, attempt to populate the ui-view in the parent state (for root states, this means index.html).</p>
+
+<p>Often its easy to remember to put the <code>&lt;ui-view/&gt;</code> in index.html but then when you start creating your template partials and declaring nested states, you will forget that your partials also need a <code>&lt;ui-view/&gt;</code> too if they will be loading a template from a child state.</p>
+
+<h2>
+<a name="user-content-issue-my-assets-and-templates-are-not-loading" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-my-assets-and-templates-are-not-loading" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issue: My assets and templates are not loading</h2>
+
+<p>This may be related to a nasty issue where assets and templates are not loading. It showed up during Angular 1.1.5 and is a bug in the core library. This tree helps you decide what response to take.</p>
+
+<h3>
+<a name="user-content-decision-tree" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#decision-tree" aria-hidden="true"><span class="octicon octicon-link"></span></a>Decision Tree:</h3>
+
+<p><strong>1)</strong> <em><strong>Using Angular 1.1.5?</strong></em></p>
+
+<p>---<code>Yes:</code> See solution below.</p>
+
+<p>---<code>No:</code> <strong>2)</strong> <em><strong>Using HTML5 urls?</strong></em></p>
+
+<p>--------------<code>No:</code> No base tag needed.</p>
+
+<p>--------------<code>Yes:</code> <strong>3)</strong> <em><strong>Deploying to root?</strong></em></p>
+
+<p>--------------------------<code>Yes:</code> No base tag needed.</p>
+
+<p>--------------------------<code>No:</code> See solution below.</p>
+
+<h3>
+<a name="user-content-solution" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#solution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solution</h3>
+
+<p>You'll need to either:</p>
+
+<ol class="task-list">
+<li><strong>Use absolute anchor urls (preferred)</strong></li>
+<li>Add  tag to your index.html BUT all anchor urls will be broken for you :/</li>
+</ol><p>If you've chosen #2, then add the following tag to your index.html head:</p>
+
+<pre><code>&lt;head&gt;
+    ...
+    &lt;base href="/"&gt;&lt;/base&gt;
+    ...
+ &lt;/head&gt;
+</code></pre>
+
+<p>... if your application is running at the root of your domain.</p>
+
+<p>... and if your application is running in a subdirectory, specify that subdirectory (e.g. 'myapp'):</p>
+
+<pre><code>&lt;head&gt;
+    ...
+    &lt;base href="/myapp/"&gt;&lt;/base&gt;
+    ...
+ &lt;/head&gt;
+</code></pre>
+
+<p>Bugs that were solved by this solution: <a href="https://github.com/angular-ui/ui-router/issues/89">89</a>, <a href="https://github.com/angular-ui/ui-router/issues/200">200</a>, <a href="https://github.com/angular-ui/ui-router/issues/208">208</a>, <a href="https://github.com/angular-ui/ui-router/issues/250">250</a>, <a href="http://stackoverflow.com/questions/17200231/how-to-set-default-url-route">SO 17200231</a></p>
+
+<p>Other Resources:</p>
+
+<ul class="task-list">
+<li>See bug in core: <a href="https://github.com/angular/angular.js/issues/2799">issues/2799</a>
+</li>
+<li>Pull that fixes it: <a href="https://github.com/angular/angular.js/pull/2969">pull/2969</a>
+</li>
+</ul><h2>
+<a name="user-content-issue-problems-when-using-ng-view-alongside-ui-view" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-problems-when-using-ng-view-alongside-ui-view" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issue: Problems when using ng-view alongside ui-view</h2>
+
+<p>Don't do that.</p>
+
+<h2>
+<a name="user-content-issue-javascript-errors-dont-throw-within-resolve-functions" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-javascript-errors-dont-throw-within-resolve-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issue: JavaScript errors don't throw within <code>resolve</code> functions</h2>
+
+<p>If you are having issues where a trivial error wasn't being caught because it was happening within the resolve function of a state, this is actually the intended behavior of promises per the <a href="http://wiki.commonjs.org/wiki/Promises/A">spec</a>. </p>
+
+<blockquote>
+<p>If the callback throws an error, the returned promise will be moved to failed state.</p>
+</blockquote>
+
+<p>The promise is rejected with the error. Additionally the <a href="https://github.com/angular-ui/ui-router/wiki#state-change-events">$stateChangeError</a> event is triggered. It's very important to always set up your $stateChangeError handler early in the project to avoid headaches.</p>
+
+<h2>
+<a name="user-content-issue-typeerror-attempted-to-assign-to-readonly-property-when-running-grunt-tests" class="anchor" href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#issue-typeerror-attempted-to-assign-to-readonly-property-when-running-grunt-tests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issue: <code>TypeError: Attempted to assign to readonly property</code> when running <code>grunt</code> tests</h2>
+
+<p>You were probably running PhantomJS &gt;= 1.9.2 and the script under test is producing DOM exceptions. Please refer to <a href="https://github.com/angular/angular.js/commit/7e916455b36dc9ca4d4afc1e44cade90006d00e3">https://github.com/angular/angular.js/commit/7e916455b36dc9ca4d4afc1e44cade90006d00e3</a> and fix your angular-mock.js .</p>
+    </div>
+
+      <div id="wiki-footer" class="gollum-markdown-content box box-small">
+        <div class="box-body box-body-padded box-body-no-header wiki-auxiliary-content  markdown-body">
+          <p>Use the table of contents to the top right to navigate to other wiki sections.</p>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com/">API</a></li>
+      <li><a href="http://training.github.com/">Training</a></li>
+      <li><a href="http://shop.github.com/">Shop</a></li>
+      <li><a href="https://github.com/blog">Blog</a></li>
+      <li><a href="https://github.com/about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>© 2014 <span title="0.05218s from github-fe135-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy">Privacy</a></li>
+        <li><a href="https://github.com/security">Security</a></li>
+        <li><a href="https://github.com/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w" aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#" class="octicon octicon-x close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="./test_files/frameworks-16cc79824e99a0bd7ee02ebeac9f0ba7d1116bef.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="./test_files/github-793f80c2bb36b2b60a93b4f1bb1256051e261a26.js" type="text/javascript"></script>
+      
+        <script crossorigin="anonymous" src="./test_files/wiki-3f24541760755c834f89344a985851c4cc6830c8.js" type="text/javascript"></script>
+
+        <script async="" src="./test_files/analytics.js"></script>
+  
+
+
+<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 1px; height: 1px; z-index: 999999999;"><object id="global-zeroclipboard-flash-bridge" name="global-zeroclipboard-flash-bridge" width="100%" height="100%" type="application/x-shockwave-flash" data="https://assets-cdn.github.com/flash/ZeroClipboard.v2.1.2.swf"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="menu" value="false"><param name="wmode" value="transparent"><param name="flashvars" value="trustedOrigins=github.com%2C%2F%2Fgithub.com%2Chttps%3A%2F%2Fgithub.com&amp;swfObjectId=global-zeroclipboard-flash-bridge"></object></div></body></html>

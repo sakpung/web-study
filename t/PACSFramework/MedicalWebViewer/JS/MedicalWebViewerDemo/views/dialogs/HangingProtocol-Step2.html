@@ -1,0 +1,18 @@
+﻿<form class="form-horizontal" novalidate>
+    <!--<fieldset>-->
+        <h5 class="text-center">Hanging Protocol Definitions</h5>
+        <div class="form-group">
+            <div class="col-md-12">
+                <div id="HPProtocolDefinitionSequence" ag-grid="HPPDOptions" class="ag-fresh" style="height:125px"></div>
+                <!--<button type="button" class="btn-sm btn-default" ng-click="addHPDefinition()" title="Add Image Set"><i class="fa fa-plus"></i></button>-->
+               <div class="cine-buttons">
+
+                <div>
+                  <button type="button" class="cine-controls pen-button" ng-click="editHPDefinition()" title="Edit HP Definition" ng-disabled="!isHPDefinitionSelected()"><i></i></button>
+                  <button type="button" class="cine-controls minus-button" ng-click="deleteHPDefinition()" title="Delete HP Definition" ng-disabled="!isHPDefinitionSelected()"><i></i></button>
+                </div>
+               </div>
+            </div>
+        </div>               
+    <!--</fieldset>-->
+</form>

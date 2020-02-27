@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Leadtools.Services.JobProcessor.ServiceContracts/2010/01" elementFormDefault="qualified" targetNamespace="http://Leadtools.Services.JobProcessor.ServiceContracts/2010/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/LEADTOOLSJobProcessorServices/JobService.svc?xsd=xsd2" namespace="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" />
+  <xs:element name="AddJob">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="request" nillable="true" type="q1:AddJobRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddJobResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="AddJobResult" nillable="true" type="q2:AddJobResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientJobs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="request" nillable="true" type="q3:GetClientJobsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientJobsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="GetClientJobsResult" nillable="true" type="q4:GetClientJobsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteJob">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="request" nillable="true" type="q5:DeleteJobRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteJobResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="DeleteJobResult" nillable="true" type="q6:DeleteJobResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AbortJob">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="request" nillable="true" type="q7:AbortJobRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AbortJobResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="AbortJobResult" nillable="true" type="q8:AbortJobResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJobInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="request" nillable="true" type="q9:GetJobInformationRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJobInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="GetJobInformationResult" nillable="true" type="q10:GetJobInformationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetJob">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="request" nillable="true" type="q11:ResetJobRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetJobResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="ResetJobResult" nillable="true" type="q12:ResetJobResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddJobs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="request" nillable="true" type="q13:AddJobsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddJobsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://Leadtools.Services.JobProcessor.DataContracts/2010/01" minOccurs="0" name="AddJobsResult" nillable="true" type="q14:AddJobsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

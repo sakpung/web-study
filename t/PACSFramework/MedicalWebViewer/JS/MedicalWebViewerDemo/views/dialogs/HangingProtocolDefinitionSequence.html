@@ -1,0 +1,87 @@
+﻿<div class="modal-header">
+    <h3 class="modal-title">Edit HP Definition Sequence</h3>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" novalidate>
+        <fieldset>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="HPDefinitionModality">{{'MODALITY' | translate}}:</label>
+                <div class="input-group col-md-9">                    
+                    <div isteven-multi-select
+                         input-model="modalities"
+                         output-model="selectedModalities"
+                         button-label="name"
+                         item-label="name description"
+                         tick-property="ticked"
+                         helper-elements=""
+                         max-height="250px">
+                    </div>
+                    <span class="input-group-btn">
+                        <a class="btn btn-default" type="button" ng-click="extractModality()" title="Extract from DICOM"><i class="fa fa-exchange"></i></a>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="HPDefinitionStudyDescription">Study Description:</label>
+                <div class="input-group col-md-9">
+                    <input id="HPDefinitionStudyDescription" type="text" class="form-control input-md" ng-model="hpDefinition.StudyDescription">
+                    <span class="input-group-btn">
+                        <a class="btn btn-default" type="button" ng-click="extractStudyDescription()" title="Extract from DICOM"><i class="fa fa-exchange"></i></a>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="username">Laterality:</label>
+                <div class="input-group col-md-9">
+                    <select class="form-control" ng-model="hpDefinition.Laterality" force-blur>
+                        <option value=""></option>
+                        <option value="0">Left</option>
+                        <option value="1">Right</option>
+                        <option value="2">Both</option>
+                        <option value="3">Unpaired</option>
+                    </select>
+                    <span class="input-group-btn">
+                        <a class="btn btn-default" type="button" ng-click="extractLaterality()" title="Extract from DICOM"><i class="fa fa-exchange"></i></a>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="HBodyPartExamined">Body Part Examined:</label>
+                <div class="input-group col-md-9">
+                    <input id="HBodyPartExamined" type="text" class="form-control input-md" ng-model="hpDefinition.BodyPartExamined">
+                    <span class="input-group-btn">
+                        <a class="btn btn-default" type="button" ng-click="extractBodyPartExamined()" title="Extract from DICOM"><i class="fa fa-exchange"></i></a>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="HProtocolName">Protocol Name:</label>
+                <div class="input-group col-md-9">
+                    <input id="HProtocolName" type="text" class="form-control input-md" ng-model="hpDefinition.ProtocolName">
+                    <span class="input-group-btn">
+                        <a class="btn btn-default" type="button" ng-click="extractProtocolName()" title="Extract from DICOM"><i class="fa fa-exchange"></i></a>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12" style="width:100%">
+                    <div id="HPAnatomicRegionSequence" ag-grid="ARSOptions" class="ag-fresh" style="height:110px"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <div id="HPProcedureCodeSequence" ag-grid="PCSOptions" class="ag-fresh" style="height:110px"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <div id="HPReasonForRequestedProcedure" ag-grid="RFROptions" class="ag-fresh" style="height:110px"></div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK"></a>
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+    </div>
+</div>

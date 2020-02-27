@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Leadtools.Services.JobProcessor.FaultContracts/2010/01" elementFormDefault="qualified" targetNamespace="http://Leadtools.Services.JobProcessor.FaultContracts/2010/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="JobProcessorFault">
+    <xs:sequence>
+      <xs:element name="ErrorId" type="xs:int" />
+      <xs:element name="ErrorMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JobProcessorFault" nillable="true" type="tns:JobProcessorFault" />
+</xs:schema>

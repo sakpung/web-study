@@ -1,0 +1,37 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title">{{'CALIBRATE' | translate}}&nbsp;{{'RULER' | translate}}</h3>
+    </div>
+    <div class="modal-body">
+        <div class="control-group">
+            <label class="control-label" for="rulerLength">{{'LENGTH' | translate}}:</label>
+            <div class="controls">
+                <input id="rulerLength" type="text" placeholder="" class="form-control" ng-model="calibration.length" required onkeydown="return Utils.isNumber(event,this);">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="rulerUnit">{{'RULER' | translate}}&nbsp;{{'UNIT' | translate}}:</label>
+            <div class="controls">
+                <select id="rulerUnit" class="form-control" ng-model="calibration.unit">
+                    <option value="6">Millimeter</option>
+                    <option value="11">Centimeter</option>
+                    <option value="5">Inch</option>
+                    <option value="8">Feet</option>
+                    <option value="14">Pixel</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="checkbox">
+                <input type="checkbox" ng-model="calibration.applyToAll">
+                {{ 'APPLY_TO_ALL_IMAGES' | translate }}
+            </label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="!isValid()"></a>
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+    </div>
+</div>

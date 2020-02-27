@@ -1,0 +1,91 @@
+﻿<div class="container">
+    <form class="login-holder" name="form"  novalidate shake-that submitted="submitted" ng-submit="submit()" >
+        <div>
+            <div class="logo">
+                
+                <h3 class="panel-title">                    
+                </h3>
+            </div>
+            <div class="dividerAnimation"></div>
+
+            <div class="alert alert-danger" ng-hide="!Invalid">
+                {{authenticationMessage}}
+            </div>
+            <div>
+               <div ng-class="{'has-error': form.username.$invalid && submitted}">
+                  <input type="text"
+                         class="text-field login-username"
+                         id="username"
+                         name="username"
+                         placeholder="User Name"
+                         ng-model="Username"
+                         required
+                         width="inherit"
+                         tabindex="0"
+                         autofocus="true"
+                         autocomplete="off"
+                         >
+               </div>
+               <div ng-class="{'has-error': form.password.$invalid && submitted}">
+                  <input type="password"
+                         class="text-field"
+                         id="password"
+                         name="password"
+                         placeholder="Password"
+                         ng-model="Password"
+                         required>
+               </div>
+               <div>
+
+                <!--fancy checkBox-->
+                <label class="checkBoxLabelContainer" >Remember Me <input type="checkbox" checked="checked" ng-model="RememberMe"> <span class="checkmark"></span></label>
+
+
+               </div> <br />
+               <input type="submit" value="Login " class="login-button" />
+               <div class="divider" ng-show="shibbolethIsEnabled||oktaIsEnabled"></div>
+               <div class="checkbox-label">
+                  <table style="width:100%; ">
+                     <tr class="hover-item" ng-show="oktaIsEnabled">
+                        <td ng-click="loginOkta();$event.stopPropagation(); $event.preventDefault();" style="width:75px; ">
+                           <button type="button" class="cine-controls okta-button" data-toggle="tooltip" title="Okta" ><i></i></button>
+                        </td>
+                        <td ng-click="loginOkta();$event.stopPropagation(); $event.preventDefault();" >
+                           <button class="cine-controls" style="width:100%; text-align:left; color:#AEAEAE">Sign in with Okta</button>
+                        </td>
+                        <td data-toggle="tooltip" title="Learn about Okta sign-in" ng-show="oktaHelpIsEnabled">
+                           <button class="cine-controls help-button" ng-click="loginOktaHelp();  $event.stopPropagation(); $event.preventDefault();"></button>
+                        </td>
+                     </tr>
+                     <tr ng-show="shibbolethIsEnabled">
+                        <td style="width:75px; border-bottom: 1px solid #2f333d;">
+                        </td>
+                        <td style="border-bottom: 1px solid #2f333d;">
+                        </td>
+                        <td style="border-bottom: 1px solid #2f333d;">
+                        </td>
+                     </tr>
+                     <tr class="hover-item" ng-show="shibbolethIsEnabled">
+                        <td ng-click="loginShibboleth();$event.stopPropagation(); $event.preventDefault();" style="width:75px; ">
+                           <button type="button" class="cine-controls shibboleth-button" data-toggle="tooltip" title="Shibboleth" ><i></i></button>
+                        </td>
+                        <td ng-click="loginShibboleth();$event.stopPropagation(); $event.preventDefault();">
+                           <button class="cine-controls" style="width:100%; text-align:left; color:#AEAEAE">Sign in with Shibboleth</button>
+                        </td>
+                        <td data-toggle="tooltip" title="Learn about Shibboleth sign-in">
+                           <button class="cine-controls help-button" ng-click="loginShibbolethHelp();  $event.stopPropagation(); $event.preventDefault();"></button>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+        </div>
+    </form>
+    <div class="alert alert-success message" ng-show="showMessage">Well done!</div>
+    <div class="copyright-holder">
+        <p class="copyright">Copyright (c) 1991-2019 LEAD Technologies, Inc.</p>
+        <!--&copy; {{Copyright}}-->
+    </div>
+
+    
+</div>

@@ -1,0 +1,1347 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <xsd:element name="root" msdata:IsDataSet="true">
+         <xsd:complexType>
+            <xsd:choice maxOccurs="unbounded">
+               <xsd:element name="data">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                        <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" type="xsd:string" />
+                     <xsd:attribute name="type" type="xsd:string" />
+                     <xsd:attribute name="mimetype" type="xsd:string" />
+                  </xsd:complexType>
+               </xsd:element>
+               <xsd:element name="resheader">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                     </xsd:sequence>
+                     <xsd:attribute name="name" type="xsd:string" use="required" />
+                  </xsd:complexType>
+               </xsd:element>
+            </xsd:choice>
+         </xsd:complexType>
+      </xsd:element>
+   </xsd:schema>
+   <resheader name="ResMimeType">
+      <value>text/microsoft-resx</value>
+   </resheader>
+   <resheader name="Version">
+      <value>1.0.0.0</value>
+   </resheader>
+   <resheader name="Reader">
+      <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+   </resheader>
+   <resheader name="Writer">
+      <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+   </resheader>
+   <!-- Exceptions -->
+   <data name="InvalidFormatException">
+      <value>Invalid Annotation Format</value>
+   </data>
+   <!-- General -->
+   <data name="Error">
+      <value>Error</value>
+   </data>
+   <data name="OK">
+      <value>OK</value>
+   </data>
+   <data name="Cancel">
+      <value>Cancel</value>
+   </data>
+   <data name="Apply">
+      <value>Apply</value>
+   </data>
+   <data name="AlphaLabel">
+      <value>Alpha:</value>
+   </data>
+   <data name="BrowseButton">
+      <value>&amp;...</value>
+   </data>
+   <!-- Fill Mode -->
+   <data name="AlternateFillMode">
+      <value>Alternate</value>
+   </data>
+   <data name="WindingFillMode">
+      <value>Winding</value>
+   </data>
+   <!-- Hatch Style -->
+   <data name="BackwardDiagonalHatchStyle">
+      <value>Backward Diagonal</value>
+   </data>
+   <data name="CrossHatchStyle">
+      <value>Cross</value>
+   </data>
+   <data name="DarkDownwardDiagonalHatchStyle">
+      <value>Dark Downward Diagonal</value>
+   </data>
+   <data name="DarkHorizontalHatchStyle">
+      <value>Dark Horizontal</value>
+   </data>
+   <data name="DarkUpwardDiagonalHatchStyle">
+      <value>Dark Upward Diagonal</value>
+   </data>
+   <data name="DarkVerticalHatchStyle">
+      <value>Dark Vertical</value>
+   </data>
+   <data name="DashedDownwardDiagonalHatchStyle">
+      <value>Dashed Downward Diagonal</value>
+   </data>
+   <data name="DashedHorizontalHatchStyle">
+      <value>Dashed Horizontal</value>
+   </data>
+   <data name="DashedUpwardDiagonalHatchStyle">
+      <value>Dashed Upward Diagonal</value>
+   </data>
+   <data name="DashedVerticalHatchStyle">
+      <value>Dashed Vertical</value>
+   </data>
+   <data name="DiagonalBrickHatchStyle">
+      <value>Diagonal Brick</value>
+   </data>
+   <data name="DiagonalCrossHatchStyle">
+      <value>Diagonal Cross</value>
+   </data>
+   <data name="DivotHatchStyle">
+      <value>Divot</value>
+   </data>
+   <data name="DottedDiamondHatchStyle">
+      <value>Dotted Diamond</value>
+   </data>
+   <data name="DottedGridHatchStyle">
+      <value>Dotted Grid</value>
+   </data>
+   <data name="ForwardDiagonalHatchStyle">
+      <value>Forward Diagonal</value>
+   </data>
+   <data name="HorizontalHatchStyle">
+      <value>Horizontal</value>
+   </data>
+   <data name="HorizontalBrickHatchStyle">
+      <value>Horizontal Brick</value>
+   </data>
+   <data name="LargeCheckerBoardHatchStyle">
+      <value>Large Checker Board</value>
+   </data>
+   <data name="LargeConfettiHatchStyle">
+      <value>Large Confetti</value>
+   </data>
+   <data name="LargeGridHatchStyle">
+      <value>Large Grid</value>
+   </data>
+   <data name="LightDownwardDiagonalHatchStyle">
+      <value>Light Downward Diagonal</value>
+   </data>
+   <data name="LightHorizontalHatchStyle">
+      <value>Light Horizontal</value>
+   </data>
+   <data name="LightUpwardDiagonalHatchStyle">
+      <value>Light Upward Diagonal</value>
+   </data>
+   <data name="LightVerticalHatchStyle">
+      <value>Light Vertical</value>
+   </data>
+   <data name="MaxHatchStyle">
+      <value>Max</value>
+   </data>
+   <data name="MinHatchStyle">
+      <value>Min</value>
+   </data>
+   <data name="NarrowHorizontalHatchStyle">
+      <value>Narrow Horizontal</value>
+   </data>
+   <data name="NarrowVerticalHatchStyle">
+      <value>Narrow Vertical</value>
+   </data>
+   <data name="OutlinedDiamondHatchStyle">
+      <value>Outlined Diamond</value>
+   </data>
+   <data name="Percent05HatchStyle">
+      <value>Percent 05</value>
+   </data>
+   <data name="Percent10HatchStyle">
+      <value>Percent 10</value>
+   </data>
+   <data name="Percent20HatchStyle">
+      <value>Percent 20</value>
+   </data>
+   <data name="Percent25HatchStyle">
+      <value>Percent 25</value>
+   </data>
+   <data name="Percent30HatchStyle">
+      <value>Percent 30</value>
+   </data>
+   <data name="Percent40HatchStyle">
+      <value>Percent 40</value>
+   </data>
+   <data name="Percent50HatchStyle">
+      <value>Percent 50</value>
+   </data>
+   <data name="Percent60HatchStyle">
+      <value>Percent 60</value>
+   </data>
+   <data name="Percent70HatchStyle">
+      <value>Percent 70</value>
+   </data>
+   <data name="Percent75HatchStyle">
+      <value>Percent 75</value>
+   </data>
+   <data name="Percent80HatchStyle">
+      <value>Percent 80</value>
+   </data>
+   <data name="Percent90HatchStyle">
+      <value>Percent 90</value>
+   </data>
+   <data name="PlaidHatchStyle">
+      <value>Plaid</value>
+   </data>
+   <data name="ShingleHatchStyle">
+      <value>Shingle</value>
+   </data>
+   <data name="SmallCheckerBoardHatchStyle">
+      <value>Small Checker Board</value>
+   </data>
+   <data name="SmallConfettiHatchStyle">
+      <value>Small Confetti</value>
+   </data>
+   <data name="SmallGridHatchStyle">
+      <value>Small Grid</value>
+   </data>
+   <data name="SolidDiamondHatchStyle">
+      <value>Solid Diamond</value>
+   </data>
+   <data name="SphereHatchStyle">
+      <value>Sphere</value>
+   </data>
+   <data name="TrellisHatchStyle">
+      <value>Trellis</value>
+   </data>
+   <data name="VerticalHatchStyle">
+      <value>Vertical</value>
+   </data>
+   <data name="WaveHatchStyle">
+      <value>Wave</value>
+   </data>
+   <data name="WeaveHatchStyle">
+      <value>Weave</value>
+   </data>
+   <data name="WideDownwardDiagonalHatchStyle">
+      <value>Wide Downward Diagonal</value>
+   </data>
+   <data name="WideUpwardDiagonalHatchStyle">
+      <value>Wide Upward Diagonal</value>
+   </data>
+   <data name="ZigZagHatchStyle">
+      <value>Zig Zag</value>
+   </data>
+   <!-- String Alignment -->
+   <data name="NearStringAlignment">
+      <value>Near</value>
+   </data>
+   <data name="CenterStringAlignment">
+      <value>Center</value>
+   </data>
+   <data name="FarStringAlignment">
+      <value>Far</value>
+   </data>
+   <!-- Dash Style -->
+   <data name="SolidDashStyle">
+      <value>Solid</value>
+   </data>
+   <data name="DotDashStyle">
+      <value>Dot</value>
+   </data>
+   <data name="DashDashStyle">
+      <value>Dash</value>
+   </data>
+   <data name="DashDotDashStyle">
+      <value>Dash Dot</value>
+   </data>
+   <data name="DashDotDotDashStyle">
+      <value>Dash Dot Dot</value>
+   </data>
+   <data name="CustomDashStyle">
+      <value>Custom</value>
+   </data>
+   <!-- AnnTextRotate -->
+   <data name="TextRotate0">
+      <value>None</value>
+   </data>
+   <data name="TextRotate90">
+      <value>90 (Counter clockwise)</value>
+   </data>
+   <data name="TextRotate180">
+      <value>180</value>
+   </data>
+   <data name="TextRotate270">
+      <value>270 (Counter clockwise)</value>
+   </data>
+   <!-- Unit -->
+   <data name="DisplayUnit">
+      <value>Display</value>
+   </data>
+   <data name="DocumentUnit">
+      <value>Document</value>
+   </data>
+   <data name="SmartEnglishUnit">
+      <value>Smart English</value>
+   </data>
+   <data name="SmartMetricUnit">
+      <value>Smart Metric</value>
+   </data>
+   <data name="InchUnit">
+      <value>Inch</value>
+   </data>
+   <data name="MillimeterUnit">
+      <value>Millimeter</value>
+   </data>
+   <data name="PixelUnit">
+      <value>Pixel</value>
+   </data>
+   <data name="PointUnit">
+      <value>Point</value>
+   </data>
+   <data name="FeetUnit">
+      <value>Feet</value>
+   </data>
+   <data name="YardUnit">
+      <value>Yard</value>
+   </data>
+   <data name="MicrometerUnit">
+      <value>Micrometer</value>
+   </data>
+   <data name="CentimeterUnit">
+      <value>Centimeter</value>
+   </data>
+   <data name="MeterUnit">
+      <value>Meter</value>
+   </data>
+   <data name="TwipUnit">
+      <value>Twip</value>
+   </data>
+   <!-- UnitAbbreviation -->
+   <data name="DisplayUnitAbbreviation">
+      <value>display</value>
+   </data>
+   <data name="DocumentUnitAbbreviation">
+      <value>document</value>
+   </data>
+   <data name="SmartEnglishUnitAbbreviation">
+      <value>in</value>
+   </data>
+   <data name="SmartMetricUnitAbbreviation">
+      <value>mm</value>
+   </data>
+   <data name="InchUnitAbbreviation">
+      <value>in</value>
+   </data>
+   <data name="MillimeterUnitAbbreviation">
+      <value>mm</value>
+   </data>
+   <data name="PixelUnitAbbreviation">
+      <value>pixels</value>
+   </data>
+   <data name="PointUnitAbbreviation">
+      <value>pt</value>
+   </data>
+   <data name="FeetUnitAbbreviation">
+      <value>ft</value>
+   </data>
+   <data name="YardUnitAbbreviation">
+      <value>yd</value>
+   </data>
+   <data name="MicrometerUnitAbbreviation">
+      <value>µm</value>
+   </data>
+   <data name="CentimeterUnitAbbreviation">
+      <value>cm</value>
+   </data>
+   <data name="MeterUnitAbbreviation">
+      <value>m</value>
+   </data>
+   <data name="TwipUnitAbbreviation">
+      <value>twips</value>
+   </data>
+   <!-- AngularUnit -->
+   <data name="RadianAngularUnit">
+      <value>Radian</value>
+   </data>
+   <data name="DegreeAngularUnit">
+      <value>Degree</value>
+   </data>
+   <!-- AngularUnitAbbreviation -->
+   <data name="RadianAngularUnitAbbreviation">
+      <value>Rad</value>
+   </data>
+   <data name="DegreeAngularUnitAbbreviation">
+      <value>°</value>
+   </data>
+   <!-- DrawDesigner -->
+   <data name="TextPointerDrawDesignerDefaultText">
+      <value>AaBbYyZz</value>
+   </data>
+   <data name="TextDrawDesignerDefaultText">
+      <value>AaBbYyZz</value>
+   </data>
+   <!-- Object names -->
+   <data name="DefaultObjectName">
+      <value>Default</value>
+   </data>
+   <data name="GroupObjectName">
+      <value>Group</value>
+   </data>
+   <data name="SelectObjectName">
+      <value>Select</value>
+   </data>
+   <data name="LineObjectName">
+      <value>Line</value>
+   </data>
+   <data name="RectangleObjectName">
+      <value>Rectangle</value>
+   </data>
+   <data name="EllipseObjectName">
+      <value>Ellipse</value>
+   </data>
+   <data name="PolylineObjectName">
+      <value>Polyline</value>
+   </data>
+   <data name="PolygonObjectName">
+      <value>Polygon</value>
+   </data>
+   <data name="CurveObjectName">
+      <value>Curve</value>
+   </data>
+   <data name="ClosedCurveObjectName">
+      <value>Closed-Curve</value>
+   </data>
+   <data name="PointerObjectName">
+      <value>Pointer</value>
+   </data>
+   <data name="FreehandObjectName">
+      <value>Freehand</value>
+   </data>
+   <data name="HiliteObjectName">
+      <value>Hilite</value>
+   </data>
+   <data name="TextObjectName">
+      <value>Text</value>
+   </data>
+   <data name="TextRollupObjectName">
+      <value>Text Rollup</value>
+   </data>
+   <data name="TextPointerObjectName">
+      <value>Text Pointer</value>
+   </data>
+   <data name="NoteObjectName">
+      <value>Note</value>
+   </data>
+   <data name="StampObjectName">
+      <value>Stamp</value>
+   </data>
+   <data name="RubberStampObjectName">
+      <value>Rubber Stamp</value>
+   </data>
+   <data name="HotspotObjectName">
+      <value>Hotspot</value>
+   </data>
+   <data name="FreehandHotspotObjectName">
+      <value>Freehand Hotspot</value>
+   </data>
+   <data name="ButtonObjectName">
+      <value>Button</value>
+   </data>
+   <data name="PointObjectName">
+      <value>Point</value>
+   </data>
+   <data name="RulerObjectName">
+      <value>Ruler</value>
+   </data>
+   <data name="PolyRulerObjectName">
+      <value>Poly Ruler</value>
+   </data>
+   <data name="ProtractorObjectName">
+      <value>Protractor</value>
+   </data>
+   <data name="CrossProductObjectName">
+      <value>Cross Product</value>
+   </data>
+   <data name="RedactionObjectName">
+      <value>Redaction</value>
+   </data>
+   <data name="EncryptObjectName">
+      <value>Encrypt</value>
+   </data>
+   <data name="AudioObjectName">
+      <value>Audio</value>
+   </data>
+   <!-- ContextMenus -->
+   <data name="CutContextMenu">
+      <value>Cu&amp;t</value>
+   </data>
+   <data name="CopyContextMenu">
+      <value>&amp;Copy</value>
+   </data>
+   <data name="DeleteContextMenu">
+      <value>&amp;Delete</value>
+   </data>
+   <data name="BringToFrontContextMenu">
+      <value>&amp;Bring to front</value>
+   </data>
+   <data name="SendToBackContextMenu">
+      <value>&amp;Send to back</value>
+   </data>
+   <data name="BringToFirstContextMenu">
+      <value>Bring to &amp;first</value>
+   </data>
+   <data name="SendToLastContextMenu">
+      <value>Send to &amp;last</value>
+   </data>
+   <data name="FlipContextMenu">
+      <value>Fli&amp;p</value>
+   </data>
+   <data name="ReverseContextMenu">
+      <value>&amp;Reverse</value>
+   </data>
+   <data name="LockContextMenu">
+      <value>Loc&amp;k...</value>
+   </data>
+   <data name="UnlockContextMenu">
+      <value>&amp;Unlock...</value>
+   </data>
+   <data name="ResetRotatePointsContextMenu">
+      <value>R&amp;eset Rotate Control Points</value>
+   </data>
+   <data name="PropertiesContextMenu">
+      <value>&amp;Properties...</value>
+   </data>
+   <data name="GroupContextMenu">
+      <value>&amp;Group</value>
+   </data>
+   <data name="UngroupContextMenu">
+      <value>&amp;Ungroup</value>
+   </data>
+   <data name="PlayContextMenu">
+      <value>P&amp;lay</value>
+   </data>
+   <data name="UndoContextMenu">
+      <value>&amp;Undo</value>
+   </data>
+   <data name="RedoContextMenu">
+      <value>&amp;Redo</value>
+   </data>
+   <data name="PasteContextMenu">
+      <value>&amp;Paste</value>
+   </data>
+   <data name="SelectAllContextMenu">
+      <value>Select &amp;All</value>
+   </data>
+   <data name="UseRotateControlPointsContextMenu">
+      <value>Use Rotate &amp;Control Points</value>
+   </data>
+   <data name="DefaultPropertiesContextMenu">
+      <value>Default P&amp;roperties...</value>
+   </data>
+   <data name="ApplyEncryptorContextMenu">
+      <value>Apply &amp;Encryptor</value>
+   </data>
+   <data name="ApplyDecryptorContextMenu">
+      <value>Apply &amp;Decryptor</value>
+   </data>
+   <data name="FixedPointerContextMenu">
+      <value>&amp;Fixed Pointer</value>
+   </data>
+   <data name="RealizeContextMenu">
+      <value>&amp;Realize</value>
+   </data>
+   <data name="RestoreContextMenu">
+      <value>Rest&amp;ore</value>
+   </data>
+   <data name="ExpandedContextMenu">
+      <value>&amp;Expanded</value>
+   </data>
+   <data name="DeleteControlPointContextMenu">
+      <value>D&amp;elete Control Point</value>
+   </data>
+   <data name="AddControlPointContextMenu">
+      <value>&amp;Add Control Point</value>
+   </data>
+   <data name="CalibrateContextMenu">
+      <value>Cal&amp;ibrate</value>
+   </data>
+   <!-- RubberStamp names -->
+   <data name="ApprovedRubberStamp">
+      <value>Approved</value>
+   </data>
+   <data name="AssignedRubberStamp">
+      <value>Assigned</value>
+   </data>
+   <data name="CheckedRubberStamp">
+      <value>Checked</value>
+   </data>
+   <data name="ClientRubberStamp">
+      <value>Client Attorney Privilege</value>
+   </data>
+   <data name="CopyRubberStamp">
+      <value>Copy</value>
+   </data>
+   <data name="DraftRubberStamp">
+      <value>Draft</value>
+   </data>
+   <data name="ExtendedRubberStamp">
+      <value>Extended</value>
+   </data>
+   <data name="FaxRubberStamp">
+      <value>Fax</value>
+   </data>
+   <data name="FaxedRubberStamp">
+      <value>Faxed</value>
+   </data>
+   <data name="ImportantRubberStamp">
+      <value>Important</value>
+   </data>
+   <data name="InvoiceRubberStamp">
+      <value>Invoice</value>
+   </data>
+   <data name="NoticeRubberStamp">
+      <value>Notice</value>
+   </data>
+   <data name="OfficialRubberStamp">
+      <value>Official</value>
+   </data>
+   <data name="OnFileRubberStamp">
+      <value>On-File</value>
+   </data>
+   <data name="PaidRubberStamp">
+      <value>Paid</value>
+   </data>
+   <data name="PassedRubberStamp">
+      <value>Passed</value>
+   </data>
+   <data name="PendingRubberStamp">
+      <value>Pending</value>
+   </data>
+   <data name="ProcessedRubberStamp">
+      <value>Processed</value>
+   </data>
+   <data name="ReceivedRubberStamp">
+      <value>Received</value>
+   </data>
+   <data name="RejectedRubberStamp">
+      <value>Rejected</value>
+   </data>
+   <data name="ReleaseRubberStamp">
+      <value>Release</value>
+   </data>
+   <data name="SentRubberStamp">
+      <value>Sent</value>
+   </data>
+   <data name="ShippedRubberStamp">
+      <value>Shipped</value>
+   </data>
+   <data name="TopSecretRubberStamp">
+      <value>Top Secret</value>
+   </data>
+   <data name="UrgentRubberStamp">
+      <value>Urgent</value>
+   </data>
+   <data name="VoidRubberStamp">
+      <value>Void</value>
+   </data>
+   <!-- Password Dialog -->
+   <data name="PasswordDialogLockCaption">
+      <value>Lock</value>
+   </data>
+   <data name="PasswordDialogUnlockCaption">
+      <value>Unlock</value>
+   </data>
+   <data name="PasswordDialogPasswordLabel">
+      <value>&amp;Password:</value>
+   </data>
+   <!-- PictureBox -->
+   <data name="PictureBoxTransparentLabel">
+      <value>&amp;Transparent</value>
+   </data>
+   <data name="PictureBoxColorLabel">
+      <value>&amp;Color</value>
+   </data>
+   <data name="PictureBoxTransparentModeNone">
+      <value>None</value>
+   </data>
+   <data name="PictureBoxTransparentModeUseColor">
+      <value>Use Color</value>
+   </data>
+   <data name="PictureBoxTransparentModeTopLeftPixel">
+      <value>Top Left Pixel</value>
+   </data>
+   <data name="PictureBoxNoImage">
+      <value>No Image</value>
+   </data>
+   <data name="PictureBoxOpenFileDialogFilter">
+      <value>All Files|*.*</value>
+   </data>
+   <data name="PictureBoxOpenFileDialogErrorMessage">
+      <value>Failed to open image file</value>
+   </data>
+   <data name="PictureBoxBrowseButtonToolTip">
+      <value>Browse for an image</value>
+   </data>
+   <data name="PictureBoxNoImageButtonToolTip">
+      <value>No image</value>
+   </data>
+   <data name="PictureBoxDefaultButtonToolTip">
+      <value>Default image</value>
+   </data>
+   <!-- ColorPickerDialog-->
+   <data name="ColorPickerDialogCaption">
+      <value>Color</value>
+   </data>
+   <data name="ColorPickerDialogCustom">
+      <value>Custom</value>
+   </data>
+   <data name="ColorPickerDialogWeb">
+      <value>Web</value>
+   </data>
+   <data name="ColorPickerDialogSystem">
+      <value>System</value>
+   </data>
+   <!-- Properties Dialog -->
+   <data name="PropertiesDialogCaption">
+      <value>Properties</value>
+   </data>
+   <!-- Hyperlink Tab Page -->
+   <data name="HyperlinkTabCaption">
+      <value>Hyperlink</value>
+   </data>
+   <data name="HyperlinkTabHyperlinkLabel">
+      <value>&amp;Hyperlink:</value>
+   </data>
+   <!-- Polygon Tab Page -->
+   <data name="PolygonTabCaption">
+      <value>Polygon</value>
+   </data>
+   <data name="PolygonTabClosedCheckBox">
+      <value>&amp;Closed</value>
+   </data>
+   <data name="PolygonTabFillModeLabel">
+      <value>&amp;Fill Mode:</value>
+   </data>
+   <!-- Brush Tab Page -->
+   <data name="BrushTabCaption">
+      <value>Brush</value>
+   </data>
+   <data name="BrushTabUseBrushCheckBox">
+      <value>&amp;Use Brush</value>
+   </data>
+   <data name="BrushTabTypeLabel">
+      <value>&amp;Type:</value>
+   </data>
+   <data name="BrushTabForeColorLabel">
+      <value>&amp;Fore Color:</value>
+   </data>
+   <data name="BrushTabBackColorLabel">
+      <value>&amp;Back Color:</value>
+   </data>
+   <data name="BrushTabHatchStyleLabel">
+      <value>&amp;Hatch Style:</value>
+   </data>
+   <data name="BrushTabTypeSolid">
+      <value>Solid</value>
+   </data>
+   <data name="BrushTabTypeHatch">
+      <value>Hatch</value>
+   </data>
+   <data name="BrushTabTypeCustom">
+      <value>Custom</value>
+   </data>
+   <!-- Font Tab -->
+   <data name="FontTabCaption">
+      <value>Font</value>
+   </data>
+   <data name="FontTabFontLabel">
+      <value>&amp;Font:</value>
+   </data>
+   <data name="FontTabChangeButton">
+      <value>&amp;Change...</value>
+   </data>
+   <data name="FontTabSampleGroupBox">
+      <value>Sample</value>
+   </data>
+   <data name="FontTabSampleText">
+      <value>AaBbZz</value>
+   </data>
+   <!-- Name Tab-->
+   <data name="NameTabCaption">
+      <value>Name</value>
+   </data>
+   <data name="NameTabShowNameCheckBox">
+      <value>&amp;Show Name</value>
+   </data>
+   <data name="NameTabNameLabel">
+      <value>&amp;Name:</value>
+   </data>
+   <data name="NameTabXOffsetLabel">
+      <value>&amp;XOffset:</value>
+   </data>
+   <data name="NameTabYOffsetLabel">
+      <value>&amp;YOffset:</value>
+   </data>
+   <data name="NameTabNameRestrictCheckBox">
+      <value>Name &amp;Restrict</value>
+   </data>
+   <data name="NameTabFontLabel">
+      <value>&amp;Font:</value>
+   </data>
+   <data name="NameTabChangeButton">
+      <value>Chan&amp;ge...</value>
+   </data>
+   <data name="NameTabSampleGroupBox">
+      <value>Sample</value>
+   </data>
+   <data name="NameTabSampleText">
+      <value>AaBbZz</value>
+   </data>
+   <data name="NameTabForeColorLabel">
+      <value>F&amp;ore Color:</value>
+   </data>
+   <data name="NameTabBackColorLabel">
+      <value>&amp;Back Color:</value>
+   </data>
+   <!-- Audio Tab -->
+   <data name="AudioTabCaption">
+      <value>Audio</value>
+   </data>
+   <data name="AudioTabFileNameLabel">
+      <value>&amp;FileName</value>
+   </data>
+   <data name="AudioTabPlayButton">
+      <value>&amp;Play</value>
+   </data>
+   <data name="AudioTabOpenFileDialogFilter">
+      <value>Wave Files|*.wav|All Files|*.*</value>
+   </data>
+   <!-- Text Tab -->
+   <data name="TextTabCaption">
+      <value>Text</value>
+   </data>
+   <data name="TextTabTextLabel">
+      <value>&amp;Text:</value>
+   </data>
+   <data name="TextTabHorizontalAlignmentLabel">
+      <value>&amp;Horizontal Alignment:</value>
+   </data>
+   <data name="TextTabVerticalAlignmentLabel">
+      <value>&amp;Vertical Alignment:</value>
+   </data>
+   <data name="TextTabColorLabel">
+      <value>&amp;Color:</value>
+   </data>
+   <data name="TextTabEdgeMarginLabel">
+      <value>&amp;Edge Margin:</value>
+   </data>
+   <data name="TextTabRotateLabel">
+      <value>&amp;Rotate (degrees):</value>
+   </data>
+   <data name="TextTabFixedPointerCheckBox">
+      <value>&amp;Fixed Pointer</value>
+   </data>
+   <data name="TextTabExpandedCheckBox">
+      <value>E&amp;xpanded</value>
+   </data>
+   <!-- Pen Tab -->
+   <data name="PenTabCaption">
+      <value>Pen</value>
+   </data>
+   <data name="PenTabUsePenCheckBox">
+      <value>&amp;Use Pen</value>
+   </data>
+   <data name="PenTabWidthLabel">
+      <value>&amp;Width:</value>
+   </data>
+   <data name="PenTabColorLabel">
+      <value>&amp;Color:</value>
+   </data>
+   <data name="PenTabDashStyleLabel">
+      <value>&amp;Dash Style:</value>
+   </data>
+   <!-- Rubber Stamp Tab -->
+   <data name="RubberStampTabCaption">
+      <value>Rubber Stamp</value>
+   </data>
+   <data name="RubberStampTabTypeLabel">
+      <value>&amp;Type:</value>
+   </data>
+   <!-- Pictures Tab -->
+   <data name="PicturesTabCaption">
+      <value>Pictures</value>
+   </data>
+   <data name="PicturesTabPrimaryLabel">
+      <value>&amp;Primary:</value>
+   </data>
+   <data name="PicturesTabSecondaryLabel">
+      <value>&amp;Secondary</value>
+   </data>
+   <!-- Encrypt Tab -->
+   <data name="EncryptTabCaption">
+      <value>Encrypt</value>
+   </data>
+   <data name="EncryptTabKeyGroupBox">
+      <value>&amp;Key:</value>
+   </data>
+   <data name="EncryptTabTypeGroupBox">
+      <value>&amp;Type:</value>
+   </data>
+   <data name="EncryptTabLocationGroupBox">
+      <value>&amp;Location</value>
+   </data>
+   <data name="EncryptTabLeftLabel">
+      <value>L&amp;eft:</value>
+   </data>
+   <data name="EncryptTabTopLabel">
+      <value>T&amp;op:</value>
+   </data>
+   <data name="EncryptTabRightLabel">
+      <value>&amp;Right:</value>
+   </data>
+   <data name="EncryptTabBottomLabel">
+      <value>&amp;Bottom:</value>
+   </data>
+   <data name="EncryptTabEncryptor">
+      <value>Encryptor</value>
+   </data>
+   <data name="EncryptTabDecryptor">
+      <value>Decryptor</value>
+   </data>
+   <!-- Picture Tab -->
+   <data name="PictureTabCaption">
+      <value>Picture</value>
+   </data>
+   <!-- Protractor Tab -->
+   <data name="ProtractorTabCaption">
+      <value>Protractor</value>
+   </data>
+   <data name="ProtractorTabAcuteCheckBox">
+      <value>&amp;Acute</value>
+   </data>
+   <data name="ProtractorTabAngularUnitLabel">
+      <value>Angular &amp;Unit:</value>
+   </data>
+   <data name="ProtractorTabAbbreviationLabel">
+      <value>A&amp;bbreviation:</value>
+   </data>
+   <data name="ProtractorTabPrecisionLabel">
+      <value>&amp;Precision:</value>
+   </data>
+   <data name="ProtractorTabArcRadiusLabel">
+      <value>Arc &amp;Radius:</value>
+   </data>
+   <!-- Ruler Tab -->
+   <data name="RulerTabCaption">
+      <value>Ruler</value>
+   </data>
+   <data name="RulerTabShowLengthCheckBox">
+      <value>Show &amp;Length</value>
+   </data>
+   <data name="RulerTabUnitLabel">
+      <value>&amp;Unit:</value>
+   </data>
+   <data name="RulerTabAbbreviationLabel">
+      <value>&amp;Abbreviation:</value>
+   </data>
+   <data name="RulerTabPrecisionLabel">
+      <value>&amp;Precision:</value>
+   </data>
+   <data name="RulerTabShowGaugeCheckBox">
+      <value>Show &amp;Gauge</value>
+   </data>
+   <data name="RulerTabGaugeLengthLabel">
+      <value>L&amp;ength:</value>
+   </data>
+   <data name="RulerTabShowTickMarksCheckBox">
+      <value>Show &amp;Tick Marks</value>
+   </data>
+   <data name="RulerTabShowTickValueCheckBox">
+      <value>Show &amp;Tick Value</value>
+   </data>
+   <data name="RulerTabTickMarksLengthLabel">
+      <value>Lengt&amp;h:</value>
+   </data>
+   <data name="RulerTabCalibrateButton">
+      <value>&amp;Calibrate...</value>
+   </data>
+   <!-- Point Tab -->
+   <data name="PointTabCaption">
+      <value>Point</value>
+   </data>
+   <data name="PointTabShowPictureCheckBox">
+      <value>&amp;Show Picture</value>
+   </data>
+   <data name="PointTabRadiusLabel">
+      <value>&amp;Radius:</value>
+   </data>
+   <!-- Hilight Tab -->
+   <data name="HiliteTabCaption">
+      <value>Hilite</value>
+   </data>
+   <data name="HiliteTabColorLabel">
+      <value>&amp;Color:</value>
+   </data>
+   <!-- ControlPoints Tab -->
+   <data name="ControlPointsTabCaption">
+      <value>Control Points</value>
+   </data>
+   <data name="ControlPointsTabShowCheckBox">
+      <value>&amp;Show Control Points</value>
+   </data>
+   <data name="ControlPointsTabGapLabel">
+      <value>&amp;Gap between control points:</value>
+   </data>
+   <!-- Curve Tab -->
+   <data name="CurveTabCaption">
+      <value>Curve</value>
+   </data>
+   <data name="CurveTabTensionLabel">
+      <value>&amp;Tension:</value>
+   </data>
+   <!-- Calibrate Ruler Dialog -->
+   <data name="CalibrateDialogCaption">
+      <value>Calibrate Ruler</value>
+   </data>
+   <data name="CalibrateDialogHelpGroupBox">
+      <value>Help</value>
+   </data>
+   <data name="CalibrateDialogHelpLabel">
+      <value>For most images, X DPI is equal to Y DPI (ratio 1:1).
+Change the ratio if DPI X and DPI Y are not equal. 
+
+   DPI X -- dots per inch in the horizontal direction 
+   DPI Y -- dots per inch in the vertical direction</value>
+   </data>
+   <data name="CalibrateDialogLengthLabel">
+      <value>&amp;Length:</value>
+   </data>
+   <data name="CalibrateDialogAdvancedOptionsGroupBox">
+      <value>&amp;Advanced Options</value>
+   </data>
+   <data name="CalibrateDialogXDpiLabel">
+      <value>X DPI</value>
+   </data>
+   <data name="CalibrateDialogYDpiLabel">
+      <value>Y DPI</value>
+   </data>
+   <data name="CalibrateDialogCurrentDpiLabel">
+      <value>&amp;Current DPI:</value>
+   </data>
+   <data name="CalibrateDialogDpiRatioLabel">
+      <value>&amp;DPI Ratio (0.01 .. 100):</value>
+   </data>
+   <data name="CalibrateDialogDpiRatioSepLabel">
+      <value>:</value>
+   </data>
+   <data name="CalibrateDialogApplyNewCheckBox">
+      <value>Apply to &amp;Newly Created Rulers</value>
+   </data>
+   <data name="CalibrateDialogApplyExistingCheckBox">
+      <value>Apply to &amp;Existing Rulers</value>
+   </data>
+   <!-- Fixed Tab -->
+   <data name="FixedTabCaption">
+      <value>Fixed</value>
+   </data>
+   <data name="FixedTabFixedCheckBox">
+      <value>&amp;Fixed</value>
+   </data>
+   <data name="FixedTabAdjustCheckBox">
+      <value>&amp;Adjust</value>
+   </data>
+
+   <data name="FixedTabHelpLabel">
+      <value>
+An annotation that is not fixed is attached to the underlying image.  When the image is moved by scrolling, the annotation moves with the image.  When the image changes size due to zooming, so does the annotation.
+
+A fixed annotation is attached to the window that contains the image, but not the underlying image.  The annotation will not change size or location when the underlying image is scrolled or zoomed.
+
+Check 'Adjust' so that annotations appear visually unchanged when changing the 'fixed' state.  This automatically adjusts properties such as line width, font size, and annotation location.  If 'Adjust' is unchecked, these properties do not change.
+      </value>
+   </data>
+   <data name="FixedTabFixedLabel">
+      <value>A fixed annotation does not move when scrolling/zooming the underlying image.</value>
+   </data>
+  <data name="FixedTabAdjustLabel">
+    <value>If checked, the annotation is visually unchanged when toggling the 'fixed' state.</value>
+  </data>
+
+  <data name="CalibrateDialogReplaceExistingRadioButton">
+    <value>&amp;Replace Existing Calibration</value>
+  </data>
+
+  <data name="CalibrateDialogAddToExistingRadioButton">
+    <value>&amp;Add To Existing Calibration</value>
+  </data>
+
+  <data name="BrushTabUseAsTextBackground">
+    <value>Use As Text Background</value>
+  </data>
+  <data name="RichTextObjectName" xml:space="preserve">
+    <value>Rich Text</value>
+  </data>
+  <data name="RichTextDrawDesignerDefaultText" xml:space="preserve">
+    <value>{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}{\colortbl ;\red255\green0\blue0;\red255\green255\blue255;\red0\green128\blue0;\red0\green0\blue255;\red0\green0\blue0;}\viewkind4\uc1\pard\ltrpar\cf1\highlight2\fs20 Aa\cf3 Bb\cf4 Yy\cf5 Zz\par}</value>
+  </data>
+   <data name="RtfCaption" xml:space="preserve">
+       <value>Rich Text Menu</value>
+   </data>
+   <data name="RtfFile" xml:space="preserve">
+       <value>&amp;File</value>
+   </data>
+   <data name="RtfFileOpen" xml:space="preserve">
+       <value>&amp;Open...</value>
+   </data>
+   <data name="RtfFileSave" xml:space="preserve">
+       <value>&amp;Save as ...</value>
+   </data>
+   <data name="RtfFilePrint" xml:space="preserve">
+       <value>&amp;Print...</value>
+   </data>
+   <data name="RtfFileExit" xml:space="preserve">
+       <value>E&amp;xit</value>
+   </data>
+   <data name="RtfEdit" xml:space="preserve">
+       <value>&amp;Edit</value>
+   </data>
+   <data name="RtfEditUndo" xml:space="preserve">
+       <value>&amp;Undo</value>
+   </data>
+   <data name="RtfEditCut" xml:space="preserve">
+       <value>Cu&amp;t</value>
+   </data>
+   <data name="RtfEditCopy" xml:space="preserve">
+       <value>&amp;Copy</value>
+   </data>
+   <data name="RtfEditPaste" xml:space="preserve">
+       <value>&amp;Paste</value>
+   </data>
+   <data name="RtfEditDelete" xml:space="preserve">
+       <value>&amp;Delete</value>
+   </data>
+   <data name="RtfEditSelectAll" xml:space="preserve">
+       <value>Select &amp;All</value>
+   </data>
+   <data name="RtfEditFind" xml:space="preserve">
+       <value>&amp;Find...</value>
+   </data>
+   <data name="RtfEditReplace" xml:space="preserve">
+       <value>&amp;Replace...</value>
+   </data>
+   <data name="RtfFormat" xml:space="preserve">
+       <value>F&amp;ormat</value>
+   </data>
+   <data name="RtfFormatFont" xml:space="preserve">
+       <value>&amp;Font...</value>
+   </data>
+   <data name="RtfFormatBackgroundColor" xml:space="preserve">
+       <value>&amp;Background Color</value>
+   </data>
+   <data name="RtfFormatTextColor" xml:space="preserve">
+       <value>&amp;Text Color</value>
+   </data>
+   <data name="RtfFormatBullets" xml:space="preserve">
+       <value>Bullet&amp;s</value>
+   </data>
+   <data name="RtfFormatNumbering" xml:space="preserve">
+       <value>&amp;Numbering</value>
+   </data>
+   <data name="RtfFormatDecreaseIndent" xml:space="preserve">
+       <value>&amp;Decrease Indent</value>
+   </data>
+   <data name="RtfFormatIncreaseIndent" xml:space="preserve">
+       <value>&amp;Increase Indent</value>
+   </data>
+   <data name="RtfFormatLeft" xml:space="preserve">
+       <value>&amp;Left</value>
+   </data>
+   <data name="RtfFormatCenter" xml:space="preserve">
+       <value>&amp;Center</value>
+   </data>
+   <data name="RtfFormatRight" xml:space="preserve">
+       <value>&amp;Right</value>
+   </data>
+   <data name="RtfFilter" xml:space="preserve">
+       <value>Rich Text Format (*.RTF)|*.rtf</value>
+   </data>
+   <data name="RtfExtension" xml:space="preserve">
+       <value>rtf</value>
+   </data>
+   <data name="RtfBoldToolTip" xml:space="preserve">
+       <value>Bold</value>
+   </data>
+   <data name="RtfItalicToolTip" xml:space="preserve">
+       <value>Italic</value>
+   </data>
+   <data name="RtfUnderlineToolTip" xml:space="preserve">
+       <value>Underline</value>
+   </data>
+   <data name="RtfTextColorToolTip" xml:space="preserve">
+       <value>Text Color</value>
+   </data>
+   <data name="RtfBackgroundColorToolTip" xml:space="preserve">
+       <value>Background Color</value>
+   </data>
+   <data name="RtfNumbersToolTip" xml:space="preserve">
+       <value>Numbering</value>
+   </data>
+   <data name="RtfBulletsToolTip" xml:space="preserve">
+       <value>Bullets</value>
+   </data>
+   <data name="RtfIndentRightToolTip" xml:space="preserve">
+       <value>Increase Indent</value>
+   </data>
+   <data name="RtfIndentLeftToolTip" xml:space="preserve">
+       <value>Decrease Indent</value>
+   </data>
+   <data name="RtfRightToolTip" xml:space="preserve">
+       <value>Right</value>
+   </data>
+   <data name="RtfLeftToolTip" xml:space="preserve">
+       <value>Left</value>
+   </data>
+   <data name="RtfCenterToolTip" xml:space="preserve">
+       <value>Center</value>
+   </data>
+   <data name="SnapToGridCaption" xml:space="preserve">
+       <value>Snap To Grid</value>
+   </data>
+   <data name="SnapToGridContextMenu" xml:space="preserve">
+       <value>Snap To Grid</value>
+   </data>
+
+   <data name="SnapToGridAppearanceGroupBox" xml:space="preserve">
+       <value>Appearance</value>
+   </data>
+   <data name="SnapToGridShowGridCheckBox" xml:space="preserve">
+       <value>Show Grid</value>
+   </data>
+   <data name="SnapToGridGridColorLabel" xml:space="preserve">
+       <value>Grid Color:</value>
+   </data>
+   <data name="SnapToGridLineStyleLabel" xml:space="preserve">
+       <value>Line Style:</value>
+   </data>
+   <data name="SnapToGridGridLengthLabel" xml:space="preserve">
+       <value>Grid Length(5-999)</value>
+   </data>
+   <data name="SnapToGridLineSpacingLabel" xml:space="preserve">
+       <value>Line Spacing(1-100)</value>
+   </data>
+   <data name="SnapToGridBehaviorGroupBox" xml:space="preserve">
+       <value>Behavior</value>
+   </data>
+   <data name="SnapToGridChangeOnZoomCheckBox" xml:space="preserve">
+       <value>Change Grid Length On Zoom</value>
+   </data>
+   <data name="SnapToGridEnableSnapCheckBox" xml:space="preserve">
+       <value>Enable Snap</value>
+   </data>
+   <data name="VideoObjectName" xml:space="preserve">
+       <value>Video</value>
+   </data>
+   <data name="VideoTabCaption" xml:space="preserve">
+       <value>Video</value>
+   </data>
+   <data name="VideoTabFileNameLabel" xml:space="preserve">
+       <value>Video</value>
+   </data>
+   <data name="VideoTabOpenFileDialogFilter" xml:space="preserve">
+       <value>Avi Files|*.avi|All Files|*.*</value>
+   </data>
+   <data name="VideoControlBalanceGroupBox" xml:space="preserve">
+       <value>Balance:</value>
+   </data>
+   <data name="VideoControlLeftLabel" xml:space="preserve">
+       <value>Left</value>
+   </data>
+   <data name="VideoControlRightLabel" xml:space="preserve">
+       <value>Right</value>
+   </data>
+   <data name="VideoControlSpeedGroupBox" xml:space="preserve">
+       <value>Speed Ratio:</value>
+   </data>
+   <data name="VideoControlMinimumText" xml:space="preserve">
+       <value>Min</value>
+   </data>
+   <data name="VideoControlMaximumText" xml:space="preserve">
+       <value>Max</value>
+   </data>
+   <data name="VideoControlVolumeGroupbox" xml:space="preserve">
+       <value>Volume:</value>
+   </data>
+   <data name="VideoDialogCaption" xml:space="preserve">
+       <value>Video Player</value>
+   </data>
+   <data name="FixedTabFixedFontSizeCheckBox" xml:space="preserve">
+       <value>Fixed Font &amp;Size</value>
+   </data>
+   <data name="FixedTabFixedPenWidthCheckBox" xml:space="preserve">
+       <value>Fixed Pen &amp;Width</value>
+   </data>
+   <data name="FixedTabFixedFontSizeLabel" xml:space="preserve">
+       <value></value>
+   </data>
+   <data name="FixedTabFixedPenWidthLabel" xml:space="preserve">
+       <value></value>
+   </data>
+   <data name="Warning">
+      <value>Warning</value>
+   </data>
+   <data name="MultimediaNotPresent">
+      <value>LEAD Multimedia Not Installed.  For more information, contact LEAD Technologies, Inc.</value>
+   </data>
+   <data name="RulerTabRestrictLengthCheckBox">
+      <value>&amp;Restrict Length</value>
+   </data>
+   <data name="RtfTextNotFound">
+      <value>The following specified text was not found:</value>
+   </data>
+   <data name="SnapToGridPropertiesContextMenu" xml:space="preserve">
+    <value>Snap To Grid Properties</value>
+  </data>
+   <data name="ShowGridContextMenu" xml:space="preserve">
+    <value>Show Grid</value>
+  </data>
+   <data name="ObjectsAlignmentContextMenu" xml:space="preserve">
+    <value>Objects Alignment</value>
+  </data>
+   <data name="ObjectsAlignmentLeftsContextMenu" xml:space="preserve">
+    <value>Align To Left</value>
+  </data>
+   <data name="ObjectsAlignmentCentersContextMenu" xml:space="preserve">
+    <value>Align To Center</value>
+  </data>
+  <data name="ObjectsAlignmentRightsContextMenu" xml:space="preserve">
+    <value>Align To Right</value>
+  </data>
+   <data name="ObjectsAlignmentTopsContextMenu" xml:space="preserve">
+    <value>Align To Top</value>
+  </data>
+  <data name="ObjectsAlignmentMiddlesContextMenu" xml:space="preserve">
+    <value>Align To Middle</value>
+  </data>
+  <data name="ObjectsAlignmentBottomsContextMenu" xml:space="preserve">
+    <value>Align To Bottom</value>
+  </data>
+  <data name="ObjectsAlignmentSameWidthContextMenu" xml:space="preserve">
+    <value>Make Same Width</value>
+  </data>
+  <data name="ObjectsAlignmentSameHeightContextMenu" xml:space="preserve">
+    <value>Make Same Height</value>
+  </data>
+  <data name="ObjectsAlignmentSameSizeContextMenu" xml:space="preserve">
+    <value>Make Same Size</value>
+  </data>
+  <data name="EnableObjectsAlignmentContextMenu" xml:space="preserve">
+    <value>Enable Objects Alignment</value>
+  </data>
+</root>

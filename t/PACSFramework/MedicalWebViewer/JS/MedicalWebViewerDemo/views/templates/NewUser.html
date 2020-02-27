@@ -1,0 +1,21 @@
+﻿<form name="newUserForm" ng-controller="Controllers.NewUserController" novalidate>
+    <div class="form-group">
+        <label for="username">User Name:</label>
+        <input type="text" class="text-field" id="username" placeholder="" ng-model="username" required>
+    </div>
+    <div class="form-group">
+        <label for="newUserPassword" ng-hide="validateOnAd||validateOnIdP">Password:</label>
+        <input type="password" class="text-field" id="newUserPassword" placeholder="" ng-model="password" ng-hide="validateOnAd||validateOnIdP" ng-disabled="validateOnAd||validateOnIdP" ng-required="enablePassword()">
+    </div>
+    <div class="form-group">
+        <label for="confirmPassword" ng-hide="validateOnAd||validateOnIdP">Confirm Password:</label>
+        <input type="password" class="text-field" id="confirmPassword" ng-model="confirmPassword" placeholder="" ng-hide="validateOnAd||validateOnIdP" ng-disabled="validateOnAd||validateOnIdP" ng-required="" pwd-confirm="newUserPassword">
+    </div>
+    <div class="form-group">
+        <a class="form-btn" ng-disabled="newUserForm.$invalid" ng-click="createUser(username,password,validateOnAd,validateOnIdP)">Create</a>
+    </div>
+    <div class="form-group">
+       <label style="margin-top: 15px;"><input id='checkboxAD' type='checkbox' value='AD' ng-model="validateOnAd"> Active Directory Authentication </input> </label>
+       <label style="margin-top: 15px;"><input id='checkboxIdP' type='checkbox' value='IdP' ng-model="validateOnIdP"> Federated IdP Authentication </input> </label>
+    </div>
+</form>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3a3d66cf-2a85-4945-adba-68f356c73e68" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="122b5b6d-457d-4bfe-bd8a-662799517928" SourceId="1" SourceUrl="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="5635197a-4f02-4bb4-be28-38db358e525d" SourceId="1" SourceUrl="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="bc7bca46-ce65-4e66-bb29-29cc32108e01" SourceId="1" SourceUrl="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" />
+    <MetadataFile FileName="Leadtools.Medical.Worklist.Wcf.Utils.xsd" MetadataType="Schema" ID="8613b30e-bf60-4242-9f00-224311510ec9" SourceId="1" SourceUrl="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="1639484d-85b4-4d30-9014-d3adbfda3b6b" SourceId="1" SourceUrl="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" />
+    <MetadataFile FileName="Leadtools.Medical.DataAccessLayer.Catalog.xsd" MetadataType="Schema" ID="8c1a081c-6a53-491c-bbf4-bb59002ed10c" SourceId="1" SourceUrl="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" />
+    <MetadataFile FileName="Leadtools.Dicom.xsd" MetadataType="Schema" ID="9663ebcf-633f-46da-ba81-12e4d93de8dd" SourceId="1" SourceUrl="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="0ff04901-7da4-4c7a-a6fe-5fb6667c150c" SourceId="1" SourceUrl="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" />
+    <MetadataFile FileName="Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters.xsd" MetadataType="Schema" ID="c69d2343-d46a-46bd-af0d-791f3a1323ac" SourceId="1" SourceUrl="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" />
+    <MetadataFile FileName="Leadtools.Dicom.Common.DataTypes.xsd" MetadataType="Schema" ID="838aef16-eda8-42c7-8d67-236720fb29be" SourceId="1" SourceUrl="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

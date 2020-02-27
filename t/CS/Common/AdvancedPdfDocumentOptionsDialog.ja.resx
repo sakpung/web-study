@@ -1,0 +1,1092 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>拡張PDFオプション</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AdvancedPdfDocumentOptionsDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_annotationsEnabledCheckBox.Name" xml:space="preserve">
+    <value>_annotationsEnabledCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_annotationsEnabledCheckBox.Parent" xml:space="preserve">
+    <value>_permissionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_annotationsEnabledCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_annotationsEnabledCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_assemblyEnabledCheckBox.Name" xml:space="preserve">
+    <value>_assemblyEnabledCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_assemblyEnabledCheckBox.Parent" xml:space="preserve">
+    <value>_permissionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_assemblyEnabledCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_assemblyEnabledCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_authorLabel.Name" xml:space="preserve">
+    <value>_authorLabel</value>
+  </data>
+  <data name="&gt;&gt;_authorLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_authorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_authorLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_authorTextBox.Name" xml:space="preserve">
+    <value>_authorTextBox</value>
+  </data>
+  <data name="&gt;&gt;_authorTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_authorTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_authorTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Name" xml:space="preserve">
+    <value>_cancelButton</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_centerWindowCheckBox.Name" xml:space="preserve">
+    <value>_centerWindowCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_centerWindowCheckBox.Parent" xml:space="preserve">
+    <value>_windowsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_centerWindowCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_centerWindowCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_coloredImageCompressionComboBox.Name" xml:space="preserve">
+    <value>_coloredImageCompressionComboBox</value>
+  </data>
+  <data name="&gt;&gt;_coloredImageCompressionComboBox.Parent" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_coloredImageCompressionComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_coloredImageCompressionComboBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_coloredImageCompressionLabel.Name" xml:space="preserve">
+    <value>_coloredImageCompressionLabel</value>
+  </data>
+  <data name="&gt;&gt;_coloredImageCompressionLabel.Parent" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_coloredImageCompressionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_coloredImageCompressionLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_compressionsOptionsGroupBox.Name" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_compressionsOptionsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_compressionsOptionsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_compressionsOptionsGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_compressionTab.Name" xml:space="preserve">
+    <value>_compressionTab</value>
+  </data>
+  <data name="&gt;&gt;_compressionTab.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_compressionTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_compressionTab.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_copyEnabledCheckBox.Name" xml:space="preserve">
+    <value>_copyEnabledCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_copyEnabledCheckBox.Parent" xml:space="preserve">
+    <value>_permissionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_copyEnabledCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_copyEnabledCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_descriptionTab.Name" xml:space="preserve">
+    <value>_descriptionTab</value>
+  </data>
+  <data name="&gt;&gt;_descriptionTab.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_descriptionTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_descriptionTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_editEnabledCheckBox.Name" xml:space="preserve">
+    <value>_editEnabledCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_editEnabledCheckBox.Parent" xml:space="preserve">
+    <value>_permissionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_editEnabledCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_editEnabledCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_encryptionModeComboBox.Name" xml:space="preserve">
+    <value>_encryptionModeComboBox</value>
+  </data>
+  <data name="&gt;&gt;_encryptionModeComboBox.Parent" xml:space="preserve">
+    <value>_securityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_encryptionModeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_encryptionModeComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_encryptionModeLabel.Name" xml:space="preserve">
+    <value>_encryptionModeLabel</value>
+  </data>
+  <data name="&gt;&gt;_encryptionModeLabel.Parent" xml:space="preserve">
+    <value>_securityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_encryptionModeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_encryptionModeLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_fontEmbeddingComboBox.Name" xml:space="preserve">
+    <value>_fontEmbeddingComboBox</value>
+  </data>
+  <data name="&gt;&gt;_fontEmbeddingComboBox.Parent" xml:space="preserve">
+    <value>_generalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fontEmbeddingComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fontEmbeddingComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_fontEmbeddingLabel.Name" xml:space="preserve">
+    <value>_fontEmbeddingLabel</value>
+  </data>
+  <data name="&gt;&gt;_fontEmbeddingLabel.Parent" xml:space="preserve">
+    <value>_generalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fontEmbeddingLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fontEmbeddingLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_fontsTab.Name" xml:space="preserve">
+    <value>_fontsTab</value>
+  </data>
+  <data name="&gt;&gt;_fontsTab.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_fontsTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fontsTab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_generalGroupBox.Name" xml:space="preserve">
+    <value>_generalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_generalGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_generalGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_generalGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_hideMenuBarCheckBox.Name" xml:space="preserve">
+    <value>_hideMenuBarCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_hideMenuBarCheckBox.Parent" xml:space="preserve">
+    <value>_userInterfaceOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_hideMenuBarCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_hideMenuBarCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_hideToolBarCheckBox.Name" xml:space="preserve">
+    <value>_hideToolBarCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_hideToolBarCheckBox.Parent" xml:space="preserve">
+    <value>_userInterfaceOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_hideToolBarCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_hideToolBarCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_hideWindowControlsCheckBox.Name" xml:space="preserve">
+    <value>_hideWindowControlsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_hideWindowControlsCheckBox.Parent" xml:space="preserve">
+    <value>_userInterfaceOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_hideWindowControlsCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_hideWindowControlsCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_highQualityPrintEnabledCheckBox.Name" xml:space="preserve">
+    <value>_highQualityPrintEnabledCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_highQualityPrintEnabledCheckBox.Parent" xml:space="preserve">
+    <value>_permissionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_highQualityPrintEnabledCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_highQualityPrintEnabledCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextCompressionOptionsGroupBox.Name" xml:space="preserve">
+    <value>_imageOverTextCompressionOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextCompressionOptionsGroupBox.Parent" xml:space="preserve">
+    <value>_compressionTab</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextCompressionOptionsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextCompressionOptionsGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextModeComboBox.Name" xml:space="preserve">
+    <value>_imageOverTextModeComboBox</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextModeComboBox.Parent" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextModeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextModeComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextModeLabel.Name" xml:space="preserve">
+    <value>_imageOverTextModeLabel</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextModeLabel.Parent" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextModeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextModeLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextSizeComboBox.Name" xml:space="preserve">
+    <value>_imageOverTextSizeComboBox</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextSizeComboBox.Parent" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextSizeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextSizeComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextSizeLabel.Name" xml:space="preserve">
+    <value>_imageOverTextSizeLabel</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextSizeLabel.Parent" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextSizeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_imageOverTextSizeLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_initialPageNumberNumericUpDown.Name" xml:space="preserve">
+    <value>_initialPageNumberNumericUpDown</value>
+  </data>
+  <data name="&gt;&gt;_initialPageNumberNumericUpDown.Parent" xml:space="preserve">
+    <value>_layoutPageModeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_initialPageNumberNumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_initialPageNumberNumericUpDown.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_initialViewTab.Name" xml:space="preserve">
+    <value>_initialViewTab</value>
+  </data>
+  <data name="&gt;&gt;_initialViewTab.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_initialViewTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_initialViewTab.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabel.Name" xml:space="preserve">
+    <value>_keywordsLabel</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabelNote.Name" xml:space="preserve">
+    <value>_keywordsLabelNote</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabelNote.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabelNote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_keywordsLabelNote.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_keywordsTextBox.Name" xml:space="preserve">
+    <value>_keywordsTextBox</value>
+  </data>
+  <data name="&gt;&gt;_keywordsTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_keywordsTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_keywordsTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_layoutPageModeGroupBox.Name" xml:space="preserve">
+    <value>_layoutPageModeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_layoutPageModeGroupBox.Parent" xml:space="preserve">
+    <value>_initialViewTab</value>
+  </data>
+  <data name="&gt;&gt;_layoutPageModeGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_layoutPageModeGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_linearizedCheckBox.Name" xml:space="preserve">
+    <value>_linearizedCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_linearizedCheckBox.Parent" xml:space="preserve">
+    <value>_generalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_linearizedCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_linearizedCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesLabel.Name" xml:space="preserve">
+    <value>_numberOfPagesLabel</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesLabel.Parent" xml:space="preserve">
+    <value>_layoutPageModeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numberOfPagesLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Name" xml:space="preserve">
+    <value>_okButton</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_okButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_oneBitImageCompressionComboBox.Name" xml:space="preserve">
+    <value>_oneBitImageCompressionComboBox</value>
+  </data>
+  <data name="&gt;&gt;_oneBitImageCompressionComboBox.Parent" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_oneBitImageCompressionComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_oneBitImageCompressionComboBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_oneBitImageCompressionLabel.Name" xml:space="preserve">
+    <value>_oneBitImageCompressionLabel</value>
+  </data>
+  <data name="&gt;&gt;_oneBitImageCompressionLabel.Parent" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_oneBitImageCompressionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_oneBitImageCompressionLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_openToPageLabel.Name" xml:space="preserve">
+    <value>_openToPageLabel</value>
+  </data>
+  <data name="&gt;&gt;_openToPageLabel.Parent" xml:space="preserve">
+    <value>_layoutPageModeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_openToPageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_openToPageLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_ownerPasswordLabel.Name" xml:space="preserve">
+    <value>_ownerPasswordLabel</value>
+  </data>
+  <data name="&gt;&gt;_ownerPasswordLabel.Parent" xml:space="preserve">
+    <value>_securityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_ownerPasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ownerPasswordLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_ownerPasswordTextBox.Name" xml:space="preserve">
+    <value>_ownerPasswordTextBox</value>
+  </data>
+  <data name="&gt;&gt;_ownerPasswordTextBox.Parent" xml:space="preserve">
+    <value>_securityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_ownerPasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ownerPasswordTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_pageFitTypeComboBox.Name" xml:space="preserve">
+    <value>_pageFitTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;_pageFitTypeComboBox.Parent" xml:space="preserve">
+    <value>_layoutPageModeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pageFitTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pageFitTypeComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_pageFitTypeLabel.Name" xml:space="preserve">
+    <value>_pageFitTypeLabel</value>
+  </data>
+  <data name="&gt;&gt;_pageFitTypeLabel.Parent" xml:space="preserve">
+    <value>_layoutPageModeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pageFitTypeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pageFitTypeLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_pageLayoutComboBox.Name" xml:space="preserve">
+    <value>_pageLayoutComboBox</value>
+  </data>
+  <data name="&gt;&gt;_pageLayoutComboBox.Parent" xml:space="preserve">
+    <value>_layoutPageModeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pageLayoutComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pageLayoutComboBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_pageLayoutLabel.Name" xml:space="preserve">
+    <value>_pageLayoutLabel</value>
+  </data>
+  <data name="&gt;&gt;_pageLayoutLabel.Parent" xml:space="preserve">
+    <value>_layoutPageModeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pageLayoutLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pageLayoutLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_pageModeComboBox.Name" xml:space="preserve">
+    <value>_pageModeComboBox</value>
+  </data>
+  <data name="&gt;&gt;_pageModeComboBox.Parent" xml:space="preserve">
+    <value>_layoutPageModeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pageModeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pageModeComboBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_pageModeLabel.Name" xml:space="preserve">
+    <value>_pageModeLabel</value>
+  </data>
+  <data name="&gt;&gt;_pageModeLabel.Parent" xml:space="preserve">
+    <value>_layoutPageModeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pageModeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pageModeLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_permissionsGroupBox.Name" xml:space="preserve">
+    <value>_permissionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_permissionsGroupBox.Parent" xml:space="preserve">
+    <value>_securityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_permissionsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_permissionsGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_printEnabledCheckBox.Name" xml:space="preserve">
+    <value>_printEnabledCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_printEnabledCheckBox.Parent" xml:space="preserve">
+    <value>_permissionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_printEnabledCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_printEnabledCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.Name" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_propertiesGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_protectedCheckBox.Name" xml:space="preserve">
+    <value>_protectedCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_protectedCheckBox.Parent" xml:space="preserve">
+    <value>_securityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_protectedCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_protectedCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_qualityFactorLabel.Name" xml:space="preserve">
+    <value>_qualityFactorLabel</value>
+  </data>
+  <data name="&gt;&gt;_qualityFactorLabel.Parent" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_qualityFactorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_qualityFactorLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_qualityFactorNumericUpDown.Name" xml:space="preserve">
+    <value>_qualityFactorNumericUpDown</value>
+  </data>
+  <data name="&gt;&gt;_qualityFactorNumericUpDown.Parent" xml:space="preserve">
+    <value>_compressionsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_qualityFactorNumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_qualityFactorNumericUpDown.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_resizeWindowCheckBox.Name" xml:space="preserve">
+    <value>_resizeWindowCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_resizeWindowCheckBox.Parent" xml:space="preserve">
+    <value>_windowsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_resizeWindowCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_resizeWindowCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_securityGroupBox.Name" xml:space="preserve">
+    <value>_securityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_securityGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_securityGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_securityGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_securityTab.Name" xml:space="preserve">
+    <value>_securityTab</value>
+  </data>
+  <data name="&gt;&gt;_securityTab.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_securityTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_securityTab.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_showDocumentTitleComboBox.Name" xml:space="preserve">
+    <value>_showDocumentTitleComboBox</value>
+  </data>
+  <data name="&gt;&gt;_showDocumentTitleComboBox.Parent" xml:space="preserve">
+    <value>_windowsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_showDocumentTitleComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_showDocumentTitleComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_showDocumentTitleLabel.Name" xml:space="preserve">
+    <value>_showDocumentTitleLabel</value>
+  </data>
+  <data name="&gt;&gt;_showDocumentTitleLabel.Parent" xml:space="preserve">
+    <value>_windowsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_showDocumentTitleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_showDocumentTitleLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_subjectLabel.Name" xml:space="preserve">
+    <value>_subjectLabel</value>
+  </data>
+  <data name="&gt;&gt;_subjectLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_subjectLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_subjectLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_subjectTextBox.Name" xml:space="preserve">
+    <value>_subjectTextBox</value>
+  </data>
+  <data name="&gt;&gt;_subjectTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_subjectTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_subjectTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Name" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_titleLabel.Name" xml:space="preserve">
+    <value>_titleLabel</value>
+  </data>
+  <data name="&gt;&gt;_titleLabel.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_titleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_titleLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_titleTextBox.Name" xml:space="preserve">
+    <value>_titleTextBox</value>
+  </data>
+  <data name="&gt;&gt;_titleTextBox.Parent" xml:space="preserve">
+    <value>_propertiesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_titleTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_titleTextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_userInterfaceOptionsGroupBox.Name" xml:space="preserve">
+    <value>_userInterfaceOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_userInterfaceOptionsGroupBox.Parent" xml:space="preserve">
+    <value>_initialViewTab</value>
+  </data>
+  <data name="&gt;&gt;_userInterfaceOptionsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_userInterfaceOptionsGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_userPasswordLabel.Name" xml:space="preserve">
+    <value>_userPasswordLabel</value>
+  </data>
+  <data name="&gt;&gt;_userPasswordLabel.Parent" xml:space="preserve">
+    <value>_securityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_userPasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_userPasswordLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_userPasswordTextBox.Name" xml:space="preserve">
+    <value>_userPasswordTextBox</value>
+  </data>
+  <data name="&gt;&gt;_userPasswordTextBox.Parent" xml:space="preserve">
+    <value>_securityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_userPasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_userPasswordTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_windowsOptionsGroupBox.Name" xml:space="preserve">
+    <value>_windowsOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_windowsOptionsGroupBox.Parent" xml:space="preserve">
+    <value>_initialViewTab</value>
+  </data>
+  <data name="&gt;&gt;_windowsOptionsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_windowsOptionsGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_annotationsEnabledCheckBox.Text" xml:space="preserve">
+    <value>コメントとアノテーションを許可する</value>
+  </data>
+  <data name="_assemblyEnabledCheckBox.Text" xml:space="preserve">
+    <value>文書アセンブリを許可する</value>
+  </data>
+  <data name="_authorLabel.Text" xml:space="preserve">
+    <value>作成者：</value>
+  </data>
+  <data name="_cancelButton.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="_centerWindowCheckBox.Text" xml:space="preserve">
+    <value>スクリーン中央(&amp;C)</value>
+  </data>
+  <data name="_coloredImageCompressionLabel.Text" xml:space="preserve">
+    <value>カラー画像の圧縮：</value>
+  </data>
+  <data name="_compressionsOptionsGroupBox.Text" xml:space="preserve">
+    <value>圧縮オプション</value>
+  </data>
+  <data name="_compressionTab.Text" xml:space="preserve">
+    <value>圧縮</value>
+  </data>
+  <data name="_copyEnabledCheckBox.Text" xml:space="preserve">
+    <value>ドキュメントのコピーとテキストの抽出を許可する</value>
+  </data>
+  <data name="_descriptionTab.Text" xml:space="preserve">
+    <value>概要</value>
+  </data>
+  <data name="_editEnabledCheckBox.Text" xml:space="preserve">
+    <value>文書の編集を許可する</value>
+  </data>
+  <data name="_encryptionModeLabel.Text" xml:space="preserve">
+    <value>暗号化モード：</value>
+  </data>
+  <data name="_fontEmbeddingLabel.Text" xml:space="preserve">
+    <value>フォントの埋め込み：</value>
+  </data>
+  <data name="_fontsTab.Text" xml:space="preserve">
+    <value>フォント</value>
+  </data>
+  <data name="_generalGroupBox.Text" xml:space="preserve">
+    <value>全般：</value>
+  </data>
+  <data name="_hideMenuBarCheckBox.Text" xml:space="preserve">
+    <value>メニューバーを隠す(&amp;u)</value>
+  </data>
+  <data name="_hideToolBarCheckBox.Text" xml:space="preserve">
+    <value>ツールバーを隠す(&amp;b)</value>
+  </data>
+  <data name="_hideWindowControlsCheckBox.Text" xml:space="preserve">
+    <value>ウィンドウコントロールを隠す(&amp;n)</value>
+  </data>
+  <data name="_highQualityPrintEnabledCheckBox.Text" xml:space="preserve">
+    <value>高品質の印刷を許可する</value>
+  </data>
+  <data name="_imageOverTextCompressionOptionsGroupBox.Text" xml:space="preserve">
+    <value>透明テキスト付きPDFの圧縮オプション</value>
+  </data>
+  <data name="_imageOverTextModeLabel.Text" xml:space="preserve">
+    <value>圧縮モード：</value>
+  </data>
+  <data name="_imageOverTextSizeLabel.Text" xml:space="preserve">
+    <value>圧縮サイズ：</value>
+  </data>
+  <data name="_initialViewTab.Text" xml:space="preserve">
+    <value>初期表示</value>
+  </data>
+  <data name="_keywordsLabel.Text" xml:space="preserve">
+    <value>キーワード</value>
+  </data>
+  <data name="_keywordsLabelNote.Text" xml:space="preserve">
+    <value>注意：キーワードはカンマまたはドットで分離することができます.</value>
+  </data>
+  <data name="_layoutPageModeGroupBox.Text" xml:space="preserve">
+    <value>レイアウトとページモード</value>
+  </data>
+  <data name="_linearizedCheckBox.Text" xml:space="preserve">
+    <value> 高速なWeb表示（リニアライズ）</value>
+  </data>
+  <data name="_numberOfPagesLabel.Text" xml:space="preserve">
+    <value>of 1</value>
+  </data>
+  <data name="_okButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="_oneBitImageCompressionLabel.Text" xml:space="preserve">
+    <value>1ビット画像の圧縮：</value>
+  </data>
+  <data name="_openToPageLabel.Text" xml:space="preserve">
+    <value>ページを開く(&amp;O)</value>
+  </data>
+  <data name="_ownerPasswordLabel.Text" xml:space="preserve">
+    <value>オーナーパスワード：</value>
+  </data>
+  <data name="_pageFitTypeLabel.Text" xml:space="preserve">
+    <value>ページフィット(&amp;f)：</value>
+  </data>
+  <data name="_pageLayoutLabel.Text" xml:space="preserve">
+    <value>ページレイアウト(&amp;l)：</value>
+  </data>
+  <data name="_pageModeLabel.Text" xml:space="preserve">
+    <value>ページモード(&amp;m)：</value>
+  </data>
+  <data name="_permissionsGroupBox.Text" xml:space="preserve">
+    <value>許可：</value>
+  </data>
+  <data name="_printEnabledCheckBox.Text" xml:space="preserve">
+    <value>印刷を許可する</value>
+  </data>
+  <data name="_propertiesGroupBox.Text" xml:space="preserve">
+    <value>プロパティ：</value>
+  </data>
+  <data name="_protectedCheckBox.Text" xml:space="preserve">
+    <value>保護されたドキュメント</value>
+  </data>
+  <data name="_qualityFactorLabel.Text" xml:space="preserve">
+    <value>品質係数：</value>
+  </data>
+  <data name="_resizeWindowCheckBox.Text" xml:space="preserve">
+    <value>初期ページをウィンドウに合わせる(&amp;R)</value>
+  </data>
+  <data name="_securityGroupBox.Text" xml:space="preserve">
+    <value>セキュリティ：</value>
+  </data>
+  <data name="_securityTab.Text" xml:space="preserve">
+    <value>セキュリティ</value>
+  </data>
+  <data name="_showDocumentTitleLabel.Text" xml:space="preserve">
+    <value>表示(&amp;w)：</value>
+  </data>
+  <data name="_subjectLabel.Text" xml:space="preserve">
+    <value>件名：</value>
+  </data>
+  <data name="_titleLabel.Text" xml:space="preserve">
+    <value>タイトル：</value>
+  </data>
+  <data name="_userInterfaceOptionsGroupBox.Text" xml:space="preserve">
+    <value>UIオプション</value>
+  </data>
+  <data name="_userPasswordLabel.Text" xml:space="preserve">
+    <value>ユーザーパスワード(&amp;U)：</value>
+  </data>
+  <data name="_windowsOptionsGroupBox.Text" xml:space="preserve">
+    <value>ウィンドウ オプション</value>
+  </data>
+</root>

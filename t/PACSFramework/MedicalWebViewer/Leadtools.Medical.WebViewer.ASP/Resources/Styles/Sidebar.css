@@ -1,0 +1,127 @@
+﻿.sidebar-right {
+   overflow: hidden;
+   position: fixed;
+   display: block;
+   width: 240px;
+   bottom: 0px;
+   top: 44px;
+   right: 0px;
+}
+
+.sidebar-left {
+   overflow: hidden;
+   position: fixed;
+   display: block;
+   width: 240px;
+   bottom: 0px;
+   top: 44px;
+   left: 0px;
+}
+
+.sidebarContainer {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   border: 1px solid darkgray;
+   border-top: 0px;
+   background: #DFE1E5;
+}
+
+.sidebarContentDiv-left {
+   padding-bottom: 15px;
+   float: left;
+   height: 100%;
+   width: 200px;
+}
+
+.sidebarContentDiv-right {
+   padding-bottom: 15px;
+   float: right;
+   height: 100%;
+   width: 200px;
+}
+
+.sidebarCollapseBtnDiv-left {
+   float: left;
+   text-align: center;
+   height: 100%;
+   width: 30px;
+}
+
+.sidebarCollapseBtnDiv-right {
+   float: right;
+   text-align: center;
+   height: 100%;
+   width: 30px;
+}
+
+#sidebarCollapseBtn-left {
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-image: url(../Images/Icons/CollapseRight.png);
+   background-color: transparent;
+   border-radius: 0px;
+   visibility: hidden;
+}
+
+#sidebarCollapseBtn-right {
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-image: url(../Images/Icons/CollapseLeft.png);
+   background-color: transparent;
+   border-radius: 0px;
+   visibility: hidden;
+}
+
+   #sidebarCollapseBtn-left:focus, #sidebarCollapseBtn-right:focus {
+      border-radius: 0px;
+      outline: none;
+      outline-offset: 0px;
+   }
+
+   #sidebarCollapseBtn-left:active, #sidebarCollapseBtn-right:active {
+      background-color: #eee !important;
+   }
+
+
+@media screen and (max-width: 1024px) {
+   .sidebar-left {
+      transition: all 0.15s ease-out;
+      left: -210px;
+   }
+
+      .sidebar-left.activeSidebar {
+         left: 0;
+         z-index: 1000;
+      }
+
+   .sidebar-right {
+      transition: all 0.15s ease-out;
+      right: -210px;
+   }
+
+      .sidebar-right.activeSidebar {
+         right: 0;
+         z-index: 1000;
+      }
+
+   #sidebarCollapseBtn-left {
+      visibility: visible;
+   }
+
+      #sidebarCollapseBtn-left.collapseIcon {
+         background-image: url(../Images/Icons/CollapseLeft.png);
+      }
+
+   #sidebarCollapseBtn-right {
+      visibility: visible;
+   }
+
+      #sidebarCollapseBtn-right.collapseIcon {
+         background-image: url(../Images/Icons/CollapseRight.png);
+      }
+}

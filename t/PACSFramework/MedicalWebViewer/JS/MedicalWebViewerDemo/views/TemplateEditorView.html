@@ -1,0 +1,30 @@
+﻿<div layout id="editorLayout" layout-config="layoutConfig" style="width: 100vh; height: 100vw" api="layoutApi">
+    <div class="ui-layout-north"  style="padding: 0px !important; overflow: visible !important">
+        <div resize-to-parent class="ToolBar">
+            <div scroller resize-to-parent style="overflow: visible" ng-repeat="toolbar in toolbars">
+                <toolbar buttons="toolbar.items" name="toolbar.name" key="BE0855F9-9BA9-4068-A7B9-AEC8D5F8FA17" />
+            </div>
+        </div>        
+    </div>
+    <div class="ui-layout-center" id="mainCenter">
+        <div style="height: 100%; width: 100%;">
+            <div template-editor ng-model="currentTemplate.Frames" config="editorConfig" style="height: 100%; width: 100%; background-color: black" id="templateEditor" editor-api="editorApi" selected-items="selectedFrames" cancel-move="cancelMove" on-new-frame="onNewFrame(frame)" />
+        </div>
+    </div>
+    <div class="ui-layout-west" style="padding: 0px !important">        
+        <div class="panel panel-default" style="width: inherit; overflow: hidden; height: 50%; margin-bottom: 0px">
+            <div class="panel-heading">{{ 'TEMPLATES' | translate}}</div>
+            <div style="height: calc(100% - 35px); width: 100%; overflow-y: auto">
+                <div class="list-group">
+                    <a role="button" ng-repeat="item in templates" class="list-group-item" ng-class="{active:currentTemplate==item}" ng-click="loadTemplate(item)"><span class="pull-right fa fa-lock" ng-show="{{item.BuiltIn}}"></span>{{item.Name}}</a>
+                </div>
+            </div>            
+        </div>
+        <div class="panel panel-default" style="width: inherit; overflow: hidden; height: 50%; margin-bottom: 0px">
+            <div class="panel-heading">{{ 'PROPERTIES' | translate}}</div>
+            <div style="height: calc(100% - 35px); width: 100%; overflow-y: auto">
+                <div propertygrid id="ibp" items="propertyGridItems" style="height:100%" on-property-changed="onPropertyChanged(name,value)" on-property-clicked="onPropertyClicked(name,value)" />
+            </div>
+        </div>
+    </div>
+</div>

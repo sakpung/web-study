@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OcrJobProcessorClientDemo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="InputFilesUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\NetWorkPath\</Value>
+    </Setting>
+    <Setting Name="OutputFilesUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\NetWorkPath\</Value>
+    </Setting>
+    <Setting Name="CSOcrJobProcessorClientDemo_JobServiceReference_JobService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/LEADTOOLSJobProcessorServices/JobService.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

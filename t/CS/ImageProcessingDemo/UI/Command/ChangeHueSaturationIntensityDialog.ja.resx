@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>色相、彩度、明度の変更</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ChangeHueSaturationIntensityDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_btnok.Name" xml:space="preserve">
+    <value>_btnok</value>
+  </data>
+  <data name="&gt;&gt;_btnok.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnok.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_cmbMask.Name" xml:space="preserve">
+    <value>_cmbMask</value>
+  </data>
+  <data name="&gt;&gt;_cmbMask.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cmbMask.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbMask.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_gbInnerRange.Name" xml:space="preserve">
+    <value>_gbInnerRange</value>
+  </data>
+  <data name="&gt;&gt;_gbInnerRange.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbInnerRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbInnerRange.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_gbOuterRange.Name" xml:space="preserve">
+    <value>_gbOuterRange</value>
+  </data>
+  <data name="&gt;&gt;_gbOuterRange.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbOuterRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbOuterRange.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_gbSourceChannels.Name" xml:space="preserve">
+    <value>_gbSourceChannels</value>
+  </data>
+  <data name="&gt;&gt;_gbSourceChannels.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbSourceChannels.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbSourceChannels.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_lblHue.Name" xml:space="preserve">
+    <value>_lblHue</value>
+  </data>
+  <data name="&gt;&gt;_lblHue.Parent" xml:space="preserve">
+    <value>_gbSourceChannels</value>
+  </data>
+  <data name="&gt;&gt;_lblHue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblHue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_lblInnerHigh.Name" xml:space="preserve">
+    <value>_lblInnerHigh</value>
+  </data>
+  <data name="&gt;&gt;_lblInnerHigh.Parent" xml:space="preserve">
+    <value>_gbInnerRange</value>
+  </data>
+  <data name="&gt;&gt;_lblInnerHigh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblInnerHigh.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblInnerLow.Name" xml:space="preserve">
+    <value>_lblInnerLow</value>
+  </data>
+  <data name="&gt;&gt;_lblInnerLow.Parent" xml:space="preserve">
+    <value>_gbInnerRange</value>
+  </data>
+  <data name="&gt;&gt;_lblInnerLow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblInnerLow.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_lblIntensity.Name" xml:space="preserve">
+    <value>_lblIntensity</value>
+  </data>
+  <data name="&gt;&gt;_lblIntensity.Parent" xml:space="preserve">
+    <value>_gbSourceChannels</value>
+  </data>
+  <data name="&gt;&gt;_lblIntensity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblIntensity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblMask.Name" xml:space="preserve">
+    <value>_lblMask</value>
+  </data>
+  <data name="&gt;&gt;_lblMask.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblMask.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblMask.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_lblOuterHigh.Name" xml:space="preserve">
+    <value>_lblOuterHigh</value>
+  </data>
+  <data name="&gt;&gt;_lblOuterHigh.Parent" xml:space="preserve">
+    <value>_gbOuterRange</value>
+  </data>
+  <data name="&gt;&gt;_lblOuterHigh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblOuterHigh.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_lblOuterLow.Name" xml:space="preserve">
+    <value>_lblOuterLow</value>
+  </data>
+  <data name="&gt;&gt;_lblOuterLow.Parent" xml:space="preserve">
+    <value>_gbOuterRange</value>
+  </data>
+  <data name="&gt;&gt;_lblOuterLow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblOuterLow.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_lblSaturation.Name" xml:space="preserve">
+    <value>_lblSaturation</value>
+  </data>
+  <data name="&gt;&gt;_lblSaturation.Parent" xml:space="preserve">
+    <value>_gbSourceChannels</value>
+  </data>
+  <data name="&gt;&gt;_lblSaturation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblSaturation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_numHue.Name" xml:space="preserve">
+    <value>_numHue</value>
+  </data>
+  <data name="&gt;&gt;_numHue.Parent" xml:space="preserve">
+    <value>_gbSourceChannels</value>
+  </data>
+  <data name="&gt;&gt;_numHue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numHue.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_numInnerHigh.Name" xml:space="preserve">
+    <value>_numInnerHigh</value>
+  </data>
+  <data name="&gt;&gt;_numInnerHigh.Parent" xml:space="preserve">
+    <value>_gbInnerRange</value>
+  </data>
+  <data name="&gt;&gt;_numInnerHigh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numInnerHigh.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_numInnerLow.Name" xml:space="preserve">
+    <value>_numInnerLow</value>
+  </data>
+  <data name="&gt;&gt;_numInnerLow.Parent" xml:space="preserve">
+    <value>_gbInnerRange</value>
+  </data>
+  <data name="&gt;&gt;_numInnerLow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numInnerLow.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_numIntensity.Name" xml:space="preserve">
+    <value>_numIntensity</value>
+  </data>
+  <data name="&gt;&gt;_numIntensity.Parent" xml:space="preserve">
+    <value>_gbSourceChannels</value>
+  </data>
+  <data name="&gt;&gt;_numIntensity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numIntensity.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_numOuterHigh.Name" xml:space="preserve">
+    <value>_numOuterHigh</value>
+  </data>
+  <data name="&gt;&gt;_numOuterHigh.Parent" xml:space="preserve">
+    <value>_gbOuterRange</value>
+  </data>
+  <data name="&gt;&gt;_numOuterHigh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numOuterHigh.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_numOuterLow.Name" xml:space="preserve">
+    <value>_numOuterLow</value>
+  </data>
+  <data name="&gt;&gt;_numOuterLow.Parent" xml:space="preserve">
+    <value>_gbOuterRange</value>
+  </data>
+  <data name="&gt;&gt;_numOuterLow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numOuterLow.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_numSaturation.Name" xml:space="preserve">
+    <value>_numSaturation</value>
+  </data>
+  <data name="&gt;&gt;_numSaturation.Parent" xml:space="preserve">
+    <value>_gbSourceChannels</value>
+  </data>
+  <data name="&gt;&gt;_numSaturation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_numSaturation.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_tbHue.Name" xml:space="preserve">
+    <value>_tbHue</value>
+  </data>
+  <data name="&gt;&gt;_tbHue.Parent" xml:space="preserve">
+    <value>_gbSourceChannels</value>
+  </data>
+  <data name="&gt;&gt;_tbHue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbHue.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_tbInnerHigh.Name" xml:space="preserve">
+    <value>_tbInnerHigh</value>
+  </data>
+  <data name="&gt;&gt;_tbInnerHigh.Parent" xml:space="preserve">
+    <value>_gbInnerRange</value>
+  </data>
+  <data name="&gt;&gt;_tbInnerHigh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbInnerHigh.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_tbInnerLow.Name" xml:space="preserve">
+    <value>_tbInnerLow</value>
+  </data>
+  <data name="&gt;&gt;_tbInnerLow.Parent" xml:space="preserve">
+    <value>_gbInnerRange</value>
+  </data>
+  <data name="&gt;&gt;_tbInnerLow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbInnerLow.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_tbIntensity.Name" xml:space="preserve">
+    <value>_tbIntensity</value>
+  </data>
+  <data name="&gt;&gt;_tbIntensity.Parent" xml:space="preserve">
+    <value>_gbSourceChannels</value>
+  </data>
+  <data name="&gt;&gt;_tbIntensity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbIntensity.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_tbOuterHigh.Name" xml:space="preserve">
+    <value>_tbOuterHigh</value>
+  </data>
+  <data name="&gt;&gt;_tbOuterHigh.Parent" xml:space="preserve">
+    <value>_gbOuterRange</value>
+  </data>
+  <data name="&gt;&gt;_tbOuterHigh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbOuterHigh.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_tbOuterLow.Name" xml:space="preserve">
+    <value>_tbOuterLow</value>
+  </data>
+  <data name="&gt;&gt;_tbOuterLow.Parent" xml:space="preserve">
+    <value>_gbOuterRange</value>
+  </data>
+  <data name="&gt;&gt;_tbOuterLow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbOuterLow.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_tbSaturation.Name" xml:space="preserve">
+    <value>_tbSaturation</value>
+  </data>
+  <data name="&gt;&gt;_tbSaturation.Parent" xml:space="preserve">
+    <value>_gbSourceChannels</value>
+  </data>
+  <data name="&gt;&gt;_tbSaturation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tbSaturation.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="_btnok.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="_gbInnerRange.Text" xml:space="preserve">
+    <value>内側の範囲</value>
+  </data>
+  <data name="_gbOuterRange.Text" xml:space="preserve">
+    <value>外側の範囲</value>
+  </data>
+  <data name="_gbSourceChannels.Text" xml:space="preserve">
+    <value>ソースチャネル</value>
+  </data>
+  <data name="_lblHue.Text" xml:space="preserve">
+    <value>色相</value>
+  </data>
+  <data name="_lblInnerHigh.Text" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="_lblInnerLow.Text" xml:space="preserve">
+    <value>低</value>
+  </data>
+  <data name="_lblIntensity.Text" xml:space="preserve">
+    <value>明度</value>
+  </data>
+  <data name="_lblMask.Text" xml:space="preserve">
+    <value>マスク</value>
+  </data>
+  <data name="_lblOuterHigh.Text" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="_lblOuterLow.Text" xml:space="preserve">
+    <value>低</value>
+  </data>
+  <data name="_lblSaturation.Text" xml:space="preserve">
+    <value>彩度</value>
+  </data>
+</root>

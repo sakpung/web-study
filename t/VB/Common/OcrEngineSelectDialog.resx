@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_lblNoEnginesFound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="_lblNoEnginesFound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 119</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_lblNoEnginesFound.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblNoEnginesFound.Name" xml:space="preserve">
+    <value>_lblNoEnginesFound</value>
+  </data>
+  <data name="&gt;&gt;_lblNoEnginesFound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblNoEnginesFound.Parent" xml:space="preserve">
+    <value>_tpNoEnginesFound</value>
+  </data>
+  <data name="&gt;&gt;_lblNoEnginesFound.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_tpNoEnginesFound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_tpNoEnginesFound.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="_tpNoEnginesFound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>547, 153</value>
+  </data>
+  <data name="_tpNoEnginesFound.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_tpNoEnginesFound.Text" xml:space="preserve">
+    <value>OCR Engine</value>
+  </data>
+  <data name="&gt;&gt;_tpNoEnginesFound.Name" xml:space="preserve">
+    <value>_tpNoEnginesFound</value>
+  </data>
+  <data name="&gt;&gt;_tpNoEnginesFound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpNoEnginesFound.Parent" xml:space="preserve">
+    <value>_tcMain</value>
+  </data>
+  <data name="&gt;&gt;_tpNoEnginesFound.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_cbEngineSelection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 66</value>
+  </data>
+  <data name="_cbEngineSelection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>504, 21</value>
+  </data>
+  <data name="_cbEngineSelection.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_cbEngineSelection.Name" xml:space="preserve">
+    <value>_cbEngineSelection</value>
+  </data>
+  <data name="&gt;&gt;_cbEngineSelection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbEngineSelection.Parent" xml:space="preserve">
+    <value>_tpSelectEngine</value>
+  </data>
+  <data name="&gt;&gt;_cbEngineSelection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_lblSelectEngine.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblSelectEngine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 35</value>
+  </data>
+  <data name="_lblSelectEngine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 13</value>
+  </data>
+  <data name="_lblSelectEngine.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_lblSelectEngine.Text" xml:space="preserve">
+    <value>Select the LEADTOOLS OCR engine to use in this demo:</value>
+  </data>
+  <data name="&gt;&gt;_lblSelectEngine.Name" xml:space="preserve">
+    <value>_lblSelectEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblSelectEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblSelectEngine.Parent" xml:space="preserve">
+    <value>_tpSelectEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblSelectEngine.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_tpSelectEngine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="_tpSelectEngine.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="_tpSelectEngine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>547, 153</value>
+  </data>
+  <data name="_tpSelectEngine.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_tpSelectEngine.Text" xml:space="preserve">
+    <value>OCR Engine</value>
+  </data>
+  <data name="&gt;&gt;_tpSelectEngine.Name" xml:space="preserve">
+    <value>_tpSelectEngine</value>
+  </data>
+  <data name="&gt;&gt;_tpSelectEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpSelectEngine.Parent" xml:space="preserve">
+    <value>_tcMain</value>
+  </data>
+  <data name="&gt;&gt;_tpSelectEngine.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_lblStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 72</value>
+  </data>
+  <data name="_lblStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 70</value>
+  </data>
+  <data name="_lblStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.Name" xml:space="preserve">
+    <value>_lblStatus</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.Parent" xml:space="preserve">
+    <value>_tpStartEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_lblStartEngine.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblStartEngine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 44</value>
+  </data>
+  <data name="_lblStartEngine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 13</value>
+  </data>
+  <data name="_lblStartEngine.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_lblStartEngine.Text" xml:space="preserve">
+    <value>Starting up the ### engine...</value>
+  </data>
+  <data name="&gt;&gt;_lblStartEngine.Name" xml:space="preserve">
+    <value>_lblStartEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblStartEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblStartEngine.Parent" xml:space="preserve">
+    <value>_tpStartEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblStartEngine.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_tpStartEngine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="_tpStartEngine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>547, 153</value>
+  </data>
+  <data name="_tpStartEngine.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_tpStartEngine.Text" xml:space="preserve">
+    <value>OCR Engine</value>
+  </data>
+  <data name="&gt;&gt;_tpStartEngine.Name" xml:space="preserve">
+    <value>_tpStartEngine</value>
+  </data>
+  <data name="&gt;&gt;_tpStartEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tpStartEngine.Parent" xml:space="preserve">
+    <value>_tcMain</value>
+  </data>
+  <data name="&gt;&gt;_tpStartEngine.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_tcMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="_tcMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>555, 179</value>
+  </data>
+  <data name="_tcMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_tcMain.Name" xml:space="preserve">
+    <value>_tcMain</value>
+  </data>
+  <data name="&gt;&gt;_tcMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tcMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_tcMain.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_lbDownload.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lbDownload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 276</value>
+  </data>
+  <data name="_lbDownload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 13</value>
+  </data>
+  <data name="_lbDownload.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_lbDownload.Text" xml:space="preserve">
+    <value>https://www.leadtools.com/downloads?category=main</value>
+  </data>
+  <data name="_lbDownload.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.Name" xml:space="preserve">
+    <value>_lbDownload</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lbDownload.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_lblAllowNoOcr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 200</value>
+  </data>
+  <data name="_lblAllowNoOcr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 40</value>
+  </data>
+  <data name="_lblAllowNoOcr.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_lblAllowNoOcr.Name" xml:space="preserve">
+    <value>_lblAllowNoOcr</value>
+  </data>
+  <data name="&gt;&gt;_lblAllowNoOcr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblAllowNoOcr.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblAllowNoOcr.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_lblDownload.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblDownload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 254</value>
+  </data>
+  <data name="_lblDownload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 13</value>
+  </data>
+  <data name="_lblDownload.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_lblDownload.Text" xml:space="preserve">
+    <value>Click the following link to download and install additional LEADTOOLS OCR Engines:</value>
+  </data>
+  <data name="&gt;&gt;_lblDownload.Name" xml:space="preserve">
+    <value>_lblDownload</value>
+  </data>
+  <data name="&gt;&gt;_lblDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblDownload.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblDownload.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 234</value>
+  </data>
+  <data name="_btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="_btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="_btnOk.Text" xml:space="preserve">
+    <value>&amp;Start</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Name" xml:space="preserve">
+    <value>_btnOk</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 266</value>
+  </data>
+  <data name="_btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="_btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>578, 308</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Demo Name</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>OcrEngineSelectDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Resx_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Resx_ErrorOCRCapabilities" xml:space="preserve">
+    <value>Error: {0}{1}{1}This demo will continue without OCR capabilities. Consult LEADTOOLS help or support and try again.</value>
+  </data>
+  <data name="Resx_ErrorOCRWithoutCapabilities" xml:space="preserve">
+    <value>Error: {0}{1}{1}This demo cannot start without OCR capabilities. Consult LEADTOOLS help or support and try again.</value>
+  </data>
+  <data name="Resx_OCRCapabilities" xml:space="preserve">
+    <value>This demo cannot start without OCR capabilities</value>
+  </data>
+  <data name="Resx_OCREngineNotFound" xml:space="preserve">
+    <value>Could not find any LEADTOOLS OCR engine on this machine.</value>
+  </data>
+  <data name="Resx_OCREngineVersion" xml:space="preserve">
+    <value>Consult the LEADTOOLS help or click the link below to download an evaluation version of the LEADTOOLS OCR engines.</value>
+  </data>
+  <data name="Resx_StartUp" xml:space="preserve">
+    <value>Starting up the {0}...</value>
+  </data>
+  <data name="Resx_SuccessContinuing" xml:space="preserve">
+    <value>Success. Continuing with the demo...</value>
+  </data>
+  <data name="Resx_SuccessStarting" xml:space="preserve">
+    <value>Success. Starting the demo...</value>
+  </data>
+</root>

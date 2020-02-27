@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.Medical.Storage.Configuration_4", "My.Medical.Storage.Configuration\My.Medical.Storage.Configuration_4.csproj", "{4917564C-355B-4199-8C2F-5D4EBB025F79}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CC073ADF-432A-4C95-985E-493852ACB2FB} = {CC073ADF-432A-4C95-985E-493852ACB2FB}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.Medical.Storage.DataAccessLayer_4", "My.Medical.Storage.DataAccessLayer\My.Medical.Storage.DataAccessLayer_4.csproj", "{CC073ADF-432A-4C95-985E-493852ACB2FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4917564C-355B-4199-8C2F-5D4EBB025F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4917564C-355B-4199-8C2F-5D4EBB025F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4917564C-355B-4199-8C2F-5D4EBB025F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4917564C-355B-4199-8C2F-5D4EBB025F79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC073ADF-432A-4C95-985E-493852ACB2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC073ADF-432A-4C95-985E-493852ACB2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC073ADF-432A-4C95-985E-493852ACB2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC073ADF-432A-4C95-985E-493852ACB2FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>メインフォーム</value>
+  </data>
+  <data name="_autoZoneDocumentToolStripButton.ToolTipText" xml:space="preserve">
+    <value>文書の全ページにあるゾーンを自動検出</value>
+  </data>
+  <data name="_autoZonePageToolStripButton.ToolTipText" xml:space="preserve">
+    <value>現在のページにあるゾーンを自動検出</value>
+  </data>
+  <data name="_binarizationToolStripMenuItem.Text" xml:space="preserve">
+    <value>自動バイナリ化(&amp;B)</value>
+  </data>
+  <data name="_brightnessToolStripMenuItem.Text" xml:space="preserve">
+    <value>輝度(&amp;N)</value>
+  </data>
+  <data name="_clearAllPagesZonesToolStripMenuItem.Text" xml:space="preserve">
+    <value>全ページのゾーンを削除</value>
+  </data>
+  <data name="_documentCleanupToolStripMenuItem.Text" xml:space="preserve">
+    <value>文書クリーンアップ(&amp;D)</value>
+  </data>
+  <data name="_editCopyToolStripMenuItem.Text" xml:space="preserve">
+    <value>コピー(&amp;C)</value>
+  </data>
+  <data name="_editPasteToolStripMenuItem.Text" xml:space="preserve">
+    <value>貼り付け(&amp;P)</value>
+  </data>
+  <data name="_editToolStripMenuItem.Text" xml:space="preserve">
+    <value>編集(&amp;E)</value>
+  </data>
+  <data name="_engineComponentsToolStripMenuItem.Text" xml:space="preserve">
+    <value>コンポーネント(&amp;C)...</value>
+  </data>
+  <data name="_engineLanguagesToolStripMenuItem.Text" xml:space="preserve">
+    <value>言語(&amp;L)...</value>
+  </data>
+  <data name="_engineSettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>設定(&amp;S)...</value>
+  </data>
+  <data name="_engineToolStripMenuItem.Text" xml:space="preserve">
+    <value>エンジン(&amp;N)</value>
+  </data>
+  <data name="_fileCloseToolStripMenuItem.Text" xml:space="preserve">
+    <value>閉じる(&amp;L)</value>
+  </data>
+  <data name="_fileConvertLTDToolStripMenuItem.Text" xml:space="preserve">
+    <value>LTDファイルの変換(&amp;C)...</value>
+  </data>
+  <data name="_fileExitToolStripMenuItem.Text" xml:space="preserve">
+    <value>終了(&amp;X)</value>
+  </data>
+  <data name="_fileOpenToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイルを開く(&amp;O)...</value>
+  </data>
+  <data name="_fileScanToolStripMenuItem.Text" xml:space="preserve">
+    <value>スキャン(&amp;C)</value>
+  </data>
+  <data name="_fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル(&amp;F)</value>
+  </data>
+  <data name="_helpAboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>バージョン情報(&amp;A)...</value>
+  </data>
+  <data name="_helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>ヘルプ(&amp;H)</value>
+  </data>
+  <data name="_loadAllPagesZonesToolStripMenuItem.Text" xml:space="preserve">
+    <value>全ページのゾーンをロード...</value>
+  </data>
+  <data name="_ocrOmrOptionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>OMR オプション(&amp;O)...</value>
+  </data>
+  <data name="_ocrRecognizeDocumentToolStripMenuItem.Text" xml:space="preserve">
+    <value>ドキュメントを認識(&amp;R)</value>
+  </data>
+  <data name="_ocrRecognizeDocumentToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>ドキュメントの全ページを認識</value>
+  </data>
+  <data name="_ocrRecognizePageToolStripMenuItem.Text" xml:space="preserve">
+    <value>現在のページを認識(&amp;P)</value>
+  </data>
+  <data name="_ocrRecognizePageToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>現在のページを認識</value>
+  </data>
+  <data name="_ocrSaveDocumentToolStripMenuItem.Text" xml:space="preserve">
+    <value>ドキュメントを保存(&amp;S)</value>
+  </data>
+  <data name="_ocrSaveDocumentToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>認識済みのドキュメントを保存</value>
+  </data>
+  <data name="_ocrSaveRecognizedDataAsXmlToolStripMenuItem.Text" xml:space="preserve">
+    <value>認識済みのデータをXMLとして保存(&amp;X)...</value>
+  </data>
+  <data name="_ocrShowRecognizedWordsToolStripMenuItem.Text" xml:space="preserve">
+    <value>認識済みの単語を表示(&amp;W)...</value>
+  </data>
+  <data name="_ocrSpellCheckEngineStripMenuItem.Text" xml:space="preserve">
+    <value>スペルチェックエンジン(&amp;E)...</value>
+  </data>
+  <data name="_ocrSpellLanguageToolStripMenuItem.Text" xml:space="preserve">
+    <value>スペル言語(&amp;L)...</value>
+  </data>
+  <data name="_ocrToolStripMenuItem.Text" xml:space="preserve">
+    <value>OCR(&amp;O)</value>
+  </data>
+  <data name="_ocrZonesToolStripMenuItem.Text" xml:space="preserve">
+    <value>ゾーン(&amp;Z)</value>
+  </data>
+  <data name="_openDocumentToolStripButton.ToolTipText" xml:space="preserve">
+    <value>ディスク上の文書を開く</value>
+  </data>
+  <data name="_pagesDeleteCurrentPageToolStripMenuItem.Text" xml:space="preserve">
+    <value>現在のページを削除(&amp;D)</value>
+  </data>
+  <data name="_pagesDetectPageLanguagesToolStripMenuItem.Text" xml:space="preserve">
+    <value>現在のページの言語を検出...</value>
+  </data>
+  <data name="_pagesInsertToolStripMenuItem.Text" xml:space="preserve">
+    <value>挿入(&amp;I)...</value>
+  </data>
+  <data name="_pagesProcessToolStripMenuItem.Text" xml:space="preserve">
+    <value>処理(&amp;P)</value>
+  </data>
+  <data name="_pagesSaveProcessingImageToDiskToolStripMenuItem.Text" xml:space="preserve">
+    <value>ディスクに保存(&amp;S)...</value>
+  </data>
+  <data name="_pagesToolStripMenuItem.Text" xml:space="preserve">
+    <value>ページ(&amp;P)</value>
+  </data>
+  <data name="_preferencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>オプション(&amp;R)</value>
+  </data>
+  <data name="_preferencesUseProgressBarsToolStripMenuItem.Text" xml:space="preserve">
+    <value>プログレスバーを表示(&amp;U)</value>
+  </data>
+  <data name="_processAllPagesToolStripMenuItem.Text" xml:space="preserve">
+    <value>全てのページ(&amp;A)</value>
+  </data>
+  <data name="_processAllPagesToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>全てのページか現在のページのみを処理する</value>
+  </data>
+  <data name="_processAutoBinarizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>自動(&amp;A)</value>
+  </data>
+  <data name="_processAutoBinarizeToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>バイナリセグメンテーションを適用してドキュメントを1ビット/ピクセル (bitonal)に変更する</value>
+  </data>
+  <data name="_processAutoCropToolStripMenuItem.Text" xml:space="preserve">
+    <value>自動トリム (&amp;C)</value>
+  </data>
+  <data name="_processAutoCropToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>エッジの周りの空白スペースを削除してドキュメントをトリムする</value>
+  </data>
+  <data name="_processAutoLevelToolStripMenuItem.Text" xml:space="preserve">
+    <value>自動レベル(&amp;A)</value>
+  </data>
+  <data name="_processAutoLevelToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>画像のいくつかの自動カラーレベルタイプから1つを適用する</value>
+  </data>
+  <data name="_processContrastBrightnessIntensityToolStripMenuItem.Text" xml:space="preserve">
+    <value>コントラスト/輝度/明度(&amp;C)...</value>
+  </data>
+  <data name="_processContrastBrightnessIntensityToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>コントラスト、明度および輝度を適用して画像のトーナル範囲を強調する</value>
+  </data>
+  <data name="_processDespeckleToolStripMenuItem.Text" xml:space="preserve">
+    <value>斑点の除去(&amp;P)</value>
+  </data>
+  <data name="_processDespeckleToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>ドキュメントから斑点を削除します。普通、本機能はスキャンした画像（ファックスなど）をクリーンするため使用します。</value>
+  </data>
+  <data name="_processDilateToolStripMenuItem.Text" xml:space="preserve">
+    <value>ダイレイト(&amp;I)</value>
+  </data>
+  <data name="_processDilateToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>ドキュメントにある黒オブジェクトを拡張します</value>
+  </data>
+  <data name="_processDynamicBinarizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>動的(&amp;D)</value>
+  </data>
+  <data name="_processDynamicBinarizeToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>画像のビット数を変更せず画像を白黒画像に変更します。ここでは画像の各ピクセルのローカルしきい値を使用します。</value>
+  </data>
+  <data name="_processErodeToolStripMenuItem.Text" xml:space="preserve">
+    <value>黒みの縮小(&amp;E)</value>
+  </data>
+  <data name="_processErodeToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>ドキュメントに存在する黒オブジェクトを圧縮します</value>
+  </data>
+  <data name="_processFixBrokenLettersToolStripMenuItem.Text" xml:space="preserve">
+    <value>壊れた文字の修正(&amp;X)</value>
+  </data>
+  <data name="_processFixBrokenLettersToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>テキスト行を拡張してドキュメントに存在する化け文字を修正します</value>
+  </data>
+  <data name="_processFlipToolStripMenuItem.Text" xml:space="preserve">
+    <value>反転(&amp;F)</value>
+  </data>
+  <data name="_processFlipToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>ドキュメントを垂直方向に反転</value>
+  </data>
+  <data name="_processHisogramEqualToolStripMenuItem.Text" xml:space="preserve">
+    <value>ヒストグラム平均化(&amp;H)</value>
+  </data>
+  <data name="_processHisogramEqualToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>指定したカラースペースに応じて画像のピクセル数を線状にします。これで画像の暗エリアの詳細を取得できます</value>
+  </data>
+  <data name="_processLineRemoveToolStripMenuItem.Text" xml:space="preserve">
+    <value>線の除去(&amp;L)</value>
+  </data>
+  <data name="_processLineRemoveToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>1-ビットを白黒画像から水平線および垂直線を削除します</value>
+  </data>
+  <data name="_processPreprocessAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>全て</value>
+  </data>
+  <data name="_processPreprocessDeskewToolStripMenuItem.Text" xml:space="preserve">
+    <value>傾きの自動補正(&amp;D)</value>
+  </data>
+  <data name="_processPreprocessGetDeskewAngleToolStripMenuItem.Text" xml:space="preserve">
+    <value>傾きの自動補正(&amp;D)...</value>
+  </data>
+  <data name="_processPreprocessGetRotateAngleToolStripMenuItem.Text" xml:space="preserve">
+    <value>回転の角度(&amp;R)...</value>
+  </data>
+  <data name="_processPreprocessInvertToolStripMenuItem.Text" xml:space="preserve">
+    <value>反転(&amp;I)</value>
+  </data>
+  <data name="_processPreprocessIsInvertedToolStripMenuItem.Text" xml:space="preserve">
+    <value>反転テキスト(&amp;I)...</value>
+  </data>
+  <data name="_processPreprocessRotateToolStripMenuItem.Text" xml:space="preserve">
+    <value>回転(&amp;R)</value>
+  </data>
+  <data name="_processPreprocessToolStripMenuItem.Text" xml:space="preserve">
+    <value>前処理(&amp;R)</value>
+  </data>
+  <data name="_processReverseToolStripMenuItem.Text" xml:space="preserve">
+    <value>左右に反転(&amp;E)</value>
+  </data>
+  <data name="_processReverseToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>ドキュメントを反転（左から右）してミラー・イメージを作成します</value>
+  </data>
+  <data name="_processRotate90ClockwiseToolStripMenuItem.Text" xml:space="preserve">
+    <value>回転 90度 - 時計回り(&amp;O)</value>
+  </data>
+  <data name="_processRotate90ClockwiseToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>ドキュメントを時計回りに90度回転</value>
+  </data>
+  <data name="_processRotate90CounterClockwiseToolStripMenuItem.Text" xml:space="preserve">
+    <value>回転 90度 - 反時計回り(&amp;T)</value>
+  </data>
+  <data name="_processRotate90CounterClockwiseToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>ドキュメントを反時計回りに90度回転</value>
+  </data>
+  <data name="_processUnditherTextToolStripMenuItem.Text" xml:space="preserve">
+    <value>ディザなしテキスト(&amp;U)</value>
+  </data>
+  <data name="_processUnditherTextToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>高ビット/ピクセルのディザテキストから変更した文書の場合、本文書のテキストをシャープネスします</value>
+  </data>
+  <data name="_recognizeDocumentToolStripButton.ToolTipText" xml:space="preserve">
+    <value>ドキュメントにある全てのページを認識する</value>
+  </data>
+  <data name="_recognizePageToolStripButton.ToolTipText" xml:space="preserve">
+    <value>現在のページを認識する</value>
+  </data>
+  <data name="_saveAllPagesZonesToolStripMenuItem.Text" xml:space="preserve">
+    <value>全ページのゾーンを保存...</value>
+  </data>
+  <data name="_saveDocumentToolStripButton.ToolTipText" xml:space="preserve">
+    <value>認識済みのページを保存する</value>
+  </data>
+  <data name="_scanAcquireToolStripMenuItem.Text" xml:space="preserve">
+    <value>TWAIN機器から取得(&amp;A)...</value>
+  </data>
+  <data name="_scanSelectSourceToolStripMenuItem.Text" xml:space="preserve">
+    <value>TWAIN機器の選択(&amp;S)...</value>
+  </data>
+  <data name="_timingDescriptionToolStripStatusLabel.Text" xml:space="preserve">
+    <value>最後の操作：</value>
+  </data>
+  <data name="_viewFitPageToolStripMenuItem.Text" xml:space="preserve">
+    <value>ウィンドウサイズに合わせる(&amp;F)</value>
+  </data>
+  <data name="_viewFitWidthToolStripMenuItem.Text" xml:space="preserve">
+    <value>ウィンドウの幅に合わせる(&amp;W)</value>
+  </data>
+  <data name="_viewToolStripMenuItem.Text" xml:space="preserve">
+    <value>表示(&amp;V)</value>
+  </data>
+  <data name="_viewZoomInToolStripMenuItem.Text" xml:space="preserve">
+    <value>拡大(&amp;I)</value>
+  </data>
+  <data name="_viewZoomOutToolStripMenuItem.Text" xml:space="preserve">
+    <value>縮小(&amp;O)</value>
+  </data>
+  <data name="_zonesAutoZoneCurrentPageToolStripMenuItem.Text" xml:space="preserve">
+    <value>現在ページにあるゾーンの自動検出(&amp;C)</value>
+  </data>
+  <data name="_zonesAutoZoneDocumentToolStripMenuItem.Text" xml:space="preserve">
+    <value>ゾーンの自動検出(&amp;A)</value>
+  </data>
+  <data name="_zonesLoadZonesToolStripMenuItem.Text" xml:space="preserve">
+    <value>ゾーンを現在のページにロード(&amp;L)...</value>
+  </data>
+  <data name="_zonesSaveZonesToolStripMenuItem.Text" xml:space="preserve">
+    <value>現在ページのゾーンを保存(&amp;S)...</value>
+  </data>
+  <data name="_zonesShowZoneNamesToolStripMenuItem.Text" xml:space="preserve">
+    <value>ゾーン名を表示(&amp;N)</value>
+  </data>
+  <data name="_zonesShowZonesToolStripMenuItem.Text" xml:space="preserve">
+    <value>ゾーンを表示(&amp;Z)</value>
+  </data>
+  <data name="_zonesUpdateZonesToolStripMenuItem.Text" xml:space="preserve">
+    <value>ゾーンの更新(&amp;U)...</value>
+  </data>
+  <data name="Resx_AutoZone" xml:space="preserve">
+    <value>自動ゾーン</value>
+  </data>
+  <data name="Resx_AutoZoning" xml:space="preserve">
+    <value>文書のページから自動ゾーン認識します...</value>
+  </data>
+  <data name="Resx_Caption" xml:space="preserve">
+    <value>前処理</value>
+  </data>
+  <data name="Resx_DeskewAngle" xml:space="preserve">
+    <value>傾きの自動補正 </value>
+  </data>
+  <data name="Resx_dlg_Title" xml:space="preserve">
+    <value>このページの処理中の画像をTIFFで保存します</value>
+  </data>
+  <data name="Resx_FeatureNotSupported" xml:space="preserve">
+    <value>このエンジンでサポートされていない機能です。</value>
+  </data>
+  <data name="Resx_InsertPages" xml:space="preserve">
+    <value>ページを挿入</value>
+  </data>
+  <data name="Resx_Inverted" xml:space="preserve">
+    <value>反転</value>
+  </data>
+  <data name="Resx_LEADError" xml:space="preserve">
+    <value>LEADTOOLS エラー\n\nコード: {0}\n\n{1}</value>
+  </data>
+  <data name="Resx_NewDocument" xml:space="preserve">
+    <value>新規文書</value>
+  </data>
+  <data name="Resx_NotInverted" xml:space="preserve">
+    <value>転回なし</value>
+  </data>
+  <data name="Resx_OCRComponentMissing" xml:space="preserve">
+    <value>OCRコンポーネントの喪失\n\n{0}\n\nメニューからエンジン／コンポーネントを使用し、可能なコンポーネントの表示と、このOCRエンジンの追加コンポーネントのインストール方法を説明します。</value>
+  </data>
+  <data name="Resx_OCRError" xml:space="preserve">
+    <value>OCR エラー\n\nコード: {0}\n\n{1}</value>
+  </data>
+  <data name="Resx_Preprocess" xml:space="preserve">
+    <value>ゾーンの自動検出</value>
+  </data>
+  <data name="Resx_PreprocessingDocument" xml:space="preserve">
+    <value>文書のページにゾーンを追加しています...</value>
+  </data>
+  <data name="Resx_Recognize" xml:space="preserve">
+    <value>認識</value>
+  </data>
+  <data name="Resx_RecognizingDocument" xml:space="preserve">
+    <value>文書のページを認識しています...</value>
+  </data>
+  <data name="Resx_RotateAngle" xml:space="preserve">
+    <value>回転角度 </value>
+  </data>
+  <data name="Resx_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Resx_SaveDocument" xml:space="preserve">
+    <value>文書を保存</value>
+  </data>
+  <data name="Resx_SavingDocument" xml:space="preserve">
+    <value>出力文書を保存しています...</value>
+  </data>
+  <data name="Resx_SpellLanguage" xml:space="preserve">
+    <value>スベル言語</value>
+  </data>
+  <data name="Resx_TwainException" xml:space="preserve">
+    <value>お使いのTWAINDSM.DLLは古いバージョンです。最新のバージョンをwww.twain.orgからダウンロードしてください。</value>
+  </data>
+  <data name="Res_Page" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_autoZoneDocumentToolStripButton.Name" xml:space="preserve">
+    <value>_autoZoneDocumentToolStripButton</value>
+  </data>
+  <data name="&gt;&gt;_autoZoneDocumentToolStripButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_autoZonePageToolStripButton.Name" xml:space="preserve">
+    <value>_autoZonePageToolStripButton</value>
+  </data>
+  <data name="&gt;&gt;_autoZonePageToolStripButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_binarizationToolStripMenuItem.Name" xml:space="preserve">
+    <value>_binarizationToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_binarizationToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_brightnessToolStripMenuItem.Name" xml:space="preserve">
+    <value>_brightnessToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_brightnessToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cellIndexStatusLabel.Name" xml:space="preserve">
+    <value>_cellIndexStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;_cellIndexStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_clearAllPagesZonesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_clearAllPagesZonesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_clearAllPagesZonesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_documentCleanupToolStripMenuItem.Name" xml:space="preserve">
+    <value>_documentCleanupToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_documentCleanupToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_editCopyToolStripMenuItem.Name" xml:space="preserve">
+    <value>_editCopyToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_editCopyToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_editPasteToolStripMenuItem.Name" xml:space="preserve">
+    <value>_editPasteToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_editPasteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_editToolStripMenuItem.Name" xml:space="preserve">
+    <value>_editToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_editToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_engineComponentsToolStripMenuItem.Name" xml:space="preserve">
+    <value>_engineComponentsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_engineComponentsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_engineLanguagesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_engineLanguagesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_engineLanguagesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_engineSettingsToolStripMenuItem.Name" xml:space="preserve">
+    <value>_engineSettingsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_engineSettingsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_engineToolStripMenuItem.Name" xml:space="preserve">
+    <value>_engineToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_engineToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileCloseToolStripMenuItem.Name" xml:space="preserve">
+    <value>_fileCloseToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_fileCloseToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileConvertLTDToolStripMenuItem.Name" xml:space="preserve">
+    <value>_fileConvertLTDToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_fileConvertLTDToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileExitToolStripMenuItem.Name" xml:space="preserve">
+    <value>_fileExitToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_fileExitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileOpenToolStripMenuItem.Name" xml:space="preserve">
+    <value>_fileOpenToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_fileOpenToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileScanToolStripMenuItem.Name" xml:space="preserve">
+    <value>_fileScanToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_fileScanToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileSep1ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_fileSep1ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_fileSep1ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileSep2ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_fileSep2ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_fileSep2ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileSep3ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_fileSep3ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_fileSep3ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileToolStripMenuItem.Name" xml:space="preserve">
+    <value>_fileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_fileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_helpAboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>_helpAboutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_helpAboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_helpToolStripMenuItem.Name" xml:space="preserve">
+    <value>_helpToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_helpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_loadAllPagesZonesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_loadAllPagesZonesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_loadAllPagesZonesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mainMenuStrip.Name" xml:space="preserve">
+    <value>_mainMenuStrip</value>
+  </data>
+  <data name="&gt;&gt;_mainMenuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_mainMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mainMenuStrip.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_mainSplitter.Name" xml:space="preserve">
+    <value>_mainSplitter</value>
+  </data>
+  <data name="&gt;&gt;_mainSplitter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_mainSplitter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Splitter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mainSplitter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_mainStatusStrip.Name" xml:space="preserve">
+    <value>_mainStatusStrip</value>
+  </data>
+  <data name="&gt;&gt;_mainStatusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_mainStatusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mainStatusStrip.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_mainToolStrip.Name" xml:space="preserve">
+    <value>_mainToolStrip</value>
+  </data>
+  <data name="&gt;&gt;_mainToolStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_mainToolStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mainToolStrip.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_ocrOmrOptionsToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrOmrOptionsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrOmrOptionsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrRecognizeDocumentToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrRecognizeDocumentToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrRecognizeDocumentToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrRecognizePageToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrRecognizePageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrRecognizePageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrSaveDocumentToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrSaveDocumentToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrSaveDocumentToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrSaveRecognizedDataAsXmlToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrSaveRecognizedDataAsXmlToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrSaveRecognizedDataAsXmlToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrSep1ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrSep1ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrSep1ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrSep2ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrSep2ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrSep2ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrShowRecognizedWordsToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrShowRecognizedWordsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrShowRecognizedWordsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrSpellCheckEngineStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrSpellCheckEngineStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrSpellCheckEngineStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrSpellLanguageToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrSpellLanguageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrSpellLanguageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ocrZonesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_ocrZonesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_ocrZonesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_openDocumentToolStripButton.Name" xml:space="preserve">
+    <value>_openDocumentToolStripButton</value>
+  </data>
+  <data name="&gt;&gt;_openDocumentToolStripButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pagesControl.Name" xml:space="preserve">
+    <value>_pagesControl</value>
+  </data>
+  <data name="&gt;&gt;_pagesControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_pagesControl.Type" xml:space="preserve">
+    <value>OcrMainDemo.PagesControl.PagesControl, CSOcrMainDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_pagesControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_pagesDeleteCurrentPageToolStripMenuItem.Name" xml:space="preserve">
+    <value>_pagesDeleteCurrentPageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_pagesDeleteCurrentPageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pagesDetectPageLanguagesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_pagesDetectPageLanguagesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_pagesDetectPageLanguagesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pagesInsertToolStripMenuItem.Name" xml:space="preserve">
+    <value>_pagesInsertToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_pagesInsertToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pagesProcessToolStripMenuItem.Name" xml:space="preserve">
+    <value>_pagesProcessToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_pagesProcessToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pagesSaveProcessingImageToDiskToolStripMenuItem.Name" xml:space="preserve">
+    <value>_pagesSaveProcessingImageToDiskToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_pagesSaveProcessingImageToDiskToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pagesSep1ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_pagesSep1ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_pagesSep1ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pagesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_pagesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_pagesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_preferencesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_preferencesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_preferencesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_preferencesUseProgressBarsToolStripMenuItem.Name" xml:space="preserve">
+    <value>_preferencesUseProgressBarsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_preferencesUseProgressBarsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processAllPagesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processAllPagesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processAllPagesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processAutoBinarizeToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processAutoBinarizeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processAutoBinarizeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processAutoCropToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processAutoCropToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processAutoCropToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processAutoLevelToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processAutoLevelToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processAutoLevelToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processContrastBrightnessIntensityToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processContrastBrightnessIntensityToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processContrastBrightnessIntensityToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processDespeckleToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processDespeckleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processDespeckleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processDilateToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processDilateToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processDilateToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processDynamicBinarizeToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processDynamicBinarizeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processDynamicBinarizeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processErodeToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processErodeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processErodeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processFixBrokenLettersToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processFixBrokenLettersToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processFixBrokenLettersToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processFlipToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processFlipToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processFlipToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processHisogramEqualToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processHisogramEqualToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processHisogramEqualToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processLineRemoveToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processLineRemoveToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processLineRemoveToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessAllToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processPreprocessAllToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessAllToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessDeskewToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processPreprocessDeskewToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessDeskewToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessGetDeskewAngleToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processPreprocessGetDeskewAngleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessGetDeskewAngleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessGetRotateAngleToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processPreprocessGetRotateAngleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessGetRotateAngleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessInvertToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processPreprocessInvertToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessInvertToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessIsInvertedToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processPreprocessIsInvertedToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessIsInvertedToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessRotateToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processPreprocessRotateToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessRotateToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessSep1ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processPreprocessSep1ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessSep1ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processPreprocessToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processPreprocessToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processReverseToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processReverseToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processReverseToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processRotate90ClockwiseToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processRotate90ClockwiseToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processRotate90ClockwiseToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processRotate90CounterClockwiseToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processRotate90CounterClockwiseToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processRotate90CounterClockwiseToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processSep1ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processSep1ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processSep1ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processSep2ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processSep2ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processSep2ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processUnditherTextToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processUnditherTextToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processUnditherTextToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_recognizeDocumentToolStripButton.Name" xml:space="preserve">
+    <value>_recognizeDocumentToolStripButton</value>
+  </data>
+  <data name="&gt;&gt;_recognizeDocumentToolStripButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_recognizePageToolStripButton.Name" xml:space="preserve">
+    <value>_recognizePageToolStripButton</value>
+  </data>
+  <data name="&gt;&gt;_recognizePageToolStripButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_saveAllPagesZonesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_saveAllPagesZonesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_saveAllPagesZonesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_saveDocumentToolStripButton.Name" xml:space="preserve">
+    <value>_saveDocumentToolStripButton</value>
+  </data>
+  <data name="&gt;&gt;_saveDocumentToolStripButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_scanAcquireToolStripMenuItem.Name" xml:space="preserve">
+    <value>_scanAcquireToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_scanAcquireToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_scanSelectSourceToolStripMenuItem.Name" xml:space="preserve">
+    <value>_scanSelectSourceToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_scanSelectSourceToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_timingDescriptionToolStripStatusLabel.Name" xml:space="preserve">
+    <value>_timingDescriptionToolStripStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;_timingDescriptionToolStripStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_timingToolStripStatusLabel.Name" xml:space="preserve">
+    <value>_timingToolStripStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;_timingToolStripStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_toolStripSeparator1.Name" xml:space="preserve">
+    <value>_toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;_toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_viewerControl.Name" xml:space="preserve">
+    <value>_viewerControl</value>
+  </data>
+  <data name="&gt;&gt;_viewerControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_viewerControl.Type" xml:space="preserve">
+    <value>OcrMainDemo.ViewerControl.ViewerControl, CSOcrMainDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_viewerControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_viewFitPageToolStripMenuItem.Name" xml:space="preserve">
+    <value>_viewFitPageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_viewFitPageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_viewFitWidthToolStripMenuItem.Name" xml:space="preserve">
+    <value>_viewFitWidthToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_viewFitWidthToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_viewSep1ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_viewSep1ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_viewSep1ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_viewToolStripMenuItem.Name" xml:space="preserve">
+    <value>_viewToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_viewToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_viewZoomInToolStripMenuItem.Name" xml:space="preserve">
+    <value>_viewZoomInToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_viewZoomInToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_viewZoomOutToolStripMenuItem.Name" xml:space="preserve">
+    <value>_viewZoomOutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_viewZoomOutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesAutoZoneCurrentPageToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesAutoZoneCurrentPageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesAutoZoneCurrentPageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesAutoZoneDocumentToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesAutoZoneDocumentToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesAutoZoneDocumentToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesLoadZonesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesLoadZonesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesLoadZonesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesSaveZonesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesSaveZonesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesSaveZonesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesSep1ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesSep1ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesSep1ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesSep2ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesSep2ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesSep2ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesSep3ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesSep3ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesSep3ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesSep4ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesSep4ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesSep4ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesSep5ToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesSep5ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesSep5ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesShowZoneNamesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesShowZoneNamesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesShowZoneNamesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesShowZonesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesShowZonesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesShowZonesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_zonesUpdateZonesToolStripMenuItem.Name" xml:space="preserve">
+    <value>_zonesUpdateZonesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_zonesUpdateZonesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_mainMenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="_mainStatusStrip.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="_mainToolStrip.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="_fileConvertLDToolStripMenuItem.Text" xml:space="preserve">
+    <value>LTD変換(&amp;C)...</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_activeSpellCheckerDescriptionToolStripStatusLabel.Name" xml:space="preserve">
+    <value>_activeSpellCheckerDescriptionToolStripStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;_activeSpellCheckerDescriptionToolStripStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_activeSpellCheckerToolStripStatusLabel.Name" xml:space="preserve">
+    <value>_activeSpellCheckerToolStripStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;_activeSpellCheckerToolStripStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_dualPageToolStripMenuItem.Name" xml:space="preserve">
+    <value>_dualPageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_dualPageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileConvertLDToolStripMenuItem.Name" xml:space="preserve">
+    <value>_fileConvertLDToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_fileConvertLDToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_inversePerspectiveToolStripMenuItem.Name" xml:space="preserve">
+    <value>_inversePerspectiveToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_inversePerspectiveToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_manualPerspectiveToolStripMenuItem.Name" xml:space="preserve">
+    <value>_manualPerspectiveToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_manualPerspectiveToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_perspectiveDeskewToolStripMenuItem.Name" xml:space="preserve">
+    <value>_perspectiveDeskewToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_perspectiveDeskewToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processExpandContentToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processExpandContentToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processExpandContentToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_processPageSplitterToolStripMenuItem.Name" xml:space="preserve">
+    <value>_processPageSplitterToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_processPageSplitterToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Resx_Page" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="Resx_PageExpandContent" xml:space="preserve">
+    <value>ページコンテンツの引き延ばし</value>
+  </data>
+  <data name="Resx_PageExpandContentAllPages" xml:space="preserve">
+    <value>この機能は1ビット画像にのみ有効です。ページを1ビットに変換しない場合は［はい］を押してください。</value>
+  </data>
+  <data name="Resx_PageExpandContentOnePage" xml:space="preserve">
+    <value>この機能は1ビット画像にのみ有効です。［はい］を押して1ビット画像に変換してください。</value>
+  </data>
+  <data name="Resx_PageSplitter" xml:space="preserve">
+    <value>ページの分割</value>
+  </data>
+  <data name="Resx_PageSplitterAllPages" xml:space="preserve">
+    <value>この機能は1ビット画像にのみ有効です。ページを1ビットに変換しない場合は［はい］を押してください。</value>
+  </data>
+  <data name="Resx_PageSplitterOnePage" xml:space="preserve">
+    <value>この機能は1ビット画像にのみ有効です。［はい］を押して1ビット画像に変換してください。</value>
+  </data>
+  <data name="_activeSpellCheckerDescriptionToolStripStatusLabel.Text" xml:space="preserve">
+    <value>有効なスペルチェック：</value>
+  </data>
+  <data name="_activeSpellCheckerToolStripStatusLabel.Text" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="_dualPageToolStripMenuItem.Text" xml:space="preserve">
+    <value>二重ページ(D&amp;)</value>
+  </data>
+  <data name="_inversePerspectiveToolStripMenuItem.Text" xml:space="preserve">
+    <value>パースペクティブを逆転(&amp;I)...</value>
+  </data>
+  <data name="_manualPerspectiveToolStripMenuItem.Text" xml:space="preserve">
+    <value>パースペクティブを調整(&amp;M)...</value>
+  </data>
+  <data name="_perspectiveDeskewToolStripMenuItem.Text" xml:space="preserve">
+    <value>パースペクティブのゆがみを除去(&amp;P)</value>
+  </data>
+  <data name="_processExpandContentToolStripMenuItem.Text" xml:space="preserve">
+    <value>コンテンツを引き延ばす(E&amp;)</value>
+  </data>
+  <data name="_recognizeDocumentToolStripButton.Text" xml:space="preserve">
+    <value>toolStripButton2</value>
+  </data>
+  <data name="_processPageSplitterToolStripMenuItem.Text" xml:space="preserve">
+    <value>ページ分割(&amp;S)</value>
+  </data>
+  <data name="_unwarpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 22</value>
+  </data>
+  <data name="_unwarpToolStripMenuItem.Text" xml:space="preserve">
+    <value>反りを直す(&amp;W)...</value>
+  </data>
+</root>

@@ -1,0 +1,24 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title" >{{title}}</h3>
+    </div>
+    <div class="modal-body">
+        <div class="control-group">
+            <label class="control-label" for="spacing">{{label.spacing}}:</label>
+            <div class="controls">
+                <h-number id="spacing" value="input.spacing" min="2" max="10" step="1"></h-number>
+            </div>
+        </div>
+        <br />
+        <div class="control-group">
+            <label class="control-label" for="length">{{label.length}}:</label>
+            <div class="controls">
+                <h-number id="length" value="input.length" min="5" max="20" step="1"></h-number>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK" ></a>
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+    </div>
+</div>

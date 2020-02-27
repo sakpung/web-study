@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorkstationMessages>
+  <ViewerNotExistError>El visor no existe.</ViewerNotExistError>
+  <ViewerNotBelongToViewError>El visor no le pertenece a este panorama.</ViewerNotBelongToViewError>
+  <StudyExistsError>El estudio ya existe.</StudyExistsError>
+  <VolumeLoadedError>El volumen ya esta cargado.</VolumeLoadedError>
+  <LoaderNotFoundError>No se ha encontrado un cargador para la serie.</LoaderNotFoundError>
+  <VolumeViewerFormattedTitle>{0} Volumen</VolumeViewerFormattedTitle>
+  <StudiesViewerFormattedTitle>Paciente {0}</StudiesViewerFormattedTitle>
+  <InitializeCellError>Ocurrio un problema mientras la celda inicializaba.</InitializeCellError>
+  <VolumeStoredSuccessMessage>El volumen 3D ha sido guardado.</VolumeStoredSuccessMessage>
+  <VolumeStateStoredSuccessMessage>El estado del volumen 3D ha sido guardado.</VolumeStateStoredSuccessMessage>
+  <ConfirmDeleteCellQuestion>¿Esta seguro que quiere borrar las celdas seleccionadas?</ConfirmDeleteCellQuestion>
+  <ConfirmDeleteAnnotationQuestion>¿Esta seguro que quiere borrar las anotaciones seleccionadas?</ConfirmDeleteAnnotationQuestion>
+  <SeriesStillLoadingMessage>Las series estan siendo cargadas.</SeriesStillLoadingMessage>
+  <NoSeriesImagesFoundMessage>No se encontro alguna imagen para las series</NoSeriesImagesFoundMessage>
+  <StatisticalStandardDeviation>STDV.: {0}</StatisticalStandardDeviation>
+  <StatisticalMean>Promedio: {0}</StatisticalMean>
+  <StatisticalMedian>Mediana: {0}</StatisticalMedian>
+  <StatisticalMaximumPixel>Max. Pix.: {0}</StatisticalMaximumPixel>
+  <StatisticalMinimumPixel>Min. Pix.: {0}</StatisticalMinimumPixel>
+  <StatisticalNumberofPixels>Cantidad de Pix.: {0}</StatisticalNumberofPixels>
+  <ObjectNotInitializedError>El objeto no ha sido inicializádo. Lláme al metodo de inicializar.</ObjectNotInitializedError>
+  <SaveAnnotationDescriptionEmptyError>La descripción no puede estár vacía.</SaveAnnotationDescriptionEmptyError>
+  <Engine3DFailureError>Su equipo gráfico no llena los requisitos del procesador 3D. ¿Desea más detalles?
+  
+	Seleccióne 'Yes' para mas detalles.
+	Seleccióne 'No' para continuar.</Engine3DFailureError>
+  <ModalityNotDefinedError>La modalidad no está definída.</ModalityNotDefinedError>
+  <Medical3DFeatureLockedError>Las características del Medical 3D han sido cerradas. Si desea de nuevo accederlas, contacte a su administrador.</Medical3DFeatureLockedError>
+  <CellDisplayOverviewExistsError>La celda ya esta en el monitor/Modo de vista general</CellDisplayOverviewExistsError>
+  <NoPrinterInstalledError>No hay impresor instalado.</NoPrinterInstalledError>
+  <NoPrinterSelectedError>No ha seleccionado un impresor.</NoPrinterSelectedError>
+  <TimelineCaptionText>Secuencia Cronológica</TimelineCaptionText>
+  <ViewNotRegisteredError>Ninguna vista esta registrada con el tipo provisto.</ViewNotRegisteredError>
+  <FailedCreateControlFormattedError>No se pudo crear el control {0}. Asegurese que el tipo es heredero de {1}</FailedCreateControlFormattedError>
+  <IdentifyingVolumes>Identificando los volumenes...</IdentifyingVolumes>
+  <RetreiveVolumeInformation>Recuperando el volumen de información...</RetreiveVolumeInformation>
+  <LoadingVolume>Cargando el volumen...</LoadingVolume>
+  <LoadingVolumeCompleted>La carga del volumen ha sido completada.</LoadingVolumeCompleted>
+  <LoadingVolumeState>Cargando el Container.State del volumen...</LoadingVolumeState>
+  <NoVolumeFoundForSeriesError>Ningun volumen se ha encontrado para la serie solicitada.</NoVolumeFoundForSeriesError>
+  <FeatureNotImplementedError>Caraterística no implementada</FeatureNotImplementedError>
+  <LoadingImagesMessage>Cargando Imagenes...</LoadingImagesMessage>
+  <LoadingImageNumberFormattedMessage>Imagen {0}</LoadingImageNumberFormattedMessage>
+  <CreatingVolumeMessage>Creando el volumen...</CreatingVolumeMessage>
+  <CreatingVolumeCompletedMessage>El volumen ha sido creado</CreatingVolumeCompletedMessage>
+  <NoImageFoundInDatasetError>No se encontro ningun píxel de imagen en los datos DICOM.</NoImageFoundInDatasetError>
+  <AnotherVolumeProcessingError>Otro volumen 3D esta siendo generado.</AnotherVolumeProcessingError>
+  <ActionsMouseButtonStatusLabel>Botones:</ActionsMouseButtonStatusLabel>
+  <ActionsLeftMouseButtonStatusLabel>Izquierdo - </ActionsLeftMouseButtonStatusLabel>
+  <ActionsRightMouseButtonStatusLabel>Derecho - </ActionsRightMouseButtonStatusLabel>
+  <ActionsMiddleMouseButtonStatusLabel>Medio - </ActionsMiddleMouseButtonStatusLabel>
+  <ActionsWheelMouseButtonStatusLabel>Rueda - </ActionsWheelMouseButtonStatusLabel>
+</WorkstationMessages>

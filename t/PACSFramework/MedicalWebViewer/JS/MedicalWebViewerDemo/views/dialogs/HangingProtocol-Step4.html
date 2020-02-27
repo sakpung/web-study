@@ -1,0 +1,29 @@
+﻿<form class="form-horizontal" novalidate>
+    <!--<fieldset>-->  
+   <label class="col-md-2 control-label" for="HPDisplaySets">{{'DISPLAY' | translate}}&nbsp;{{'SETS' | translate}}:</label>
+        <div class="form-group">
+            <div class="input-group col-md-10">
+                <select id="HPDisplaySets" class="study-dropdown w-dropdown" ng-model="selectedDisplaySet" ng-options="d.CombinedName for d in hp.DisplaySets | filter:filterByImageSetNumber()" ng-change="selectedDisplaySetChanged(selectedDisplaySet)" force-blur style="margin-left:20px;"></select>
+                <span class="input-group-btn">
+                    <!--<a class="btn btn-default" type="button" ng-click="editDisplaySetLabel()" title="Set Display Set Label"><i class="fa fa-pencil"></i></a>-->
+                   <button style="margin-left:40px;" class="cine-controls pen-button" ng-click="editDisplaySetLabel()"></button>
+                </span>
+            </div>
+        </div>       
+        <div class="form-group">
+            <div class="col-md-12">
+                <div id="DSFilterOperations" ag-grid="DSFilterOperationsOptions" class="ag-fresh" style="height:200px"></div>
+                <!--<button type="button" class="btn-sm btn-default"  title="ccc" ng-style="color: grey"><i class="fa fa-asterisk"></i></button>-->
+            </div>
+        </div>    
+        <div class="cine-buttons">
+           <button type="button" class="cine-controls plus-button" ng-click="addFilterOperation()" title="Add Filter Operation"><i></i></button>
+           <button type="button" class="cine-controls tags-button" ng-click="addMultipleTags()" title="Add Multiple Selector Tags"><i ></i></button>
+           <button type="button" class="cine-controls pen-button" ng-click="editFilterOperation()" title="Edit Filter Operation" ng-disabled="!isFilterOperationSelected()"><i></i></button>
+           <button type="button" class="cine-controls minus-button" ng-click="deleteFilterOperation()" title="Delete Filter Operation" ng-disabled="!isFilterOperationSelected()"><i></i></button>
+           <button type="button" class="cine-controls menu-button" ng-click="deleteSimilarFilterOperations()" title="Delete Similar Filter Operations" ng-disabled="!isFilterOperationSelected()"><i></i></button>
+           <button type="button" class="cine-controls merge-button" ng-click="mergeFilterOperation()" title="Merge Filter Operation" ng-style="getButtonStyle()" ng-disabled="!isFilterOperationSelected() || !canMergeFilterOperation()"><i></i></button>
+           <button type="button" class="cine-controls copy-button" ng-click="cloneFilterOperation()" title="Clone Filter Operation" ng-disabled="!isFilterOperationSelected()"><i></i></button>
+        </div>
+    <!--</fieldset>-->
+</form>

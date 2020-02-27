@@ -1,0 +1,33 @@
+﻿<div class="modal-header">
+   <h3 class="modal-title">Hanging Protocol Settings</h3>
+</div>
+<div class="divider"></div>
+<div class="modal-body">
+   <multi-step-container steps="steps" on-cancel="$dismiss()" on-finish="$close()" on-step-change="onStepChange()">
+      <main step-container></main>
+      <div class="divider"></div>
+      <div class="cine-buttons">
+         <!--<div class="pull-left">-->
+            <button  ng-disabled="$isFirst() || !isFormValid()" class="form-btn" ng-click="$previousStep()" style="padding: 12px 12px;">
+               <!--<span class="fa fa-chevron-left"></span>-->
+               Previous
+            </button>
+            <!--&nbsp;
+         <strong>Step {{$getActiveIndex()}} / {{$getSteps().length}}</strong>
+         &nbsp;-->
+            <button ng-disabled="$isLast() || !isFormValid()" class="form-btn" ng-click="$nextStep()" style="padding: 12px 12px;">
+               Next
+               <!--<span class="fa fa-chevron-right"></span>-->
+            </button>
+         <!--</div>-->
+         <button class="form-btn" ng-disabled="!isFormValid()" ng-click="saveHangingProtocol()" style="padding: 12px 12px;">
+            Save
+            <!--<span class="fa  fa-save"></span>-->
+         </button>
+         <!--<button class="btn btn-default" ng-click="$finish()">Finish</button>-->
+         <button class="form-btn" ng-click="$cancel()" style="padding: 12px 12px;">Close</button>
+      </div>
+   </multi-step-container>
+</div>
+
+

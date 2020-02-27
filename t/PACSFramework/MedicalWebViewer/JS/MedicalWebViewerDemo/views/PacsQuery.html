@@ -1,0 +1,17 @@
+﻿<div class="btn-group btn-group-sm well well-sm" style="margin-top: 0px; margin-bottom: 5px">
+    <a class="btn" ng-model="querySource.name" btn-radio="'database'" title="{{'QUERY_DATABASE' | translate}}" ng-change="queryModeChanged()"><span class="fa fa-database"></span></a>
+    <a class="btn" ng-model="querySource.name" btn-radio="'pacs'" title="{{'QUERY_PACS' | translate}}" ng-change="queryModeChanged()"><span class="fa fa-hospital-o"></span></a>
+</div>
+<div collapse="querySource.name!='pacs'" class="row">
+    <div class="well well-lg">
+        <div class="row" style="margin-left:2px">
+            <label class="control-label" for="patientID">Remote PACS:</label>
+            <select class="form-control col-xs-5 col-sm-4 col-lg-2" ng-model="querySource.pacs" ng-options="connection.name for connection in pacsConnections">
+                <option value="">-- choose connection --</option>
+            </select><br />
+            <h5><span class="label label-primary">You will need to provide the following information to your PACS administrator in order to configure the remote PACS.</span></h5>
+            Client AE: <strong>{{pacsClientInfo.AETitle}}</strong> &nbsp;&nbsp; Client IP: <strong>{{pacsClientInfo.IPAddress}}</strong> &nbsp;&nbsp; Client Port: <strong>{{pacsClientInfo.Port}}</strong> &nbsp;&nbsp;
+            MoveTo AE: <strong>{{storageServerInfo.AETitle}}</strong> &nbsp;&nbsp; MoveTo IP: <strong>{{storageServerInfo.IPAddress}}</strong> &nbsp;&nbsp; MoveTo Port: <strong>{{storageServerInfo.Port}}</strong>
+        </div>
+    </div>
+</div>

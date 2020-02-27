@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Leadtools.Dicom" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Leadtools.Dicom" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="DicomDateRangeValue">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date1" type="tns:DicomDateValue" />
+      <xs:element minOccurs="0" name="Date2" type="tns:DicomDateValue" />
+      <xs:element minOccurs="0" name="Type" type="tns:DicomRangeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DicomDateRangeValue" nillable="true" type="tns:DicomDateRangeValue" />
+  <xs:complexType name="DicomDateValue">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Day" type="xs:int" />
+      <xs:element minOccurs="0" name="Month" type="xs:int" />
+      <xs:element minOccurs="0" name="Year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DicomDateValue" nillable="true" type="tns:DicomDateValue" />
+  <xs:simpleType name="DicomRangeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Both">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Upper" />
+      <xs:enumeration value="Lower">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DicomRangeType" nillable="true" type="tns:DicomRangeType" />
+  <xs:complexType name="DicomTimeRangeValue">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Time1" type="tns:DicomTimeValue" />
+      <xs:element minOccurs="0" name="Time2" type="tns:DicomTimeValue" />
+      <xs:element minOccurs="0" name="Type" type="tns:DicomRangeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DicomTimeRangeValue" nillable="true" type="tns:DicomTimeRangeValue" />
+  <xs:complexType name="DicomTimeValue">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="nFractions" type="xs:unsignedInt" />
+      <xs:element name="nHours" type="xs:unsignedShort" />
+      <xs:element name="nMinutes" type="xs:unsignedShort" />
+      <xs:element name="nSeconds" type="xs:unsignedShort" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DicomTimeValue" nillable="true" type="tns:DicomTimeValue" />
+</xs:schema>

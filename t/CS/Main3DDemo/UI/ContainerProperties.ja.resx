@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_btnReset.Text" xml:space="preserve">
+    <value>リセット(&amp;R)</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>キャンセル(&amp;C)</value>
+  </data>
+  <data name="_btnOK.Text" xml:space="preserve">
+    <value>OK(&amp;O)</value>
+  </data>
+  <data name="_btnApply.Text" xml:space="preserve">
+    <value>適用(A)</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 125</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>遠クリップ面(&amp;F)</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>近クリップ面(&amp;N)</value>
+  </data>
+  <data name="_comboBoxProjectionMethod.Items" xml:space="preserve">
+    <value>投射</value>
+  </data>
+  <data name="_comboBoxProjectionMethod.Items1" xml:space="preserve">
+    <value>正射</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>投影法(&amp;P)</value>
+  </data>
+  <data name="_tabCamera.Text" xml:space="preserve">
+    <value>カメラ</value>
+  </data>
+  <data name="_chkRemoveBackground.Text" xml:space="preserve">
+    <value>背景の削除(&amp;R)</value>
+  </data>
+  <data name="_chkIntersectionLine.Text" xml:space="preserve">
+    <value>MPR面間の交差線を表示する(&amp;I)</value>
+  </data>
+  <data name="_btnIntersectionLineColor.Text" xml:space="preserve">
+    <value>交差線の色(&amp;N)</value>
+  </data>
+  <data name="_chkFrameBoundary.Text" xml:space="preserve">
+    <value>フレーム境界線を表示する(&amp;F)</value>
+  </data>
+  <data name="_btnFrameBoundaryColor.Text" xml:space="preserve">
+    <value>フレーム境界線の色(&amp;R)</value>
+  </data>
+  <data name="_btnBackgroundColor.Text" xml:space="preserve">
+    <value>背景色(&amp;B)</value>
+  </data>
+  <data name="_chkBoundaryBox.Text" xml:space="preserve">
+    <value>境界線を表示する(&amp;S)</value>
+  </data>
+  <data name="_btnBoundaryBoxColor.Text" xml:space="preserve">
+    <value>3D境界線の色</value>
+  </data>
+  <data name="_tabGeneral.Text" xml:space="preserve">
+    <value>全般</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>メディカル3Dプロパティ</value>
+  </data>
+  <data name="Resx_FarValues" xml:space="preserve">
+    <value>近値と遠値は不正です</value>
+  </data>
+  <data name="Resx_NearValue" xml:space="preserve">
+    <value>近値は遠値より大きくできません</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ContainerProperties</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>_tabCamera</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>_tabCamera</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>_tabCamera</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.Name" xml:space="preserve">
+    <value>_btnApply</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_btnBackgroundColor.Name" xml:space="preserve">
+    <value>_btnBackgroundColor</value>
+  </data>
+  <data name="&gt;&gt;_btnBackgroundColor.Parent" xml:space="preserve">
+    <value>_tabGeneral</value>
+  </data>
+  <data name="&gt;&gt;_btnBackgroundColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnBackgroundColor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_btnBoundaryBoxColor.Name" xml:space="preserve">
+    <value>_btnBoundaryBoxColor</value>
+  </data>
+  <data name="&gt;&gt;_btnBoundaryBoxColor.Parent" xml:space="preserve">
+    <value>_tabGeneral</value>
+  </data>
+  <data name="&gt;&gt;_btnBoundaryBoxColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnBoundaryBoxColor.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_btnFrameBoundaryColor.Name" xml:space="preserve">
+    <value>_btnFrameBoundaryColor</value>
+  </data>
+  <data name="&gt;&gt;_btnFrameBoundaryColor.Parent" xml:space="preserve">
+    <value>_tabMPR</value>
+  </data>
+  <data name="&gt;&gt;_btnFrameBoundaryColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnFrameBoundaryColor.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_btnIntersectionLineColor.Name" xml:space="preserve">
+    <value>_btnIntersectionLineColor</value>
+  </data>
+  <data name="&gt;&gt;_btnIntersectionLineColor.Parent" xml:space="preserve">
+    <value>_tabMPR</value>
+  </data>
+  <data name="&gt;&gt;_btnIntersectionLineColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnIntersectionLineColor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_btnOK.Name" xml:space="preserve">
+    <value>_btnOK</value>
+  </data>
+  <data name="&gt;&gt;_btnOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOK.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_btnReset.Name" xml:space="preserve">
+    <value>_btnReset</value>
+  </data>
+  <data name="&gt;&gt;_btnReset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnReset.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_chkBoundaryBox.Name" xml:space="preserve">
+    <value>_chkBoundaryBox</value>
+  </data>
+  <data name="&gt;&gt;_chkBoundaryBox.Parent" xml:space="preserve">
+    <value>_tabGeneral</value>
+  </data>
+  <data name="&gt;&gt;_chkBoundaryBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_chkBoundaryBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_chkFrameBoundary.Name" xml:space="preserve">
+    <value>_chkFrameBoundary</value>
+  </data>
+  <data name="&gt;&gt;_chkFrameBoundary.Parent" xml:space="preserve">
+    <value>_tabMPR</value>
+  </data>
+  <data name="&gt;&gt;_chkFrameBoundary.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_chkFrameBoundary.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_chkIntersectionLine.Name" xml:space="preserve">
+    <value>_chkIntersectionLine</value>
+  </data>
+  <data name="&gt;&gt;_chkIntersectionLine.Parent" xml:space="preserve">
+    <value>_tabMPR</value>
+  </data>
+  <data name="&gt;&gt;_chkIntersectionLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_chkIntersectionLine.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_chkRemoveBackground.Name" xml:space="preserve">
+    <value>_chkRemoveBackground</value>
+  </data>
+  <data name="&gt;&gt;_chkRemoveBackground.Parent" xml:space="preserve">
+    <value>_tabMPR</value>
+  </data>
+  <data name="&gt;&gt;_chkRemoveBackground.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_chkRemoveBackground.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxProjectionMethod.Name" xml:space="preserve">
+    <value>_comboBoxProjectionMethod</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxProjectionMethod.Parent" xml:space="preserve">
+    <value>_tabCamera</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxProjectionMethod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxProjectionMethod.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_lblBackgroundColor.Name" xml:space="preserve">
+    <value>_lblBackgroundColor</value>
+  </data>
+  <data name="&gt;&gt;_lblBackgroundColor.Parent" xml:space="preserve">
+    <value>_tabGeneral</value>
+  </data>
+  <data name="&gt;&gt;_lblBackgroundColor.Type" xml:space="preserve">
+    <value>Main3DDemo.ColorBox, CSMain3DDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_lblBackgroundColor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_lblBoundaryBoxColor.Name" xml:space="preserve">
+    <value>_lblBoundaryBoxColor</value>
+  </data>
+  <data name="&gt;&gt;_lblBoundaryBoxColor.Parent" xml:space="preserve">
+    <value>_tabGeneral</value>
+  </data>
+  <data name="&gt;&gt;_lblBoundaryBoxColor.Type" xml:space="preserve">
+    <value>Main3DDemo.ColorBox, CSMain3DDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_lblBoundaryBoxColor.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameBoundaryColor.Name" xml:space="preserve">
+    <value>_lblFrameBoundaryColor</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameBoundaryColor.Parent" xml:space="preserve">
+    <value>_tabMPR</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameBoundaryColor.Type" xml:space="preserve">
+    <value>Main3DDemo.ColorBox, CSMain3DDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameBoundaryColor.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_lblIntersectionLineColor.Name" xml:space="preserve">
+    <value>_lblIntersectionLineColor</value>
+  </data>
+  <data name="&gt;&gt;_lblIntersectionLineColor.Parent" xml:space="preserve">
+    <value>_tabMPR</value>
+  </data>
+  <data name="&gt;&gt;_lblIntersectionLineColor.Type" xml:space="preserve">
+    <value>Main3DDemo.ColorBox, CSMain3DDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_lblIntersectionLineColor.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_tabCamera.Name" xml:space="preserve">
+    <value>_tabCamera</value>
+  </data>
+  <data name="&gt;&gt;_tabCamera.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_tabCamera.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tabCamera.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Name" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_tabGeneral.Name" xml:space="preserve">
+    <value>_tabGeneral</value>
+  </data>
+  <data name="&gt;&gt;_tabGeneral.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_tabGeneral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tabGeneral.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_tabMPR.Name" xml:space="preserve">
+    <value>_tabMPR</value>
+  </data>
+  <data name="&gt;&gt;_tabMPR.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_tabMPR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tabMPR.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_txtCameraFar.Name" xml:space="preserve">
+    <value>_txtCameraFar</value>
+  </data>
+  <data name="&gt;&gt;_txtCameraFar.Parent" xml:space="preserve">
+    <value>_tabCamera</value>
+  </data>
+  <data name="&gt;&gt;_txtCameraFar.Type" xml:space="preserve">
+    <value>Main3DDemo.NumericTextBox, CSMain3DDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_txtCameraFar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_txtCameraNear.Name" xml:space="preserve">
+    <value>_txtCameraNear</value>
+  </data>
+  <data name="&gt;&gt;_txtCameraNear.Parent" xml:space="preserve">
+    <value>_tabCamera</value>
+  </data>
+  <data name="&gt;&gt;_txtCameraNear.Type" xml:space="preserve">
+    <value>Main3DDemo.NumericTextBox, CSMain3DDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_txtCameraNear.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_tabMPR.Text" xml:space="preserve">
+    <value>MPR</value>
+  </data>
+</root>

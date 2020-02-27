@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>LEADTOOLS External WebViewer Controller Demo</title>
+
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+    <style type='text/css'></style>
+<!--    <script src="../../Scripts/ExternalCommand/MedicalViewerCommands.js" type="text/javascript"></script>-->    
+    <script src="../../Scripts/ExternalCommand/ExternalCommands.js" type="text/javascript"></script>
+
+    <script src="ServiceProxy/ServiceProxy.js" type="text/javascript"></script>
+    <script src="ServiceProxy/AuthenticationServiceProxy.js" type="text/javascript"></script>
+    <script src="ServiceProxy/QueryArchiveServiceProxy.js" type="text/javascript"></script>
+    <script src="ServiceProxy/PatientServiceProxy.js" type="text/javascript"></script>
+    
+<script src="JS/logger.js" type="text/javascript"></script>
+    <script src="JS/viewInstances.js" type="text/javascript"></script>
+    <script src="JS/updatePatient.js" type="text/javascript"></script>
+    <script src="JS/addPatient.js" type="text/javascript"></script>
+    <script src="JS/updateUser.js" type="text/javascript"></script>
+    <script src="JS/addUser.js" type="text/javascript"></script>
+    <script src="JS/myMain.js" type="text/javascript"></script>
+
+
+</head>
+<body style="padding: 5px;">
+<script src="https://code.jquery.com/jquery-1.8.2.js"> </script>
+<script src="https://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+<div id="mytabs"  class="myTabsStyle">
+    <ul>
+        <li> <a href="#idLogin">Login/Logout</a></li>
+        <li> <a href="#idViewInstances">View Instances</a></li>
+        <li> <a href="#idUpdatePatient">Update Patient</a></li>
+        <li> <a href="#idAddPatient">Add Patient</a></li>
+        <li> <a href="#idUpdateUser">Update User</a></li>        
+        <li> <a href="#idAddUser">Add User</a></li>
+    </ul>
+    <div id="idLogin" class="classLogin">
+
+        <div>
+                <div><label for="idText_loginLogout_userName">User Name:</label></div>
+                <div><input type="text" id="idText_loginLogout_userName" /></div>
+
+                <div><label for="idText_loginLogout_password">Password:</label></div>
+                <div><input type="password" id="idText_loginLogout_password" /></div>
+
+<!--
+            <div>
+                <label>Browser</label>
+            </div>
+
+            <div>
+            <input type="radio" name="browser" id="rbInternetExplorer" >
+            <label class="block" for="rbInternetExplorer">Internet Explorer</label>
+
+            <input type="radio" name="browser" id="rbChrome" >
+            <label class="block" for="rbChrome">Chrome</label>
+
+            <input type="radio" name="browser" id="rbFirefox">
+            <label class="block" for="rbFirefox">FireFox</label>
+            </div>-->
+
+            <div><input type="button" id="idButton_loginLogout_login" value="Login" /></div>
+            <div><input type="button" id="idButton_loginLogout_logout" value="Logout" /></div>
+
+        </div>
+
+    </div>
+    <div id="idViewInstances" class="classDialogItems">
+        <div>
+        <div class="DialogTextButtonsRow">
+            <div class="DialogTextButtonsCell">
+                <div><input type="button" id="idButton_viewInstances_showPatient" value="Show Patient"/></div>
+            </div><div class="DialogTextButtonsCell">
+                 <div><label for="idDropDownList_viewInstances_patient">Patient ID</label></div>
+                 <div><select id="idDropDownList_viewInstances_patient" class="selectFixedWidth"></select></div>
+            </div>
+
+        </div>
+        <div class="DialogTextButtonsRow">
+            <div class="DialogTextButtonsCell">
+                <div><input type="button" id="idButton_viewInstances_showStudy" value="Show Study"/></div>
+            </div> 
+            <div class="DialogTextButtonsCell">
+                <div><label for="idDropDownList_viewInstances_study">Study Instance UID</label></div>
+                <div> <select id="idDropDownList_viewInstances_study" class="selectFixedWidth"></select></div>
+            </div>
+        </div>
+
+        <div class="DialogTextButtonsRow">
+            <div class="DialogTextButtonsCell">
+                <div><input type="button" id="idButton_viewInstances_showSeries" value="Show Series"/></div>
+            </div> 
+            <div class="DialogTextButtonsCell">
+                <div><label for="idDropDownList_viewInstances_series">Series Instance UID</label></div>
+                <div><select id="idDropDownList_viewInstances_series" class="selectFixedWidth"></select></div>
+            </div>
+           
+        </div>
+
+        <div class="DialogTextButtonsRow">
+            <div class="DialogTextButtonsCell">
+<!--                <div><input type="button" id="idButton_viewInstances_showInstance" value="Show Instance" /></div>-->
+                    <div><input type="button" id="idButton_viewInstances_getImage" value="Get Instance URL"/></div>
+
+            </div> 
+            <div class="DialogTextButtonsCell">
+                <div><label for="idDropDownList_viewInstances_Instance">SOP Instance UID</label></div>
+                <div><select id="idDropDownList_viewInstances_Instance" class="selectFixedWidth"></select></div>
+            </div>
+           
+        </div>
+
+        <div class="DialogTextButtonsRow">
+            <div class="DialogTextButtonsCell">
+            </div>
+            <div class="DialogTextButtonsCell"  id="idDiv_viewInstances_getImage">
+                <a href="#" class="hyperlink" id="idHyperlink_viewInstances_getImage">Hyperlink Text</a>
+            </div>
+           
+        </div>
+
+        <div class="DialogTextButtonsRow">
+            <div class="DialogTextButtonsCell">
+                <div><input type="button" id="idButton_viewInstances_getCurrentPatient" value="Get Current Patient" /></div>
+            </div>
+            <div class="DialogTextButtonsCell"></div>
+            
+        </div>
+
+    </div>
+    </div>
+    <div id="idUpdatePatient" class="classDialogItems">
+       <div class="groupBox">
+         <div class ="DialogRow">
+            <div class="DialogCell">
+                <div><label for="idDropDownList_updatePatient_patientId">Patient ID</label></div>
+                <div><select id="idDropDownList_updatePatient_patientId"></select></div>
+            </div>
+        </div>
+
+        <div class="DialogRow">
+            <div class="DialogCell">
+                <div><label for="idText_updatePatient_last">Last</label></div>
+                <div><input type="text" id="idText_updatePatient_last" /></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idText_updatePatient_first">First</label></div>
+                <div><input type="text" id="idText_updatePatient_first" /></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idText_updatePatient_middle">Middle</label></div>
+                <div><input type="text" id="idText_updatePatient_middle" /></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idText_updatePatient_prefix">Prefix</label></div>
+                <div><input type="text" id="idText_updatePatient_prefix" /></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idText_updatePatient_suffix">Suffix</label></div>
+                <div><input type="text" id="idText_updatePatient_suffix" /></div>
+            </div>
+        </div>
+
+        <div class="DialogRow">
+            <div class="DialogCell">
+                <div><label for="idText_updatePatient_birthday">Date of Birth</label></div>
+                <div><input type="text" id="idText_updatePatient_birthday" /></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idDropDownList_updatePatient_sex">Sex</label></div>
+                <div><select id="idDropDownList_updatePatient_sex"></select></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idText_updatePatient_ethnicGroup">Ethnic Group</label></div>
+                <div><input type="text" id="idText_updatePatient_ethnicGroup" /></div>
+            </div>
+
+        </div>
+
+        <div class="DialogRow">
+            <div class="DialogCell">
+                <div><label for="idText_updatePatient_comments">Comments</label></div>
+                <div class="CommentTextBox"><input type="text" id="idText_updatePatient_comments" /></div>
+            </div>
+        </div>
+
+       </div>
+        
+        <div><input type="button" id="idButton_updatePatient_updatePatient" value="Update Patient" /></div>
+        <div><input type="button" id="idButton_updatePatient_deletePatient" value="Delete Patient" /></div>
+
+
+    </div>
+    <div id="idAddPatient" class="classDialogItems">
+        <div>Sample Patient Info (Click to Populate)</div>
+        <div>
+        <table id="idTable_addPatient_patient" class="dataTable">
+            <thead>
+                <tr>
+                    <th>PatientId</th>
+                    <th>Last</th>
+                    <th>First</th>
+                    <th>Middle</th>
+                    <th>Prefix</th>
+                    <th>Suffix</th>
+                    <th>BirthDate</th>
+                    <th>Sex</th>
+                    <th>Comments</th>
+                    <th>EthnicGroup</th>
+                    <tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        </div>
+
+        <div id="patientInfo" class="groupBox">
+        <div class ="DialogRow">
+            <div class="DialogCell">
+                <div><label for="idText_addPatient_patientId">Patient ID</label></div>
+                <div><input type="text" id="idText_addPatient_patientId" /></div>
+            </div>
+        </div>
+
+        <div class="DialogRow">
+            <div class="DialogCell">
+                <div><label for="idText_addPatient_last">Last</label></div>
+                <div><input type="text" id="idText_addPatient_last" /></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idText_addPatient_first">First</label></div>
+                <div><input type="text" id="idText_addPatient_first" /></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idText_addPatient_middle">Middle</label></div>
+                <div><input type="text" id="idText_addPatient_middle" /></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idText_addPatient_prefix">Prefix</label></div>
+                <div><input type="text" id="idText_addPatient_prefix" /></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idText_addPatient_suffix">Suffix</label></div>
+                <div><input type="text" id="idText_addPatient_suffix" /></div>
+            </div>
+        </div>
+
+         <div class="DialogRow">
+
+            <div class="DialogCell">
+                <div><label for="idText_addPatient_birthday">Date of Birth</label></div>
+                <div><input type="text" id="idText_addPatient_birthday"/></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idDropDownList_addPatient_sex">Sex</label></div>
+                <div><select id="idDropDownList_addPatient_sex"></select></div>
+            </div>
+
+            <div class="DialogCell">
+                <div><label for="idText_addPatient_ethnicGroup">Ethnic Group</label></div>
+                <div><input type="text" id="idText_addPatient_ethnicGroup" /></div>
+            </div>
+
+         </div>
+
+            <div class="DialogRow">
+                <div class="DialogCell">
+                    <div><label for="idText_addPatient_comments">Comments</label></div>
+                    <div class="CommentTextBox"><input type="text" id="idText_addPatient_comments" /></div>
+                </div>
+            </div>
+
+
+         </div>
+        
+        <div><input type="button" id="idButton_addPatient_addPatient" value="Add Patient" /></div>
+
+    </div>
+
+
+    <div id="idUpdateUser" class="classDialogItems">
+
+        <div><label for="idDropDownList_updateUser_userName">User Name:</label></div>
+        <div><select id="idDropDownList_updateUser_userName" class="selectFixedWidth"></select></div>
+        <div><label for="idText_updateUser_password">Password:</label></div>
+        <div><input type="checkbox" id="idCheckbox_updateUser_password" /></div>
+        <div><input type="password" id="idText_updateUser_password" class="textFixedWidth"/></div>
+
+        <div id="div_updateUser_permissions">
+            <table id="idTable_updateUser_permissions" class="dataTable2">
+                <thead>
+                    <tr>
+                        <th>Permissions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="div_updateUser_roles">
+            <table id="idTable_updateUser_roles" class="dataTable2">
+                <thead>
+                    <tr>
+                        <th>Roles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div style="clear: both;"></div>
+
+        <div><input type="button" id="idButton_updateUser_updateUser" value="Update User" /></div>
+        <div><input type="button" id="idButton_updateUser_deleteUser" value="Delete User" /></div>
+    </div>
+
+
+    <div id="idAddUser" class="classDialogItems">
+
+        <div><label for="idText_addUser_userName">User Name:</label></div>
+        <div><input type="text" id="idText_addUser_userName" class="textFixedWidth"/></div>
+        <div><label for="idText_addUser_password">Password:</label></div>
+        <div><input type="password" id="idText_addUser_password" class="textFixedWidth"/></div>
+
+        <div id="div_addUser_permissions">
+            <table id="idTable_addUser_permissions" class="dataTable2">
+                <thead>
+                    <tr>
+                        <th>Permissions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="div_addUser_roles">
+            <table id="idTable_addUser_roles" class="dataTable2">
+                <thead>
+                    <tr>
+                        <th>Roles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div style="clear: both;"></div>
+
+
+        <div><input type="button" id="idButton_addUser_addUser" value="Add User" /></div>
+    </div>
+
+
+</div>
+    
+    <div id="idLogControl" class="classLogControl">
+        <div id="idLogger" class="classLogger"></div>
+        <div><input type="button" id="idButtonClearLog" value="Clear Log" /></div>
+    </div>
+  
+</body>
+
+
+</html>

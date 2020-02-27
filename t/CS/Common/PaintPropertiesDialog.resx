@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_cbFastPaint.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_cbFastPaint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 97</value>
+  </data>
+  <data name="_cbFastPaint.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_cbFastPaint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_cbFastPaint.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_cbFastPaint.Text" xml:space="preserve">
+    <value>&amp;Fast Paint</value>
+  </data>
+  <data name="&gt;&gt;_cbFastPaint.Name" xml:space="preserve">
+    <value>_cbFastPaint</value>
+  </data>
+  <data name="&gt;&gt;_cbFastPaint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbFastPaint.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_cbFastPaint.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_btnApply.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="_btnApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 208</value>
+  </data>
+  <data name="_btnApply.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_btnApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="_btnApply.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="_btnApply.Text" xml:space="preserve">
+    <value>&amp;Apply</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.Name" xml:space="preserve">
+    <value>_btnApply</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_cbHalftonePrint.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="_cbHalftonePrint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 67</value>
+  </data>
+  <data name="_cbHalftonePrint.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_cbHalftonePrint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="_cbHalftonePrint.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_cbHalftonePrint.Text" xml:space="preserve">
+    <value>&amp;Halftone Print</value>
+  </data>
+  <data name="&gt;&gt;_cbHalftonePrint.Name" xml:space="preserve">
+    <value>_cbHalftonePrint</value>
+  </data>
+  <data name="&gt;&gt;_cbHalftonePrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbHalftonePrint.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_cbHalftonePrint.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_cbIndexedPaint.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="_cbIndexedPaint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 36</value>
+  </data>
+  <data name="_cbIndexedPaint.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_cbIndexedPaint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="_cbIndexedPaint.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_cbIndexedPaint.Text" xml:space="preserve">
+    <value>&amp;Indexed Paint</value>
+  </data>
+  <data name="&gt;&gt;_cbIndexedPaint.Name" xml:space="preserve">
+    <value>_cbIndexedPaint</value>
+  </data>
+  <data name="&gt;&gt;_cbIndexedPaint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbIndexedPaint.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_cbIndexedPaint.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_gbOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 6</value>
+  </data>
+  <data name="_gbOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_gbOptions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_gbOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 180</value>
+  </data>
+  <data name="_gbOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="_gbOptions.Text" xml:space="preserve">
+    <value>&amp;Other Paint Options:</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.Name" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_cbPaintScaling.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 163</value>
+  </data>
+  <data name="_cbPaintScaling.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_cbPaintScaling.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 21</value>
+  </data>
+  <data name="_cbPaintScaling.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;_cbPaintScaling.Name" xml:space="preserve">
+    <value>_cbPaintScaling</value>
+  </data>
+  <data name="&gt;&gt;_cbPaintScaling.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbPaintScaling.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbPaintScaling.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_lblPaintScaling.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 162</value>
+  </data>
+  <data name="_lblPaintScaling.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="_lblPaintScaling.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 21</value>
+  </data>
+  <data name="_lblPaintScaling.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="_lblPaintScaling.Text" xml:space="preserve">
+    <value>Paint &amp;Scaling:</value>
+  </data>
+  <data name="_lblPaintScaling.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_lblPaintScaling.Name" xml:space="preserve">
+    <value>_lblPaintScaling</value>
+  </data>
+  <data name="&gt;&gt;_lblPaintScaling.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblPaintScaling.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblPaintScaling.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_cbBitonalScaling.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 133</value>
+  </data>
+  <data name="_cbBitonalScaling.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_cbBitonalScaling.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 21</value>
+  </data>
+  <data name="_cbBitonalScaling.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;_cbBitonalScaling.Name" xml:space="preserve">
+    <value>_cbBitonalScaling</value>
+  </data>
+  <data name="&gt;&gt;_cbBitonalScaling.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbBitonalScaling.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbBitonalScaling.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_cbDithering.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 73</value>
+  </data>
+  <data name="_cbDithering.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_cbDithering.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 21</value>
+  </data>
+  <data name="_cbDithering.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;_cbDithering.Name" xml:space="preserve">
+    <value>_cbDithering</value>
+  </data>
+  <data name="&gt;&gt;_cbDithering.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbDithering.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbDithering.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_lblDithering.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 72</value>
+  </data>
+  <data name="_lblDithering.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="_lblDithering.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="_lblDithering.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="_lblDithering.Text" xml:space="preserve">
+    <value>&amp;Dithering:</value>
+  </data>
+  <data name="_lblDithering.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_lblDithering.Name" xml:space="preserve">
+    <value>_lblDithering</value>
+  </data>
+  <data name="&gt;&gt;_lblDithering.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblDithering.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblDithering.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_lblBitonalScaling.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 132</value>
+  </data>
+  <data name="_lblBitonalScaling.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="_lblBitonalScaling.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="_lblBitonalScaling.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="_lblBitonalScaling.Text" xml:space="preserve">
+    <value>&amp;Bitonal Scaling:</value>
+  </data>
+  <data name="_lblBitonalScaling.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_lblBitonalScaling.Name" xml:space="preserve">
+    <value>_lblBitonalScaling</value>
+  </data>
+  <data name="&gt;&gt;_lblBitonalScaling.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblBitonalScaling.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblBitonalScaling.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_cbPalette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 103</value>
+  </data>
+  <data name="_cbPalette.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_cbPalette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 21</value>
+  </data>
+  <data name="_cbPalette.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;_cbPalette.Name" xml:space="preserve">
+    <value>_cbPalette</value>
+  </data>
+  <data name="&gt;&gt;_cbPalette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbPalette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbPalette.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_lblPalette.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 102</value>
+  </data>
+  <data name="_lblPalette.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="_lblPalette.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="_lblPalette.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="_lblPalette.Text" xml:space="preserve">
+    <value>&amp;Palette:</value>
+  </data>
+  <data name="_lblPalette.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_lblPalette.Name" xml:space="preserve">
+    <value>_lblPalette</value>
+  </data>
+  <data name="&gt;&gt;_lblPalette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblPalette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblPalette.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="_cbOperation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 43</value>
+  </data>
+  <data name="_cbOperation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_cbOperation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 21</value>
+  </data>
+  <data name="_cbOperation.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;_cbOperation.Name" xml:space="preserve">
+    <value>_cbOperation</value>
+  </data>
+  <data name="&gt;&gt;_cbOperation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbOperation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbOperation.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="_lblOperation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 42</value>
+  </data>
+  <data name="_lblOperation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="_lblOperation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="_lblOperation.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="_lblOperation.Text" xml:space="preserve">
+    <value>&amp;Raster Operation (ROP):</value>
+  </data>
+  <data name="_lblOperation.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_lblOperation.Name" xml:space="preserve">
+    <value>_lblOperation</value>
+  </data>
+  <data name="&gt;&gt;_lblOperation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblOperation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblOperation.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="_cbEngine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 13</value>
+  </data>
+  <data name="_cbEngine.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_cbEngine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 21</value>
+  </data>
+  <data name="_cbEngine.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;_cbEngine.Name" xml:space="preserve">
+    <value>_cbEngine</value>
+  </data>
+  <data name="&gt;&gt;_cbEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbEngine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbEngine.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="_lblEngine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 12</value>
+  </data>
+  <data name="_lblEngine.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="_lblEngine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="_lblEngine.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="_lblEngine.Text" xml:space="preserve">
+    <value>&amp;Engine:</value>
+  </data>
+  <data name="_lblEngine.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_lblEngine.Name" xml:space="preserve">
+    <value>_lblEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblEngine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblEngine.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="_btnCancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="_btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 208</value>
+  </data>
+  <data name="_btnCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="_btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="_btnOk.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="_btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 208</value>
+  </data>
+  <data name="_btnOk.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="_btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="_btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="_btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Name" xml:space="preserve">
+    <value>_btnOk</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>407, 240</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Paint Properties</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PaintPropertiesDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Resx_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="Resx_BiCubic" xml:space="preserve">
+    <value>BiCubic</value>
+  </data>
+  <data name="Resx_Blackness" xml:space="preserve">
+    <value>Blackness</value>
+  </data>
+  <data name="Resx_DestinationInvert" xml:space="preserve">
+    <value>Destination Invert</value>
+  </data>
+  <data name="Resx_ErrorDiffusion" xml:space="preserve">
+    <value>Error Diffusion</value>
+  </data>
+  <data name="Resx_FavorBlack" xml:space="preserve">
+    <value>Favor Black</value>
+  </data>
+  <data name="Resx_MergeCopy" xml:space="preserve">
+    <value>Merge Copy</value>
+  </data>
+  <data name="Resx_MergePaint" xml:space="preserve">
+    <value>Merge Paint</value>
+  </data>
+  <data name="Resx_Netscape" xml:space="preserve">
+    <value>Netscape</value>
+  </data>
+  <data name="Resx_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Resx_NotSourceCopy" xml:space="preserve">
+    <value>Not Source Copy</value>
+  </data>
+  <data name="Resx_NotSourceErase" xml:space="preserve">
+    <value>Not Source Erase</value>
+  </data>
+  <data name="Resx_Ordered" xml:space="preserve">
+    <value>Ordered</value>
+  </data>
+  <data name="Resx_PatternCopy" xml:space="preserve">
+    <value>Pattern Copy</value>
+  </data>
+  <data name="Resx_PatternInvert" xml:space="preserve">
+    <value>Pattern Invert</value>
+  </data>
+  <data name="Resx_PatternPaint" xml:space="preserve">
+    <value>Pattern Paint</value>
+  </data>
+  <data name="Resx_Resample" xml:space="preserve">
+    <value>Resample</value>
+  </data>
+  <data name="Resx_ScaleToGray" xml:space="preserve">
+    <value>Scale to Gray</value>
+  </data>
+  <data name="Resx_SourceAnd" xml:space="preserve">
+    <value>Source And</value>
+  </data>
+  <data name="Resx_SourceCopy" xml:space="preserve">
+    <value>Source Copy</value>
+  </data>
+  <data name="Resx_SourceErase" xml:space="preserve">
+    <value>Source Erase</value>
+  </data>
+  <data name="Resx_SourceInvert" xml:space="preserve">
+    <value>Source Invert</value>
+  </data>
+  <data name="Resx_SourcePaint" xml:space="preserve">
+    <value>Source Paint</value>
+  </data>
+  <data name="Resx_Whiteness" xml:space="preserve">
+    <value>Whiteness</value>
+  </data>
+</root>

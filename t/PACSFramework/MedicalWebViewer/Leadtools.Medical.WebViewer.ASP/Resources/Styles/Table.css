@@ -1,0 +1,55 @@
+﻿.table-bordered {
+   border-color: darkgray;
+}
+
+   .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td {
+      border-color: darkgray;
+   }
+
+.table > thead > tr > td, .table > tbody > tr > td {
+   padding: inherit;
+   padding-left: 5px;
+   vertical-align: inherit;
+}
+
+   .table > tbody > tr > td > input {
+      background-color: transparent;
+      border: 0px;
+      outline: none;
+      padding-top: 3px;
+      padding-bottom: 3px;
+   }
+
+.checked {
+   outline: 1px solid #62a2e4;
+   border-radius: 0px;
+   background-color: #c9e0f7 !important;
+}
+
+.table > tbody > tr.checked {
+   outline: none;
+}
+
+   .table > tbody > tr.checked > td > input {
+      background-color: #c9e0f7 !important;
+   }
+
+.table > tbody > tr.hasError {
+   background-color: #D20000 !important;
+   color: black !important;
+}
+
+   .table > tbody > tr.hasError > td > input {
+      background-color: #D20000 !important;
+      color: black !important;
+   }
+
+   .table > tbody > tr.hasError.checked {
+      background-color: #c9e0f7 !important;
+      color: red !important;
+   }
+
+      .table > tbody > tr.hasError.checked > td > input {
+         background-color: #c9e0f7 !important;
+         color: red !important;
+      }

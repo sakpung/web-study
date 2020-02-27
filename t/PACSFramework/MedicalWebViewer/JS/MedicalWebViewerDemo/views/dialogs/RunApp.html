@@ -1,0 +1,13 @@
+﻿<div class="modal-header">
+   <h3 class="modal-title">Run External Application</h3>
+</div>
+<div class="modal-body container-fluid">
+   <h5>Select application to run</h5>
+   <select class="form-control input-lg" ng-model="$parent.selectedApp" ng-options="option for option in externalApplications"></select>
+   <br />
+   <button ng-show="selectedApp !== ''" class="btn btn-delete" ng-click="deleteapp()">Delete</button>
+</div>
+<div class="modal-footer">
+   <button ng-show="selectedApp !== ''" class="btn btn-success" ng-click="run()">Run</button>
+   <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

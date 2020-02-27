@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TablesWithRelatedPNColumns>
+
+<Table Key="Patient">
+   <ColumnGroup>
+      <Column Key="PatientNameFamilyName"/>
+
+      <Column Key="PatientNameGivenName"/>
+      
+      <Column Key="PatientNameMiddleName"/>
+      
+      <Column Key="PatientNamePrefix"/>
+      
+      <Column Key="PatientNameSuffix"/>
+   </ColumnGroup>
+</Table>
+
+<Table Key="ImagingServiceRequest">
+
+   <ColumnGroup>
+      <Column Key="RequestingPhysicianFamilyName"/>
+   
+      <Column Key="RequestingPhysicianGivenName"/>
+      
+      <Column Key="RequestingPhysicianMiddleName"/>
+      
+      <Column Key="RequestingPhysicianPrefix"/>
+      
+      <Column Key="RequestingPhysicianSuffix"/>
+   </ColumnGroup>
+   
+   <ColumnGroup>
+      <Column Key="ReferringPhysicianFamilyName"/>
+      
+      <Column Key="ReferringPhysicianGivenName"/>
+      
+      <Column Key="ReferringPhysicianMiddleName"/>
+      
+      <Column Key="ReferringPhysicianPrefix"/>
+      
+      <Column Key="ReferringPhysicianSuffix"/>
+   </ColumnGroup>
+   
+</Table>
+
+   <Table Key="NamesOfIntendedRecipientsOfResults">
+      <ColumnGroup>
+            <Column Key="FamilyNameOfIntendedRecipientOfResults"/>
+            
+            <Column Key="GivenNameOfIntendedRecipientOfResults"/>
+            
+            <Column Key="MiddleNameOfIntendedRecipientOfResults"/>
+            
+            <Column Key="NamePrefixOfIntendedRecipientOfResults"/>
+            
+            <Column Key="NameSuffixOfIntendedRecipientOfResults"/>
+      </ColumnGroup>
+</Table>
+
+<Table Key="ScheduledProcedureStep">
+
+<ColumnGroup>
+   <Column Key="ScheduledPerformingPhysicianNameFamilyName"/>
+   
+   <Column Key="ScheduledPerformingPhysicianNameGivenName"/>
+   
+   <Column Key="ScheduledPerformingPhysicianNameMiddleName"/>
+   
+   <Column Key="ScheduledPerformingPhysicianNamePrefix"/>
+   
+   <Column Key="ScheduledPerformingPhysicianNameSuffix"/>
+</ColumnGroup>	
+</Table>
+
+
+
+</TablesWithRelatedPNColumns>

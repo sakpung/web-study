@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+   <meta charset="utf-8" />
+   <title>CCOW Web Client Demo</title>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+   <link rel="Stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="Styles/Demo.css" type="text/css" />
+
+   <script type="text/javascript">
+      // check if HTML5 canvas is supported
+      if (!("HTMLCanvasElement" in window)) {
+         alert('Error: HTML 5 not supported');
+      }
+   </script>
+
+   <!-- External .js files -->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+   <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+   <!-- Leadtools .js files -->
+   <script type="text/javascript" src="./Libs/Leadtools.js"></script>
+   <script type="text/javascript" src="./Libs/Leadtools.Ccow.js"></script>
+
+   <!-- CcowWebClientParticipationDemo .js fies -->
+   <script type="text/javascript" src="App/CcowWebClientParticipationDemo.js"></script>
+   <script type="text/javascript" src="App/LoadingDialog.js"></script>
+   <script type="text/javascript" src="App/AboutDlg.js"></script>
+   <script type="text/javascript" src="App/Scenario.js"></script>
+   <script type="text/javascript" src="App/ServiceManager.js"></script>
+   <script type="text/javascript" src="App/ClientContext.js"></script>
+   <script type="text/javascript" src="App/LoginDialog.js"></script>
+</head>
+
+<body>
+   <!-- Create a header toolbar -->
+   <div class="navbar navbar-default navbar-fixed-top outerToolbarContainer">
+      <div class="toolbar headerToolbarDiv">
+         <!-- Application button , and its dropdown menu items -->
+         <div class="btn-group">
+            <!-- Application control button -->
+            <button class="btn btn-default dropdown-toggle" title="Application Control" data-toggle="dropdown">
+               <font class="btn-text">Application &nbsp;&nbsp;▼</font>
+            </button>
+            <!-- Menu Items -->
+            <ul class="dropdown-menu collapse" role="menu">
+               <li><a id="menu_logon" href="javascript:void(0)">Log-On</a></li>
+               <li><a id="menu_logoff" href="javascript:void(0)">Log-Off</a></li>
+               <li><a id="menu_logoffAll" href="javascript:void(0)">Log-Off All</a></li>
+            </ul>
+         </div>
+
+         <!-- Preferences button , and its dropdown menu items -->
+         <div class="btn-group">
+            <!-- Context control button -->
+            <button class="btn btn-default dropdown-toggle" title="Context Control" data-toggle="dropdown">
+               <font class="btn-text">Context &nbsp;&nbsp;▼</font>
+            </button>
+            <!-- Menu Items -->
+            <ul class="dropdown-menu collapse" role="menu">
+               <li><a id="menu_suspend" href="javascript:void(0)">Suspend</a></li>
+               <li><a id="menu_resume" href="javascript:void(0)">Resume</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <div id="content">
+      <div class="main-container" id="mainContainer">
+         <div id="header-div" class="header-container">
+            <span class="header" id="header-demoName">CCOW Web Client Participation Demo1</span>
+            <img class="status" src="Images/link48.png" alt="Status" id="img_status" />
+         </div>
+         <!-- The viewer will be dynamically created inside imageViewerDiv -->
+         <table class="table" id="table_patients">
+            <caption>Patients (Click on a patient to syncronize with other context application)</caption>
+            <thead>
+               <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Birth Date</th>
+                  <th>Sex</th>
+               </tr>
+            </thead>
+            <tbody class="table-body" id="patientsTable" />
+         </table>
+         <span class="description">Current Context</span>
+         <table class="table" id="table_context">
+            <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Value</th>
+               </tr>
+            </thead>
+            <tbody class="table-body" id="contextTable" />
+         </table>
+         <div class="log-div">
+            <span class="description">Log</span>
+            <textarea class="form-control" id="textarea_log" rows="8"></textarea>
+         </div>
+      </div>
+   </div>
+
+   <!--Create a footer toolbar -->
+   <div class="navbar navbar-default navbar-fixed-bottom outerToolbarContainer">
+      <div class="toolbar footerToolbarDiv">
+         <div class="btn-group">
+            <span class="description" id="span_linktype"></span>
+         </div>
+         <div class="btn-group" style="right:100px; position:absolute">
+            <img src="Images/user.png" alt="user" id="img_user" />
+            <span class="description" id="span_user"/>
+         </div>
+      </div>
+   </div>
+
+   <!---------------------------------------------->
+   <!------------------ Dialogs ------------------->
+   <!---------------------------------------------->
+   <!-- Login Dialog -->
+   <div id="loginDialog" class="modal fade" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <span class="dodger-blue">Log On</span>
+            </div>
+            <div class="modal-body">
+               <div id="userFirstTimeLogin" style="display:none">
+                  <font color="black">This is the first time you are logging into this application.  This dialog is displayed because your application specific credentials are not known at this time.  Once logged in your credentials will be stored in the authentication repository.  This will enable you to be automatically logged in from this point forward.</font>
+               </div>
+               <br />
+               <font color="DodgerBlue">User Name:</font>
+               <select id='userSelect' class='form-control'></select>
+               <br />
+               <font color="DodgerBlue">Password:</font>
+               <input type="text" class='form-control' id="input_password" disabled="disabled" />
+            </div>
+            <div class="modal-footer">
+               <button class="btn" aria-hidden="true" id="btn_logIn"><font color="DodgerBlue">Log In</font></button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- About dialog -->
+   <div id="aboutDialog" class="modal fade" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog about-dialog">
+         <div class="modal-content">
+            <div class="modal-body">
+               <p><font color="DodgerBlue">LEADTOOLS HTML 5 CCOW Web Client Demo</font></p>
+               <p><font color="DodgerBlue">Copyright (c) 1991-2019 LEAD Technologies, Inc.</font></p>
+               <p><font color="DodgerBlue">LEAD Technologies, Inc.</font></p>
+               <img src="Images/LEAD.png" alt="LEADTOOLS" />
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-default" data-dismiss="modal" aria-hidden="true"><font color="DodgerBlue">Close</font></button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Loading dialog -->
+   <div id="loadingDialog" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog loading-dialog">
+         <div class="modal-content">
+            <div class="modal-body">
+               <div>
+                  <span class="dialog-title" id="span_loadingtitle"></span>
+               </div>
+               <div>
+                  <img src="Images\loading.gif" />
+                  <span class="description" id="span_loadingdescription"></span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Client Service Error dialog -->
+   <div id="clientServiceErrorDialog" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog loading-dialog">
+         <div class="modal-content">
+            <div class="modal-body">
+               <p><font color="Black">Failed to reach Ccow Web Client Service. Please make sure that the Ccow Web Client Service exe is running</font></p>
+               <a href='Leadtools.CcowWebParticipant.Setup.msi'>Download Ccow Web Client Service</a>
+            </div>
+            <div class="modal-footer" style="text-align:left">
+               <p><font color="Black">*Refresh the page after installing the service.</font></p>
+               <a id="troubleshootingGuide" href="Resources/TroubleshootingGuide.pdf" style="visibility:hidden" target="_blank">*Troubleshooting Guide</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!---------------------------------------------->
+   <!---------------------------------------------->
+   <script language="javascript">
+      if (!String.prototype.format) {
+         String.prototype.format = function () {
+            var args = arguments;
+            return this.replace(/{(\d+)}/g, function (match, number) {
+               return typeof args[number] != 'undefined'
+                 ? args[number]
+                 : match
+               ;
+            });
+         };
+      }
+   </script>
+</body>
+</html>

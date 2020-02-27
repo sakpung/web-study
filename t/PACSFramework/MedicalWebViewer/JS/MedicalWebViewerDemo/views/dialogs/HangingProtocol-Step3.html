@@ -1,0 +1,49 @@
+﻿<form class="form-horizontal" novalidate>
+   <!--<fieldset>-->
+   <label class="col-md-2 control-label" for="HPDisplaySets">{{'IMAGE' | translate}}&nbsp;{{'SETS' | translate}}:</label>
+   <div class="form-group">
+      <!--<label class="col-md-2 control-label" for="HPDisplaySets">{{'IMAGE' | translate}}&nbsp;{{'SETS' | translate}}:</label>-->
+      <div class="input-group col-md-10">
+         <select id="HPImageSets" class="study-dropdown w-dropdown" style="margin-left:20px;" ng-model="selectedImageSet" ng-options="i.Name for i in hp.ImageSetsSequence" ng-change="selectedImageSetChanged(selectedImageSet)" force-blur></select>
+         <span class="input-group-btn">
+            <!--<a class="btn btn-default" type="button" ng-click="editImageSetLabel()" title="Set Imageset Label"><i class="fa fa-pencil"></i></a>-->
+            <button style="margin-left:40px;" class="cine-controls pen-button" ng-click="editImageSetLabel()" title="Set Imageset Label"> </button>
+         </span>
+      </div>
+   </div>
+   <div class="form-group" style="margin-top:25px">
+      <div class="col-md-12">
+         <div id="HPImageSetSelector" ag-grid="HPImageSetSelectorOptions" class="ag-fresh" style="height:200px"></div>
+      </div>
+   </div>
+   <div class="cine-buttons">
+      <button type="button" class="cine-controls plus-button" ng-click="addImageSetSelector()" title="Add Image Set Selector"><i></i></button>
+      <button type="button" class="cine-controls tags-button" ng-click="addMulitipleImageSetTags()" title="Add Multiple Tag Selectors"><i></i></button>
+      <button type="button" class="cine-controls pen-button" ng-click="editImageSetSelector()" title="Edit Image Set Selector" ng-disabled="!isImageSetSelectorSelected()"><i></i></button>
+      <button type="button" class="cine-controls minus-button" ng-click="deleteImageSetSelector()" title="Delete Image Set Selector" ng-disabled="!isImageSetSelectorSelected()"><i></i></button>
+   </div>
+
+   <!--<h5 class="text-center">{{'TIME_BASED' | translate}}&nbsp;{{'IMAGE' | translate}}&nbsp;{{'SETS' | translate}}</h5>
+   <div class="form-group">
+       <label class="col-md-2 control-label" for="HPDisplaySets">{{'TIME_BASED' | translate}}&nbsp;{{'IMAGE' | translate}}&nbsp;{{'SETS' | translate}}:</label>
+       <div class="input-group col-md-10">
+           <select id="HPImageSets" class="form-control" ng-model="selectedTimeBasedImageSet" ng-options="i.ImageSetLabel for i in hp.ImageSetsSequence[0].TimeBasedImageSetsSequence" ng-change="selectedTimeBasedImageSetChanged(selectedTimeBasedImageSet)" force-blur></select>
+           <span class="input-group-btn">
+               <a class="btn btn-default" type="button" ng-click="editImageSetLabel()" title="Set Imageset Label"><i class="fa fa-pencil"></i></a>
+           </span>
+       </div>
+   </div>-->
+
+   <div class="form-group" style="margin-top:25px">
+      <div class="col-md-12">
+         <div id="HPTimeBasedImageSets" ag-grid="HPTimeBasedImageSetsOptions" class="ag-fresh" style="height:150px"></div>
+         <!--<button type="button" class="btn-sm btn-default" ng-click="addTimeBasedImageSetSelector()" title="Add Image Set Selector"><i class="fa fa-plus"></i></button>-->
+         <!--<button type="button" class="btn-sm btn-default" ng-click="editTimeBasedImageSets()" title="Edit Time Based Image Sets" ng-disabled="!isTimeBasedImageSetsSelected()"><i class="fa fa-pencil"></i></button>-->
+         <!--<button type="button" class="btn-sm btn-default" ng-click="deleteTimeBasedImageSetSelector()" title="Delete Image Set Selector" ng-disabled="!isTimeBasedImageSetSelectorSelected()"><i class="fa fa-minus"></i></button>-->
+      </div>
+   </div>
+   <div class="cine-buttons">
+      <button type="button" class="cine-controls pen-button" ng-click="editTimeBasedImageSets()" title="Edit Time Based Image Sets" ng-disabled="!isTimeBasedImageSetsSelected()"><i></i></button>
+   </div>
+   <!--</fieldset>-->
+</form>

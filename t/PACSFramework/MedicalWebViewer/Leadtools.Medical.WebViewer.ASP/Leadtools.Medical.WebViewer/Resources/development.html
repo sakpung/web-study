@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Demo Development</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" href="Styles/LEADServiceStyles.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+</head>
+<body>
+    <div id="container">
+        <nav></nav>
+        <header>
+            <a class="header-img" target="_blank" href="https://www.leadtools.com"><img src="Images/LeadtoolsHeader.png" alt="LEADTOOLS - The World Leader in Imaging SDKs" /></a>
+            <h1>LEADTOOLS JavaScript Demo Development Help</h1>
+            <h2>Development</h2>
+            <p>
+                This project's service was built from scratch using Asp.NET Web Api 2.
+                All endpoints are configured to <span class="monospace">api/{controller name}/{action name}</span>, with controllers residing in the
+                <span class="monospace">Controllers</span> folder.
+            </p>
+        </header>
+        <div id="content">
+            <hr />
+            <div id="info">
+                <p>
+                    <a href="#iisConfig">IIS Configuration</a> |
+                    <a href="#publishing">Publishing</a> |
+                    <a href="#extraAssemblies">Extra Assemblies</a> |
+                    <a href="#linkedFiles">Linked Files</a> |
+                    <a href="#codeAnalysis">Code Analysis</a> |
+                    <a href="#serviceExceptions">Service Exceptions</a> |
+                    <a href="#cors">CORS</a> |
+                    <a href="#https">HTTPS / SSL</a> |
+                    <a href="#azure">Azure</a>
+                </p>
+                <div class="dev-sections">
+                    <div id="iisConfig">
+                        <h3>IIS Configuration</h3>
+                        <div>
+                            <p>
+                                Out of the box, this project is configured for use with IIS Express. Just make sure that the IIS Express bit-ness value matches that of
+                                the current configuration. This can be accessed from your Visual Studio by going to Tools/Options/Projects Solutions/Web Projects and
+                                checking/unchecking the value of "Use the 64 bit version of IIS Express for web sites and projects" accordingly. The value must be
+                                unchecked for the Any CPU and x86 configuration and checked for the x64 configuration.
+                            </p>
+                            <p>
+                                If you intend to develop with IIS, make sure the following settings are correct:
+                            </p>
+                            <ul>
+                                <li>IIS 6.0 or later is installed.</li>
+                                <li>
+                                    In the "Windows Features" dialog, the following boxes are checked:
+                                    <ul>
+                                        <li>
+                                            .NET Framework 4.6 Advanced Series
+                                            <ul>
+                                                <li>ASP.NET 4.6</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Internet Information Services
+                                            <ul>
+                                                <li>
+                                                    Web Management Tools
+                                                    <ul>
+                                                        <li>
+                                                            IIS 6 Management Compatibility
+                                                            <ul>
+                                                                <li>IIS Metabase and IIS 6 configuration compatibility</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>IIS Management Console</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    World Wide Web Services
+                                                    <ul>
+                                                        <li>
+                                                            Application Development Features
+                                                            <ul>
+                                                                <li>.NET Extensibility 4.6</li>
+                                                                <li>ASP</li>
+                                                                <li>ASP.NET 4.6</li>
+                                                                <li>ISAPI Extensions</li>
+                                                                <li>ISAPI Filters</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            Common HTTP Features
+                                                            <ul>
+                                                                <li>Default Document</li>
+                                                                <li>Directory Browsing</li>
+                                                                <li>HTTP Errors</li>
+                                                                <li>Static Content</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            Health and Diagnostics
+                                                            <ul>
+                                                                <li>Custom Logging</li>
+                                                                <li>HTTP Logging</li>
+                                                                <li>Request Monitor</li>
+                                                                <li>Tracing</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            Performance Features
+                                                            <ul>
+                                                                <li>Static Content Compression</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            Security
+                                                            <ul>
+                                                                <li>Request Filtering</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p>
+                                <strong>After ensuring these settings are correct</strong> and creating the virtual directory in IIS, Application Pool settings must be
+                                updated as follows:
+                            </p>
+                            <ul>
+                                <li>
+                                    Make sure the new Application Pool has <strong>Enable 32-Bit Applications</strong> set to <strong>True</strong> if you are developing
+                                    for x86. Also make sure the <strong>.NET CLR Version</strong> is at least <strong>v4.0</strong>.
+                                </li>
+                                <li>
+                                    Ensure that the Application Pool identity has read and write access to the configured PACS server's database.<br />
+                                    Follow these instructions if you have any trouble connecting to the PACS server's database
+                                    <a href="https://www.leadtools.com/support/guides/pacs-troubleshooting-guide.pdf">PACS Troubleshooting</a>.
+                                </li>
+                            </ul>
+                            <p>
+                                If you do not modify these options, then IIS will use the built-in <strong>DefaultAppPool</strong>. This uses <strong>ApplicationPoolIdentity</strong>
+                                which by default does not have write access to the local hard drive nor to the database and running the service with these options will result in errors.
+                            </p>
+                            <p>
+                                We recommend creating a new Application Pool instead of changing the options of an existing one.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="publishing">
+                        <h3>Publishing</h3>
+                        <div>
+                            <p>Reference: <a href="https://msdn.microsoft.com/query/dev12.query?appId=Dev12IDEF1&l=EN-US&k=k(WebApplicationProjects.PackagePublishOverview);k(TargetFrameworkMoniker-.NETFramework,Version%3Dv4.5)&rd=true" target="_blank">Web Deployment Overview for Visual Studio and ASP.NET</a></p>
+                            <p>
+                                When publishing with Web Deploy, an error may appear citing <span class="monospace">This access control list is not in canonical form and therefore cannot be modified</span>.
+                                This is an IIS error and requires the following steps to be taken as an Administrator before the deployment is a success:
+                            </p>
+                            <ol>
+                                <li>Open either IIS Manager or the folder for your deployment under <span class="monospace">\inetpub\wwwroot</span>.</li>
+                                <li>Open the "Properties" dialog for the folder, and go to the "Security" tab. (you may get a Windows Security warning before continuing.)</li>
+                                <li>Click the "Edit..." button beside "To change permissions, click Edit."</li>
+                                <li>Click "Reorder".</li>
+                                <li>Apply the changes.</li>
+                                <li>Re-publish the project. (All of your settings should remain unchanged.)</li>
+                            </ol>
+                            <p>
+                                The project is also configured to use XML Documentation. This may require the "App_Data\XMLDocument.xml" documentation file
+                                to be published (and included in the project). If you do not wish to include the documentation file, remove the references to it in
+                                the project properties.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="extraAssemblies">
+                        <h3>Extra Assemblies</h3>
+                        <div>
+                            <p>
+                                The LEADTOOLS service makes use of extra assemblies that are not referenced directly by the project.
+                                Instead, they are loaded dynamically at runtime based on a certain request.
+                            </p>
+                            <p>
+                                <span class="monospace">ExtraAssemblies.targets</span> is a file listing those assemblies, which are copied from the
+                                proper path (debug or release, x86 or x64) to the bin as part of the "AfterBuild" target. If you are receiving unexpected
+                                results from the service, check that you are copying the assemblies correctly.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="linkedFiles">
+                        <h3>Linked Files</h3>
+                        <div>
+                            <p>
+                                Some files in this project are linked from <span class="monospace">/Examples/JS/Common</span>
+                                and <span class="monospace">/Examples/JS/Resources</span>. These files are linked so that they receive changes
+                                to the source file; however, they naturally will not be physically present in their directory. For this reason, a post-build
+                                event is added to copy all linked files from their link sources.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="codeAnalysis">
+                        <h3>Code Analysis</h3>
+                        <div>
+                            <p>
+                                Code Analysis files are added and available at <span class="monospace">CodeAnalysis</span>.
+                                Using Code Analysis can help detect issues with development.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="serviceExceptions">
+                        <h3>Service Exceptions</h3>
+                        <div>
+                            <p>
+                                Exception handling is important in this Web Api service. The classes within <span class="monospace">Errors/ServiceException</span>
+                                Contribute to detailed exception reporting back to the client. A request / response debugger like
+                                <a href="http://www.telerik.com/fiddler" target="_blank">Telerik's Fiddler</a> may be helpful in understanding
+                                the <span class="monospace">ServiceException</span> returned from the service when an error occurs.
+                            </p>
+                            <p>
+                                In <span class="monospace">Controllers</span>, each action may have a <span class="monospace">ServiceErrorAttribute</span>
+                                that determines the generic exception message returned. Additional controller methods should take advantage of this
+                                attribute.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="cors">
+                        <h3>CORS</h3>
+                        <div>
+                            <p>This project already is CORS enabled. </p>
+                        </div>
+                    </div>
+
+                    <div id="https">
+                        <h3>HTTPS / SSL</h3>
+                        <div>
+                            <p>Reference: <a href="https://www.asp.net/web-api/overview/security/working-with-ssl-in-web-api" target="_blank">Working with SSL in Web API</a></p>
+                            <p>
+                                <ol>
+                                    <li>For local testing, you can enable SSL in IIS Express from Visual Studio. In the Properties window, set SSL Enabled to True. Note the value of SSL URL; use this URL for testing HTTPS connections.</li>
+                                    <li>To enforce SSL in a Web API Controller, add the following filter <span class="monospace">[RequireHttps]</span> to any Web API actions that require SSL</li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="azure">
+                        <h3>Azure deployment</h3>
+                        <div>
+                            <p>Easiest way to publish this web service is by using MS Visual Studio.</p>
+                            <p>The web service requires you to setup the PACS database and PACS file storage on Azure before you can run it properly. 
+                            Following is a comprehensive guide on how to publish this web service and setup all required components on Azure:</p>
+                            <p>Reference: <a href="https://www.leadtools.com/help/leadtools/v20/dh/medical/to/deploying-the-pacs-storage-server-and-medical-web-viewer-to-microsoft-azure-app-services-asp-net.html" target="_blank">Deploy ASP Medical Web Services to Azure</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footerLinks">
+                <ul>
+                    <li><a href="https://www.leadtools.com/support/default.htm">Support</a></li>
+                    <li><a href="https://www.leadtools.com/resources/weborder.htm">Products</a></li>
+                </ul>
+            </div>
+            <div id="footerCopyright">Copyright &copy; 1991-2019 All Rights Reserved. LEAD Technologies, Inc.</div>
+        </div>
+    </div>
+</body>
+</html>

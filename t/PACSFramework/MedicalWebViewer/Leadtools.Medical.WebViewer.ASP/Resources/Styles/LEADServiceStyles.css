@@ -1,0 +1,381 @@
+﻿/* LEADServiceStyles.css - styles for the landing pages for the JavaScript Demos and DocumentViewer, NoHTML5Support page, and development page. */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Reset CSS Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/ 
+--------------------------------------------------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+a, abbr, acronym, address, cite, code,
+del, img,
+small, sub, sup,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, section, summary {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+/* Layout
+--------------------------------------------------------- */
+html {
+   overflow-y: scroll;
+   overflow-x: hidden;
+   min-height: 100%;
+}
+
+body {
+   min-height: 100%;
+}
+
+#container {
+   width: 955px;
+   margin: 0 auto;
+   background: #fff;
+}
+/* Header 
+--------------------------------------------------------- */
+header {
+   padding: 8px 20px;
+}
+
+   header .header-img {
+      margin: 40px 0 20px 30px;
+      float: right;
+   }
+
+   header p {
+      text-align: justify;
+      margin-left: 0;
+   }
+
+/* Footer 
+--------------------------------------------------------- */
+#footer {
+   font-size: 11px;
+   margin-bottom: 30px;
+   color: #FFFFFF;
+   height: 31px;
+   background: #3367b1;
+   padding: 0 25px 0 25px;
+}
+
+   #footer div {
+      padding: 5px 0 0 0;
+   }
+
+#footerLinks {
+   float: left;
+}
+
+   #footerLinks ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: inline;
+      font-size: 11px;
+   }
+
+      #footerLinks ul li {
+         display: inline;
+      }
+
+         #footerLinks ul li a {
+            color: #fff;
+            padding: 0 5px;
+         }
+
+            #footerLinks ul li a:hover {
+               color: #b7cbe0;
+            }
+
+#footerCopyright {
+   float: right;
+}
+
+/* General Styling 
+--------------------------------------------------------- */
+body {
+   background: #969696;
+   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2OTY5NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjExJSIgc3RvcC1jb2xvcj0iIzlhOWE5YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIzJSIgc3RvcC1jb2xvcj0iI2EyYTJhMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg4JSIgc3RvcC1jb2xvcj0iI2Q1ZDZkNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+   background: -moz-linear-gradient(top, #969696 0%, #9a9a9a 11%, #a2a2a2 23%, #d5d6d6 88%);
+   background: -webkit-linear-gradient(top, #969696 0%,#9a9a9a 11%,#a2a2a2 23%,#d5d6d6 88%);
+   background: linear-gradient(to bottom, #969696 0%,#9a9a9a 11%,#a2a2a2 23%,#d5d6d6 88%);
+   font-family: "Open Sans", Arial, Sans-Serif;
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: normal;
+   color: #3a3a3a;
+}
+
+pre, .code {
+   font-family: monospace;
+   /* overflow-x: auto; */
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+   padding: 0 2px;
+   margin: 2px;
+   background-color: #e5e5e5;
+}
+
+h1 {
+   font-size: 28px;
+   line-height: 28px;
+   color: #144c9c;
+   font-weight: bold;
+   padding: 2px 10px 2px 0;
+}
+
+h2, h3, h4 {
+   margin: 12px 0 12px 0;
+   font-weight: bold;
+}
+
+a {
+   color: #015587;
+   text-decoration: none;
+}
+
+   a:link {
+      color: #015587;
+      text-decoration: none;
+   }
+
+   a:visited {
+      color: #015587;
+      text-decoration: none;
+   }
+
+   a:hover {
+      color: #2F8BA6;
+      text-decoration: none;
+   }
+
+   a:active {
+      color: #246B81;
+      text-decoration: none;
+   }
+
+nav {
+   clear: both;
+   height: 40px;
+   background: #3367b1;
+   position: relative;
+   border-bottom: 5px solid #E8E8E8;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Global styles */
+*.monospace {
+   font-family: monospace;
+   color: #333;
+   font-weight: bold;
+}
+
+a.code, a:link, a:active, a:visited {
+   color: #015587;
+   text-decoration: underline;
+}
+
+a:hover {
+   color: #2F8BA6;
+}
+
+html body #footer a, html body #footer a:link {
+   text-decoration: none;
+}
+
+h1, h2 {
+   margin: 10px auto;
+}
+
+#content, #content div {
+   margin: 0 10px;
+}
+
+   #content > p {
+      margin-left: 0;
+   }
+
+dl, dd {
+   margin-left: 30px;
+}
+
+dd {
+   margin-top: 3px;
+   margin-bottom: 3px;
+}
+
+p {
+   margin: 15px;
+}
+
+/* Statistics in DocumentsService */
+.bordered {
+   display: inline-block;
+   border: 3px solid #BBC0C7;
+   border-radius: 1px;
+   padding: 3px;
+}
+
+html div.stats {
+   position: relative;
+   border-radius: 3px;
+   display: inline-block;
+   min-width: 150px;
+   min-height: 50px;
+   padding: 5px;
+   -moz-box-sizing: content-box;
+   -webkit-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+div.stats::after, div.stats::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+}
+
+div.stats.hide::after, div.stats.hide::before {
+   opacity: 1;
+}
+
+div.stats::before {
+   background-color: white;
+}
+
+div.stats::after {
+   background: url("../Images/loading.GIF");
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+div.stats span {
+   color: #3367B1;
+   margin-left: 3px;
+}
+
+div.stats.loud span {
+   font-size: 130%;
+}
+
+div.stats .error, div.stats .expired {
+   color: #b13333;
+}
+
+/* Statistics in DocumentsService */
+
+input[type="text"] {
+   width: 400px;
+}
+
+#content button {
+   /*margin: 5px 0;*/
+   border-radius: 3px;
+   color: white;
+   background: #3367B1;
+   padding: 2px 10px;
+   text-decoration: none;
+   border: none;
+   cursor: pointer;
+}
+
+   #content button:hover {
+      background: #1e85c8;
+   }
+
+   #content button:active {
+      background: #3cb0fd;
+   }
+
+   #content button:disabled {
+      background: #b0b0b0;
+      cursor: default;
+   }
+
+html body hr {
+   border-style: dashed;
+   /*border-color: #9d9d9d;*/
+   border-color: #09839d;
+}
+
+.dev-sections h3 {
+   padding: 3px 10px;
+   border: 1px solid black;
+   border-left: none;
+   border-right: none;
+   display: inline-block;
+}
+
+.dev-sections ol, .dev-sections ul {
+   list-style: square;
+}
+
+
+.selection {
+   display: inline-block;
+}
+
+   .selection a {
+      width: auto;
+      display: block;
+      padding: 5px;
+      background-color: #b9effb;
+      border: 1px solid #92e1f5;
+      margin: 3px 0px;
+   }
+
+   .selection h2 {
+      margin: 8px 0;
+   }
+
+   .selection a, .selection a:active, .selection a:link, .selection a:visited, .selection a:hover {
+      color: #0D2930;
+      text-decoration: none;
+      margin: 10px;
+   }
+
+      .selection a:hover {
+         background-color: #d1f7ff;
+      }
+
+      .selection a:active {
+         background-color: #e3faff;
+      }
+
+      .selection a h3 {
+         margin: 0 5px;
+         display: inline-block;
+      }
+
+      .selection a span {
+         color: inherit;
+         font-style: italic;
+      }
+
+      .selection a p {
+         margin: 3px;
+         padding-left: 12px;
+      }

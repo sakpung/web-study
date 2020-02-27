@@ -1,0 +1,1032 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>メインフォーム</value>
+  </data>
+  <data name="_buttonCancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="_buttonNext.Text" xml:space="preserve">
+    <value>次へ</value>
+  </data>
+  <data name="_buttonPrevious.Text" xml:space="preserve">
+    <value>前へ</value>
+  </data>
+  <data name="_buttonRun.Text" xml:space="preserve">
+    <value>実行</value>
+  </data>
+  <data name="_checkBoxOptionsDialog.Text" xml:space="preserve">
+    <value>オプションダイアログを表示する</value>
+  </data>
+  <data name="_checkBoxProgress.Text" xml:space="preserve">
+    <value>プログレスバーの表示</value>
+  </data>
+  <data name="_checkBoxUseRegion.Text" xml:space="preserve">
+    <value>リージョンを設定</value>
+  </data>
+  <data name="_groupBoxRegion.Text" xml:space="preserve">
+    <value>リージョンタイプ</value>
+  </data>
+  <data name="_groupBoxRegionMode.Text" xml:space="preserve">
+    <value>リージョンモード</value>
+  </data>
+  <data name="_labelAfter.Text" xml:space="preserve">
+    <value>処理後画像</value>
+  </data>
+  <data name="_labelBefore.Text" xml:space="preserve">
+    <value>元画像</value>
+  </data>
+  <data name="_menuItemFile.Text" xml:space="preserve">
+    <value>ファイル(&amp;F)</value>
+  </data>
+  <data name="_menuItemFileExit.Text" xml:space="preserve">
+    <value>終了(&amp;X)</value>
+  </data>
+  <data name="_menuItemHelp.Text" xml:space="preserve">
+    <value>ヘルプ(&amp;H)</value>
+  </data>
+  <data name="_menuItemHelpAbout.Text" xml:space="preserve">
+    <value>バージョン情報(&amp;A)...</value>
+  </data>
+  <data name="_radioButtonEllipse.Text" xml:space="preserve">
+    <value>楕円</value>
+  </data>
+  <data name="_radioButtonFreeHand.Text" xml:space="preserve">
+    <value>フリーハンド</value>
+  </data>
+  <data name="_radioButtonIntersect.Text" xml:space="preserve">
+    <value>共通部分</value>
+  </data>
+  <data name="_radioButtonInvert.Text" xml:space="preserve">
+    <value>反転</value>
+  </data>
+  <data name="_radioButtonMagicWand.Text" xml:space="preserve">
+    <value>マジックワンド</value>
+  </data>
+  <data name="_radioButtonMulti.Text" xml:space="preserve">
+    <value>マルチ</value>
+  </data>
+  <data name="_radioButtonNewandNotOld.Text" xml:space="preserve">
+    <value>新規かつNot既存</value>
+  </data>
+  <data name="_radioButtonOldandNotNew.Text" xml:space="preserve">
+    <value>既存かつNot新規</value>
+  </data>
+  <data name="_radioButtonOldXORNew.Text" xml:space="preserve">
+    <value>既存 XOR 新規</value>
+  </data>
+  <data name="_radioButtonRectangle.Text" xml:space="preserve">
+    <value>長方形</value>
+  </data>
+  <data name="_radioButtonSingle.Text" xml:space="preserve">
+    <value>シングル</value>
+  </data>
+  <data name="resx_Accuracy" xml:space="preserve">
+    <value>確度</value>
+  </data>
+  <data name="resx_Angle" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="resx_BlankPageDetectionResults" xml:space="preserve">
+    <value>空白ページの検出結果</value>
+  </data>
+  <data name="resx_Brightness" xml:space="preserve">
+    <value>輝度</value>
+  </data>
+  <data name="resx_Change" xml:space="preserve">
+    <value>変更</value>
+  </data>
+  <data name="resx_ChangeContrast" xml:space="preserve">
+    <value>コントラストの変更</value>
+  </data>
+  <data name="resx_ChangeHue" xml:space="preserve">
+    <value>色相の変更</value>
+  </data>
+  <data name="resx_ChangeIntensity" xml:space="preserve">
+    <value>明度の変更</value>
+  </data>
+  <data name="resx_ChangeSaturation" xml:space="preserve">
+    <value>彩度の変更</value>
+  </data>
+  <data name="resx_Contrast" xml:space="preserve">
+    <value>コントラスト</value>
+  </data>
+  <data name="resx_HistogramContrast" xml:space="preserve">
+    <value>ヒストグラムコントラスト</value>
+  </data>
+  <data name="resx_IsBlank" xml:space="preserve">
+    <value>空白</value>
+  </data>
+  <data name="resx_MaximumDlgTitle" xml:space="preserve">
+    <value>最大値</value>
+  </data>
+  <data name="resx_Message" xml:space="preserve">
+    <value>メッセージ</value>
+  </data>
+  <data name="resx_MessageBoxHasRegionError" xml:space="preserve">
+    <value>本機能はリージョンをサポートしません。リージョンオプションをチェックオフしてください。</value>
+  </data>
+  <data name="resx_MessageBoxHasRegionErrorTitel" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="resx_MessagerAngle" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="resx_MessagerAreaRatio" xml:space="preserve">
+    <value>エリア比率(内側/外側)</value>
+  </data>
+  <data name="resx_MessagerCaption" xml:space="preserve">
+    <value>LEADTOOLS for .NET C# Image Processing デモ</value>
+  </data>
+  <data name="resx_MessagerColorCount" xml:space="preserve">
+    <value>カラーカウント</value>
+  </data>
+  <data name="resx_MessagerImageMustHaveRegion" xml:space="preserve">
+    <value>画像にはリージョンを指定することが必要です。</value>
+  </data>
+  <data name="resx_MessagerIsRegistrationMark" xml:space="preserve">
+    <value>登録番号</value>
+  </data>
+  <data name="resx_MessagerMaximumBit" xml:space="preserve">
+    <value>最大のビット</value>
+  </data>
+  <data name="resx_MessagerMaximumValue" xml:space="preserve">
+    <value>最大の値</value>
+  </data>
+  <data name="resx_MessagerMinimumBit" xml:space="preserve">
+    <value>最小のビット</value>
+  </data>
+  <data name="resx_MessagerMinimumValue" xml:space="preserve">
+    <value>最低値</value>
+  </data>
+  <data name="resx_MessagerPerimeterLength" xml:space="preserve">
+    <value>周囲長</value>
+  </data>
+  <data name="resx_MessagerPtOfCenterMass" xml:space="preserve">
+    <value>重心座標</value>
+  </data>
+  <data name="resx_MessagerRectangle" xml:space="preserve">
+    <value>長方形</value>
+  </data>
+  <data name="resx_MessagerRoundness" xml:space="preserve">
+    <value>真円度</value>
+  </data>
+  <data name="resx_MosaicDlgTitle" xml:space="preserve">
+    <value>モザイク</value>
+  </data>
+  <data name="resx_Page" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="resx_SignedImage" xml:space="preserve">
+    <value>サインした画像</value>
+  </data>
+  <data name="resx_SizeModeFit" xml:space="preserve">
+    <value>合わせる</value>
+  </data>
+  <data name="resx_SizeModeFitWidth" xml:space="preserve">
+    <value>幅に合わせる</value>
+  </data>
+  <data name="resx_SizeModeStretch" xml:space="preserve">
+    <value>伸張</value>
+  </data>
+  <data name="resx_StatisticsMax" xml:space="preserve">
+    <value>最大</value>
+  </data>
+  <data name="resx_StatisticsMean" xml:space="preserve">
+    <value>平均</value>
+  </data>
+  <data name="resx_StatisticsMedian" xml:space="preserve">
+    <value>メディアン</value>
+  </data>
+  <data name="resx_StatisticsMin" xml:space="preserve">
+    <value>暗いオブジェクトの拡大</value>
+  </data>
+  <data name="resx_StatisticsPercent" xml:space="preserve">
+    <value>パーセント：</value>
+  </data>
+  <data name="resx_UnSignedImage" xml:space="preserve">
+    <value>サインなし画像</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageFirst.Name" xml:space="preserve">
+    <value>_buttonAfterPageFirst</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageFirst.Parent" xml:space="preserve">
+    <value>_panelAfterControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageFirst.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageFirst.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageLast.Name" xml:space="preserve">
+    <value>_buttonAfterPageLast</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageLast.Parent" xml:space="preserve">
+    <value>_panelAfterControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageLast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageLast.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageNext.Name" xml:space="preserve">
+    <value>_buttonAfterPageNext</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageNext.Parent" xml:space="preserve">
+    <value>_panelAfterControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPageNext.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPagePrevious.Name" xml:space="preserve">
+    <value>_buttonAfterPagePrevious</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPagePrevious.Parent" xml:space="preserve">
+    <value>_panelAfterControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPagePrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonAfterPagePrevious.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageFirst.Name" xml:space="preserve">
+    <value>_buttonBeforePageFirst</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageFirst.Parent" xml:space="preserve">
+    <value>_panelBeforeControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageFirst.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageFirst.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageLast.Name" xml:space="preserve">
+    <value>_buttonBeforePageLast</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageLast.Parent" xml:space="preserve">
+    <value>_panelBeforeControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageLast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageLast.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageNext.Name" xml:space="preserve">
+    <value>_buttonBeforePageNext</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageNext.Parent" xml:space="preserve">
+    <value>_panelBeforeControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePageNext.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePagePrevious.Name" xml:space="preserve">
+    <value>_buttonBeforePagePrevious</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePagePrevious.Parent" xml:space="preserve">
+    <value>_panelBeforeControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePagePrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonBeforePagePrevious.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_buttonCancel.Name" xml:space="preserve">
+    <value>_buttonCancel</value>
+  </data>
+  <data name="&gt;&gt;_buttonCancel.Parent" xml:space="preserve">
+    <value>_panelProgress</value>
+  </data>
+  <data name="&gt;&gt;_buttonCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonCancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_buttonNext.Name" xml:space="preserve">
+    <value>_buttonNext</value>
+  </data>
+  <data name="&gt;&gt;_buttonNext.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonNext.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_buttonPrevious.Name" xml:space="preserve">
+    <value>_buttonPrevious</value>
+  </data>
+  <data name="&gt;&gt;_buttonPrevious.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonPrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonPrevious.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_buttonRun.Name" xml:space="preserve">
+    <value>_buttonRun</value>
+  </data>
+  <data name="&gt;&gt;_buttonRun.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonRun.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonRun.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomIn.Name" xml:space="preserve">
+    <value>_buttonZoomIn</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomIn.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomIn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomNone.Name" xml:space="preserve">
+    <value>_buttonZoomNone</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomNone.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomNone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomNone.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomOut.Name" xml:space="preserve">
+    <value>_buttonZoomOut</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomOut.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomOut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonZoomOut.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxOptionsDialog.Name" xml:space="preserve">
+    <value>_checkBoxOptionsDialog</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxOptionsDialog.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxOptionsDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxOptionsDialog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxProgress.Name" xml:space="preserve">
+    <value>_checkBoxProgress</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxProgress.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxProgress.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxUseRegion.Name" xml:space="preserve">
+    <value>_checkBoxUseRegion</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxUseRegion.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxUseRegion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxUseRegion.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxNamespace.Name" xml:space="preserve">
+    <value>_comboBoxNamespace</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxNamespace.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxNamespace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxNamespace.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxSizeMode.Name" xml:space="preserve">
+    <value>_comboBoxSizeMode</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxSizeMode.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxSizeMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_comboBoxSizeMode.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_groupBoxRegion.Name" xml:space="preserve">
+    <value>_groupBoxRegion</value>
+  </data>
+  <data name="&gt;&gt;_groupBoxRegion.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_groupBoxRegion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_groupBoxRegion.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_groupBoxRegionMode.Name" xml:space="preserve">
+    <value>_groupBoxRegionMode</value>
+  </data>
+  <data name="&gt;&gt;_groupBoxRegionMode.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_groupBoxRegionMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_groupBoxRegionMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_labelAfter.Name" xml:space="preserve">
+    <value>_labelAfter</value>
+  </data>
+  <data name="&gt;&gt;_labelAfter.Parent" xml:space="preserve">
+    <value>_panelAfterControls</value>
+  </data>
+  <data name="&gt;&gt;_labelAfter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_labelAfter.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_labelAfterInfo.Name" xml:space="preserve">
+    <value>_labelAfterInfo</value>
+  </data>
+  <data name="&gt;&gt;_labelAfterInfo.Parent" xml:space="preserve">
+    <value>_panelAfter</value>
+  </data>
+  <data name="&gt;&gt;_labelAfterInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_labelAfterInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_labelAfterPage.Name" xml:space="preserve">
+    <value>_labelAfterPage</value>
+  </data>
+  <data name="&gt;&gt;_labelAfterPage.Parent" xml:space="preserve">
+    <value>_panelAfterControls</value>
+  </data>
+  <data name="&gt;&gt;_labelAfterPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_labelAfterPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_labelBefore.Name" xml:space="preserve">
+    <value>_labelBefore</value>
+  </data>
+  <data name="&gt;&gt;_labelBefore.Parent" xml:space="preserve">
+    <value>_panelBeforeControls</value>
+  </data>
+  <data name="&gt;&gt;_labelBefore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_labelBefore.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_labelBeforeInfo.Name" xml:space="preserve">
+    <value>_labelBeforeInfo</value>
+  </data>
+  <data name="&gt;&gt;_labelBeforeInfo.Parent" xml:space="preserve">
+    <value>_panelBefore</value>
+  </data>
+  <data name="&gt;&gt;_labelBeforeInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_labelBeforeInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_labelBeforePage.Name" xml:space="preserve">
+    <value>_labelBeforePage</value>
+  </data>
+  <data name="&gt;&gt;_labelBeforePage.Parent" xml:space="preserve">
+    <value>_panelBeforeControls</value>
+  </data>
+  <data name="&gt;&gt;_labelBeforePage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_labelBeforePage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_listBoxCommands.Name" xml:space="preserve">
+    <value>_listBoxCommands</value>
+  </data>
+  <data name="&gt;&gt;_listBoxCommands.Parent" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_listBoxCommands.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_listBoxCommands.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_mainMenu.Name" xml:space="preserve">
+    <value>_mainMenu</value>
+  </data>
+  <data name="&gt;&gt;_mainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MainMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemFile.Name" xml:space="preserve">
+    <value>_menuItemFile</value>
+  </data>
+  <data name="&gt;&gt;_menuItemFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemFileExit.Name" xml:space="preserve">
+    <value>_menuItemFileExit</value>
+  </data>
+  <data name="&gt;&gt;_menuItemFileExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemHelp.Name" xml:space="preserve">
+    <value>_menuItemHelp</value>
+  </data>
+  <data name="&gt;&gt;_menuItemHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemHelpAbout.Name" xml:space="preserve">
+    <value>_menuItemHelpAbout</value>
+  </data>
+  <data name="&gt;&gt;_menuItemHelpAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panelAfter.Name" xml:space="preserve">
+    <value>_panelAfter</value>
+  </data>
+  <data name="&gt;&gt;_panelAfter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_panelAfter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panelAfter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_panelAfterControls.Name" xml:space="preserve">
+    <value>_panelAfterControls</value>
+  </data>
+  <data name="&gt;&gt;_panelAfterControls.Parent" xml:space="preserve">
+    <value>_panelAfter</value>
+  </data>
+  <data name="&gt;&gt;_panelAfterControls.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panelAfterControls.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_panelBefore.Name" xml:space="preserve">
+    <value>_panelBefore</value>
+  </data>
+  <data name="&gt;&gt;_panelBefore.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_panelBefore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panelBefore.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_panelBeforeControls.Name" xml:space="preserve">
+    <value>_panelBeforeControls</value>
+  </data>
+  <data name="&gt;&gt;_panelBeforeControls.Parent" xml:space="preserve">
+    <value>_panelBefore</value>
+  </data>
+  <data name="&gt;&gt;_panelBeforeControls.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panelBeforeControls.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_panelControls.Name" xml:space="preserve">
+    <value>_panelControls</value>
+  </data>
+  <data name="&gt;&gt;_panelControls.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_panelControls.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panelControls.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_panelProgress.Name" xml:space="preserve">
+    <value>_panelProgress</value>
+  </data>
+  <data name="&gt;&gt;_panelProgress.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_panelProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_panelProgress.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_progressBar.Name" xml:space="preserve">
+    <value>_progressBar</value>
+  </data>
+  <data name="&gt;&gt;_progressBar.Parent" xml:space="preserve">
+    <value>_panelProgress</value>
+  </data>
+  <data name="&gt;&gt;_progressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_progressBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonEllipse.Name" xml:space="preserve">
+    <value>_radioButtonEllipse</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonEllipse.Parent" xml:space="preserve">
+    <value>_groupBoxRegion</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonEllipse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonEllipse.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonFreeHand.Name" xml:space="preserve">
+    <value>_radioButtonFreeHand</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonFreeHand.Parent" xml:space="preserve">
+    <value>_groupBoxRegion</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonFreeHand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonFreeHand.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonIntersect.Name" xml:space="preserve">
+    <value>_radioButtonIntersect</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonIntersect.Parent" xml:space="preserve">
+    <value>_groupBoxRegionMode</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonIntersect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonIntersect.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonInvert.Name" xml:space="preserve">
+    <value>_radioButtonInvert</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonInvert.Parent" xml:space="preserve">
+    <value>_groupBoxRegionMode</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonInvert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonInvert.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonMagicWand.Name" xml:space="preserve">
+    <value>_radioButtonMagicWand</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonMagicWand.Parent" xml:space="preserve">
+    <value>_groupBoxRegion</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonMagicWand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonMagicWand.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonMulti.Name" xml:space="preserve">
+    <value>_radioButtonMulti</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonMulti.Parent" xml:space="preserve">
+    <value>_groupBoxRegionMode</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonMulti.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonMulti.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonNewandNotOld.Name" xml:space="preserve">
+    <value>_radioButtonNewandNotOld</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonNewandNotOld.Parent" xml:space="preserve">
+    <value>_groupBoxRegionMode</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonNewandNotOld.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonNewandNotOld.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonOldandNotNew.Name" xml:space="preserve">
+    <value>_radioButtonOldandNotNew</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonOldandNotNew.Parent" xml:space="preserve">
+    <value>_groupBoxRegionMode</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonOldandNotNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonOldandNotNew.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonOldXORNew.Name" xml:space="preserve">
+    <value>_radioButtonOldXORNew</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonOldXORNew.Parent" xml:space="preserve">
+    <value>_groupBoxRegionMode</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonOldXORNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonOldXORNew.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonRectangle.Name" xml:space="preserve">
+    <value>_radioButtonRectangle</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonRectangle.Parent" xml:space="preserve">
+    <value>_groupBoxRegion</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonRectangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonRectangle.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonSingle.Name" xml:space="preserve">
+    <value>_radioButtonSingle</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonSingle.Parent" xml:space="preserve">
+    <value>_groupBoxRegionMode</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonSingle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_radioButtonSingle.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_buttonAfterPageFirst.Text" xml:space="preserve">
+    <value>|&lt;</value>
+  </data>
+  <data name="_buttonAfterPageLast.Text" xml:space="preserve">
+    <value>&gt;|</value>
+  </data>
+  <data name="_buttonAfterPageNext.Text" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="_buttonAfterPagePrevious.Text" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="_buttonBeforePageFirst.Text" xml:space="preserve">
+    <value>|&lt;</value>
+  </data>
+  <data name="_buttonBeforePageLast.Text" xml:space="preserve">
+    <value>&gt;|</value>
+  </data>
+  <data name="_buttonBeforePageNext.Text" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="_buttonBeforePagePrevious.Text" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="_buttonZoomIn.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="_buttonZoomNone.Text" xml:space="preserve">
+    <value>1:1</value>
+  </data>
+  <data name="_buttonZoomOut.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="resx_cmdMessage" xml:space="preserve">
+    <value>LEAD Technologies, Inc.</value>
+  </data>
+  <data name="resx_StatisticsPixelCount" xml:space="preserve">
+    <value>ピクセル数</value>
+  </data>
+  <data name="resx_StatisticsStdDiv" xml:space="preserve">
+    <value>標準偏差</value>
+  </data>
+  <data name="resx_StatisticsTotalPixelCount" xml:space="preserve">
+    <value>ピクセル総数</value>
+  </data>
+  <data name="resx_SizeModeNormal" xml:space="preserve">
+    <value>通常</value>
+  </data>
+  <data name="&gt;&gt;menuItemImage.Name" xml:space="preserve">
+    <value>menuItemImage</value>
+  </data>
+  <data name="&gt;&gt;menuItemImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItemMagGlass.Name" xml:space="preserve">
+    <value>menuItemMagGlass</value>
+  </data>
+  <data name="&gt;&gt;menuItemMagGlass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItemView.Name" xml:space="preserve">
+    <value>menuItemView</value>
+  </data>
+  <data name="&gt;&gt;menuItemView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemHistogram.Name" xml:space="preserve">
+    <value>_menuItemHistogram</value>
+  </data>
+  <data name="&gt;&gt;_menuItemHistogram.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemMagGlassStart.Name" xml:space="preserve">
+    <value>_menuItemMagGlassStart</value>
+  </data>
+  <data name="&gt;&gt;_menuItemMagGlassStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_menuItemMagGlassStop.Name" xml:space="preserve">
+    <value>_menuItemMagGlassStop</value>
+  </data>
+  <data name="&gt;&gt;_menuItemMagGlassStop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_menuItemImage.Text" xml:space="preserve">
+    <value>イメージ</value>
+  </data>
+  <data name="_menuItemMagGlass.Text" xml:space="preserve">
+    <value>拡大鏡</value>
+  </data>
+  <data name="_menuItemView.Text" xml:space="preserve">
+    <value>ビュー</value>
+  </data>
+  <data name="_menuItemHistogram.Text" xml:space="preserve">
+    <value>ヒストグラム...</value>
+  </data>
+  <data name="_menuItemMagGlassStart.Text" xml:space="preserve">
+    <value>スタート</value>
+  </data>
+  <data name="_menuItemMagGlassStop.Text" xml:space="preserve">
+    <value>ストップ</value>
+  </data>
+  <data name="resx_SizeModeActualSize" xml:space="preserve">
+    <value>実サイズ</value>
+  </data>
+</root>

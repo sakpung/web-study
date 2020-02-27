@@ -1,0 +1,39 @@
+﻿<tabset id="ltTabWrapper" class="vbox boxItem" style="height:100%; width:100%">
+    <tab class="vbox boxItem" ng-repeat="tab in tabs" active="tab.active" disabled="tab.disabled" select="tabSelected(tab)" ng-show="tab.visible">
+        <tab-heading>
+            {{tab.title}} <button ng-show="tab.canDelete" ng-click="deleteTab(tab.id, $event)" class="tab-button"><span class="fa fa-times"></span></button>
+        </tab-heading>
+        <div class="vbox boxItem" ng-include="tab.templateUrl" ng-controller="tab.controller" ng-init="tabId=tab.id" ng-show="tab.visible" style="width:100%"></div>
+    </tab>
+    <li class="dropdown pull-right">
+        <a class="dropdown-toggle" href="javascript:void(0)">{{ user }}<b class="caret"></b></a>
+        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+           <li><a href="javascript:void(0)" tabindex="-1" ng-click="openChangePassword()">{{ 'PASSWORD' | translate}}</a></li>
+           <li><a href="javascript:void(0)" tabindex="-1" ng-click="openPermissionsManagement()" ng-show="canManagePermissions()">{{ 'PERMISSIONS' | translate}}&nbsp;{{ 'MANAGEMENT' | translate}}</a></li>
+           <li class="divider" ng-show="canManageAccessRights()"></li>
+           <li><a href="javascript:void(0)" tabindex="-1" ng-click="openRolePatientsAccessManagement()" ng-show="canManageAccessRights()">{{ "ROLE" | translate}}&nbsp;{{ "PATIENT" | translate}}&nbsp;{{ "RIGHTS" | translate}}</a></li>
+           <li><a href="javascript:void(0)" tabindex="-1" ng-click="openUserPatientsAccessManagement()" ng-show="canManageAccessRights()">{{ "USER" | translate}}&nbsp;{{ "PATIENT" | translate}}&nbsp;{{ "RIGHTS" | translate}}</a></li>
+           <li class="divider" ng-show="canManagePermissions() && !canManageRemotePacs()"></li>
+           <li><a tabindex="-1" href="javascript:void(0)" ng-click="openAdminGlobal()" ng-show="isAdmin()">{{ 'CONFIG' | translate }}&nbsp;{{ 'ADMIN' | translate }}&nbsp;{{'OPTIONS' | translate}}</a></li>
+           <li><a tabindex="-1" href="javascript:void(0)" ng-click="openAdminOverlay()" ng-show="isAdmin()">{{ 'CONFIG' | translate }}&nbsp;{{ 'ADMIN' | translate }}&nbsp;{{'OVERLAYS' | translate}}</a></li>
+           <li><a tabindex="-1" href="javascript:void(0)" ng-click="openAdminToolbar()" ng-show="isAdmin()">{{ 'CONFIG' | translate }}&nbsp;{{ 'ADMIN' | translate }}&nbsp;{{'TOOLBAR' | translate}}</a></li>
+           <li><a tabindex="-1" href="javascript:void(0)" ng-click="clearCachedObjects()" ng-show="canDeleteCache()">{{ 'CLEAR' | translate }}&nbsp;{{ 'CACHE' | translate }}</a></li>
+           <li class="divider" ng-show="canManageRemotePacs()"></li>
+           <li><a tabindex="-1" href="javascript:void(0)" ng-click="openRemotePacs()" ng-show="canManageRemotePacs()">{{ 'CONFIG' | translate }}&nbsp;{{ 'REMOTE' | translate }}&nbsp;{{'PACS' | translate}}</a></li>
+           <li><a tabindex="-1" href="javascript:void(0)" ng-click="openRemoteWado()" ng-show="canManageRemotePacs()">{{ 'CONFIG' | translate }}&nbsp;{{ 'REMOTE' | translate }}&nbsp;{{'WADO' | translate}}</a></li>
+           <li class="divider" ng-show="canShowTemplates()"></li>
+           <li><a tabindex="-1" href="javascript:void(0)" ng-click="openTemplateEditor()" ng-show="canShowTemplates()">{{ 'TEMPLATE' | translate }}&nbsp;{{'EDITOR' | translate}}</a></li>
+           <li><a href="javascript:void(0)" ng-click="themeDialog()" translate="Theme"></a></li>
+           <li class="divider" ng-show="canCalibrateMonitor()"></li>
+           <li><a href="javascript:void(0)" ng-click="openAdminCalibration()" translate="CALIBRATE_MONITOR" ng-show="canCalibrateMonitor()"></a></li>
+           <li class="divider" ng-show="canManagePermissions() || isAdmin()"></li>
+           <li><a href="javascript:void(0)" ng-click="logout()" translate="LOG_OUT"></a></li>
+           <li class="divider" ng-show="true"></li>
+           <li><a href="javascript:void(0)" ng-click="aboutDialog()" translate="ABOUTDIALOG"></a></li>
+
+        </ul>
+    </li>
+    <li class="pull-right">
+        <a href="javascript:void(0)" ng-click="doUpload(this.files)" ng-show="canStore()">{{ 'UPLOAD' | translate}}&nbsp;<i class="fa fa-upload"></i></a>
+    </li>
+</tabset>

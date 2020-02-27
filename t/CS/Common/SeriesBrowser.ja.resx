@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>シリーズブラウザ</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SeriesBrowser</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AccessionNumberColumn.Name" xml:space="preserve">
+    <value>AccessionNumberColumn</value>
+  </data>
+  <data name="&gt;&gt;AccessionNumberColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddDICOMDIR.Name" xml:space="preserve">
+    <value>btnAddDICOMDIR</value>
+  </data>
+  <data name="&gt;&gt;btnAddDICOMDIR.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnAddDICOMDIR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddDICOMDIR.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
+    <value>btnClear</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnLoad.Name" xml:space="preserve">
+    <value>btnLoad</value>
+  </data>
+  <data name="&gt;&gt;btnLoad.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnLoad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLoad.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;buttonCancelProgress.Name" xml:space="preserve">
+    <value>buttonCancelProgress</value>
+  </data>
+  <data name="&gt;&gt;buttonCancelProgress.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;buttonCancelProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCancelProgress.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;DICOMDIRfileNameColumn.Name" xml:space="preserve">
+    <value>DICOMDIRfileNameColumn</value>
+  </data>
+  <data name="&gt;&gt;DICOMDIRfileNameColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FrameCount.Name" xml:space="preserve">
+    <value>FrameCount</value>
+  </data>
+  <data name="&gt;&gt;FrameCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCounter.Name" xml:space="preserve">
+    <value>labelCounter</value>
+  </data>
+  <data name="&gt;&gt;labelCounter.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelCounter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCounter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;modalityColumn.Name" xml:space="preserve">
+    <value>modalityColumn</value>
+  </data>
+  <data name="&gt;&gt;modalityColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Organ.Name" xml:space="preserve">
+    <value>Organ</value>
+  </data>
+  <data name="&gt;&gt;Organ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PatientIDColumn.Name" xml:space="preserve">
+    <value>PatientIDColumn</value>
+  </data>
+  <data name="&gt;&gt;PatientIDColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PatientNameColumn.Name" xml:space="preserve">
+    <value>PatientNameColumn</value>
+  </data>
+  <data name="&gt;&gt;PatientNameColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressCounter.Name" xml:space="preserve">
+    <value>progressCounter</value>
+  </data>
+  <data name="&gt;&gt;progressCounter.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;progressCounter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressCounter.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;referDrNameColumn.Name" xml:space="preserve">
+    <value>referDrNameColumn</value>
+  </data>
+  <data name="&gt;&gt;referDrNameColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seriesDataGridView.Name" xml:space="preserve">
+    <value>seriesDataGridView</value>
+  </data>
+  <data name="&gt;&gt;seriesDataGridView.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;seriesDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seriesDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SeriesDescColumn.Name" xml:space="preserve">
+    <value>SeriesDescColumn</value>
+  </data>
+  <data name="&gt;&gt;SeriesDescColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SeriesID.Name" xml:space="preserve">
+    <value>SeriesID</value>
+  </data>
+  <data name="&gt;&gt;SeriesID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seriesInstanceUidColumn.Name" xml:space="preserve">
+    <value>seriesInstanceUidColumn</value>
+  </data>
+  <data name="&gt;&gt;seriesInstanceUidColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seriesNumberColumn.Name" xml:space="preserve">
+    <value>seriesNumberColumn</value>
+  </data>
+  <data name="&gt;&gt;seriesNumberColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seriesStudyInstanceUidColumn.Name" xml:space="preserve">
+    <value>seriesStudyInstanceUidColumn</value>
+  </data>
+  <data name="&gt;&gt;seriesStudyInstanceUidColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seriesTableBindingSource.Name" xml:space="preserve">
+    <value>seriesTableBindingSource</value>
+  </data>
+  <data name="&gt;&gt;seriesTableBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;studiesDataGridView.Name" xml:space="preserve">
+    <value>studiesDataGridView</value>
+  </data>
+  <data name="&gt;&gt;studiesDataGridView.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;studiesDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studiesDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;studyBrowserDataSet.Name" xml:space="preserve">
+    <value>studyBrowserDataSet</value>
+  </data>
+  <data name="&gt;&gt;studyBrowserDataSet.Type" xml:space="preserve">
+    <value>Leadtools.Demos.StudyBrowserDataSet, CSMain3DDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;studyDateColumn.Name" xml:space="preserve">
+    <value>studyDateColumn</value>
+  </data>
+  <data name="&gt;&gt;studyDateColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studyDescriptionColumn.Name" xml:space="preserve">
+    <value>studyDescriptionColumn</value>
+  </data>
+  <data name="&gt;&gt;studyDescriptionColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StudyID.Name" xml:space="preserve">
+    <value>StudyID</value>
+  </data>
+  <data name="&gt;&gt;StudyID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StudyIdent.Name" xml:space="preserve">
+    <value>StudyIdent</value>
+  </data>
+  <data name="&gt;&gt;StudyIdent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StudyIdentifier.Name" xml:space="preserve">
+    <value>StudyIdentifier</value>
+  </data>
+  <data name="&gt;&gt;StudyIdentifier.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studyInstanceUidColumn.Name" xml:space="preserve">
+    <value>studyInstanceUidColumn</value>
+  </data>
+  <data name="&gt;&gt;studyInstanceUidColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Thumbnail.Name" xml:space="preserve">
+    <value>Thumbnail</value>
+  </data>
+  <data name="&gt;&gt;Thumbnail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkLoadAs3D.Name" xml:space="preserve">
+    <value>_checkLoadAs3D</value>
+  </data>
+  <data name="&gt;&gt;_checkLoadAs3D.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_checkLoadAs3D.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkLoadAs3D.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="AccessionNumberColumn.HeaderText" xml:space="preserve">
+    <value>受付番号</value>
+  </data>
+  <data name="btnAddDICOMDIR.Text" xml:space="preserve">
+    <value>DICOMDIRの追加(&amp;A)</value>
+  </data>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>閉じる(&amp;C)</value>
+  </data>
+  <data name="btnLoad.Text" xml:space="preserve">
+    <value>読み込む</value>
+  </data>
+  <data name="buttonCancelProgress.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="DICOMDIRfileNameColumn.HeaderText" xml:space="preserve">
+    <value>DICOMDIRファイル名</value>
+  </data>
+  <data name="FrameCount.HeaderText" xml:space="preserve">
+    <value>インスタンス</value>
+  </data>
+  <data name="modalityColumn.HeaderText" xml:space="preserve">
+    <value>モダリティ</value>
+  </data>
+  <data name="Organ.HeaderText" xml:space="preserve">
+    <value>臓器</value>
+  </data>
+  <data name="PatientIDColumn.HeaderText" xml:space="preserve">
+    <value>患者ID</value>
+  </data>
+  <data name="PatientNameColumn.HeaderText" xml:space="preserve">
+    <value>患者名</value>
+  </data>
+  <data name="referDrNameColumn.HeaderText" xml:space="preserve">
+    <value>照会医師の名前</value>
+  </data>
+  <data name="Resx_Error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="Resx_ErrorNotEnoughMemory" xml:space="preserve">
+    <value>このオブジェクトを割り当てるには十分なメモリがありません</value>
+  </data>
+  <data name="Resx_InvalidDICOMDIR" xml:space="preserve">
+    <value>無効な DICOMDIR</value>
+  </data>
+  <data name="Resx_InvalidDICOMDIRFile" xml:space="preserve">
+    <value>無効な DICOMDIR ファイル</value>
+  </data>
+  <data name="Resx_LoadingImage" xml:space="preserve">
+    <value>読み込み中... ( {0} / {1} )画像</value>
+  </data>
+  <data name="Resx_LoadingSeries" xml:space="preserve">
+    <value>読み込み中...  ( {0} / {1} )シリーズ ( {2} / {3} )画像</value>
+  </data>
+  <data name="Resx_PreparingData" xml:space="preserve">
+    <value>( {0} % )データの準備をしています</value>
+  </data>
+  <data name="SeriesDescColumn.HeaderText" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="SeriesID.HeaderText" xml:space="preserve">
+    <value>シリーズ ID</value>
+  </data>
+  <data name="seriesInstanceUidColumn.HeaderText" xml:space="preserve">
+    <value>シリーズ番号</value>
+  </data>
+  <data name="seriesNumberColumn.HeaderText" xml:space="preserve">
+    <value>インスタンス数</value>
+  </data>
+  <data name="seriesStudyInstanceUidColumn.HeaderText" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="studyDateColumn.HeaderText" xml:space="preserve">
+    <value>検査日付</value>
+  </data>
+  <data name="studyDescriptionColumn.HeaderText" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="StudyID.HeaderText" xml:space="preserve">
+    <value>検査 ID</value>
+  </data>
+  <data name="StudyIdent.HeaderText" xml:space="preserve">
+    <value>検査ID</value>
+  </data>
+  <data name="StudyIdentifier.HeaderText" xml:space="preserve">
+    <value>検査ID</value>
+  </data>
+  <data name="studyInstanceUidColumn.HeaderText" xml:space="preserve">
+    <value>検査インスタンスUID</value>
+  </data>
+  <data name="Thumbnail.HeaderText" xml:space="preserve">
+    <value>サムネイル</value>
+  </data>
+  <data name="_checkLoadAs3D.Text" xml:space="preserve">
+    <value>3D表示で読み込む(&amp;L)</value>
+  </data>
+</root>

@@ -1,0 +1,111 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title">{{title}}</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" name="form">
+            <fieldset>
+
+                <div class="form-group" ng-show="isMprPlane()">
+                    <label class="col-md-2 control-label" for="imagePlane">{{'FILTER_BY' | translate}}&nbsp;{{'CATEGORY' | translate}}:</label>
+
+                    <div class="col-md-10" id="imagePlane">
+
+                        <div class="input-group" col-sm-2>
+
+                            <span class="input-group-addon">Image Plane (MPR)</span>
+
+                            <select id="filterByCategory" name="filterByCategory" placeholder="Transverse" class="form-control" ng-model="operation.SelectorValue">
+                                <option value="TRANSVERSE">Axial</option>
+                                <option value="CORONAL">Coronal</option>
+                                <option value="SAGITTAL">Sagittal</option>
+                                <option value="OBLIQUE">Oblique</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-show="!isMprPlane()">
+                        <label class="col-md-2 control-label" for="selectorAttribute">{{'SELECTOR' | translate}}&nbsp;{{'ATTRIBUTE' | translate}}:</label>
+
+                        <div class="col-md-10" ng-class="{'has-error': !isSelectorAttributeValid()}">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon1">{{operation.SelectorName}}</span>
+                                <input id="selectorAttribute" type="text" readonly placeholder="" class="form-control input-md" ng-model="operation.WCFSelectorAttribute" />
+                                <span class="input-group-btn">
+                                    <a class="btn btn-default" type="button" ng-click="chooseTag()" title="Choose DICOM Tag"><i class="fa fa-tag"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Error Message (SelectorAttribute)-->
+                <div class="form-group" ng-show="!isSelectorAttributeValid()">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <!--<label class="text-danger" style="color:red">{{getIsSelectorValidError()}}</label>-->
+                        <div class="text-danger">{{getSelectorAttributeError()}}</div>
+                    </div>
+                </div>
+
+                    <div class="form-group" ng-show="!isMprPlane()">
+                        <label class="col-md-2 control-label"  for="selectorValue">{{'SELECTOR' | translate}}&nbsp;{{'VALUE' | translate}}:</label>
+                        <div class="col-md-10" ng-class="{'has-error': !isSelectorValueValid()}">
+                            <div class="input-group">
+                                <input id="selectorValue" type="text" placeholder="" class="form-control input-md" ng-model="operation.SelectorValue" ng-disabled="isSequence()" />
+                                <span class="input-group-btn">
+                                    <a class="btn btn-default" type="button" ng-click="editCodeSequence()" title="Edit Code Sequence" ng-disabled="!isSequence()"><i class="fa fa-pencil"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Error Message (SelectorValue)-->
+                    <div class="form-group" ng-show="!isSelectorValueValid()">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-10">
+                            <!--<label class="text-danger" style="color:red">{{getSelectorValueError()}}</label>-->
+                            <div class="text-danger">{{getSelectorValueError()}}</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" ng-show="!isMprPlane()">
+                        <label class="col-md-2 control-label" for="selectorValue">{{'SELECTOR' | translate}}&nbsp;{{'INDEX' | translate}}:</label>
+                        <div class="col-md-10" ng-class="{'has-error': !isSelectorIndexValid()}">
+                            <input id="selectorValueNumber" type="text" placeholder="#" maxlength="1" class="form-control input-md" ng-model="operation.SelectorValueNumber" />
+                        </div>
+                    </div>
+
+                    <!--Error Message (SelectorIndex)-->
+                    <div class="form-group" ng-show="!isSelectorIndexValid()">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <div class="text-danger">{{getSelectorIndexError()}}</div>
+                        </div>
+                    </div>
+
+                <div class="form-group"  ng-show="!isMprPlane()">
+                    <label class="col-md-2 control-label" for="imageSetSelectorUsageFlag">Selector Usage:</label>
+                    <div class="col-md-10">
+                        <select id="imageSetSelectorUsageFlag" name="imageSetSelectorUsageFlag" placeholder="Transverse" class="form-control" ng-model="operation.ImageSetSelectorUsageFlag">
+                            <option value="0">Match</option>
+                            <option value="1">No Match</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="selectorUsage">{{'FILTER_BY' | translate}}&nbsp;{{'OPERATOR' | translate}}:</label>
+                    <div class="col-md-10">
+                        <select id="filterByOperator" name="filterByOperator" class="form-control" ng-options="obj.value as obj.text for obj in filterByOperatorList" ng-model="operation.FilterByOperator"></select>
+                    </div>
+                </div>
+
+</fieldset>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="!isFormValid()"></a>
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+    </div>
+</div>

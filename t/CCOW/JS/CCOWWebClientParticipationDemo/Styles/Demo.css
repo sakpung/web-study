@@ -1,0 +1,142 @@
+﻿body {
+   background: white;
+   overflow: hidden;
+   color: Silver;
+   height: 100%;
+   margin: 0;
+   -webkit-user-select: none;
+   -webkit-text-size-adjust: none;
+   font-family: helvetica;
+   font-size: 10pt;
+}
+
+.dodger-blue {
+   color: DodgerBlue;
+}
+
+.light-gray {
+   opacity: 0.7;
+   background-color: #EAEAEA;
+}
+
+.outerToolbarContainer {
+   margin: auto;
+}
+
+.toolbar {
+   width: 99%;
+   border: 1px solid darkgray;
+   border-radius: 5px;
+   background: linear-gradient(lightgray,white,lightgray);
+   margin: 8px auto;
+}
+
+.table {
+   color:black;
+   border: 2px solid black;
+   height:25vh;
+}
+
+.table-body {
+   background:white;
+}
+
+.header-container {
+   background: darkblue;
+}
+
+.header {
+   color: white;
+   font-size: xx-large;
+}
+
+.status {
+   right: 40px;
+   position: absolute;
+}
+
+.user {
+   right: 50px;
+   position: absolute;
+}
+
+.description {
+   color: black;
+}
+
+.main-container {
+ height: 100vh;
+ overflow-y: auto;
+}
+
+.log-div {
+   height:20vh;
+}
+
+#content {
+   padding: 6px 6px 50px 6px;
+   color: #fff;
+   overflow: auto;
+   position: fixed;
+   display: block;
+   left: 0px;
+   right: 0px;
+   top: 60px; /* height ot topbar */
+}
+
+#mainContainer {
+/*  max-width: 800px;*/
+   color: #fff;
+   width: 100%;
+   height: 100%;
+   margin: 0px auto;
+   background: #d3d3d3;
+}
+
+#documentTextResult {
+   width:100%;
+   overflow-y:scroll;
+   resize:none;
+}
+
+#imageViewerDiv {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+/* Overwrite on Bootstrap modal classes to add custom view for our dialogs */
+.modal-header { /* Bootstrap Class */
+   border-top-left-radius:5px;
+   border-top-right-radius:5px;
+   background: linear-gradient(lightgray,white,lightgray);
+}
+
+.loading-dialog {
+   width:400px;
+}
+
+.dialog-title {
+   color: black;
+   font-size: x-large;
+}
+
+.about-dialog {
+   padding: 70px 0px 0px 0px;
+   width:350px;
+   text-align: center
+}
+
+.dropdown-menu {
+   text-align:left;
+}
+
+@media screen and (max-width: 768px) {
+   .btn-text {
+      display: none; /* hide header toolbar buttons text on small display */
+   }
+
+   .headerToolbarDiv {
+      text-align: center; /* centering header toolbar content on small display */
+   }
+}

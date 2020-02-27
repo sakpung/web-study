@@ -1,0 +1,1158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_cancelButton.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="_ltdOptionsTabPage.Text" xml:space="preserve">
+    <value>LTD オプション</value>
+  </data>
+  <data name="_emfOptionsNoteLabel.Text" xml:space="preserve">
+    <value>EMF形式では複数ページ保存機能が対応されていないためEMF形式で保存する場合最終ページしか保存されません.</value>
+  </data>
+  <data name="_emfOptionsTabPage.Text" xml:space="preserve">
+    <value>EMF オプション</value>
+  </data>
+  <data name="_pdfAdvanctionOptionsButton.Text" xml:space="preserve">
+    <value>拡張オプション...</value>
+  </data>
+  <data name="_pdfImageOverTextCheckBox.Text" xml:space="preserve">
+    <value>画像をテキストの前面に表示</value>
+  </data>
+  <data name="_pdfDocumentTypeLabel.Text" xml:space="preserve">
+    <value>文書の種類：</value>
+  </data>
+  <data name="_pdfOptionsTabPage.Text" xml:space="preserve">
+    <value>PDF オプション</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>この形式は、テキストフローおよびフレームを使用しており、DocumentWriterで絶対位置のパラメータ（XおよびY）を使用してオブジェクトを配置できるので、入力するファイルと最終的に生成される文書が、最大限似ているようにすることができます。</value>
+  </data>
+  <data name="_cbFramedDoc.Text" xml:space="preserve">
+    <value>フレーム付き(&amp;F)</value>
+  </data>
+  <data name="_docOptionsTabPage.Text" xml:space="preserve">
+    <value>DOC オプション</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>この形式は、テキストフローおよびフレームを使用しており、DocumentWriterで絶対位置のパラメータ（XおよびY）を使用してオブジェクトを配置できるので、入力するファイルと最終的に生成される文書が、最大限似ているようにすることができます。</value>
+  </data>
+  <data name="_cbFramedRtf.Text" xml:space="preserve">
+    <value>フレーム付き(&amp;F)</value>
+  </data>
+  <data name="_rtfOptionsTabPage.Text" xml:space="preserve">
+    <value>RTF オプション</value>
+  </data>
+  <data name="_htmlBackgroundColorLabel.Text" xml:space="preserve">
+    <value>背景色：</value>
+  </data>
+  <data name="_htmlUseBackgroundColorCheckBox.Text" xml:space="preserve">
+    <value>背景色を使用</value>
+  </data>
+  <data name="_htmlEmbedFontModeLabel.Text" xml:space="preserve">
+    <value>組み込みフォントモード：</value>
+  </data>
+  <data name="_htmlDocumentTypeLabel.Text" xml:space="preserve">
+    <value>文書の種類：</value>
+  </data>
+  <data name="_htmlOptionsTabPage.Text" xml:space="preserve">
+    <value>HTML オプション</value>
+  </data>
+  <data name="_textFormattedCheckBox.Text" xml:space="preserve">
+    <value>書式設定済み</value>
+  </data>
+  <data name="_textAddPageBreakCheckBox.Text" xml:space="preserve">
+    <value>改ページを追加</value>
+  </data>
+  <data name="_textAddPageNumberCheckBox.Text" xml:space="preserve">
+    <value>ページ番号を追加</value>
+  </data>
+  <data name="_textDocumentTypeLabel.Text" xml:space="preserve">
+    <value>文書の種類：</value>
+  </data>
+  <data name="_textOptionsTabPage.Text" xml:space="preserve">
+    <value>TEXTオプション</value>
+  </data>
+  <data name="_userFormatNameLabel.Text" xml:space="preserve">
+    <value>形式名:</value>
+  </data>
+  <data name="_userOptionsTabPage.Text" xml:space="preserve">
+    <value>エンジン形式</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>この形式には追加オプションはありません。</value>
+  </data>
+  <data name="_xpsOptionsTabPage.Text" xml:space="preserve">
+    <value>XPS オプション</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>この形式は、テキストフローおよびフレームを使用しており、DocumentWriterで絶対位置のパラメータ（XおよびY）を使用してオブジェクトを配置できるので、入力するファイルと最終的に生成される文書が、最大限似ているようにすることができます。</value>
+  </data>
+  <data name="_cbFramedDocX.Text" xml:space="preserve">
+    <value>フレーム付き(&amp;F)</value>
+  </data>
+  <data name="_docxOptionsTabPage.Text" xml:space="preserve">
+    <value>DOCX オプション</value>
+  </data>
+  <data name="_xlsOptionsNoteLabel.Text" xml:space="preserve">
+    <value>この文書には追加オプションはありません。</value>
+  </data>
+  <data name="_xlsOptionsTabPage.Text" xml:space="preserve">
+    <value>XLS オプション</value>
+  </data>
+  <data name="_formatLabel.Text" xml:space="preserve">
+    <value>形式：</value>
+  </data>
+  <data name="_fileNameLabel.Text" xml:space="preserve">
+    <value>ファイル名：</value>
+  </data>
+  <data name="_outputGroupBox.Text" xml:space="preserve">
+    <value>出力</value>
+  </data>
+  <data name="_xpsOptionsNoteLabel.Text" xml:space="preserve">
+    <value>この文書には追加オプションはありません。</value>
+  </data>
+  <data name="_viewDocumentCheckBox.Text" xml:space="preserve">
+    <value>ドキュメントを保存して表示</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ドキュメントを保存</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SaveDocumentDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>_docOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>_rtfOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>_docxOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>_xpsOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlApplicationDescriptionLabel.Name" xml:space="preserve">
+    <value>_altoXmlApplicationDescriptionLabel</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlApplicationDescriptionLabel.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlApplicationDescriptionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlApplicationDescriptionLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlApplicationDescriptionTextBox.Name" xml:space="preserve">
+    <value>_altoXmlApplicationDescriptionTextBox</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlApplicationDescriptionTextBox.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlApplicationDescriptionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlApplicationDescriptionTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFileNameLabel.Name" xml:space="preserve">
+    <value>_altoXmlFileNameLabel</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFileNameLabel.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFileNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFileNameLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFileNameTextBox.Name" xml:space="preserve">
+    <value>_altoXmlFileNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFileNameTextBox.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFileNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFileNameTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFormattedCheckBox.Name" xml:space="preserve">
+    <value>_altoXmlFormattedCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFormattedCheckBox.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFormattedCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlFormattedCheckBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlIndentationLabel.Name" xml:space="preserve">
+    <value>_altoXmlIndentationLabel</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlIndentationLabel.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlIndentationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlIndentationLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlIndentationTextBox.Name" xml:space="preserve">
+    <value>_altoXmlIndentationTextBox</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlIndentationTextBox.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlIndentationTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlIndentationTextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlOptionsTabPage.Name" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareCreatorLabel.Name" xml:space="preserve">
+    <value>_altoXmlSoftwareCreatorLabel</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareCreatorLabel.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareCreatorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareCreatorLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareCreatorTextBox.Name" xml:space="preserve">
+    <value>_altoXmlSoftwareCreatorTextBox</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareCreatorTextBox.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareCreatorTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareCreatorTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareNameLabel.Name" xml:space="preserve">
+    <value>_altoXmlSoftwareNameLabel</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareNameLabel.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareNameLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareNameTextBox.Name" xml:space="preserve">
+    <value>_altoXmlSoftwareNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareNameTextBox.Parent" xml:space="preserve">
+    <value>_altoXmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_altoXmlSoftwareNameTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_browseButton.Name" xml:space="preserve">
+    <value>_browseButton</value>
+  </data>
+  <data name="&gt;&gt;_browseButton.Parent" xml:space="preserve">
+    <value>_outputGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_browseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_browseButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Name" xml:space="preserve">
+    <value>_cancelButton</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedDoc.Name" xml:space="preserve">
+    <value>_cbFramedDoc</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedDoc.Parent" xml:space="preserve">
+    <value>_docOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedDoc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedDoc.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedDocX.Name" xml:space="preserve">
+    <value>_cbFramedDocX</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedDocX.Parent" xml:space="preserve">
+    <value>_docxOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedDocX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedDocX.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedRtf.Name" xml:space="preserve">
+    <value>_cbFramedRtf</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedRtf.Parent" xml:space="preserve">
+    <value>_rtfOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedRtf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbFramedRtf.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_docOptionsTabPage.Name" xml:space="preserve">
+    <value>_docOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_docOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_docOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_docOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_docxOptionsTabPage.Name" xml:space="preserve">
+    <value>_docxOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_docxOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_docxOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_docxOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_emfOptionsNoteLabel.Name" xml:space="preserve">
+    <value>_emfOptionsNoteLabel</value>
+  </data>
+  <data name="&gt;&gt;_emfOptionsNoteLabel.Parent" xml:space="preserve">
+    <value>_emfOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_emfOptionsNoteLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_emfOptionsNoteLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_emfOptionsTabPage.Name" xml:space="preserve">
+    <value>_emfOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_emfOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_emfOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_emfOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_fileNameLabel.Name" xml:space="preserve">
+    <value>_fileNameLabel</value>
+  </data>
+  <data name="&gt;&gt;_fileNameLabel.Parent" xml:space="preserve">
+    <value>_outputGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fileNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileNameLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_fileNameTextBox.Name" xml:space="preserve">
+    <value>_fileNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;_fileNameTextBox.Parent" xml:space="preserve">
+    <value>_outputGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fileNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fileNameTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_formatComboBox.Name" xml:space="preserve">
+    <value>_formatComboBox</value>
+  </data>
+  <data name="&gt;&gt;_formatComboBox.Parent" xml:space="preserve">
+    <value>_outputGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_formatComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_formatComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_formatLabel.Name" xml:space="preserve">
+    <value>_formatLabel</value>
+  </data>
+  <data name="&gt;&gt;_formatLabel.Parent" xml:space="preserve">
+    <value>_outputGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_formatLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_formatLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorButton.Name" xml:space="preserve">
+    <value>_htmlBackgroundColorButton</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorButton.Parent" xml:space="preserve">
+    <value>_htmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorLabel.Name" xml:space="preserve">
+    <value>_htmlBackgroundColorLabel</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorLabel.Parent" xml:space="preserve">
+    <value>_htmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorValueLabel.Name" xml:space="preserve">
+    <value>_htmlBackgroundColorValueLabel</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorValueLabel.Parent" xml:space="preserve">
+    <value>_htmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorValueLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_htmlBackgroundColorValueLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_htmlDocumentTypeComboBox.Name" xml:space="preserve">
+    <value>_htmlDocumentTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;_htmlDocumentTypeComboBox.Parent" xml:space="preserve">
+    <value>_htmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_htmlDocumentTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_htmlDocumentTypeComboBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_htmlDocumentTypeLabel.Name" xml:space="preserve">
+    <value>_htmlDocumentTypeLabel</value>
+  </data>
+  <data name="&gt;&gt;_htmlDocumentTypeLabel.Parent" xml:space="preserve">
+    <value>_htmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_htmlDocumentTypeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_htmlDocumentTypeLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_htmlEmbedFontModeComboBox.Name" xml:space="preserve">
+    <value>_htmlEmbedFontModeComboBox</value>
+  </data>
+  <data name="&gt;&gt;_htmlEmbedFontModeComboBox.Parent" xml:space="preserve">
+    <value>_htmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_htmlEmbedFontModeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_htmlEmbedFontModeComboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_htmlEmbedFontModeLabel.Name" xml:space="preserve">
+    <value>_htmlEmbedFontModeLabel</value>
+  </data>
+  <data name="&gt;&gt;_htmlEmbedFontModeLabel.Parent" xml:space="preserve">
+    <value>_htmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_htmlEmbedFontModeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_htmlEmbedFontModeLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_htmlOptionsTabPage.Name" xml:space="preserve">
+    <value>_htmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_htmlOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_htmlOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_htmlOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_htmlUseBackgroundColorCheckBox.Name" xml:space="preserve">
+    <value>_htmlUseBackgroundColorCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_htmlUseBackgroundColorCheckBox.Parent" xml:space="preserve">
+    <value>_htmlOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_htmlUseBackgroundColorCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_htmlUseBackgroundColorCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_ltdOptionsNoteLabel.Name" xml:space="preserve">
+    <value>_ltdOptionsNoteLabel</value>
+  </data>
+  <data name="&gt;&gt;_ltdOptionsNoteLabel.Parent" xml:space="preserve">
+    <value>_ltdOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_ltdOptionsNoteLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ltdOptionsNoteLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_ltdOptionsTabPage.Name" xml:space="preserve">
+    <value>_ltdOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_ltdOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_ltdOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ltdOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_ltfOptionsNoteLabel.Name" xml:space="preserve">
+    <value>_ltfOptionsNoteLabel</value>
+  </data>
+  <data name="&gt;&gt;_ltfOptionsNoteLabel.Parent" xml:space="preserve">
+    <value>_ltdOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_ltfOptionsNoteLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ltfOptionsNoteLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Name" xml:space="preserve">
+    <value>_okButton</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_okButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_optionsTabControl.Name" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_optionsTabControl.Parent" xml:space="preserve">
+    <value>_outputGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_optionsTabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_optionsTabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_outputGroupBox.Name" xml:space="preserve">
+    <value>_outputGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_outputGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_outputGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_outputGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_pdfAdvanctionOptionsButton.Name" xml:space="preserve">
+    <value>_pdfAdvanctionOptionsButton</value>
+  </data>
+  <data name="&gt;&gt;_pdfAdvanctionOptionsButton.Parent" xml:space="preserve">
+    <value>_pdfOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_pdfAdvanctionOptionsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pdfAdvanctionOptionsButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_pdfDocumentTypeComboBox.Name" xml:space="preserve">
+    <value>_pdfDocumentTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;_pdfDocumentTypeComboBox.Parent" xml:space="preserve">
+    <value>_pdfOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_pdfDocumentTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pdfDocumentTypeComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_pdfDocumentTypeLabel.Name" xml:space="preserve">
+    <value>_pdfDocumentTypeLabel</value>
+  </data>
+  <data name="&gt;&gt;_pdfDocumentTypeLabel.Parent" xml:space="preserve">
+    <value>_pdfOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_pdfDocumentTypeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pdfDocumentTypeLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_pdfImageOverTextCheckBox.Name" xml:space="preserve">
+    <value>_pdfImageOverTextCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_pdfImageOverTextCheckBox.Parent" xml:space="preserve">
+    <value>_pdfOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_pdfImageOverTextCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pdfImageOverTextCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_pdfOptionsTabPage.Name" xml:space="preserve">
+    <value>_pdfOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_pdfOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_pdfOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pdfOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_rtfOptionsTabPage.Name" xml:space="preserve">
+    <value>_rtfOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_rtfOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_rtfOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rtfOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_textAddPageBreakCheckBox.Name" xml:space="preserve">
+    <value>_textAddPageBreakCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_textAddPageBreakCheckBox.Parent" xml:space="preserve">
+    <value>_textOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_textAddPageBreakCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_textAddPageBreakCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_textAddPageNumberCheckBox.Name" xml:space="preserve">
+    <value>_textAddPageNumberCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_textAddPageNumberCheckBox.Parent" xml:space="preserve">
+    <value>_textOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_textAddPageNumberCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_textAddPageNumberCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_textDocumentTypeComboBox.Name" xml:space="preserve">
+    <value>_textDocumentTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;_textDocumentTypeComboBox.Parent" xml:space="preserve">
+    <value>_textOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_textDocumentTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_textDocumentTypeComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_textDocumentTypeLabel.Name" xml:space="preserve">
+    <value>_textDocumentTypeLabel</value>
+  </data>
+  <data name="&gt;&gt;_textDocumentTypeLabel.Parent" xml:space="preserve">
+    <value>_textOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_textDocumentTypeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_textDocumentTypeLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_textFormattedCheckBox.Name" xml:space="preserve">
+    <value>_textFormattedCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_textFormattedCheckBox.Parent" xml:space="preserve">
+    <value>_textOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_textFormattedCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_textFormattedCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_textOptionsTabPage.Name" xml:space="preserve">
+    <value>_textOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_textOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_textOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_textOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_userFormatNameComboBox.Name" xml:space="preserve">
+    <value>_userFormatNameComboBox</value>
+  </data>
+  <data name="&gt;&gt;_userFormatNameComboBox.Parent" xml:space="preserve">
+    <value>_userOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_userFormatNameComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_userFormatNameComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_userFormatNameLabel.Name" xml:space="preserve">
+    <value>_userFormatNameLabel</value>
+  </data>
+  <data name="&gt;&gt;_userFormatNameLabel.Parent" xml:space="preserve">
+    <value>_userOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_userFormatNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_userFormatNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_userOptionsTabPage.Name" xml:space="preserve">
+    <value>_userOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_userOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_userOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_userOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_viewDocumentCheckBox.Name" xml:space="preserve">
+    <value>_viewDocumentCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_viewDocumentCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_viewDocumentCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_viewDocumentCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_xlsOptionsNoteLabel.Name" xml:space="preserve">
+    <value>_xlsOptionsNoteLabel</value>
+  </data>
+  <data name="&gt;&gt;_xlsOptionsNoteLabel.Parent" xml:space="preserve">
+    <value>_xlsOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_xlsOptionsNoteLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_xlsOptionsNoteLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_xlsOptionsTabPage.Name" xml:space="preserve">
+    <value>_xlsOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_xlsOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_xlsOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_xlsOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_xpsOptionsNoteLabel.Name" xml:space="preserve">
+    <value>_xpsOptionsNoteLabel</value>
+  </data>
+  <data name="&gt;&gt;_xpsOptionsNoteLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_xpsOptionsTabPage.Name" xml:space="preserve">
+    <value>_xpsOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_xpsOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_xpsOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_xpsOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_altoXmlApplicationDescriptionLabel.Text" xml:space="preserve">
+    <value>アプリケーションの説明：</value>
+  </data>
+  <data name="_altoXmlFileNameLabel.Text" xml:space="preserve">
+    <value>ファイル名：</value>
+  </data>
+  <data name="_altoXmlFormattedCheckBox.Text" xml:space="preserve">
+    <value>書式設定済み(&amp;F)</value>
+  </data>
+  <data name="_altoXmlIndentationLabel.Text" xml:space="preserve">
+    <value>インデント：</value>
+  </data>
+  <data name="_altoXmlOptionsTabPage.Text" xml:space="preserve">
+    <value>ALTOXML オプション</value>
+  </data>
+  <data name="_altoXmlSoftwareCreatorLabel.Text" xml:space="preserve">
+    <value>ソフトウェアの作成者：</value>
+  </data>
+  <data name="_altoXmlSoftwareNameLabel.Text" xml:space="preserve">
+    <value>ソフトウェア名：</value>
+  </data>
+  <data name="_browseButton.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="_htmlBackgroundColorButton.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="_okButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>_ePubOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>_mobOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>_svgOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_ePubOptionsTabPage.Name" xml:space="preserve">
+    <value>_ePubOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_ePubOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_ePubOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ePubOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_ldOptionsNoteLabel.Name" xml:space="preserve">
+    <value>_ldOptionsNoteLabel</value>
+  </data>
+  <data name="&gt;&gt;_ldOptionsNoteLabel.Parent" xml:space="preserve">
+    <value>_ldOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_ldOptionsNoteLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ldOptionsNoteLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_ldOptionsTabPage.Name" xml:space="preserve">
+    <value>_ldOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_ldOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_ldOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ldOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_mobOptionsTabPage.Name" xml:space="preserve">
+    <value>_mobOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_mobOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_mobOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mobOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_svgOptionsTabPage.Name" xml:space="preserve">
+    <value>_svgOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;_svgOptionsTabPage.Parent" xml:space="preserve">
+    <value>_optionsTabControl</value>
+  </data>
+  <data name="&gt;&gt;_svgOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_svgOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>この形式には追加オプションはありません。</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>この形式には追加オプションはありません。</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>この形式には追加オプションはありません。</value>
+  </data>
+  <data name="_ldOptionsTabPage.Text" xml:space="preserve">
+    <value>LTD オプション</value>
+  </data>
+  <data name="_ltfOptionsNoteLabel.Text" xml:space="preserve">
+    <value>LTDはLEAD Temporary Document Formatの略称です。LTDに保存する場合、
+ページの認識結果はLTDファイルに追加されます。
+複数のOCR実行結果を一つのLTDファイルに保存できます。
+これはOCRエンジンは全てのページをメモリ上に保持できないためです。
+
+直接結果のドキュメントを参照することはできません。
+代わりにLTDファイルを他のフォーマットに変換して利用する必要があります。</value>
+  </data>
+  <data name="_mobOptionsTabPage.Text" xml:space="preserve">
+    <value>MOB オプション</value>
+  </data>
+  <data name="_svgOptionsTabPage.Text" xml:space="preserve">
+    <value>SVG オプション</value>
+  </data>
+</root>

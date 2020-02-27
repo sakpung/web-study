@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<leadtools_ocr_settings>
+	<languages>
+		<values>
+			<value enabled_languages="en" />
+		</values>
+	</languages>
+	<settings>
+		<values>
+			<value Recognition.RecognitionModuleTradeoff="Balanced" />
+			<value Recognition.AutoSecondPass="True" />
+			<value Recognition.ShareOriginalImage="False" />
+			<value Recognition.ModifyProcessingImage="True" />
+			<value Recognition.DetectColors="True" />
+			<value Recognition.MaximumPageConventionalMemorySize="42187" />
+			<value Recognition.Threading.MaximumThreads="0" />
+			<value Recognition.Preprocess.BlackWhiteImageConversionMethod="Default" />
+			<value Recognition.Preprocess.BlackWhiteImageConversionThreshold="185" />
+			<value Recognition.Preprocess.MobileImagePreprocess="False" />
+			<value Recognition.Preprocess.DownSampleLargeImage="False" />
+			<value Recognition.Preprocess.MinimumAutoRotateConfidence="26" />
+			<value Recognition.Preprocess.UseZoningEngine="True" />
+			<value Recognition.Preprocess.ModifyOriginalImageOptions="Deskew,Rotate,Invert" />
+			<value Recognition.Zoning.DisableMultiThreading="False" />
+			<value Recognition.Zoning.CropZoneImage="True" />
+			<value Recognition.Zoning.Options="Detect Text,Detect Graphics,Detect Table,Detect Accurate Zones,Table Cells as Zones,Use Advanced Table Detection,Use Text Extractor" />
+			<value Recognition.Zoning.EnableDoubleZoning="True" />
+			<value Recognition.Zoning.DetectZoneRotationAngle="False" />
+			<value Recognition.Words.DiscardLowConfidenceWords="True" />
+			<value Recognition.Words.LowWordConfidence="50" />
+			<value Recognition.Words.DiscardLowConfidenceZones="False" />
+			<value Recognition.Adaption.AdaptedDataFilePath="" />
+			<value Recognition.CharacterFilter.MinimumPixelWidth="6" />
+			<value Recognition.CharacterFilter.MinimumPixelHeight="6" />
+			<value Recognition.CharacterFilter.MinimumPixelSizeExcludeCharacters="." />
+			<value Recognition.CharacterFilter.DiscardNoiseLikeCharacters="False" />
+			<value Recognition.CharacterFilter.PostprocessMICR="False" />
+			<value Recognition.Fonts.EnableCapsCaps="False" />
+			<value Recognition.Fonts.DetectFontStyles="Bold,Italic,Underline,SansSerif,Serif,Proportional,Superscript,Subscript" />
+			<value Recognition.Fonts.RecognizeFontAttributes="True" />
+			<value Recognition.AutoRecognizeManager.FormatSpeedOptimized="False" />
+			<value Recognition.AutoRecognizeManager.DefaultDocumentOrientation="None" />
+			<value SpellChecker.MaximumDictionaries="4" />
+		</values>
+	</settings>
+</leadtools_ocr_settings>

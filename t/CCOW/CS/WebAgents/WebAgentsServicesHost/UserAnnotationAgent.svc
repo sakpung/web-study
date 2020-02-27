@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Factory="Leadtools.Ccow.WebAgentsServices.CcowServiceHostFactory" Service="Leadtools.Ccow.WebAgentsServices.UserAnnotationAgentService" %>

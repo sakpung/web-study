@@ -1,0 +1,239 @@
+﻿body{
+font: 16px Arial, sans-serif;
+}
+
+p {
+	font-size:12px;
+	color:green;
+}
+
+div.classLogin
+{
+	font-size:12px;
+	color:green;
+}
+
+div.classHeader
+{
+	font-size:16px;
+	color:blue;
+}
+
+input[type='radio'], label{   
+    vertical-align: baseline;
+ }
+
+
+label {
+  margin-bottom: 50px; 
+}
+
+div.classLogger {
+    background-color: black;
+    border-color: black;
+    color:green;
+    width: 100%;
+	height : 80%;
+    border: solid;
+    border-width: medium;
+    overflow: scroll;
+    font-family:'Courier New';
+    opacity:1.0;
+    visibility:visible;
+}
+
+#idButtonClearLog
+{
+	margin-top: 5px;
+}
+
+div.classLogControl
+{
+    position: absolute;
+	bottom: 0px;
+	height:28%;
+	width:95%;
+	overflow:hidden;
+}
+
+div.myTabsStyle
+{
+	position:absolute;
+	top:0em;
+	height:70%;
+	width:95%;
+	overflow:scroll;
+}
+
+div.ui-tabs
+{
+	font-size:small;
+}
+
+div.classDialogItems
+{
+	font-size:12px;
+	color:green;
+}
+
+table.dataTable
+{
+	width: 100%;
+	margin-top: 10px;
+	font-family: verdana,arial,sans-serif;
+	font-size: 12px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+
+	table.dataTable th
+	{
+		white-space: nowrap;
+		border-width: 1px;
+		padding: 8px;
+		border-style: solid;
+		border-color: #666666;
+		background-color: #dedede;
+	}
+
+	table.dataTable td
+	{
+		border-width: 1px;
+		padding: 8px;
+		border-style: solid;
+		border-color: #666666;
+	}
+
+
+.unit { background-color: #ddd; }
+.hover { background-color: #888888; }
+
+.verticalSpace5
+{
+	padding-bottom: 5px;
+}
+
+.verticalSpace
+{
+	padding-bottom: 40px;
+}
+
+.groupBox
+{
+border:1px solid;
+border-color:black;
+margin-top: 10px;
+display:table;
+table-layout:fixed;
+}
+
+/***********************************/
+
+.DialogTextButtonsRow {
+    display: table-row;	
+}
+
+.DialogTextButtonsCell
+{
+	display: table-cell;
+	border: none;
+	border-width: thin;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	vertical-align:bottom;
+}
+
+
+/***********************************/
+
+.DialogRow {
+    display: table-row;	
+}
+
+.DialogCell
+{
+	display: table-cell;
+	border: none;
+	border-width: thin;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+}
+
+
+.DialogCellWithoutTable
+{
+	border: none;
+	border-width: thin;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	}
+
+input[type=button] {
+	Width: 12em;
+    cursor:pointer;
+	margin-top:10px;
+}
+
+
+.selectFixedWidth {
+	Width: 30em;
+}
+
+.textFixedWidth {
+	Width: 20em;
+}
+
+#idTable_updateUser_permissions, #idTable_addUser_permissions
+{
+	float:left;
+}
+
+#idTable_updateUser_roles, #idTable_addUser_roles
+{
+	float:left;
+}
+
+#idDiv_viewInstances_getImage a:link {color:#c00;}      /* unvisited link */
+#idDiv_viewInstances_getImage a:visited {color:#0c0;}  /* visited link */
+#idDiv_viewInstances_getImage a:hover {color: #00c;}  /* mouse over link */
+#idDiv_viewInstances_getImage a:active {color:#ccc;}  /* selected link */ 
+
+table.dataTable2
+{
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom:10px;
+	font-family: verdana,arial,sans-serif;
+	font-size: 12px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+	table.dataTable2 th
+	{
+		white-space: nowrap;
+		border-width: 1px;
+		padding: 8px;
+		border-style: none;
+		border-color: #666666;
+		background-color: #dedede;
+		border: none;
+		color: green;
+	}
+
+	table.dataTable2 td
+	{
+		border-width: 1px; 
+		border-style:solid;
+		border-color: #666666;
+		border:hidden;
+	}
+

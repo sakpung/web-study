@@ -1,0 +1,48 @@
+﻿<form name="updateUserForm" ng-controller="Controllers.UpdateUserController" novalidate>
+    <div class="form-group">
+        <label for="username">User Name:</label>
+        <div class="input-group">
+            <select class="study-dropdown w-dropdown" ng-model="user" ng-options="u for u in users" ng-change="userChanged(user)" force-blur></select>
+            <span class="input-group-btn">
+                <!--<a class="btn btn-default"  type="button"><i class="fa fa-minus"></i></a>-->
+               <button style="margin-left:20px;" class="cine-controls minus-button"  ng-disabled="isCurrentUserSelected(user)" ng-click="deleteUser(user)"></button>
+            </span>
+        </div>
+    </div>    
+    <div class="form-group">
+        <label for="newUserPassword">Password:</label>
+        <input type="password" class="text-field" id="newUserPassword" placeholder="" ng-model="password" ng-disabled="usersInfo[user].UserType==='activedirectory'">
+    </div>
+    <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <div class="input-group">
+            <input type="password" class="text-field" id="confirmPassword" ng-model="confirmPassword" placeholder="" pwd-confirm="newUserPassword" ng-disabled="usersInfo[user].UserType==='activedirectory'">
+            <span class="input-group-btn">
+                  <!--<a class="btn btn-default" ng-disabled="updateUserForm.$invalid || password.length==0 || usersInfo[user].UserType==='activedirectory'" ng-click="resetPassword(user,password)">Reset</a>-->
+                  <button value="Reset" style="margin-left:20px;" class="generic-button" ng-disabled="updateUserForm.$invalid || password.length==0 || usersInfo[user].UserType==='activedirectory'" ng-click="resetPassword(user,password)">Reset</button>
+              </span>
+        </div>
+    </div> 
+    
+    <div class="form-group">
+        <label for="availableRoles" >{{'ROLE' | translate}}s:</label>
+        <div class="checkbox" id="availableRoles" ng-repeat="role in roles">
+            <label>
+                <input type='checkbox' value="{{role.Name}}" check-list='selectedRoles'>
+            {{role.Name}}
+            </label>
+        </div>
+    </div>   
+    <div class="form-group">
+        <label for="availablePermissions" >{{'PERMISSIONS' | translate}}:</label>
+        <div style="height:150px; overflow:auto">
+        <div class="checkbox" id="availablePermissions" ng-repeat="permission in permissions" ng-disabled="!canSetPermission(permission.Name)">
+            <label>
+                <input type='checkbox' value="{{permission.Name}}" check-list='selectedPermissions' ng-checked="userHasPermission(user,permission.Name)">
+            {{permission.FriendlyName}}
+            </label>
+            </div>
+        </div>
+    </div>   
+    <a class="form-btn" ng-click="updateUser(user, selectedRoles, selectedPermissions)">Update</a>
+</form>

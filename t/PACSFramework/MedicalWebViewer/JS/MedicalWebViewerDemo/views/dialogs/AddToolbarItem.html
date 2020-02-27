@@ -1,0 +1,68 @@
+﻿<div class="modal-content">
+    <div class="modal-header">        
+        <h3 class="modal-title" translate="DIALOGS_ADD_TOOLBAR_ITEM_TITLE"></h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" name="form">
+            <fieldset>                
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="itemName">{{'Id' | translate}}:</label>
+                    <div class="col-md-6">
+                        <input id="itemName" type="text" placeholder="" class="text-field" ng-model="item.id" required />
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                 <label class="col-md-4 control-label" for="itemCaption">{{'CAPTION' | translate}}:</label>
+                 <div class="col-md-6">
+                    <input id="itemTooltip" type="text" placeholder="" class="text-field" ng-model="item.caption" />
+                 </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                    <label class="col-md-4 control-label" for="itemTooltip">{{'TOOLTIP' | translate}}:</label>
+                    <div class="col-md-6">
+                        <input id="itemTooltip" type="text" placeholder="" class="text-field" ng-model="item.tooltip" />
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="itemAction">{{'ACTION' | translate}}:</label>
+                    <div class="col-md-6">
+                        <input id="itemAction" type="text" placeholder="" class="text-field" ng-model="item.action" required />
+                    </div>
+                </div> 
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="itemAction">{{'SHORTCUT' | translate}}:</label>
+                    <div class="col-md-6">
+                        <input id="itemShortcut" type="text" placeholder="" class="text-field" ng-model="item.shortcut" />
+                    </div>
+                </div>                      
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="itemIcon">{{'ICON' | translate}}:</label>
+                    <div class="col-md-6">
+                        <input id="itemIcon" type="text" placeholder="" class="text-field" ng-model="item.cssIconClass" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="preview">{{'PREVIEW' | translate}}:</label>
+                    <div class="col-md-6">
+                        <div id="preview" ng-class="item.cssIconClass" />
+                    </div>
+                </div>
+            </fieldset>
+        </form> 
+    </div>
+    <div class="modal-footer">
+        <a class="form-btn" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+        <a class="form-btn" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="!isFormValid()"></a>
+    </div>
+</div>

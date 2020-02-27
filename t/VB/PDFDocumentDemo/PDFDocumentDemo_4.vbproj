@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8E0407B-C70C-40A2-8ED8-A3218BB75202}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PDFDocumentDemo</RootNamespace>
+    <AssemblyName>VBPDFDocumentDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\Resources\DocAddon.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>DEBUG,TRACE,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,FOR_DOTNET4,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,FOR_DOTNET4,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>DEBUG,TRACE,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,FOR_DOTNET4,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER,LEADTOOLS_V175_OR_LATER,LEADTOOLS_V18_OR_LATER,FOR_DOTNET4,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Controls.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Controls.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Pdf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Pdf.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Engine">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Engine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Designers">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Designers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.BatesStamp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.BatesStamp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Pdf.Annotations">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Pdf.Annotations.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Rendering.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Rendering.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Automation">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Automation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.File">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.WinForms.CommonDialogs.File.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Globalization.vb">
+      <Link>Common\Globalization.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Demos.vb">
+      <Link>Common\Demos.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\DialogUtilities.vb">
+      <Link>Common\DialogUtilities.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileSaver.vb">
+      <Link>Common\ImageFileSaver.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Messager.vb">
+      <Link>Common\Messager.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\WaitCursor.vb">
+      <Link>Common\WaitCursor.vb</Link>
+    </Compile>
+    <Compile Include="ActionEventArgs.vb" />
+    <Compile Include="Annotations\DocumentAnnotations.vb" />
+    <Compile Include="Annotations\UI\AnnotationsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Annotations\UI\AnnotationsControl.Designer.vb">
+      <DependentUpon>AnnotationsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DemoOptions.vb" />
+    <Compile Include="Digital Signatures\AnnSignatureObject.vb" />
+    <Compile Include="Digital Signatures\DigitalSignaturesDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Digital Signatures\DigitalSignaturesDialog.Designer.vb">
+      <DependentUpon>DigitalSignaturesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Digital Signatures\PDFSignaturesHelper.vb" />
+    <Compile Include="Digital Signatures\SignatureValidationStatusDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Digital Signatures\SignatureValidationStatusDialog.Designer.vb">
+      <DependentUpon>SignatureValidationStatusDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentPropertiesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentPropertiesControl.Designer.vb">
+      <DependentUpon>DocumentPropertiesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentPropertiesDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentPropertiesDialog.Designer.vb">
+      <DependentUpon>DocumentPropertiesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindTextHelper.vb" />
+    <Compile Include="GetPasswordDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetPasswordDialog.Designer.vb">
+      <DependentUpon>GetPasswordDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GotoPageDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GotoPageDialog.designer.vb">
+      <DependentUpon>GotoPageDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDocument\GetDocumentPropertiesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoadDocument\GetDocumentPropertiesControl.Designer.vb">
+      <DependentUpon>GetDocumentPropertiesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDocument\LoadDocumentDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadDocument\LoadDocumentDialog.Designer.vb">
+      <DependentUpon>LoadDocumentDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDocument\LoadDocumentOptionsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoadDocument\LoadDocumentOptionsControl.Designer.vb">
+      <DependentUpon>LoadDocumentOptionsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDocument\ReadPDFDocumentControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoadDocument\ReadPDFDocumentControl.Designer.vb">
+      <DependentUpon>ReadPDFDocumentControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagesControl\PagesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagesControl\PagesControl.designer.vb">
+      <DependentUpon>PagesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PDFFontsDialog.Designer.vb">
+      <DependentUpon>PDFFontsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PDFFontsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="MyWord.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewerControl\ViewerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewerControl\ViewerControl.designer.vb">
+      <DependentUpon>ViewerControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewerControl\ViewerControlInteractiveMode.vb" />
+    <Compile Include="WizardControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WizardControl.Designer.vb">
+      <DependentUpon>WizardControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Workers\GenerateThumbnailsWorker.vb" />
+    <Compile Include="Workers\ThreadedPageWorker.vb" />
+    <EmbeddedResource Include="Annotations\UI\AnnotationsControl.resx">
+      <DependentUpon>AnnotationsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Digital Signatures\DigitalSignaturesDialog.resx">
+      <DependentUpon>DigitalSignaturesDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Digital Signatures\SignatureValidationStatusDialog.resx">
+      <DependentUpon>SignatureValidationStatusDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentPropertiesControl.resx">
+      <DependentUpon>DocumentPropertiesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentPropertiesDialog.resx">
+      <DependentUpon>DocumentPropertiesDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetPasswordDialog.resx">
+      <DependentUpon>GetPasswordDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GotoPageDialog.resx">
+      <DependentUpon>GotoPageDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadDocument\GetDocumentPropertiesControl.resx">
+      <DependentUpon>GetDocumentPropertiesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadDocument\LoadDocumentDialog.resx">
+      <DependentUpon>LoadDocumentDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadDocument\LoadDocumentOptionsControl.resx">
+      <DependentUpon>LoadDocumentOptionsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadDocument\ReadPDFDocumentControl.resx">
+      <DependentUpon>ReadPDFDocumentControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesControl\PagesControl.resx">
+      <DependentUpon>PagesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDFFontsDialog.resx">
+      <DependentUpon>PDFFontsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewerControl\ViewerControl.resx">
+      <DependentUpon>ViewerControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\PDFDocumentDemo\Find.png">
+      <Link>Resources\Find.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\FindNext.png">
+      <Link>Resources\FindNext.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\FindPrevious.png">
+      <Link>Resources\FindPrevious.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\ErrorThumbnail.png">
+      <Link>Resources\ErrorThumbnail.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\FitPage.png">
+      <Link>Resources\FitPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\FitPageWidth.png">
+      <Link>Resources\FitPageWidth.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\LoadingThumbnail.png">
+      <Link>Resources\LoadingThumbnail.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\NextPage.png">
+      <Link>Resources\NextPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\OpenDocument.png">
+      <Link>Resources\OpenDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\PanMode.png">
+      <Link>Resources\PanMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\PreviousPage.png">
+      <Link>Resources\PreviousPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\SelectMode.png">
+      <Link>Resources\SelectMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\ZoomIn.png">
+      <Link>Resources\ZoomIn.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\ZoomOut.png">
+      <Link>Resources\ZoomOut.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\ZoomSelection.png">
+      <Link>Resources\ZoomSelection.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\SaveDocument.png">
+      <Link>Resources\SaveDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\Bookmarks.png">
+      <Link>Resources\Bookmarks.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\Thumbnails.png">
+      <Link>Resources\Thumbnails.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\HighlightObjects.png">
+      <Link>Resources\HighlightObjects.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\PDFDocumentDemo\HighlightText.png">
+      <Link>Resources\HighlightText.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\PDFDocumentDemo\Annotations.png">
+      <Link>Resources\Annotations.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\PDFDocumentDemo\Copy.png">
+      <Link>Resources\Copy.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\Delete.png">
+      <Link>Resources\Delete.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\Paste.png">
+      <Link>Resources\Paste.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\Redo.png">
+      <Link>Resources\Redo.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\Undo.png">
+      <Link>Resources\Undo.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\PDFDocumentDemo\Cut.png">
+      <Link>Resources\Cut.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\PDFDocumentDemo\StickyNote.png">
+      <Link>Resources\StickyNote.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\PDFDocumentDemo\TextNote.png">
+      <Link>Resources\TextNote.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\PDFDocumentDemo\SmallNote.png">
+      <Link>Resources\SmallNote.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\PDFDocumentDemo\HighlightTextObject.png">
+      <Link>Resources\HighlightTextObject.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\StrikeoutTextObject.png">
+      <Link>Resources\StrikeoutTextObject.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\UnderlineTextObject.png">
+      <Link>Resources\UnderlineTextObject.png</Link>
+    </None>
+    <None Include="..\..\Resources\PDFDocumentDemo\Signature.png">
+      <Link>Resources\Signature.png</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

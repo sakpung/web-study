@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModalitiesDescription>
+    <Entry>
+        <Modality>CR</Modality>
+        <Description>Computed Radiography </Description>
+    </Entry>
+    <Entry>
+        <Modality>CT</Modality>
+        <Description>Computed Tomography</Description>
+    </Entry>
+    <Entry>
+        <Modality>MR</Modality>
+        <Description>Magnetic Resonance</Description>
+    </Entry>
+    <Entry>
+        <Modality>NM</Modality>
+        <Description>Nuclear Medicine</Description>
+    </Entry>
+    <Entry>
+        <Modality>US</Modality>
+        <Description>Ultrasound</Description>
+    </Entry>
+    <Entry>
+        <Modality>OT</Modality>
+        <Description>Other</Description>
+    </Entry>
+    <Entry>
+        <Modality>BI</Modality>
+        <Description>Biomagnetic imaging</Description>
+    </Entry>
+    <Entry>
+        <Modality>CD</Modality>
+        <Description>Color flow Doppler</Description>
+    </Entry>
+    <Entry>
+        <Modality>DD</Modality>
+        <Description>Duplex Doppler</Description>
+    </Entry>
+    <Entry>
+        <Modality>DG</Modality>
+        <Description>Diaphanography</Description>
+    </Entry>
+    <Entry>
+        <Modality>ES</Modality>
+        <Description>Endoscopy</Description>
+    </Entry>
+    <Entry>
+        <Modality>LS</Modality>
+        <Description>Laser surface scan</Description>
+    </Entry>
+    <Entry>
+        <Modality>PT</Modality>
+        <Description>Positron emission tomography (PET)</Description>
+    </Entry>
+    <Entry>
+        <Modality>RG</Modality>
+        <Description>Radiographic imaging (conventional film/screen)</Description>
+    </Entry>
+    <Entry>
+        <Modality>ST</Modality>
+        <Description>Single-photon emission computed tomography (SPECT)</Description>
+    </Entry>
+    <Entry>
+        <Modality>TG</Modality>
+        <Description>Thermography</Description>
+    </Entry>
+    <Entry>
+        <Modality>XA</Modality>
+        <Description>X-Ray Angiography</Description>
+    </Entry>
+    <Entry>
+        <Modality>RF</Modality>
+        <Description>Radio Fluoroscopy</Description>
+    </Entry>
+    <Entry>
+        <Modality>RTIMAGE</Modality>
+        <Description>Radiotherapy Image</Description>
+    </Entry>
+    <Entry>
+        <Modality>RTDOSE</Modality>
+        <Description>Radiotherapy Dose</Description>
+    </Entry>
+    <Entry>
+        <Modality>RTSTRUCT</Modality>
+        <Description>Radiotherapy Structure Set </Description>
+    </Entry>
+    <Entry>
+        <Modality>RTPLAN</Modality>
+        <Description>Radiotherapy Plan</Description>
+    </Entry>
+    <Entry>
+        <Modality>RTRECORD</Modality>
+        <Description>RT Treatment Record</Description>
+    </Entry>
+    <Entry>
+        <Modality>HC</Modality>
+        <Description>Hard Copy</Description>
+    </Entry>
+    <Entry>
+        <Modality>DX</Modality>
+        <Description>Digital Radiography</Description>
+    </Entry>
+    <Entry>
+        <Modality>MG</Modality>
+        <Description>Mammography</Description>
+    </Entry>
+    <Entry>
+        <Modality>IO</Modality>
+        <Description>Intra-oral Radiography</Description>
+    </Entry>
+    <Entry>
+        <Modality>PX</Modality>
+        <Description>Panoramic X-Ray</Description>
+    </Entry>
+    <Entry>
+        <Modality>GM</Modality>
+        <Description>General Microscopy</Description>
+    </Entry>
+    <Entry>
+        <Modality>SM</Modality>
+        <Description>Slide Microscopy</Description>
+    </Entry>
+    <Entry>
+        <Modality>XC</Modality>
+        <Description>External-camera Photography</Description>
+    </Entry>
+    <Entry>
+        <Modality>PR</Modality>
+        <Description>Presentation State</Description>
+    </Entry>
+    <Entry>
+        <Modality>AU</Modality>
+        <Description>Audio</Description>
+    </Entry>
+    <Entry>
+        <Modality>ECG</Modality>
+        <Description>Electrocardiography</Description>
+    </Entry>
+    <Entry>
+        <Modality>EPS</Modality>
+        <Description>Cardiac Electrophysiology</Description>
+    </Entry>
+    <Entry>
+        <Modality>HD</Modality>
+        <Description>Hemodynamic Waveform</Description>
+    </Entry>
+    <Entry>
+        <Modality>SR</Modality>
+        <Description>SR Document</Description>
+    </Entry>
+    <Entry>
+        <Modality>IVUS</Modality>
+        <Description>Intravascular Ultrasound</Description>
+    </Entry>
+    <Entry>
+        <Modality>DS</Modality>
+        <Description>Digital Subtraction Angiography (retired)</Description>
+    </Entry>
+    <Entry>
+        <Modality>CF</Modality>
+        <Description>Cinefluorography (retired)</Description>
+    </Entry>
+    <Entry>
+        <Modality>DF</Modality>
+        <Description>Digital fluoroscopy (retired)</Description>
+    </Entry>
+    <Entry>
+        <Modality>VF</Modality>
+        <Description>Videofluorography (retired)</Description>
+    </Entry>
+    <Entry>
+        <Modality>AS</Modality>
+        <Description>Angioscopy</Description>
+    </Entry>
+    <Entry>
+        <Modality>CS</Modality>
+        <Description>Cystoscopy</Description>
+    </Entry>
+    <Entry>
+        <Modality>EC</Modality>
+        <Description>Echocardiography</Description>
+    </Entry>
+    <Entry>
+        <Modality>LP</Modality>
+        <Description>Laparoscopy</Description>
+    </Entry>
+    <Entry>
+        <Modality>FA</Modality>
+        <Description>Fluorescein angiography</Description>
+    </Entry>
+    <Entry>
+        <Modality>CP</Modality>
+        <Description>Culposcopy</Description>
+    </Entry>
+    <Entry>
+        <Modality>DM</Modality>
+        <Description>Digital microscopy</Description>
+    </Entry>
+    <Entry>
+        <Modality>FS</Modality>
+        <Description>Fundoscopy</Description>
+    </Entry>
+    <Entry>
+        <Modality>MA</Modality>
+        <Description>Magnetic resonance angiography</Description>
+    </Entry>
+    <Entry>
+        <Modality>MS</Modality>
+        <Description>Magnetic resonance spectroscopy</Description>
+    </Entry>
+</ModalitiesDescription>

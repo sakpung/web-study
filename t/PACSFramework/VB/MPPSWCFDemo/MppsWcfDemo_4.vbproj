@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <ProjectGuid>{2385BCA9-CCE6-4336-880E-FC25CDB0602C}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>VBMPPSWCFDemo</AssemblyName>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG=True, LEADTOOLS_V175_OR_LATER=True,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ApplicationIcon>..\..\..\..\Resources\Med.ico</ApplicationIcon>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG=True, LEADTOOLS_V175_OR_LATER=True,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <ApplicationIcon>..\..\..\..\Resources\Med.ico</ApplicationIcon>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG=True, LEADTOOLS_V175_OR_LATER=True,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ApplicationIcon>..\..\..\..\Resources\Med.ico</ApplicationIcon>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>LTV20_CONFIG=True, LEADTOOLS_V175_OR_LATER=True,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <ApplicationIcon>..\..\..\..\Resources\Med.ico</ApplicationIcon>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe">
+      <HintPath>$(LeadConfigPath)System.Data.SqlServerCe.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\VB\Common\CustomChannelFactory.vb">
+      <Link>Common\CustomChannelFactory.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\Globalization.vb">
+      <Link>Common\Globalization.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\DicomCommon\Utils.vb">
+      <Link>DicomCommon\Utils.vb</Link>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <EmbeddedResource Include="..\..\..\VB\Common\AboutDialog.resx">
+      <Link>Common\AboutDialog.resx</Link>
+      <DependentUpon>AboutDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pages\MPPSInstancePage.resx">
+      <DependentUpon>MPPSInstancePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pages\IntroductionPage.resx">
+      <DependentUpon>IntroductionPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ObjectEditor.resx">
+      <DependentUpon>ObjectEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pages\SequencesPage.resx">
+      <DependentUpon>SequencesPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pages\UnscheduledPatientPage.resx">
+      <DependentUpon>UnscheduledPatientPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PatientForm.resx">
+      <DependentUpon>PatientForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\QueryForm.resx">
+      <DependentUpon>QueryForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VisitEditor.resx">
+      <DependentUpon>VisitEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ExternalPage.resx">
+      <DependentUpon>ExternalPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\FirstPage.resx">
+      <DependentUpon>FirstPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\LastPage.resx">
+      <DependentUpon>LastPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Pages\InternalTemplatePage.resx">
+      <DependentUpon>InternalTemplatePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Pages\WelcomeTemplatePage.resx">
+      <DependentUpon>WelcomeTemplatePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardSheet.resx">
+      <DependentUpon>WizardSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="..\..\..\VB\Common\AboutDialog.designer.vb">
+      <Link>Common\AboutDialog.designer.vb</Link>
+      <DependentUpon>AboutDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\AboutDialog.vb">
+      <Link>Common\AboutDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\Demos.vb">
+      <Link>Common\Demos.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\DialogUtilities.vb">
+      <Link>Common\DialogUtilities.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\Messager.vb">
+      <Link>Common\Messager.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="Service References\Broker\Reference.vb" />
+    <Compile Include="UI\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\MPPSInstancePage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Pages\MPPSInstancePage.Designer.vb">
+      <DependentUpon>MPPSInstancePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\IntroductionPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Pages\IntroductionPage.Designer.vb">
+      <DependentUpon>IntroductionPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ObjectEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ObjectEditor.Designer.vb">
+      <DependentUpon>ObjectEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\SequencesPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Pages\SequencesPage.Designer.vb">
+      <DependentUpon>SequencesPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\UnscheduledPatientPage.designer.vb">
+      <DependentUpon>UnscheduledPatientPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\UnscheduledPatientPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PaintUtils.vb" />
+    <Compile Include="UI\PatientForm.designer.vb">
+      <DependentUpon>PatientForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PatientForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ProgressDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ProgressDialog.Designer.vb">
+      <DependentUpon>ProgressDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\QueryForm.designer.vb">
+      <DependentUpon>QueryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\QueryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VisitEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VisitEditor.Designer.vb">
+      <DependentUpon>VisitEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\EtchedLine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\EtchedLine.designer.vb">
+      <DependentUpon>EtchedLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\EventArgs\WizardCancelEventArgs.vb" />
+    <Compile Include="Wizard\EventArgs\WizardPageEventArgs.vb" />
+    <Compile Include="Wizard\ExternalPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ExternalPage.designer.vb">
+      <DependentUpon>ExternalPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\FirstPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\FirstPage.designer.vb">
+      <DependentUpon>FirstPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\InternalPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\InternalPage.designer.vb">
+      <DependentUpon>InternalPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\LastPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\LastPage.designer.vb">
+      <DependentUpon>LastPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\Pages\InternalTemplatePage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\Pages\InternalTemplatePage.designer.vb">
+      <DependentUpon>InternalTemplatePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\Pages\WelcomeTemplatePage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\Pages\WelcomeTemplatePage.designer.vb">
+      <DependentUpon>WelcomeTemplatePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardPage.designer.vb">
+      <DependentUpon>WizardPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardPagesCollection.vb" />
+    <Compile Include="Wizard\WizardSheet.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardSheet.designer.vb">
+      <DependentUpon>WizardSheet.vb</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Broker\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LvSample.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

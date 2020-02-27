@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="JobProcessorDashboardDemo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Username" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AutoRefreshJobs" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ServiceConfigPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Leadtools.JobProcessor.WorkerService.exe.config</Value>
+    </Setting>
+    <Setting Name="JobProcessorDashboardDemo_JobService_JobService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/LEADTOOLSJobProcessorServices/JobService.svc</Value>
+    </Setting>
+    <Setting Name="UserHost" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HostAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MMProfilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\Common\JobProcessor\Media\MMProfiles</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">data source =localhost\SQLEXPRESS;initial catalog =LEADTOOLSJobProcessorDB;Trusted_Connection=true;</Value>
+    </Setting>
+    <Setting Name="ShowAbout" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

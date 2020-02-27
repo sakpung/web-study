@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MatchingParametersDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="NotPublic" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MatchingParametersDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MatchingParametersDataSet" msprop:Generator_DataSetName="MatchingParametersDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TableName" msprop:Generator_UserTableName="TableName" msprop:Generator_RowDeletedName="TableNameRowDeleted" msprop:Generator_RowChangedName="TableNameRowChanged" msprop:Generator_RowClassName="TableNameRow" msprop:Generator_RowChangingName="TableNameRowChanging" msprop:Generator_RowEvArgName="TableNameRowChangeEvent" msprop:Generator_RowEvHandlerName="TableNameRowChangeEventHandler" msprop:Generator_TableClassName="TableNameDataTable" msprop:Generator_TableVarName="tableTableName" msprop:Generator_RowDeletingName="TableNameRowDeleting" msprop:Generator_TablePropName="TableName">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TableName" msprop:Generator_UserColumnName="TableName" msprop:Generator_ColumnVarNameInTable="columnTableName" msprop:Generator_ColumnPropNameInRow="TableName" msprop:Generator_ColumnPropNameInTable="TableNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MatchingColumns" msprop:Generator_UserTableName="MatchingColumns" msprop:Generator_RowDeletedName="MatchingColumnsRowDeleted" msprop:Generator_RowChangedName="MatchingColumnsRowChanged" msprop:Generator_RowClassName="MatchingColumnsRow" msprop:Generator_RowChangingName="MatchingColumnsRowChanging" msprop:Generator_RowEvArgName="MatchingColumnsRowChangeEvent" msprop:Generator_RowEvHandlerName="MatchingColumnsRowChangeEventHandler" msprop:Generator_TableClassName="MatchingColumnsDataTable" msprop:Generator_TableVarName="tableMatchingColumns" msprop:Generator_RowDeletingName="MatchingColumnsRowDeleting" msprop:Generator_TablePropName="MatchingColumns">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TableName" msprop:Generator_UserColumnName="TableName" msprop:Generator_ColumnVarNameInTable="columnTableName" msprop:Generator_ColumnPropNameInRow="TableName" msprop:Generator_ColumnPropNameInTable="TableNameColumn" type="xs:string" />
+              <xs:element name="ColumnName" msprop:Generator_UserColumnName="ColumnName" msprop:Generator_ColumnVarNameInTable="columnColumnName" msprop:Generator_ColumnPropNameInRow="ColumnName" msprop:Generator_ColumnPropNameInTable="ColumnNameColumn" type="xs:string" />
+              <xs:element name="MatchingEntityType" msprop:Generator_UserColumnName="MatchingEntityType" msprop:Generator_ColumnVarNameInTable="columnMatchingEntityType" msprop:Generator_ColumnPropNameInRow="MatchingEntityType" msprop:Generator_ColumnPropNameInTable="MatchingEntityTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MatchingPropertyName" msprop:Generator_UserColumnName="MatchingPropertyName" msprop:Generator_ColumnVarNameInTable="columnMatchingPropertyName" msprop:Generator_ColumnPropNameInRow="MatchingPropertyName" msprop:Generator_ColumnPropNameInTable="MatchingPropertyNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//TableName" />
+      <xs:field xpath="TableName" />
+    </xs:unique>
+    <xs:unique name="MatchingColumnsKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//MatchingColumns" />
+      <xs:field xpath="TableName" />
+      <xs:field xpath="ColumnName" />
+    </xs:unique>
+    <xs:keyref name="Relation1" refer="Constraint1" msprop:rel_Generator_UserRelationName="Relation1" msprop:rel_Generator_RelationVarName="relationRelation1" msprop:rel_Generator_UserChildTable="MatchingColumns" msprop:rel_Generator_UserParentTable="TableName" msprop:rel_Generator_ParentPropName="Table1Row" msprop:rel_Generator_ChildPropName="GetMatchingColumnsRows">
+      <xs:selector xpath=".//MatchingColumns" />
+      <xs:field xpath="TableName" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

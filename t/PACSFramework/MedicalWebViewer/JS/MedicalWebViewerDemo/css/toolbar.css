@@ -1,0 +1,3262 @@
+﻿.ToolBar
+{
+   width:100%
+}
+
+.ToolBarButton
+{
+  display:block;
+  width:50px;   
+  height:50px;
+  margin-right:5px;
+  margin-bottom:5px;
+}
+
+.toolbargroup
+{   
+   float:left;
+}
+
+.toolBarItem
+{
+   margin-right:0px;
+   margin-top:0px;
+   cursor:pointer;
+   display:block;
+   height:50px;
+   width:50px;   
+   float:left;
+
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    cursor: inherit;
+    display: block;
+}
+input[readonly] {
+  cursor: text !important;
+}
+
+
+
+.toolBarDropDownItem
+{
+   margin-right:2px;
+   margin-top:2px;
+   cursor:pointer;
+   display:block;
+   height:25px;
+   width:25px;   
+   float:left;
+}
+
+.Tools
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -51px;
+}
+.Tools:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -255px;
+}
+
+.Annotations
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -0px;
+}
+.Annotations:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -204px;
+}
+
+
+.PreviousImage
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -102px;
+}
+.PreviousImage:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -306px;
+}
+
+.NextImage
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -51px;
+}
+.NextImage:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -255px;
+}
+
+.Xray
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/x-ray.png);
+}
+
+.Pan
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -300px -102px;
+}
+.Pan:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -300px -306px;
+}
+
+
+
+.Zoom
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -0px;
+}
+.Zoom:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -204px;
+}
+
+
+.Magnify
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -153px;
+}
+.Magnify:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -153px;
+}
+
+.SortSeries
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -600px -715px;
+}
+
+.SortSeries:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -650px -715px;
+}
+
+.DisabledSortSeries
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -700px -715px;
+}
+
+.LineProfile
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -715px;
+}
+
+.LineProfile:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -715px;
+}
+
+
+.WindowLevel
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -51px;
+}
+.DisabledWindowLevel
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -357px;
+}
+.WindowLevel:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -255px;
+}
+
+.WindowLevelCustom
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -1250px -1px;  
+}
+
+.DisabledWindowLevelCustom
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1250px -103px; 
+}
+
+.WindowLevelCustom:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -1250px -50px;  
+}
+
+.Stack
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -51px;
+}
+.DisabledStack
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -357px;
+}
+
+.Stack:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -255px;
+}
+
+.RotateClock
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -0px;
+}
+.RotateClock:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -204px;
+}
+
+.SecondaryCapture
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -255px;
+}
+.SecondaryCapture:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -306px;
+}
+
+.DisabledSecondaryCapture
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -551px -357px; 
+}
+
+.PopupCapture
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -800px -204px;
+}
+.PopupCapture:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -800px -255px;
+}
+
+.StudyTimeLine
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -255px;
+}
+.StudyTimeLine:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -306px;
+}
+
+.RotateCounterClock
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -153px;
+}
+.RotateCounterClock:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -357px;
+}
+
+
+.Flip
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -0px;
+}
+.Flip:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -204px;
+}
+
+.Reverse
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -102px;
+}
+.Reverse:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -306px;
+}
+
+.Invert
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -204px;
+}
+
+.FitImage
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -0px;
+}
+.FitImage:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -204px;
+}
+
+.OneToOne
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -102px;
+}
+
+.OneToOne:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -306px;
+}
+
+.OneToOneDisabled
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -800px -357px;
+}
+
+.ZoomIn
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -0px;
+}
+.ZoomIn:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -204px;
+}
+
+.ZoomOut
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -300px -0px;
+}
+.ZoomOut:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -300px -204px;
+}
+
+
+.ToggleTags
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -51px;
+}
+.ToggleTags:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -255px;
+}
+
+.ShowDicom
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -0px;
+}
+.ShowDicom:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -204px;
+}
+
+.Select
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -51px;
+}
+.DisabledSelect
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -151px -407px; 
+}
+
+.Select:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -255px; 
+}
+
+.Arrow
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -102px;
+}
+.DisabledArrow
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -408px;
+}
+.Arrow:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -306px;
+}
+
+.Rectangle
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -102px;
+}
+.DisabledRectangle
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -408px;
+}
+.Rectangle:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -306px;
+}
+
+.Ellipse
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -0px;
+}
+.DisabledEllipse
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -300px -357px;
+}
+.Ellipse:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -204px;
+}
+
+.Text
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -51px;
+}
+.DisabledText
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -357px;
+}
+.Text:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -255px;
+}
+
+.TextPointer
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1201px -765px;
+}
+.DisabledTextPointer
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1300px -765px;
+}
+.TextPointer:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1250px -765px;
+}
+
+.Highlight
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -102px;
+}
+.DisabledHighlight
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -408px;
+}
+.Highlight:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -306px;
+}
+
+.Ruler
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -51px;
+}
+.DisabledRuler
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -357px;
+}
+.Ruler:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -255px;
+}
+
+.PolyRuler
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -102px;
+}
+.DisabledPolyRuler
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -357px;
+}
+.PolyRuler:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -306px;
+}
+
+.Protractor
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -102px;
+}
+.DisabledProtractor
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -357px;
+}
+.Protractor:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -306px;
+}
+
+.DeleteAnn
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -153px;   
+}
+
+.DeleteAnn:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -153px;   
+}
+.DisabledDeleteAnn
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -408px;   
+}
+
+.CalibrateRulerAnn
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -300px -153px;   
+}
+.CalibrateRulerAnn:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -153px;   
+}
+.DisabledCalibrateRulerAnn
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -408px;   
+}
+
+
+.SaveAnn
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -0px;
+}
+.SaveAnn:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -153px;
+}
+.DisabledSaveAnn
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -357px;
+}
+
+.LoadAnn
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -51px;
+}
+.LoadAnn:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -153px;
+}
+.DisabledLoadAnn
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -408px;
+}
+
+.CloseButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:25px;
+   height:27px;
+   background:url(../images/viewer/sprite-sheet.png) -312px -422px;  
+}
+
+.CinePlayer
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -102px;   
+}
+.CinePlayer:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -204px;   
+}
+
+.DisabledCinePlayer
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -408px;   
+}
+
+.PlayButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -102px;
+}
+
+.StopButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -102px;
+ 
+}
+
+.DisabledPlayButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -600px -102px;
+ 
+}
+
+.DisabledStopButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -650px -102px;
+ 
+}
+
+.PlayButton:hover
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -102px;
+}
+
+.StopButton:hover
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -102px;
+}
+
+
+.FirstFrameButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -0px;
+
+ 
+}
+.DisabledFirstFrameButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -600px -0px;
+ 
+}
+.FirstFrameButton:hover
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -0px;
+}
+
+.LastFrameButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -0px;
+ 
+ 
+}
+.DisabledLastFrameButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -650px -0px;
+
+ 
+}
+.LastFrameButton:hover
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -0px;
+}
+
+.NextFrameButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -51px;
+
+ 
+}
+.DisabledNextFrameButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -650px -51px;
+
+ 
+}
+.NextFrameButton:hover
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -51px;
+
+}
+
+.PreviousFrameButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -51px;
+
+ 
+}
+.DisabledPreviousFrameButton
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -600px -51px;
+
+ 
+}
+.PreviousFrameButton:hover
+{
+   display:block;
+   right:0;
+   z-index:100;
+   width:50px;
+   height:50px;
+
+}
+
+.InvertColor
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -850px -204px;
+}                                                    
+.InvertColor:hover                                   
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -850px -255px;
+}                                                    
+.DisabledInvertColor                                 
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -850px -306px;
+}
+
+.Line
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -650px -204px;
+}                                                    
+.Line:hover                                          
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -650px -255px;
+}                                                    
+.DisabledLine                                         
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -650px -306px;
+}
+
+.WaveformBasicAudio
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -650px -357px;
+}                                                    
+.WaveformBasicAudio:hover                                          
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -700px -357px;
+}                                                    
+.DisableWaveformBasicAudio
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -750px -357px;
+}
+
+.Curve
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -750px -204px;
+}                                                    
+.Curve:hover                                         
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -750px -255px;
+}                                                    
+.DisabledCurve                                        
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -750px -306px;
+}
+
+.Freehand
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -600px -204px;
+}                                                    
+.Freehand:hover                                      
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -600px -255px;
+}                                                    
+.DisabledFreehand                                     
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -600px -306px;
+}
+
+.ReloadAll
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -700px -0px;
+}
+.ReloadAll:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -750px -51px;
+}
+.DisabledReloadAll
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -700px -153px;
+}
+
+.ShowHide
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -700px -204px;
+}                                                    
+.ShowHide:hover                                      
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -700px -255px;
+}                                                    
+.DisabledShowHide                                    
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -700px -306px;
+}
+.StudyLayout
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -650px -409px;
+}
+.StudyLayout:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -650px -460px;
+}
+.SeriesLayout
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -700px -409px;
+}
+.SeriesLayout:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -700px -460px;
+}
+
+.DisabledSeriesLayout {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/viewer/sprite-sheet.png) -700px -409px;
+}
+
+.SaveLayout
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -401px -459px;
+}
+.SaveLayout:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -460px;
+}
+
+.DisabledSaveLayout
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -401px -509px;
+}
+
+
+.DeleteCell
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -153px;   
+}
+
+.DeleteCell:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -153px;   
+}
+.Linked
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -850px -409px;
+}
+.Linked:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -850px -460px;
+}
+.UnLinked
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -900px -409px;
+}
+.UnLinked:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -900px -460px;
+}
+.BrightnessContrast
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -700px -51px;
+}                                                    
+.BrightnessContrast:hover                                      
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -750px -102px;
+}                                                    
+.DisabledBrightnessContrast                                   
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -700px -102px;
+}
+
+.HSL
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -800px -0px;
+}                                                    
+.HSL:hover                                      
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -850px -51px;
+}                                                    
+.DisabledHSL               
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -800px -153px;
+}
+.CustomLayout
+{
+   display:block;                                    
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -650px -460px;
+}
+
+
+
+.Cells3Triangle
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -0px;
+}
+
+.Cells3HShape
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -52px;
+}
+
+.Cells4Lozenge
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -103px;
+}
+
+.Cells4Columns2
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -155px;
+}
+
+.Cells4Rows3
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -206px;
+}
+
+
+.Cells6
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -255px;
+}
+
+.Cells3Rows2
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -308px;
+}
+
+.Cells5Columns3
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -357px;
+}
+
+.TrueSizeDisplay
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -650px -153px;
+}
+.TrueSizeDisplay:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -153px;
+}
+
+.TrueSizeDisplayDisabled
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -600px -357px;
+}
+
+.Clear
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -850px -0px;
+}                                                    
+.Clear:hover                                      
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -800px -102px;
+}                                                    
+.DisabledClear               
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -850px -102px;
+}
+
+.ClearAll
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -750px -0px;
+}                                                    
+.ClearAll:hover                                      
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -800px -51px;
+}                                                    
+.DisabledClearAll               
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -750px -153px;
+}
+
+.Reload
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -204px;
+}
+.Reload:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -255px;
+}
+.DisabledReload
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -306px;
+}
+
+
+.DisablePanPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -510px;
+}
+
+.PanPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -459px;
+}
+
+.DisableZoomPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -510px;
+}
+
+
+.ZoomPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -459px;
+}
+
+.DisableMagnifyPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -510px;
+}
+
+
+.MagnifyPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -459px;
+}
+
+.WindowLevelPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   
+   background:url(../images/viewer/sprite-sheet.png) -150px -459px;
+}
+
+.Polyline
+{
+   display:block;
+   width:50px;
+   height:50px;
+   
+   background:url(../images/viewer/sprite-sheet.png) -1050px -0px;
+}
+
+.DisabledPolyline
+{
+   display:block;
+   width:50px;
+   height:50px;
+   
+   background:url(../images/viewer/sprite-sheet.png) -1000px -408px;
+}
+
+.Polygon
+{
+   display:block;
+   width:50px;
+   height:50px;
+   
+   background:url(../images/viewer/sprite-sheet.png) -1050px -51px;
+}
+
+.DisabledPolygon
+{
+   display:block;
+   width:50px;
+   height:50px;
+   
+   background:url(../images/viewer/sprite-sheet.png) -1000px -459px;
+}
+
+.Point
+{
+   display:block;
+   width:50px;
+   height:50px;
+   
+   background:url(../images/viewer/sprite-sheet.png) -1050px -102px;
+}
+
+.DisabledPoint
+{
+   display:block;
+   width:50px;
+   height:50px;
+   
+   background:url(../images/viewer/sprite-sheet.png) -1000px -510px;
+}
+
+.Note
+{
+   display:block;
+   width:50px;
+   height:50px;
+   
+   background:url(../images/viewer/sprite-sheet.png) -1050px -152px;
+}
+
+.DisabledNote
+{
+   display:block;
+   width:50px;
+   height:50px;
+   
+   background:url(../images/viewer/sprite-sheet.png) -1050px -408px;
+}
+
+.Perio
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -102px;
+}
+
+.Perio:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -254px;
+}
+
+.PerioPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)-101px -562px;
+}
+
+.DisabledPerio
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -562px;  
+}
+
+.Dentin
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -0px;
+}
+
+.Dentin:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -152px;
+}
+
+.DentinPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -563px; 
+}
+
+.DisabledDentin
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -562px; 
+}
+
+.Endo
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -51px;
+}
+
+.Endo:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -203px;
+}
+
+.EndoPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -51px -562px; 
+}
+
+.DisabledEndo
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -563px; 
+}
+
+.DisabelWindowLevelPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -510px;   
+}
+
+.StackPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -459px;
+}
+
+.DisableStackPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -510px;
+}
+
+.FMX20
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -600px -408px;
+}
+
+.FMX18
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -408px;
+}
+
+.StretchHistogram
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -408px;
+}                                                    
+.StretchHistogram:hover                                      
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -500px -459px;
+}                                                    
+.DisabledStretchHistogram            
+{                                                    
+   display:block;                                    
+   width:50px;                                       
+   height:50px;                                      
+   background:url(../images/viewer/sprite-sheet.png) -500px -510px;
+}
+
+.ReferenceLine
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -750px -408px;
+}
+
+.ShowFirstLast
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -800px -408px;
+}
+
+.Synchronization
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -409px;
+}
+.Synchronization:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -460px;
+}
+
+.ReferenceLinePressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -459px;
+}
+
+.ShowFirstLastPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -300px -459px;
+}
+
+.EnabledSynchronization
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -459px;
+}
+
+.Export
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -204px;
+}
+.Export:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -459px;
+}
+
+.EnabledExport
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -459px;
+}
+
+.DisabledExport
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1149px -511px;
+}
+
+.Spyglass
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -51px;
+}
+.Spyglass:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -306px;
+}
+
+.DisabledSpyglass
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1148px -357px; 
+}
+
+.SpyglassWindowLevel
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -0px; 
+}
+.SpyglassWindowLevel:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -255px; 
+}
+
+.DisabledSpyglassWindowLevel
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1151px -306px; 
+}
+
+.SpyglassInvert
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -102px;
+}
+.SpyglassInvert:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -357px;
+}
+
+.DisabledSpyglassInvert
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1150px -408px; 
+}
+
+.SpyglassCLAHE
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -153px; 
+}
+.SpyglassCLAHE:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -408px; 
+}
+
+.DisabledSpyglassCLAHE
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1150px -459px; 
+}
+
+
+.ProbeTool
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1300px -203px;
+}
+
+.ProbeTool:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1300px -254px; 
+}
+
+.ProbeToolPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -816px; 
+}
+
+
+.DisabledProbeTool
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1250px -254px; 
+}
+
+
+
+.MPR
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -1300px -51px;
+}
+
+.MPR:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1300px -102px; 
+}
+
+
+
+
+
+.ShutterObject
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -1250px -306px;
+}
+
+.ShutterObject:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1250px -357px; 
+}
+
+.DisabledShutterObject
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1250px -408px; 
+}
+
+.SpyGlassEqualization
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -1250px -458px;
+}
+
+.SpyGlassEqualization:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1250px -509px; 
+}
+
+.DisabledSpyGlassEqualization
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1250px -560px; 
+}
+
+
+.Cursor3D:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1300px -408px;
+}
+
+.Cursor3D
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1300px -357px; 
+}
+
+.DisabledCursor3D
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -1300px -459px; 
+}
+
+ .Configure
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -51px;
+}
+
+ .Print
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1050px -459px; 
+}
+.Print:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -459px;
+}
+
+.DisabledPrint
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1050px -509px;  
+}
+
+.PrintCurrentView
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1300px -511px; 
+}
+.PrintCurrentView:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1301px -561px;
+}
+
+.DisabledPrintCurrentView
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1250px -561px;   
+}
+
+.NewTemplate
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -301px -562px;  
+}
+
+.NewTemplate:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -613px;
+}
+
+.DisabledNewTemplate
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -451px -612px;  
+}
+
+.SaveTemplate
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -351px -562px;  
+}
+
+.SaveTemplate:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -49px -613px; 
+}
+
+.DisabledSaveTemplate
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -612px; 
+}
+
+.CopyTemplate
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -300px -818px;   
+}
+
+.CopyTemplate:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -818px; 
+}
+
+.DisabledCopyTemplate
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -818px; 
+}
+
+.RenameTemplate
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -399px -562px;   
+}
+
+.RenameTemplate:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -102px -612px; 
+}
+
+.DisabledRenameTemplate
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -551px -612px; 
+}
+
+.DeleteTemplate
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -451px -562px;   
+}
+
+.DeleteTemplate:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -612px; 
+}
+
+.DisabledDeleteTemplate
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -601px -612px; 
+}
+
+.SelectTemplateBox
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -502px -561px;    
+}
+
+.SelectTemplateBox:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -201px -612px; 
+}
+
+.SelectTemplateBoxPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -751px -562px;
+}
+
+.DisabledSelectTemplateBox
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -651px -612px; 
+}
+
+.DrawTemplateBox
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -550px -562px; 
+}
+
+.DrawTemplateBox:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -251px -612px;
+}
+
+.DrawTemplateBoxPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -802px -562px;  
+}
+
+.DisabledDrawTemplateBox
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -701px -612px;
+}
+
+.DeleteTemplateBox
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -601px -562px;
+}
+
+.DeleteTemplateBox:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -301px -612px;
+}
+
+.DisabledDeleteTemplateBox
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -750px -612px; 
+}
+
+.ExportTemplates
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -650px -562px; 
+}
+
+.ExportTemplates:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -349px -612px;
+}
+
+.DisabledExportTemplates
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -801px -612px;
+}
+
+/**/
+.ImportTemplates
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -699px -562px; 
+}
+
+.ImportTemplates:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -401px -612px;
+}
+
+.DisabledImportTemplates
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png)  -851px -612px;
+}
+
+ div.dropdown {
+margin: 3px -22px 0 0;
+width: 143px;
+position: relative;
+height: 17px;
+text-align:left;
+}
+div.submenu
+{
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: 100;
+width: 135px;
+display: none;
+margin-left: 0px;
+padding: 0px 0 5px;
+border-radius: 1px;
+}
+
+.dropDownMenuTitle {
+    display: block;
+    font-family: arial;
+    font-weight: bold;
+    padding: 6px 15px;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.dropdown  li a {
+    display: block;
+    font-family: arial;
+    font-weight: bold;
+    padding: 6px 15px;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.dropdown li a:hover
+{
+    text-decoration: none;
+}
+
+.menuRoot
+{
+list-style:none;
+margin:0px;
+padding:0px;
+font-size: 11px;
+padding: 11px 0 0 0px;
+}
+
+.btn-toolbar
+{
+   margin-top: 0px !important;
+   margin-bottom: 0px !important;
+}
+
+button.toolbar-button
+{
+   width:50px !important;
+   height:50px !important;
+   padding: 0px;   
+}
+
+.btn-group>.btn+.dropdown-toggle {
+width: 25px !important;
+}
+
+.open>.dropdown-menu {
+overflow: visible;
+}
+
+.btn-group > .dropdown-menu {
+    max-height: 1000px;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+.btn-group>.dropdown-menu>li>a {   
+   padding: 3px 3px;
+   width: 300px;
+   height: 50px;
+}
+
+.btn.btn-disabled {
+    pointer-events: auto;
+}
+
+.scroll-parent {
+    font-size: 0px;
+    height: 100%;
+}
+
+.scroll-parent-vertical {
+    font-size: 0px;
+    width: 100%;
+}
+
+.scroll-body, .scroll-button, .scroll-button * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .scroll-button .fa {
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        position: relative;
+        top: calc(50% - 10px);
+        left: calc(50% - 10px);
+    }
+
+.scroll-body, .scroll-button {
+    display: inline-block;
+    height: 100%;
+    font-size: 14px;
+    vertical-align: top;
+    position: relative;
+    user-select: none;
+}
+
+.scroll-body {
+    position: relative;
+    width: calc(100% - 50px);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scroll-body-vertical {
+    position: relative;
+    height: calc(100% - 50px);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+    .scroll-body::-webkit-scrollbar {
+        display: none;
+    }
+
+.scroll-button {
+    width: 25px;
+
+    cursor: pointer;
+    cursor: hand;
+}
+
+.scroll-button-vertical {
+    height: 25px;
+
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+.scroll-body-inner {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.scroll-body-inner-vertical {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.scroll-button.scroll-button-disabled {
+    cursor: default;
+
+}
+
+.scroll-button.scroll-button-disabled:hover {
+    cursor: default;
+}
+
+.scroll-button.scroll-button-disabled:active {
+    cursor: default;
+    box-shadow: none;
+}
+
+
+.toolbarbodyArea {
+    height: 100%;
+    width: auto;
+    position: absolute;
+}
+
+.scroll-body-inner > * {
+    display: inline-block;
+    margin: 0px;
+    vertical-align: top;
+}
+
+.ToggleGrid
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -952px -612px; 
+}
+
+.ToggleGridPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -665px;  
+}
+
+.ToggleGrid:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1250px -664px; 
+}
+
+.DisabledToggleGrid
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1000px -664px;
+}
+
+.SnapToGrid
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -510px;
+}
+
+.ToggleSnapToGridPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -666px; 
+}
+
+.SnapToGrid:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1050px -614px;
+}
+
+.DisabledSnapToGrid
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -550px -663px;
+}
+
+.AlignLeft
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -563px;
+}
+
+.AlignLeft:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1150px -613px; 
+}
+
+.DisabledAlignLeft
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -649px -664px; 
+}
+
+.AlignRight
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1000px -563px; 
+}
+
+.AlignRight:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -613px; 
+}
+
+.DisabledAlignRight
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -700px -664px; 
+}
+
+.AlignCenter
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1000px -613px;
+}
+
+.AlignCenter:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1301px -663px;
+}
+
+.DisabledAlignCenter
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1051px -663px;
+}
+
+.AlignTop
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1101px -560px; 
+}
+
+.AlignTop:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1300px -613px; 
+}
+
+.DisabledAlignTop
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -800px -664px;
+}
+
+.AlignBottom
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1150px -562px;
+}
+
+.AlignBottom:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -664px; 
+}
+
+.DisabledAlignBottom
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -850px -664px;
+}
+
+.AlignMiddle
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1201px -561px; 
+}
+
+.AlignMiddle:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1149px -664px;
+}
+
+.DisabledAlignMiddle
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -901px -664px;
+}
+
+.MakeSameWidth
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -901px -612px;
+}
+
+.MakeSameWidth:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1201px -664px; 
+}
+
+.DisabledMakeSameWidth
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -951px -664px;
+}
+
+.MakeSameHeight
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1051px -562px;
+}
+
+.MakeSameHeight:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1251px -613px;
+}
+
+.DisabledMakeSameHeight
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -751px -664px;
+}
+
+.MakeSameSize
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1201px -510px;
+}
+
+.MakeSameSize:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1101px -613px;
+}
+
+.DisabledMakeSameSize
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -601px -663px;
+}
+
+.SaveStructuredDisplay
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -715px; 
+}
+
+.SaveStructuredDisplay:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1200px -715px;
+}
+
+.DisabledSaveStructuredDisplay
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1300px -715px;
+}
+
+.SaveHangingProtocol
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1050px -715px; 
+}
+
+.SaveHangingProtocol:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1150px -715px;
+}
+
+.DisabledSaveHangingProtocol
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1250px -715px;
+}
+
+.MergeCells
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -51px -664px;
+}
+
+.MergeCells:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -665px; 
+}
+
+.DisabledMergeCells
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -351px -665px;
+}
+
+.ComposeLayout
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -665px; 
+}
+
+.ComposeLayout:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -249px -665px;
+}
+
+.DisabledComposeLayout
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -401px -666px; 
+}
+
+.DeleteStudyLayout
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -715px; 
+}
+
+.DeleteStudyLayout:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -100px -715px; 
+}
+
+.DisabledDeleteStudyLayout
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -715px;
+}
+
+
+
+.ScrollFrame
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -765px;
+}
+
+.ScrollFrame:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -350px -765px;
+}
+
+.ScrollRow
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -250px -765px;
+}
+
+.ScrollRow:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -450px -765px;
+}
+
+.ScrollColumn
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -765px;
+}
+
+.ScrollColumn:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -400px -765px;
+}
+
+.ScrollPage
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -300px -765px;
+}
+
+.ScrollPage:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -765px;
+}
+
+
+.ScrollPage
+{
+   display:block;
+   width:50px; 
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -300px -765px;
+}
+
+.ScrollPage:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -500px -765px;
+}
+
+
+.PreviousPoint
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -901px -765px;
+}
+
+.NextPoint
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1051px -765px;
+}
+
+
+.CrossHair
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -750px -765px;
+}
+
+.DisabledCrossHair
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -850px -765px;
+}
+
+.CrossHair:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -800px -765px;
+}
+
+.ToggleCine
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -816px;
+}
+
+.ToggleCine:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -50px -816px;
+}
+
+
+.ToggleCinePaused
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -765px;
+}
+
+.ToggleCinePaused:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -765px;
+}
+
+
+.LinkStudies
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -817px;
+}
+.LinkStudies:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -817px;
+}
+
+
+
+.SpatialRegsiteration
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -150px -817px;
+}
+.SpatialRegsiteration:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -200px -817px;
+}
+.SpatialRegsiterationPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -0px -510px;
+}
+
+
+.FullScreen
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -900px -817px;
+}
+.FullScreen:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -950px -817px;
+}
+
+.Create3D
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1050px -817px;
+}
+
+.Create3D:hover
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1100px -817px;
+}
+
+.Create3DPressed
+{
+   display:block;
+   width:50px;
+   height:50px;
+   background:url(../images/viewer/sprite-sheet.png) -1149px -817px;
+}

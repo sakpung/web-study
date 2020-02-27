@@ -1,0 +1,157 @@
+﻿<div class="modal-header">
+   <h3 class="modal-title">{{'DIALOGS_CINE_PLAYER_TITLE' | translate}}</h3>
+</div>
+<div class="divider"></div>
+<div class="modal-body">
+   <div class="control-group">
+      <div class="checkbox">
+         <label>
+            <input type="checkbox" ng-model="service.loop">Loop
+         </label>
+      </div>
+   </div>
+
+
+
+
+
+   <div class="control-group">
+      <label class="control-label" for="direction">{{'DIRECTION' | translate}}:</label>
+      <div class="controls">
+         <select id="direction" class="study-dropdown w-dropdown" ng-model="service.direction">
+            <option value="Forward">Forward</option>
+            <option value="Backward">Backward</option>
+            <option value="Shuffle">Shuffle</option>
+            <option value="Sweep">Sweep</option>
+         </select>
+      </div>
+   </div>
+   <div class="control-group">
+      <label class="control-label" for="fps">{{'FPS' | translate}}:</label>
+      <div class="controls">
+         <input id="fps" type="number" placeholder="" class="text-field" ng-model="service.fps">
+      </div>
+
+   </div>
+   <div class="control-group">
+      <label class="control-label" for="skipFrames">{{'MAX_SKIP_FRAMES' | translate}}:</label>
+      <div class="controls">
+         <input id="skipFrames" type="number" placeholder="" class="text-field" ng-model="service.maxSkip">
+      </div>
+   </div>
+   <div class="control-group">
+      <label class="control-label" for="frame">{{'FRAME' | translate}}:</label>
+      <div class="controls">
+         <input id="frame" type="number" placeholder="" class="text-field" ng-model="player.currentFrame">
+      </div>
+   </div>
+
+   <div class="cine-buttons">
+      <input type="button" class="cine-controls first-frame" ng-disabled="service.isPlaying" ng-click="first()" title="{{'FIRST' | translate}}">
+      <input type="button" class="cine-controls previous-frame" ng-disabled="service.isPlaying" ng-click="previous()" title="{{'PREVIOUS' | translate}}">
+      <input type="button" class="cine-controls stop" ng-disabled="!service.isPlaying" ng-click="stop()" title="{{'STOP' | translate}}">
+      <input type="button" class="cine-controls play" ng-disabled="service.isPlaying" ng-click="play()" title="{{'PLAY' | translate}}">
+      <input type="button" class="cine-controls next-frame" ng-disabled="service.isPlaying" ng-click="next()" title="{{'NEXT' | translate}}">
+      <input type="button" class="cine-controls last-frame" ng-disabled="service.isPlaying" ng-click="last()" title="{{'LAST' | translate}}">
+      <!--<div class="previous-frame" ng-click="previous()"></div>
+      <div class="stop"></div>
+      <div class="play"></div>
+      <div class="next-frame"></div>
+      <div class="last-frame"></div>-->
+   </div>
+
+
+   <!--<div class="btn-toolbar" role="toolbar" style="background-color: inherit !important">
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="service.isPlaying" ng-click="first()" title="{{'FIRST' | translate}}">
+         <i class="fa fa-step-backward"></i>
+      </button>
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="service.isPlaying" ng-click="previous()" title="{{'PREVIOUS' | translate}}">
+         <i class="fa fa-backward"></i>
+      </button>
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="!service.isPlaying" ng-click="stop()" title="{{'STOP' | translate}}">
+         <i class="fa fa-stop"></i>
+      </button>
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="service.isPlaying" ng-click="play()" title="{{'PLAY' | translate}}">
+         <i class="fa fa-play"></i>
+      </button>
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="service.isPlaying" ng-click="next()" title="{{'NEXT' | translate}}">
+         <i class="fa fa-forward"></i>
+      </button>
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="service.isPlaying" ng-click="last()" title="{{'LAST' | translate}}">
+         <i class="fa fa-step-forward"></i>
+      </button>
+   </div>-->
+
+</div>
+<div class="divider"></div>
+<div class="modal-footer">
+   <a class="form-btn" ng-click="close()" translate="DIALOGS_CLOSE"></a>
+</div>
+
+
+
+<!--<div class="modal-header">
+   <h3 class="modal-title">{{'DIALOGS_CINE_PLAYER_TITLE' | translate}}</h3>
+</div>
+<div class="modal-body">
+   <div class="btn-toolbar" role="toolbar" style="background-color: inherit !important">
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="service.isPlaying" ng-click="first()" title="{{'FIRST' | translate}}">
+         <i class="fa fa-step-backward"></i>
+      </button>
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="service.isPlaying" ng-click="previous()" title="{{'PREVIOUS' | translate}}">
+         <i class="fa fa-backward"></i>
+      </button>
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="!service.isPlaying" ng-click="stop()" title="{{'STOP' | translate}}">
+         <i class="fa fa-stop"></i>
+      </button>
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="service.isPlaying" ng-click="play()" title="{{'PLAY' | translate}}">
+         <i class="fa fa-play"></i>
+      </button>
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="service.isPlaying" ng-click="next()" title="{{'NEXT' | translate}}">
+         <i class="fa fa-forward"></i>
+      </button>
+      <button type="button" class="btn btn-default btn-lg" ng-disabled="service.isPlaying" ng-click="last()" title="{{'LAST' | translate}}">
+         <i class="fa fa-step-forward"></i>
+      </button>
+   </div>
+
+   <div class="control-group">
+      <div class="checkbox">
+         <label>
+            <input type="checkbox" ng-model="service.loop">Loop
+         </label>
+      </div>
+   </div>
+   <div class="control-group">
+      <label class="control-label" for="direction">{{'DIRECTION' | translate}}:</label>
+      <div class="controls">
+         <select id="direction" class="form-control" ng-model="service.direction">
+            <option value="Forward">Forward</option>
+            <option value="Backward">Backward</option>
+            <option value="Shuffle">Shuffle</option>
+            <option value="Sweep">Sweep</option>
+         </select>
+      </div>
+   </div>
+   <div class="control-group">
+      <label class="control-label" for="fps">{{'FPS' | translate}}:</label>
+      <div class="controls">
+         <input id="fps" type="number" placeholder="" class="form-control" ng-model="service.fps">
+      </div>
+   </div>
+   <div class="control-group">
+      <label class="control-label" for="skipFrames">{{'MAX_SKIP_FRAMES' | translate}}:</label>
+      <div class="controls">
+         <input id="skipFrames" type="number" placeholder="" class="form-control" ng-model="service.maxSkip">
+      </div>
+   </div>
+   <div class="control-group">
+      <label class="control-label" for="frame">{{'FRAME' | translate}}:</label>
+      <div class="controls">
+         <input id="frame" type="number" placeholder="" class="form-control" ng-model="player.currentFrame">
+      </div>
+   </div>
+</div>
+<div class="modal-footer">
+   <a class="btn btn-default" ng-click="close()" translate="DIALOGS_CLOSE"></a>
+</div>-->

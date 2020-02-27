@@ -1,0 +1,12 @@
+﻿<form name="newRoleForm" ng-controller="Controllers.NewRoleController" novalidate>
+    <div class="form-group">
+        <label for="newRoleName">Name:</label>
+        <input type="text" class="text-field" id="newRoleName" placeholder="" ng-model="role" required>
+    </div>
+    <div class="form-group">
+        <label for="newRoleDescription">Description:</label>
+        <input type="text" class="text-field" id="newRoleDescription" placeholder="" ng-model="description">
+    </div>
+        
+    <a class="form-btn" ng-disabled="newRoleForm.$invalid" ng-click="createRole(role,description)">Create</a>    
+</form>

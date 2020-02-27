@@ -1,0 +1,643 @@
+﻿html {
+    overflow: hidden;
+    -ms-touch-action: none;
+}
+
+html,
+body,
+.viewport {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    12.5% {
+        -webkit-transform: translateX(-6px) rotateY(-5deg);
+        transform: translateX(-6px) rotateY(-5deg);
+    }
+    37.5% {
+        -webkit-transform: translateX(5px) rotateY(4deg);
+        transform: translateX(5px) rotateY(4deg);
+    }
+    62.5% {
+        -webkit-transform: translateX(-3px) rotateY(-2deg);
+        transform: translateX(-3px) rotateY(-2deg);
+    }
+    87.5% {
+        -webkit-transform: translateX(2px) rotateY(1deg);
+        transform: translateX(2px) rotateY(1deg);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes shake {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    12.5% {
+        -webkit-transform: translateX(-6px) rotateY(-5deg);
+        transform: translateX(-6px) rotateY(-5deg);
+    }
+    37.5% {
+        -webkit-transform: translateX(5px) rotateY(4deg);
+        transform: translateX(5px) rotateY(4deg);
+    }
+    62.5% {
+        -webkit-transform: translateX(-3px) rotateY(-2deg);
+        transform: translateX(-3px) rotateY(-2deg);
+    }
+    87.5% {
+        -webkit-transform: translateX(2px) rotateY(1deg);
+        transform: translateX(2px) rotateY(1deg);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+@-webkit-keyframes ShadowMove {
+    from {
+        box-shadow: 0px 0px 13px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    to {
+        box-shadow: 17px 20px 13px 10px rgba(0, 0, 0, .2);
+    }
+}
+
+
+/* The animation code */
+@keyframes ShadowMove {
+    from {
+        box-shadow: 0px 0px 13px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    to {
+        box-shadow: 17px 20px 13px 10px rgba(0, 0, 0, .2);
+    }
+}
+
+
+
+@-webkit-keyframes animateLogIn {
+    from {
+        opacity: 0.0;
+        margin: -250px auto;
+    }
+
+    to {
+        opacity: 1.0;
+        margin: 50px auto;
+    }
+}
+
+
+/* The animation code */
+@keyframes animateLogIn {
+    from {
+        opacity: 0.0;
+        margin: -250px auto;
+        -webkit-perspective: 600px;
+    }
+
+    to {
+        opacity: 1.0;
+        margin: 50px auto;
+        -webkit-perspective: 0px;
+    }
+}
+
+
+
+@-webkit-keyframes LogoAnimation {
+    from {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 1.0;
+    }
+}
+
+
+/* The animation code */
+@keyframes LogoAnimation {
+    from {
+        opacity: 0.0;
+        transform: rotateY(-20deg);
+    }
+
+    to {
+        opacity: 1.0;
+        transform: rotateY(0deg);
+    }
+}
+
+.container {
+    width: auto;
+    margin: 50px auto;
+    animation-name: animateLogIn;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+}
+
+.shake {
+    -webkit-animation: shake 400ms ease-in-out;
+    animation: shake 400ms ease-in-out;
+}
+
+.message {
+    margin-top: 60px;
+}
+
+/* Add a tab container class, for a border around the entire tabset */
+
+.nav-tabs-container {
+    padding: 3px;
+}
+
+ui-grid {
+    width: 100% !important;
+}
+
+.tab-button {
+    margin-left: 10px;
+    height: 16px;
+    width: 16px;
+    padding: 0px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+    border: 0px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.ui-layout-pane {
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+.ui-layout-north {
+    z-index: 3 !important;
+    overflow: visible !important;
+}
+
+.ui-jqgrid .ui-jqgrid-bdiv {
+    overflow-y: scroll !important;
+}
+
+.ui-jqgrid .ui-jqgrid-htable th div {
+    height: auto;
+    overflow: hidden;
+    padding-right: 4px;
+    padding-top: 2px;
+    position: relative;
+    vertical-align: text-top;
+    white-space: normal !important;
+}
+
+#overalyCanvas {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 50;
+}
+
+#overlayCanvas {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 50;
+}
+
+.navbar .container-fluid,
+.navbar-collapse {
+    padding-left: 0;
+}
+
+.navbar-collapse.in {
+    padding-left: 30px;
+}
+
+.center,
+.east,
+.west,
+.north,
+.south {
+    text-align: center;
+    display: inline-block;
+}
+
+.west,
+.east {
+    width: 8%;
+}
+
+.south {
+    height: 10%;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    margin: -50px 0 0 -50px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 0.7s linear infinite;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#ltTabWrapper>ul>li {
+    border-radius: 0;
+    -webkit-border-radius:  0;
+    -moz-border-radius: 0;
+    margin: 1px .2em 0 0;
+    font-weight: normal;
+}
+
+#ltTabWrapper>ul>li>a {
+    margin-right: 0px;
+    padding: .5em 1em;
+    text-align: center;
+    vertical-align: center
+}
+
+#ltTabWrapper>ul>li>a,
+#ltTabWrapper>ul>li>a:link,
+#ltTabWrapper>ul>li>a:visited {
+    text-decoration: none;
+}
+
+#ltTabWrapper>ul>li>a:hover {
+    text-decoration: none;
+}
+
+#ltTabWrapper>ul>li.active {
+    border-bottom-width: 0;
+}
+
+#ltTabWrapper>div {
+    padding-top: 0px;
+}
+
+#ltTabWrapper>div {
+    background: transparent;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    margin-top: -1px;
+    border-top: transparent;
+}
+
+.scroll {
+    width: 1px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+
+.slider {
+    width: 11px;
+    left: -6px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    position: relative;
+    top: 0;
+}
+
+.timeLineTable {
+    border-collapse: separate;
+}
+
+@media screen and (max-width: 768px) {
+    .row-offcanvas {
+        position: absolute;
+        transition: all 0.15s ease-out;
+    }
+    .row-offcanvas-left {
+        left: -250px;
+    }
+    .row-offcanvas-left.active {
+        left: 0;
+    }
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        z-index: 20;
+    }
+}
+
+.ui-jqgrid-bdiv {
+    overflow-x: hidden !important;
+}
+
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -ms-user-select: none;
+}
+
+table {
+    outline: 0 !important;
+}
+
+.tooltip {
+    z-index: 5000 !important;
+}
+
+.modal.fade {
+    overflow: hidden;
+    height: 100%;
+}
+
+.modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.vbox {
+    /* previous syntax */
+    display: -webkit-box;
+    display: -moz-box-flex;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    /* current syntax */
+    /* display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;*/
+}
+
+/* items flex/expand horizontally */
+
+.hbox {
+    /* previous syntax */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    box-orient: horizontal;
+    /* current syntax */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.space-between {
+    /* previous syntax */
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-box-pack: justify;
+    box-pack: justify;
+    /* current syntax */
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.boxItem {
+    /* previous syntax */
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+    /* current syntax */
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    /* margin: 5px;
+    border: solid 1px blue;*/
+}
+
+.tab-content>.active {
+    display: flex;
+}
+
+.ui-grid-expandable-buttons-cell {
+    height: 100%;
+}
+
+/* menu header via data attribute */
+
+.data-title:before {
+    content: attr(data-menutitle);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 2px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.data-title :first-child {
+    margin-top: 25px;
+}
+
+.context-menu-root {
+    width: 220px;
+}
+
+.context-menu-item {
+    font-size: 14px !important;
+    /*min-width: 500px !important; */
+    width: 220px !important;
+}
+
+
+.drop-box {
+    width: 170px;
+    text-align: center;
+    padding: 50px 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Custom Check Box*/
+
+.checkBoxLabelContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing:1.6px;
+    color: #5998e0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 500;
+}
+
+.checkBoxLabelContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--secondary-foreground);
+    color: var(--secondary-foreground);
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+
+.checkBoxLabelContainer input:focus ~ .checkmark {
+    color: #2196F3;
+    border: 1px dotted;
+    border-radius: 1px;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkBoxLabelContainer .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkBoxLabelContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.checkBoxLabelContainer .checkmark:after {
+    left: 3px;
+    top: 9px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 2px 2px 0px 0px;
+    -webkit-transform: scaleX(-1) rotate(130deg);
+    -ms-transform: scaleX(-1) rotate(130deg);
+    transform: scaleX(-1) rotate(130deg);
+    transform-origin: left top;
+    animation-name: CheckMarkAnimation;
+    animation-duration: 0.3s;
+    animation-delay: 0.0s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+/* On mouse-over, add a grey background color */
+.checkBoxLabelContainer:hover input ~ .checkmark {
+    color: #2196F3;
+    border: 1px dotted;
+    border-radius: 1px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkBoxLabelContainer input:checked ~ .checkmark {
+    animation-name: CheckAnimation;
+    animation-duration: 0.8s;
+    animation-delay: 0.0s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+/* check box animation when checked*/
+@keyframes CheckMarkAnimation {
+
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    30% {
+        width: 6px;
+        height: 0px;
+    }
+
+
+    100% {
+        width: 6px;
+        height: 12px;
+    }
+}
+
+/* check box animation when checked, the background color*/
+
+@keyframes CheckAnimation {
+    from {
+        background-color: var(--secondary-foreground);
+    }
+
+    to {
+        background-color: #2196F3;
+    }
+}

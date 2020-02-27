@@ -1,0 +1,749 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1256">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="filelist.xml">
+<link rel=Edit-Time-Data
+href="editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>The Interactive Histogram Demo</title>
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:130246878;
+	mso-list-template-ids:-756892864;}
+@list l0:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:710884339;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-231446532 -447214704 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-start-at:2;
+	mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="4098">
+  <o:colormenu v:ext="edit" fillcolor="silver"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=silver lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1 dir=RTL>
+
+<p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+
+<div align=center dir=ltr>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=691
+ style='width:7.2in;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=691 valign=top style='width:7.2in;border:solid windowtext 1.0pt;
+  background:#CCFFFF;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center dir=LTR style='text-align:center;direction:
+  ltr;unicode-bidi:embed'><b><span style='font-size:13.0pt;font-family:Arial'>&nbsp;</span></b></p>
+  <p class=MsoNormal align=center dir=LTR style='text-align:center;direction:
+  ltr;unicode-bidi:embed'><b><span style='font-size:13.0pt;font-family:Arial'>The
+  Interactive Histogram Demo</span></b></p>
+  <p class=MsoNormal align=center dir=LTR style='text-align:center;direction:
+  ltr;unicode-bidi:embed'><b><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=691 valign=top style='width:7.2in;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>The interactive
+  histogram demo provides powerful and comprehensive tools that allow the user
+  to adjust any image histogram and alter, enhance or segment its information, it
+  also contains many histogram statistical information that can be helpful to
+  analyze the image and making further adjustment if needed. </span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>There are multiple
+  tools that are used when applying the interactive histogram.</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>To open the
+  interactive histogram dialog, do the following:</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>1)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>From File </span><span
+  style='font-size:10.0pt;font-family:Wingdings'>à</span><span
+  style='font-size:10.0pt;font-family:Arial'> Open.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>3)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Open any Image.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>4)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>From analysis </span><span
+  style='font-size:10.0pt;font-family:Wingdings'>à</span><span
+  style='font-size:10.0pt;font-family:Arial'> Interactive Histogram (or press
+  Ctrl + I )</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'><img width=553
+  height=537 id="_x0000_i1025"
+  src="image001.jpg"></span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>The above is a
+  screenshot of the interactive histogram dialog. The following is a detailed
+  look at the dialog:</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(1)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>The histogram window,
+  which is a window that have the histogram painted on it. The histogram range
+  depends on the image itself, if the image is:</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>a.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>16 bit grayscale
+  image, the range will be from 0 </span><span style='font-size:10.0pt;
+  font-family:Wingdings'>à</span><span style='font-size:10.0pt;font-family:
+  Arial'> 65535</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span class=GramE><span
+  style='font-size:10.0pt;font-family:Arial'>b</span></span><span
+  style='font-size:10.0pt;font-family:Arial'>.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:
+  10.0pt;font-family:Arial'>12 bit image, the range will be from 0 </span><span
+  style='font-size:10.0pt;font-family:Wingdings'>à</span><span
+  style='font-size:10.0pt;font-family:Arial'> 4095.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span class=GramE><span
+  style='font-size:10.0pt;font-family:Arial'>c</span></span><span
+  style='font-size:10.0pt;font-family:Arial'>.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:
+  10.0pt;font-family:Arial'>8 bit image, the range will be from 0 </span><span
+  style='font-size:10.0pt;font-family:Wingdings'>à</span><span
+  style='font-size:10.0pt;font-family:Arial'> 255.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>d.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>24 bit image, the
+  range will be from 0 </span><span style='font-size:10.0pt;font-family:Wingdings'>à</span><span
+  style='font-size:10.0pt;font-family:Arial'> 255</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>e.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>48 or 64 bit image,
+  the range will be from 0 </span><span style='font-size:10.0pt;font-family:
+  Wingdings'>à</span><span style='font-size:10.0pt;font-family:Arial'> 65535</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>The histogram window contains two poles that can be grabbed using the
+  left mouse button and moved independently, those poles identify the <b>histogram
+  selection range</b>, which will affect other tools and statistical
+  information</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>Also, the histogram window can be adjusted to zoom in and out in order
+  to allow clear view of the histogram (this is useful when handling the 16 or
+  12 bit images). This can be done by doing a right click on the histogram
+  window, three options are available there:</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.25in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>a.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Zoom to selection:
+  This will zoom in the histogram by expanding the range between the two
+  histogram poles.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.25in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>b.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Fit to graph: This
+  will zoom out the histogram and return it to the default state (the state
+  when you opened the histogram dialog).</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.25in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>c.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Fill Range view (for
+  16 and 12 bit images only): This will zoom in the histogram by displaying 256
+  color at the histogram window, and it enable a horizontal scroll bar at the
+  bottom of the histogram window that allow the user to scroll the histogram
+  values in order to see the rest of the histogram. Since the histogram is
+  expanded, the two poles will be sometimes out of reach. That is why by left
+  clicking on the mouse anywhere in the histogram window, you can drag the left
+  pole, while by clicking the left mouse button while holding the SHIFT key, <span
+  class=GramE>you</span> can drag the right pole. </span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(2)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Selection
+  Information, which represents the information about the histogram window
+  pole, the pole current color, and the number of pixels with this color. The
+  user also can update the pole manually through the edit box.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.25in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(3)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Apply to option,
+  which allow the user apply the histogram updates on the actual bitmap data or
+  on the bitmap LUT (only with 16 and 12 bit images), the user also can check
+  or uncheck whether he wants to see the effect directly on the image, by
+  checking or <span class=SpellE>unchecking</span> the Show preview check box.</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(4)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Statistical
+  information on the histogram Selection. Which contains all the information
+  contained in the range between the two poles in the histogram window:</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>a.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>The pixel count.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>b.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>The percentage of the
+  pixels in the range to the whole image.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>c.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>The range of the
+  selection.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>d.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>The mean.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>e.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>The median</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>f.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>The standard
+  deviation.</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(5)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>The Channel, which
+  determine the channel that will be modified or altered. Keep in mind that
+  when the image is grayscale, this option will be dimmed since you only have
+  one channel (the gray channel).</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.25in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(6)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>The Selection color
+  group, which allow the user to change the color of the inner range and the
+  outer range of the histogram in the histogram window (see point 1). The inner
+  range is the range that lay between the two poles in the histogram window,
+  while the outer range represents the area that lay outside those poles.</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(7)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Selection Type: which
+  represents the method of how to determine the histogram selection:</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>a.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>All: the whole
+  histogram is the selection.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>b.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Inner Area: the area
+  between the two histogram window poles in the selection.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>c.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Left area: the area
+  to left of the left pole.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>d.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Right area: the area to
+  right of the right pole.</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>The Hide Options button minimizes the size of the dialog in order to
+  allow the user to have a better look at the affected image.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(8)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Segmentation
+  information (part of segmentation tab): Which does some further manipulation
+  on the selected area of the histogram either by:</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.25in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>a.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Setting all the
+  values outside the selection to Start or end color based on where the outside
+  value lay (this is the case when the user checks the gradient check box)</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>b.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>or by segmenting (<span
+  class=SpellE>Thresholding</span>) the image by setting all the values inside
+  the selection range to the inner color, (which can be specified by clicking
+  on the start color button), and setting all the values outside the selection
+  range to the outer color (which can also be specified by clicking on the end
+  color button). (This is the case when the user checks the threshold check
+  box).</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.75in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(9)</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Mouse statistical
+  information, which represents the information of the current color that has the
+  mouse hovering over on the histogram window. The information are: </span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.25in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>a.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Count: This
+  represents the number of pixel with this color.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>b.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Percent: the
+  percentage of the pixel value in term of how close it is to the maximum
+  value.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>c.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Level: the actual
+  color level.</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>Notice that you have
+  4 tabs that you can click on to get some further tools for histogram
+  manipulation and statistical information:</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.25in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:list .5in;direction:
+  ltr;unicode-bidi:embed'><![if !supportLists]><span style='mso-list:Ignore'>a.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+  dir=LTR><span style='font-size:10.0pt;font-family:Arial'>Segmentation tab:
+  this was covered above.</span></span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:list .5in;direction:
+  ltr;unicode-bidi:embed'><![if !supportLists]><span style='mso-list:Ignore'>b.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+  dir=LTR><span style='font-size:10.0pt;font-family:Arial'>Gray Distribution
+  tab.</span></span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:list .5in;direction:
+  ltr;unicode-bidi:embed'><![if !supportLists]><span style='mso-list:Ignore'>c.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+  dir=LTR><span style='font-size:10.0pt;font-family:Arial'>Noise filter tab.</span></span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:list .5in;direction:
+  ltr;unicode-bidi:embed'><![if !supportLists]><span style='mso-list:Ignore'>d.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+  dir=LTR><span style='font-size:10.0pt;font-family:Arial'>And rescale tab. </span></span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>Keep in mind that
+  each tab can have its own poles values. So for the example the poles
+  positions can be 100 and 200 when selecting the segmentation tab and 90, 230
+  for the noise filter tab.</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'><img width=547
+  height=602 id="_x0000_i1026"
+  src="image002.jpg"></span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.25in;text-align:left;
+  direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+  Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(10)</span><span style='font-size:7.0pt'> </span><span
+  style='font-size:10.0pt;font-family:Arial'>Gray distribution Information:
+  this feature remaps the colors of the image according to a specific
+  algorithm, range, color palette, and some extra modifiers. This feature
+  consist of:</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>a.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Function Type: <span
+  class=GramE>which represents the type of the algorithm used to remap the
+  color of the image based on two poles of the histogram window (see histogram
+  window (1)).</span> The algorithms are:</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.5in;text-align:left;
+  text-indent:-1.5in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span class=SpellE><span style='font-size:10.0pt;font-family:Arial'>i</span></span><span
+  style='font-size:10.0pt;font-family:Arial'>.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+  font-family:Arial'>Linear: Normal distribution.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.5in;text-align:left;
+  text-indent:-1.5in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>ii.</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:10.0pt;font-family:Arial'>Exponential: Exponential
+  distribution. The user is allowed to set a factor to determine the shape of
+  the exponential function.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.5in;text-align:left;
+  text-indent:-1.5in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>iii.</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:10.0pt;font-family:Arial'>Log: logarithmic distribution. The
+  user is allowed to set a factor to determine the shape of the logarithmic
+  function.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.5in;text-align:left;
+  text-indent:-1.5in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>iv.</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:10.0pt;font-family:Arial'>Sigmoid: Sigmoid distribution. The
+  user is allowed to set a factor to determine the shape of the Sigmoid
+  function.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>b.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>The Start and the end
+  color: which are used to determine the start and the end color that will be
+  used when remapping the image <span class=GramE>colors.</span> If a colored
+  image is <span class=SpellE>choosen</span>, then the red start color will be
+  the red component of the start color button. And the red end color will be
+  the red component of the end color <span class=SpellE>button<span
+  class=GramE>..</span>etc</span>.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>c.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Selection only check
+  box: which allow the user to determine whether to remap the selection only
+  and set all the outside value to zero or not.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>d.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>User predefined
+  Palette: allow the user choose whether to use a predefined palette (by
+  clicking on Custom palette check box) when remapping the image colors.</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'><img width=553
+  height=609 id="_x0000_i1027"
+  src="image003.jpg"></span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(11)</span><span style='font-size:7.0pt'> </span><span
+  style='font-size:10.0pt;font-family:Arial'>Filter (Noise) information: this feature
+  handles the values outside the selection. (The selection can be controlled
+  through the two poles of the histogram window - see above – and the Selection
+  Type combo box). There are 4 types of handling:</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>a.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Start and End Points:
+  Replace the value outside the range with the values of the two poles of the
+  histogram window. All the colors to left of the left pole will have the color
+  of the left pole, and all the colors to the right of the right pole will have
+  the color of the right pole.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>b.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Min and Max
+  intensities: Replace the value outside the range with the minimum and maximum
+  intensity values. All the colors to left of the left pole will have a minimum
+  intensity color, while all the colors to the right of the right pole will
+  have the maximum intensity color.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>c.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Replacement color:
+  Replace the values outside the range with the replacement color, which can be
+  changed through the selection color button.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>d.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Zero: Replace the
+  values outside the selection range with black.</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'><img width=488
+  height=607 id="_x0000_i1028"
+  src="image004.jpg"></span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:.5in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>(12)</span><span style='font-size:7.0pt'> </span><span
+  style='font-size:10.0pt;font-family:Arial'>Rescaling Information: This will
+  alter the values that lies in the selection range, by either shifting those
+  values by a specific amount, or by remapping them to another range:</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  10.0pt;font-family:Arial'>a.</span><span style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>Shift: This will Add
+  the value &quot;Shift amount&quot; to the selection range specified by the
+  two poles of the histogram window (refer to histogram window (1)). You can
+  either add or subtract:</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.5in;text-align:left;
+  text-indent:-1.5in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span class=SpellE><span style='font-size:10.0pt;font-family:Arial'>i</span></span><span
+  style='font-size:10.0pt;font-family:Arial'>.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+  font-family:Arial'>By Checking the &quot;Shift right&quot; radio button, you
+  will add the value &quot;Shift amount&quot; to the colors in the selection
+  ranges.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.5in;text-align:left;
+  text-indent:-1.5in;direction:ltr;unicode-bidi:embed'><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:10.0pt;font-family:Arial'>ii.</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:10.0pt;font-family:Arial'>By checking the &quot;Shift
+  left&quot; radio button, you will subtract the value &quot;shift amount&quot;
+  from the colors in the selection range.</span></p>
+  <p class=MsoNormal dir=LTR style='margin-left:1.0in;text-align:left;
+  text-indent:-.25in;mso-list:l1 level1 lfo4;tab-stops:list 1.0in;direction:
+  ltr;unicode-bidi:embed'><![if !supportLists]><span style='font-size:10.0pt;
+  font-family:Arial;mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>b.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+  dir=LTR><span style='font-size:10.0pt;font-family:Arial'>New Start/End: This
+  will add two extra poles to the histogram window, the values inside the range
+  of those extra poles will replace the values inside the selection range. If
+  the selection range is smaller or larger than the range of the extra poles,
+  then the range of the extra poles will be scaled up or down to match the
+  selection range size. See the figure below.<o:p></o:p></span></span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;<img width=553
+  height=605 id="_x0000_i1029"
+  src="image005.jpg">&nbsp;</span></p>
+  <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+  embed'><b><span style='font-size:13.0pt;font-family:Arial'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+embed'><span style='font-size:10.0pt;font-family:Arial'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

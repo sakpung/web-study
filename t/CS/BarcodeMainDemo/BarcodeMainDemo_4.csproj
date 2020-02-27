@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{126B5526-A244-4D2E-B379-E1811A020ECE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BarcodeMainDemo</RootNamespace>
+    <AssemblyName>CSBarcodeMainDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\Resources\DocAddon.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>DEBUG;TRACE;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;FOR_DOTNET4;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;FOR_DOTNET4;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>DEBUG;TRACE;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;FOR_DOTNET4;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;LEADTOOLS_V18_OR_LATER;FOR_DOTNET4;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+     <Reference Include="Leadtools.Barcode">
+        <SpecificVersion>False</SpecificVersion>
+        <HintPath>$(LeadConfigPath)Leadtools.Barcode.dll</HintPath>
+        <Private>False</Private>
+     </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Color">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Color.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Effects">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Effects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Utilities">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.ImageProcessing.Utilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Twain">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Twain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Controls.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Controls.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.File">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.WinForms.CommonDialogs.File.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Globalization.cs">
+      <Link>Common\Globalization.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Demos.cs">
+      <Link>Common\Demos.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\DialogUtilities.cs">
+      <Link>Common\DialogUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoader.cs">
+      <Link>Common\ImageFileLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.cs">
+      <Link>Common\ImageFileLoaderPagesDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\Common\ImageFileLoaderPagesDialog.designer.cs">
+      <Link>Common\ImageFileLoaderPagesDialog.designer.cs</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\ImageFileSaver.cs">
+      <Link>Common\ImageFileSaver.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageInformation.cs">
+      <Link>Common\ImageInformation.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Messager.cs">
+      <Link>Common\Messager.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\WaitCursor.cs">
+      <Link>Common\WaitCursor.cs</Link>
+    </Compile>
+    <Compile Include="ActionEventArgs.cs" />
+    <Compile Include="BarcodeControls\AAMVADialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarcodeControls\AAMVADialogBox.Designer.cs">
+      <DependentUpon>AAMVADialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarcodeControls\BarcodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarcodeControls\BarcodeControl.designer.cs">
+      <DependentUpon>BarcodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarcodeControls\ReadBarcodeExtraDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarcodeControls\ReadBarcodeExtraDialogBox.Designer.cs">
+      <DependentUpon>ReadBarcodeExtraDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarcodeControls\ReadBarcodeOptionsDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarcodeControls\ReadBarcodeOptionsDialogBox.Designer.cs">
+      <DependentUpon>ReadBarcodeOptionsDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarcodeControls\ReadBarcodesDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarcodeControls\ReadBarcodesDialogBox.Designer.cs">
+      <DependentUpon>ReadBarcodesDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarcodeControls\SymbologyListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BarcodeControls\SymbologyListBox.Designer.cs">
+      <DependentUpon>SymbologyListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarcodeControls\SymbologyListBoxItemDoubleClickedEventArgs.cs" />
+    <Compile Include="BarcodeControls\WriteBarcodeDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarcodeControls\WriteBarcodeDialogBox.Designer.cs">
+      <DependentUpon>WriteBarcodeDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoOptions.cs" />
+    <Compile Include="DocumentBarcodes.cs" />
+    <Compile Include="GotoPageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GotoPageDialog.Designer.cs">
+      <DependentUpon>GotoPageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDocumentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewDocumentDialog.designer.cs">
+      <DependentUpon>NewDocumentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagesControl\PagesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagesControl\PagesControl.Designer.cs">
+      <DependentUpon>PagesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preprocessing\LineRemoveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preprocessing\LineRemoveDialog.designer.cs">
+      <DependentUpon>LineRemoveDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preprocessing\PerspectiveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preprocessing\PerspectiveDialog.designer.cs">
+      <DependentUpon>PerspectiveDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preprocessing\ValueDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preprocessing\ValueDialog.designer.cs">
+      <DependentUpon>ValueDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\Common\ImageFileLoaderPagesDialog.resx">
+      <Link>Common\ImageFileLoaderPagesDialog.resx</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Common\ImageFileLoaderPagesDialog.ja.resx">
+      <Link>Common\ImageFileLoaderPagesDialog.ja.resx</Link>
+      <DependentUpon>ImageFileLoaderPagesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\AAMVADialogBox.resx">
+      <DependentUpon>AAMVADialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GotoPageDialog.resx">
+      <DependentUpon>GotoPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDocumentDialog.resx">
+      <DependentUpon>NewDocumentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesControl\PagesControl.resx">
+      <DependentUpon>PagesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preprocessing\LineRemoveDialog.resx">
+      <DependentUpon>LineRemoveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preprocessing\LineRemoveDialog.ja.resx">
+      <DependentUpon>LineRemoveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preprocessing\PerspectiveDialog.ja.resx">
+      <DependentUpon>PerspectiveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preprocessing\PerspectiveDialog.resx">
+      <DependentUpon>PerspectiveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preprocessing\ValueDialog.ja.resx">
+      <DependentUpon>ValueDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preprocessing\ValueDialog.resx">
+      <DependentUpon>ValueDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewerControl\ViewerControl.resx">
+      <DependentUpon>ViewerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ViewerControl\ViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewerControl\ViewerControl.Designer.cs">
+      <DependentUpon>ViewerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewerControl\ViewerControlInteractiveMode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\BarcodeMainDemo\DeleteRegion.png">
+      <Link>Resources\DeleteRegion.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\FitPage.png">
+      <Link>Resources\FitPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\FitPageWidth.png">
+      <Link>Resources\FitPageWidth.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\InsertPage.png">
+      <Link>Resources\InsertPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\NewDocument.png">
+      <Link>Resources\NewDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\NextPage.png">
+      <Link>Resources\NextPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\OpenDocument.png">
+      <Link>Resources\OpenDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\PanMode.png">
+      <Link>Resources\PanMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\PreviousPage.png">
+      <Link>Resources\PreviousPage.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\RegionMode.png">
+      <Link>Resources\RegionMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\SaveDocument.png">
+      <Link>Resources\SaveDocument.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\SelectMode.png">
+      <Link>Resources\SelectMode.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\ShowBarcodes.png">
+      <Link>Resources\ShowBarcodes.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\ZoomIn.png">
+      <Link>Resources\ZoomIn.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\ZoomOut.png">
+      <Link>Resources\ZoomOut.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\ZoomSelection.png">
+      <Link>Resources\ZoomSelection.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Resources\BarcodeMainDemo\Symbologies.tif">
+      <Link>Resources\Symbologies.tif</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\BarcodeControl.ja.resx">
+      <DependentUpon>BarcodeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\BarcodeControl.resx">
+      <DependentUpon>BarcodeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\ReadBarcodeExtraDialogBox.ja.resx">
+      <DependentUpon>ReadBarcodeExtraDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\ReadBarcodeExtraDialogBox.resx">
+      <DependentUpon>ReadBarcodeExtraDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\ReadBarcodeOptionsDialogBox.ja.resx">
+      <DependentUpon>ReadBarcodeOptionsDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\ReadBarcodeOptionsDialogBox.resx">
+      <DependentUpon>ReadBarcodeOptionsDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\ReadBarcodesDialogBox.ja.resx">
+      <DependentUpon>ReadBarcodesDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\ReadBarcodesDialogBox.resx">
+      <DependentUpon>ReadBarcodesDialogBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\WriteBarcodeDialogBox.ja.resx">
+      <DependentUpon>WriteBarcodeDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeControls\WriteBarcodeDialogBox.resx">
+      <DependentUpon>WriteBarcodeDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GotoPageDialog.ja.resx">
+      <DependentUpon>GotoPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.ja.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDocumentDialog.ja.resx">
+      <DependentUpon>NewDocumentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesControl\PagesControl.ja.resx">
+      <DependentUpon>PagesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewerControl\ViewerControl.ja.resx">
+      <DependentUpon>ViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\BarcodeMainDemo\ReadBarcodes.png">
+      <Link>Resources\ReadBarcodes.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\BarcodeMainDemo\ReadAllBarcodes.png">
+      <Link>Resources\ReadAllBarcodes.png</Link>
+    </None>
+    <None Include="..\..\Resources\BarcodeMainDemo\ReadBarcode.png">
+      <Link>Resources\ReadBarcode.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\BarcodeMainDemo\WriteBarcodeMode.png">
+      <Link>Resources\WriteBarcodeMode.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\BarcodeMainDemo\ReadBarcodeOptions.png">
+      <Link>Resources\ReadBarcodeOptions.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\BarcodeMainDemo\WriteBarcode.png">
+      <Link>Resources\WriteBarcode.png</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

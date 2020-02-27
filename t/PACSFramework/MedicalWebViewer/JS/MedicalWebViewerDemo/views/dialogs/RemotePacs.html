@@ -1,0 +1,29 @@
+﻿<div class="modal-content">
+   <div class="modal-header">
+      <h3 class="modal-title" translate="DIALOGS_REMOTE_PACS_TITLE"></h3>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-body">
+      <label class="control-label" for="aeTitle">{{'CLIENT' | translate}}&nbsp;{{'AETITLE' | translate}}:</label>
+      <input id="aeTitle" type="text" placeholder="" class="text-field" ng-model="pacsConfig.client" required />
+      <label for="pacsServers" class="control-label">{{ 'REMOTE' | translate}}&nbsp;{{'SERVERS'|translate}}</label>
+      <!--<lt-grid api="gridapi" vapi="virtualgridapi" grid-id="pacsServers" config="config" data="pacsConfig.remotePacs" on-select-row="onSelectRow(rowid, data)"></lt-grid>-->
+      <div id="pacsServers" ui-grid="gridOptions" class="grid" ui-grid-selection ui-grid-auto-resize></div>
+      <div class="cine-buttons" role="toolbar">
+         <div >
+            <button type="button" class="cine-controls save-button" ng-click="save()" data-toggle="tooltip" title="Save PACS configuration"><i></i></button>
+         </div>
+         <div >
+            <button type="button" class="cine-controls plus-button" ng-click="addPacsServer()" data-toggle="tooltip" title="Add PACS server"><i></i></button>
+            <button type="button" class="cine-controls pen-button" ng-click="editPacsServer()" data-toggle="tooltip" title="Edit PACS server" ng-disabled="selectedServer==null"><i></i></button>
+         </div>
+         <div>
+            <button type="button" class="cine-controls delete-button" ng-click="deletePacsServer()" data-toggle="tooltip" title="Delete PACS server" ng-disabled="selectedServer==null"><i></i></button>
+         </div>
+      </div>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-footer">
+      <a class="form-btn" ng-click="close()" translate="DIALOGS_CLOSE"></a>
+   </div>
+</div>

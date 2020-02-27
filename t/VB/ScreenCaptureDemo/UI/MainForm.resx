@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_sbMain.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="_sbiText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="_sbMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 432</value>
+  </data>
+  <data name="_sbMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>608, 22</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_sbMain.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_sbMain.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_sbMain.Name" xml:space="preserve">
+    <value>_sbMain</value>
+  </data>
+  <data name="&gt;&gt;_sbMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_sbMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_sbMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_mmMain.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>130, 17</value>
+  </data>
+  <data name="_miFileSaveAs.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_miFileSaveAs.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+S</value>
+  </data>
+  <data name="_miFileSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="_miFileSaveAs.Text" xml:space="preserve">
+    <value>S&amp;ave As</value>
+  </data>
+  <data name="_miFileExit.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+F4</value>
+  </data>
+  <data name="_miFileExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="_miFileExit.Text" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="_miFile.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+F</value>
+  </data>
+  <data name="_miFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="_miFile.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="_miEditCut.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_miEditCut.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+X</value>
+  </data>
+  <data name="_miEditCut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="_miEditCut.Text" xml:space="preserve">
+    <value>Cu&amp;t</value>
+  </data>
+  <data name="_miEditCopy.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_miEditCopy.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+C</value>
+  </data>
+  <data name="_miEditCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="_miEditCopy.Text" xml:space="preserve">
+    <value>&amp;Copy</value>
+  </data>
+  <data name="_miEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
+  </data>
+  <data name="_miEdit.Text" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="_miCaptureActiveWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureActiveWindow.Text" xml:space="preserve">
+    <value>Active &amp;Window</value>
+  </data>
+  <data name="_miCaptureActiveClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureActiveClient.Text" xml:space="preserve">
+    <value>Active &amp;Client</value>
+  </data>
+  <data name="_miCaptureFullScreen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureFullScreen.Text" xml:space="preserve">
+    <value>&amp;Full Screen</value>
+  </data>
+  <data name="_miCaptureSelectedObject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureSelectedObject.Text" xml:space="preserve">
+    <value>&amp;Selected Object</value>
+  </data>
+  <data name="_miCaptureMenuUnderCursor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureMenuUnderCursor.Text" xml:space="preserve">
+    <value>&amp;Menu Under Cursor</value>
+  </data>
+  <data name="_miCaptureSelectedArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureSelectedArea.Text" xml:space="preserve">
+    <value>Selected &amp;Area</value>
+  </data>
+  <data name="_miCaptureWallpaper.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureWallpaper.Text" xml:space="preserve">
+    <value>Wall&amp;paper</value>
+  </data>
+  <data name="_miCaptureMouseCursor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureMouseCursor.Text" xml:space="preserve">
+    <value>Mouse C&amp;ursor</value>
+  </data>
+  <data name="_miCaptureWindowUnderCursor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureWindowUnderCursor.Text" xml:space="preserve">
+    <value>Window Un&amp;der Cursor</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 6</value>
+  </data>
+  <data name="_miCaptureStopCapture.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_miCaptureStopCapture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureStopCapture.Text" xml:space="preserve">
+    <value>St&amp;op Capture</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 6</value>
+  </data>
+  <data name="_miCaptureFromExeDialogTree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureFromExeDialogTree.Text" xml:space="preserve">
+    <value>From Exe Dialog - &amp;Tree</value>
+  </data>
+  <data name="_miCaptureFromExeDialogTabbedView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="_miCaptureFromExeDialogTabbedView.Text" xml:space="preserve">
+    <value>From Exe Dialog - Ta&amp;bbed View</value>
+  </data>
+  <data name="_miCapture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="_miCapture.Text" xml:space="preserve">
+    <value>&amp;Capture</value>
+  </data>
+  <data name="_miOptionsCaptureOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 22</value>
+  </data>
+  <data name="_miOptionsCaptureOptions.Text" xml:space="preserve">
+    <value>&amp;Capture Options ...</value>
+  </data>
+  <data name="_miOptionsCaptureAreaOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 22</value>
+  </data>
+  <data name="_miOptionsCaptureAreaOptions.Text" xml:space="preserve">
+    <value>Capture &amp;Area Options ...</value>
+  </data>
+  <data name="_miOptionsCaptureObjectOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 22</value>
+  </data>
+  <data name="_miOptionsCaptureObjectOptions.Text" xml:space="preserve">
+    <value>Capture &amp;Object Options ...</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 6</value>
+  </data>
+  <data name="_miOptionsMinimizeApplicationOnCapture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 22</value>
+  </data>
+  <data name="_miOptionsMinimizeApplicationOnCapture.Text" xml:space="preserve">
+    <value>&amp;Minimize Application On Capture</value>
+  </data>
+  <data name="_miOptionsActivateApplicationAfterCapture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 22</value>
+  </data>
+  <data name="_miOptionsActivateApplicationAfterCapture.Text" xml:space="preserve">
+    <value>Acti&amp;vate Application After Capture</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 6</value>
+  </data>
+  <data name="_miOptionsBeepOnCapture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 22</value>
+  </data>
+  <data name="_miOptionsBeepOnCapture.Text" xml:space="preserve">
+    <value>&amp;Beep On Capture</value>
+  </data>
+  <data name="_miOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="_miOptions.Text" xml:space="preserve">
+    <value>&amp;Options</value>
+  </data>
+  <data name="_miViewStatusBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="_miViewStatusBar.Text" xml:space="preserve">
+    <value>&amp;Status Bar</value>
+  </data>
+  <data name="_miView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="_miView.Text" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="_miHelpAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 22</value>
+  </data>
+  <data name="_miHelpAbout.Text" xml:space="preserve">
+    <value>&amp;About Screen Capture Demo ...</value>
+  </data>
+  <data name="_miHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="_miHelp.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="_mmMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_mmMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>608, 24</value>
+  </data>
+  <data name="_mmMain.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_mmMain.Text" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;_mmMain.Name" xml:space="preserve">
+    <value>_mmMain</value>
+  </data>
+  <data name="&gt;&gt;_mmMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mmMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_mmMain.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>608, 454</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAICAAAAEACACoCAAAJgAAABAQAAABABgAaAMAAM4IAAAoAAAAIAAAAEAAAAABAAgAAAAAAAAE
+        AAAAAAAAAAAAAAABAAAAAQAAAAAAAFkfCwBwJRMAbzEVAHA6FwBQGj4Acx4nAFwwIwBtNC8AdkAdAGhA
+        IQB+SCwAd0g9AHZYOgBsdzgAOhBxAEcUWwBkHE8AVzBOAGEtTABnNUUAczpMAGA5UwBQFXUATyplAFck
+        ZQBaMW0AWS19AF9BXABnSUYAc0tJAG5VTAB1WUgAdmhLAHd1QwB/ZlgAdXtTAHB0YQB6bHYAdXx3AJ0b
+        DQCpDAwAtAoKAKkWDQC9FA0ArRYSAL8fEACRKQ4AnTwXAKAjFgCzJhUAuTUZAII+MQCzNjIAyQoJANcJ
+        CwDHFg4A1BALAM4fEQDgFRMAyywUANwtFQDNNRcA5iwfAOMzGwDXNTgA5CYkAOYzKQDnLzAA5jU1AIlI
+        GQCiTBsAmFskAIBFMQCCWTgAok0hAIZhPQCmZCEApmE9AN5GHQDjUR8Ayl8lAMFGOQDsVS8A7V4xAMt4
+        LQDRcSgA2XsyANY/QQCLXEYAp15EAL1aTACHZkgAkWVMAIFzSwCLaVMAlmpWAI58UACWdFkAqmFFALZ9
+        QgCnZ1IAvmNXAK9zXwC/clkAmXhiAJF1dQCnfWUAo3t1ANRSSwDnSEgA5E9QAOVRUgDOa18AynFwAOhn
+        ZwDobnAA63h1AGesPwB0nEYAWrl9ADT5SAA54HwAW8ZVAFT+VgBn9mEAd/lzANKLLwDKhzUA4Is0AI6B
+        VAC4iV8AgYB2AJ+QeQCjhWoApYt0ALCDfwCslHoAsZF4ANSURQDLk1UA5p1fANqjSgDdq18A4LJPAOua
+        dADmrmAA4LNuAO6kdQDxsn4AksV9AOXBcgAwD6wAOBOyAEsZlQBLLpMAQRaqAEQVuABreosAVFmvADgX
+        4gBDMOoATkPHAGFf4ABQfvgAyH2AAHuYnABftpQAXpatAHOaqwBiprIARPuhADmp/QA5tPYAfoTDAGqv
+        1QBWu/4AaLTkAHus9wA63v8APfz5AGPA6wB2xfUAUfv+AHL8/gCQl50AqYqGAL+LiwCumYAAs5iFALiZ
+        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
+        9fSAAAD29fR/TSoAAADjb26wHxWwHxX29fSAAADw7Oh/TSr29fSAAAD29fR/TSr29fSAAAD29fR/TSrc
+        XFq7JB6yJx+zKCD29fT29fT29fR/TSr29fT29fT29fR/TSqqf2v29fSpi3Z/TSqwHxXdUVOwHxWwHxWw
+        HxWwHxWwHxWwHxWwHxWwHxWwHxWwHxWwHxWwHxWwHxWwHxWwHxXQRUB/TSr29fR/TSr29fR/TSr29fSw
+        HxWwHxX29fR/TSr29fT29fSpi3awHxWwHxXWY15/TSr29fT29fR/TSp/TSr29fSAAACAAAD29fR/TSp/
+        TSr29fT29fSwHxWwHxXszMh/TSr29fSAAAD29fR/TSp/TSr29fT29fR/TSp/TSr29fSwHxWwHxWwHxXa
+        o5vt7u9/TSr29fT29fT29fR/TSp/TSr29fT29fR/TSp/TSr29fT29fT29fSlfFbt9usAAABm3/WPzs+w
+        HxWwHxWwHxWwHxWwHxWwHxWwHxWwHxWwHxWwHxWwHxVl9LoAAAAAAAAAAAD77ezwvrDnx8fgtbfer7Hd
+        q67dq63erbDgs7bmxsbxwLP66egAAAAAAAAAAAAAAAAAAAAAAADso5Hkn4jitqnbq63brKzit6rloovt
+        o5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADvrJHvrJEAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD8PwAA4AcAAMADAACAAQAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAwAMAAPAP
+        AAD+fwAA
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Screen Capture Demo</value>
+  </data>
+  <data name="&gt;&gt;_sbiText.Name" xml:space="preserve">
+    <value>_sbiText</value>
+  </data>
+  <data name="&gt;&gt;_sbiText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miFile.Name" xml:space="preserve">
+    <value>_miFile</value>
+  </data>
+  <data name="&gt;&gt;_miFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miFileSaveAs.Name" xml:space="preserve">
+    <value>_miFileSaveAs</value>
+  </data>
+  <data name="&gt;&gt;_miFileSaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miFileExit.Name" xml:space="preserve">
+    <value>_miFileExit</value>
+  </data>
+  <data name="&gt;&gt;_miFileExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miEdit.Name" xml:space="preserve">
+    <value>_miEdit</value>
+  </data>
+  <data name="&gt;&gt;_miEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miEditCut.Name" xml:space="preserve">
+    <value>_miEditCut</value>
+  </data>
+  <data name="&gt;&gt;_miEditCut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miEditCopy.Name" xml:space="preserve">
+    <value>_miEditCopy</value>
+  </data>
+  <data name="&gt;&gt;_miEditCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCapture.Name" xml:space="preserve">
+    <value>_miCapture</value>
+  </data>
+  <data name="&gt;&gt;_miCapture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureActiveWindow.Name" xml:space="preserve">
+    <value>_miCaptureActiveWindow</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureActiveWindow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureActiveClient.Name" xml:space="preserve">
+    <value>_miCaptureActiveClient</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureActiveClient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureFullScreen.Name" xml:space="preserve">
+    <value>_miCaptureFullScreen</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureFullScreen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureSelectedObject.Name" xml:space="preserve">
+    <value>_miCaptureSelectedObject</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureSelectedObject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureMenuUnderCursor.Name" xml:space="preserve">
+    <value>_miCaptureMenuUnderCursor</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureMenuUnderCursor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureSelectedArea.Name" xml:space="preserve">
+    <value>_miCaptureSelectedArea</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureSelectedArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureWallpaper.Name" xml:space="preserve">
+    <value>_miCaptureWallpaper</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureWallpaper.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureMouseCursor.Name" xml:space="preserve">
+    <value>_miCaptureMouseCursor</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureMouseCursor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureWindowUnderCursor.Name" xml:space="preserve">
+    <value>_miCaptureWindowUnderCursor</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureWindowUnderCursor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureStopCapture.Name" xml:space="preserve">
+    <value>_miCaptureStopCapture</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureStopCapture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureFromExeDialogTree.Name" xml:space="preserve">
+    <value>_miCaptureFromExeDialogTree</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureFromExeDialogTree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureFromExeDialogTabbedView.Name" xml:space="preserve">
+    <value>_miCaptureFromExeDialogTabbedView</value>
+  </data>
+  <data name="&gt;&gt;_miCaptureFromExeDialogTabbedView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miOptions.Name" xml:space="preserve">
+    <value>_miOptions</value>
+  </data>
+  <data name="&gt;&gt;_miOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsCaptureOptions.Name" xml:space="preserve">
+    <value>_miOptionsCaptureOptions</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsCaptureOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsCaptureAreaOptions.Name" xml:space="preserve">
+    <value>_miOptionsCaptureAreaOptions</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsCaptureAreaOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsCaptureObjectOptions.Name" xml:space="preserve">
+    <value>_miOptionsCaptureObjectOptions</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsCaptureObjectOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsMinimizeApplicationOnCapture.Name" xml:space="preserve">
+    <value>_miOptionsMinimizeApplicationOnCapture</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsMinimizeApplicationOnCapture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsActivateApplicationAfterCapture.Name" xml:space="preserve">
+    <value>_miOptionsActivateApplicationAfterCapture</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsActivateApplicationAfterCapture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
+    <value>toolStripSeparator4</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsBeepOnCapture.Name" xml:space="preserve">
+    <value>_miOptionsBeepOnCapture</value>
+  </data>
+  <data name="&gt;&gt;_miOptionsBeepOnCapture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miView.Name" xml:space="preserve">
+    <value>_miView</value>
+  </data>
+  <data name="&gt;&gt;_miView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miViewStatusBar.Name" xml:space="preserve">
+    <value>_miViewStatusBar</value>
+  </data>
+  <data name="&gt;&gt;_miViewStatusBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miHelp.Name" xml:space="preserve">
+    <value>_miHelp</value>
+  </data>
+  <data name="&gt;&gt;_miHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_miHelpAbout.Name" xml:space="preserve">
+    <value>_miHelpAbout</value>
+  </data>
+  <data name="&gt;&gt;_miHelpAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Resx_ActiveCapture" xml:space="preserve">
+    <value>To activate the capture, press &lt;{0}&gt;</value>
+  </data>
+  <data name="Resx_CaptureActiveClient" xml:space="preserve">
+    <value>Capture the Active Client</value>
+  </data>
+  <data name="Resx_CaptureActiveWindow" xml:space="preserve">
+    <value>Capture the Active Window</value>
+  </data>
+  <data name="Resx_CapturedImage" xml:space="preserve">
+    <value>Captured Image </value>
+  </data>
+  <data name="Resx_CaptureEXEFileTabbed" xml:space="preserve">
+    <value>Capture from EXE file, Tabbed View</value>
+  </data>
+  <data name="Resx_CaptureEXEFileTree" xml:space="preserve">
+    <value>Capture from EXE file, Tree View</value>
+  </data>
+  <data name="Resx_CaptureFullScreen" xml:space="preserve">
+    <value>Capture Full Screen</value>
+  </data>
+  <data name="Resx_CaptureMenuUnderCursor" xml:space="preserve">
+    <value>Capture the Menu Under the Cursor</value>
+  </data>
+  <data name="Resx_CaptureMouseCursor" xml:space="preserve">
+    <value>Capture the Mouse Cursor</value>
+  </data>
+  <data name="Resx_CaptureSelectedArea" xml:space="preserve">
+    <value>Capture a Selected Area</value>
+  </data>
+  <data name="Resx_CaptureSelectedObject" xml:space="preserve">
+    <value>Capture the Selected Object</value>
+  </data>
+  <data name="Resx_CaptureWallpaper" xml:space="preserve">
+    <value>Capture the Wallpaper</value>
+  </data>
+  <data name="Resx_CaptureWindowsUnderCursor" xml:space="preserve">
+    <value>Capture the Window Under the Cursor</value>
+  </data>
+  <data name="Resx_NoCapture" xml:space="preserve">
+    <value>Ready - No Capture Activated</value>
+  </data>
+</root>

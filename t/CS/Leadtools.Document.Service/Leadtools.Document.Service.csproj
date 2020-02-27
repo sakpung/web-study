@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{193FAA32-FA12-4089-A347-4DBCD0B48001}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leadtools.Document.Service</RootNamespace>
+    <AssemblyName>Leadtools.Document.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocumentService.cs" />
+    <Compile Include="Document\AnnotationsRedactionOptions.cs" />
+    <Compile Include="Document\Compare\CompareBaseData.cs" />
+    <Compile Include="Document\Compare\CompareJobData.cs" />
+    <Compile Include="Document\Compare\CompareStatus.cs" />
+    <Compile Include="Document\Compare\DifferenceOperation.cs" />
+    <Compile Include="Document\Compare\MarkdownReportOptions.cs" />
+    <Compile Include="Document\Compare\ReportOptions.cs" />
+    <Compile Include="Document\Converter\DocumentConverterEmptyPageMode.cs" />
+    <Compile Include="Document\Converter\DocumentConverterJobErrorMode.cs" />
+    <Compile Include="Document\Converter\DocumentConverterAnnotationsMode.cs" />
+    <Compile Include="Document\Converter\JobData.cs" />
+    <Compile Include="Document\Converter\DocumentConverterJobStatus.cs" />
+    <Compile Include="Document\Converter\StatusJobData.cs" />
+    <Compile Include="Document\Converter\DocumentConverterSvgImagesRecognitionMode.cs" />
+    <Compile Include="Document\ConvertRedactionOptions.cs" />
+    <Compile Include="Document\DocumentAnnotations.cs" />
+    <Compile Include="Document\DocumentRedactionMode.cs" />
+    <Compile Include="Document\DocumentRedactionOptions.cs" />
+    <Compile Include="Document\DocumentRotateFlip.cs" />
+    <Compile Include="Document\DocumentTextImagesRecognitionMode.cs" />
+    <Compile Include="Document\DocumentViewSizeMode.cs" />
+    <Compile Include="Document\DocumentViewItemType.cs" />
+    <Compile Include="Document\DocumentViewCommand.cs" />
+    <Compile Include="Document\DocumentViewOptions.cs" />
+    <Compile Include="Document\DocumentViewAnnotationsUserMode.cs" />
+    <Compile Include="Document\DocumentViewLayout.cs" />
+    <Compile Include="Document\LoadDocumentOptions.cs" />
+    <Compile Include="Document\UploadDocumentOptions.cs" />
+    <Compile Include="Document\DocumentHistoryModifyType.cs" />
+    <Compile Include="Document\DocumentHistoryItem.cs" />
+    <Compile Include="Document\DocumentPages.cs" />
+    <Compile Include="Document\DocumentImages.cs" />
+    <Compile Include="Document\DocumentTextExtractionMode.cs" />
+    <Compile Include="Document\DocumentText.cs" />
+    <Compile Include="Document\DocumentHistory.cs" />
+    <Compile Include="Document\DocumentLinkType.cs" />
+    <Compile Include="Document\DocumentPageFitType.cs" />
+    <Compile Include="Document\DocumentLinkTarget.cs" />
+    <Compile Include="Document\DocumentLink.cs" />
+    <Compile Include="Document\DocumentFontStyles.cs" />
+    <Compile Include="Document\DocumentStructure.cs" />
+    <Compile Include="Document\DocumentPage.cs" />
+    <Compile Include="Document\DocumentDocuments.cs" />
+    <Compile Include="Document\LEADDocument.cs" />
+    <Compile Include="Document\DocumentPageDescriptor.cs" />
+    <Compile Include="Document\DocumentDescriptor.cs" />
+    <Compile Include="Document\DocumentBookmark.cs" />
+    <Compile Include="Document\DocumentCacheOptions.cs" />
+    <Compile Include="Document\ViewRedactionOptions.cs" />
+    <Compile Include="Document\Writer\DocumentPageRestriction.cs" />
+    <Compile Include="Document\Writer\DocumentOptions.cs" />
+    <Compile Include="Document\Writer\ColoredImageCompressionType.cs" />
+    <Compile Include="Document\Writer\OneBitImageCompressionType.cs" />
+    <Compile Include="Document\Writer\PdfDocumentEncryptionMode.cs" />
+    <Compile Include="Document\Writer\PdfAutoBookmark.cs" />
+    <Compile Include="Document\Writer\PdfDocumentPageFitType.cs" />
+    <Compile Include="Document\Writer\PdfDocumentPageLayoutType.cs" />
+    <Compile Include="Document\Writer\PdfDocumentPageModeType.cs" />
+    <Compile Include="Document\Writer\DocumentImageOverTextMode.cs" />
+    <Compile Include="Document\Writer\DocumentImageOverTextSize.cs" />
+    <Compile Include="Document\Writer\PdfCustomBookmark.cs" />
+    <Compile Include="Document\Writer\PdfDocumentType.cs" />
+    <Compile Include="Document\Writer\PdfDocumentOptions.cs" />
+    <Compile Include="Document\Writer\LtdDocumentOptions.cs" />
+    <Compile Include="Document\Writer\DocumentDropObjects.cs" />
+    <Compile Include="Document\Writer\DocumentTextMode.cs" />
+    <Compile Include="Document\Writer\DocDocumentOptions.cs" />
+    <Compile Include="Document\Writer\RtfDocumentOptions.cs" />
+    <Compile Include="Document\Writer\DocumentFontTypes.cs" />
+    <Compile Include="Document\Writer\DocumentFontEmbedMode.cs" />
+    <Compile Include="Document\Writer\HtmlDocumentOptions.cs" />
+    <Compile Include="Document\Writer\PubDocumentOptions.cs" />
+    <Compile Include="Document\Writer\MobDocumentOptions.cs" />
+    <Compile Include="Document\Writer\SvgDocumentOptions.cs" />
+    <Compile Include="Document\Writer\TextDocumentType.cs" />
+    <Compile Include="Document\Writer\TextDocumentOptions.cs" />
+    <Compile Include="Document\Writer\EmfDocumentOptions.cs" />
+    <Compile Include="Document\Writer\XpsDocumentOptions.cs" />
+    <Compile Include="Document\Writer\DocxDocumentOptions.cs" />
+    <Compile Include="Document\Writer\XlsDocumentOptions.cs" />
+    <Compile Include="Document\Writer\AltoXmlMeasurementUnit.cs" />
+    <Compile Include="Document\Writer\AltoXmlDocumentOptions.cs" />
+    <Compile Include="Document\Writer\DocumentFormat.cs" />
+    <Compile Include="Internal\LeadDoubleTools.cs" />
+    <Compile Include="Models\Annotations\GetAnnotationsIBMResponse.cs" />
+    <Compile Include="Models\Annotations\GetAnnotationsLEADRequest.cs" />
+    <Compile Include="Models\Annotations\GetAnnotationsLEADResponse.cs" />
+    <Compile Include="Models\Annotations\GetAnnotationsRequest.cs" />
+    <Compile Include="Models\Annotations\GetAnnotationsResponse.cs" />
+    <Compile Include="Models\Annotations\LEADAnnotation.cs" />
+    <Compile Include="Models\Annotations\SetAnnotationsIBMRequest.cs" />
+    <Compile Include="Models\Annotations\IBMAnnotation.cs" />
+    <Compile Include="Models\Annotations\SetAnnotationsIBMResponse.cs" />
+    <Compile Include="Models\Annotations\GetAnnotationsIBMRequest.cs" />
+    <Compile Include="Models\Annotations\SetAnnotationsLEADRequest.cs" />
+    <Compile Include="Models\Annotations\SetAnnotationsLEADResponse.cs" />
+    <Compile Include="Models\Annotations\SetAnnotationsRequest.cs" />
+    <Compile Include="Models\Annotations\SetAnnotationsResponse.cs" />
+    <Compile Include="Models\Annotations\Annotation.cs" />
+    <Compile Include="Models\Compare\AbortCompareJobRequest.cs" />
+    <Compile Include="Models\Compare\QueryCompareJobResponse.cs" />
+    <Compile Include="Models\Compare\QueryCompareJobRequest.cs" />
+    <Compile Include="Models\Compare\RunCompareJobResponse.cs" />
+    <Compile Include="Models\Compare\DeleteCompareJobRequest.cs" />
+    <Compile Include="Models\Compare\RunCompareJobRequest.cs" />
+    <Compile Include="Models\Factory\CloneDocumentRequest.cs" />
+    <Compile Include="Models\Factory\CloneDocumentResponse.cs" />
+    <Compile Include="Models\Factory\LoadFromCacheResponse.cs" />
+    <Compile Include="Models\Factory\LoadFromUriRequest.cs" />
+    <Compile Include="Models\Factory\LoadFromUriResponse.cs" />
+    <Compile Include="Models\Factory\BeginUploadRequest.cs" />
+    <Compile Include="Models\Factory\BeginUploadResponse.cs" />
+    <Compile Include="Models\Factory\UploadDocumentBlobRequest.cs" />
+    <Compile Include="Models\Factory\UploadDocumentRequest.cs" />
+    <Compile Include="Models\Factory\EndUploadRequest.cs" />
+    <Compile Include="Models\Factory\AbortUploadDocumentRequest.cs" />
+    <Compile Include="Models\Factory\SaveToCacheRequest.cs" />
+    <Compile Include="Models\Factory\SaveToCacheResponse.cs" />
+    <Compile Include="Models\Factory\DeleteRequest.cs" />
+    <Compile Include="Models\Factory\CheckCacheInfoRequest.cs" />
+    <Compile Include="Models\Factory\CacheInfo.cs" />
+    <Compile Include="Models\Factory\CheckCacheInfoResponse.cs" />
+    <Compile Include="Models\Factory\DownloadAnnotationsRequest.cs" />
+    <Compile Include="Models\Factory\DownloadDocumentRequest.cs" />
+    <Compile Include="Models\Factory\LoadFromCacheRequest.cs" />
+    <Compile Include="Models\Page\GetAnnotationsRequest.cs" />
+    <Compile Include="Models\Page\GetAnnotationsResponse.cs" />
+    <Compile Include="Models\Page\SetAnnotationsRequest.cs" />
+    <Compile Include="Models\PreCache\PreCacheResponseItem.cs" />
+    <Compile Include="Models\PreCache\PreCacheResponseSizeItem.cs" />
+    <Compile Include="Models\PreCache\PreCacheDocumentRequest.cs" />
+    <Compile Include="Models\PreCache\ReportPreCacheRequest.cs" />
+    <Compile Include="Models\PreCache\PreCacheDocumentResponse.cs" />
+    <Compile Include="Models\PreCache\ReportPreCacheResponse.cs" />
+    <Compile Include="Models\ServiceError.cs" />
+    <Compile Include="Models\StatusJobConverter\RunConvertJobResponse.cs" />
+    <Compile Include="Models\StatusJobConverter\QueryConvertJobStatusRequest.cs" />
+    <Compile Include="Models\StatusJobConverter\QueryConvertJobStatusResponse.cs" />
+    <Compile Include="Models\StatusJobConverter\DeleteConvertJobStatusRequest.cs" />
+    <Compile Include="Models\StatusJobConverter\AbortConvertJobRequest.cs" />
+    <Compile Include="Models\StatusJobConverter\RunConvertJobRequest.cs" />
+    <Compile Include="Models\Structure\ParseStructureResponse.cs" />
+    <Compile Include="Models\Structure\ParseStructureRequest.cs" />
+    <Compile Include="Models\Document\DecryptRequest.cs" />
+    <Compile Include="Models\Document\DecryptResponse.cs" />
+    <Compile Include="Models\Document\GetHistoryRequest.cs" />
+    <Compile Include="Models\Document\GetHistoryResponse.cs" />
+    <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\Request.cs" />
+    <Compile Include="Models\Test\HeartbeatResponse.cs" />
+    <Compile Include="Models\Test\OcrEngineStatus.cs" />
+    <Compile Include="Models\Test\PingResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LeadSize.cs" />
+    <Compile Include="LeadRect.cs" />
+    <Compile Include="LeadPoint.cs" />
+    <Compile Include="RasterViewPerspective.cs" />
+    <Compile Include="RasterImageFormat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

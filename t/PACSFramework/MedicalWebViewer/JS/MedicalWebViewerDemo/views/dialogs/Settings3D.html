@@ -1,0 +1,122 @@
+﻿<div class="modal-content">
+   <div class="modal-header">
+      <h3 class="modal-title">{{'DIALOGS_3DSETTINGS_TITLE' | translate}}</h3>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-body">
+      <div class="form-horizontal" style="padding: 0 15px !important">
+
+         <div>
+            <h4 class="modal-title">General:</h4>
+         </div>
+
+         <div class="checkbox" style="margin-top: 5px">
+            <label>
+               <input type="checkbox" value="" id="showVolumeBorder" ng-model="source.showVolumeBorder">
+               Show Volume Border
+            </label>
+         </div>
+
+         <div class="checkbox" style="margin-top: 5px">
+            <label>
+               <input type="checkbox" value="" id="ShowRotationCube" ng-model="source.showRotationCube">
+               Show Rotation Cube
+            </label>
+         </div>
+
+         <div class="form-group" style="margin-top: 5px; padding: 0 15px !important">
+            <label class="col-md-4 control-label" for="studyColumns">Projection method:</label>
+            <div class="col-md-6 controls">
+               <select id="quality" class="study-dropdown w-dropdown" ng-model="source.projectionMethod">
+                  <option value=0>Orthogonal</option>
+                  <option value=1>Perspective</option>
+               </select>
+            </div>
+         </div>
+
+         <div class="form-group" style="margin-top: 5px; padding: 0 15px !important">
+            <label class="col-md-4 control-label" for="studyColumns">Resize Factor:</label>
+            <div class="col-md-6 controls">
+               <select id="quality" class="study-dropdown w-dropdown" ng-model="source.resizeFactor">
+                  <option value=1>Full</option>
+                  <option value=2>Half</option>
+                  <option value=4>Quarter</option>
+               </select>
+            </div>
+         </div>
+
+
+
+         <div id="VRT" ng-show="source.volumeType=='Volume'">
+            <div>
+               <h4 class=" modal-title">
+                  Volume:
+               </h4>
+            </div>
+
+            <div class="form-group">
+               <label class="col-md-4 control-label" for="studyColumns">Low Res Quality:</label>
+               <div class="col-md-6 controls">
+                  <input id="LowResQuality" type="number" class="form-control input-md" ng-model="source.lowResQuality" ng-disabled="layout.custom!=null" onkeydown="return Utils.isNumber(event,this);" />
+               </div>
+            </div>
+            <div class="form-group" ng-show="!isSelectorIndexValid()">
+               <div class="col-md-4"></div>
+               <div class="col-md-8">
+                  <div class="text-danger">{{getSelectorIndexError()}}</div>
+               </div>
+            </div>
+
+            <div class="checkbox" style="margin-top: 5px">
+               <label>
+                  <input type="checkbox" value="" ng-model="source.showClippingFrame">
+                  Show Clipping Frame
+               </label>
+            </div>
+         </div>
+
+
+
+         <div id="MPR" ng-show="source.volumeType=='MPR'">
+
+            <div>
+               <h4 class="modal-title">MPR:</h4>
+            </div>
+
+            <div class="checkbox" style="margin-top: 5px">
+               <label>
+                  <input type="checkbox" value="" id="showMPRCrossLines" ng-model="source.showCrossLines">
+                  Show Cross lines
+               </label>
+            </div>
+         </div>
+
+         <div id="SSD" ng-show="source.volumeType=='SSD'">
+
+            <div>
+               <h4 class="modal-title">SSD:</h4>
+            </div>
+
+            <div class="form-group">
+               <label class="col-md-4 control-label" for="studyColumns">Iso Threshold:</label>
+               <div class="col-md-6 controls">
+                  <input id="isoThreshold" type="number" class="form-control input-md" ng-model="source.isoThreshold" onkeydown="return Utils.isNumber(event,this);" />
+               </div>
+            </div>
+            <div class="form-group" ng-show="!isSelectorIndexValid()">
+               <div class="col-md-4"></div>
+               <div class="col-md-8">
+                  <div class="text-danger">{{getIsoThresholdError()}}</div>
+               </div>
+            </div>
+
+
+         </div>
+
+      </div>
+      <div class="divider"></div>
+      <div class="modal-footer">
+         <a class="form-btn" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="!isFormValid()"></a>
+         <a class="form-btn" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+      </div>
+   </div>

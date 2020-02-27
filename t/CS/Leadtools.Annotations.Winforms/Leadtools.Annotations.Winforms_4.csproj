@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1E69850-3D28-456F-91C6-3F241D46A551}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leadtools.Annotations.WinForms</RootNamespace>
+    <AssemblyName>Leadtools.Annotations.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>DEBUG;TRACE;LTV20_CONFIG;LEADTOOLS_V16_OR_LATER;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>0067</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V16_OR_LATER;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>0067</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>DEBUG;TRACE;LTV20_CONFIG;LEADTOOLS_V16_OR_LATER;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <NoWarn>0067</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V16_OR_LATER;LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <NoWarn>0067</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Codecs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Controls.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Controls.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Automation">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Automation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Engine">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Engine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Rendering.WinForms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.Rendering.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.BatesStamp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.BatesStamp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="Common\Viewer\AutomationImageViewer.cs">
+    </Compile>
+    <Compile Include="Common\Viewer\ImageViewerAutomationControl.cs" />
+    <Compile Include="Common\Viewer\AutomationInteractiveMode.cs" />
+    <Compile Include="Common\Viewer\RasterImageProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Forms\FillDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ContextMenu\PolyRuler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ContextMenu\Encrypt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationSimpleObjectsListControl.cs" />
+    <Compile Include="UI\Controls\AutomationObjectsListControl\ReviewTreeNode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationObjectsListControl\ReviewTreeNode.Designer.cs">
+      <DependentUpon>ReviewTreeNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationObjectsListControl\AutomationTreeNode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationObjectsListControl\AutomationObjectsListControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationObjectsListControl\PageTreeNode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationObjectsListControl\PageTreeNode.Designer.cs">
+      <DependentUpon>PageTreeNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationObjectsListControl\AnnObjectTreeNode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationObjectsListControl\AnnObjectTreeNode.Designer.cs">
+      <DependentUpon>AnnObjectTreeNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationReviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationReviewControl.designer.cs">
+      <DependentUpon>AutomationReviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\AutomationTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\AutomationUpdateObjectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\AutomationUpdateObjectDialog.designer.cs">
+      <DependentUpon>AutomationUpdateObjectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\Bates Stamp\BatesDateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\Bates Stamp\BatesDateDialog.Designer.cs">
+      <DependentUpon>BatesDateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\Bates Stamp\BatesNumberDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\Bates Stamp\BatesNumberDialog.Designer.cs">
+      <DependentUpon>BatesNumberDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\Bates Stamp\BatesStampDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\Bates Stamp\BatesStampDialog.Designer.cs">
+      <DependentUpon>BatesStampDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\CalibrationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\CalibrationDialog.Designer.cs">
+      <DependentUpon>CalibrationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\ColorPickerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\ColorPickerPanel.designer.cs">
+      <DependentUpon>ColorPickerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\CurrentObjectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\CurrentObjectDialog.designer.cs">
+      <DependentUpon>CurrentObjectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\SnapToGridPropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\SnapToGridPropertiesDialog.Designer.cs">
+      <DependentUpon>SnapToGridPropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PropertyGrid\Convertors\PictureConvertor.cs" />
+    <Compile Include="UI\PropertyGrid\Convertors\MediaConverter.cs" />
+    <Compile Include="UI\PropertyGrid\CustomEditors\Editors.cs" />
+    <Compile Include="UI\PropertyGrid\Descriptors\CustomPropertyDescriptor.cs" />
+    <Compile Include="UI\PropertyGrid\Descriptors\FillDescriptor.cs" />
+    <Compile Include="UI\PropertyGrid\Descriptors\FixedStateDescriptor.cs" />
+    <Compile Include="Common\Helpers\SafeNativeMethods.cs" />
+    <Compile Include="Common\Helpers\AutomationManagerHelper.cs" />
+    <Compile Include="UI\ContextMenu\ContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ContextMenu\MenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ContextMenu\Object.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ContextMenu\Redaction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ContextMenu\RubberStamp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ContextMenu\TextPointer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ContextMenu\TextRollup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\PropertyGrid\Convertors\FontConvertor.cs" />
+    <Compile Include="UI\PropertyGrid\Convertors\LengthConvertor.cs" />
+    <Compile Include="UI\PropertyGrid\Convertors\BrushConvertor.cs" />
+    <Compile Include="UI\Forms\MediaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\MediaForm.Designer.cs">
+      <DependentUpon>MediaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\PasswordDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PropertyGrid\Descriptors\LabelDescriptor.cs" />
+    <Compile Include="UI\PropertyGrid\Descriptors\LabelRestrictionDescriptor.cs" />
+    <Compile Include="UI\PropertyGrid\Descriptors\PointerArrowDescriptor.cs" />
+    <Compile Include="UI\PropertyGrid\Descriptors\StrokeDescriptor.cs" />
+    <Compile Include="UI\PropertyGrid\Descriptors\AutomationObjectDescriptor.cs" />
+    <Compile Include="UI\PropertyGrid\Descriptors\UnitsDescriptor.cs" />
+    <Compile Include="Common\Helpers\StringManager.cs" />
+    <Compile Include="Common\Helpers\Tools.cs" />
+    <Compile Include="Common\Helpers\Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Strings.resx" />
+    <EmbeddedResource Include="UI\ContextMenu\Audio.resx" />
+    <EmbeddedResource Include="UI\ContextMenu\MenuItem.resx">
+      <DependentUpon>MenuItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ContextMenu\Object.resx">
+      <DependentUpon>Object.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ContextMenu\Redaction.resx">
+      <DependentUpon>Redaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FillDialog.resx">
+      <DependentUpon>FillDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\SnapToGridPropertiesDialog.resx">
+      <DependentUpon>SnapToGridPropertiesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Controls\AutomationObjectsListControl\ReviewTreeNode.resx">
+      <DependentUpon>ReviewTreeNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\AutomationObjectsListControl\PageTreeNode.resx">
+      <DependentUpon>PageTreeNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\AutomationObjectsListControl\AnnObjectTreeNode.resx">
+      <DependentUpon>AnnObjectTreeNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\AutomationReviewControl.resx">
+      <DependentUpon>AutomationReviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\AutomationUpdateObjectDialog.resx">
+      <DependentUpon>AutomationUpdateObjectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\CalibrationDialog.resx">
+      <DependentUpon>CalibrationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\ColorPickerPanel.resx">
+      <DependentUpon>ColorPickerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\CurrentObjectDialog.resx">
+      <DependentUpon>CurrentObjectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Audio.png" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\SelectRectangle.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolAudio.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolButton.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolClosedCurve.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolCrossProduct.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolCurve.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolEllipse.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolEncrypt.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolFreehand.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolFreehandHotspot.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolHilite.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolHotspot.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolLine.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolNote.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolPoint.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolPointer.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolPolygon.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolPolyline.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolPolyruler.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolProtractor.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolRectangle.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolRedaction.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolRtf.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolRubberStamp.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolRuler.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolSelect.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolStamp.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolText.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolTextPointer.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolTextRollup.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Draw\ToolVideo.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Edit\Anchor.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Edit\ControlPoint.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Edit\Rotate.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Edit\SelectedObject.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Edit\SelectObject.cur" />
+    <EmbeddedResource Include="Resources\Hotspot.png" />
+    <EmbeddedResource Include="Resources\Lock.png" />
+    <EmbeddedResource Include="Resources\Point.png" />
+    <EmbeddedResource Include="Resources\Reply.png" />
+    <EmbeddedResource Include="Resources\Content.png" />
+    <EmbeddedResource Include="Resources\Stamps\Approved.png" />
+    <EmbeddedResource Include="Resources\Stamps\Assigned.png" />
+    <EmbeddedResource Include="Resources\Stamps\Checked.png" />
+    <EmbeddedResource Include="Resources\Stamps\Client.png" />
+    <EmbeddedResource Include="Resources\Stamps\Copy.png" />
+    <EmbeddedResource Include="Resources\Stamps\Draft.png" />
+    <EmbeddedResource Include="Resources\Stamps\Extended.png" />
+    <EmbeddedResource Include="Resources\Stamps\Fax.png" />
+    <EmbeddedResource Include="Resources\Stamps\Faxed.png" />
+    <EmbeddedResource Include="Resources\Stamps\Important.png" />
+    <EmbeddedResource Include="Resources\Stamps\Invoice.png" />
+    <EmbeddedResource Include="Resources\Stamps\Notice.png" />
+    <EmbeddedResource Include="Resources\Stamps\Official.png" />
+    <EmbeddedResource Include="Resources\Stamps\OnFile.png" />
+    <EmbeddedResource Include="Resources\Stamps\Paid.png" />
+    <EmbeddedResource Include="Resources\Stamps\Passed.png" />
+    <EmbeddedResource Include="Resources\Stamps\Pending.png" />
+    <EmbeddedResource Include="Resources\Stamps\Processed.png" />
+    <EmbeddedResource Include="Resources\Stamps\Received.png" />
+    <EmbeddedResource Include="Resources\Stamps\Rejected.png" />
+    <EmbeddedResource Include="Resources\Stamps\Release.png" />
+    <EmbeddedResource Include="Resources\Stamps\Sent.png" />
+    <EmbeddedResource Include="Resources\Stamps\Shipped.png" />
+    <EmbeddedResource Include="Resources\Stamps\TopSecret.png" />
+    <EmbeddedResource Include="Resources\Stamps\Urgent.png" />
+    <EmbeddedResource Include="Resources\Stamps\Void.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Audio.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Button.png" />
+    <EmbeddedResource Include="Resources\ToolBar\ClosedCurve.png" />
+    <EmbeddedResource Include="Resources\ToolBar\CrossProduct.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Curve.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Ellipse.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Encrypt.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Freehand.png" />
+    <EmbeddedResource Include="Resources\ToolBar\FreehandHotspot.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Hilite.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Hotspot.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Image.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Line.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Media.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Note.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Point.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Pointer.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Polygon.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Polyline.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Polyruler.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Protractor.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Rectangle.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Redaction.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Rtf.png" />
+    <EmbeddedResource Include="Resources\ToolBar\RubberStamp.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Ruler.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Select.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Stamp.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Text.png" />
+    <EmbeddedResource Include="Resources\ToolBar\TextPointer.png" />
+    <EmbeddedResource Include="Resources\ToolBar\TextRollup.png" />
+    <EmbeddedResource Include="Resources\ToolBar\Video.png" />
+    <EmbeddedResource Include="Resources\Video.png" />
+    <EmbeddedResource Include="UI\Forms\MediaForm.resx">
+      <DependentUpon>MediaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\PasswordDialog.resx">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\EncryptPrimary.png" />
+    <EmbeddedResource Include="Resources\EncryptSecondary.png" />
+    <EmbeddedResource Include="Resources\StickyNote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RichTextMenu\BackgroundColor.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\Bold.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\Bullets.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\Center.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\IndentLeft.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\IndentRight.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\Italic.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\Left.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\Numbers.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\Right.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\TextColor.png" />
+    <EmbeddedResource Include="Resources\RichTextMenu\Underline.png" />
+    <EmbeddedResource Include="Resources\ToolBar\TextHilite.png" />
+    <EmbeddedResource Include="Resources\ToolBar\StickyNote.png" />
+    <EmbeddedResource Include="Resources\ToolBar\TextStrikeout.png" />
+    <EmbeddedResource Include="Resources\ToolBar\TextUnderline.png" />
+    <EmbeddedResource Include="Resources\ToolBar\TextRedaction.png" />
+    <EmbeddedResource Include="UI\Forms\Bates Stamp\BatesDateDialog.resx">
+      <DependentUpon>BatesDateDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\Bates Stamp\BatesNumberDialog.resx">
+      <DependentUpon>BatesNumberDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\Bates Stamp\BatesStampDialog.resx">
+      <DependentUpon>BatesStampDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\Resources\Doc.ico">
+      <Link>Resources\Doc.ico</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

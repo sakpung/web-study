@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>LEAD テンプレート</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnBrowse.Name" xml:space="preserve">
+    <value>_btnBrowse</value>
+  </data>
+  <data name="&gt;&gt;_btnBrowse.Parent" xml:space="preserve">
+    <value>_gbFileOptions</value>
+  </data>
+  <data name="&gt;&gt;_btnBrowse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnBrowse.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_btnLoad.Name" xml:space="preserve">
+    <value>_btnLoad</value>
+  </data>
+  <data name="&gt;&gt;_btnLoad.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnLoad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnLoad.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_btnOK.Name" xml:space="preserve">
+    <value>_btnOK</value>
+  </data>
+  <data name="&gt;&gt;_btnOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_btnSave.Name" xml:space="preserve">
+    <value>_btnSave</value>
+  </data>
+  <data name="&gt;&gt;_btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnSave.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cmbBrightness.Name" xml:space="preserve">
+    <value>_cmbBrightness</value>
+  </data>
+  <data name="&gt;&gt;_cmbBrightness.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_cmbBrightness.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbBrightness.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cmbCompression.Name" xml:space="preserve">
+    <value>_cmbCompression</value>
+  </data>
+  <data name="&gt;&gt;_cmbCompression.Parent" xml:space="preserve">
+    <value>_gbMemoryOptions</value>
+  </data>
+  <data name="&gt;&gt;_cmbCompression.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbCompression.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cmbContrast.Name" xml:space="preserve">
+    <value>_cmbContrast</value>
+  </data>
+  <data name="&gt;&gt;_cmbContrast.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_cmbContrast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbContrast.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_cmbFileFormat.Name" xml:space="preserve">
+    <value>_cmbFileFormat</value>
+  </data>
+  <data name="&gt;&gt;_cmbFileFormat.Parent" xml:space="preserve">
+    <value>_gbFileOptions</value>
+  </data>
+  <data name="&gt;&gt;_cmbFileFormat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbFileFormat.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cmbHalftone.Name" xml:space="preserve">
+    <value>_cmbHalftone</value>
+  </data>
+  <data name="&gt;&gt;_cmbHalftone.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_cmbHalftone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbHalftone.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_cmbHighlight.Name" xml:space="preserve">
+    <value>_cmbHighlight</value>
+  </data>
+  <data name="&gt;&gt;_cmbHighlight.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_cmbHighlight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbHighlight.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cmbOrientation.Name" xml:space="preserve">
+    <value>_cmbOrientation</value>
+  </data>
+  <data name="&gt;&gt;_cmbOrientation.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_cmbOrientation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbOrientation.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_cmbPixelType.Name" xml:space="preserve">
+    <value>_cmbPixelType</value>
+  </data>
+  <data name="&gt;&gt;_cmbPixelType.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_cmbPixelType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbPixelType.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_cmbUnit.Name" xml:space="preserve">
+    <value>_cmbUnit</value>
+  </data>
+  <data name="&gt;&gt;_cmbUnit.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_cmbUnit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbUnit.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_cmbXRes.Name" xml:space="preserve">
+    <value>_cmbXRes</value>
+  </data>
+  <data name="&gt;&gt;_cmbXRes.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_cmbXRes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbXRes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_cmbYRes.Name" xml:space="preserve">
+    <value>_cmbYRes</value>
+  </data>
+  <data name="&gt;&gt;_cmbYRes.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_cmbYRes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cmbYRes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_gbFileOptions.Name" xml:space="preserve">
+    <value>_gbFileOptions</value>
+  </data>
+  <data name="&gt;&gt;_gbFileOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbFileOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbFileOptions.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_gbImageFrame.Name" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_gbImageFrame.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbImageFrame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbImageFrame.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_gbImgeEfx.Name" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_gbImgeEfx.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbImgeEfx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbImgeEfx.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_gbMemoryOptions.Name" xml:space="preserve">
+    <value>_gbMemoryOptions</value>
+  </data>
+  <data name="&gt;&gt;_gbMemoryOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbMemoryOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbMemoryOptions.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferMode.Name" xml:space="preserve">
+    <value>_gbTransferMode</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferMode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbTransferMode.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_lblBrightness.Name" xml:space="preserve">
+    <value>_lblBrightness</value>
+  </data>
+  <data name="&gt;&gt;_lblBrightness.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_lblBrightness.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblBrightness.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_lblCompression.Name" xml:space="preserve">
+    <value>_lblCompression</value>
+  </data>
+  <data name="&gt;&gt;_lblCompression.Parent" xml:space="preserve">
+    <value>_gbMemoryOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblCompression.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblCompression.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblContrast.Name" xml:space="preserve">
+    <value>_lblContrast</value>
+  </data>
+  <data name="&gt;&gt;_lblContrast.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_lblContrast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblContrast.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_lblFileName.Name" xml:space="preserve">
+    <value>_lblFileName</value>
+  </data>
+  <data name="&gt;&gt;_lblFileName.Parent" xml:space="preserve">
+    <value>_gbFileOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblFileName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblFileName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_lblFormat.Name" xml:space="preserve">
+    <value>_lblFormat</value>
+  </data>
+  <data name="&gt;&gt;_lblFormat.Parent" xml:space="preserve">
+    <value>_gbFileOptions</value>
+  </data>
+  <data name="&gt;&gt;_lblFormat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblFormat.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameBottom.Name" xml:space="preserve">
+    <value>_lblFrameBottom</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameBottom.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameBottom.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameLeft.Name" xml:space="preserve">
+    <value>_lblFrameLeft</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameLeft.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameLeft.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameRight.Name" xml:space="preserve">
+    <value>_lblFrameRight</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameRight.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameRight.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameTop.Name" xml:space="preserve">
+    <value>_lblFrameTop</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameTop.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblFrameTop.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_lblHalftone.Name" xml:space="preserve">
+    <value>_lblHalftone</value>
+  </data>
+  <data name="&gt;&gt;_lblHalftone.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_lblHalftone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblHalftone.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_lblHighlight.Name" xml:space="preserve">
+    <value>_lblHighlight</value>
+  </data>
+  <data name="&gt;&gt;_lblHighlight.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_lblHighlight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblHighlight.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblOrientation.Name" xml:space="preserve">
+    <value>_lblOrientation</value>
+  </data>
+  <data name="&gt;&gt;_lblOrientation.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_lblOrientation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblOrientation.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_lblPixelType.Name" xml:space="preserve">
+    <value>_lblPixelType</value>
+  </data>
+  <data name="&gt;&gt;_lblPixelType.Parent" xml:space="preserve">
+    <value>_gbImgeEfx</value>
+  </data>
+  <data name="&gt;&gt;_lblPixelType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblPixelType.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_lblUnit.Name" xml:space="preserve">
+    <value>_lblUnit</value>
+  </data>
+  <data name="&gt;&gt;_lblUnit.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_lblUnit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblUnit.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_lblXRes.Name" xml:space="preserve">
+    <value>_lblXRes</value>
+  </data>
+  <data name="&gt;&gt;_lblXRes.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_lblXRes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblXRes.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_lblYRes.Name" xml:space="preserve">
+    <value>_lblYRes</value>
+  </data>
+  <data name="&gt;&gt;_lblYRes.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_lblYRes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblYRes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_rdFile.Name" xml:space="preserve">
+    <value>_rdFile</value>
+  </data>
+  <data name="&gt;&gt;_rdFile.Parent" xml:space="preserve">
+    <value>_gbTransferMode</value>
+  </data>
+  <data name="&gt;&gt;_rdFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rdFile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_rdMemory.Name" xml:space="preserve">
+    <value>_rdMemory</value>
+  </data>
+  <data name="&gt;&gt;_rdMemory.Parent" xml:space="preserve">
+    <value>_gbTransferMode</value>
+  </data>
+  <data name="&gt;&gt;_rdMemory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rdMemory.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rdNative.Name" xml:space="preserve">
+    <value>_rdNative</value>
+  </data>
+  <data name="&gt;&gt;_rdNative.Parent" xml:space="preserve">
+    <value>_gbTransferMode</value>
+  </data>
+  <data name="&gt;&gt;_rdNative.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_rdNative.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_txtFileName.Name" xml:space="preserve">
+    <value>_txtFileName</value>
+  </data>
+  <data name="&gt;&gt;_txtFileName.Parent" xml:space="preserve">
+    <value>_gbFileOptions</value>
+  </data>
+  <data name="&gt;&gt;_txtFileName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_txtFileName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameBottom.Name" xml:space="preserve">
+    <value>_txtFrameBottom</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameBottom.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameBottom.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameLeft.Name" xml:space="preserve">
+    <value>_txtFrameLeft</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameLeft.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameLeft.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameRight.Name" xml:space="preserve">
+    <value>_txtFrameRight</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameRight.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameRight.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameTop.Name" xml:space="preserve">
+    <value>_txtFrameTop</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameTop.Parent" xml:space="preserve">
+    <value>_gbImageFrame</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_txtFrameTop.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="resx_Centimeters" xml:space="preserve">
+    <value>センチ</value>
+  </data>
+  <data name="resx_Get" xml:space="preserve">
+    <value>取得</value>
+  </data>
+  <data name="resx_Inches" xml:space="preserve">
+    <value>インチ</value>
+  </data>
+  <data name="resx_Picas" xml:space="preserve">
+    <value>パイカ</value>
+  </data>
+  <data name="resx_Pixels" xml:space="preserve">
+    <value>ピクセル</value>
+  </data>
+  <data name="resx_Points" xml:space="preserve">
+    <value>点</value>
+  </data>
+  <data name="resx_Returns" xml:space="preserve">
+    <value>返す</value>
+  </data>
+  <data name="resx_Set" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="resx_Twips" xml:space="preserve">
+    <value>トゥウィップ</value>
+  </data>
+  <data name="_btnBrowse.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="_btnLoad.Text" xml:space="preserve">
+    <value>読み込み</value>
+  </data>
+  <data name="_btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="_btnSave.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="_gbFileOptions.Text" xml:space="preserve">
+    <value>ファイル転送モードオプション</value>
+  </data>
+  <data name="_gbImageFrame.Text" xml:space="preserve">
+    <value>スキャン領域、解像度</value>
+  </data>
+  <data name="_gbImgeEfx.Text" xml:space="preserve">
+    <value>スキャンエフェクト</value>
+  </data>
+  <data name="_gbMemoryOptions.Text" xml:space="preserve">
+    <value>メモリ転送モードオプション</value>
+  </data>
+  <data name="_gbTransferMode.Text" xml:space="preserve">
+    <value>転送モード</value>
+  </data>
+  <data name="_lblBrightness.Text" xml:space="preserve">
+    <value>明るさ：</value>
+  </data>
+  <data name="_lblCompression.Text" xml:space="preserve">
+    <value>圧縮形式：</value>
+  </data>
+  <data name="_lblContrast.Text" xml:space="preserve">
+    <value>コントラスト：</value>
+  </data>
+  <data name="_lblFileName.Text" xml:space="preserve">
+    <value>ファイル名：</value>
+  </data>
+  <data name="_lblFormat.Text" xml:space="preserve">
+    <value>形式：</value>
+  </data>
+  <data name="_lblFrameBottom.Text" xml:space="preserve">
+    <value>下マージン：</value>
+  </data>
+  <data name="_lblFrameLeft.Text" xml:space="preserve">
+    <value>左マージン：</value>
+  </data>
+  <data name="_lblFrameRight.Text" xml:space="preserve">
+    <value>右マージン：</value>
+  </data>
+  <data name="_lblFrameTop.Text" xml:space="preserve">
+    <value>上マージン：</value>
+  </data>
+  <data name="_lblHalftone.Text" xml:space="preserve">
+    <value>ハーフトーン：</value>
+  </data>
+  <data name="_lblHighlight.Text" xml:space="preserve">
+    <value>ハイライト：</value>
+  </data>
+  <data name="_lblOrientation.Text" xml:space="preserve">
+    <value>画像の方向：</value>
+  </data>
+  <data name="_lblPixelType.Text" xml:space="preserve">
+    <value>ピクセルタイプ：</value>
+  </data>
+  <data name="_lblUnit.Text" xml:space="preserve">
+    <value>単位：</value>
+  </data>
+  <data name="_lblXRes.Text" xml:space="preserve">
+    <value>X方向解像度：</value>
+  </data>
+  <data name="_lblYRes.Text" xml:space="preserve">
+    <value>Y方向解像度：</value>
+  </data>
+  <data name="_rdFile.Text" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="_rdMemory.Text" xml:space="preserve">
+    <value>メモリ</value>
+  </data>
+  <data name="_rdNative.Text" xml:space="preserve">
+    <value>ネイティブ</value>
+  </data>
+</root>

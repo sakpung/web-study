@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F6293C7-98E1-43E8-BB92-6FFAB6121412}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leadtools.Medical.WebViewer</RootNamespace>
+    <AssemblyName>Leadtools.Medical.WebViewer.Asp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44378</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <!-- v20 - Debug - AnyCPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\Bin\</LeadConfigPath>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <CodeAnalysisRuleSet>CodeAnalysis\DotNet.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - AnyCPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\Bin\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_Data/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <!-- v20 - Debug - Win32 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\Bin\x86\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_WIN32,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <CodeAnalysisRuleSet>CodeAnalysis\DotNet.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - Win32 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\Bin\x86\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;FOR_WIN32,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_Data/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <!-- v20 - Debug - X64 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|X64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\Bin\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_WIN64,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - X64 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|X64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\Bin\x64\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;FOR_WIN64,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_Data/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <!--<Import Project=".\ExtraAssemblies.targets" />-->
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\CommonServiceLocator.2.0.4\lib\net45\CommonServiceLocator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.SqlCe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EnterpriseLibrary.Data.SqlCe.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SharePoint.Client.15.0.0\lib\Microsoft.SharePoint.Client\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SharePoint.Client.Runtime.15.0.0\lib\Microsoft.SharePoint.Client.Runtime\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=8.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\WindowsAzure.Storage.8.5.0\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebus, Version=4.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Rebus.4.2.1\lib\net45\Rebus.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebus.SqlServer, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Rebus.SqlServer.4.0.0\lib\net45\Rebus.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.5.7.3\lib\net45\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.2.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.5.7.3\lib\net45\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.7.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.5.7.3\lib\net45\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.5.7.3\lib\net45\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.1.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.5.7.3\lib\net45\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention, Version=2.1.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.5.7.3\lib\net45\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation, Version=2.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Unity.5.7.3\lib\net45\Unity.ServiceLocation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Resources\Images\favicon.ico">
+      <Link>Resources\Images\favicon.ico</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Resources\Images\LeadtoolsHeader.png">
+      <Link>Resources\Images\LeadtoolsHeader.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Resources\Images\loading.GIF">
+      <Link>Resources\Images\loading.GIF</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="ConfigFirst.html" />
+    <Content Include="Index.html" />
+    <Content Include="index.js" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\US_Cities.txt" />
+    <Content Include="Resources\development.html" />
+    <Content Include="Resources\Styles\LEADServiceStyles.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\CS\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\CS\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Common\ApplicationSettings.cs" />
+    <Compile Include="Common\ExternalStorage.cs" />
+    <Compile Include="Common\HttpMultipartParser.cs" />
+    <Compile Include="Common\ServiceUtils.cs" />
+    <Compile Include="Common\LTCachingCtrl.cs" />
+    <Compile Include="Common\TimeStampProvider.cs" />
+    <Compile Include="Common\Converters.cs" />
+    <Compile Include="Common\FileUtility.cs" />
+    <Compile Include="Common\RequireHttpsAttribute.cs" />
+    <Compile Include="Common\SupportLock.cs" />
+    <Compile Include="Controllers\AutoController.cs" />
+    <Compile Include="Controllers\ExportController.cs" />
+    <Compile Include="Controllers\AuditController.cs" />
+    <Compile Include="Controllers\ThreeDController.cs" />
+    <Compile Include="Controllers\QueryController.cs" />
+    <Compile Include="Controllers\MonitorCalibrationController.cs" />
+    <Compile Include="Controllers\RetreiveController.cs" />
+    <Compile Include="Controllers\OptionsController.cs" />
+    <Compile Include="Controllers\PACSQueryController.cs" />
+    <Compile Include="Controllers\PACSRetrieveController.cs" />
+    <Compile Include="Controllers\PatientAccessRightsController.cs" />
+    <Compile Include="Controllers\PatientController.cs" />
+    <Compile Include="Controllers\StoreController.cs" />
+    <Compile Include="Controllers\TemplateController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Dependency\ScopeContainer.cs" />
+    <Compile Include="Errors\Exception.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Request.cs" />
+    <Compile Include="Models\Response.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Implementation\AppSettings.cs" />
+    <Compile Include="Services\Implementation\AddinsFactory.cs" />
+    <Compile Include="Services\Implementation\AuditHandler.cs" />
+    <Compile Include="Services\Implementation\HashingProvider.cs" />
+    <Compile Include="Services\Implementation\ThreeDHandler.cs" />
+    <Compile Include="Services\Implementation\StreamExportHandler.cs" />
+    <Compile Include="Services\Implementation\RebusSqlMessagesBus.cs" />
+    <Compile Include="Services\Implementation\InMemoryMessagesBus.cs" />
+    <Compile Include="Services\Implementation\AutoHandler.cs" />
+    <Compile Include="Services\Implementation\AuthHandler.cs" />
+    <Compile Include="Services\Implementation\ExportHandler.cs" />
+    <Compile Include="Services\Implementation\MonitorCalibrationHandler.cs" />
+    <Compile Include="Services\Implementation\WadoRetrieveHandler.cs" />
+    <Compile Include="Services\Implementation\WadoQueryHandler.cs" />
+    <Compile Include="Services\Implementation\QueryHandler.cs" />
+    <Compile Include="Services\Implementation\RetrieveHandler.cs" />
+    <Compile Include="Services\Implementation\OptionsHandler.cs" />
+    <Compile Include="Services\Implementation\PacsQueryHandler.cs" />
+    <Compile Include="Services\Implementation\PACSRetrieveHandler.cs" />
+    <Compile Include="Services\Implementation\PatientAccessRightsHandler.cs" />
+    <Compile Include="Services\Implementation\PatientHandler.cs" />
+    <Compile Include="Services\Implementation\StoreHandler.cs" />
+    <Compile Include="Services\Implementation\TemplateHandler.cs" />
+    <Compile Include="Services\Interfaces\IHashingProvider.cs" />
+    <Compile Include="Services\Interfaces\IThreeDHandler.cs" />
+    <Compile Include="Services\Interfaces\IStreamExportHandler.cs" />
+    <Compile Include="Services\Interfaces\IMessagesBus.cs" />
+    <Compile Include="Services\Interfaces\IAutoHandler.cs" />
+    <Compile Include="Services\Interfaces\IMonitorCalibrationHandler.cs" />
+    <Compile Include="Services\Interfaces\IAuditHandler.cs" />
+    <Compile Include="Services\Interfaces\IExportHandler.cs" />
+    <Compile Include="Services\Interfaces\IQueryHandler.cs" />
+    <Compile Include="Services\Interfaces\IRetreiveHandler.cs" />
+    <Compile Include="Services\Interfaces\IOptionsHandler.cs" />
+    <Compile Include="Services\Interfaces\IPACSQueryHandler.cs" />
+    <Compile Include="Services\Interfaces\IPACSRetrieveHandler.cs" />
+    <Compile Include="Services\Interfaces\IPatientAccessRightsHandler.cs" />
+    <Compile Include="Services\Interfaces\IPatientHandler.cs" />
+    <Compile Include="Services\Interfaces\IStoreHandler.cs" />
+    <Compile Include="Services\Interfaces\ITemplateHandler.cs" />
+    <Compile Include="Services\Interfaces\IValidateParameters.cs" />
+    <Compile Include="Services\Interfaces\IAuthHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Leadtools.Medical.WebViewer.Asp_Nuget.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CodeAnalysis\DotNet.ruleset" />
+    <Content Include="local.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="connectionStrings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.Mrz.bin" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.Micr.bin" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.it.dic" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.it.bin" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.fr.dic" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.fr.bin" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.Field.bin" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.es.dic" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.es.bin" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.en.dic" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.en.bin2" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.en.bin" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.de.dic" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.de.bin" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\LEAD.Cmc7.bin" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\BusinessCard.Titles.en.dic" />
+    <Content Include="LEADTOOLS\OcrLEADRuntime\BusinessCard.Names.en.dic" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <!-- The "CopyLinkedFiles" target copies all linked Content files from their link directories to their project location. -->
+  <!-- This is necessary to keep up-to-date copies of Leadtools JS libs and other resources shared between multiple client projects. -->
+  <!--<Target Name="CopyLinkedFiles" BeforeTargets="Build">
+    <ItemGroup>
+      <LinkedItem Include="@(Content)" Condition="%(Content.Link) != ''" />
+    </ItemGroup>
+    <Copy SourceFiles="@(LinkedItem)" DestinationFiles="%(LinkedItem.Link)" SkipUnchangedFiles="true" />
+  </Target>-->
+  <!-- End "CopyLinkedFiles" Target -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>23133</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:23133/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- Check the bitness of IIS Express if we are trying to run this project using those conditions -->
+  <Target Name="AfterBuild" Condition="'$(UseIISExpress)' == 'true' And '$(BuildingInsideVisualStudio)' == 'true'">
+    <Message Text="Checking the bitness of IIS Express against the current configuration..." />
+    <Exec Command="..\Common\CheckIISExpressBitness.bat $(Platform) $(VisualStudioVersion)" />
+  </Target>
+  <Target Name="AfterBuild" Condition="'$(LEAD_Build)'=='true' And '$(Configuration)'=='Release'">
+    <Exec Command="copy $(TargetPath) ..\..\..\..\..\..\..\Dist\Bin20\DotNet4\Win32\ /y" />
+    <Exec Command="copy $(TargetPath) ..\..\..\..\..\..\..\Dist\Bin20\DotNet4\X64\ /y" />
+  </Target>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.MedicalCollection.WebViewer.20.0.0.6\build\net40\Leadtools.MedicalCollection.WebViewer.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.MedicalCollection.WebViewer.20.0.0.6\build\net40\Leadtools.MedicalCollection.WebViewer.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Medical.Cors.20.0.0.6\build\net40\Leadtools.Medical.Cors.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Medical.Cors.20.0.0.6\build\net40\Leadtools.Medical.Cors.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Legacy.20.0.0.6\build\net40\Leadtools.Legacy.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Legacy.20.0.0.6\build\net40\Leadtools.Legacy.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Pacs.Demo.Addins.20.0.0.6\build\net40\Leadtools.Pacs.Demo.Addins.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Pacs.Demo.Addins.20.0.0.6\build\net40\Leadtools.Pacs.Demo.Addins.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Dicom.Utilities.20.0.0.6\build\net40\Leadtools.Dicom.Utilities.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Dicom.Utilities.20.0.0.6\build\net40\Leadtools.Dicom.Utilities.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets'))" />
+  </Target>
+  <Import Project="..\..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets" Condition="Exists('..\..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets" Condition="Exists('..\..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets" Condition="Exists('..\..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.MedicalCollection.WebViewer.20.0.0.6\build\net40\Leadtools.MedicalCollection.WebViewer.targets" Condition="Exists('..\..\..\packages\Leadtools.MedicalCollection.WebViewer.20.0.0.6\build\net40\Leadtools.MedicalCollection.WebViewer.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Medical.Cors.20.0.0.6\build\net40\Leadtools.Medical.Cors.targets" Condition="Exists('..\..\..\packages\Leadtools.Medical.Cors.20.0.0.6\build\net40\Leadtools.Medical.Cors.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets" Condition="Exists('..\..\..\packages\Leadtools.Pdf.20.0.0.6\build\net40\Leadtools.Pdf.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets" Condition="Exists('..\..\..\packages\Leadtools.Annotations.20.0.0.6\build\net40\Leadtools.Annotations.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Legacy.20.0.0.6\build\net40\Leadtools.Legacy.targets" Condition="Exists('..\..\..\packages\Leadtools.Legacy.20.0.0.6\build\net40\Leadtools.Legacy.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets" Condition="Exists('..\..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Pacs.Demo.Addins.20.0.0.6\build\net40\Leadtools.Pacs.Demo.Addins.targets" Condition="Exists('..\..\..\packages\Leadtools.Pacs.Demo.Addins.20.0.0.6\build\net40\Leadtools.Pacs.Demo.Addins.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets" Condition="Exists('..\..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets" Condition="Exists('..\..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets" Condition="Exists('..\..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets" Condition="Exists('..\..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets" Condition="Exists('..\..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets" Condition="Exists('..\..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Dicom.Utilities.20.0.0.6\build\net40\Leadtools.Dicom.Utilities.targets" Condition="Exists('..\..\..\packages\Leadtools.Dicom.Utilities.20.0.0.6\build\net40\Leadtools.Dicom.Utilities.targets')" />
+  <Import Project="..\..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets" Condition="Exists('..\..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" />
+</Project>

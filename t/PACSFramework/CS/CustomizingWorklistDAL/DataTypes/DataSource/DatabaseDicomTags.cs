@@ -1,0 +1,25 @@
+﻿// *************************************************************
+// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// All Rights Reserved.                                         
+// *************************************************************
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace CSCustomizingWorklistDAL.DataTypes
+{
+   public class DatabaseDicomTags
+   {
+      public DatabaseDicomTags ( string tableName, string columnName, long dicomTag )
+      {
+         TableName  = tableName ;
+         ColumnName = columnName ;
+         DicomTag   = dicomTag ;
+      }
+      
+      public string TableName { get ; set ; }
+      public string ColumnName { get ; set ; }
+      public long   DicomTag {get ; set ; }
+   }
+}

@@ -1,0 +1,153 @@
+body{
+  background: #818B98;
+  margin: 0px;
+  font-family: verdana, arial, sans;
+  font-size: 8.5pt;
+}
+#infoBar{
+  color: #eee;
+  background: #333;
+  height: 24px;
+  line-height: 24px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#infoBar h1{
+  float: left;
+  width: 200px;
+  font-size: 10pt;
+  margin: 3px 10px;
+}
+#infoBar div.section{
+  margin: 0px 10px;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+  border-right: 2px groove #000;
+  border-left: 2px groove #000;
+}
+
+#infoBar div.formats{
+  margin: 0px 10px 0px 0px;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+  padding:0px 0px 0px 0px;
+  border-right: 2px groove #000;
+  border-left: 0px groove #000;
+}
+
+#infoBar div.section a{
+  width: 20px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin: 1px 5px;
+  border: 1px solid #777;
+  background-position: -20px 0px;
+}
+#infoBar div.section a:hover, #infoBar div.section a.hover{
+  background-position: 0px 0px;
+}
+#infoBar div.section label{
+  float: left;
+  margin: 0px 15px;
+}
+#infoBar div.section input.checkbox{
+  float: left;
+  width: 20px;
+  margin: 5px 5px;
+}
+#zoom{width: 350px;}
+#useDPI{width: 120px;}
+
+div.toolbar {width:78px; }/*IE6*/
+html>/**/body div.toolbar {width: 76px;}/*Firefox and operah*/
+
+div.toolbar div.section{
+  clear: both;
+  border-top: 2px groove #000;
+  margin: 5px 0px;
+  padding: 0px;
+}
+html>/**/body div.toolbar div.section{padding: 10px 0px;}/*Firefox and operah*/
+div.toolbar a{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  float: left;
+  background-position: -30px 0px;
+  border: 2px solid #333;
+}
+
+.recognizeButton  
+{
+  background-image: url(../icons/OCR.gif);
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  float: left;
+  background-position: -30px 0px;
+  border: 2px solid #333;
+}
+
+.recognizeButton :hover
+{
+  background-image: url(../icons/OCR.gif);
+  background-position: 0px 0px;
+}
+
+.recognizeAllButton  
+{
+  background-image: url(../icons/OCR_All.gif);
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  float: left;
+  background-position: -30px 0px;
+  border: 2px solid #333;
+}
+
+.recognizeAllButton :hover
+{
+  background-image: url(../icons/OCR_All.gif);
+  background-position: 0px 0px;
+}
+
+div.toolbar a:hover, div.toolbar a.hover{
+  background-position: 0px 0px !important;
+}
+
+div.toolbar a:hover, div.toolbar a.hover{
+  background-position: 0px 0px !important;
+}
+div.toolbar hr{
+  width: 100%;
+}
+
+.Normal
+{
+  background-color: #FFFFFF;
+  cursor: auto;
+  padding: 10px;
+  text-align: center;
+}
+ 
+.Progress
+{
+  background-image:  url(../spinner.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: wait;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}

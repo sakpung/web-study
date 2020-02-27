@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Leadtools.Dicom" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Leadtools.Medical.DataAccessLayer.Catalog" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" />
+  <xs:complexType name="WCFPatient">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Patient">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ContrastAllergies" nillable="true" type="q1:ArrayOfstring" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MedicalAlerts" nillable="true" type="q2:ArrayOfstring" />
+          <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OtherPatientIDs" nillable="true" type="q3:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WCFPatient" nillable="true" type="WCFPatient" />
+  <xs:complexType name="Patient">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Leadtools.Medical.DataAccessLayer.Catalog" base="q4:CatalogEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdditionalPatientHistory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConfidentialityConstraintonPatientDataDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EthnicGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IssuerOfPatientID" nillable="true" type="xs:string" />
+          <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Leadtools.Dicom" minOccurs="0" name="LastMenstrualDate" nillable="true" type="q5:DicomDateRangeValue" />
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Leadtools.Dicom" minOccurs="0" name="PatientBirthDate" nillable="true" type="q6:DicomDateRangeValue" />
+          <xs:element minOccurs="0" name="PatientComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientNameFamilyName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientNameGivenName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientNameMiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientNamePrefix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientNameSuffix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientSex" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientWeight" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PregnancyStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SpecialNeeds" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Patient" nillable="true" type="Patient" />
+  <xs:complexType name="WCFRequestedProcedure">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" base="q7:RequestedProcedure">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ReferencedStudySequence" nillable="true" type="q7:ArrayOfReferencedStudySequence" />
+          <xs:element minOccurs="0" name="RequestedProcedureCodeSequence" nillable="true" type="q7:RequestedProcedureCodeSequence" />
+          <xs:element minOccurs="0" name="Visit" nillable="true" type="WCFVisit" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WCFRequestedProcedure" nillable="true" type="WCFRequestedProcedure" />
+  <xs:complexType name="WCFVisit">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" base="q8:Visit">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ReferencedPatientSequence" nillable="true" type="q8:ReferencedPatientSequence" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WCFVisit" nillable="true" type="WCFVisit" />
+  <xs:complexType name="WCFScheduledProcedureStep">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" base="q9:ScheduledProcedureStep">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ScheduledProtocolCodeSequence" nillable="true" type="q9:ArrayOfScheduledProtocolCodeSequence" />
+          <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ScheduledStationAETitle" nillable="true" type="q10:ArrayOfstring" />
+          <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ScheduledStationName" nillable="true" type="q11:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WCFScheduledProcedureStep" nillable="true" type="WCFScheduledProcedureStep" />
+  <xs:complexType name="WCFPPSInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" base="q12:PPSInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PPSDiscontinuationReasonCodeSequence" nillable="true" type="q12:ArrayOfPPSDiscontinuationReasonCodeSequence" />
+          <xs:element minOccurs="0" name="PPSRelationShip" nillable="true" type="q12:ArrayOfPPSRelationship" />
+          <xs:element minOccurs="0" name="Patient" nillable="true" type="WCFPatient" />
+          <xs:element minOccurs="0" name="PerformedProtocolCodeSequence" nillable="true" type="q12:ArrayOfPerformedProtocolCodeSequence" />
+          <xs:element minOccurs="0" name="PerformedSeriesSequence" nillable="true" type="q12:ArrayOfPerformedSeriesSequence" />
+          <xs:element minOccurs="0" name="ProcedureCodeSequence" nillable="true" type="q12:ArrayOfProcedureCodeSequence" />
+          <xs:element minOccurs="0" name="ReferencedImageSequence" nillable="true" type="ArrayOfWCFReferencedImageSequence" />
+          <xs:element minOccurs="0" name="ReferencedNonImageCompositeSequence" nillable="true" type="q12:ArrayOfReferencedNonImageCompositeSequence" />
+          <xs:element minOccurs="0" name="UnscheduledPatient" nillable="true" type="q12:PatientInfoforUnscheduledPPS" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WCFPPSInformation" nillable="true" type="WCFPPSInformation" />
+  <xs:complexType name="ArrayOfWCFReferencedImageSequence">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WCFReferencedImageSequence" nillable="true" type="WCFReferencedImageSequence" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWCFReferencedImageSequence" nillable="true" type="ArrayOfWCFReferencedImageSequence" />
+  <xs:complexType name="WCFReferencedImageSequence">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" base="q13:ReferencedImageSequence">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="SeriesInstanceUID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WCFReferencedImageSequence" nillable="true" type="WCFReferencedImageSequence" />
+  <xs:complexType name="MPPSQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccessionNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PPSInfo" nillable="true" type="WCFPPSInformation" />
+      <xs:element minOccurs="0" name="Patient" nillable="true" type="WCFPatient" />
+      <xs:element minOccurs="0" name="RequestedProcedureId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScheduledProcedureId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MPPSQuery" nillable="true" type="MPPSQuery" />
+  <xs:complexType name="ArrayOfWCFPPSInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WCFPPSInformation" nillable="true" type="WCFPPSInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWCFPPSInformation" nillable="true" type="ArrayOfWCFPPSInformation" />
+</xs:schema>

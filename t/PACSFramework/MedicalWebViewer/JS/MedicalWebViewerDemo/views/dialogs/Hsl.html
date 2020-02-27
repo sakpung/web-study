@@ -1,0 +1,32 @@
+﻿<div class="modal-header">
+    <h3 class="modal-title">{{'HSL' | translate}}</h3>
+</div>
+<div class="modal-body">
+    <div>
+        <div id="ipPreviewContainer" style="margin: 0px auto; width: 128px; height: 128px;" lead-image-processing frame="frame" api="ipApi">
+            <canvas id="ipPreviewCanvas" width="128px" height="128px" style="border: 1px solid red"></canvas>
+        </div>
+    </div>    
+    <div class="form-group" style="margin-bottom:5px">
+        <label for="hue">{{'HUE' | translate}}:</label>
+        <input id="hue" type="number" ng-model="ipVals.hue" min="-180" max="180" class="form-control" onkeydown="return Utils.isNumber(event,this);" ng-change="change()" ng-debounce="750" />
+        <div ui-slider="slider.hueOptions" step="1" ng-model="ipVals.hue" style="margin-bottom:2px" >
+        </div>        
+    </div>
+    <div class="form-group">
+        <label for="saturation">{{'SATURATION' | translate}}:</label>
+        <input id="saturation" type="number" ng-model="ipVals.saturation" min="-100" max="100" class="form-control" onkeydown="return Utils.isNumber(event,this);" ng-change="change()" ng-debounce="750" />
+        <div ui-slider="slider.options" min="-100" max="100" step="1" ng-model="ipVals.saturation" style="margin-bottom:2px">
+        </div>        
+    </div>
+    <div class="form-group">
+        <label for="lightness">{{'LIGHTNESS' | translate}}:</label>
+        <input id="lightness" type="number" ng-model="ipVals.lightness" min="-100" max="100" class="form-control" onkeydown="return Utils.isNumber(event,this);" ng-change="change()" ng-debounce="750" />
+        <div ui-slider="slider.options" min="-100" max="100" step="1" ng-model="ipVals.lightness" style="margin-bottom:2px">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK"></a>
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+   <services>
+      <service title="Job Service" Type="Service">JobService.svc</service>
+      <service title="Worker Service" Type="Service">WorkerService.svc</service>
+      <service title="CS Ocr JobProcessor Client Demo" Type="CSOcrJobProcessorClientDemo">Default.aspx</service>
+      <service title="CS Multimedia JobProcessor Client Demo" Type="CSMultimediaJobProcessorClientDemo">Default.aspx</service>
+   </services>
+
+   <assemblies>
+      <assembly type="dotnet">Leadtools.dll</assembly>
+      <assembly type="dotnet">Leadtools.Logging.dll</assembly>
+      <assembly type="dotnet">Leadtools.Services.JobProcessor.DataContracts.dll</assembly>
+      <assembly type="dotnet">Leadtools.Services.JobProcessor.ServiceContracts.dll</assembly>
+      <assembly type="dotnet">Leadtools.Services.JobProcessor.ServiceImplementations.dll</assembly>
+      <assembly type="dotnet">Leadtools.Services.JobProcessor.FaultContracts.dll</assembly>
+      <assembly type="dotnet">Leadtools.JobProcessor.DataAccessLayer.dll</assembly>
+   </assemblies>
+</items>

@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>描画プロパティ</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PaintPropertiesDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.Name" xml:space="preserve">
+    <value>_btnApply</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnApply.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Name" xml:space="preserve">
+    <value>_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnCancel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Name" xml:space="preserve">
+    <value>_btnOk</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnOk.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;_cbBitonalScaling.Name" xml:space="preserve">
+    <value>_cbBitonalScaling</value>
+  </data>
+  <data name="&gt;&gt;_cbBitonalScaling.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbBitonalScaling.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbBitonalScaling.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_cbDithering.Name" xml:space="preserve">
+    <value>_cbDithering</value>
+  </data>
+  <data name="&gt;&gt;_cbDithering.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbDithering.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbDithering.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_cbEngine.Name" xml:space="preserve">
+    <value>_cbEngine</value>
+  </data>
+  <data name="&gt;&gt;_cbEngine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbEngine.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_cbFastPaint.Name" xml:space="preserve">
+    <value>_cbFastPaint</value>
+  </data>
+  <data name="&gt;&gt;_cbFastPaint.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_cbFastPaint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbFastPaint.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cbHalftonePrint.Name" xml:space="preserve">
+    <value>_cbHalftonePrint</value>
+  </data>
+  <data name="&gt;&gt;_cbHalftonePrint.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_cbHalftonePrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbHalftonePrint.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_cbIndexedPaint.Name" xml:space="preserve">
+    <value>_cbIndexedPaint</value>
+  </data>
+  <data name="&gt;&gt;_cbIndexedPaint.Parent" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_cbIndexedPaint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbIndexedPaint.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cbOperation.Name" xml:space="preserve">
+    <value>_cbOperation</value>
+  </data>
+  <data name="&gt;&gt;_cbOperation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbOperation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbOperation.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_cbPaintScaling.Name" xml:space="preserve">
+    <value>_cbPaintScaling</value>
+  </data>
+  <data name="&gt;&gt;_cbPaintScaling.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbPaintScaling.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbPaintScaling.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cbPalette.Name" xml:space="preserve">
+    <value>_cbPalette</value>
+  </data>
+  <data name="&gt;&gt;_cbPalette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbPalette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbPalette.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.Name" xml:space="preserve">
+    <value>_gbOptions</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_gbOptions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblBitonalScaling.Name" xml:space="preserve">
+    <value>_lblBitonalScaling</value>
+  </data>
+  <data name="&gt;&gt;_lblBitonalScaling.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblBitonalScaling.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblBitonalScaling.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_lblDithering.Name" xml:space="preserve">
+    <value>_lblDithering</value>
+  </data>
+  <data name="&gt;&gt;_lblDithering.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblDithering.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblDithering.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_lblEngine.Name" xml:space="preserve">
+    <value>_lblEngine</value>
+  </data>
+  <data name="&gt;&gt;_lblEngine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblEngine.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_lblOperation.Name" xml:space="preserve">
+    <value>_lblOperation</value>
+  </data>
+  <data name="&gt;&gt;_lblOperation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblOperation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblOperation.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_lblPaintScaling.Name" xml:space="preserve">
+    <value>_lblPaintScaling</value>
+  </data>
+  <data name="&gt;&gt;_lblPaintScaling.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblPaintScaling.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblPaintScaling.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_lblPalette.Name" xml:space="preserve">
+    <value>_lblPalette</value>
+  </data>
+  <data name="&gt;&gt;_lblPalette.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblPalette.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lblPalette.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Resx_Auto" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="Resx_BiCubic" xml:space="preserve">
+    <value>バイキュービック法</value>
+  </data>
+  <data name="Resx_Blackness" xml:space="preserve">
+    <value>物理パレット0番の色で塗りつぶし</value>
+  </data>
+  <data name="Resx_DestinationInvert" xml:space="preserve">
+    <value>コピー先の反転</value>
+  </data>
+  <data name="Resx_ErrorDiffusion" xml:space="preserve">
+    <value>誤差拡散法</value>
+  </data>
+  <data name="Resx_FavorBlack" xml:space="preserve">
+    <value>黒色を保持</value>
+  </data>
+  <data name="Resx_MergeCopy" xml:space="preserve">
+    <value>ブラシを論理AND演算子で結合</value>
+  </data>
+  <data name="Resx_MergePaint" xml:space="preserve">
+    <value>ソースを反転し論理OR演算子で結合</value>
+  </data>
+  <data name="Resx_Netscape" xml:space="preserve">
+    <value>ネットスケープ</value>
+  </data>
+  <data name="Resx_None" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="Resx_NotSourceCopy" xml:space="preserve">
+    <value>反転したソースをコピー</value>
+  </data>
+  <data name="Resx_NotSourceErase" xml:space="preserve">
+    <value>論理OR演算子で結合し反転</value>
+  </data>
+  <data name="Resx_Ordered" xml:space="preserve">
+    <value>パターン法</value>
+  </data>
+  <data name="Resx_PatternCopy" xml:space="preserve">
+    <value>ブラシをコピー</value>
+  </data>
+  <data name="Resx_PatternInvert" xml:space="preserve">
+    <value>ブラシと色を論理OR演算子で結合</value>
+  </data>
+  <data name="Resx_PatternPaint" xml:space="preserve">
+    <value>ブラシの色と反転した論理OR演算子で結合</value>
+  </data>
+  <data name="Resx_Resample" xml:space="preserve">
+    <value>リサンプル</value>
+  </data>
+  <data name="Resx_ScaleToGray" xml:space="preserve">
+    <value>グレースケール</value>
+  </data>
+  <data name="Resx_SourceAnd" xml:space="preserve">
+    <value>論理AND演算子で結合</value>
+  </data>
+  <data name="Resx_SourceCopy" xml:space="preserve">
+    <value>ソースをコピー</value>
+  </data>
+  <data name="Resx_SourceErase" xml:space="preserve">
+    <value>論理AND演算子で結合</value>
+  </data>
+  <data name="Resx_SourceInvert" xml:space="preserve">
+    <value>論理OR演算子で結合</value>
+  </data>
+  <data name="Resx_SourcePaint" xml:space="preserve">
+    <value>論理OR演算子で結合</value>
+  </data>
+  <data name="Resx_Whiteness" xml:space="preserve">
+    <value>物理パレット1番の色で塗りつぶし</value>
+  </data>
+  <data name="_btnApply.Text" xml:space="preserve">
+    <value>適用(&amp;A)</value>
+  </data>
+  <data name="_btnCancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="_btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="_cbFastPaint.Text" xml:space="preserve">
+    <value>高速描画(&amp;F)</value>
+  </data>
+  <data name="_cbHalftonePrint.Text" xml:space="preserve">
+    <value>ハーフトーン印刷(&amp;H)</value>
+  </data>
+  <data name="_cbIndexedPaint.Text" xml:space="preserve">
+    <value>インデックス描画(&amp;I)</value>
+  </data>
+  <data name="_gbOptions.Text" xml:space="preserve">
+    <value>その他の描画オプション(&amp;O):</value>
+  </data>
+  <data name="_lblBitonalScaling.Text" xml:space="preserve">
+    <value>ビットスケーリング(&amp;B):</value>
+  </data>
+  <data name="_lblDithering.Text" xml:space="preserve">
+    <value>ディザリング(&amp;D):</value>
+  </data>
+  <data name="_lblEngine.Text" xml:space="preserve">
+    <value>エンジン(&amp;E):</value>
+  </data>
+  <data name="_lblOperation.Text" xml:space="preserve">
+    <value>ラスターオペレーション（ROP）(&amp;R):</value>
+  </data>
+  <data name="_lblPaintScaling.Text" xml:space="preserve">
+    <value>描画スケーリング(&amp;S):</value>
+  </data>
+  <data name="_lblPalette.Text" xml:space="preserve">
+    <value>パレット(&amp;P):</value>
+  </data>
+</root>

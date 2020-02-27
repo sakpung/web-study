@@ -1,0 +1,26 @@
+﻿<div class="modal-content">
+   <div class="modal-header">
+      <h3 class="modal-title">{{ "ROLE" | translate}}&nbsp;{{ "PATIENT" | translate}}&nbsp;{{ "RIGHTS" | translate}}</h3>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-body">
+      <form class="form-inline" style="margin-bottom:5px">
+         <!--<label for="user" class="control-label">{{ "ROLE" | translate}}:</label>-->
+         <div class="form-group">
+            <div>
+               <div class="input-group" style="width: 200px; margin-bottom: 15px;">
+                  <select id="role" class="study-dropdown w-dropdown" ng-model="role.name" ng-options="r for r in roles" ng-change="roleChanged(role.name)" force-blur>
+                     <option value=''>{{ "SELECT" | translate}}&nbsp;{{ "ROLE" | translate}}</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </form>
+      <div id="rolepatients" ui-grid="gridOptions" class="grid" ui-grid-pagination ui-grid-selection ui-grid-auto-resize></div>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-footer">
+      <button class="form-btn pull-left" ng-click="applyPermissions()"><i style="font-style: normal;">{{ "APPLY_PERMISSIONS" | translate}}</i></button>
+      <a class="form-btn" ng-click="close()">{{ "DIALOGS_CLOSE" | translate}}</a>
+   </div>
+</div>

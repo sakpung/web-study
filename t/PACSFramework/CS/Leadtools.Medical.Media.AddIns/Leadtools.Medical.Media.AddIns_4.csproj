@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33B75451-0BC5-4674-A809-DBC5AB4C2359}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leadtools.Medical.Media.AddIns</RootNamespace>
+    <AssemblyName>Leadtools.Medical.Media.AddIns</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Demos.Dialogs">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Demos.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging.Medical">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.Medical.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.AddIn">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.AddIn.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scu">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scu.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Server.Admin">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Server.Admin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Logging.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Logging.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Winforms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Winforms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Media.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Media.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.MediaWriter">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.MediaWriter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\CS\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\CS\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="AddInsSession\AddInsSession.cs" />
+    <Compile Include="AddInOptions\AddInOptions.cs" />
+    <Compile Include="AddInsSession\SessionShutdown.cs" />
+    <Compile Include="CommandAsyncProcessor\MediaAutoCretionService.cs" />
+    <Compile Include="DataTypes\LabelPrinting.cs" />
+    <Compile Include="DataTypes\LabelType.cs" />
+    <Compile Include="DataTypes\MediaAutoCreationConfiguration.cs" />
+    <Compile Include="DataTypes\MediaCreationQueue.cs" />
+    <Compile Include="MediaBurningProcessor\IMediaBurningProcessor.cs" />
+    <Compile Include="MediaBurningProcessor\MediaItemFailureEventArgs.cs" />
+    <Compile Include="MediaBurningProcessor\MediaLabelsCreator.cs" />
+    <Compile Include="MediaBurningProcessor\PRIMERABurning\JobFile.cs" />
+    <Compile Include="MediaBurningProcessor\PRIMERABurning\PRIMERABurningProcessor.cs" />
+    <Compile Include="CommandInitializationService\NActionCommandInitializationService.cs" />
+    <Compile Include="Commands\CleanExpiredMediaJobsCommand.cs" />
+    <Compile Include="Commands\CreateMediaCommand.cs" />
+    <Compile Include="Commands\DeleteMediaCommand.cs" />
+    <Compile Include="Commands\ICancelableCommand.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Commands\MediaCommand.cs" />
+    <Compile Include="Commands\RefereshQueueCommand.cs" />
+    <Compile Include="DataTypes\Configuration.cs" />
+    <Compile Include="DataTypes\MediaJob.cs" />
+    <Compile Include="DataTypes\MediaMaintenanceState.cs" />
+    <Compile Include="DataTypes\MediaManagementEventArgs.cs" />
+    <Compile Include="MediaComposer\MediaComposer.cs" />
+    <Compile Include="MediaComposer\MediaProfileProcessor\GeneralPurposeCDDVDProfileProcessor.cs" />
+    <Compile Include="MediaComposer\MediaProfileProcessor\IDicomMediaProfileProcessor.cs" />
+    <Compile Include="MediaComposer\MediaProfileProcessor\MediaProfiles.cs" />
+    <Compile Include="MediaCreationAddIns\MediaGetAddIn.cs" />
+    <Compile Include="MediaCreationAddIns\MediaActionAddIn.cs" />
+    <Compile Include="MediaCreationAddIns\MediaCreateAddIn.cs" />
+    <Compile Include="CommandAsyncProcessor\CommandAsyncProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StateService\MediaObjectsStateService.cs" />
+    <Compile Include="StateService\MediaServicesState.cs" />
+    <Compile Include="UI\BurnMedia\BurnMedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BurnMedia\BurnMedia.Designer.cs">
+      <DependentUpon>BurnMedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BurnMedia\BurnMediaPresenter.cs" />
+    <Compile Include="UI\BurnMedia\BurnMediaView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\BurnMedia\BurnMediaView.Designer.cs">
+      <DependentUpon>BurnMediaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BurnMedia\IBurnMediaView.cs" />
+    <Compile Include="UI\BurnMedia\MediaDrivesService.cs" />
+    <Compile Include="UI\Configuration\IMediaConfigurationView.cs" />
+    <Compile Include="UI\Configuration\MediaConfigurationController.cs" />
+    <Compile Include="UI\Configuration\MediaConfigurationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Configuration\MediaConfigurationView.Designer.cs">
+      <DependentUpon>MediaConfigurationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MediaAutoCreation\AutoCreationConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MediaAutoCreation\AutoCreationConfig.Designer.cs">
+      <DependentUpon>AutoCreationConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MediaAutoCreation\IAutoCreationConfigView.cs" />
+    <Compile Include="UI\MediaAutoCreation\LabelingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MediaAutoCreation\LabelingView.Designer.cs">
+      <DependentUpon>LabelingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MediaAutoCreation\MediaAutoCreationController.cs" />
+    <Compile Include="UI\MediaJobMaintenance\IMediaJobMaintenanceView.cs" />
+    <Compile Include="UI\MediaJobMaintenance\MediaJobMaintenanceController.cs" />
+    <Compile Include="UI\MediaJobMaintenance\MediaJobMaintenanceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MediaJobMaintenance\MediaJobMaintenanceView.Designer.cs">
+      <DependentUpon>MediaJobMaintenanceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MediaJobStatus\IMediaJobStatusView.cs" />
+    <Compile Include="UI\MediaConfigurationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MediaConfigurationDialog.Designer.cs">
+      <DependentUpon>MediaConfigurationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MediaJobStatus\MediaJobStatusController.cs" />
+    <Compile Include="UI\MediaJobStatus\MediaJobStatusView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MediaJobStatus\MediaJobStatusView.Designer.cs">
+      <DependentUpon>MediaJobStatusView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShellController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BurnMedia\BurnMedia.resx">
+      <DependentUpon>BurnMedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BurnMedia\BurnMediaView.resx">
+      <DependentUpon>BurnMediaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Configuration\MediaConfigurationView.resx">
+      <DependentUpon>MediaConfigurationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MediaAutoCreation\AutoCreationConfig.resx">
+      <DependentUpon>AutoCreationConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MediaAutoCreation\LabelingView.resx">
+      <DependentUpon>LabelingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MediaConfigurationDialog.resx">
+      <DependentUpon>MediaConfigurationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MediaJobMaintenance\MediaJobMaintenanceView.resx">
+      <DependentUpon>MediaJobMaintenanceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MediaJobStatus\MediaJobStatusView.resx">
+      <DependentUpon>MediaJobStatusView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BurnConfig.ico" />
+    <None Include="Resources\BurnMedia.ico" />
+    <None Include="Resources\CreateJobs.ico" />
+    <None Include="Resources\DeleteJobs.ico" />
+    <None Include="Resources\RecreateJobs.ico" />
+    <None Include="Resources\RefreshList.ico" />
+    <Content Include="UI\MediaAutoCreation\Resources\Down.ico" />
+    <Content Include="UI\MediaAutoCreation\Resources\Up.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

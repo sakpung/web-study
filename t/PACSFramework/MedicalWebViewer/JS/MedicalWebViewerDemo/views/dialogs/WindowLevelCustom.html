@@ -1,0 +1,28 @@
+﻿<div class="modal-content">
+   <div class="modal-header">
+      <h3 class="modal-title" translate="DIALOGS_WINDOWLEVEL_CUSTOM_TITLE"></h3>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-body">
+      <div class="control-group">
+         <label class="control-label" for="studyRows">{{'WIDTH'|translate}}:</label>
+         <div class="controls">
+            <input type="number" placeholder="WIDTH..." class="text-field" ng-model="settings.width" ng-disabled="layout.custom!=null" onkeydown="return Utils.isNumber(event,this);" />
+         </div>
+      </div>
+
+      <div class="control-group">
+         <label class="control-label" for="studyColumns">{{'CENTER'|translate}}:</label>
+         <div class="controls">
+            <input type="number" placeholder="CENTER..." class="text-field" ng-model="settings.center" onkeydown="return Utils.isNumber(event,this);" />
+         </div>
+      </div>
+   </div>
+   <div class="divider"></div>
+   <div class="modal-footer">
+      <a class="form-btn" ng-click="apply()" translate="DIALOGS_APPLY"></a>
+      <a class="form-btn" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="isWorkstationEmpty()"></a>
+      <a class="form-btn" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+      <a class="form-btn" ng-click="reset()" translate="DIALOGS_RESET" ng-disabled="isWorkstationEmpty()"></a>
+   </div>
+</div>

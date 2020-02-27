@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DICOMElementsAllowableValues>
+    <Element>
+        <Tag>PATIENT_SEX</Tag>
+        <Values>M,F,O</Values>
+    </Element>
+    <Element>
+        <Tag>MODALITY</Tag>
+        <Values>CR,CT,MR,NM,US,OT,BI,CD,DD,DG,ES,LS,PT,RG,ST,TG,XA,RF,RTIMAGE,RTDOSE,RTSTRUCT,RTPLAN,RTRECORD,HC,DX,MG,IO,PX,GM,SM,XC,PR,AU,ECG,EPS,HD,SR,IVUS,DS,CF,DF,VF,AS,CS,EC,LP,FA,CP,DM,FS,MA,MS</Values>
+    </Element>
+    <Element>
+      <Tag>PERFORMED_PROCEDURE_STEP_STATUS</Tag>
+      <Values>COMPLETED,DISCONTINUED,IN PROGRESS</Values>
+    </Element>
+</DICOMElementsAllowableValues>

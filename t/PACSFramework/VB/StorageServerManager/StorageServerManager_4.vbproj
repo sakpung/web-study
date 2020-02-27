@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1D7D71E-1650-43EA-948C-E18946EA027F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>VBStorageServerManagerDemo</AssemblyName>
+    <ApplicationIcon>..\..\..\..\Resources\MedAddon.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK,TRACE,DEBUG,LTV20_CONFIG,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\Win32\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK,TRACE,LTV20_CONFIG,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK,TRACE,DEBUG,LTV20_CONFIG,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <DefineConstants>USE_WINDOWS_API_CODE_PACK,TRACE,LTV20_CONFIG,LEADTOOLS_V175_OR_LATER,FOR_DOTNET4,LEADTOOLS_V18_OR_LATER,LEADTOOLS_V19_OR_LATER,FOR_WIN64,LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Annotations">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Annotations.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scu">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scu.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Addin">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Addin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Server.Admin">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Server.Admin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Winforms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Winforms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Forward.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Forward.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.ExternalStore.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.ExternalStore.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Storage.AddIns">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Storage.AddIns.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Logging.AddIn">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Logging.AddIn.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.PermissionsManagement.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.PermissionsManagement.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Logging.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Logging.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.AeManagement.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.AeManagement.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.UserManagementDataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.UserManagementDataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Gateway.AddIn">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Gateway.AddIn.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Options.DataAccessLayer">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.Options.DataAccessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Dicom.Scp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Logging.Medical">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Logging.Medical.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Leadtools.Medical.License.Configuration">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Leadtools.Medical.License.Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(LeadConfigPath)Microsoft.WindowsAPICodePack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\VB\Common\AboutDialog.designer.vb">
+      <Link>Common\AboutDialog.designer.vb</Link>
+      <DependentUpon>AboutDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\AboutDialog.vb">
+      <Link>Common\AboutDialog.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\DialogUtilities.vb">
+      <Link>Common\DialogUtilities.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\Messager.vb">
+      <Link>Common\Messager.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\VB\Common\UnlockSupport.vb">
+      <Link>Common\UnlockSupport.vb</Link>
+    </Compile>
+    <Compile Include="DataTypes\ApplyServerSettingsEventArgs.vb" />
+    <Compile Include="DataTypes\AuditLogSubscriber\AuditLogSubscriber.vb" />
+    <Compile Include="DataTypes\MachineIDs.vb" />
+    <Compile Include="DataTypes\CurrentUserPemissionsChanged.vb" />
+    <Compile Include="DataTypes\CancelServerSettingsEventArgs.vb" />
+    <Compile Include="DataTypes\DataEventArgs.vb" />
+    <Compile Include="DataTypes\DisplayFeatureEventArgs.vb" />
+    <Compile Include="DataTypes\EventBroker\EventBroker.vb" />
+    <Compile Include="DataTypes\Extensions.vb" />
+    <Compile Include="DataTypes\Features\FeatureNames.vb" />
+    <Compile Include="DataTypes\ServerSettingsAppliedEventArgs.vb" />
+    <Compile Include="DataTypes\State\ServerState.vb" />
+    <Compile Include="ProcssChecker\ProcssChecker.vb" />
+    <Compile Include="Program.Leadtools.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shell\Shell.Leadtools.vb" />
+    <Compile Include="UI\AdministrativeSettings\PasswordOptions\LoginEventArgs.vb" />
+    <Compile Include="UI\AdministrativeSettings\Users\EventArgs.vb" />
+    <Compile Include="UI\AdministrativeSettings\Roles\RoleManager.vb" />
+    <Compile Include="UI\AdministrativeSettings\Roles\RolesViewPresenter.vb" />
+    <Compile Include="UI\AdministrativeSettings\Roles\RolesView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Roles\RolesView.Designer.vb">
+      <DependentUpon>RolesView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\PasswordDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\PasswordDialog.designer.vb">
+      <DependentUpon>PasswordDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\Permissions.vb" />
+    <Compile Include="UI\AdministrativeSettings\Users\PermissionsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\PermissionsDialog.Designer.vb">
+      <DependentUpon>PermissionsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UserManager.vb" />
+    <Compile Include="UI\AdministrativeSettings\Users\UsersAccountView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UsersAccountView.designer.vb">
+      <DependentUpon>UsersAccountView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UsersSource.vb">
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UsersSource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UserView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UserView.Designer.vb">
+      <DependentUpon>UserView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdministrativeSettings\Users\UserViewPresenter.vb" />
+    <Compile Include="UI\Authentication\AuthenticateUserEventArgs.vb" />
+    <Compile Include="UI\Authentication\LoginDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Authentication\LoginDialog.Designer.vb">
+      <DependentUpon>LoginDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RealtimeView\RealTimeViewPresenter.vb" />
+    <Compile Include="UI\ControlPanel\ControlPanelPresenter.vb" />
+    <Compile Include="UI\ControlPanel\ControlPanelView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ControlPanel\ControlPanelView.Designer.vb">
+      <DependentUpon>ControlPanelView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\AeInfoDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\AeInfoDetails.Designer.vb">
+      <DependentUpon>AeInfoDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\GatewayServerControlPresenter.vb" />
+    <Compile Include="UI\ServerSettings\Gateway\Control\RemoteServerSortPresenter.vb" />
+    <Compile Include="UI\ServerSettings\Gateway\Control\RemoteServerSortToolStrip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\ServerControlToolStrip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Gateways.vb">
+      <DependentUpon>Gateways.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Gateways.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gateways.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\ItemsGridView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\Control\ItemsGridView.Designer.vb">
+      <DependentUpon>ItemsGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\GatewaySettingsPresenter.vb" />
+    <Compile Include="UI\ServerSettings\Gateway\GatewaySettingsView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\GatewaySettingsView.Designer.vb">
+      <DependentUpon>GatewaySettingsView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\Gateway\GatewaySettingsPresenter_Leadtools.vb" />
+    <Compile Include="UI\ServerSettings\GeneralSettings\GeneralSettingsPresenter_Leadtools.vb" />
+    <Compile Include="UI\ServerSettings\ServerClientPresenter\ClientViewerPresenter.vb" />
+    <Compile Include="UI\Controls\TabPanel\CornersEnum.vb" />
+    <Compile Include="UI\Controls\TabPanel\PageData.vb" />
+    <Compile Include="UI\Controls\TabPanel\TabLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\TabPanel\TabPageCollection.vb" />
+    <Compile Include="UI\ServerAddins\ServerAddinPresenter.vb" />
+    <Compile Include="UI\ServerAddins\ServerAddinsView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerAddins\ServerAddinsView.Designer.vb">
+      <DependentUpon>ServerAddinsView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\GeneralSettings\GeneralSettingsView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\GeneralSettings\GeneralSettingsView.Designer.vb">
+      <DependentUpon>GeneralSettingsView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\GeneralSettings\GeneralSettingsPresenter.vb" />
+    <Compile Include="UI\ServerSettings\ServerNetworking\ServerNetworkingPresenter.vb" />
+    <Compile Include="UI\ServerSettings\ServerNetworking\ServerNetworkingView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerNetworking\ServerNetworkingView.Designer.vb">
+      <DependentUpon>ServerNetworkingView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerOptions\ServerOptionsPresenter.vb" />
+    <Compile Include="UI\ServerSettings\ServerOptions\ServerOptionsView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerOptions\ServerOptionsView.Designer.vb">
+      <DependentUpon>ServerOptionsView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerStatus\ServerInformationPresenter.vb" />
+    <Compile Include="UI\ServerStatus\ServerInformationView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerStatus\ServerInformationView.Designer.vb">
+      <DependentUpon>ServerInformationView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerSettingsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerSettingsDialog.Designer.vb">
+      <DependentUpon>ServerSettingsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerSettings\ServerSettingsPresenter.vb" />
+    <Compile Include="UI\ServerStatus\ServerInformationView_Leadtools.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SplashForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SplashForm.Designer.vb">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StorageServerContainer\StorageServerContainerPresenter_Leadtools.vb" />
+    <Compile Include="UI\StorageServerContainer\StorageServerContainerView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="Shell\Shell.vb" />
+    <Compile Include="UI\StorageServerContainer\StorageServerContainerPresenter.vb" />
+    <Compile Include="UI\StorageServerContainer\StorageServerContainerView.designer.vb">
+      <DependentUpon>StorageServerContainerView.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\VB\Common\AboutDialog.resx">
+      <Link>Common\AboutDialog.resx</Link>
+      <DependentUpon>AboutDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdministrativeSettings\Users\PasswordDialog.resx">
+      <DependentUpon>PasswordDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdministrativeSettings\Users\PermissionsDialog.resx">
+      <DependentUpon>PermissionsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdministrativeSettings\Users\UsersAccountView.resx">
+      <DependentUpon>UsersAccountView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Authentication\LoginDialog.resx">
+      <DependentUpon>LoginDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ControlPanel\ControlPanelView.resx">
+      <DependentUpon>ControlPanelView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerAddins\ServerAddinsView.resx">
+      <DependentUpon>ServerAddinsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\Gateway\Control\AeInfoDetails.resx">
+      <DependentUpon>AeInfoDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\Gateway\Control\ItemsGridView.resx">
+      <DependentUpon>ItemsGridView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\Gateway\GatewaySettingsView.resx">
+      <DependentUpon>GatewaySettingsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\GeneralSettings\GeneralSettingsView.resx">
+      <DependentUpon>GeneralSettingsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\ServerNetworking\ServerNetworkingView.resx">
+      <DependentUpon>ServerNetworkingView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\ServerOptions\ServerOptionsView.resx">
+      <DependentUpon>ServerOptionsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerStatus\ServerInformationView.resx">
+      <DependentUpon>ServerInformationView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerSettings\ServerSettingsDialog.resx">
+      <DependentUpon>ServerSettingsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SplashForm.resx">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StorageServerContainer\StorageServerContainerView.resx">
+      <DependentUpon>StorageServerContainerView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\ThemesManager.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1313685426_Symbol-Error.png" />
+    <None Include="Resources\1313684564_Symbol-Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_add_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_delete_32.ico" />
+    <None Include="UI\AdministrativeSettings\Users\UsersSource.xsc">
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </None>
+    <None Include="UI\AdministrativeSettings\Users\UsersSource.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsersSource.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UI\AdministrativeSettings\Users\UsersSource.xss">
+      <DependentUpon>UsersSource.xsd</DependentUpon>
+    </None>
+    <None Include="UI\ServerSettings\Gateway\Gateways.xsc">
+      <DependentUpon>Gateways.xsd</DependentUpon>
+    </None>
+    <None Include="UI\ServerSettings\Gateway\Gateways.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gateways.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>Leadtools.Demos.StorageServer.UI</CustomToolNamespace>
+    </None>
+    <None Include="UI\ServerSettings\Gateway\Gateways.xss">
+      <DependentUpon>Gateways.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client_add_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client_edit_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client_remove_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_start_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_stop_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servers_start_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servers_stop_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Running.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stopped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Running.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stopped.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientUpdater.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datamanager.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StopAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceStart .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash-screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DicomCommon\" />
+    <Folder Include="UI\PatientUpdater\" />
+    <Folder Include="UI\ServerSettings\ServerStorageClassesPresenter\" />
+    <Folder Include="UI\StorageSettings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_16x16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\externalStore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_Icon_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

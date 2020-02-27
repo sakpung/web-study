@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" />
+  <xs:element name="PerformedProcedureStepExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="affectedSOPInstanceUID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PerformedProcedureStepExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PerformedProcedureStepExistsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPatient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="patient" nillable="true" type="WCFPatient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPatientResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePatient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="patientId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="issuerOfPatientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePatientResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePatient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="origPatientId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="origIssuerOfPatientId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="patient" nillable="true" type="WCFPatient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePatientResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindPatient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="patientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="issuerOfPatientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindPatientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FindPatientResult" nillable="true" type="WCFPatient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientIDs">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetPatientIDsResult" nillable="true" type="q1:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddImagingServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="patientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="issuerOfPatientID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" minOccurs="0" name="request" nillable="true" type="q2:ImagingServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddImagingServiceRequestResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteImagingServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="patientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="issuerOfPatientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteImagingServiceRequestResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateImagingServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="patientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="issuerOfPatientID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" minOccurs="0" name="entity" nillable="true" type="q3:ImagingServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateImagingServiceRequestResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindImagingServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="patientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="issuerOfPatientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindImagingServiceRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" minOccurs="0" name="FindImagingServiceRequestResult" nillable="true" type="q4:ImagingServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAccessionNumbers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="patientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="issuerOfPatientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAccessionNumbersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAccessionNumbersResult" nillable="true" type="q5:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRequestedProcedure">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="procedure" nillable="true" type="WCFRequestedProcedure" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRequestedProcedureResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRequestedProcedure">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="requestedProcedureID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRequestedProcedureResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRequestedProcedure">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="requestedProcedureID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="procedure" nillable="true" type="WCFRequestedProcedure" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRequestedProcedureResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindRequestedProcedure">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="requestedProcedureID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindRequestedProcedureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FindRequestedProcedureResult" nillable="true" type="WCFRequestedProcedure" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestedProcedureIDs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestedProcedureIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetRequestedProcedureIDsResult" nillable="true" type="q6:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddScheduledProcedureStep">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="requestedProcedureID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="procedureStep" nillable="true" type="WCFScheduledProcedureStep" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddScheduledProcedureStepResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateScheduledProcedureStep">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="scheduledProcedureStepID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="procedureStep" nillable="true" type="WCFScheduledProcedureStep" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateScheduledProcedureStepResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteScheduledProcedureStep">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="scheduledProcedureStepID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteScheduledProcedureStepResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindScheduledProcedureStep">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="scheduledProcedureStepID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindScheduledProcedureStepResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FindScheduledProcedureStepResult" nillable="true" type="WCFScheduledProcedureStep" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScheduledProcedureStepIDs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="requestedProcedureID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScheduledProcedureStepIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetScheduledProcedureStepIDsResult" nillable="true" type="q7:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddVisit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="visit" nillable="true" type="WCFVisit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddVisitResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateVisit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="admissionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="visit" nillable="true" type="WCFVisit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateVisitResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteVisit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="admissionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteVisitResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindVisit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="admissionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindVisitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FindVisitResult" nillable="true" type="WCFVisit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdmissionIDs">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdmissionIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAdmissionIDsResult" nillable="true" type="q8:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddMPPS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mpps" nillable="true" type="WCFPPSInformation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddMPPSResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteMPPS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mppsSOPInstanceUID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteMPPSResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMPPS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mppsSOPInstanceUID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mpps" nillable="true" type="WCFPPSInformation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMPPSResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindMPPS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mppsSOPInstanceUID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindMPPSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FindMPPSResult" nillable="true" type="WCFPPSInformation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryMPPS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="query" nillable="true" type="MPPSQuery" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryMPPSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QueryMPPSResult" nillable="true" type="ArrayOfWCFPPSInformation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HandleUnscheduledMPPS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mppsSOPInstanceUID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="scheduledProcedureStepID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HandleUnscheduledMPPSResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnscheduledPerformedProcedureStepUIDs">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnscheduledPerformedProcedureStepUIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetUnscheduledPerformedProcedureStepUIDsResult" nillable="true" type="q9:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

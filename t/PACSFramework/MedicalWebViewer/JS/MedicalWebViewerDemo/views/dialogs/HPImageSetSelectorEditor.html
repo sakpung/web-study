@@ -1,0 +1,91 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title">{{title}}</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" name="form">
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="selectorAttribute">{{'SELECTOR' | translate}}&nbsp;{{'ATTRIBUTE' | translate}}:</label>
+                    <div class="col-md-10" ng-class="{'has-error': !isSelectorAttributeValid()}">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon1">{{selector.SelectorName}}</span>
+                            <input id="selectorAttribute" type="text" readonly placeholder="" class="form-control input-md" ng-model="selector.WCFSelectorAttribute" />
+                            <span class="input-group-btn">
+                                <a class="btn btn-default" type="button" ng-click="chooseTag()" title="Choose DICOM Tag"><i class="fa fa-tag"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Error Message (SelectorAttribute)-->
+                <div class="form-group" ng-show="!isSelectorAttributeValid()">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <div class="text-danger">{{getSelectorAttributeError()}}</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="selectorValue">{{'SELECTOR' | translate}}&nbsp;{{'VALUE' | translate}}:</label>
+                    <div class="col-md-10" ng-class="{'has-error': !isSelectorValueValid()}">
+                        <div class="input-group">
+                            <input id="selectorValue" type="text" placeholder="" class="form-control input-md" ng-model="selector.SelectorValue" ng-disabled="isSequence()" />
+                            <span class="input-group-btn">
+                                <a class="btn btn-default" type="button" ng-click="editCodeSequence()" title="Edit Code Sequence" ng-disabled="!isSequence()"><i class="fa fa-pencil" ></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Error Message (SelectorValue)-->
+                <div class="form-group" ng-show="!isSelectorValueValid()">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <div class="text-danger">{{getSelectorValueError()}}</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="selectorValueNumber">{{'SELECTOR' | translate}}&nbsp;{{'INDEX' | translate}}:</label>
+                    <div class="col-md-10" ng-class="{'has-error': !isSelectorIndexValid()}">
+                        <input id="selectorValueNumber" type="text" placeholder="#" maxlength="1" class="form-control input-md" ng-model="selector.SelectorValueNumber" />
+                    </div>
+                </div>
+
+                <!--Error Message (SelectorIndex)-->
+                <div class="form-group" ng-show="!isSelectorIndexValid()">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="text-danger">{{getSelectorIndexError()}}</div>
+                    </div>
+                </div>
+
+                <!--<div class="form-group">
+                    <label class="col-md-2 control-label" for="protocolsARS"></label>
+                    <div class="col-md-10">
+                        <div id="codeSequence" ag-grid="gridOptions" class="ag-fresh" style="height:125px"></div>
+                        <button type="button" class="btn-sm btn-default" ng-click="addCodeSequenceItem()" title="Add Code Sequence"><i class="fa fa-plus"></i></button>
+                        <button type="button" class="btn-sm btn-default" ng-click="editCodeSequenceItem()" title="Edit Code Sequence" ng-disabled="!isItemSelected()"><i class="fa fa-pencil"></i></button>
+                        <button type="button" class="btn-sm btn-default" ng-click="deleteCodeSequenceItem()" title="Delete Code Sequence" ng-disabled="!isItemSelected()"><i class="fa fa-minus"></i></button>
+                    </div>
+                </div>-->
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="selectorUsage">{{'SELECTOR' | translate}}&nbsp;{{'USAGE' | translate}}:</label>
+                    <div class="col-md-10">
+                        <select id="selectorUsage" name="selectorUsage" class="form-control" ng-model="selector.ImageSetSelectorUsageFlag">
+                            <option value=0>Match</option>
+                            <option value=1>No Match</option>
+                        </select>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-default" ng-click="ok()" translate="DIALOGS_OK" ng-disabled="!isFormValid()"></a>
+        <a class="btn btn-default" ng-click="cancel()" translate="DIALOGS_CANCEL"></a>
+    </div>
+</div>

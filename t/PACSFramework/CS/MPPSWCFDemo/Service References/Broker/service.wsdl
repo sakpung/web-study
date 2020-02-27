@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="BrokerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IBrokerService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Leadtools.Medical.DataAccessLayer.Catalog" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Leadtools.Dicom" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.DataAccessLayer.MatchingParameters" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Leadtools.Dicom.Common.DataTypes" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBrokerService_PerformedProcedureStepExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:PerformedProcedureStepExists" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_PerformedProcedureStepExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PerformedProcedureStepExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_PerformedProcedureStepExists_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q1:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddPatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPatient" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddPatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddPatient_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q2:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeletePatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePatient" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeletePatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeletePatient_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q3:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdatePatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePatient" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdatePatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdatePatient_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q4:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindPatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindPatient" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindPatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindPatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindPatient_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q5:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetPatientIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientIDs" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetPatientIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetPatientIDs_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q6:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddImagingServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddImagingServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddImagingServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddImagingServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddImagingServiceRequest_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q7:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteImagingServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteImagingServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteImagingServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteImagingServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteImagingServiceRequest_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q8:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateImagingServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateImagingServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateImagingServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateImagingServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateImagingServiceRequest_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q9:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindImagingServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindImagingServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindImagingServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindImagingServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindImagingServiceRequest_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q10:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetAccessionNumbers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccessionNumbers" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetAccessionNumbers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccessionNumbersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetAccessionNumbers_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q11:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddRequestedProcedure_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRequestedProcedure" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddRequestedProcedure_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRequestedProcedureResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddRequestedProcedure_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q12:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteRequestedProcedure_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequestedProcedure" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteRequestedProcedure_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequestedProcedureResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteRequestedProcedure_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q13:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateRequestedProcedure_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRequestedProcedure" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateRequestedProcedure_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRequestedProcedureResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateRequestedProcedure_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q14:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindRequestedProcedure_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindRequestedProcedure" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindRequestedProcedure_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindRequestedProcedureResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindRequestedProcedure_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q15:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetRequestedProcedureIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestedProcedureIDs" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetRequestedProcedureIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestedProcedureIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetRequestedProcedureIDs_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q16:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddScheduledProcedureStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddScheduledProcedureStep" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddScheduledProcedureStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddScheduledProcedureStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddScheduledProcedureStep_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q17:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateScheduledProcedureStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScheduledProcedureStep" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateScheduledProcedureStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScheduledProcedureStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateScheduledProcedureStep_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q18:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteScheduledProcedureStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteScheduledProcedureStep" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteScheduledProcedureStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteScheduledProcedureStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteScheduledProcedureStep_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q19:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindScheduledProcedureStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindScheduledProcedureStep" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindScheduledProcedureStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindScheduledProcedureStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindScheduledProcedureStep_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q20:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetScheduledProcedureStepIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduledProcedureStepIDs" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetScheduledProcedureStepIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduledProcedureStepIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetScheduledProcedureStepIDs_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q21:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddVisit_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddVisit" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddVisit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddVisitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddVisit_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q22:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateVisit_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVisit" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateVisit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVisitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateVisit_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q23:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteVisit_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteVisit" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteVisit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteVisitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteVisit_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q24:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindVisit_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindVisit" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindVisit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindVisitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindVisit_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q25:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetAdmissionIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdmissionIDs" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetAdmissionIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdmissionIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetAdmissionIDs_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q26:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddMPPS_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMPPS" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddMPPS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMPPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_AddMPPS_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q27:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteMPPS_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMPPS" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteMPPS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMPPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_DeleteMPPS_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q28:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateMPPS_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMPPS" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateMPPS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMPPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_UpdateMPPS_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q29="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q29:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindMPPS_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindMPPS" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindMPPS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindMPPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_FindMPPS_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q30:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_QueryMPPS_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryMPPS" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_QueryMPPS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryMPPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_QueryMPPS_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q31="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q31:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_HandleUnscheduledMPPS_InputMessage">
+    <wsdl:part name="parameters" element="tns:HandleUnscheduledMPPS" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_HandleUnscheduledMPPS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HandleUnscheduledMPPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_HandleUnscheduledMPPS_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q32:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetUnscheduledPerformedProcedureStepUIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnscheduledPerformedProcedureStepUIDs" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetUnscheduledPerformedProcedureStepUIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnscheduledPerformedProcedureStepUIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBrokerService_GetUnscheduledPerformedProcedureStepUIDs_ApplicationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.datacontract.org/2004/07/Leadtools.Medical.Worklist.Wcf.Utils" name="detail" element="q33:ApplicationFault" />
+  </wsdl:message>
+  <wsdl:portType name="IBrokerService">
+    <wsdl:operation name="PerformedProcedureStepExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/PerformedProcedureStepExists" message="tns:IBrokerService_PerformedProcedureStepExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/PerformedProcedureStepExistsResponse" message="tns:IBrokerService_PerformedProcedureStepExists_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/PerformedProcedureStepExistsApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_PerformedProcedureStepExists_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/AddPatient" message="tns:IBrokerService_AddPatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/AddPatientResponse" message="tns:IBrokerService_AddPatient_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/AddPatientApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_AddPatient_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/DeletePatient" message="tns:IBrokerService_DeletePatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/DeletePatientResponse" message="tns:IBrokerService_DeletePatient_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/DeletePatientApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_DeletePatient_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/UpdatePatient" message="tns:IBrokerService_UpdatePatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/UpdatePatientResponse" message="tns:IBrokerService_UpdatePatient_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/UpdatePatientApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_UpdatePatient_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindPatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/FindPatient" message="tns:IBrokerService_FindPatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/FindPatientResponse" message="tns:IBrokerService_FindPatient_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/FindPatientApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_FindPatient_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/GetPatientIDs" message="tns:IBrokerService_GetPatientIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/GetPatientIDsResponse" message="tns:IBrokerService_GetPatientIDs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/GetPatientIDsApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_GetPatientIDs_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddImagingServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/AddImagingServiceRequest" message="tns:IBrokerService_AddImagingServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/AddImagingServiceRequestResponse" message="tns:IBrokerService_AddImagingServiceRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/AddImagingServiceRequestApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_AddImagingServiceRequest_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteImagingServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/DeleteImagingServiceRequest" message="tns:IBrokerService_DeleteImagingServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/DeleteImagingServiceRequestResponse" message="tns:IBrokerService_DeleteImagingServiceRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/DeleteImagingServiceRequestApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_DeleteImagingServiceRequest_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateImagingServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/UpdateImagingServiceRequest" message="tns:IBrokerService_UpdateImagingServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/UpdateImagingServiceRequestResponse" message="tns:IBrokerService_UpdateImagingServiceRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/UpdateImagingServiceRequestApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_UpdateImagingServiceRequest_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindImagingServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/FindImagingServiceRequest" message="tns:IBrokerService_FindImagingServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/FindImagingServiceRequestResponse" message="tns:IBrokerService_FindImagingServiceRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/FindImagingServiceRequestApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_FindImagingServiceRequest_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccessionNumbers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/GetAccessionNumbers" message="tns:IBrokerService_GetAccessionNumbers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/GetAccessionNumbersResponse" message="tns:IBrokerService_GetAccessionNumbers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/GetAccessionNumbersApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_GetAccessionNumbers_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRequestedProcedure">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/AddRequestedProcedure" message="tns:IBrokerService_AddRequestedProcedure_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/AddRequestedProcedureResponse" message="tns:IBrokerService_AddRequestedProcedure_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/AddRequestedProcedureApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_AddRequestedProcedure_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequestedProcedure">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/DeleteRequestedProcedure" message="tns:IBrokerService_DeleteRequestedProcedure_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/DeleteRequestedProcedureResponse" message="tns:IBrokerService_DeleteRequestedProcedure_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/DeleteRequestedProcedureApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_DeleteRequestedProcedure_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequestedProcedure">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/UpdateRequestedProcedure" message="tns:IBrokerService_UpdateRequestedProcedure_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/UpdateRequestedProcedureResponse" message="tns:IBrokerService_UpdateRequestedProcedure_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/UpdateRequestedProcedureApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_UpdateRequestedProcedure_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindRequestedProcedure">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/FindRequestedProcedure" message="tns:IBrokerService_FindRequestedProcedure_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/FindRequestedProcedureResponse" message="tns:IBrokerService_FindRequestedProcedure_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/FindRequestedProcedureApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_FindRequestedProcedure_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestedProcedureIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/GetRequestedProcedureIDs" message="tns:IBrokerService_GetRequestedProcedureIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/GetRequestedProcedureIDsResponse" message="tns:IBrokerService_GetRequestedProcedureIDs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/GetRequestedProcedureIDsApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_GetRequestedProcedureIDs_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddScheduledProcedureStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/AddScheduledProcedureStep" message="tns:IBrokerService_AddScheduledProcedureStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/AddScheduledProcedureStepResponse" message="tns:IBrokerService_AddScheduledProcedureStep_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/AddScheduledProcedureStepApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_AddScheduledProcedureStep_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScheduledProcedureStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/UpdateScheduledProcedureStep" message="tns:IBrokerService_UpdateScheduledProcedureStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/UpdateScheduledProcedureStepResponse" message="tns:IBrokerService_UpdateScheduledProcedureStep_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/UpdateScheduledProcedureStepApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_UpdateScheduledProcedureStep_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScheduledProcedureStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/DeleteScheduledProcedureStep" message="tns:IBrokerService_DeleteScheduledProcedureStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/DeleteScheduledProcedureStepResponse" message="tns:IBrokerService_DeleteScheduledProcedureStep_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/DeleteScheduledProcedureStepApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_DeleteScheduledProcedureStep_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindScheduledProcedureStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/FindScheduledProcedureStep" message="tns:IBrokerService_FindScheduledProcedureStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/FindScheduledProcedureStepResponse" message="tns:IBrokerService_FindScheduledProcedureStep_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/FindScheduledProcedureStepApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_FindScheduledProcedureStep_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduledProcedureStepIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/GetScheduledProcedureStepIDs" message="tns:IBrokerService_GetScheduledProcedureStepIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/GetScheduledProcedureStepIDsResponse" message="tns:IBrokerService_GetScheduledProcedureStepIDs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/GetScheduledProcedureStepIDsApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_GetScheduledProcedureStepIDs_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddVisit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/AddVisit" message="tns:IBrokerService_AddVisit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/AddVisitResponse" message="tns:IBrokerService_AddVisit_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/AddVisitApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_AddVisit_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVisit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/UpdateVisit" message="tns:IBrokerService_UpdateVisit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/UpdateVisitResponse" message="tns:IBrokerService_UpdateVisit_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/UpdateVisitApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_UpdateVisit_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVisit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/DeleteVisit" message="tns:IBrokerService_DeleteVisit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/DeleteVisitResponse" message="tns:IBrokerService_DeleteVisit_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/DeleteVisitApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_DeleteVisit_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindVisit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/FindVisit" message="tns:IBrokerService_FindVisit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/FindVisitResponse" message="tns:IBrokerService_FindVisit_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/FindVisitApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_FindVisit_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmissionIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/GetAdmissionIDs" message="tns:IBrokerService_GetAdmissionIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/GetAdmissionIDsResponse" message="tns:IBrokerService_GetAdmissionIDs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/GetAdmissionIDsApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_GetAdmissionIDs_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMPPS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/AddMPPS" message="tns:IBrokerService_AddMPPS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/AddMPPSResponse" message="tns:IBrokerService_AddMPPS_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/AddMPPSApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_AddMPPS_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMPPS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/DeleteMPPS" message="tns:IBrokerService_DeleteMPPS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/DeleteMPPSResponse" message="tns:IBrokerService_DeleteMPPS_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/DeleteMPPSApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_DeleteMPPS_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMPPS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/UpdateMPPS" message="tns:IBrokerService_UpdateMPPS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/UpdateMPPSResponse" message="tns:IBrokerService_UpdateMPPS_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/UpdateMPPSApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_UpdateMPPS_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindMPPS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/FindMPPS" message="tns:IBrokerService_FindMPPS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/FindMPPSResponse" message="tns:IBrokerService_FindMPPS_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/FindMPPSApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_FindMPPS_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryMPPS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/QueryMPPS" message="tns:IBrokerService_QueryMPPS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/QueryMPPSResponse" message="tns:IBrokerService_QueryMPPS_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/QueryMPPSApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_QueryMPPS_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HandleUnscheduledMPPS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/HandleUnscheduledMPPS" message="tns:IBrokerService_HandleUnscheduledMPPS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/HandleUnscheduledMPPSResponse" message="tns:IBrokerService_HandleUnscheduledMPPS_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/HandleUnscheduledMPPSApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_HandleUnscheduledMPPS_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledPerformedProcedureStepUIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBrokerService/GetUnscheduledPerformedProcedureStepUIDs" message="tns:IBrokerService_GetUnscheduledPerformedProcedureStepUIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBrokerService/GetUnscheduledPerformedProcedureStepUIDsResponse" message="tns:IBrokerService_GetUnscheduledPerformedProcedureStepUIDs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBrokerService/GetUnscheduledPerformedProcedureStepUIDsApplicationFaultFault" name="ApplicationFaultFault" message="tns:IBrokerService_GetUnscheduledPerformedProcedureStepUIDs_ApplicationFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IBrokerService" type="tns:IBrokerService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IBrokerService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PerformedProcedureStepExists">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/PerformedProcedureStepExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddPatient">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/AddPatient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePatient">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/DeletePatient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePatient">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/UpdatePatient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="FindPatient">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/FindPatient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientIDs">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/GetPatientIDs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddImagingServiceRequest">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/AddImagingServiceRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteImagingServiceRequest">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/DeleteImagingServiceRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateImagingServiceRequest">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/UpdateImagingServiceRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="FindImagingServiceRequest">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/FindImagingServiceRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccessionNumbers">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/GetAccessionNumbers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddRequestedProcedure">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/AddRequestedProcedure" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequestedProcedure">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/DeleteRequestedProcedure" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequestedProcedure">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/UpdateRequestedProcedure" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="FindRequestedProcedure">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/FindRequestedProcedure" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestedProcedureIDs">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/GetRequestedProcedureIDs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddScheduledProcedureStep">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/AddScheduledProcedureStep" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScheduledProcedureStep">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/UpdateScheduledProcedureStep" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScheduledProcedureStep">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/DeleteScheduledProcedureStep" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="FindScheduledProcedureStep">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/FindScheduledProcedureStep" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduledProcedureStepIDs">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/GetScheduledProcedureStepIDs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddVisit">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/AddVisit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVisit">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/UpdateVisit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVisit">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/DeleteVisit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="FindVisit">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/FindVisit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmissionIDs">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/GetAdmissionIDs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddMPPS">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/AddMPPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMPPS">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/DeleteMPPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMPPS">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/UpdateMPPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="FindMPPS">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/FindMPPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="QueryMPPS">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/QueryMPPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="HandleUnscheduledMPPS">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/HandleUnscheduledMPPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledPerformedProcedureStepUIDs">
+      <soap12:operation soapAction="http://tempuri.org/IBrokerService/GetUnscheduledPerformedProcedureStepUIDs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ApplicationFaultFault">
+        <soap12:fault use="literal" name="ApplicationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BrokerService">
+    <wsdl:port name="WSHttpBinding_IBrokerService" binding="tns:WSHttpBinding_IBrokerService">
+      <soap12:address location="http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:8800/Design_Time_Addresses/Leadtools.Medical.Worklist.Wcf.Service/BrokerService/</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
